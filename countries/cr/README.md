@@ -1,6 +1,6 @@
 # Costa Rica — Firma Digital trust mirror
 
-Mirror of the X.509 hierarchy that anchors Costa Rica's national Firma Digital, operated by **MICITT** (root) and **BCCR/SINPE** (issuing CAs).
+Independent mirror of the X.509 hierarchy that anchors Costa Rica's national Firma Digital, operated by **MICITT** (root) and **BCCR/SINPE** (issuing CAs).
 
 Official source (often broken): <https://www.firmadigital.go.cr/Repositorio/>
 

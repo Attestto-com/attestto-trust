@@ -1,6 +1,6 @@
 # attestto-trust
 
-**Unofficial public mirror of national digital signature trust roots and intermediates.**
+**Independent public mirror of national digital signature trust roots and intermediates.**
 
 This repo exists because most national PKI repositories are partially broken — wrong content-types, half-deployed HTTPS, mixed-case URL quirks, missing branches, dead links. Developers integrating any country's signature stack keep hitting the same wall.
 
