@@ -1,0 +1,25 @@
+name: verify-manifest
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm ci
+      - name: Regenerate manifest
+        run: node scripts/refresh-manifest.mjs
+      - name: Fail if manifest drifted
+        run: |
+          if ! git diff --quiet current/manifest.json; then
+            echo "::error::current/manifest.json is out of date — run 'node scripts/refresh-manifest.mjs' and commit"
+            git diff current/manifest.json
+            exit 1
+          fi

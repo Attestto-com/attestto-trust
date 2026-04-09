@@ -1,0 +1,16 @@
+{
+  "name": "attestto-trust-cr",
+  "version": "1.0.0",
+  "description": "**Unofficial public mirror** of the X.509 certificates that anchor Costa Rica's national digital signature infrastructure (Firma Digital, BCCR / SINPE / MICITT).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "node-forge": "^1.4.0"
+  }
+}

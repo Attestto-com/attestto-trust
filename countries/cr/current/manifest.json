@@ -1,0 +1,67 @@
+{
+  "country": "CR",
+  "generatedAt": "2026-04-09T03:54:21.932Z",
+  "count": 6,
+  "certificates": [
+    {
+      "file": "BANCO CENTRAL DE COSTA RICA (AGENTE ELECTRONICO).pem",
+      "sha256": "93a29de654d73ab61342d52b0178f6fcd91f78f2c215d839270ffed6cf631f5e",
+      "subject": "BANCO CENTRAL DE COSTA RICA (AGENTE ELECTRONICO)",
+      "issuer": "CA SINPE - PERSONA JURIDICA v2",
+      "serialNumber": "480000075fb95366adf65a608700020000075f",
+      "validFrom": "2024-06-07T23:39:29.000Z",
+      "validTo": "2028-06-06T23:39:29.000Z",
+      "role": "intermediate"
+    },
+    {
+      "file": "CA POLITICA PERSONA FISICA - COSTA RICA v2.pem",
+      "sha256": "32c28e684a283df15da761b8b8e79a9ed72d81ddb557824a823a3f069a7e77dd",
+      "subject": "CA POLITICA PERSONA FISICA - COSTA RICA v2",
+      "issuer": "CA RAIZ NACIONAL - COSTA RICA v2",
+      "serialNumber": "4e00000002738de677fe8e6840000000000002",
+      "validFrom": "2015-02-25T18:08:38.000Z",
+      "validTo": "2031-02-25T18:18:38.000Z",
+      "role": "intermediate"
+    },
+    {
+      "file": "CA POLITICA PERSONA JURIDICA - COSTA RICA v2.pem",
+      "sha256": "8d4b697ae29912bcfc570374695f040096f1a8499fe5a4e0b65ee32567aec15b",
+      "subject": "CA POLITICA PERSONA JURIDICA - COSTA RICA v2",
+      "issuer": "CA RAIZ NACIONAL - COSTA RICA v2",
+      "serialNumber": "4e00000003def1a16e0fc7ef05000000000003",
+      "validFrom": "2015-02-25T21:11:37.000Z",
+      "validTo": "2031-02-25T21:21:37.000Z",
+      "role": "intermediate"
+    },
+    {
+      "file": "CA RAIZ NACIONAL - COSTA RICA v2.pem",
+      "sha256": "fd9ea730948ec25875fd3c4a778815f57f2261f739be898dd720fa2e07ef7c42",
+      "subject": "CA RAIZ NACIONAL - COSTA RICA v2",
+      "issuer": "CA RAIZ NACIONAL - COSTA RICA v2",
+      "serialNumber": "74b8cf638fab72bc46c1d2bacd00050c",
+      "validFrom": "2015-02-24T22:19:55.000Z",
+      "validTo": "2039-02-24T22:28:44.000Z",
+      "role": "root"
+    },
+    {
+      "file": "CA SINPE - PERSONA FISICA v2.pem",
+      "sha256": "58e07fd8ae7e6c9100ada817213226717f2123c8d23d078a0bd758bebfd671a5",
+      "subject": "CA SINPE - PERSONA FISICA v2",
+      "issuer": "CA POLITICA PERSONA FISICA - COSTA RICA v2",
+      "serialNumber": "4b00000005dbfe03b535751ac3000000000005",
+      "validFrom": "2019-12-20T21:54:01.000Z",
+      "validTo": "2027-12-20T22:04:01.000Z",
+      "role": "intermediate"
+    },
+    {
+      "file": "CA SINPE - PERSONA JURIDICA v2.pem",
+      "sha256": "0cd35122da671b8e896bb14653256fd88452812b56c6b4077a3c2b77c1601879",
+      "subject": "CA SINPE - PERSONA JURIDICA v2",
+      "issuer": "CA POLITICA PERSONA JURIDICA - COSTA RICA v2",
+      "serialNumber": "70000000069d5084d8cbea738a000000000006",
+      "validFrom": "2023-01-14T21:40:38.000Z",
+      "validTo": "2031-01-14T21:50:38.000Z",
+      "role": "intermediate"
+    }
+  ]
+}
