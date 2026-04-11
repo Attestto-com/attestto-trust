@@ -1,16 +1,37 @@
 {
-  "name": "attestto-trust-cr",
+  "name": "@attestto/trust",
   "version": "1.0.0",
-  "description": "**Unofficial public mirror** of the X.509 certificates that anchor Costa Rica's national digital signature infrastructure (Firma Digital, BCCR / SINPE / MICITT).",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "description": "Independent public mirror of X.509 trust anchors for national digital signature infrastructures. Currently: Costa Rica (BCCR / SINPE / MICITT Firma Digital).",
   "type": "module",
-  "dependencies": {
-    "node-forge": "^1.4.0"
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./cr": "./countries/cr/index.js",
+    "./cr/pems/*": "./countries/cr/current/*.pem"
+  },
+  "files": [
+    "index.js",
+    "countries/*/index.js",
+    "countries/*/current/*.pem",
+    "countries/*/current/manifest.json"
+  ],
+  "scripts": {
+    "generate": "node scripts/generate-exports.mjs",
+    "test": "node --test tests/"
+  },
+  "keywords": [
+    "pki",
+    "x509",
+    "trust-anchors",
+    "costa-rica",
+    "firma-digital",
+    "bccr",
+    "sinpe"
+  ],
+  "author": "Attestto <hello@attestto.com>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Attestto-com/attestto-trust.git"
   }
 }

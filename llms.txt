@@ -1,0 +1,116 @@
+# attestto-trust
+
+> Independent public mirror of national digital signature trust roots and intermediates. Hash-pinned, version-controlled, git history is the audit trail.
+
+Part of the [Attestto Open](https://attestto.org) ecosystem.
+
+## Why this exists
+
+Most national PKI repositories are partially broken — wrong content-types, half-deployed HTTPS, mixed-case URL quirks, missing branches, dead links. Every developer integrating a country's digital signature stack hits the same wall.
+
+This repo mirrors the binary bytes published by official issuers: as-is, hash-pinned, version-controlled. The legal source of truth remains the issuing authority. We are not a Certificate Authority — we do not issue, reissue, sign, or vouch for any certificate.
+
+**Always verify the SHA-256 against the official source when you can reach it.**
+
+## Countries
+
+| Country | Code | Status | Branches |
+|---|---|---|---|
+| Costa Rica | `countries/cr/` | ✅ live | Persona Física + Persona Jurídica |
+| Mexico, El Salvador, Panama | planned | — | — |
+
+To add a country, open a PR following the layout below.
+
+## Repo layout
+
+```
+attestto-trust/
+  scripts/
+    extract-chain-from-pdf.mjs  — extract certs from signed PDFs
+    refresh-manifest.mjs        — regenerate manifest.json with hashes
+  countries/
+    <iso2>/
+      README.md          — country-specific notes + CA hierarchy diagram
+      current/
+        *.pem            — active certificates
+        chain.pem        — all-in-one bundle (root + intermediates)
+        manifest.json    — sha256, subject, issuer, validFrom/To, role for each cert
+      archive/           — superseded certs, kept forever
+      samples/           — signed docs used for extraction (when redistributable)
+  .github/workflows/verify.yml  — CI: verify all cert hashes on every push
+```
+
+## Using the certificates
+
+### Drop into your trust store
+
+```bash
+git clone https://github.com/Attestto-com/attestto-trust.git
+cp attestto-trust/countries/cr/current/*.pem your-app/trust-store/cr/
+```
+
+### Verify against the bundle
+
+```bash
+openssl verify -CAfile attestto-trust/countries/cr/current/chain.pem your-signed-doc.pem
+```
+
+### Verify a cert's hash before using it
+
+```bash
+sha256sum attestto-trust/countries/cr/current/root-ca.pem
+# compare against manifest.json sha256 field
+```
+
+### Inspect the manifest
+
+```json
+// countries/cr/current/manifest.json
+[
+  {
+    "filename": "root-ca.pem",
+    "sha256": "a1b2c3...",
+    "subject": "CN=CA RAIZ NACIONAL - COSTA RICA v2, ...",
+    "issuer": "CN=CA RAIZ NACIONAL - COSTA RICA v2, ...",
+    "validFrom": "2015-07-09",
+    "validTo": "2035-07-09",
+    "role": "root"
+  },
+  ...
+]
+```
+
+## Adding a country
+
+1. Create `countries/<iso2>/`
+2. Add `README.md` with the CA hierarchy, official source URLs, and known quirks
+3. Place active certs in `current/` as `.pem` files
+4. Run `node scripts/refresh-manifest.mjs countries/<iso2>/current/` to generate `manifest.json`
+5. Place any superseded certs in `archive/`
+6. Open a PR — CI will verify all hashes
+
+Certs can often be extracted from officially-signed PDFs. `scripts/extract-chain-from-pdf.mjs` automates this.
+
+## Audit trail
+
+Every cert added, rotated, or retired is a git commit with a message describing what changed and why. The full git history is the audit trail. `git log --follow countries/cr/current/` shows the complete certificate lifecycle.
+
+## Costa Rica specifics
+
+Costa Rica's PKI has two branches:
+- **Persona Física** — natural persons (cédula de identidad)
+- **Persona Jurídica** — legal entities (cédula jurídica)
+
+Both branches are covered under `countries/cr/current/`. See `countries/cr/README.md` for the full hierarchy diagram and known quirks with the official BCCR/MICITT repository.
+
+## Related repos
+
+| Repo | Purpose |
+|---|---|
+| `attestto-verify` | Web component that uses these trust roots for signature verification |
+| `cr-vc-schemas` | Credential schemas for Costa Rica — Firma Digital is the signing mechanism |
+| `attestto-desktop` | Desktop app — verifies documents against these trust roots |
+
+## License
+
+Apache 2.0 — [Attestto Open](https://attestto.org)

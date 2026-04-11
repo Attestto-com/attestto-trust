@@ -1,7 +1,7 @@
 {
   "country": "CR",
-  "generatedAt": "2026-04-09T03:54:21.932Z",
-  "count": 6,
+  "generatedAt": "2026-04-11T13:11:12.188Z",
+  "count": 7,
   "certificates": [
     {
       "file": "BANCO CENTRAL DE COSTA RICA (AGENTE ELECTRONICO).pem",
@@ -42,6 +42,16 @@
       "validFrom": "2015-02-24T22:19:55.000Z",
       "validTo": "2039-02-24T22:28:44.000Z",
       "role": "root"
+    },
+    {
+      "file": "CA SINPE - PERSONA FISICA v2 (2023).pem",
+      "sha256": "3ad3c04f06e0ccc3ed8f1cba777f1ed985b09adffce9cfc18b18ca1f951df9ed",
+      "subject": "CA SINPE - PERSONA FISICA v2",
+      "issuer": "CA POLITICA PERSONA FISICA - COSTA RICA v2",
+      "serialNumber": "4b000000070070bff1d8840e7e000000000007",
+      "validFrom": "2023-01-28T19:54:14.000Z",
+      "validTo": "2031-01-28T20:04:14.000Z",
+      "role": "intermediate"
     },
     {
       "file": "CA SINPE - PERSONA FISICA v2.pem",
