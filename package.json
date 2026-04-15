@@ -2,6 +2,7 @@
   "name": "@attestto/trust",
   "version": "1.0.0",
   "description": "Independent public mirror of X.509 trust anchors for national digital signature infrastructures. Currently: Costa Rica (BCCR / SINPE / MICITT Firma Digital).",
+  "homepage": "https://attestto.org",
   "type": "module",
   "main": "index.js",
   "exports": {
