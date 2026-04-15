@@ -1,8 +1,10 @@
 # attestto-trust
 
+[![npm version](https://img.shields.io/npm/v/@attestto/trust.svg)](https://www.npmjs.com/package/@attestto/trust)
+
 > Independent public mirror of national digital signature trust roots and intermediates. Hash-pinned, version-controlled, git history is the audit trail.
 
-A critical trust infrastructure piece for the Attestto Open ecosystem. Most national PKI repositories are partially broken — wrong content-types, half-deployed HTTPS, mixed-case URL quirks, missing branches, dead links. Every developer integrating a country's digital signature stack hits the same wall. This repo mirrors the binary bytes published by official issuers as-is, hash-pinned, and version-controlled. The legal source of truth remains the issuing authority in each country. We are not a Certificate Authority — we do not issue, reissue, sign, or vouch for any certificate. **Always verify the SHA-256 against the official source when you can reach it.**
+`@attestto/trust` is a critical trust infrastructure piece for the [Attestto Open](https://attestto.org) ecosystem. Most national PKI repositories are partially broken — wrong content-types, half-deployed HTTPS, mixed-case URL quirks, missing branches, dead links. Every developer integrating a country's digital signature stack hits the same wall. This repo mirrors the binary bytes published by each country's issuing authority as-is, hash-pinned, and version-controlled. The legal source of truth remains the issuing authority in each country. We are not a Certificate Authority — we do not issue, reissue, sign, or vouch for any certificate. **Always verify the SHA-256 against the issuing authority's repository when you can reach it.**
 
 ## Architecture
 
@@ -76,7 +78,7 @@ Each country has a `manifest.json` listing all certificates with their hashes an
 ]
 ```
 
-Use this to audit what's installed and verify against the official source.
+Use this to audit what's installed and verify against the issuing authority's published repository.
 
 ### Audit trail
 
@@ -167,7 +169,7 @@ Update the country table in this README and open a pull request. CI will verify 
 
 ## Limitations
 
-We are **not** a Certificate Authority — we don't issue, reissue, sign, or vouch for any certificate. We are **not** an OCSP/CRL responder — revocation is time-sensitive, get it from the official source. We deliberately don't mirror CRLs because a stale CRL is worse than none. If our mirror disagrees with the official source, the official source wins — open an issue and we'll fix it.
+We are **not** a Certificate Authority — we don't issue, reissue, sign, or vouch for any certificate. We are **not** an OCSP/CRL responder — revocation is time-sensitive, get it from the issuing authority directly. We deliberately don't mirror CRLs because a stale CRL is worse than none. If our mirror disagrees with the issuing authority's published repository, the authoritative source wins — open an issue and we'll fix it.
 
 ## Ecosystem
 
@@ -203,11 +205,11 @@ We recommend **[Claude](https://claude.ai) Pro** (5× usage vs free) or higher. 
 
 ## Contributing
 
-We welcome contributions. To add a country, open a PR following the layout above. CI will verify all certificate hashes automatically. For questions about trust roots or PKI hierarchy, open an issue with a reference to the official issuing authority.
+We welcome contributions. To add a country, open a PR following the layout above. CI will verify all certificate hashes automatically. For questions about trust roots or PKI hierarchy, open an issue with a reference to the issuing authority's published repository.
 
 ## License
 
-The certificates are public-key X.509 published by official institutions; freely redistributable. Scripts and documentation are MIT. See [LICENSE](./LICENSE).
+The certificates are public-key X.509 published by national issuing authorities; freely redistributable. Scripts and documentation are MIT. See [LICENSE](./LICENSE).
 
 ---
 
