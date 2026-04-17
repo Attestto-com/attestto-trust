@@ -52,7 +52,7 @@ sha256sum attestto-trust/countries/cr/current/root-ca.pem
 
 | Country | Code | Status | Branches covered |
 |---|---|---|---|
-| Costa Rica | [`cr/`](countries/cr) | ✅ live | Persona Física + Persona Jurídica |
+| Costa Rica | [`cr/`](countries/cr) | ✅ live | Persona Física, Persona Jurídica, Sellado de Tiempo |
 | Mexico | `mx/` | planned | — |
 | El Salvador | `sv/` | planned | — |
 | Panama | `pa/` | planned | — |
@@ -95,7 +95,8 @@ attestto-trust/
 ├── README.md                      ← you are here
 ├── scripts/
 │   ├── extract-chain-from-pdf.mjs ← extract certs from signed PDFs
-│   └── refresh-manifest.mjs       ← regenerate manifest.json with hashes
+│   ├── generate-exports.mjs       ← regenerate JS/TS exports from PEM files
+│   └── refresh-manifest.mjs       ← regenerate manifest.json + chain.pem
 ├── countries/
 │   └── <iso2>/
 │       ├── README.md              ← country-specific notes + CA hierarchy
@@ -136,9 +137,10 @@ When the issuing authority rotates a cert (root or intermediate):
 
 1. Move the old PEM from `countries/<iso2>/current/` into `countries/<iso2>/archive/<year>/`
 2. Drop the new PEM into `countries/<iso2>/current/`
-3. Run `node scripts/refresh-manifest.mjs <iso2>`
-4. Commit with a clear message: *"cr: rotate CA SINPE PERSONA FISICA v2 → v3, expires 2032"*
-5. Push
+3. Run `node scripts/refresh-manifest.mjs` — rebuilds `manifest.json` + `chain.pem`
+4. Run `node scripts/generate-exports.mjs` — regenerates JS exports + `.d.ts` types
+5. Commit with a clear message: *"cr: rotate CA SINPE PERSONA FISICA v2 → v3, expires 2032"*
+6. Push
 
 ## Adding a country
 
@@ -151,17 +153,15 @@ node scripts/extract-chain-from-pdf.mjs ~/Downloads/some-signed.pdf /tmp/out
 # Inspect, then move the relevant intermediates into countries/<iso2>/current/
 cp /tmp/out/*.pem countries/<iso2>/current/
 
-# Create the all-in-one bundle
-cat countries/<iso2>/current/*.pem > countries/<iso2>/current/chain.pem
-
-# Generate manifest with hashes
-node scripts/refresh-manifest.mjs <iso2>
+# Generate manifest + chain.pem + JS exports
+node scripts/refresh-manifest.mjs
+node scripts/generate-exports.mjs
 
 # Write country-specific notes + CA hierarchy diagram
 vi countries/<iso2>/README.md
 
 # Commit
-git add countries/<iso2>
+git add countries/<iso2> index.js
 git commit -m "<iso2>: initial trust mirror — N certs"
 ```
 
