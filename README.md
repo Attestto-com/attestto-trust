@@ -53,8 +53,14 @@ sha256sum attestto-trust/countries/cr/current/root-ca.pem
 | Country | Code | Status | Branches covered |
 |---|---|---|---|
 | Costa Rica | [`cr/`](countries/cr) | ✅ live | Persona Física, Persona Jurídica, Sellado de Tiempo |
+| Brazil | [`br/`](countries/br) | ✅ live | AC Raiz v5, v10, v11, v12 |
 | Mexico | `mx/` | planned | — |
-| El Salvador | `sv/` | planned | — |
+| Argentina | `ar/` | planned | — |
+| Colombia | `co/` | planned | — |
+| Chile | `cl/` | planned | — |
+| Peru | `pe/` | planned | — |
+| Ecuador | `ec/` | planned | — |
+| Uruguay | `uy/` | planned | — |
 | Panama | `pa/` | planned | — |
 
 ## Key concepts

@@ -1,0 +1,47 @@
+{
+  "country": "BR",
+  "generatedAt": "2026-04-17T04:37:26.489Z",
+  "count": 4,
+  "certificates": [
+    {
+      "file": "AC-RAIZ-ICP-BRASIL-v10.pem",
+      "sha256": "6e0bff069a26994c15de2c4888cc54af84882e5495b7fbf66be9ccffec7489f6",
+      "subject": "Autoridade Certificadora Raiz Brasileira v10",
+      "issuer": "Autoridade Certificadora Raiz Brasileira v10",
+      "serialNumber": "00d2d58b44bf819342",
+      "validFrom": "2019-07-01T19:15:59.000Z",
+      "validTo": "2032-07-01T12:00:59.000Z",
+      "role": "root"
+    },
+    {
+      "file": "AC-RAIZ-ICP-BRASIL-v11.pem",
+      "sha256": "1406710058180fa4081aab3f246f1702429c552a11fa3143b84c88cb3ab8e5e7",
+      "subject": "Autoridade Certificadora Raiz Brasileira v11",
+      "issuer": "Autoridade Certificadora Raiz Brasileira v11",
+      "serialNumber": "242b60d4cd43697f",
+      "validFrom": "2019-07-01T19:26:18.000Z",
+      "validTo": "2032-07-01T12:00:18.000Z",
+      "role": "root"
+    },
+    {
+      "file": "AC-RAIZ-ICP-BRASIL-v12.pem",
+      "sha256": "d8478e37ce19c690cf657381e68fe600e4e1a042536830f06847e03e554c4b01",
+      "subject": "Autoridade Certificadora Raiz Brasileira v12",
+      "issuer": "Autoridade Certificadora Raiz Brasileira v12",
+      "serialNumber": "00e18ff4b61d07bd0f",
+      "validFrom": "2024-10-22T14:41:24.000Z",
+      "validTo": "2037-10-22T12:00:24.000Z",
+      "role": "root"
+    },
+    {
+      "file": "AC-RAIZ-ICP-BRASIL-v5.pem",
+      "sha256": "caa53fc6091c6951887c976e378f6ef89aa6377c55d97b6475422b71ed7e9b17",
+      "subject": "Autoridade Certificadora Raiz Brasileira v5",
+      "issuer": "Autoridade Certificadora Raiz Brasileira v5",
+      "serialNumber": "01",
+      "validFrom": "2016-03-02T13:01:38.000Z",
+      "validTo": "2029-03-02T23:59:38.000Z",
+      "role": "root"
+    }
+  ]
+}
