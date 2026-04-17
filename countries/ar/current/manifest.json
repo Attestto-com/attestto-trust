@@ -1,0 +1,27 @@
+{
+  "country": "AR",
+  "generatedAt": "2026-04-17T04:51:34.134Z",
+  "count": 2,
+  "certificates": [
+    {
+      "file": "AC-RAIZ-REPUBLICA-ARGENTINA.pem",
+      "sha256": "cc85ed4934c07c6b34c3429ab37ff3883ea988eca5daf117bd4d5f185b3bd463",
+      "subject": "AC RaÃ­z",
+      "issuer": "AC RaÃ­z",
+      "serialNumber": "00f9a548d200505296",
+      "validFrom": "2007-11-22T13:25:39.000Z",
+      "validTo": "2027-11-17T13:25:39.000Z",
+      "role": "root"
+    },
+    {
+      "file": "AUTORIDAD-CERTIFICANTE-FIRMA-DIGITAL.pem",
+      "sha256": "2d17718f6f89acf861d5bd7a4a4fe2108ed0c64cc083118f4bbb1c2d169e64b3",
+      "subject": "Autoridad Certificante de Firma Digital",
+      "issuer": "AC RaÃ­z",
+      "serialNumber": "1b0000000c73ccb952640e9af100000000000c",
+      "validFrom": "2020-04-14T04:42:43.000Z",
+      "validTo": "2027-11-17T13:25:39.000Z",
+      "role": "intermediate"
+    }
+  ]
+}

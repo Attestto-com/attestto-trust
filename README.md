@@ -55,7 +55,7 @@ sha256sum attestto-trust/countries/cr/current/root-ca.pem
 | Costa Rica | [`cr/`](countries/cr) | ✅ live | Persona Física, Persona Jurídica, Sellado de Tiempo |
 | Brazil | [`br/`](countries/br) | ✅ live | AC Raiz v5, v10, v11, v12 |
 | Mexico | `mx/` | planned | — |
-| Argentina | `ar/` | planned | — |
+| Argentina | [`ar/`](countries/ar) | ✅ live | AC Raíz + Autoridad Certificante Firma Digital |
 | Colombia | `co/` | planned | — |
 | Chile | `cl/` | planned | — |
 | Peru | `pe/` | planned | — |

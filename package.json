@@ -10,7 +10,9 @@
     "./cr": "./countries/cr/index.js",
     "./cr/pems/*": "./countries/cr/current/*.pem",
     "./br": "./countries/br/index.js",
-    "./br/pems/*": "./countries/br/current/*.pem"
+    "./br/pems/*": "./countries/br/current/*.pem",
+    "./ar": "./countries/ar/index.js",
+    "./ar/pems/*": "./countries/ar/current/*.pem"
   },
   "files": [
     "index.js",
