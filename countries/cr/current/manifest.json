@@ -1,7 +1,7 @@
 {
   "country": "CR",
-  "generatedAt": "2026-04-11T13:11:12.188Z",
-  "count": 7,
+  "generatedAt": "2026-04-17T04:01:38.430Z",
+  "count": 8,
   "certificates": [
     {
       "file": "BANCO CENTRAL DE COSTA RICA (AGENTE ELECTRONICO).pem",
@@ -31,6 +31,16 @@
       "serialNumber": "4e00000003def1a16e0fc7ef05000000000003",
       "validFrom": "2015-02-25T21:11:37.000Z",
       "validTo": "2031-02-25T21:21:37.000Z",
+      "role": "intermediate"
+    },
+    {
+      "file": "CA POLITICA SELLADO DE TIEMPO - COSTA RICA v2.pem",
+      "sha256": "fdcfe11315fc9f4b059934346243549486db9df06772b09562ca666c9b8b8ea0",
+      "subject": "CA POLITICA SELLADO DE TIEMPO - COSTA RICA v2",
+      "issuer": "CA RAIZ NACIONAL - COSTA RICA v2",
+      "serialNumber": "4e0000000498391ff803b85bdc000000000004",
+      "validFrom": "2015-02-25T21:47:43.000Z",
+      "validTo": "2031-02-25T21:57:43.000Z",
       "role": "intermediate"
     },
     {
