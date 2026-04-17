@@ -22,7 +22,8 @@
   ],
   "scripts": {
     "generate": "node scripts/generate-exports.mjs",
-    "test": "node --test tests/"
+    "test": "node --test tests/",
+    "prepublishOnly": "npm test"
   },
   "keywords": [
     "pki",
@@ -36,7 +37,7 @@
     "icp-brasil"
   ],
   "author": "Attestto <hello@attestto.com>",
-  "license": "ISC",
+  "license": "Apache-2.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/Attestto-com/attestto-trust.git"

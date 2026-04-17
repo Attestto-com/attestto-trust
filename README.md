@@ -215,7 +215,7 @@ We welcome contributions. To add a country, open a PR following the layout above
 
 ## License
 
-The certificates are public-key X.509 published by national issuing authorities; freely redistributable. Scripts and documentation are MIT. See [LICENSE](./LICENSE).
+The certificates are public-key X.509 published by national issuing authorities; freely redistributable. Scripts and documentation are Apache-2.0. See [LICENSE](./LICENSE).
 
 ---
 
