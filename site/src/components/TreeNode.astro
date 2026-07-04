@@ -1,0 +1,34 @@
+---
+// Recursive CA hierarchy node: renders a cert card, then nests its children.
+import CertCard from './CertCard.astro';
+import Self from './TreeNode.astro';
+const { cert, code, depth = 0 } = Astro.props;
+---
+<li class="tree-node" style={`--depth:${depth}`}>
+  <CertCard cert={cert} code={code} />
+  {cert.children && cert.children.length > 0 && (
+    <ul class="tree-children" role="group">
+      {cert.children.map((child) => (
+        <Self cert={child} code={code} depth={depth + 1} />
+      ))}
+    </ul>
+  )}
+</li>
+
+<style>
+  .tree-node {
+    position: relative;
+    list-style: none;
+  }
+  .tree-children {
+    list-style: none;
+    margin: var(--space-3) 0 0;
+    padding: 0 0 0 var(--space-5);
+    border-left: 2px solid var(--color-border);
+    display: grid;
+    gap: var(--space-3);
+  }
+  @media (max-width: 520px) {
+    .tree-children { padding-left: var(--space-3); }
+  }
+</style>

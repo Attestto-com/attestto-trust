@@ -1,0 +1,15 @@
+---
+import { VALIDITY_META } from '../lib/trust.js';
+const { validity } = Astro.props;
+const meta = VALIDITY_META[validity.state] || VALIDITY_META.valid;
+let detail = '';
+if (validity.state === 'valid' || validity.state === 'expiring') {
+  detail = `${validity.daysToExpiry} day${validity.daysToExpiry === 1 ? '' : 's'} left`;
+} else if (validity.state === 'expired') {
+  detail = `${Math.abs(validity.daysToExpiry)} day${Math.abs(validity.daysToExpiry) === 1 ? '' : 's'} ago`;
+}
+---
+<span class={`badge chip--${meta.tone}`} title={detail}>
+  <span class="badge__dot" aria-hidden="true"></span>
+  {meta.label}{detail ? ` (${detail})` : ''}
+</span>

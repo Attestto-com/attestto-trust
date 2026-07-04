@@ -1,0 +1,91 @@
+---
+import '../styles/global.css';
+
+const { title, description } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const pageTitle = title ? `${title} · Attestto Trust` : 'Attestto Trust · PKI trust anchor directory';
+const desc =
+  description ||
+  'Independent public mirror of national PKI trust anchors, structured and human-readable.';
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={desc} />
+    <meta name="color-scheme" content="light" />
+    <link rel="canonical" href={new URL(Astro.url.pathname, Astro.site).href} />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="brand" href={`${base}/`}>
+          <span class="brand__mark">Attestto</span>
+          <span class="brand__sub">Trust Directory</span>
+        </a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href={`${base}/#countries`}>Countries</a>
+          <a href={`${base}/#developers`}>For developers</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="mirror-banner" role="note">
+      <div class="container mirror-banner__inner">
+        <strong>Independent public mirror of national PKI trust anchors, not an authority.</strong>
+        Certificates are published by each national PKI (e.g., BCCR for Costa Rica); this site
+        mirrors and structures them.
+      </div>
+    </div>
+
+    <main id="main" class="container">
+      <slot />
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>
+          <strong>Attestto Trust</strong> is an independent public mirror of national PKI trust
+          anchors. It is not a certification authority and does not issue certificates.
+        </p>
+        <p>
+          Certificates shown are public data published by each national PKI. Each entry lists its
+          SHA-256 fingerprint as tamper evidence. Always verify against the authoritative source.
+        </p>
+        <p>
+          Machine-readable data: the <a href="https://www.npmjs.com/package/@attestto/trust"
+            >@attestto/trust</a> npm package and the <code>did:pki</code> resolver.
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      // Copy-to-clipboard for hashes/serials. Progressive enhancement only.
+      document.addEventListener('click', async (event) => {
+        const target = event.target;
+        if (!(target instanceof HTMLElement)) return;
+        const btn = target.closest('.copy');
+        if (!(btn instanceof HTMLElement)) return;
+        const value = btn.getAttribute('data-copy');
+        if (!value) return;
+        try {
+          await navigator.clipboard.writeText(value);
+          const original = btn.textContent;
+          btn.textContent = 'Copied';
+          btn.setAttribute('data-copied', 'true');
+          window.setTimeout(() => {
+            btn.textContent = original;
+            btn.removeAttribute('data-copied');
+          }, 1400);
+        } catch {
+          /* clipboard unavailable; value is still visible in the code element */
+        }
+      });
+    </script>
+  </body>
+</html>

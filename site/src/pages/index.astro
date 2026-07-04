@@ -1,0 +1,137 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { loadAllCountries } from '../lib/trust.js';
+
+const countries = loadAllCountries();
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const fmtDate = (iso) =>
+  new Date(iso).toLocaleDateString('en-CA', { year: 'numeric', month: 'short', day: '2-digit' });
+---
+<BaseLayout
+  title="PKI trust anchor directory"
+  description="Independent public mirror of national PKI trust anchors for Costa Rica, Brazil and Argentina. Structured, human-readable, tamper-evident."
+>
+  <section class="intro">
+    <h1>National PKI trust anchors, structured and readable</h1>
+    <p class="lede">
+      This directory mirrors the root and intermediate certificate authorities behind national
+      digital signature systems, and presents them as a clear, verifiable hierarchy. Each
+      certificate lists its SHA-256 fingerprint (tamper evidence), its validity window, and a
+      direct download of the original <code>.pem</code>.
+    </p>
+  </section>
+
+  <section id="countries" aria-labelledby="countries-h">
+    <h2 id="countries-h">Countries</h2>
+    <ul class="country-grid">
+      {countries.map((c) => (
+        <li>
+          <a class="country-card" href={`${base}/${c.code}`}>
+            <span class="country-card__flag" aria-hidden="true">{c.flag}</span>
+            <span class="country-card__body">
+              <span class="country-card__name">{c.name}</span>
+              <span class="country-card__authority">{c.authority}</span>
+              <span class="country-card__stats">
+                <strong>{c.count}</strong> certificate{c.count === 1 ? '' : 's'}
+                <span class="country-card__sep" aria-hidden="true">•</span>
+                updated <time datetime={c.generatedAt}>{fmtDate(c.generatedAt)}</time>
+              </span>
+            </span>
+            <span class="country-card__go" aria-hidden="true">→</span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <section id="developers" class="developers" aria-labelledby="dev-h">
+    <h2 id="dev-h">For developers</h2>
+    <p>
+      This site is the human-readable face of the same data. For programmatic access, install the
+      published npm package. The <code>did:pki</code> resolver is the machine and API face of these
+      trust anchors.
+    </p>
+    <div class="dev-grid">
+      <div class="dev-card">
+        <h3>npm package</h3>
+        <p class="dev-card__desc">
+          Import the trust anchors and per-country manifests directly into your build.
+        </p>
+        <pre class="mono"><code>npm install @attestto/trust</code></pre>
+        <a class="btn" href="https://www.npmjs.com/package/@attestto/trust">View on npm</a>
+      </div>
+      <div class="dev-card">
+        <h3>did:pki resolver</h3>
+        <p class="dev-card__desc">
+          Resolve and verify against these anchors programmatically as the machine-readable, API
+          face of the directory.
+        </p>
+        <a class="btn" href="https://attestto.org">Learn more</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .intro { max-width: 46rem; margin-bottom: var(--space-8); }
+  .lede { font-size: var(--text-lg); color: var(--color-text-muted); }
+
+  .country-grid {
+    list-style: none;
+    padding: 0;
+    margin: var(--space-4) 0 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+    gap: var(--space-4);
+  }
+  .country-card {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-5);
+    box-shadow: var(--shadow-sm);
+    height: 100%;
+    color: var(--color-text);
+    transition: box-shadow 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
+  }
+  .country-card:hover {
+    text-decoration: none;
+    border-color: var(--color-border-strong);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-1px);
+  }
+  .country-card__flag { font-size: 2.25rem; line-height: 1; }
+  .country-card__body { display: flex; flex-direction: column; gap: var(--space-1); flex: 1; }
+  .country-card__name { font-weight: 700; font-size: var(--text-lg); }
+  .country-card__authority { font-size: var(--text-xs); color: var(--color-text-subtle); }
+  .country-card__stats { font-size: var(--text-sm); color: var(--color-text-muted); margin-top: var(--space-1); }
+  .country-card__sep { margin: 0 var(--space-2); color: var(--color-text-subtle); }
+  .country-card__go { color: var(--color-accent); font-size: var(--text-xl); }
+
+  .developers { margin-top: var(--space-10); }
+  .dev-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    gap: var(--space-4);
+    margin-top: var(--space-4);
+  }
+  .dev-card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: var(--space-5);
+  }
+  .dev-card h3 { margin-top: 0; }
+  .dev-card__desc { color: var(--color-text-muted); font-size: var(--text-sm); }
+  .dev-card pre {
+    background: var(--color-surface-alt);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    padding: var(--space-3);
+    overflow-x: auto;
+    margin: 0 0 var(--space-4);
+  }
+</style>

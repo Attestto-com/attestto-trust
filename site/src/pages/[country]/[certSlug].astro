@@ -1,0 +1,173 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import RoleBadge from '../../components/RoleBadge.astro';
+import ValidityChip from '../../components/ValidityChip.astro';
+import CopyValue from '../../components/CopyValue.astro';
+import { COUNTRIES, loadCountry, chainOf, pemHref } from '../../lib/trust.js';
+
+export function getStaticPaths() {
+  const paths = [];
+  for (const c of COUNTRIES) {
+    const data = loadCountry(c.code);
+    for (const cert of data.certs) {
+      paths.push({
+        params: { country: c.code, certSlug: cert.slug },
+        props: { code: c.code, slug: cert.slug },
+      });
+    }
+  }
+  return paths;
+}
+
+const { code, slug } = Astro.props;
+const data = loadCountry(code);
+const cert = data.certs.find((c) => c.slug === slug);
+const chain = chainOf(cert);
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const fmt = (iso) =>
+  new Date(iso).toLocaleString('en-CA', {
+    year: 'numeric',
+    month: 'short',
+    day: '2-digit',
+    hour: '2-digit',
+    minute: '2-digit',
+    timeZoneName: 'short',
+  });
+const selfSigned = cert.issuer === cert.subject;
+---
+<BaseLayout
+  title={cert.subjectDisplay}
+  description={`Certificate details for ${cert.subjectDisplay} (${data.name} PKI). SHA-256, validity, issuer chain and .pem download.`}
+>
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+      <li><a href={`${base}/`}>Home</a></li>
+      <li><a href={`${base}/${code}`}>{data.name}</a></li>
+      <li aria-current="page">{cert.subjectDisplay}</li>
+    </ol>
+  </nav>
+
+  <header class="detail-head">
+    <div class="detail-head__badges">
+      <RoleBadge role={cert.role} />
+      <ValidityChip validity={cert.validity} />
+    </div>
+    <h1>{cert.subjectDisplay}</h1>
+    <p class="detail-head__sub">{data.name} · Published by {data.authority}</p>
+    <div class="detail-head__actions">
+      <a class="btn btn--primary" href={pemHref(code, cert.file)} download>Download .pem</a>
+      <a class="btn" href={`${base}/${code}`}>Back to {data.name}</a>
+    </div>
+  </header>
+
+  {cert.orphan && (
+    <p class="notice">
+      The issuer "{cert.issuerDisplay}" is not present in this mirror, so the chain below starts at
+      this certificate.
+    </p>
+  )}
+
+  <section class="panel" aria-labelledby="chain-h">
+    <h2 id="chain-h">Certificate chain</h2>
+    <p class="panel__hint">Trust path from the root down to this certificate.</p>
+    <ol class="chain">
+      {chain.map((node, i) => (
+        <li class={`chain__item${node.slug === cert.slug ? ' chain__item--current' : ''}`}>
+          <span class="chain__depth" aria-hidden="true">{i === 0 ? 'Root' : `L${i}`}</span>
+          <div class="chain__body">
+            {node.slug === cert.slug ? (
+              <strong>{node.subjectDisplay}</strong>
+            ) : (
+              <a href={`${base}/${code}/${node.slug}`}>{node.subjectDisplay}</a>
+            )}
+            <RoleBadge role={node.role} />
+          </div>
+        </li>
+      ))}
+    </ol>
+  </section>
+
+  <section class="panel" aria-labelledby="fields-h">
+    <h2 id="fields-h">Certificate fields</h2>
+    <dl class="kv">
+      <dt>Subject (CN)</dt>
+      <dd>{cert.subjectDisplay}</dd>
+
+      <dt>Issuer (CN)</dt>
+      <dd>{selfSigned ? `${cert.issuerDisplay} (self-signed root)` : cert.issuerDisplay}</dd>
+
+      <dt>Role</dt>
+      <dd><RoleBadge role={cert.role} /></dd>
+
+      <dt>Validity</dt>
+      <dd><ValidityChip validity={cert.validity} /></dd>
+
+      <dt>Valid from</dt>
+      <dd class="mono"><time datetime={cert.validFrom}>{fmt(cert.validFrom)}</time></dd>
+
+      <dt>Valid to</dt>
+      <dd class="mono"><time datetime={cert.validTo}>{fmt(cert.validTo)}</time></dd>
+
+      <dt>Serial number</dt>
+      <dd><CopyValue value={cert.serialNumber} label="serial number" /></dd>
+
+      <dt>SHA-256</dt>
+      <dd><CopyValue value={cert.sha256} label="SHA-256 fingerprint" /></dd>
+
+      <dt>File</dt>
+      <dd><code class="mono">{cert.file}</code></dd>
+    </dl>
+  </section>
+
+  <section class="panel panel--muted" aria-labelledby="prov-h">
+    <h2 id="prov-h">Provenance</h2>
+    <p>
+      This certificate is public data published by {data.authorityUrl
+        ? <a href={data.authorityUrl} rel="noopener">{data.authority}</a>
+        : data.authority}. This site mirrors and structures it; it is not the issuing authority.
+      The SHA-256 fingerprint above is provided as tamper evidence: recompute it against the
+      downloaded <code>.pem</code> to confirm integrity.
+    </p>
+    <p class="panel__hint">
+      Mirror snapshot generated <time datetime={data.generatedAt}>{fmt(data.generatedAt)}</time>.
+    </p>
+  </section>
+</BaseLayout>
+
+<style>
+  .detail-head { margin-bottom: var(--space-6); }
+  .detail-head__badges { display: flex; gap: var(--space-2); flex-wrap: wrap; margin-bottom: var(--space-3); }
+  .detail-head h1 { margin: 0 0 var(--space-2); word-break: break-word; }
+  .detail-head__sub { color: var(--color-text-muted); font-size: var(--text-sm); margin-bottom: var(--space-4); }
+  .detail-head__actions { display: flex; gap: var(--space-2); flex-wrap: wrap; }
+
+  .panel {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: var(--space-5);
+    margin-bottom: var(--space-5);
+  }
+  .panel--muted { background: var(--color-surface-alt); }
+  .panel h2 { margin-top: 0; font-size: var(--text-lg); }
+  .panel__hint { color: var(--color-text-muted); font-size: var(--text-sm); }
+
+  .chain { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-2); }
+  .chain__item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    padding: var(--space-3);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    background: var(--color-surface);
+  }
+  .chain__item--current { border-color: var(--color-accent); background: var(--color-accent-soft); }
+  .chain__depth {
+    font-size: var(--text-xs);
+    font-weight: 700;
+    color: var(--color-text-subtle);
+    min-width: 2.5rem;
+  }
+  .chain__body { display: flex; align-items: center; gap: var(--space-3); flex-wrap: wrap; }
+</style>

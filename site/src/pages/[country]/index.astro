@@ -1,0 +1,149 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import TreeNode from '../../components/TreeNode.astro';
+import { COUNTRIES, loadCountry } from '../../lib/trust.js';
+
+export function getStaticPaths() {
+  return COUNTRIES.map((c) => ({ params: { country: c.code } }));
+}
+
+const { country } = Astro.params;
+const data = loadCountry(country);
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const fmtDate = (iso) =>
+  new Date(iso).toLocaleDateString('en-CA', {
+    year: 'numeric',
+    month: 'short',
+    day: '2-digit',
+  });
+
+const rootCount = data.roots.filter((c) => c.role === 'root' || c.issuer === c.subject).length;
+const intermediateCount = data.certs.filter((c) => c.role === 'intermediate').length;
+---
+<BaseLayout
+  title={`${data.name} PKI trust anchors`}
+  description={`Certificate authority hierarchy for ${data.name}: ${data.count} trust anchors published by ${data.authority}.`}
+>
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+      <li><a href={`${base}/`}>Home</a></li>
+      <li aria-current="page">{data.name}</li>
+    </ol>
+  </nav>
+
+  <header class="country-head">
+    <div class="country-head__title">
+      <span class="country-head__flag" aria-hidden="true">{data.flag}</span>
+      <div>
+        <h1>{data.name}</h1>
+        <p class="country-head__authority">
+          Published by {data.authorityUrl
+            ? <a href={data.authorityUrl} rel="noopener">{data.authority}</a>
+            : data.authority}
+        </p>
+      </div>
+    </div>
+    <dl class="country-head__stats">
+      <div><dt>Certificates</dt><dd>{data.count}</dd></div>
+      <div><dt>Roots</dt><dd>{rootCount}</dd></div>
+      <div><dt>Intermediates</dt><dd>{intermediateCount}</dd></div>
+      <div><dt>Updated</dt><dd><time datetime={data.generatedAt}>{fmtDate(data.generatedAt)}</time></dd></div>
+    </dl>
+  </header>
+
+  <div class="filter">
+    <label class="visually-hidden" for="cert-search">Filter certificates</label>
+    <input
+      id="cert-search"
+      type="search"
+      class="filter__input"
+      placeholder="Filter by subject, issuer, serial or fingerprint…"
+      autocomplete="off"
+      aria-controls="ca-tree"
+    />
+    <p class="filter__status" id="filter-status" role="status" aria-live="polite"></p>
+  </div>
+
+  <section aria-label={`Certificate authority hierarchy for ${data.name}`}>
+    <ul class="tree" id="ca-tree" role="tree">
+      {data.roots.map((root) => <TreeNode cert={root} code={data.code} depth={0} />)}
+    </ul>
+    <p class="no-results" id="no-results" hidden>No certificates match your filter.</p>
+  </section>
+</BaseLayout>
+
+<script>
+  // Client-side filter over the rendered tree. Cards carry a data-search string.
+  const input = document.getElementById('cert-search');
+  const cards = Array.from(document.querySelectorAll('.cert-card'));
+  const status = document.getElementById('filter-status');
+  const noResults = document.getElementById('no-results');
+
+  function apply(query) {
+    const q = query.trim().toLowerCase();
+    let visible = 0;
+    for (const card of cards) {
+      const hay = card.getAttribute('data-search') || '';
+      const match = q === '' || hay.includes(q);
+      // Hide the whole tree node (card + its subtree wrapper) when filtered out.
+      const node = card.closest('.tree-node');
+      if (node) node.style.display = match ? '' : 'none';
+      if (match) visible++;
+    }
+    if (status) {
+      status.textContent = q === '' ? '' : `${visible} of ${cards.length} certificates shown`;
+    }
+    if (noResults) noResults.hidden = visible !== 0;
+  }
+
+  input?.addEventListener('input', (e) => apply(e.target.value));
+</script>
+
+<style>
+  .country-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: var(--space-5);
+    flex-wrap: wrap;
+    margin-bottom: var(--space-6);
+    padding-bottom: var(--space-5);
+    border-bottom: 1px solid var(--color-border);
+  }
+  .country-head__title { display: flex; gap: var(--space-4); align-items: center; }
+  .country-head__flag { font-size: 2.75rem; line-height: 1; }
+  .country-head h1 { margin: 0; }
+  .country-head__authority { margin: var(--space-1) 0 0; color: var(--color-text-muted); font-size: var(--text-sm); }
+  .country-head__stats {
+    display: flex;
+    gap: var(--space-5);
+    margin: 0;
+    flex-wrap: wrap;
+  }
+  .country-head__stats div { text-align: right; }
+  .country-head__stats dt { font-size: var(--text-xs); color: var(--color-text-subtle); text-transform: uppercase; letter-spacing: 0.05em; }
+  .country-head__stats dd { margin: 0; font-size: var(--text-xl); font-weight: 700; }
+
+  .filter { margin-bottom: var(--space-6); }
+  .filter__input {
+    width: 100%;
+    max-width: 34rem;
+    font-size: var(--text-base);
+    font-family: var(--font-sans);
+    padding: var(--space-3) var(--space-4);
+    border: 1px solid var(--color-border-strong);
+    border-radius: var(--radius-md);
+    background: var(--color-surface);
+    color: var(--color-text);
+  }
+  .filter__input:focus-visible { box-shadow: var(--focus-ring); border-color: var(--color-accent); }
+  .filter__status { margin: var(--space-2) 0 0; font-size: var(--text-sm); color: var(--color-text-muted); }
+
+  .tree { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-4); }
+  .no-results { color: var(--color-text-muted); }
+
+  @media (max-width: 640px) {
+    .country-head__stats { gap: var(--space-4); }
+    .country-head__stats div { text-align: left; }
+  }
+</style>

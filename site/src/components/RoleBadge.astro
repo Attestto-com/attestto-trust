@@ -1,0 +1,6 @@
+---
+import { ROLE_META } from '../lib/trust.js';
+const { role } = Astro.props;
+const meta = ROLE_META[role] || ROLE_META.leaf;
+---
+<span class={`badge badge--${meta.tone}`}>{meta.label}</span>

@@ -1,0 +1,16 @@
+{
+  "name": "@attestto/trust-site",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Public human-readable directory for the @attestto/trust PKI trust anchors. Reads ../countries at build time. Not the published npm package.",
+  "type": "module",
+  "scripts": {
+    "prebuild": "node scripts/copy-pems.mjs",
+    "build": "node scripts/copy-pems.mjs && astro build",
+    "preview": "astro preview",
+    "check": "astro check"
+  },
+  "dependencies": {
+    "astro": "^5.6.1"
+  }
+}
