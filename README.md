@@ -56,6 +56,7 @@ sha256sum attestto-trust/countries/cr/current/root-ca.pem
 | Brazil | [`br/`](countries/br) | ✅ live | AC Raiz v5, v10, v11, v12 |
 | Mexico | `mx/` | planned | — |
 | Argentina | [`ar/`](countries/ar) | ✅ live | AC Raíz + Autoridad Certificante Firma Digital |
+| Spain | [`es/`](countries/es) | ✅ live | AC Raíz FNMT-RCM, AC FNMT Usuarios |
 | Colombia | `co/` | planned | — |
 | Chile | `cl/` | planned | — |
 | Peru | `pe/` | planned | — |
