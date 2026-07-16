@@ -1,6 +1,16 @@
 ---
 import { ROLE_META } from '../lib/trust.js';
+import { TRANSLATIONS } from '../lib/i18n.js';
+
 const { role } = Astro.props;
 const meta = ROLE_META[role] || ROLE_META.leaf;
+
+const lang = Astro.currentLocale === 'es' ? 'es' : 'en';
+const t = TRANSLATIONS[lang];
+
+let label = meta.label;
+if (role === 'root') label = t.roleRoot;
+else if (role === 'intermediate') label = t.roleIntermediate;
+else if (role === 'leaf') label = t.roleLeaf;
 ---
-<span class={`badge badge--${meta.tone}`}>{meta.label}</span>
+<span class={`badge badge--${meta.tone}`}>{label}</span>

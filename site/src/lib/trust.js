@@ -33,6 +33,13 @@ export const COUNTRIES = [
     authority: 'Autoridad Certificante Raiz de la Republica Argentina',
     authorityUrl: 'https://www.argentina.gob.ar/jefatura/innovacion-publica/firma-digital',
   },
+  {
+    code: 'es',
+    name: 'Spain',
+    flag: '\u{1F1EA}\u{1F1F8}',
+    authority: 'FNMT-RCM (Fábrica Nacional de Moneda y Timbre)',
+    authorityUrl: 'https://www.sede.fnmt.gob.es/',
+  },
 ];
 
 // The build "now". Validity chips are computed against this instant.
