@@ -32,20 +32,23 @@ import * as trust from '../index.js'
 import * as cr from '../countries/cr/index.js'
 import * as br from '../countries/br/index.js'
 import * as ar from '../countries/ar/index.js'
+import * as es from '../countries/es/index.js'
 
 // ── Root exports ───────────────────────────────────────────────────
 
 describe('root index.js exports', () => {
-  it('exports cr, br, ar namespaces', () => {
+  it('exports cr, br, ar, es namespaces', () => {
     assert.ok(trust.cr, 'cr namespace missing')
     assert.ok(trust.br, 'br namespace missing')
     assert.ok(trust.ar, 'ar namespace missing')
+    assert.ok(trust.es, 'es namespace missing')
   })
 
   it('each namespace has ALL_CERTS array', () => {
     assert.ok(Array.isArray(trust.cr.ALL_CERTS), 'cr.ALL_CERTS not an array')
     assert.ok(Array.isArray(trust.br.ALL_CERTS), 'br.ALL_CERTS not an array')
     assert.ok(Array.isArray(trust.ar.ALL_CERTS), 'ar.ALL_CERTS not an array')
+    assert.ok(Array.isArray(trust.es.ALL_CERTS), 'es.ALL_CERTS not an array')
   })
 })
 
@@ -161,12 +164,47 @@ describe('Argentina (ar)', () => {
   })
 })
 
+// ── Country: Spain ──────────────────────────────────────────────────
+
+describe('Spain (es)', () => {
+  it('exports 2 certificates (root + users)', () => {
+    assert.equal(es.ALL_CERTS.length, 2, `Expected 2, got ${es.ALL_CERTS.length}`)
+  })
+
+  it('includes AC Raiz and AC Usuarios', () => {
+    const names = es.ALL_CERTS.map(c => c.exportName)
+    assert.ok(names.includes('AC_RAIZ_FNMT_RCM'), 'Missing AC Raíz')
+    assert.ok(names.includes('AC_FNMT_USUARIOS'), 'Missing AC Usuarios')
+  })
+
+  it('all PEM strings are valid format', () => {
+    for (const cert of es.ALL_CERTS) {
+      assert.ok(cert.pem.startsWith('-----BEGIN CERTIFICATE-----'), `${cert.name}: bad PEM header`)
+      assert.ok(cert.pem.trimEnd().endsWith('-----END CERTIFICATE-----'), `${cert.name}: bad PEM footer`)
+    }
+  })
+
+  it('manifest SHA-256 hashes match DER content of PEM files', () => {
+    const manifestPath = join(ROOT, 'countries/es/current/manifest.json')
+    assert.ok(existsSync(manifestPath), 'manifest.json missing')
+    const manifest = JSON.parse(readFileSync(manifestPath, 'utf-8'))
+    for (const entry of manifest.certificates) {
+      const pemPath = join(ROOT, 'countries/es/current', entry.file)
+      assert.ok(existsSync(pemPath), `PEM file missing: ${entry.file}`)
+      const pem = readFileSync(pemPath, 'utf-8')
+      const der = pemToDer(pem)
+      const sha256 = createHash('sha256').update(der).digest('hex')
+      assert.equal(sha256, entry.sha256, `SHA-256 mismatch for ${entry.file}`)
+    }
+  })
+})
+
 // ── Cross-country checks ───────────────────────────────────────────
 
 describe('cross-country integrity', () => {
-  it('total trust store has 14 certificates (CR 8 + BR 4 + AR 2)', () => {
-    const total = cr.ALL_CERTS.length + br.ALL_CERTS.length + ar.ALL_CERTS.length
-    assert.equal(total, 14, `Expected 14 total, got ${total}`)
+  it('total trust store has 16 certificates (CR 8 + BR 4 + AR 2 + ES 2)', () => {
+    const total = cr.ALL_CERTS.length + br.ALL_CERTS.length + ar.ALL_CERTS.length + es.ALL_CERTS.length
+    assert.equal(total, 16, `Expected 16 total, got ${total}`)
   })
 
   it('no duplicate export names across countries', () => {
@@ -174,13 +212,14 @@ describe('cross-country integrity', () => {
       ...cr.ALL_CERTS.map(c => c.exportName),
       ...br.ALL_CERTS.map(c => c.exportName),
       ...ar.ALL_CERTS.map(c => c.exportName),
+      ...es.ALL_CERTS.map(c => c.exportName),
     ]
     const unique = new Set(allNames)
     assert.equal(unique.size, allNames.length, 'Duplicate export names found')
   })
 
   it('every PEM decodes to valid base64 content', () => {
-    const all = [...cr.ALL_CERTS, ...br.ALL_CERTS, ...ar.ALL_CERTS]
+    const all = [...cr.ALL_CERTS, ...br.ALL_CERTS, ...ar.ALL_CERTS, ...es.ALL_CERTS]
     for (const cert of all) {
       const b64 = cert.pem
         .replace('-----BEGIN CERTIFICATE-----', '')
