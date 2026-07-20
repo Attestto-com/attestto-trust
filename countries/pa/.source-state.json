@@ -1,0 +1,44 @@
+{
+  "pageUrl": "https://www.firmaelectronica.gob.pa/configuracion-firma-electronica.html",
+  "pageTlsFingerprintSha256": "e1bad0f205ce5387a08f08e878396a661ed20ef968ea37d7a2fd0c29f7269b1d",
+  "lastRun": "2026-07-20T19:03:47.862Z",
+  "sources": {
+    "https://www.firmaelectronica.gob.pa/cacerts/caraiz.crt": {
+      "org": "DNFE",
+      "filename": "caraiz.crt",
+      "extension": "crt",
+      "sha256": "4fa727e3ce87f28f05ae388c4ebe21d4a31136efd4983f6ac49a36b4882703d1",
+      "contentLength": "1609",
+      "lastModifiedHeader": "Tue, 05 Dec 2023 19:52:16 GMT",
+      "etag": "\"649-60bc89250e358\"",
+      "firstSeen": "2026-07-20T19:03:45.436Z",
+      "lastChanged": "2026-07-20T19:03:45.436Z",
+      "lastSeen": "2026-07-20T19:03:45.436Z"
+    },
+    "https://www.firmaelectronica.gob.pa/cacerts/cagob.crt": {
+      "org": "DNFE",
+      "filename": "cagob.crt",
+      "extension": "crt",
+      "sha256": "d32fd3dc66775273a4b6f403a85df446c56590ef4b133e51f1905eb81ce2e82e",
+      "contentLength": "1501",
+      "lastModifiedHeader": "Tue, 05 Dec 2023 19:52:16 GMT",
+      "etag": "\"5dd-60bc89250e358\"",
+      "firstSeen": "2026-07-20T19:03:46.921Z",
+      "lastChanged": "2026-07-20T19:03:46.921Z",
+      "lastSeen": "2026-07-20T19:03:46.921Z"
+    },
+    "https://www.firmaelectronica.gob.pa/cacerts/capc2.crt": {
+      "org": "DNFE",
+      "filename": "capc2.crt",
+      "extension": "crt",
+      "sha256": "f68ac5958dd998e83c5e8b6337bf2f7a91fe956e13d340eaa1190c410c0975bb",
+      "contentLength": "1494",
+      "lastModifiedHeader": "Tue, 05 Dec 2023 19:52:16 GMT",
+      "etag": "\"5d6-60bc89250e358\"",
+      "firstSeen": "2026-07-20T19:03:47.861Z",
+      "lastChanged": "2026-07-20T19:03:47.861Z",
+      "lastSeen": "2026-07-20T19:03:47.861Z"
+    }
+  },
+  "knownGaps": []
+}
