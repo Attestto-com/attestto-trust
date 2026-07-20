@@ -1,0 +1,217 @@
+// Translation dictionary for Attestto Trust Directory
+export const TRANSLATIONS = {
+  en: {
+    // Layout
+    siteTitle: 'Attestto Trust',
+    siteDesc: 'Independent public mirror of national PKI trust anchors, structured and human-readable.',
+    navCountries: 'Countries',
+    navDevs: 'For developers',
+    bannerText: 'Independent public mirror of national PKI trust anchors, not an authority.',
+    bannerSub: 'Certificates are published by each national PKI (e.g., BCCR for Costa Rica); this site mirrors and structures them.',
+    footerLine1: '<strong>Attestto Trust</strong> is an independent public mirror of national PKI trust anchors. It is not a certification authority and does not issue certificates.',
+    footerLine2: 'Certificates shown are public data published by each national PKI. Each entry lists its SHA-256 fingerprint as tamper evidence. Always verify against the authoritative source.',
+    footerLine3: 'Machine-readable data: the <a href="https://www.npmjs.com/package/@attestto/trust">@attestto/trust</a> npm package and the <code>did:pki</code> resolver.',
+    // Home
+    homeTitle: 'PKI trust anchor directory',
+    homeH1: 'National PKI trust anchors, structured and readable',
+    homeLede: 'This directory mirrors the root and intermediate certificate authorities behind national digital signature systems, and presents them as a clear, verifiable hierarchy. Each certificate lists its SHA-256 fingerprint (tamper evidence), its validity window, and a direct download of the original <code>.pem</code>.',
+    homeCountriesH2: 'Countries',
+    homeCertSuffix: 'certificate',
+    homeCertsSuffix: 'certificates',
+    homeUpdated: 'updated',
+    homeDevsH2: 'For developers',
+    homeDevsIntro: 'This site is the human-readable face of the same data. For programmatic access, install the published npm package. The <code>did:pki</code> resolver is the machine and API face of these trust anchors.',
+    homeNpmH3: 'npm package',
+    homeNpmDesc: 'Import the trust anchors and per-country manifests directly into your build.',
+    homeNpmBtn: 'View on npm',
+    homeResolverH3: 'did:pki resolver',
+    homeResolverDesc: 'Resolve and verify against these anchors programmatically as the machine-readable, API face of the directory.',
+    homeResolverBtn: 'Learn more',
+    // Country Page
+    countryNavHome: 'Home',
+    countryPublishedBy: 'Published by',
+    countryCertsStat: 'Certificates',
+    countryRootsStat: 'Roots',
+    countryIntermediatesStat: 'Intermediates',
+    countryUpdatedStat: 'Updated',
+    countrySearchLabel: 'Filter certificates',
+    countrySearchPlaceholder: 'Filter by subject, issuer, serial or fingerprint...',
+    countryNoResults: 'No certificates match your filter.',
+    countryFilterStatus: '{0} of {1} certificates shown',
+    countryHierarchyAria: 'Certificate authority hierarchy for {0}',
+    // Cert Detail Page
+    certNavHome: 'Home',
+    certDownloadPem: 'Download .pem',
+    certBackTo: 'Back to {0}',
+    certOrphanNotice: 'The issuer "{0}" is not present in this mirror, so the chain below starts at this certificate.',
+    certChainH2: 'Certificate chain',
+    certChainHint: 'Trust path from the root down to this certificate.',
+    certChainRoot: 'Root',
+    certFieldsH2: 'Certificate fields',
+    certFieldSubject: 'Subject (CN)',
+    certFieldIssuer: 'Issuer (CN)',
+    certFieldSelfSignedRoot: '(self-signed root)',
+    certFieldRole: 'Role',
+    certFieldValidity: 'Validity',
+    certFieldValidFrom: 'Valid from',
+    certFieldValidTo: 'Valid to',
+    certFieldSerial: 'Serial number',
+    certFieldSha256: 'SHA-256',
+    certFieldFile: 'File',
+    certProvenanceH2: 'Provenance',
+    certProvenanceText: 'This certificate is public data published by {0}. This site mirrors and structures it; it is not the issuing authority. The SHA-256 fingerprint above is provided as tamper evidence: recompute it against the downloaded <code>.pem</code> to confirm integrity.',
+    certProvenanceGenerated: 'Mirror snapshot generated {0}.',
+    // Cert Card
+    cardIssuer: 'Issuer',
+    cardSelfSigned: 'Self-signed (root)',
+    cardValid: 'Valid',
+    cardTo: 'to',
+    cardSerial: 'Serial',
+    cardSha256: 'SHA-256',
+    cardOrphanNotice: 'Issuer "{0}" is not present in this mirror, so the chain cannot be fully resolved here.',
+    cardDetails: 'Details',
+    cardDownloadPem: 'Download .pem',
+    // Copy Value
+    copyLabel: 'Copy',
+    copyAriaLabel: 'Copy {0} to clipboard',
+    copySuccess: 'Copied',
+    // Role Badge
+    roleRoot: 'Root CA',
+    roleIntermediate: 'Intermediate CA',
+    roleLeaf: 'End entity',
+    // Validity Chip
+    validityValid: 'Valid',
+    validityExpiring: 'Expiring soon',
+    validityExpired: 'Expired',
+    validityPending: 'Not yet valid',
+    validityDaysLeft: '{0} days left',
+    validityDayLeft: '{0} day left',
+    validityDaysAgo: '{0} days ago',
+    validityDayAgo: '{0} day ago',
+  },
+  es: {
+    // Layout
+    siteTitle: 'Attestto Trust',
+    siteDesc: 'Espejo público independiente de anclas de confianza PKI nacionales, estructurado y legible.',
+    navCountries: 'Países',
+    navDevs: 'Para desarrolladores',
+    bannerText: 'Espejo público independiente de anclas de confianza PKI nacionales, no una autoridad.',
+    bannerSub: 'Los certificados son publicados por cada PKI nacional (ej. BCCR en Costa Rica); este sitio los replica y estructura.',
+    footerLine1: '<strong>Attestto Trust</strong> es un espejo público independiente de anclas de confianza PKI nacionales. No es una autoridad de certificación y no emite certificados.',
+    footerLine2: 'Los certificados mostrados son datos públicos publicados por cada PKI nacional. Cada entrada incluye su huella digital SHA-256 como evidencia de integridad. Siempre verifique contra la fuente oficial autoritativa.',
+    footerLine3: 'Datos legibles por máquina: el paquete npm <a href="https://www.npmjs.com/package/@attestto/trust">@attestto/trust</a> y el resolutor <code>did:pki</code>.',
+    // Home
+    homeTitle: 'Directorio de anclas de confianza PKI',
+    homeH1: 'Anclas de confianza PKI nacionales, estructuradas y legibles',
+    homeLede: 'Este directorio replica las autoridades de certificación raíz e intermedias detrás de los sistemas nacionales de firma digital, y las presenta como una jerarquía clara y verificable. Cada certificado muestra su huella digital SHA-256 (evidencia de integridad), su ventana de validez y una descarga directa del <code>.pem</code> original.',
+    homeCountriesH2: 'Países',
+    homeCertSuffix: 'certificado',
+    homeCertsSuffix: 'certificados',
+    homeUpdated: 'actualizado',
+    homeDevsH2: 'Para desarrolladores',
+    homeDevsIntro: 'Este sitio es la cara legible para humanos de los mismos datos. Para acceso programático, instale el paquete npm publicado. El resolutor <code>did:pki</code> es la interfaz de API y máquina de estas anclas de confianza.',
+    homeNpmH3: 'paquete npm',
+    homeNpmDesc: 'Importe las anclas de confianza y los manifiestos por país directamente en su compilación.',
+    homeNpmBtn: 'Ver en npm',
+    homeResolverH3: 'resolutor did:pki',
+    homeResolverDesc: 'Resuelva y verifique contra estas anclas programáticamente como la interfaz de API y máquina del directorio.',
+    homeResolverBtn: 'Más información',
+    // Country Page
+    countryNavHome: 'Inicio',
+    countryPublishedBy: 'Publicado por',
+    countryCertsStat: 'Certificados',
+    countryRootsStat: 'Raíces',
+    countryIntermediatesStat: 'Intermedias',
+    countryUpdatedStat: 'Actualizado',
+    countrySearchLabel: 'Filtrar certificados',
+    countrySearchPlaceholder: 'Filtrar por sujeto, emisor, serie o huella...',
+    countryNoResults: 'Ningún certificado coincide con el filtro.',
+    countryFilterStatus: 'mostrados {0} de {1} certificados',
+    countryHierarchyAria: 'Jerarquía de autoridades de certificación para {0}',
+    // Cert Detail Page
+    certNavHome: 'Inicio',
+    certDownloadPem: 'Descargar .pem',
+    certBackTo: 'Volver a {0}',
+    certOrphanNotice: 'El emisor "{0}" no está presente en este espejo, por lo que la siguiente cadena comienza en este certificado.',
+    certChainH2: 'Cadena de certificados',
+    certChainHint: 'Ruta de confianza desde la raíz hasta este certificado.',
+    certChainRoot: 'Raíz',
+    certFieldsH2: 'Campos del certificado',
+    certFieldSubject: 'Sujeto (CN)',
+    certFieldIssuer: 'Emisor (CN)',
+    certFieldSelfSignedRoot: '(raíz autofirmada)',
+    certFieldRole: 'Rol',
+    certFieldValidity: 'Validez',
+    certFieldValidFrom: 'Válido desde',
+    certFieldValidTo: 'Válido hasta',
+    certFieldSerial: 'Número de serie',
+    certFieldSha256: 'SHA-256',
+    certFieldFile: 'Archivo',
+    certProvenanceH2: 'Procedencia',
+    certProvenanceText: 'Este certificado contiene datos públicos publicados por {0}. Este sitio los replica y estructura; no es la autoridad emisora. La huella digital SHA-256 anterior se proporciona como evidencia de integridad: vuelva a calcularla contra el archivo <code>.pem</code> descargado para confirmar su integridad.',
+    certProvenanceGenerated: 'Instantánea del espejo generada el {0}.',
+    // Cert Card
+    cardIssuer: 'Emisor',
+    cardSelfSigned: 'Autofirmado (raíz)',
+    cardValid: 'Validez',
+    cardTo: 'a',
+    cardSerial: 'Serie',
+    cardSha256: 'SHA-256',
+    cardOrphanNotice: 'El emisor "{0}" no está presente en este espejo, por lo que la cadena no se puede verificar completamente aquí.',
+    cardDetails: 'Detalles',
+    cardDownloadPem: 'Descargar .pem',
+    // Copy Value
+    copyLabel: 'Copiar',
+    copyAriaLabel: 'Copiar {0} al portapapeles',
+    copySuccess: 'Copiado',
+    // Role Badge
+    roleRoot: 'CA Raíz',
+    roleIntermediate: 'CA Intermedia',
+    roleLeaf: 'Entidad final',
+    // Validity Chip
+    validityValid: 'Válido',
+    validityExpiring: 'Expira pronto',
+    validityExpired: 'Expirado',
+    validityPending: 'Aún no válido',
+    validityDaysLeft: 'quedan {0} días',
+    validityDayLeft: 'queda {0} día',
+    validityDaysAgo: 'hace {0} días',
+    validityDayAgo: 'hace {0} día',
+  }
+};
+
+// Localized country names
+export const getCountryName = (code, lang) => {
+  const names = {
+    cr: { en: 'Costa Rica', es: 'Costa Rica' },
+    br: { en: 'Brazil', es: 'Brasil' },
+    ar: { en: 'Argentina', es: 'Argentina' },
+    es: { en: 'Spain', es: 'España' }
+  };
+  const l = lang === 'es' ? 'es' : 'en';
+  return names[code]?.[l] || names[code]?.en || code;
+};
+
+// Localized authority names
+export const getCountryAuthority = (code, lang) => {
+  const authorities = {
+    cr: {
+      en: 'BCCR (Banco Central de Costa Rica) / SINPE / MICITT Firma Digital',
+      es: 'BCCR (Banco Central de Costa Rica) / SINPE / MICITT Firma Digital'
+    },
+    br: {
+      en: 'ITI (Instituto Nacional de Tecnologia da Informacao) / ICP-Brasil',
+      es: 'ITI (Instituto Nacional de Tecnología de la Información) / ICP-Brasil'
+    },
+    ar: {
+      en: 'Autoridad Certificante Raiz de la Republica Argentina',
+      es: 'Autoridad Certificante Raíz de la República Argentina'
+    },
+    es: {
+      en: 'FNMT-RCM (Fábrica Nacional de Moneda y Timbre)',
+      es: 'FNMT-RCM (Fábrica Nacional de Moneda y Timbre)'
+    }
+  };
+  const l = lang === 'es' ? 'es' : 'en';
+  return authorities[code]?.[l] || authorities[code]?.en || '';
+};

@@ -3,12 +3,17 @@ import RoleBadge from './RoleBadge.astro';
 import ValidityChip from './ValidityChip.astro';
 import CopyValue from './CopyValue.astro';
 import { truncateMid, pemHref } from '../lib/trust.js';
+import { TRANSLATIONS } from '../lib/i18n.js';
 
 const { cert, code } = Astro.props;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
-const detailHref = `${base}/${code}/${cert.slug}`;
+
+const lang = Astro.currentLocale === 'es' ? 'es' : 'en';
+const t = TRANSLATIONS[lang];
+
+const detailHref = lang === 'es' ? `${base}/es/${code}/${cert.slug}` : `${base}/${code}/${cert.slug}`;
 const fmt = (iso) =>
-  new Date(iso).toLocaleDateString('en-CA', { year: 'numeric', month: 'short', day: '2-digit' });
+  new Date(iso).toLocaleDateString(lang === 'es' ? 'es-ES' : 'en-CA', { year: 'numeric', month: 'short', day: '2-digit' });
 ---
 <article
   class="cert-card"
@@ -26,34 +31,33 @@ const fmt = (iso) =>
 
   <dl class="cert-card__meta">
     <div>
-      <dt>Issuer</dt>
-      <dd>{cert.issuer === cert.subject ? 'Self-signed (root)' : cert.issuerDisplay}</dd>
+      <dt>{t.cardIssuer}</dt>
+      <dd>{cert.issuer === cert.subject ? t.cardSelfSigned : cert.issuerDisplay}</dd>
     </div>
     <div>
-      <dt>Valid</dt>
-      <dd><time datetime={cert.validFrom}>{fmt(cert.validFrom)}</time> to
+      <dt>{t.cardValid}</dt>
+      <dd><time datetime={cert.validFrom}>{fmt(cert.validFrom)}</time> {t.cardTo}
         <time datetime={cert.validTo}>{fmt(cert.validTo)}</time></dd>
     </div>
     <div>
-      <dt>Serial</dt>
+      <dt>{t.cardSerial}</dt>
       <dd><code class="mono" title={cert.serialNumber}>{truncateMid(cert.serialNumber, 10, 6)}</code></dd>
     </div>
     <div>
-      <dt>SHA-256</dt>
+      <dt>{t.cardSha256}</dt>
       <dd><CopyValue value={cert.sha256} label="SHA-256 fingerprint" truncate={true} /></dd>
     </div>
   </dl>
 
   {cert.orphan && (
     <p class="notice">
-      Issuer "{cert.issuerDisplay}" is not present in this mirror, so the chain cannot be fully
-      resolved here.
+      {t.cardOrphanNotice.replace('{0}', cert.issuerDisplay)}
     </p>
   )}
 
   <footer class="cert-card__actions">
-    <a class="btn" href={detailHref}>Details</a>
-    <a class="btn" href={pemHref(code, cert.file)} download>Download .pem</a>
+    <a class="btn" href={detailHref}>{t.cardDetails}</a>
+    <a class="btn" href={pemHref(code, cert.file)} download>{t.cardDownloadPem}</a>
   </footer>
 </article>
 

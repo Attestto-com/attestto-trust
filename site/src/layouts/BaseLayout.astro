@@ -1,16 +1,43 @@
 ---
 import '../styles/global.css';
+import { TRANSLATIONS } from '../lib/i18n.js';
+
+const lang = Astro.currentLocale === 'es' ? 'es' : 'en';
+const t = TRANSLATIONS[lang];
 
 const { title, description } = Astro.props;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
-const pageTitle = title ? `${title} · Attestto Trust` : 'Attestto Trust · PKI trust anchor directory';
-const desc =
-  description ||
-  'Independent public mirror of national PKI trust anchors, structured and human-readable.';
+const baseHref = lang === 'es' ? `${base}/es` : (base || '/');
+
+const pageTitle = title ? `${title} · ${t.siteTitle}` : `${t.siteTitle} · ${t.homeTitle}`;
+const desc = description || t.siteDesc;
+
+// Calculate alternate language link
+const currentPath = Astro.url.pathname;
+const baseNormalized = base === '' ? '' : base;
+let relativePath = currentPath;
+if (baseNormalized && currentPath.startsWith(baseNormalized)) {
+  relativePath = currentPath.slice(baseNormalized.length);
+}
+if (!relativePath.startsWith('/')) {
+  relativePath = '/' + relativePath;
+}
+
+let altLangHref;
+if (lang === 'es') {
+  const stripped = relativePath.replace(/^\/es(\/|$)/, '$1');
+  altLangHref = `${baseNormalized}${stripped === '' ? '/' : stripped}`;
+} else {
+  altLangHref = `${baseNormalized}/es${relativePath}`;
+}
+altLangHref = altLangHref.replace(/\/+/g, '/');
+
+const countriesHref = lang === 'es' ? `${base}/es#countries` : `${base}/#countries`;
+const devsHref = lang === 'es' ? `${base}/es#developers` : `${base}/#developers`;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang={lang}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -20,26 +47,28 @@ const desc =
     <link rel="canonical" href={new URL(Astro.url.pathname, Astro.site).href} />
   </head>
   <body>
-    <a class="skip-link" href="#main">Skip to content</a>
+    <a class="skip-link" href="#main">{lang === 'es' ? 'Saltar al contenido' : 'Skip to content'}</a>
 
     <header class="site-header">
       <div class="container site-header__inner">
-        <a class="brand" href={`${base}/`}>
+        <a class="brand" href={baseHref}>
           <span class="brand__mark">Attestto</span>
           <span class="brand__sub">Trust Directory</span>
         </a>
-        <nav class="site-nav" aria-label="Primary">
-          <a href={`${base}/#countries`}>Countries</a>
-          <a href={`${base}/#developers`}>For developers</a>
+        <nav class="site-nav" aria-label={lang === 'es' ? 'Principal' : 'Primary'}>
+          <a href={countriesHref}>{t.navCountries}</a>
+          <a href={devsHref}>{t.navDevs}</a>
+          <a href={altLangHref} class="lang-switch">
+            {lang === 'es' ? '🇺🇸 EN' : '🇪🇸 ES'}
+          </a>
         </nav>
       </div>
     </header>
 
     <div class="mirror-banner" role="note">
       <div class="container mirror-banner__inner">
-        <strong>Independent public mirror of national PKI trust anchors, not an authority.</strong>
-        Certificates are published by each national PKI (e.g., BCCR for Costa Rica); this site
-        mirrors and structures them.
+        <strong>{t.bannerText}</strong>
+        {t.bannerSub}
       </div>
     </div>
 
@@ -49,22 +78,13 @@ const desc =
 
     <footer class="site-footer">
       <div class="container">
-        <p>
-          <strong>Attestto Trust</strong> is an independent public mirror of national PKI trust
-          anchors. It is not a certification authority and does not issue certificates.
-        </p>
-        <p>
-          Certificates shown are public data published by each national PKI. Each entry lists its
-          SHA-256 fingerprint as tamper evidence. Always verify against the authoritative source.
-        </p>
-        <p>
-          Machine-readable data: the <a href="https://www.npmjs.com/package/@attestto/trust"
-            >@attestto/trust</a> npm package and the <code>did:pki</code> resolver.
-        </p>
+        <p set:html={t.footerLine1} />
+        <p>{t.footerLine2}</p>
+        <p set:html={t.footerLine3} />
       </div>
     </footer>
 
-    <script>
+    <script define:vars={{ lang, copiedText: t.copySuccess }}>
       // Copy-to-clipboard for hashes/serials. Progressive enhancement only.
       document.addEventListener('click', async (event) => {
         const target = event.target;
@@ -76,7 +96,7 @@ const desc =
         try {
           await navigator.clipboard.writeText(value);
           const original = btn.textContent;
-          btn.textContent = 'Copied';
+          btn.textContent = copiedText;
           btn.setAttribute('data-copied', 'true');
           window.setTimeout(() => {
             btn.textContent = original;

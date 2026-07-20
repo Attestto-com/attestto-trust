@@ -1,8 +1,8 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
-import TreeNode from '../../components/TreeNode.astro';
-import { COUNTRIES, loadCountry } from '../../lib/trust.js';
-import { TRANSLATIONS, getCountryName, getCountryAuthority } from '../../lib/i18n.js';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import TreeNode from '../../../components/TreeNode.astro';
+import { COUNTRIES, loadCountry } from '../../../lib/trust.js';
+import { TRANSLATIONS, getCountryName, getCountryAuthority } from '../../../lib/i18n.js';
 
 export function getStaticPaths() {
   return COUNTRIES.map((c) => ({ params: { country: c.code } }));
@@ -12,11 +12,11 @@ const { country } = Astro.params;
 const data = loadCountry(country);
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
-const lang = 'en';
+const lang = 'es';
 const t = TRANSLATIONS[lang];
 
 const fmtDate = (iso) =>
-  new Date(iso).toLocaleDateString('en-CA', {
+  new Date(iso).toLocaleDateString('es-ES', {
     year: 'numeric',
     month: 'short',
     day: '2-digit',
@@ -28,12 +28,12 @@ const filterStatusTemplate = t.countryFilterStatus;
 const totalCertsCount = data.certs.length;
 ---
 <BaseLayout
-  title={`${getCountryName(data.code, lang)} ${t.cardIssuer}s`}
-  description={t.countryHierarchyAria.replace('{0}', getCountryName(data.code, lang)) + `: ${data.count} trust anchors published by ${getCountryAuthority(data.code, lang)}.`}
+  title={`${getCountryName(data.code, lang)} - ${t.cardIssuer}s`}
+  description={t.countryHierarchyAria.replace('{0}', getCountryName(data.code, lang)) + `: ${data.count} anclas de confianza publicadas por ${getCountryAuthority(data.code, lang)}.`}
 >
   <nav class="breadcrumbs" aria-label="Breadcrumb">
     <ol>
-      <li><a href={`${base}/`}>{t.countryNavHome}</a></li>
+      <li><a href={`${base}/es/`}>{t.countryNavHome}</a></li>
       <li aria-current="page">{getCountryName(data.code, lang)}</li>
     </ol>
   </nav>

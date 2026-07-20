@@ -1,8 +1,14 @@
 ---
 // Renders a monospace (optionally truncated) value with a copy-to-clipboard button.
 import { truncateMid } from '../lib/trust.js';
+import { TRANSLATIONS } from '../lib/i18n.js';
+
 const { value, label = 'value', truncate = false, head = 10, tail = 10 } = Astro.props;
 const shown = truncate ? truncateMid(value, head, tail) : value;
+
+const lang = Astro.currentLocale === 'es' ? 'es' : 'en';
+const t = TRANSLATIONS[lang];
+const ariaLabel = t.copyAriaLabel.replace('{0}', label);
 ---
 <span class="hash-row">
   <code class="mono" title={value}>{shown}</code>
@@ -10,6 +16,6 @@ const shown = truncate ? truncateMid(value, head, tail) : value;
     type="button"
     class="copy"
     data-copy={value}
-    aria-label={`Copy ${label} to clipboard`}
-  >Copy</button>
+    aria-label={ariaLabel}
+  >{t.copyLabel}</button>
 </span>

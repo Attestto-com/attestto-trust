@@ -1,10 +1,10 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
-import RoleBadge from '../../components/RoleBadge.astro';
-import ValidityChip from '../../components/ValidityChip.astro';
-import CopyValue from '../../components/CopyValue.astro';
-import { COUNTRIES, loadCountry, chainOf, pemHref } from '../../lib/trust.js';
-import { TRANSLATIONS, getCountryName, getCountryAuthority } from '../../lib/i18n.js';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import RoleBadge from '../../../components/RoleBadge.astro';
+import ValidityChip from '../../../components/ValidityChip.astro';
+import CopyValue from '../../../components/CopyValue.astro';
+import { COUNTRIES, loadCountry, chainOf, pemHref } from '../../../lib/trust.js';
+import { TRANSLATIONS, getCountryName, getCountryAuthority } from '../../../lib/i18n.js';
 
 export function getStaticPaths() {
   const paths = [];
@@ -26,11 +26,11 @@ const cert = data.certs.find((c) => c.slug === slug);
 const chain = chainOf(cert);
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
-const lang = 'en';
+const lang = 'es';
 const t = TRANSLATIONS[lang];
 
 const fmt = (iso) =>
-  new Date(iso).toLocaleString('en-CA', {
+  new Date(iso).toLocaleString('es-ES', {
     year: 'numeric',
     month: 'short',
     day: '2-digit',
@@ -42,12 +42,12 @@ const selfSigned = cert.issuer === cert.subject;
 ---
 <BaseLayout
   title={cert.subjectDisplay}
-  description={`Certificate details for ${cert.subjectDisplay} (${getCountryName(code, lang)} PKI). SHA-256, validity, issuer chain and .pem download.`}
+  description={`Detalles del certificado para ${cert.subjectDisplay} (PKI de ${getCountryName(code, lang)}). SHA-256, validez, cadena de emisor y descarga de .pem.`}
 >
   <nav class="breadcrumbs" aria-label="Breadcrumb">
     <ol>
-      <li><a href={`${base}/`}>{t.certNavHome}</a></li>
-      <li><a href={`${base}/${code}`}>{getCountryName(code, lang)}</a></li>
+      <li><a href={`${base}/es/`}>{t.certNavHome}</a></li>
+      <li><a href={`${base}/es/${code}`}>{getCountryName(code, lang)}</a></li>
       <li aria-current="page">{cert.subjectDisplay}</li>
     </ol>
   </nav>
@@ -61,7 +61,7 @@ const selfSigned = cert.issuer === cert.subject;
     <p class="detail-head__sub">{getCountryName(code, lang)} · {t.countryPublishedBy} {getCountryAuthority(code, lang)}</p>
     <div class="detail-head__actions">
       <a class="btn btn--primary" href={pemHref(code, cert.file)} download>{t.certDownloadPem}</a>
-      <a class="btn" href={`${base}/${code}`}>{t.certBackTo.replace('{0}', getCountryName(code, lang))}</a>
+      <a class="btn" href={`${base}/es/${code}`}>{t.certBackTo.replace('{0}', getCountryName(code, lang))}</a>
     </div>
   </header>
 
@@ -82,7 +82,7 @@ const selfSigned = cert.issuer === cert.subject;
             {node.slug === cert.slug ? (
               <strong>{node.subjectDisplay}</strong>
             ) : (
-              <a href={`${base}/${code}/${node.slug}`}>{node.subjectDisplay}</a>
+              <a href={`${base}/es/${code}/${node.slug}`}>{node.subjectDisplay}</a>
             )}
             <RoleBadge role={node.role} />
           </div>

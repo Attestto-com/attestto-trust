@@ -1,15 +1,36 @@
 ---
 import { VALIDITY_META } from '../lib/trust.js';
+import { TRANSLATIONS } from '../lib/i18n.js';
+
 const { validity } = Astro.props;
 const meta = VALIDITY_META[validity.state] || VALIDITY_META.valid;
+
+const lang = Astro.currentLocale === 'es' ? 'es' : 'en';
+const t = TRANSLATIONS[lang];
+
+let label = meta.label;
+if (validity.state === 'valid') label = t.validityValid;
+else if (validity.state === 'expiring') label = t.validityExpiring;
+else if (validity.state === 'expired') label = t.validityExpired;
+else if (validity.state === 'pending') label = t.validityPending;
+
 let detail = '';
+const days = Math.abs(validity.daysToExpiry);
 if (validity.state === 'valid' || validity.state === 'expiring') {
-  detail = `${validity.daysToExpiry} day${validity.daysToExpiry === 1 ? '' : 's'} left`;
+  if (days === 1) {
+    detail = t.validityDayLeft.replace('{0}', String(days));
+  } else {
+    detail = t.validityDaysLeft.replace('{0}', String(days));
+  }
 } else if (validity.state === 'expired') {
-  detail = `${Math.abs(validity.daysToExpiry)} day${Math.abs(validity.daysToExpiry) === 1 ? '' : 's'} ago`;
+  if (days === 1) {
+    detail = t.validityDayAgo.replace('{0}', String(days));
+  } else {
+    detail = t.validityDaysAgo.replace('{0}', String(days));
+  }
 }
 ---
 <span class={`badge chip--${meta.tone}`} title={detail}>
   <span class="badge__dot" aria-hidden="true"></span>
-  {meta.label}{detail ? ` (${detail})` : ''}
+  {label}{detail ? ` (${detail})` : ''}
 </span>
