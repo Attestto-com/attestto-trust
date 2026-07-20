@@ -1,0 +1,33 @@
+{
+  "pageUrl": "https://iofe.indecopi.gob.pe/TSL/tsl-pe.xml",
+  "pageTlsFingerprintSha256": "3e529da46134cc1e99f98567ee730a047f94548bb90f254d990884e20bc0913d",
+  "lastRun": "2026-07-20T18:59:35.507Z",
+  "sources": {
+    "https://iofe.indecopi.gob.pe/TSL/tsl-pe.xml": {
+      "org": "INDECOPI TSL",
+      "filename": "tsl-pe.xml",
+      "extension": "xml",
+      "sha256": "53ee38f2d47bc7ac37322881f7b37f812a93532785ee797e566c9fa72f407bc8",
+      "contentLength": "338302",
+      "lastModifiedHeader": "Tue, 30 Jun 2026 16:06:08 GMT",
+      "etag": null,
+      "firstSeen": "2026-07-20T18:59:35.492Z",
+      "lastChanged": "2026-07-20T18:59:35.492Z",
+      "lastSeen": "2026-07-20T18:59:35.492Z"
+    }
+  },
+  "knownGaps": [
+    {
+      "org": "RENIEC/PERU",
+      "url": "https://iofe.indecopi.gob.pe/TSL/tsl-pe.xml",
+      "filename": "EREP (DNIE NATURAL PERSON) BY RENIEC",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "ENTRUST",
+      "url": "https://iofe.indecopi.gob.pe/TSL/tsl-pe.xml",
+      "filename": "CA-ENTRUST INC TO FULFILL THE S D 105-2012-PCM",
+      "reason": "not-under-supervision"
+    }
+  ]
+}

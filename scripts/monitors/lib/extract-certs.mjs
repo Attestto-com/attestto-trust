@@ -6,15 +6,23 @@
  * certificates pass through unchanged — rejecting those is the human
  * reviewer's job at promotion time, not this file's.
  *
+ * Parsing uses Node's built-in `crypto.X509Certificate` (OpenSSL-backed),
+ * not node-forge: forge can't parse EC/ECDSA certificates at all (found via
+ * a real cert in Peru's TSL — ECERNEP PERU CA ROOT 6 — that forge silently
+ * failed on with zero visibility) and mangles UTF-8 subject/issuer names
+ * with accented characters. node-forge is kept only for unwrapping PKCS7
+ * containers, which Node's crypto module doesn't expose; every cert that
+ * comes out of a PKCS7 bundle is re-parsed through X509Certificate so its
+ * fields are correct.
+ *
  * Zip extraction shells out to the system `unzip` (execFile with an argv
- * array, never a shell string) instead of adding a zip-parsing dependency —
- * this repo only depends on node-forge today.
+ * array, never a shell string) instead of adding a zip-parsing dependency.
  */
 import { execFileSync } from 'node:child_process'
 import { mkdtempSync, readFileSync, readdirSync, statSync, rmSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { tmpdir } from 'node:os'
-import { createHash } from 'node:crypto'
+import { X509Certificate } from 'node:crypto'
 import forge from 'node-forge'
 
 function walk(dir) {
@@ -28,38 +36,34 @@ function walk(dir) {
   return out
 }
 
-/**
- * node-forge decodes ASN.1 UTF8String fields as a raw byte-per-char
- * "binary" string instead of real UTF-8 text (e.g. "AC Raíz" comes back
- * as "AC RaÃ­z") — reverse that so subject/issuer names with accented
- * characters (common in Chilean CA names) come out correctly.
- */
-function fixMojibake(str) {
-  if (str == null) return str
-  return Buffer.from(str, 'binary').toString('utf8')
+/** Pull the CN out of an X509Certificate `subject`/`issuer` string ("C=PE\nO=...\nCN=Foo"). */
+function extractCN(dn) {
+  if (!dn) return null
+  const line = dn.split('\n').find((l) => l.startsWith('CN='))
+  return line ? line.slice(3) : null
 }
 
-function cn(name) {
-  const value = name.getField('CN')?.value
-  return value ? fixMojibake(value) : null
-}
-
-function certFields(cert, sourceEntry) {
-  const subjectCN = cn(cert.subject)
-  const issuerCN = cn(cert.issuer)
-  const der = forge.asn1.toDer(forge.pki.certificateToAsn1(cert)).getBytes()
-  const sha256 = createHash('sha256').update(Buffer.from(der, 'binary')).digest('hex')
+function certFields(x509, sourceEntry) {
+  const subjectCN = extractCN(x509.subject)
+  const issuerCN = extractCN(x509.issuer)
   return {
-    pem: forge.pki.certificateToPem(cert),
+    pem: x509.toString(),
     subjectCN,
     issuerCN,
-    serialNumber: cert.serialNumber,
-    validFrom: cert.validity.notBefore.toISOString(),
-    validTo: cert.validity.notAfter.toISOString(),
-    sha256,
+    serialNumber: x509.serialNumber.toLowerCase(),
+    validFrom: new Date(x509.validFrom).toISOString(),
+    validTo: new Date(x509.validTo).toISOString(),
+    sha256: x509.fingerprint256.replace(/:/g, '').toLowerCase(),
     role: subjectCN && subjectCN === issuerCN ? 'root' : 'intermediate',
     sourceEntry,
   }
+}
+
+/** Unwrap a forge PKCS7 message's certificates into DER Buffers for re-parsing by X509Certificate. */
+function derBuffersFromForgePkcs7(p7) {
+  return (p7.certificates || []).map((cert) =>
+    Buffer.from(forge.asn1.toDer(forge.pki.certificateToAsn1(cert)).getBytes(), 'binary'),
+  )
 }
 
 /**
@@ -74,7 +78,7 @@ export function certsFromFile(buffer, sourceEntry) {
   const pemBlocks = text.match(/-----BEGIN CERTIFICATE-----[\s\S]+?-----END CERTIFICATE-----/g) || []
   for (const block of pemBlocks) {
     try {
-      results.push(certFields(forge.pki.certificateFromPem(block), sourceEntry))
+      results.push(certFields(new X509Certificate(block), sourceEntry))
     } catch {
       // not actually a valid cert block — skip
     }
@@ -84,8 +88,12 @@ export function certsFromFile(buffer, sourceEntry) {
   if (text.includes('-----BEGIN PKCS7-----')) {
     try {
       const p7 = forge.pkcs7.messageFromPem(text)
-      for (const cert of p7.certificates || []) {
-        results.push(certFields(cert, sourceEntry))
+      for (const der of derBuffersFromForgePkcs7(p7)) {
+        try {
+          results.push(certFields(new X509Certificate(der), sourceEntry))
+        } catch {
+          // a member cert forge extracted didn't re-parse — skip just that one
+        }
       }
       if (results.length > 0) return results
     } catch {
@@ -94,8 +102,7 @@ export function certsFromFile(buffer, sourceEntry) {
   }
 
   try {
-    const asn1 = forge.asn1.fromDer(forge.util.createBuffer(buffer.toString('binary')))
-    results.push(certFields(forge.pki.certificateFromAsn1(asn1), sourceEntry))
+    results.push(certFields(new X509Certificate(buffer), sourceEntry))
     return results
   } catch {
     // not a bare DER certificate
@@ -104,8 +111,12 @@ export function certsFromFile(buffer, sourceEntry) {
   try {
     const asn1 = forge.asn1.fromDer(forge.util.createBuffer(buffer.toString('binary')))
     const p7 = forge.pkcs7.messageFromAsn1(asn1)
-    for (const cert of p7.certificates || []) {
-      results.push(certFields(cert, sourceEntry))
+    for (const der of derBuffersFromForgePkcs7(p7)) {
+      try {
+        results.push(certFields(new X509Certificate(der), sourceEntry))
+      } catch {
+        // a member cert forge extracted didn't re-parse — skip just that one
+      }
     }
   } catch {
     // not a cert-shaped file at all — expected for the vast majority of

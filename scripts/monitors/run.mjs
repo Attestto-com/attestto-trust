@@ -24,7 +24,7 @@ const ROOT = join(SCRIPT_DIR, '..', '..')
 const iso2 = process.argv[2]
 if (!iso2) {
   console.error('Usage: node scripts/monitors/run.mjs <iso2>')
-  console.error('Available adapters: cl')
+  console.error('Available adapters: cl, pe')
   process.exit(1)
 }
 

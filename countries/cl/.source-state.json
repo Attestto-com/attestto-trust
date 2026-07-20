@@ -1,14 +1,14 @@
 {
   "pageUrl": "https://www.entidadacreditadora.gob.cl/certificados-raiz/",
   "pageTlsFingerprintSha256": "b108bb2b4267e2488e3ebe2d214fb072abad5551899061e1748644b32f9d5047",
-  "lastRun": "2026-07-20T13:47:19.099Z",
+  "lastRun": "2026-07-20T18:55:00.589Z",
   "sources": {
     "https://www.entidadacreditadora.gob.cl/wp-content/uploads/2010/11/Certificado-Raiz-E-cert.rar": {
       "org": "E-CertChile",
       "filename": "Certificado-Raiz-E-cert.rar",
       "extension": "rar",
       "unsupported": true,
-      "lastSeen": "2026-07-20T13:47:09.255Z"
+      "lastSeen": "2026-07-20T18:54:47.681Z"
     },
     "https://www.entidadacreditadora.gob.cl/wp-content/uploads/2010/11/E-CERTCHILE_CADENA_CERTIFICACION.zip": {
       "org": "E-CertChile",
@@ -18,9 +18,9 @@
       "contentLength": "1842",
       "lastModifiedHeader": "Mon, 06 Nov 2023 19:04:20 GMT",
       "etag": "\"732-6098085834aa0\"",
-      "firstSeen": "2026-07-20T13:46:39.832Z",
-      "lastChanged": "2026-07-20T13:46:39.832Z",
-      "lastSeen": "2026-07-20T13:47:09.567Z"
+      "firstSeen": "2026-07-20T18:54:48.272Z",
+      "lastChanged": "2026-07-20T18:54:48.272Z",
+      "lastSeen": "2026-07-20T18:54:48.272Z"
     },
     "http://www.entidadacreditadora.gob.cl/wp-content/uploads/2010/11/Ecertchile08022019.zip": {
       "org": "E-CertChile",
@@ -30,9 +30,9 @@
       "contentLength": "2903",
       "lastModifiedHeader": "Mon, 06 Nov 2023 19:04:20 GMT",
       "etag": "\"b57-609808583a80d\"",
-      "firstSeen": "2026-07-20T13:46:40.417Z",
-      "lastChanged": "2026-07-20T13:46:40.417Z",
-      "lastSeen": "2026-07-20T13:47:09.843Z"
+      "firstSeen": "2026-07-20T18:54:48.858Z",
+      "lastChanged": "2026-07-20T18:54:48.858Z",
+      "lastSeen": "2026-07-20T18:54:48.858Z"
     },
     "https://www.entidadacreditadora.gob.cl/wp-content/uploads/2023/12/Raices-E-Certchile-20231226.zip": {
       "org": "E-CertChile",
@@ -42,9 +42,9 @@
       "contentLength": "7850",
       "lastModifiedHeader": "Tue, 26 Dec 2023 15:58:00 GMT",
       "etag": "\"1eaa-60d6bbf31877c\"",
-      "firstSeen": "2026-07-20T13:46:40.991Z",
-      "lastChanged": "2026-07-20T13:46:40.991Z",
-      "lastSeen": "2026-07-20T13:47:10.114Z"
+      "firstSeen": "2026-07-20T18:54:49.413Z",
+      "lastChanged": "2026-07-20T18:54:49.413Z",
+      "lastSeen": "2026-07-20T18:54:49.413Z"
     },
     "https://www.entidadacreditadora.gob.cl/wp-content/uploads/2024/11/Acepta_CertificadosRaices_e_Intermedios.zip": {
       "org": "Acepta.com",
@@ -54,9 +54,9 @@
       "contentLength": "13733",
       "lastModifiedHeader": "Thu, 28 Nov 2024 18:26:09 GMT",
       "etag": "\"35a5-627fd375b7683\"",
-      "firstSeen": "2026-07-20T13:46:41.646Z",
-      "lastChanged": "2026-07-20T13:46:41.646Z",
-      "lastSeen": "2026-07-20T13:47:10.389Z"
+      "firstSeen": "2026-07-20T18:54:50.057Z",
+      "lastChanged": "2026-07-20T18:54:50.057Z",
+      "lastSeen": "2026-07-20T18:54:50.057Z"
     },
     "https://www.entidadacreditadora.gob.cl/wp-content/uploads/2018/03/Certificados-Raiz-e-Intermedios-E-Sign-S.A-Feb2018.zip": {
       "org": "E-Sign",
@@ -66,9 +66,9 @@
       "contentLength": "27670",
       "lastModifiedHeader": "Mon, 06 Nov 2023 19:04:41 GMT",
       "etag": "\"6c16-6098086ba5999\"",
-      "firstSeen": "2026-07-20T13:46:42.304Z",
-      "lastChanged": "2026-07-20T13:46:42.304Z",
-      "lastSeen": "2026-07-20T13:47:10.668Z"
+      "firstSeen": "2026-07-20T18:54:50.708Z",
+      "lastChanged": "2026-07-20T18:54:50.708Z",
+      "lastSeen": "2026-07-20T18:54:50.708Z"
     },
     "https://www.entidadacreditadora.gob.cl/wp-content/uploads/2022/01/Certificados-Raiz-e-Intermedios-E-Sign-S.A-Dic2021.zip": {
       "org": "E-Sign",
@@ -78,9 +78,9 @@
       "contentLength": "17366",
       "lastModifiedHeader": "Mon, 06 Nov 2023 19:04:42 GMT",
       "etag": "\"43d6-6098086d4256d\"",
-      "firstSeen": "2026-07-20T13:46:42.970Z",
-      "lastChanged": "2026-07-20T13:46:42.970Z",
-      "lastSeen": "2026-07-20T13:47:11.957Z"
+      "firstSeen": "2026-07-20T18:54:51.366Z",
+      "lastChanged": "2026-07-20T18:54:51.366Z",
+      "lastSeen": "2026-07-20T18:54:51.366Z"
     },
     "https://www.entidadacreditadora.gob.cl/wp-content/uploads/2025/06/E-SIGN-S.A.zip": {
       "org": "E-Sign",
@@ -90,9 +90,9 @@
       "contentLength": "27564",
       "lastModifiedHeader": "Mon, 02 Jun 2025 18:47:10 GMT",
       "etag": "\"6bac-6369b310c6727\"",
-      "firstSeen": "2026-07-20T13:46:43.637Z",
-      "lastChanged": "2026-07-20T13:46:43.637Z",
-      "lastSeen": "2026-07-20T13:47:12.229Z"
+      "firstSeen": "2026-07-20T18:54:52.015Z",
+      "lastChanged": "2026-07-20T18:54:52.016Z",
+      "lastSeen": "2026-07-20T18:54:52.016Z"
     },
     "https://www.entidadacreditadora.gob.cl/wp-content/uploads/2018/03/Certinet_CertificadosRaizIntermedios.zip": {
       "org": "CertiNet",
@@ -102,9 +102,9 @@
       "contentLength": "5456",
       "lastModifiedHeader": "Mon, 06 Nov 2023 19:04:41 GMT",
       "etag": "\"1550-6098086ba70a8\"",
-      "firstSeen": "2026-07-20T13:46:45.213Z",
-      "lastChanged": "2026-07-20T13:46:45.213Z",
-      "lastSeen": "2026-07-20T13:47:12.506Z"
+      "firstSeen": "2026-07-20T18:54:52.582Z",
+      "lastChanged": "2026-07-20T18:54:52.582Z",
+      "lastSeen": "2026-07-20T18:54:52.582Z"
     },
     "https://www.entidadacreditadora.gob.cl/wp-content/uploads/2010/11/Certinet_CertificadosRaizIntermedios.zip": {
       "org": "CertiNet",
@@ -114,9 +114,9 @@
       "contentLength": "50932",
       "lastModifiedHeader": "Mon, 06 Nov 2023 19:04:20 GMT",
       "etag": "\"c6f4-60980857e706a\"",
-      "firstSeen": "2026-07-20T13:46:46.968Z",
-      "lastChanged": "2026-07-20T13:46:46.968Z",
-      "lastSeen": "2026-07-20T13:47:13.787Z"
+      "firstSeen": "2026-07-20T18:54:53.327Z",
+      "lastChanged": "2026-07-20T18:54:53.327Z",
+      "lastSeen": "2026-07-20T18:54:53.327Z"
     },
     "http://www.entidadacreditadora.gob.cl/wp-content/uploads/2010/11/Certinet_CertificadosRaizIntermedios-1.zip": {
       "org": "CertiNet",
@@ -126,16 +126,16 @@
       "contentLength": "46006",
       "lastModifiedHeader": "Mon, 06 Nov 2023 19:04:20 GMT",
       "etag": "\"b3b6-60980857e210b\"",
-      "firstSeen": "2026-07-20T13:46:48.728Z",
-      "lastChanged": "2026-07-20T13:46:48.728Z",
-      "lastSeen": "2026-07-20T13:47:15.062Z"
+      "firstSeen": "2026-07-20T18:54:54.071Z",
+      "lastChanged": "2026-07-20T18:54:54.071Z",
+      "lastSeen": "2026-07-20T18:54:54.071Z"
     },
     "https://www.entidadacreditadora.gob.cl/wp-content/uploads/2010/11/Paperless-Certificados-Raiz.rar": {
       "org": "E-Partners",
       "filename": "Paperless-Certificados-Raiz.rar",
       "extension": "rar",
       "unsupported": true,
-      "lastSeen": "2026-07-20T13:47:15.062Z"
+      "lastSeen": "2026-07-20T18:54:54.086Z"
     },
     "https://www.entidadacreditadora.gob.cl/wp-content/uploads/2017/05/2017-05-08-CertCA.zip": {
       "org": "E-Partners",
@@ -145,9 +145,9 @@
       "contentLength": "4460",
       "lastModifiedHeader": "Mon, 06 Nov 2023 19:04:40 GMT",
       "etag": "\"116c-6098086b3b780\"",
-      "firstSeen": "2026-07-20T13:46:49.301Z",
-      "lastChanged": "2026-07-20T13:46:49.301Z",
-      "lastSeen": "2026-07-20T13:47:15.336Z"
+      "firstSeen": "2026-07-20T18:54:54.644Z",
+      "lastChanged": "2026-07-20T18:54:54.644Z",
+      "lastSeen": "2026-07-20T18:54:54.644Z"
     },
     "https://www.entidadacreditadora.gob.cl/wp-content/uploads/2018/04/CertificadosRaizIntermedios_IDok.zip": {
       "org": "IDok",
@@ -157,9 +157,9 @@
       "contentLength": "5437",
       "lastModifiedHeader": "Mon, 06 Nov 2023 19:04:41 GMT",
       "etag": "\"153d-6098086ba9284\"",
-      "firstSeen": "2026-07-20T13:46:50.859Z",
-      "lastChanged": "2026-07-20T13:46:50.859Z",
-      "lastSeen": "2026-07-20T13:47:15.612Z"
+      "firstSeen": "2026-07-20T18:54:55.221Z",
+      "lastChanged": "2026-07-20T18:54:55.221Z",
+      "lastSeen": "2026-07-20T18:54:55.221Z"
     },
     "http://www.entidadacreditadora.gob.cl/wp-content/uploads/2020/04/THSC.zip": {
       "org": "Thomas Signe",
@@ -169,9 +169,9 @@
       "contentLength": "3871",
       "lastModifiedHeader": "Mon, 06 Nov 2023 19:04:42 GMT",
       "etag": "\"f1f-6098086cbfa50\"",
-      "firstSeen": "2026-07-20T13:46:51.417Z",
-      "lastChanged": "2026-07-20T13:46:51.417Z",
-      "lastSeen": "2026-07-20T13:47:16.892Z"
+      "firstSeen": "2026-07-20T18:54:55.794Z",
+      "lastChanged": "2026-07-20T18:54:55.794Z",
+      "lastSeen": "2026-07-20T18:54:55.794Z"
     },
     "http://www.entidadacreditadora.gob.cl/wp-content/uploads/2025/06/THOMAS_SIGNE.zip": {
       "org": "Thomas Signe",
@@ -181,9 +181,9 @@
       "contentLength": "25124",
       "lastModifiedHeader": "Mon, 02 Jun 2025 19:35:56 GMT",
       "etag": "\"6224-6369bdf68369a\"",
-      "firstSeen": "2026-07-20T13:46:53.089Z",
-      "lastChanged": "2026-07-20T13:46:53.089Z",
-      "lastSeen": "2026-07-20T13:47:17.169Z"
+      "firstSeen": "2026-07-20T18:54:56.454Z",
+      "lastChanged": "2026-07-20T18:54:56.454Z",
+      "lastSeen": "2026-07-20T18:54:56.454Z"
     },
     "http://www.entidadacreditadora.gob.cl/wp-content/uploads/2022/03/Abancert.zip": {
       "org": "Abancert",
@@ -193,9 +193,9 @@
       "contentLength": "4847",
       "lastModifiedHeader": "Mon, 06 Nov 2023 19:04:42 GMT",
       "etag": "\"12ef-6098086d4bca5\"",
-      "firstSeen": "2026-07-20T13:46:54.660Z",
-      "lastChanged": "2026-07-20T13:46:54.660Z",
-      "lastSeen": "2026-07-20T13:47:17.441Z"
+      "firstSeen": "2026-07-20T18:54:57.020Z",
+      "lastChanged": "2026-07-20T18:54:57.020Z",
+      "lastSeen": "2026-07-20T18:54:57.020Z"
     },
     "http://www.entidadacreditadora.gob.cl/wp-content/uploads/2022/06/Certificados_FirmaDox-2022.zip": {
       "org": "firmaDOX",
@@ -205,9 +205,9 @@
       "contentLength": "2959",
       "lastModifiedHeader": "Mon, 06 Nov 2023 19:04:43 GMT",
       "etag": "\"b8f-6098086d8d913\"",
-      "firstSeen": "2026-07-20T13:46:55.229Z",
-      "lastChanged": "2026-07-20T13:46:55.229Z",
-      "lastSeen": "2026-07-20T13:47:17.726Z"
+      "firstSeen": "2026-07-20T18:54:57.573Z",
+      "lastChanged": "2026-07-20T18:54:57.573Z",
+      "lastSeen": "2026-07-20T18:54:57.573Z"
     },
     "http://www.entidadacreditadora.gob.cl/wp-content/uploads/2022/10/Certificado-Raiz-e-Digital.zip": {
       "org": "e-Digital",
@@ -217,9 +217,9 @@
       "contentLength": "2719",
       "lastModifiedHeader": "Mon, 06 Nov 2023 19:04:43 GMT",
       "etag": "\"a9f-6098086dc64f3\"",
-      "firstSeen": "2026-07-20T13:46:55.812Z",
-      "lastChanged": "2026-07-20T13:46:55.812Z",
-      "lastSeen": "2026-07-20T13:47:18.004Z"
+      "firstSeen": "2026-07-20T18:54:58.134Z",
+      "lastChanged": "2026-07-20T18:54:58.134Z",
+      "lastSeen": "2026-07-20T18:54:58.134Z"
     },
     "http://www.entidadacreditadora.gob.cl/wp-content/uploads/2023/03/Certificados_Microsystem_2023.zip": {
       "org": "Microsystem",
@@ -229,9 +229,9 @@
       "contentLength": "3937",
       "lastModifiedHeader": "Mon, 06 Nov 2023 19:04:43 GMT",
       "etag": "\"f61-6098086dce574\"",
-      "firstSeen": "2026-07-20T13:46:56.400Z",
-      "lastChanged": "2026-07-20T13:46:56.400Z",
-      "lastSeen": "2026-07-20T13:47:18.280Z"
+      "firstSeen": "2026-07-20T18:54:58.696Z",
+      "lastChanged": "2026-07-20T18:54:58.696Z",
+      "lastSeen": "2026-07-20T18:54:58.696Z"
     },
     "http://www.entidadacreditadora.gob.cl/wp-content/uploads/2025/06/MICROSYSTEM.zip": {
       "org": "Microsystem",
@@ -241,9 +241,9 @@
       "contentLength": "13436",
       "lastModifiedHeader": "Mon, 02 Jun 2025 19:07:48 GMT",
       "etag": "\"347c-6369b7ad204a0\"",
-      "firstSeen": "2026-07-20T13:46:57.058Z",
-      "lastChanged": "2026-07-20T13:46:57.058Z",
-      "lastSeen": "2026-07-20T13:47:18.556Z"
+      "firstSeen": "2026-07-20T18:54:59.334Z",
+      "lastChanged": "2026-07-20T18:54:59.334Z",
+      "lastSeen": "2026-07-20T18:54:59.334Z"
     },
     "http://www.entidadacreditadora.gob.cl/wp-content/uploads/2024/06/raices.zip": {
       "org": "Certificadora del Sur",
@@ -253,9 +253,9 @@
       "contentLength": "2789",
       "lastModifiedHeader": "Fri, 07 Jun 2024 19:26:00 GMT",
       "etag": "\"ae5-61a51c504d4ef\"",
-      "firstSeen": "2026-07-20T13:46:57.627Z",
-      "lastChanged": "2026-07-20T13:46:57.627Z",
-      "lastSeen": "2026-07-20T13:47:18.828Z"
+      "firstSeen": "2026-07-20T18:54:59.912Z",
+      "lastChanged": "2026-07-20T18:54:59.912Z",
+      "lastSeen": "2026-07-20T18:54:59.912Z"
     },
     "http://www.entidadacreditadora.gob.cl/wp-content/uploads/2026/06/Cadena-Confianza-TSP-SpA.zip": {
       "org": "Trust Service Provider SpA",
@@ -265,9 +265,9 @@
       "contentLength": "13836",
       "lastModifiedHeader": "Mon, 15 Jun 2026 13:40:54 GMT",
       "etag": "\"360c-6544af9c1075a\"",
-      "firstSeen": "2026-07-20T13:46:58.268Z",
-      "lastChanged": "2026-07-20T13:46:58.268Z",
-      "lastSeen": "2026-07-20T13:47:19.099Z"
+      "firstSeen": "2026-07-20T18:55:00.571Z",
+      "lastChanged": "2026-07-20T18:55:00.571Z",
+      "lastSeen": "2026-07-20T18:55:00.571Z"
     }
   },
   "knownGaps": [

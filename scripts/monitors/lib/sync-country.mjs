@@ -13,14 +13,25 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync, appendFileSync } fr
 import { join } from 'node:path'
 import { headSource, downloadSource, toHttps } from './discover.mjs'
 import { certsFromFile, extractCertsFromZip } from './extract-certs.mjs'
+import { extractCertsFromTsl } from './extract-tsl.mjs'
 import { loadState, saveState } from './state.mjs'
 
 const CERT_DIRECT_EXT = new Set(['pem', 'crt', 'cer', 'der', 'p7b', 'p7c'])
+const TSL_EXT = new Set(['xml'])
 const UNSUPPORTED_EXT = new Set(['rar'])
 
 function extOf(filename) {
   const m = filename.match(/\.([a-z0-9]+)$/i)
   return m ? m[1].toLowerCase() : ''
+}
+
+/**
+ * Org/subject names come from third-party HTML or XML (e.g. Peru's TSL has
+ * a TSP trade name of "RENIEC/PERU") and can't be trusted as path segments.
+ * Collapse anything that would create or escape a directory.
+ */
+function sanitizeForFilename(name) {
+  return name.replace(/[/\\]/g, '-').replace(/\s+/g, ' ').trim()
 }
 
 function runDate() {
@@ -136,9 +147,11 @@ export async function syncCountry({ iso2, countryDir, pageUrl, pageTlsFingerprin
     writeFileSync(join(rawDir, filename), downloaded.buffer)
     log(countryDir, `CHANGED: ${org} - ${filename} (${url})`)
 
-    let certs, error
+    let certs, error, extractionSkips
     if (ext === 'zip') {
       ;({ certs, error } = extractCertsFromZip(downloaded.buffer))
+    } else if (TSL_EXT.has(ext)) {
+      ;({ certs, error, skipped: extractionSkips } = extractCertsFromTsl(downloaded.buffer))
     } else if (CERT_DIRECT_EXT.has(ext)) {
       certs = certsFromFile(downloaded.buffer, filename)
       error = null
@@ -151,6 +164,15 @@ export async function syncCountry({ iso2, countryDir, pageUrl, pageTlsFingerprin
       log(countryDir, `WARNING: failed to extract ${org} - ${filename}: ${error}`)
       continue
     }
+
+    // A TSL lists services deliberately excluded from staging (withdrawn,
+    // not-under-supervision, unparseable) — surface those the same way as
+    // an unsupported file extension: a persistent, visible gap, not a
+    // silently dropped cert.
+    for (const skip of extractionSkips || []) {
+      knownGaps.push({ org: skip.org, url, filename: skip.serviceName, reason: skip.reason })
+    }
+
     if (certs.length === 0) {
       log(countryDir, `WARNING: no certificates found inside ${org} - ${filename} — may be an unsupported container format, inspect raw/${filename} manually`)
       continue
@@ -163,7 +185,11 @@ export async function syncCountry({ iso2, countryDir, pageUrl, pageTlsFingerprin
       // repeated across two vintages of a CA's bundle).
       if (stagedHashesThisRun.has(cert.sha256)) continue
 
-      const stagedName = `${org} - ${cert.subjectCN || cert.serialNumber}.pem`
+      // A TSL's certs each belong to their own Trust Service Provider,
+      // distinct from the single candidate-level org (the TSL document
+      // itself) — prefer the cert's own org when the extractor set one.
+      const effectiveOrg = cert.org ?? org
+      const stagedName = sanitizeForFilename(`${effectiveOrg} - ${cert.subjectCN || cert.serialNumber}.pem`)
       const existingHash = existingCurrentHashes.get(stagedName)
       const status = !existingHash ? 'new' : existingHash === cert.sha256 ? 'unchanged' : 'rotation-candidate'
       if (status === 'unchanged') continue
@@ -172,7 +198,7 @@ export async function syncCountry({ iso2, countryDir, pageUrl, pageTlsFingerprin
       mkdirSync(stagingDir, { recursive: true })
       writeFileSync(join(stagingDir, stagedName), cert.pem)
       stagedSummary.push({
-        org,
+        org: effectiveOrg,
         stagedFile: stagedName,
         subject: cert.subjectCN,
         issuer: cert.issuerCN,
@@ -184,7 +210,7 @@ export async function syncCountry({ iso2, countryDir, pageUrl, pageTlsFingerprin
         status,
         sourceUrl: url,
         sourceEntry: cert.sourceEntry,
-        crossCheckReminder: `Verify this fingerprint independently against ${org}'s own published root/intermediate certificate before promoting to current/.`,
+        crossCheckReminder: `Verify this fingerprint independently against ${effectiveOrg}'s own published root/intermediate certificate before promoting to current/.`,
       })
     }
   }
