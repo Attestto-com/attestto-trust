@@ -1,0 +1,20 @@
+{
+  "pageUrl": "https://www.agesic.gub.uy/acrn/acrn.cer",
+  "pageTlsFingerprintSha256": "50e2c393a2d1813b527c52fe8f75591d68f18ba41537c4bc8572411961e6320a",
+  "lastRun": "2026-07-20T19:02:14.708Z",
+  "sources": {
+    "https://www.agesic.gub.uy/acrn/acrn.cer": {
+      "org": "AGESIC",
+      "filename": "acrn.cer",
+      "extension": "cer",
+      "sha256": "ed2d3584af3aad1db5d00c4f42e1f38be1fead803efd5f5b09d41cf30db63b39",
+      "contentLength": "2347",
+      "lastModifiedHeader": "Wed, 18 Jan 2012 11:53:40 GMT",
+      "etag": "\"92b-4b6cc193f3900\"",
+      "firstSeen": "2026-07-20T19:02:14.707Z",
+      "lastChanged": "2026-07-20T19:02:14.707Z",
+      "lastSeen": "2026-07-20T19:02:14.707Z"
+    }
+  },
+  "knownGaps": []
+}

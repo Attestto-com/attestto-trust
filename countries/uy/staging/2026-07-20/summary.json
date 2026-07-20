@@ -1,0 +1,17 @@
+[
+  {
+    "org": "AGESIC",
+    "stagedFile": "AGESIC - Autoridad Certificadora Raíz Nacional de Uruguay.pem",
+    "subject": "Autoridad Certificadora Raíz Nacional de Uruguay",
+    "issuer": "Autoridad Certificadora Raíz Nacional de Uruguay",
+    "serialNumber": "02ee009b66d86a1d67feda8a256f215a751b",
+    "sha256": "5533a0401f612c688ebce5bf53f2ec14a734eb178bfae00e50e85dae6723078a",
+    "validFrom": "2011-11-03T15:02:49.000Z",
+    "validTo": "2031-10-29T15:02:49.000Z",
+    "role": "root",
+    "status": "new",
+    "sourceUrl": "https://www.agesic.gub.uy/acrn/acrn.cer",
+    "sourceEntry": "acrn.cer",
+    "crossCheckReminder": "Verify this fingerprint independently against AGESIC's own published root/intermediate certificate before promoting to current/."
+  }
+]
