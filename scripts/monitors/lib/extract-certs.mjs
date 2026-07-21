@@ -55,6 +55,9 @@ function certFields(x509, sourceEntry) {
     validTo: new Date(x509.validTo).toISOString(),
     sha256: x509.fingerprint256.replace(/:/g, '').toLowerCase(),
     role: subjectCN && subjectCN === issuerCN ? 'root' : 'intermediate',
+    // basicConstraints CA bit — lets callers keep roots + intermediate CAs
+    // and drop leaf/end-entity certs (TSA, OCSP, per-service certs).
+    isCA: x509.ca === true,
     sourceEntry,
   }
 }

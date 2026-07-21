@@ -63,7 +63,7 @@ function loadExistingCurrentHashes(countryDir) {
  * @param {Array<{url: string, org: string, filename: string}>} opts.candidates
  * @returns {Promise<{stagedCount: number, knownGaps: Array, stagingDir: string|null}>}
  */
-export async function syncCountry({ iso2, countryDir, pageUrl, pageTlsFingerprintSha256, candidates }) {
+export async function syncCountry({ iso2, countryDir, pageUrl, pageTlsFingerprintSha256, candidates, caOnly = false }) {
   mkdirSync(countryDir, { recursive: true })
   const state = loadState(countryDir, pageUrl)
 
@@ -151,7 +151,7 @@ export async function syncCountry({ iso2, countryDir, pageUrl, pageTlsFingerprin
     if (ext === 'zip') {
       ;({ certs, error } = extractCertsFromZip(downloaded.buffer))
     } else if (TSL_EXT.has(ext)) {
-      ;({ certs, error, skipped: extractionSkips } = extractCertsFromTsl(downloaded.buffer))
+      ;({ certs, error, skipped: extractionSkips } = extractCertsFromTsl(downloaded.buffer, { caOnly }))
     } else if (CERT_DIRECT_EXT.has(ext)) {
       certs = certsFromFile(downloaded.buffer, filename)
       error = null

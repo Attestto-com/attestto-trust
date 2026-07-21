@@ -48,10 +48,20 @@ export function fetchPageWithFingerprint(pageUrl) {
   })
 }
 
+// Government sources vary wildly in responsiveness; without a timeout a
+// single hung server (common when fanning out over the EU LOTL's ~31
+// national lists) would stall the whole run indefinitely.
+const HEAD_TIMEOUT_MS = 15000
+const GET_TIMEOUT_MS = 60000
+
 /** HEAD a URL; returns header snapshot or null if the request fails. */
 export async function headSource(url) {
   try {
-    const res = await fetch(url, { method: 'HEAD', headers: { 'User-Agent': USER_AGENT } })
+    const res = await fetch(url, {
+      method: 'HEAD',
+      headers: { 'User-Agent': USER_AGENT },
+      signal: AbortSignal.timeout(HEAD_TIMEOUT_MS),
+    })
     if (!res.ok) return null
     return {
       contentLength: res.headers.get('content-length'),
@@ -65,7 +75,10 @@ export async function headSource(url) {
 
 /** GET a URL fully. Returns { buffer, sha256, headers }; throws on failure. */
 export async function downloadSource(url) {
-  const res = await fetch(url, { headers: { 'User-Agent': USER_AGENT } })
+  const res = await fetch(url, {
+    headers: { 'User-Agent': USER_AGENT },
+    signal: AbortSignal.timeout(GET_TIMEOUT_MS),
+  })
   if (!res.ok) throw new Error(`GET ${url} -> HTTP ${res.status}`)
   const buffer = Buffer.from(await res.arrayBuffer())
   const sha256 = createHash('sha256').update(buffer).digest('hex')

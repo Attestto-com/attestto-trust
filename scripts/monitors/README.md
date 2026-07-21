@@ -16,6 +16,7 @@ node scripts/monitors/run.mjs <iso2>
 |---|---|---|---|
 | Chile | `sources/cl.mjs` | ✅ built | ~13 CAs, HTML page of zip/rar bundle links |
 | Peru | `sources/pe.mjs` | ✅ built | Single ETSI TSL XML, ~30 TSPs inline |
+| EU/EEA + UK | `run-eu.mjs` + `lib/extract-lotl.mjs` | ✅ built | The EU **LOTL** (List of Trusted Lists) — one signed index → ~31 national Trusted Lists (27 EU + IS/LI/NO + UK). `run-eu.mjs` fans out per-country, reusing the Peru TSL parser (`extract-tsl.mjs`, made namespace-agnostic) with `caOnly` filtering to keep CA certs (roots + intermediates), fanning into `countries/<iso2>/`. First full run: 29/31 lists, ~1270 CA certs. Mirrors what each list *authoritatively publishes* (predominantly accredited issuing CAs, plus embedded roots) — it does not chase self-signed roots up each chain via AIA. XAdES signature verification of the lists is documented future work. |
 | Uruguay | `sources/uy.mjs` | ✅ built | Single direct root `.cer` file |
 | Panama | `sources/pa.mjs` | ✅ built | 3 direct cert files (root + 2 issuing CAs) |
 | USA | `sources/us.mjs` | ✅ built | FPKI: Federal Common Policy G2 root `.crt` + `caCertsIssuedByfcpcag2.p7c` PKCS7 bundle of 12 subordinate CAs (roots + intermediates). North America has no LOTL-equivalent, so it uses the direct-bundle approach. |

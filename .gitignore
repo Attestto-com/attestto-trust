@@ -3,3 +3,8 @@ node_modules/
 *.log
 !countries/*/.monitor.log
 .superpowers/
+
+# Raw national Trusted List XMLs are large and churn on every run; the
+# staged PEMs + the sha256 in .source-state.json are the audit record, and
+# the source is always re-fetchable. Small direct cert files in raw/ stay.
+countries/*/raw/*.xml
