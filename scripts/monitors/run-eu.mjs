@@ -30,6 +30,13 @@
  * the national lists are large (multi-MB) and numerous, per-territory TLS
  * fingerprint tracking is skipped here to avoid double-fetching each list.
  *
+ * Known persistent failures (confirmed source-side TLS, not transient):
+ *  - Ireland (eidas.gov.ie): serves an incomplete chain (leaf only, no
+ *    intermediate) → Node's fetch can't build a trust path.
+ *  - Slovakia (tl.nbu.gov.sk): HTTPS cert hostname mismatch, list otherwise
+ *    HTTP-only → rejected by the HTTPS-only rule.
+ * Both are logged and skipped; they'll ingest once their operators fix TLS.
+ *
  * Usage:
  *   node scripts/monitors/run-eu.mjs            # all territories in the LOTL
  *   node scripts/monitors/run-eu.mjs es fr de   # only these iso2 dirs
