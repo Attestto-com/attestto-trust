@@ -1,7 +1,7 @@
 {
   "pageUrl": "https://repo.fpki.gov/fcpca/fcpcag2.crt",
   "pageTlsFingerprintSha256": "d4cf8b2e2b33643167e1537fd78bd37f60cfbaebed016d188321aa03c295191d",
-  "lastRun": "2026-07-21T01:01:30.294Z",
+  "lastRun": "2026-07-21T02:53:17.169Z",
   "sources": {
     "https://repo.fpki.gov/fcpca/fcpcag2.crt": {
       "org": "US Federal PKI",
@@ -11,9 +11,21 @@
       "contentLength": "1505",
       "lastModifiedHeader": "Mon, 24 Apr 2023 17:14:54 GMT",
       "etag": "\"5e1-5fa1825426bf7\"",
-      "firstSeen": "2026-07-21T01:01:30.292Z",
-      "lastChanged": "2026-07-21T01:01:30.292Z",
-      "lastSeen": "2026-07-21T01:01:30.292Z"
+      "firstSeen": "2026-07-21T02:53:16.773Z",
+      "lastChanged": "2026-07-21T02:53:16.773Z",
+      "lastSeen": "2026-07-21T02:53:16.773Z"
+    },
+    "https://repo.fpki.gov/fcpca/caCertsIssuedByfcpcag2.p7c": {
+      "org": "US Federal PKI",
+      "filename": "caCertsIssuedByfcpcag2.p7c",
+      "extension": "p7c",
+      "sha256": "fb1388aaa0cbb73b1bacd42fa4fd3da0172dbfd992f1a377863b7f1e3a10f1b7",
+      "contentLength": "22748",
+      "lastModifiedHeader": "Mon, 13 Jul 2026 22:41:33 GMT",
+      "etag": "\"58dc-65685cac7e140\"",
+      "firstSeen": "2026-07-21T02:53:17.160Z",
+      "lastChanged": "2026-07-21T02:53:17.160Z",
+      "lastSeen": "2026-07-21T02:53:17.160Z"
     }
   },
   "knownGaps": []
