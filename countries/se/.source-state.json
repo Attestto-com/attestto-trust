@@ -1,0 +1,45 @@
+{
+  "pageUrl": "https://trustedlist.pts.se/tlv6/SE-TL.xml",
+  "pageTlsFingerprintSha256": null,
+  "lastRun": "2026-07-21T06:44:23.743Z",
+  "sources": {
+    "https://trustedlist.pts.se/tlv6/SE-TL.xml": {
+      "org": "SE Trusted List",
+      "filename": "se-tsl.xml",
+      "extension": "xml",
+      "sha256": "7f4cbafd3ff99fcf06d57e68aca129507cd9bf215794de03641595504945cf79",
+      "contentLength": null,
+      "lastModifiedHeader": "Thu, 21 May 2026 08:55:37 GMT",
+      "etag": "W/\"6a0ec889-163c3\"",
+      "firstSeen": "2026-07-21T06:44:23.740Z",
+      "lastChanged": "2026-07-21T06:44:23.740Z",
+      "lastSeen": "2026-07-21T06:44:23.740Z"
+    }
+  },
+  "knownGaps": [
+    {
+      "org": "NTRSE-556633-0220",
+      "url": "https://trustedlist.pts.se/tlv6/SE-TL.xml",
+      "filename": "SignGuard Europe AB - qualified certificate service",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRSE-556633-0220",
+      "url": "https://trustedlist.pts.se/tlv6/SE-TL.xml",
+      "filename": "SignGuard Europe AB – Qualified OCSP Service",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATSE-556613626201",
+      "url": "https://trustedlist.pts.se/tlv6/SE-TL.xml",
+      "filename": "TrustWeaver Signature Validation Service",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATSE-556613626201",
+      "url": "https://trustedlist.pts.se/tlv6/SE-TL.xml",
+      "filename": "TrustWeaver Signature Validation Service",
+      "reason": "not-under-supervision"
+    }
+  ]
+}

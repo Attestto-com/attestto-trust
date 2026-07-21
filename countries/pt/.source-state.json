@@ -1,0 +1,291 @@
+{
+  "pageUrl": "https://www.gns.gov.pt/media/TSLPT.xml",
+  "pageTlsFingerprintSha256": null,
+  "lastRun": "2026-07-21T06:44:17.956Z",
+  "sources": {
+    "https://www.gns.gov.pt/media/TSLPT.xml": {
+      "org": "PT Trusted List",
+      "filename": "pt-tsl.xml",
+      "extension": "xml",
+      "sha256": "53f5778314cb9feb451d71ad212de632c2940aaabc2a52b6122fdf38e8ad1d45",
+      "contentLength": null,
+      "lastModifiedHeader": "Wed, 01 Jul 2026 12:00:03 GMT",
+      "etag": "W/\"a588a-6558b6e817e54\"",
+      "firstSeen": "2026-07-21T06:44:17.941Z",
+      "lastChanged": "2026-07-21T06:44:17.941Z",
+      "lastSeen": "2026-07-21T06:44:17.941Z"
+    }
+  },
+  "knownGaps": [
+    {
+      "org": "CEGER",
+      "url": "https://www.gns.gov.pt/media/TSLPT.xml",
+      "filename": "ECCE (CA-Qualified Certificates)",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "CEGER",
+      "url": "https://www.gns.gov.pt/media/TSLPT.xml",
+      "filename": "ECCE 001 (CA-Qualified certificates)",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "CEGER",
+      "url": "https://www.gns.gov.pt/media/TSLPT.xml",
+      "filename": "ECCE - TSA",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "CEGER",
+      "url": "https://www.gns.gov.pt/media/TSLPT.xml",
+      "filename": "ECCE-TSA",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "National eID (part of national PKI - SCEE)",
+      "url": "https://www.gns.gov.pt/media/TSLPT.xml",
+      "filename": "EC de Assinatura Digital Qualificada do Cartão de Cidadão 0001",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "National eID (part of national PKI - SCEE)",
+      "url": "https://www.gns.gov.pt/media/TSLPT.xml",
+      "filename": "EC de Assinatura Digital Qualificada do Cartão de Cidadão 0002",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "National eID (part of national PKI - SCEE)",
+      "url": "https://www.gns.gov.pt/media/TSLPT.xml",
+      "filename": "EC de Assinatura Digital Qualificada do Cartão de Cidadão 0003",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "National eID (part of national PKI - SCEE)",
+      "url": "https://www.gns.gov.pt/media/TSLPT.xml",
+      "filename": "EC de Assinatura Digital Qualificada do Cartão de Cidadão 0004",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "National eID (part of national PKI - SCEE)",
+      "url": "https://www.gns.gov.pt/media/TSLPT.xml",
+      "filename": "EC de Assinatura Digital Qualificada do Cartão de Cidadão 0005",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "National eID (part of national PKI - SCEE)",
+      "url": "https://www.gns.gov.pt/media/TSLPT.xml",
+      "filename": "EC de Assinatura Digital Qualificada do Cartão de Cidadão 0006",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "National eID (part of national PKI - SCEE)",
+      "url": "https://www.gns.gov.pt/media/TSLPT.xml",
+      "filename": "EC de Assinatura Digital Qualificada do Cartão de Cidadão 0007",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "National eID (part of national PKI - SCEE)",
+      "url": "https://www.gns.gov.pt/media/TSLPT.xml",
+      "filename": "EC de Assinatura Digital Qualificada do Cartão de Cidadão 0008",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "National eID (part of national PKI - SCEE)",
+      "url": "https://www.gns.gov.pt/media/TSLPT.xml",
+      "filename": "EC de Assinatura Digital Qualificada do Cartão de Cidadão 0009",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "National eID (part of national PKI - SCEE)",
+      "url": "https://www.gns.gov.pt/media/TSLPT.xml",
+      "filename": "EC de Assinatura Digital Qualificada do Cartão de Cidadão 0010",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "National eID (part of national PKI - SCEE)",
+      "url": "https://www.gns.gov.pt/media/TSLPT.xml",
+      "filename": "EC de Assinatura Digital Qualificada do Cartão de Cidadão 0011",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "National eID (part of national PKI - SCEE)",
+      "url": "https://www.gns.gov.pt/media/TSLPT.xml",
+      "filename": "EC de Assinatura Digital Qualificada do Cartão de Cidadão 0012",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "National eID (part of national PKI - SCEE)",
+      "url": "https://www.gns.gov.pt/media/TSLPT.xml",
+      "filename": "Serviço de Validação Cronológica do Cartão de Cidadão 000002",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "National eID (part of national PKI - SCEE)",
+      "url": "https://www.gns.gov.pt/media/TSLPT.xml",
+      "filename": "Serviço de Validação Cronológica do Cartão de Cidadão 000004",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "ECM Justiça - Ministry of Justice Certification Service Provider (national PKI - SCEE)",
+      "url": "https://www.gns.gov.pt/media/TSLPT.xml",
+      "filename": "ECM Justica (CA-Qualified Certificates)",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "ECAR - Assembly of the Republic Certification Service Provider (national PKI - SCEE)",
+      "url": "https://www.gns.gov.pt/media/TSLPT.xml",
+      "filename": "ECAR (CA-Qualified Certificates)",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "MULTICERT S.A.",
+      "url": "https://www.gns.gov.pt/media/TSLPT.xml",
+      "filename": "Multicert 001 (CA-Qualified Certificates)",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "MULTICERT S.A.",
+      "url": "https://www.gns.gov.pt/media/TSLPT.xml",
+      "filename": "Multicert 002 (CA-Qualified Certificates)",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "MULTICERT S.A.",
+      "url": "https://www.gns.gov.pt/media/TSLPT.xml",
+      "filename": "MULTICERT Qualified Time Stamping Authority",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "MULTICERT S.A.",
+      "url": "https://www.gns.gov.pt/media/TSLPT.xml",
+      "filename": "MULTICERT Qualified Time Stamping Authority",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "MULTICERT S.A.",
+      "url": "https://www.gns.gov.pt/media/TSLPT.xml",
+      "filename": "MULTICERT Qualified Time Stamping Authority",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "MULTICERT S.A.",
+      "url": "https://www.gns.gov.pt/media/TSLPT.xml",
+      "filename": "MULTICERT Qualified Time Stamping Authority",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "MULTICERT S.A.",
+      "url": "https://www.gns.gov.pt/media/TSLPT.xml",
+      "filename": "MULTICERT Qualified Time Stamping Authority",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "MULTICERT S.A.",
+      "url": "https://www.gns.gov.pt/media/TSLPT.xml",
+      "filename": "MULTICERT Qualified Time Stamping Authority",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "MULTICERT S.A.",
+      "url": "https://www.gns.gov.pt/media/TSLPT.xml",
+      "filename": "MULTICERT Qualified Time Stamping Authority",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "British Telecommunications plc",
+      "url": "https://www.gns.gov.pt/media/TSLPT.xml",
+      "filename": "BT/DigitalSign (CA-Qualified Certificates)",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "DigitalSign - Certificadora Digital, S.A.",
+      "url": "https://www.gns.gov.pt/media/TSLPT.xml",
+      "filename": "DigitalSign Qualified CA",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "DigitalSign - Certificadora Digital, S.A.",
+      "url": "https://www.gns.gov.pt/media/TSLPT.xml",
+      "filename": "DigitalSign TSA (Qualified TSA)",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "DigitalSign - Certificadora Digital, S.A.",
+      "url": "https://www.gns.gov.pt/media/TSLPT.xml",
+      "filename": "DigitalSign TSA - G2 (Qualified TSA)",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "DigitalSign - Certificadora Digital, S.A.",
+      "url": "https://www.gns.gov.pt/media/TSLPT.xml",
+      "filename": "DigitalSign TSA - G2 (Qualified TSA)",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "DigitalSign - Certificadora Digital, S.A.",
+      "url": "https://www.gns.gov.pt/media/TSLPT.xml",
+      "filename": "DigitalSign Qualified CA - G2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "DigitalSign - Certificadora Digital, S.A.",
+      "url": "https://www.gns.gov.pt/media/TSLPT.xml",
+      "filename": "DigitalSign TSA - G3 (Qualified TSA)",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "DigitalSign - Certificadora Digital, S.A.",
+      "url": "https://www.gns.gov.pt/media/TSLPT.xml",
+      "filename": "DigitalSign Qualified CA - G3",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "DigitalSign - Certificadora Digital, S.A.",
+      "url": "https://www.gns.gov.pt/media/TSLPT.xml",
+      "filename": "DigitalSign TSA - G4 (Qualified TSA)",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "DigitalSign - Certificadora Digital, S.A.",
+      "url": "https://www.gns.gov.pt/media/TSLPT.xml",
+      "filename": "DigitalSign TSA - G6 (Qualified TSA)",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "DigitalSign - Certificadora Digital, S.A.",
+      "url": "https://www.gns.gov.pt/media/TSLPT.xml",
+      "filename": "DigitalSign TSA - G7 (Qualified TSA)",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "DigitalSign - Certificadora Digital, S.A.",
+      "url": "https://www.gns.gov.pt/media/TSLPT.xml",
+      "filename": "DigitalSign TSA - G8",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "DigitalSign - Certificadora Digital, S.A.",
+      "url": "https://www.gns.gov.pt/media/TSLPT.xml",
+      "filename": "DIGITALSIGN VALIDATION SERVICE",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Global Trusted Sign",
+      "url": "https://www.gns.gov.pt/media/TSLPT.xml",
+      "filename": "Global Trusted Sign Certification Authority 01",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Global Trusted Sign",
+      "url": "https://www.gns.gov.pt/media/TSLPT.xml",
+      "filename": "Global Trusted Sign Timestamping Authority 001 (Qualified TSA)",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Global Trusted Sign",
+      "url": "https://www.gns.gov.pt/media/TSLPT.xml",
+      "filename": "Global Trusted Sign Timestamping Authority 001 (new Qualified TSA)",
+      "reason": "not-under-supervision"
+    }
+  ]
+}

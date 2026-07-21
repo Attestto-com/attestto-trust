@@ -1,0 +1,1227 @@
+{
+  "pageUrl": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+  "pageTlsFingerprintSha256": null,
+  "lastRun": "2026-07-21T06:43:36.569Z",
+  "sources": {
+    "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml": {
+      "org": "FR Trusted List",
+      "filename": "fr-tsl.xml",
+      "extension": "xml",
+      "sha256": "c931d1b3b66e5abb7adbea2522445d6e9bbd0ed3ba3e019d4ff1769437a46d85",
+      "contentLength": "490520",
+      "lastModifiedHeader": null,
+      "etag": null,
+      "firstSeen": "2026-07-21T06:43:36.533Z",
+      "lastChanged": "2026-07-21T06:43:36.533Z",
+      "lastSeen": "2026-07-21T06:43:36.533Z"
+    }
+  },
+  "knownGaps": [
+    {
+      "org": "VATFR-55130003262",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Acteur de l'Administration d'Etat - Signature 3 étoiles",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-55130003262",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Acteur des Collectivités Territoriales - Signature 3 étoiles",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-55130003262",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Autorité de Certification Personnes AAE",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-55130003262",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Autorité de Certification Personnes AAE",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-55130003262",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Autorité de certification porteur AAE 3 étoiles V2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-55130003262",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Autorité de certification porteur ACT 3 étoiles V2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-55130003262",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Autorité de certification porteur AAE 3 étoiles V3 - AC Acteurs de l'Administration de l'Etat - Service de signature",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-55130003262",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Autorité de certification porteur ACT 3 étoiles V3 - AC Acteurs de l'Administration de l'Etat - Service de signature",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-55130003262",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Autorité de Certification Personnes AAE",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-55130003262",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Autorité de Certification porteur AAE 3 étoiles V4",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-55130003262",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Autorité de certification porteur ACT 3 étoiles V4",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-77180020026",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "CDC - LEGALIA",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-66428786578",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "MERCANTEO+ EU-SIGN RGS 3E",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-66428786578",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "MERCANTEO SIGN RGS 2E",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-66428786578",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "MERCANTEO AUTH-SIGN RGS 2E",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-51434202180",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "CERTEUROPE ADVANCED CA V4 - Signature",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-59433998903",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Certinomis AC 2 stars",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-59433998903",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Certinomis - Prime CA",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-59433998903",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Certinomis - AA et Agents",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-59433998903",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Certinomis - Safe CA",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-59433998903",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Certinomis - ETS 120 - 1.2.250.1.86.5.1.1.1.1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-59433998903",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Certinomis - ETS 498 - 1.2.250.1.86.5.1.1.1.1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-59433998903",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Certinomis - ETS 560 - 1.2.250.1.86.5.1.1.1.1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-59433998903",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Certinomis - ETS 120 - 1.2.250.1.86.5.1.1.1.1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-59433998903",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Certinomis - ETS 498 - 1.2.250.1.86.5.1.1.1.1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-59433998903",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Certinomis - ETS 560 - 1.2.250.1.86.5.1.1.1.1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-59433998903",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Certinomis - ETS 585 - 1.2.250.1.86.5.1.1.1.1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-59433998903",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Certinomis - ETS 498 - 1.2.250.1.86.5.1.1.1.1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-59433998903",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Certinomis - ETS 549 - 1.2.250.1.86.5.1.1.1.1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-59433998903",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Certinomis - ETS 585 - 1.2.250.1.86.5.1.1.1.1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-59433998903",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Certinomis - ETS 498 - 1.2.250.1.86.5.1.1.1.1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-59433998903",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Certinomis - ETS 549 - 1.2.250.1.86.5.1.1.1.1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-59433998903",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Certinomis - ETS 585 - 1.2.250.1.86.5.1.1.1.1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-59433998903",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Certinomis - ETS 498 - 1.2.250.1.86.5.1.1.1.1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-59433998903",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Certinomis - ETS 120 - 1.2.250.1.86.5.1.1.1.1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-83433702479",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Europrobatio",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-83433702479",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Signitio RGS **",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-83433702479",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Signitio RGS ***",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-83433702479",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Eurodacio",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-83433702479",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "ChamberSign France CA3 Qualified eID",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-46439129164",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Universign CA hardware",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-46439129164",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Universign Time Stamping",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-46439129164",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Universign Time Stamping 2015 - 1.3.6.1.4.1.15819.7.2.2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-85481463081",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Certigna ID PRIS *** PRO",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-85481463081",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Certigna ID PRIS ***",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-85481463081",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Certigna Entity Code Signing CA",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-85481463081",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Certigna TSA - UH1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-85481463081",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Certigna TSA - UH2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-85481463081",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Certigna TSA - UH3",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-85481463081",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Certigna TSA - UH4",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-85481463081",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Certigna TSA - UH5",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-85481463081",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Certigna TSA - UH6",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-85481463081",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Certigna TSA - UH7",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-85481463081",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Certigna TSA - UH8",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-85481463081",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Certigna TSA - UH9",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-85481463081",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Certigna TSA - UH10",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-85481463081",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Certigna TSA - UH11",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-85481463081",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Certigna TSA - UH12",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-85481463081",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Certigna TSA - UH13 - 1.2.250.1.177.2.9.1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-85481463081",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Certigna TSA - UH14 - 1.2.250.1.177.2.9.1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-85481463081",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Certigna TSA - UH15 - 1.2.250.1.177.2.9.1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-85481463081",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Certigna TSA - UH16 - 1.2.250.1.177.2.9.1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-85481463081",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Certigna TSA - UH17 - 1.2.250.1.177.2.9.1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-85481463081",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Certigna TSA - UH18 - 1.2.250.1.177.2.9.1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-19130005093",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "MJL Signature RGS ***",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-19130005093",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Autorité de certification personnes 3",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-19130005093",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Autorité de certification personnes 2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-19130005093",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Autorité de certification personnes 4",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-71812611150",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "KEYNECTIS ICS QUALIFIED CA",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-71812611150",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "KEYNECTIS QUALIFIED CDS",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-71812611150",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Cloud Signing Personal Signature CA",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-71812611150",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Keynectis CDS CA for timestamping",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-71812611150",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "DocuSign Premium Cloud Signing CA - SI1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-71812611150",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "UH Qualifiee PA2 20180309 - 1.3.6.1.4.1.22234.2.6.5.8",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-71812611150",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "UH Qualifiee 20190109 - 1.3.6.1.4.1.22234.2.6.5.8",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-71812611150",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "UH Qualifiee 20191017 - 1.3.6.1.4.1.22234.2.6.5.8",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-71812611150",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "UH Qualifiee 20200901- 1.3.6.1.4.1.22234.2.6.5.8",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-03775670003",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Ordre des Experts-Comptables - Signature et Authentification",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-03775670003",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Ordre des Experts-Comptables - Cachet Cabinet",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-03775670003",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Ordre des Experts-Comptables - région Alsace RGS***",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-03775670003",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Ordre des Experts-Comptables - région Aquitaine RGS***",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-03775670003",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Ordre des Experts-Comptables - région Auvergne RGS***",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-03775670003",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Ordre des Experts-Comptables - région Bourgogne RGS***",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-03775670003",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Ordre des Experts-Comptables - région Bretagne RGS***",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-03775670003",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Ordre des Experts-Comptables - région Champagne RGS***",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-03775670003",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Ordre des Experts-Comptables - région Guadeloupe RGS***",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-03775670003",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Ordre des Experts-Comptables - région Guyane RGS***",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-03775670003",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Ordre des Experts-Comptables - région La Réunion RGS***",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-03775670003",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Ordre des Experts-Comptables - région LN-PCAL RGS***",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-03775670003",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Ordre des Experts-Comptables - région Limoges RGS***",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-03775670003",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Ordre des Experts-Comptables - région Lorraine RGS***",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-03775670003",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Ordre des Experts-Comptables - région Marseille PACAC RGS***",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-03775670003",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Ordre des Experts-Comptables - région Martinique RGS***",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-03775670003",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Ordre des Experts-Comptables - région Montpellier RGS***",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-03775670003",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Ordre des Experts-Comptables - région Orléans RGS***",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-03775670003",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Ordre des Experts-Comptables - région Paris RGS***",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-03775670003",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Ordre des Experts-Comptables - région Pays de Loire RGS***",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-03775670003",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Ordre des Experts-Comptables - région Picardie RGS***",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-03775670003",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Ordre des Experts-Comptables - région Poitou Charentes RGS***",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-03775670003",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Ordre des Experts-Comptables - région Rhône Alpes RGS***",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-03775670003",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Ordre des Experts-Comptables - région Rouen Normandie RGS***",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-03775670003",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Ordre des Experts-Comptables - région Toulouse RGS***",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-03775670003",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Ordre des Experts-Comptables - région Corse RGS***",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-03775670003",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Ordre des Experts-Comptables - région Marseille PACA RGS***",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-03775670003",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Ordre des Experts-Comptables - Elu EC RGS***",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-08352973622",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Pass'IN - Signature RGS***",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-08352973622",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Pass'IN - Signature RGS**",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-08352973622",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Pass'IN - 3 stars Qualified Signature",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-08352973622",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Go Workforce eIDAS Qualified Signature",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-67784350134",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "REAL 2017 - Délivrance de certificats de signature clé REAL",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-67784350134",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "AC REAL 2016",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-67784350134",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "AC REAL 2014",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-67784350134",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "AC REAL",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-67784350134",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "AH NOTAIRES",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-67784350134",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Autorité d’Horodatage du Notariat REALTS2019 1.2.250.1.78.1.1.3.1.4.6.1.6",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-67784350134",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "REAL 2019 - Délivrance de certificats de signature clé REAL",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-67784350134",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Autorité d’Horodatage du Notariat REALTS2021 1.2.250.1.78.1.1.3.1.4.6.1.6",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-67784350134",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "REAL 2021 - Délivrance de certificats de signature clé REAL",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-67784350134",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "REALSIGN 2025 - Délivrance de certificats de signature clé REAL",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-67784350134",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "REALTS 2025 - AUTORITE D'HORODATAGE DU NOTARIAT - 1.2.250.1.78.2.1.3.5.4.6.1.1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-39356000000",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "La Poste - Autorité d'horodatage",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-39356000000",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "La Poste - Autorité d'horodatage - UH1 1.2.250.1.8.1.1.1.1.6",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-39356000000",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "La Poste - Autorité d'horodatage - UH2 1.2.250.1.8.1.1.1.1.6",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-39356000000",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "La Poste - Autorité d'horodatage - UH3 1.2.250.1.8.1.1.1.1.6",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-39356000000",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "La Poste - Autorité d'horodatage - UH1 1.2.250.1.8.1.1.1.1.7",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-39356000000",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "La Poste - Autorité d'horodatage - UH2 1.2.250.1.8.1.1.1.1.7",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-39356000000",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "La Poste - Autorité d'horodatage - UH3 1.2.250.1.8.1.1.1.1.7",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-39356000000",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "La Poste - Autorité d'horodatage - UH120 1.2.250.1.8.1.1.1.1.7",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-39356000000",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "La Poste - Autorité d'horodatage - UH120 1.2.250.1.8.1.1.1.1.7",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-39356000000",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "La Poste - Autorité d'horodatage - UH498 1.2.250.1.8.1.1.1.1.7",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-39356000000",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "La Poste - Autorité d'horodatage - UH549 1.2.250.1.8.1.1.1.1.7",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-39356000000",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "La Poste - Autorité d'horodatage - UH560 1.2.250.1.8.1.1.1.1.7",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-39356000000",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "La Poste - Autorité d'horodatage - UH585 1.2.250.1.8.1.1.1.1.7",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-39356000000",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "La Poste - Autorité d'horodatage - UH601 1.2.250.1.8.1.1.1.1.7",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-39356000000",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "LA Lettre recommandée électronique - 1.2.250.1.8.1.1.2.1.1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-04432701630",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "ALMERYS CUSTOMER SERVICES CA",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-04432701630",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "ALMERYS SIGNATURE AND AUTHENTICATION CA",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-61794513986",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Yousign Timestamp",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-61794513986",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Yousign Timestamp - UH4",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-61794513986",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Yousign Timestamp - UH5",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-61794513986",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Yousign Timestamp - UH6 - 1.2.250.1.302.2.1.1.0",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-79809480122",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "AR24 - 1.3.6.1.4.1.50034.1.1.2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-79809480122",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "LRE AR24 DE DOCAPOSTE - 1.3.6.1.4.1.50034.1.1.2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-79809480122",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "LRE AR24 DE DOCAPOSTE - 1.3.6.1.4.1.50034.1.1.2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-79809480122",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "LRE AR24 DE DOCAPOSTE - 1.3.6.1.4.1.50034.1.1.2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "DARVA",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "DARVA Timestamp - UH1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "DARVA",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "DARVA Timestamp - UH2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "DARVA",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "OREA - RE1 - 1.2.250.1.388.1.2.1.1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "DARVA",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "OREA - RE2 - 1.2.250.1.388.1.2.1.1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "DARVA",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Darva Timestamp - UH1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "DARVA",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Darva Timestamp - UH2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "DARVA",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "OREA - RE1 - 1.2.250.1.388.1.2.1.3",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "DARVA",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "OREA - RE2 - 1.2.250.1.388.1.2.1.1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "DARVA",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "OREA - RE2 - 1.2.250.1.388.1.2.1.3",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "DARVA",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "EXIRIS - RE1 - 1.2.250.1.388.1.3.1.3",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "DARVA",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "EXIRIS - RE2 - 1.2.250.1.388.1.3.1.3",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "DARVA",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "EXIRIS - RE3- 1.2.250.1.388.1.3.1.3",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "DARVA",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "EXIRIS - RE4 - 1.2.250.1.388.1.3.1.3",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-67435405923",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "ARKHINEO Signature-validation - 1.3.6.1.4.1.29371.2.3",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-67435405923",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "ARKHINEO Signature-preservation - 1.3.6.1.4.1.29371.2.4",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-45110014016",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Horodatage du Ministère de l'Intérieur - MI-01",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-45110014016",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Horodatage du Ministère de l'Intérieur - MI-02",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-45110014016",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Police Nationale 3E 2018",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-45110014016",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Administration Territoriale 3E 2018",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-45110014016",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Administration Centrale 3E 2018",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-45110014016",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Horodatage du Ministère de l'Intérieur - MI-03",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-45110014016",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Horodatage du Ministère de l'Intérieur - MI-04",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-45110014016",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Horodatage du Ministère de l'Intérieur - MI-05",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-45110014016",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Horodatage du Ministère de l'Intérieur - MI-06",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-45110014016",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Horodatage du Ministère de l'Intérieur - MI-07",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-45110014016",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Horodatage du Ministère de l'Intérieur - MI-08",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-45110014016",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Horodatage du Ministère de l'Intérieur - MI-09 - 1.2.250.1.152.6.1.3.1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-45110014016",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Horodatage du Ministère de l'Intérieur - MI-10 - 1.2.250.1.152.6.1.3.1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-45110014016",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Horodatage du Ministère de l'Intérieur - MI-11 - 1.2.250.1.152.6.1.3.1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-45110014016",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Horodatage du Ministère de l'Intérieur - MI-12 - 1.2.250.1.152.6.1.3.1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-19799320031",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Letreco - 1.3.6.1.4.1.51763.1.1.1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-19799320031",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Letreco - 1.3.6.1.4.1.51763.1.1.2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-19799320031",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Letreco - 1.3.6.1.4.1.51763.1.1.2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-39326803582",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "tessiPOST LRE",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-39326803582",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "tessiPOST LRE",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-39326803582",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Tessi POST LRE",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-17509608352",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "ClearBUS-SRE - 1.3.6.1.4.1.38116.2.1.1.1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-17509608352",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "ClearBUS-SHE - UH 001 - 1.3.6.1.4.1.38116.1.1.1.2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-17509608352",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "ClearBUS-SRE - 1.3.6.1.4.1.38116.2.1.1.1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-17509608352",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "ClearBUS-SHE - UH 002 - 1.3.6.1.4.1.38116.1.1.1.2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-17509608352",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "ClearBUS-SRE - 1.3.6.1.4.1.38116.2.1.1.1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-87504259375",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "E-VELOP - 1.3.6.1.4.1.52671.1.1.1.1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-87504259375",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "E-VELOP -  1.3.6.1.4.1.52671.1.1.1.2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-17428668545",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "VIALINK 360",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-01480622257",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Lex Persona eIDAS qualified timestamp - UH1 - 1.3.6.1.4.1.22542.100.2.1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-01480622257",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Lex Persona eIDAS qualified timestamp - UH2 - 1.3.6.1.4.1.22542.100.2.1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-01480622257",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Lex Persona eIDAS qualified timestamp - UH3 - 1.3.6.1.4.1.22542.100.2.1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-01480622257",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Lex Persona eIDAS qualified timestamp - UH1 - 1.3.6.1.4.1.22542.100.2.1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-01480622257",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Lex Persona eIDAS qualified timestamp - UH2 - 1.3.6.1.4.1.22542.100.2.1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-01480622257",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "Lex Persona eIDAS qualified timestamp - UH3 - 1.3.6.1.4.1.22542.100.2.1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-25440305282",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "IDEMIA eIDAS Qualified CA",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-25440305282",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "IDEMIA eIDAS Qualified TSA",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-22904666203",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "DATASURE TSA01 - 1.3.6.1.4.1.58753.1.1.1.1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-22904666203",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "DATASURE TSA02 - 1.3.6.1.4.1.58753.1.1.1.1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-22904666203",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "DATASURE TSA03 - 1.3.6.1.4.1.58753.1.1.1.1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATFR-68852381052",
+      "url": "https://messervices.cyber.gouv.fr/visas/tl-fr_v6.xml",
+      "filename": "MailStone TimeStamp - 1.3.6.1.4.1.57916.1.1.1.1.1 - Unit1",
+      "reason": "not-under-supervision"
+    }
+  ]
+}

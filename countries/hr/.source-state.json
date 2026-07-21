@@ -1,0 +1,123 @@
+{
+  "pageUrl": "https://gov.hr/UserDocsImages/Usluge%20povjerenja/Pouzdani_popis_RH.xml",
+  "pageTlsFingerprintSha256": null,
+  "lastRun": "2026-07-21T06:43:39.084Z",
+  "sources": {
+    "https://gov.hr/UserDocsImages/Usluge%20povjerenja/Pouzdani_popis_RH.xml": {
+      "org": "HR Trusted List",
+      "filename": "hr-tsl.xml",
+      "extension": "xml",
+      "sha256": "8d1338d0cc3073a6ffc788f65619be644ba96884920ffdf714e8c9910d9ef02e",
+      "contentLength": "60753",
+      "lastModifiedHeader": "Mon, 20 Jul 2026 07:56:25 GMT",
+      "etag": "\"80da1b431d18dd1:0\"",
+      "firstSeen": "2026-07-21T06:43:39.080Z",
+      "lastChanged": "2026-07-21T06:43:39.080Z",
+      "lastSeen": "2026-07-21T06:43:39.080Z"
+    }
+  },
+  "knownGaps": [
+    {
+      "org": "VATHR-85821130368",
+      "url": "https://gov.hr/UserDocsImages/Usluge%20povjerenja/Pouzdani_popis_RH.xml",
+      "filename": "FINA Digital Certificate Registry - QC",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATHR-85821130368",
+      "url": "https://gov.hr/UserDocsImages/Usluge%20povjerenja/Pouzdani_popis_RH.xml",
+      "filename": "FINA Digital Certificate Registry GOV - QC",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATHR-85821130368",
+      "url": "https://gov.hr/UserDocsImages/Usluge%20povjerenja/Pouzdani_popis_RH.xml",
+      "filename": "Fina QTSA 2015",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATHR-85821130368",
+      "url": "https://gov.hr/UserDocsImages/Usluge%20povjerenja/Pouzdani_popis_RH.xml",
+      "filename": "Fina RDC 2015 Digital Certificate Registry - QC",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATHR-85821130368",
+      "url": "https://gov.hr/UserDocsImages/Usluge%20povjerenja/Pouzdani_popis_RH.xml",
+      "filename": "Fina RDC 2015 Digital Certificate Registry GOV - QC",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATHR-85821130368",
+      "url": "https://gov.hr/UserDocsImages/Usluge%20povjerenja/Pouzdani_popis_RH.xml",
+      "filename": "Fina QTSA 2017",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATHR-85821130368",
+      "url": "https://gov.hr/UserDocsImages/Usluge%20povjerenja/Pouzdani_popis_RH.xml",
+      "filename": "Fina QTSA 2017 4",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATHR-85821130368",
+      "url": "https://gov.hr/UserDocsImages/Usluge%20povjerenja/Pouzdani_popis_RH.xml",
+      "filename": "FINA QTSA 2017 5",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATHR-85821130368",
+      "url": "https://gov.hr/UserDocsImages/Usluge%20povjerenja/Pouzdani_popis_RH.xml",
+      "filename": "Fina QTSA 2017 6",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATHR-85821130368",
+      "url": "https://gov.hr/UserDocsImages/Usluge%20povjerenja/Pouzdani_popis_RH.xml",
+      "filename": "Fina QTSA 2017 7",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "AKD d.o.o.",
+      "url": "https://gov.hr/UserDocsImages/Usluge%20povjerenja/Pouzdani_popis_RH.xml",
+      "filename": "AKD QTSA1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "AKD d.o.o.",
+      "url": "https://gov.hr/UserDocsImages/Usluge%20povjerenja/Pouzdani_popis_RH.xml",
+      "filename": "AKD QTSA2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "AKD d.o.o.",
+      "url": "https://gov.hr/UserDocsImages/Usluge%20povjerenja/Pouzdani_popis_RH.xml",
+      "filename": "AKD QTSA 2019 1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "AKD d.o.o.",
+      "url": "https://gov.hr/UserDocsImages/Usluge%20povjerenja/Pouzdani_popis_RH.xml",
+      "filename": "AKD QTSA 2019 2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Zagrebacka banka d.d.",
+      "url": "https://gov.hr/UserDocsImages/Usluge%20povjerenja/Pouzdani_popis_RH.xml",
+      "filename": "Zaba QPKI",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Zagrebacka banka d.d.",
+      "url": "https://gov.hr/UserDocsImages/Usluge%20povjerenja/Pouzdani_popis_RH.xml",
+      "filename": "Zaba QTSA",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATHR-87311810356",
+      "url": "https://gov.hr/UserDocsImages/Usluge%20povjerenja/Pouzdani_popis_RH.xml",
+      "filename": "HP d.d.",
+      "reason": "not-under-supervision"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "pageUrl": "https://dec.dmrid.gov.cy/dmrid/dec/ws_dec.nsf/all/5064247FF4FC3DCCC2258506002EEA17/$file/TSL-CY-sign.xml",
+  "pageTlsFingerprintSha256": null,
+  "lastRun": "2026-07-21T06:42:58.135Z",
+  "sources": {
+    "https://dec.dmrid.gov.cy/dmrid/dec/ws_dec.nsf/all/5064247FF4FC3DCCC2258506002EEA17/$file/TSL-CY-sign.xml": {
+      "org": "CY Trusted List",
+      "filename": "cy-tsl.xml",
+      "extension": "xml",
+      "sha256": "2163e86af5bc0f8d7f77f7b8b4e454376a81b6e1f68a48d2f7148a3b3ab31690",
+      "contentLength": "24452",
+      "lastModifiedHeader": "Wed, 29 Apr 2026 09:03:16 GMT",
+      "etag": "W/\"MTAtMDAwMi0wLUMyMjU4REU4MDAzMUJDNzUtNTA2NDI0N0ZGNEZDM0RDQ0MyMjU4NTA2MDAyRUVBMTc=\"",
+      "firstSeen": "2026-07-21T06:42:58.133Z",
+      "lastChanged": "2026-07-21T06:42:58.133Z",
+      "lastSeen": "2026-07-21T06:42:58.133Z"
+    }
+  },
+  "knownGaps": [
+    {
+      "org": "VATCY-10029914L",
+      "url": "https://dec.dmrid.gov.cy/dmrid/dec/ws_dec.nsf/all/5064247FF4FC3DCCC2258506002EEA17/$file/TSL-CY-sign.xml",
+      "filename": "JCC CA for EU Qualified e-Signatures",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATCY-10029914L",
+      "url": "https://dec.dmrid.gov.cy/dmrid/dec/ws_dec.nsf/all/5064247FF4FC3DCCC2258506002EEA17/$file/TSL-CY-sign.xml",
+      "filename": "JCC CA for EU Qualified e-Seals",
+      "reason": "not-under-supervision"
+    }
+  ]
+}

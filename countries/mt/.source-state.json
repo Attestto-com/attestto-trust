@@ -1,0 +1,57 @@
+{
+  "pageUrl": "https://tsl.mca.org.mt/MT_TSL.xml",
+  "pageTlsFingerprintSha256": null,
+  "lastRun": "2026-07-21T06:44:02.490Z",
+  "sources": {
+    "https://tsl.mca.org.mt/MT_TSL.xml": {
+      "org": "MT Trusted List",
+      "filename": "mt-tsl.xml",
+      "extension": "xml",
+      "sha256": "cf942917c4855535fddb101f4c10f0ff122e723a1c48bc7f717029e764cf211c",
+      "contentLength": "104772",
+      "lastModifiedHeader": "Tue, 28 Apr 2026 22:00:08 GMT",
+      "etag": "\"ac3c726e61b4cb2f7f7f11bd368c47d8\"",
+      "firstSeen": "2026-07-21T06:44:02.488Z",
+      "lastChanged": "2026-07-21T06:44:02.488Z",
+      "lastSeen": "2026-07-21T06:44:02.488Z"
+    }
+  },
+  "knownGaps": [
+    {
+      "org": "NTRMT-C75870",
+      "url": "https://tsl.mca.org.mt/MT_TSL.xml",
+      "filename": "ANF Trusted ID CA1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRMT-C75870",
+      "url": "https://tsl.mca.org.mt/MT_TSL.xml",
+      "filename": "ANF Trusted PA CA1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRMT-C75870",
+      "url": "https://tsl.mca.org.mt/MT_TSL.xml",
+      "filename": "ANF Trusted EV CA1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRMT-C88445",
+      "url": "https://tsl.mca.org.mt/MT_TSL.xml",
+      "filename": "Preservation Services",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRMT-C88445",
+      "url": "https://tsl.mca.org.mt/MT_TSL.xml",
+      "filename": "Preservation Services",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRMT-C88445",
+      "url": "https://tsl.mca.org.mt/MT_TSL.xml",
+      "filename": "Preservation Services",
+      "reason": "not-under-supervision"
+    }
+  ]
+}

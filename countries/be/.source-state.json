@@ -1,0 +1,20 @@
+{
+  "pageUrl": "https://tsl.belgium.be/tsl-be-v6.xml",
+  "pageTlsFingerprintSha256": null,
+  "lastRun": "2026-07-21T06:42:51.123Z",
+  "sources": {
+    "https://tsl.belgium.be/tsl-be-v6.xml": {
+      "org": "BE Trusted List",
+      "filename": "be-tsl.xml",
+      "extension": "xml",
+      "sha256": "3d5b6572b82cbdbed9e019517c33d9e3356c2f6f257ca90f4a1b495082fcf5eb",
+      "contentLength": "140137",
+      "lastModifiedHeader": "Mon, 15 Jun 2026 17:57:36 GMT",
+      "etag": "\"af7c3-6544e8fc6b75a-gzip\"",
+      "firstSeen": "2026-07-21T06:42:08.209Z",
+      "lastChanged": "2026-07-21T06:42:08.209Z",
+      "lastSeen": "2026-07-21T06:42:51.123Z"
+    }
+  },
+  "knownGaps": []
+}

@@ -1,0 +1,111 @@
+{
+  "pageUrl": "https://trustlist.gov.lv/tsl/latvian-tsl.xml",
+  "pageTlsFingerprintSha256": null,
+  "lastRun": "2026-07-21T06:44:01.741Z",
+  "sources": {
+    "https://trustlist.gov.lv/tsl/latvian-tsl.xml": {
+      "org": "LV Trusted List",
+      "filename": "lv-tsl.xml",
+      "extension": "xml",
+      "sha256": "406073daa0dcf04670002803ad91026001d85274da64a9264739027d88566be1",
+      "contentLength": "253737",
+      "lastModifiedHeader": "Wed, 29 Apr 2026 08:10:00 GMT",
+      "etag": "\"3df29-65094dfc6e600\"",
+      "firstSeen": "2026-07-21T06:44:01.737Z",
+      "lastChanged": "2026-07-21T06:44:01.737Z",
+      "lastSeen": "2026-07-21T06:44:01.737Z"
+    }
+  },
+  "knownGaps": [
+    {
+      "org": "NTRLV-40003011203",
+      "url": "https://trustlist.gov.lv/tsl/latvian-tsl.xml",
+      "filename": "E-ME SI (CA1)",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRLV-40003011203",
+      "url": "https://trustlist.gov.lv/tsl/latvian-tsl.xml",
+      "filename": "E-ME SI (CA1) from 04.2013",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRLV-40003011203",
+      "url": "https://trustlist.gov.lv/tsl/latvian-tsl.xml",
+      "filename": "E-ME SI (CA1) from 10.2013",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRLV-40003011203",
+      "url": "https://trustlist.gov.lv/tsl/latvian-tsl.xml",
+      "filename": "E-ME SI (CA1) from 03.2014",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRLV-40003011203",
+      "url": "https://trustlist.gov.lv/tsl/latvian-tsl.xml",
+      "filename": "E-ME SI (CA1) from 08.2014",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRLV-40003011203",
+      "url": "https://trustlist.gov.lv/tsl/latvian-tsl.xml",
+      "filename": "E-ME SI (CA1) from 02.2015",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRLV-40003011203",
+      "url": "https://trustlist.gov.lv/tsl/latvian-tsl.xml",
+      "filename": "E-ME SI (CA1) from 09.2015",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRLV-40003011203",
+      "url": "https://trustlist.gov.lv/tsl/latvian-tsl.xml",
+      "filename": "E-ME SI (CA1) from 05.2016",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRLV-40003011203",
+      "url": "https://trustlist.gov.lv/tsl/latvian-tsl.xml",
+      "filename": "eParaksts CA",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRLV-40003011203",
+      "url": "https://trustlist.gov.lv/tsl/latvian-tsl.xml",
+      "filename": "eParaksts TSA A 2017",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRLV-40003011203",
+      "url": "https://trustlist.gov.lv/tsl/latvian-tsl.xml",
+      "filename": "eParaksts TSA B 2017",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRLV-40003011203",
+      "url": "https://trustlist.gov.lv/tsl/latvian-tsl.xml",
+      "filename": "eParaksts TSA A 2018",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRLV-40003011203",
+      "url": "https://trustlist.gov.lv/tsl/latvian-tsl.xml",
+      "filename": "eParaksts TSA B 2018",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRLV-40003011203",
+      "url": "https://trustlist.gov.lv/tsl/latvian-tsl.xml",
+      "filename": "eParaksts TSA A 2021",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRLV-40003011203",
+      "url": "https://trustlist.gov.lv/tsl/latvian-tsl.xml",
+      "filename": "eParaksts TSA B 2021",
+      "reason": "not-under-supervision"
+    }
+  ]
+}

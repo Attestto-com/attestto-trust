@@ -1,0 +1,111 @@
+{
+  "pageUrl": "https://www.signatur.rtr.at/vertrauensliste.xml",
+  "pageTlsFingerprintSha256": null,
+  "lastRun": "2026-07-21T06:42:49.588Z",
+  "sources": {
+    "https://www.signatur.rtr.at/vertrauensliste.xml": {
+      "org": "AT Trusted List",
+      "filename": "at-tsl.xml",
+      "extension": "xml",
+      "sha256": "f91bbd67a2bf913dfea5f35e9d3bf9157a1bac7d3d2377558ebf071e251e557b",
+      "contentLength": "502447",
+      "lastModifiedHeader": "Mon, 15 Jun 2026 15:01:57 GMT",
+      "etag": "\"7aaaf-6544c1b910340\"",
+      "firstSeen": "2026-07-21T06:42:49.566Z",
+      "lastChanged": "2026-07-21T06:42:49.566Z",
+      "lastSeen": "2026-07-21T06:42:49.566Z"
+    }
+  },
+  "knownGaps": [
+    {
+      "org": "A-Trust Ges. für Sicherheitssysteme im elektr. Datenverkehr GmbH",
+      "url": "https://www.signatur.rtr.at/vertrauensliste.xml",
+      "filename": "TrustSign-Sig-01 (key no. 1)",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "A-Trust Ges. für Sicherheitssysteme im elektr. Datenverkehr GmbH",
+      "url": "https://www.signatur.rtr.at/vertrauensliste.xml",
+      "filename": "TrustSign-Sig-01 (key no. 2)",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "A-Trust Ges. für Sicherheitssysteme im elektr. Datenverkehr GmbH",
+      "url": "https://www.signatur.rtr.at/vertrauensliste.xml",
+      "filename": "TrustSign-Sig-01 (key no. 3)",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "A-Trust Ges. für Sicherheitssysteme im elektr. Datenverkehr GmbH",
+      "url": "https://www.signatur.rtr.at/vertrauensliste.xml",
+      "filename": "a-sign uni",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "A-Trust Ges. für Sicherheitssysteme im elektr. Datenverkehr GmbH",
+      "url": "https://www.signatur.rtr.at/vertrauensliste.xml",
+      "filename": "a-sign-Premium-Sig-01 (key no. 1)",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "A-Trust Ges. für Sicherheitssysteme im elektr. Datenverkehr GmbH",
+      "url": "https://www.signatur.rtr.at/vertrauensliste.xml",
+      "filename": "a-sign-Premium-Sig-01 (key no. 2)",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "A-Trust Ges. für Sicherheitssysteme im elektr. Datenverkehr GmbH",
+      "url": "https://www.signatur.rtr.at/vertrauensliste.xml",
+      "filename": "a-sign-Premium-Sig-01 (key no. 3)",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "A-Trust Ges. für Sicherheitssysteme im elektr. Datenverkehr GmbH",
+      "url": "https://www.signatur.rtr.at/vertrauensliste.xml",
+      "filename": "a-sign-Premium-Sig-02 (key no. 1)",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "A-Trust Ges. für Sicherheitssysteme im elektr. Datenverkehr GmbH",
+      "url": "https://www.signatur.rtr.at/vertrauensliste.xml",
+      "filename": "a-sign-Premium-Sig-02 (key no. 2)",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "A-Trust Ges. für Sicherheitssysteme im elektr. Datenverkehr GmbH",
+      "url": "https://www.signatur.rtr.at/vertrauensliste.xml",
+      "filename": "a-sign-Premium-Sig-03 (key no. 1)",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "A-Trust Ges. für Sicherheitssysteme im elektr. Datenverkehr GmbH",
+      "url": "https://www.signatur.rtr.at/vertrauensliste.xml",
+      "filename": "a-sign-Premium-Sig-03 (key no. 2)",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "A-Trust Ges. für Sicherheitssysteme im elektr. Datenverkehr GmbH",
+      "url": "https://www.signatur.rtr.at/vertrauensliste.xml",
+      "filename": "a-sign-premium-mobile-03",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "A-Trust Ges. für Sicherheitssysteme im elektr. Datenverkehr GmbH",
+      "url": "https://www.signatur.rtr.at/vertrauensliste.xml",
+      "filename": "OCSP Responder 03-1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "A1 Telekom Austria AG (until 30.09.2002: Datakom Austria GmbH)",
+      "url": "https://www.signatur.rtr.at/vertrauensliste.xml",
+      "filename": "a-sign Premium CA",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "GLOBALTRUST",
+      "url": "https://www.signatur.rtr.at/vertrauensliste.xml",
+      "filename": "GLOBALTRUST QUALIFIED TIMESTAMP 1",
+      "reason": "not-under-supervision"
+    }
+  ]
+}

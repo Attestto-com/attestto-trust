@@ -1,0 +1,117 @@
+{
+  "pageUrl": "https://trusted-list.lu/tsl.xml",
+  "pageTlsFingerprintSha256": null,
+  "lastRun": "2026-07-21T06:43:59.067Z",
+  "sources": {
+    "https://trusted-list.lu/tsl.xml": {
+      "org": "LU Trusted List",
+      "filename": "lu-tsl.xml",
+      "extension": "xml",
+      "sha256": "979384a04a416d6601c86fdd25a2921602a8e031be0f4df0a50d805f3913666c",
+      "contentLength": null,
+      "lastModifiedHeader": "Thu, 09 Jul 2026 11:00:01 GMT",
+      "etag": null,
+      "firstSeen": "2026-07-21T06:43:59.062Z",
+      "lastChanged": "2026-07-21T06:43:59.062Z",
+      "lastSeen": "2026-07-21T06:43:59.062Z"
+    }
+  },
+  "knownGaps": [
+    {
+      "org": "VATLU-20976985",
+      "url": "https://trusted-list.lu/tsl.xml",
+      "filename": "LuxTrust Qualified Certification Authority",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATLU-20976985",
+      "url": "https://trusted-list.lu/tsl.xml",
+      "filename": "LuxTrust Global Qualified Certification Authority",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATLU-20976985",
+      "url": "https://trusted-list.lu/tsl.xml",
+      "filename": "LuxTrust Global Qualified Certification Authority 2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATLU-20976985",
+      "url": "https://trusted-list.lu/tsl.xml",
+      "filename": "LuxTrust Global Time Stamping Authority",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATLU-20976985",
+      "url": "https://trusted-list.lu/tsl.xml",
+      "filename": "LuxTrust SSL Certification Authority 5",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATLU-20976985",
+      "url": "https://trusted-list.lu/tsl.xml",
+      "filename": "LuxTrust Seal and Signature Validation Service",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATLU-20976985",
+      "url": "https://trusted-list.lu/tsl.xml",
+      "filename": "LuxTrust Seal and Signature Validation Service",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATLU-20976985",
+      "url": "https://trusted-list.lu/tsl.xml",
+      "filename": "LuxTrust Seal and Signature Validation Service",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRLU-B0132166",
+      "url": "https://trusted-list.lu/tsl.xml",
+      "filename": "SeMarket Qualified Certification Authority",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATLU-LU29222134",
+      "url": "https://trusted-list.lu/tsl.xml",
+      "filename": "BE-YS SIGNATURE AND AUTHENTICATION CA NC",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATLU-LU29222134",
+      "url": "https://trusted-list.lu/tsl.xml",
+      "filename": "BE INVEST TIMESTAMP UNIT 9",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATLU-LU29222134",
+      "url": "https://trusted-list.lu/tsl.xml",
+      "filename": "BE INVEST TIMESTAMP UNIT 10",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATLU-LU29222134",
+      "url": "https://trusted-list.lu/tsl.xml",
+      "filename": "BE INVEST TIMESTAMP UNIT Q 1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATLU-LU29222134",
+      "url": "https://trusted-list.lu/tsl.xml",
+      "filename": "BE INVEST TIMESTAMP UNIT Q 2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATLU-33812514",
+      "url": "https://trusted-list.lu/tsl.xml",
+      "filename": "IgniSign Global Qualified CA 2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATLU-33812514",
+      "url": "https://trusted-list.lu/tsl.xml",
+      "filename": "IgniSign TSA Qualified CA 2",
+      "reason": "not-under-supervision"
+    }
+  ]
+}

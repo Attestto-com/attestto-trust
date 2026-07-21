@@ -1,0 +1,4683 @@
+{
+  "pageUrl": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+  "pageTlsFingerprintSha256": null,
+  "lastRun": "2026-07-21T06:43:08.403Z",
+  "sources": {
+    "https://tl.bundesnetzagentur.de/TL-DE.XML": {
+      "org": "DE Trusted List",
+      "filename": "de-tsl.xml",
+      "extension": "xml",
+      "sha256": "93d0a212a03ede4411d6d9ebb54b886c013a4a2f48aa666b7c493ca3b13a4549",
+      "contentLength": "713744",
+      "lastModifiedHeader": "Tue, 07 Jul 2026 12:17:16 GMT",
+      "etag": "\"02e768caedd1:0\"",
+      "firstSeen": "2026-07-21T06:43:08.348Z",
+      "lastChanged": "2026-07-21T06:43:08.348Z",
+      "lastSeen": "2026-07-21T06:43:08.348Z"
+    }
+  },
+  "knownGaps": [
+    {
+      "org": "VATDE-811458858",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "BA-QC-TSP-10:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-811458858",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "BA-QC-TSP-12:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-811458858",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "BA-QC-TSP-1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-811458858",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "BA-QC-TSP-27:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-811458858",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "BA-QC-TSP-28:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-811458858",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "BA-QC-TSP-29:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-811458858",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "BA-QC-TSP-2:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-811458858",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "BA-QC-TSP-30:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-811458858",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "BA-QC-TSP-31:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-811458858",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "BA-QC-TSP-32:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-811458858",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "BA-QC-TSP-33:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-811458858",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "BA-QC-TSP-34:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-811458858",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "BA-QC-TSP-35:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-811458858",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "BA-QC-TSP-36:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-811458858",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "BA-QC-TSP-37:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-811458858",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "BA-QC-TSP-38:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-811458858",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "BA-QC-TSP-39:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-811458858",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "BA-QC-TSP-3:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-811458858",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "BA-QC-TSP-40:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-811458858",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "BA-QC-TSP-41:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-811458858",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "BA-QC-TSP-42:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-811458858",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "BA-QC-TSP-43:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-811458858",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "BA-QC-TSP-44:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-811458858",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "BA-QC-TSP-45:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-811458858",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "BA-QC-TSP-46:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-811458858",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "BA-QC-TSP-47:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-811458858",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "BA-QC-TSP-48:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-811458858",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "BA-QC-TSP-49:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-811458858",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "BA-QC-TSP-4:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-811458858",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "BA-QC-TSP-50:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-811458858",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "BA-QC-TSP-51:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-811458858",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "BA-QC-TSP-52:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-811458858",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "BA-QC-TSP-53:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-811458858",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "BA-QC-TSP-54:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-811458858",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "BA-QC-TSP-56:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-811458858",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "BA-QC-TSP-58:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-811458858",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "BA-QC-TSP-5:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-811458858",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "BA-QC-TSP-6:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-811458858",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "BA-QC-TSP-7:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-811458858",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "BA-QC-TSP-8:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-811458858",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "BA-QC-TSP-9:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-811458858",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Bundesagentur fuer Arbeit qualifizierte elektronische Zeitstempel",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-811458858",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Bundesagentur fuer Arbeit qualifizierte elektronische Zeitstempel",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-811458858",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Bundesagentur fuer Arbeit qualifizierte elektronische Zeitstempel",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-811458858",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Bundesagentur fuer Arbeit qualifizierte elektronische Zeitstempel",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-811458858",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Bundesagentur fuer Arbeit qualifizierte elektronische Zeitstempel",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-811458858",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Bundesagentur fuer Arbeit qualifizierte elektronische Zeitstempel",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-811458858",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Bundesagentur fuer Arbeit qualifizierte elektronische Zeitstempel",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-811458858",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Bundesagentur fuer Arbeit qualifizierte elektronische Zeitstempel",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-811458858",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Bundesagentur fuer Arbeit qualifizierte elektronische Zeitstempel",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-811458858",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Bundesagentur fuer Arbeit qualifizierte elektronische Zeitstempel",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-811458858",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Bundesagentur fuer Arbeit qualifizierte elektronische Zeitstempel",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-811458858",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Bundesagentur fuer Arbeit qualifizierte elektronische Zeitstempel",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-811458858",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Bundesagentur fuer Arbeit qualifizierte elektronische Zeitstempel",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-811458858",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Bundesagentur fuer Arbeit qualifizierte elektronische Zeitstempel",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-811458858",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Bundesagentur fuer Arbeit qualifizierte elektronische Zeitstempel",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-811458858",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Bundesagentur fuer Arbeit qualifizierte elektronische Zeitstempel",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-811458858",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Bundesagentur fuer Arbeit qualifizierte elektronische Zeitstempel",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-811458858",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Bundesagentur fuer Arbeit qualifizierte elektronische Zeitstempel",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-811458858",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Bundesagentur fuer Arbeit qualifizierte elektronische Zeitstempel",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-811458858",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Bundesagentur fuer Arbeit qualifizierte elektronische Zeitstempel",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-811458858",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Bundesagentur fuer Arbeit qualifizierte elektronische Zeitstempel",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-811458858",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Bundesagentur fuer Arbeit qualifizierte elektronische Zeitstempel",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-811458858",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Bundesagentur fuer Arbeit qualifizierte elektronische Zeitstempel",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-811458858",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Bundesagentur fuer Arbeit qualifizierte elektronische Zeitstempel",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-811458858",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Bundesagentur fuer Arbeit qualifizierte elektronische Zeitstempel",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-811458858",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Bundesagentur fuer Arbeit qualifizierte elektronische Zeitstempel",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-811458858",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Bundesagentur fuer Arbeit qualifizierte elektronische Zeitstempel",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-811458858",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Bundesagentur fuer Arbeit qualifizierte elektronische Zeitstempel",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-122788238",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "BNotK qualifizierte Zertifikate für elektronische Signaturen",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-122788238",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "BNotK qualifizierte Zertifikate für elektronische Signaturen",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-122788238",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "BNotK qualifizierte Zertifikate für elektronische Signaturen",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-122788238",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "BNotK qualifizierte Zertifikate für elektronische Signaturen",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-122788238",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "BNotK CA 5 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-122788238",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "BNotK qualifizierte Zertifikate für elektronische Signaturen",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-122788238",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "BNotK qualifizierte elektronische Zeitstempel",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-122788238",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "BNotK qualifizierte elektronische Zeitstempel",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-122788238",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "BNotK qualifizierte elektronische Zeitstempel",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-122788238",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "BNotK qualifizierte elektronische Zeitstempel",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-122788238",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "BNotK TSS 5 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-122788238",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "BNotK qualifizierte elektronische Zeitstempel",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-122788238",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "CA BNotK 10:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-122788238",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "CA BNotK 11:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-122788238",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "CA BNotK 12:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-122788238",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "CA BNotK 13:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-122788238",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "CA BNotK 14:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-122788238",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "CA BNotK 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-122788238",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "CA BNotK 2:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-122788238",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "CA BNotK 3:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-122788238",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "CA BNotK 4:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-122788238",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "CA BNotK 5:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-122788238",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "CA BNotK 9:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-122788238",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "CA der ZS der BNotK 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-122788238",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "CA der ZS der BNotK 2:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-122788238",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TSS BNotK 22:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-122788238",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TSS BNotK 23:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-122788238",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TSS BNotK 24:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-122788238",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TSS BNotK 25:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-122788238",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TSS BNotK 26:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-122788238",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "BNotK qualifizierte elektronische Zeitstempel",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-122788238",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "BNotK qualifizierte elektronische Zeitstempel",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "ChamberSign Qualified CA 1 2008:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "ChamberSign Qualified CA 1 2012:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "ChamberSign Qualified CA 1 2014:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "ChamberSign Qualified CA 2 2008:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "ChamberSign Qualified CA 2 2014:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "ChamberSign Qualified CA 3 2012:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "ChamberSign Qualified CA 3 2014:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "ChamberSign Qualified CA 4 2012:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-TRUST Qualified CA 1 2008:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-TRUST Qualified CA 1 2012:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-TRUST Qualified CA 1 2014:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-TRUST Qualified CA 10 2012:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-TRUST Qualified CA 11 2012:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-TRUST Qualified CA 12 2012:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-TRUST Qualified CA 2 2008:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-TRUST Qualified CA 2 2012:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-TRUST Qualified CA 2 2014:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-TRUST Qualified CA 3 2012:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-TRUST Qualified CA 3 2014:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-TRUST Qualified CA 4 2012:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-TRUST Qualified CA 6 2012:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-TRUST Qualified CA 7 2012:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-TRUST Qualified CA 9 2012:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-TRUST Qualified Root CA 1 2008:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-TRUST Qualified Root CA 1 2012:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-TRUST Qualified Root CA 1 2014:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-TRUST Qualified Root CA 2 2008:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-TRUST Qualified Root CA 2 2012:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-TRUST Qualified Root CA 2 2014:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-TRUST Qualified Root CA 3 2008:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-TRUST Qualified Root CA 3 2012:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-TRUST Qualified Root CA 3 2014:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-TRUST Qualified Root CA 4 2012:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-TRUST akkr 2012 CA 5 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-TRUST akkr 2012 CA 6 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-TRUST akkr 2012 CA 7 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-TRUST akkr 2012 CA 8 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-TRUST akkr 2012 TSS 19 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-TRUST akkr 2012 TSS 20 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-TRUST akkr 2012 TSS 21 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-TRUST akkr 2012 TSS 22 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-TRUST akkr 2012 TSS 23 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-TRUST akkr 2014 CA 1 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-TRUST akkr 2014 CA 2 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-TRUST akkr 2014 CA 3 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-TRUST akkr 2014 CA 4 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-TRUST akkr 2014 CA 5 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-TRUST akkr 2014 CA 6 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-TRUST akr 2012 TSS 24 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-TRUST akr 2012 TSS 25 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-TRUST akr 2012 TSS 26 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-TRUST akr 2012 TSS 27 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-TRUST akr 2012 TSS 28 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-TRUST_akkr_CA-07_2006 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-TRUST_akkr_CA-08_2006 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-TRUST_akr_2002_CA2 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-TRUST_akr_2007_ca1 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-TRUST_akr_2007_ca2 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-TRUST_akr_2007_ca3 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-TRUST_akr_2007_ca4 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-TRUST_akr_2007_ca5 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-TRUST_akr_2007_ca6 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-TRUST_akr_2008_ca1 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-TRUST_akr_2008_ca2 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-TRUST_akr_2008_ca3 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-TRUST_akr_2008_ca4 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-TRUST_akr_2012_ca1 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-TRUST_akr_2012_ca2 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-TRUST_akr_2012_ca4 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-Trust.HBA-qCA 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-Trust.HBA-qCA 2:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-Trust.HBA-qCA 3:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-Trust.HBA-qCA 4:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-Trust.HBA-qCA 5:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-Trust.HBA-qCA 6:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-TRUST akkr 2016 TSS 1 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-TRUST akkr 2016 TSS 2 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-TRUST akkr 2016 CA 1 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-TRUST akkr 2016 CA 2 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-TRUST akkr 2014 TSS 5 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-TRUST akkr 2014 TSS 6 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-TRUST akkr 2014 TSS 7 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-TRUST akkr 2014 TSS 8 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-TRUST akkr 2014 TSS 10 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-TRUST akkr 2014 TSS 11 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-TRUST akkr 2014 TSS 12 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-TRUST akkr 2014 TSS 9 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-TRUST akkr 2014 TSS 1 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-TRUST akkr 2014 TSS 2 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-TRUST akkr 2014 TSS 3 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-TRUST akkr 2014 TSS 4 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-Trust qualified seal card",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-Trust qualified timestamp",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-Trust remote signature service (sign-me)",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-Trust qualified Seal ID for advanced seals",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-Trust qualified seal card",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-202620438",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "D-Trust qualified timestamp",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-133546770",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "CA DATEV D01 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-133546770",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "CA DATEV D02 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-133546770",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "CA DATEV D03 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-133546770",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "CA DATEV D04 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-133546770",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "CA DATEV D201 2:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-133546770",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "CA DATEV D202 2:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-133546770",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "CA DATEV D203 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-133546770",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "CA DATEV D217 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-133546770",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "CA DATEV D218 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-133546770",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "CA DATEV D219 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-133546770",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "CA DATEV D247 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-133546770",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "CA DATEV D248 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-133546770",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "CA DATEV D249 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-133546770",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "CA DATEV D250 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-133546770",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "CA DATEV D251 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-133546770",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "CA DATEV D252 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-133546770",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "CA DATEV D85 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-133546770",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "CA DATEV D86 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-133546770",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "CA DATEV D87 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-133546770",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "CA DATEV ZSM 01 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-133546770",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "CA DATEV ZSM 02 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-133546770",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "CA DATEV ZSM 03 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-133546770",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "CA DATEV ZSM 04 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-133546770",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "CA DATEV ZSM 05 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-190667552",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "DEDGN qCA für Ärzte 3 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-190667552",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "DEDGN qCA für Ärzte 4 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-190667552",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "dgnservice CA 1 Type A 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-190667552",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "dgnservice CA 2 Type A 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-190667552",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "dgnservice CA 3 Type A 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-190667552",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "dgnservice CA 4 Type A 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-190667552",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "dgnservice CA 5 Type A 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-190667552",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "dgnservice CA 6 Type A 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-190667552",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "DGN Zertifizierungsservice",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-190667552",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "DGN Zertifizierungsservice",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-121646990",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "CA DP Com 13:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-121646990",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "CA DP Com 14:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-121646990",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "CA DP Com 15:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-121646990",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "CA DP Com 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-121646990",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "CA DP Com 2:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-121646990",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "CA DP Com 3:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-121646990",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "CA DP Com 4:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-121646990",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "CA DP Com 5:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-121646990",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "CA DP Com 6:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-121646990",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "CA DP Com 7:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-121646990",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "CA DP Com 8:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-121646990",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "CA DP Com 9:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-282253586",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "CA Signtrust 10:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-282253586",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "CA Signtrust 11:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-282253586",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "CA Signtrust 5:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-282253586",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "CA Signtrust 6:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-282253586",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "CA Signtrust 7:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-282253586",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "CA Signtrust 8:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-282253586",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "CA Signtrust 9:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-282253586",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TSS Signtrust 50:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-282253586",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TSS Signtrust 51:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-282253586",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TSS Signtrust 52:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-282253586",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TSS Signtrust 53:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-282253586",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TSS Signtrust 54:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-282253586",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TSS Signtrust 55:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-282253586",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TSS Signtrust 56:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-282253586",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TSS Signtrust 57:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-282253586",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TSS Signtrust 58:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-282253586",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TSS Signtrust 59:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-170173453",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "QC 11 Mitarbeiter CA",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-170173453",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Qualifizierter Zertifikatsdienst des Vertrauensdiensteanbieters Deutsche Rentenversicherung Westfalen",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-123475223",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TSYSI.HBA-qCA 4:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-123475223",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TSYSI.HBA-qCA 5:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-123475223",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TeleSec PKS SigG CA 1 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-123475223",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TeleSec PKS SigG CA 13:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-123475223",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TeleSec PKS SigG CA 14:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-123475223",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TeleSec PKS SigG CA 15:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-123475223",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TeleSec PKS SigG CA 16:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-123475223",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TeleSec PKS SigG CA 17 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-123475223",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TeleSec PKS SigG CA 17:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-123475223",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TeleSec PKS SigG CA 18 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-123475223",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TeleSec PKS SigG CA 18:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-123475223",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TeleSec PKS SigG CA 19 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-123475223",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TeleSec PKS SigG CA 19:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-123475223",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TeleSec PKS SigG CA 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-123475223",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TeleSec PKS SigG CA 2 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-123475223",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TeleSec PKS SigG CA 25:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-123475223",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TeleSec PKS SigG CA 26:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-123475223",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TeleSec PKS SigG CA 27:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-123475223",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TeleSec PKS SigG CA 28:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-123475223",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TeleSec PKS SigG CA 29:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-123475223",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TeleSec PKS SigG CA 2:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-123475223",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TeleSec PKS SigG CA 3 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-123475223",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TeleSec PKS SigG CA 30:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-123475223",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TeleSec PKS SigG CA 31:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-123475223",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TeleSec PKS SigG CA 32:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-123475223",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TeleSec PKS SigG CA 33:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-123475223",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TeleSec PKS SigG CA 34:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-123475223",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TeleSec PKS SigG CA 35:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-123475223",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TeleSec PKS SigG CA 36:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-123475223",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TeleSec PKS SigG TSS 32:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-123475223",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TeleSec PKS SigG TSS 33:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-123475223",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TeleSec PKS SigG TSS 34:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-123475223",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TeleSec PKS SigG TSS 35:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-123475223",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Telekom Security HBA",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-123475223",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Qualified.ID",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-123475223",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Qualified.ID",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-123475223",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Qualified.ID",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-123475223",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Telekom Security HBA",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST CA fuer qualifizierte Zertifikate 2008-01 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST CA fuer qualifizierte Zertifikate 2008-02 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST CA fuer qualifizierte Zertifikate 2008-03 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST CA fuer qualifizierte Zertifikate 2008-04 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST CA fuer qualifizierte Zertifikate 2008-05 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST CA fuer qualifizierte Zertifikate 2008-06 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST CA fuer qualifizierte Zertifikate 2008-07 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST CA fuer qualifizierte Zertifikate 2008-08 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST CA fuer qualifizierte Zertifikate 2009-01 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST CA fuer qualifizierte Zertifikate 2009-02 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST CA fuer qualifizierte Zertifikate 2009-03 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST CA fuer qualifizierte Zertifikate 2009-04 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST CA fuer qualifizierte Zertifikate 2009-06 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST CA fuer qualifizierte Zertifikate 2010-01 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST CA fuer qualifizierte Zertifikate 2010-03 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST CA fuer qualifizierte Zertifikate 2010-04 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST CA fuer qualifizierte Zertifikate 2010-05 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST CA fuer qualifizierte Zertifikate 2010-06 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST CA fuer qualifizierte Zertifikate 2011-01 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST CA fuer qualifizierte Zertifikate 2011-02 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST CA fuer qualifizierte Zertifikate 2011-03 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST CA fuer qualifizierte Zertifikate 2011-04 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST CA fuer qualifizierte Zertifikate 2011-05 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST CA fuer qualifizierte Zertifikate 2011-06 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST CA fuer qualifizierte Zertifikate 2012-01 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST CA fuer qualifizierte Zertifikate 2012-02 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST CA fuer qualifizierte Zertifikate 2012-03 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST CA fuer qualifizierte Zertifikate 2012-04 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST CA fuer qualifizierte Zertifikate 2013-01 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST CA fuer qualifizierte Zertifikate 2013-03 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST CA fuer qualifizierte Zertifikate 2013-05 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST CA fuer qualifizierte Zertifikate 2014-01 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST CA fuer qualifizierte Zertifikate 2014-02 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST Qualified Root CA 2005-001 - Notified Operation",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST Qualified Root CA 2006-001 - Notified Operation",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST Qualified Root CA 2007-001 - Notified Operation",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST Qualified Root CA 2008-001 - Notified Operation",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST Qualified Root CA 2009-001 - Notified Operation",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST Qualified Root CA 2010-001 - Notified Operation",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST Qualified Root CA 2010-002 - Notified Operation",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST Qualified Root CA 2010-003 - Notified Operation",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST Qualified Root CA 2011-001 - Notified Operation",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST Qualified Root CA 2012-001 - Notified Operation",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST Qualified Signature CA 2005-001:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST Qualified Signature CA 2005-002:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST Qualified Signature CA 2005-003:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST Qualified Signature CA 2005-004:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST Qualified Signature CA 2005-005:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST Qualified Signature CA 2005-006:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST Qualified Signature CA 2005-007:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST Qualified Signature CA 2005-008:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST Qualified Signature CA 2005-009:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST Qualified Signature CA 2005-010:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST Qualified Signature CA 2006-001:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST Qualified Signature CA 2006-002:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST Qualified Signature CA 2006-003:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST Qualified Signature CA 2006-004:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST Qualified Signature CA 2006-005:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST Qualified Signature CA 2006-006:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST Qualified Signature CA 2006-007:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST Qualified Signature CA 2006-008:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST Qualified Signature CA 2006-009:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST Qualified Signature CA 2006-010:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST Qualified Signature CA 2007-001:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST Qualified Signature CA 2007-002:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST Qualified Signature CA 2007-003:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST Qualified Signature CA 2007-004:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST Qualified Signature CA 2007-005:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST Qualified Signature CA 2007-006:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST Qualified Signature CA 2007-007:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST Qualified Signature CA 2007-008:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST Qualified Signature CA 2007-009:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST Qualified Signature CA 2007-010:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST Qualified Signature CA 2008-001:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST Qualified Signature CA 2008-002:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST Qualified Signature CA 2008-003:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST Qualified Signature CA 2008-004:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST Qualified Signature CA 2008-005:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST Qualified Signature CA 2008-006:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST Qualified Signature CA 2009-001:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST Qualified Signature CA 2009-002:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST Qualified Signature CA 2009-003:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST Qualified Signature CA 2009-004:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST Qualified Signature CA 2009-005:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST Qualified Signature CA 2009-006:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST Qualified Signature CA 2010-001:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST Qualified Signature CA 2010-002:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST Qualified Signature CA 2010-003:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST Qualified Signature CA 2010-004:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST Qualified Signature CA 2010-005:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST Qualified Signature CA 2010-006:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST Qualified Signature CA 2010-007:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST Qualified Signature CA 2010-008:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST Qualified Signature CA 2010-009:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST Qualified Signature CA 2011-001:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST Qualified Signature CA 2011-002:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST Qualified Signature CA 2011-003:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST Qualified Signature CA 2011-004:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST Qualified Signature CA 2011-005:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST Qualified Signature CA 2011-006:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST Qualified Signature CA 2012-001:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST Qualified Signature CA 2012-002:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST Qualified Signature CA 2012-003:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST Qualified Signature CA 2012-004:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST Qualified Signature CA 2012-005:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST Qualified Signature CA 2012-006:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST Qualified Signature CA 2015-01:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST Qualified Signature CA 2015-02:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST Qualified Signature CA 2015-03:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147830796",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "S-TRUST Qualified Signature CA 2015-04:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-215384696",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "AuthentiDate TSA for Healthcare IT Solutions C055 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-215384696",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "AuthentiDate TSA for Healthcare IT Solutions C056 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-215384696",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "AuthentiDate TSA for Healthcare IT Solutions C067 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-215384696",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "AuthentiDate TSA for Healthcare IT Solutions C068 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-215384696",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "AuthentiDate Timestamp Authority C045 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-215384696",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "AuthentiDate Timestamp Authority C046 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-215384696",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "AuthentiDate Timestamp Authority C047 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-215384696",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "AuthentiDate Timestamp Authority C048 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-215384696",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "AuthentiDate Timestamp Authority C049 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-215384696",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "AuthentiDate Timestamp Authority C050 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-215384696",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "AuthentiDate Timestamp Authority C051 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-215384696",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "AuthentiDate Timestamp Authority C052 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-215384696",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "AuthentiDate Timestamp Authority C053 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-215384696",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "AuthentiDate Timestamp Authority C054 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-215384696",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "AuthentiDate Timestamp Authority C057 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-215384696",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "AuthentiDate Timestamp Authority C058 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-215384696",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "AuthentiDate Timestamp Authority C059 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-215384696",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "AuthentiDate Timestamp Authority C060 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-215384696",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "AuthentiDate Timestamp Authority C061 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-215384696",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "AuthentiDate Timestamp Authority C062 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-215384696",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "AuthentiDate Timestamp Authority C063 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-215384696",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "AuthentiDate Timestamp Authority C064 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-215384696",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "AuthentiDate Timestamp Authority C065 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-215384696",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "AuthentiDate Timestamp Authority C066 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-215384696",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TSS AuthentiDate C001 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-215384696",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TSS AuthentiDate C002 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-215384696",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TSS AuthentiDate C003 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-215384696",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TSS AuthentiDate C004 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-215384696",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TSS AuthentiDate C005 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-215384696",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TSS AuthentiDate C006 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-215384696",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TSS AuthentiDate C007 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-215384696",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TSS AuthentiDate C008 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-215384696",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TSS AuthentiDate C009 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-215384696",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TSS AuthentiDate C010 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-215384696",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TSS AuthentiDate C011 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-215384696",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TSS AuthentiDate C012 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-215384696",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TSS AuthentiDate C013 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-215384696",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TSS AuthentiDate C014 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-215384696",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TSS AuthentiDate C015 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-215384696",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TSS AuthentiDate C016 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-215384696",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TSS AuthentiDate C017 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-215384696",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TSS AuthentiDate C018 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-215384696",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TSS AuthentiDate C019 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-215384696",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TSS AuthentiDate C020 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-215384696",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TSS AuthentiDate C021 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-215384696",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TSS AuthentiDate C022 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-215384696",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TSS AuthentiDate C023 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-215384696",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TSS AuthentiDate C024 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-215384696",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TSS AuthentiDate C025 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-215384696",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TSS AuthentiDate C026 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-215384696",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TSS AuthentiDate C027 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-215384696",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TSS AuthentiDate C028 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-215384696",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TSS AuthentiDate C029 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-215384696",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TSS AuthentiDate C030 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-215384696",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TSS AuthentiDate C031 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-215384696",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TSS AuthentiDate C032 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-215384696",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TSS AuthentiDate C033 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-215384696",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TSS AuthentiDate C034 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-215384696",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TSS AuthentiDate C035 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-215384696",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TSS AuthentiDate C036 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-215384696",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TSS AuthentiDate C037 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-215384696",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TSS AuthentiDate C038 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-215384696",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TSS AuthentiDate C039 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-215384696",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TSS AuthentiDate C040 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-215384696",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TSS AuthentiDate C041 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-215384696",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TSS AuthentiDate C042 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-215384696",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TSS AuthentiDate C043 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-215384696",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TSS AuthentiDate C044 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-215384696",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "exceet TSA 01",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-215384696",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "exceet TSA 02",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-119432307",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "QC 13 Mitarbeiter CA",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-119432307",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Qualifizierter Zertifikatsdienst des Vertrauensdiensteanbieters Deutsche Rentenversicherung Rheinland",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-136626890",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "QC 70 Mitarbeiter CA",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-136626890",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Root Certification Authority of Deutsche Rentenversicherung for Qualified Certificates 2007",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-136626890",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Root Certification Authority of Deutsche Rentenversicherung for Qualified Certificates 2008",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-136626890",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Root Certification Authority of Deutsche Rentenversicherung for Qualified Certificates 2009",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-136626890",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Root Certification Authority of Deutsche Rentenversicherung for Qualified Certificates 2010",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-136626890",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Root Certification Authority of Deutsche Rentenversicherung for Qualified Certificates 2011",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-136626890",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Root Certification Authority of Deutsche Rentenversicherung for Qualified Certificates 2012",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-136626890",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Root Certification Authority of Deutsche Rentenversicherung for Qualified Certificates 2012",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-136626890",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Root Certification Authority of Deutsche Rentenversicherung for Qualified Certificates 2014",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-136626890",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TCDRV_TST_641070",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-136626890",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TCDRV_TST_641074",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-136626890",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TCDRV_TST_641075",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-136626890",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TCDRV_TST_500159",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-136626890",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TCDRV_TST_500160",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-136626890",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TCDRV_TST_500161",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-136626890",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TCDRV_TST_627876",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-136626890",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TCDRV_TST_639601",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-136626890",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TCDRV_TST_639602",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-136626890",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TCDRV_TST_627877",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-136626890",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TCDRV_TST_639603",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-136626890",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TCDRV_TST_639604",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-136626890",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TCDRV_TST_500155",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-136626890",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TCDRV_TST_639600",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-136626890",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TCDRV_TST_641076",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-136626890",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TCDRV_TST_641077",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-136626890",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TCDRV_TST_641078",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-136626890",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TCDRV_TST_641079",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-136626890",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Qualifizierter Zertifikatsdienst des Vertrauensdiensteanbieters Deutsche Rentenversicherung Bund",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-136626890",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Qualifizierter Zeitstempeldienst des Trustcenters der Deutschen Rentenversicherung",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-245979558",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TC TrustCenter CA 10:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-245979558",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TC TrustCenter CA 4:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-245979558",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TC TrustCenter CA 5:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-245979558",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TC TrustCenter CA 6:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-245979558",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TC TrustCenter CA 7:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-245979558",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TC TrustCenter CA 9:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-245979558",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TC TrustCenter TSS 20:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-245979558",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "TC TrustCenter TSS 21:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-813970224",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "DEMDS qCA für Psychotherapeuten 1 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-813970224",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "DEMDS qCA für Psychotherapeuten 2 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-813970224",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "DEMDS qCA für Psychotherapeuten 3 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-813970224",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "DEMDS qCA für Psychotherapeuten 4 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-813970224",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "DEMDS qCA für Psychotherapeuten 5 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-813970224",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "DEMDS qCA für Psychotherapeuten 6 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-813970224",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "DEMDS qCA für Zahnärzte 1 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-813970224",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "DEMDS qCA für Zahnärzte 2 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-813970224",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "DEMDS qCA für Zahnärzte 3 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-813970224",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "DEMDS qCA für Zahnärzte 4 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-813970224",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "DEMDS qCA für Ärzte 3 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-813970224",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "DEMDS qCA für Ärzte 4 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-813970224",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "DEMDS qCA für Ärzte 5 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-813970224",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "DEMDS qCA für Ärzte 6 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-813970224",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "DEMDS qCA für Ärzte 7 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-813970224",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "DEMDS qCA für Ärzte 8 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-813970224",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "MED-ZOD2-qCA-1 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-813970224",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "MED-ZOD2-qCA-2 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-813970224",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "MED-ZOD2-qCA-3 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-813970224",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "MED-ZOD2-qCA-4 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-813970224",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "MED-ZOD2-qCA-5 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-813970224",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "MED-ZOD2-qCA-6 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-813970224",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "DEMDS qCA für Psychotherapeuten 7 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-813970224",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "DEMDS qCA für Psychotherapeuten 8 1:PN",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-813970224",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "medisign Zertifizierungsservice",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-813970224",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "medisign Zertifizierungsservice",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-815387545",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "1&1 EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-224542346",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Mentana EU Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-224542346",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Mentana EU Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-224542346",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Mentana EU Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-224542346",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Mentana EU Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-224542346",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Mentana EU Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-224542346",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Mentana EU Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-224542346",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Mentana EU Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-224542346",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Mentana EU Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-224542346",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Mentana EU Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-224542346",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Mentana EU Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-224542346",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Mentana EU Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-224542346",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Mentana EU Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-224542346",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Mentana EU Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-224542346",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Mentana EU Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-224542346",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Mentana EU Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-224542346",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Mentana EU Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-224542346",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Mentana EU Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-224542346",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Mentana EU Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-224542346",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Mentana EU Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-224542346",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Mentana EU Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-224542346",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Mentana EU Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-224542346",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Mentana EU Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-224542346",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Mentana EU Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-224542346",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Mentana EU Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-224542346",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Mentana EU Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-215384696",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "exceet TSA",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-118645675",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "T-Systems EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-118645675",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "T-Systems EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-118645675",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "T-Systems EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-118645675",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "T-Systems EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-118645675",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "T-Systems EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-118645675",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "T-Systems EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-118645675",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "T-Systems EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-118645675",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "T-Systems EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-118645675",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "T-Systems EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-118645675",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "T-Systems EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-118645675",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "T-Systems EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-118645675",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "T-Systems EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-118645675",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "T-Systems EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-118645675",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "T-Systems EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-118645675",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "T-Systems EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-118645675",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "T-Systems EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-118645675",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "T-Systems EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-118645675",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "T-Systems EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-118645675",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "T-Systems EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-118645675",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "T-Systems EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-118645675",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "T-Systems EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-118645675",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "T-Systems EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-118645675",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "T-Systems EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-118645675",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "T-Systems EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-118645675",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "T-Systems EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-118645675",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "T-Systems EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-118645675",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Server.ID qualified",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-122265872",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Telekom Deutschland EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-122265872",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Telekom Deutschland EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-122265872",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Telekom Deutschland EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-122265872",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Telekom Deutschland EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-122265872",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Telekom Deutschland EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-122265872",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Telekom Deutschland EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-122265872",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Telekom Deutschland EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-122265872",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Telekom Deutschland EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-122265872",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Telekom Deutschland EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-122265872",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Telekom Deutschland EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-122265872",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Telekom Deutschland EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-122265872",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Telekom Deutschland EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-122265872",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Telekom Deutschland EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-122265872",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Telekom Deutschland EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-122265872",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Telekom Deutschland EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-122265872",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Telekom Deutschland EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-122265872",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Telekom Deutschland EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-122265872",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Telekom Deutschland EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-122265872",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Telekom Deutschland EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-122265872",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Telekom Deutschland EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-122265872",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Telekom Deutschland EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-122265872",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Telekom Deutschland EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-122265872",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Telekom Deutschland EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-122265872",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Telekom Deutschland EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-122265872",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Telekom Deutschland EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-122265872",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Telekom Deutschland EU-Mail",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-169838187",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "E-POST",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-169838187",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "E-POST",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-169838187",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "E-POST",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-169838187",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "E-POST",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-169838187",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "E-POST",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-169838187",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "E-POST",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-169838187",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "E-POST",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-169838187",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "E-POST",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-169838187",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "E-POST",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147861238",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Vertrauensdienst HBA",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-147861238",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Vertrauensdienst HBA",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-359068690",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Vertrauensdienst HBA",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-359068690",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Vertrauensdienst HBA",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-359068690",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Vertrauensdienst HBA",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-359068690",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "Vertrauensdienst HBA",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATDE-363815394",
+      "url": "https://tl.bundesnetzagentur.de/TL-DE.XML",
+      "filename": "bitkasten eIDAS Zustellung",
+      "reason": "not-under-supervision"
+    }
+  ]
+}

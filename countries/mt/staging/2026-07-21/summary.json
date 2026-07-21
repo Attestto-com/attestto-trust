@@ -1,0 +1,62 @@
+[
+  {
+    "org": "NTRMT-C43419",
+    "stagedFile": "NTRMT-C43419 - Malta Citizen Electronic Identity CA.pem",
+    "subject": "Malta Citizen Electronic Identity CA",
+    "issuer": "Government of Malta Root CA",
+    "serialNumber": "72",
+    "sha256": "1e193faba100f9398f0eebf106db8d5a252dc23a8422ae42a4f2b042769ed8bf",
+    "validFrom": "2012-04-11T11:02:21.000Z",
+    "validTo": "2032-04-11T11:02:21.000Z",
+    "role": "intermediate",
+    "status": "new",
+    "sourceUrl": "https://tsl.mca.org.mt/MT_TSL.xml",
+    "sourceEntry": "Malta Citizen Electronic Identity CA",
+    "crossCheckReminder": "Verify this fingerprint independently against NTRMT-C43419's own published root/intermediate certificate before promoting to current/."
+  },
+  {
+    "org": "NTRMT-C43419",
+    "stagedFile": "NTRMT-C43419 - Malta Resident Electronic Identity CA.pem",
+    "subject": "Malta Resident Electronic Identity CA",
+    "issuer": "Government of Malta Root CA",
+    "serialNumber": "0130",
+    "sha256": "ff057b572f3e09ae06bd8fe58c7cc9cf18e9915e73a647de1efdcf8352c0f75a",
+    "validFrom": "2012-05-03T11:01:29.000Z",
+    "validTo": "2032-05-03T11:01:29.000Z",
+    "role": "intermediate",
+    "status": "new",
+    "sourceUrl": "https://tsl.mca.org.mt/MT_TSL.xml",
+    "sourceEntry": "Malta Resident Electronic Identity CA",
+    "crossCheckReminder": "Verify this fingerprint independently against NTRMT-C43419's own published root/intermediate certificate before promoting to current/."
+  },
+  {
+    "org": "NTRMT-C43419",
+    "stagedFile": "NTRMT-C43419 - Malta Citizen Remote Signing CA 256 3.pem",
+    "subject": "Malta Citizen Remote Signing CA 256 3",
+    "issuer": "Government of Malta Root CA",
+    "serialNumber": "19e233410196e4c7919cf522302b4ebbbdf3f170",
+    "sha256": "138e8b33deecfc414408c5369b8389203572d4081f65dbacae82fd5848701015",
+    "validFrom": "2025-06-27T10:13:54.000Z",
+    "validTo": "2030-06-26T10:13:53.000Z",
+    "role": "intermediate",
+    "status": "new",
+    "sourceUrl": "https://tsl.mca.org.mt/MT_TSL.xml",
+    "sourceEntry": "Malta Citizen Remote Signing CA",
+    "crossCheckReminder": "Verify this fingerprint independently against NTRMT-C43419's own published root/intermediate certificate before promoting to current/."
+  },
+  {
+    "org": "NTRMT-C43419",
+    "stagedFile": "NTRMT-C43419 - Malta Resident Remote Signing CA 256 3.pem",
+    "subject": "Malta Resident Remote Signing CA 256 3",
+    "issuer": "Government of Malta Root CA",
+    "serialNumber": "2edbc04820287ac3537f352279d7d080aef7c9f9",
+    "sha256": "387e481f00bb795c3a7d5ee43a20b4e534a4ddc17b4373744f308718ebf57440",
+    "validFrom": "2025-06-27T10:16:54.000Z",
+    "validTo": "2030-06-26T10:16:53.000Z",
+    "role": "intermediate",
+    "status": "new",
+    "sourceUrl": "https://tsl.mca.org.mt/MT_TSL.xml",
+    "sourceEntry": "Malta Resident Remote Signing CA",
+    "crossCheckReminder": "Verify this fingerprint independently against NTRMT-C43419's own published root/intermediate certificate before promoting to current/."
+  }
+]

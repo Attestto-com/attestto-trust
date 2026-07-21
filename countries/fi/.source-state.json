@@ -1,0 +1,63 @@
+{
+  "pageUrl": "https://dp.trustedlist.fi/fi-tl-v6.xml",
+  "pageTlsFingerprintSha256": null,
+  "lastRun": "2026-07-21T06:43:33.260Z",
+  "sources": {
+    "https://dp.trustedlist.fi/fi-tl-v6.xml": {
+      "org": "FI Trusted List",
+      "filename": "fi-tsl.xml",
+      "extension": "xml",
+      "sha256": "fec6dcdba44c55085420cfc7f0cd5d101f0b429f017d5e7810877b83221e29a5",
+      "contentLength": "133368",
+      "lastModifiedHeader": null,
+      "etag": null,
+      "firstSeen": "2026-07-21T06:43:33.255Z",
+      "lastChanged": "2026-07-21T06:43:33.255Z",
+      "lastSeen": "2026-07-21T06:43:33.255Z"
+    }
+  },
+  "knownGaps": [
+    {
+      "org": "Population Register Centre",
+      "url": "https://dp.trustedlist.fi/fi-tl-v6.xml",
+      "filename": "VRK Gov. CA for Citizen Qualified Certificates",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Population Register Centre",
+      "url": "https://dp.trustedlist.fi/fi-tl-v6.xml",
+      "filename": "VRK Gov. CA for Citizen Qualified Certificates - G2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Population Register Centre",
+      "url": "https://dp.trustedlist.fi/fi-tl-v6.xml",
+      "filename": "VRK CA for Qualified Certificates",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Population Register Centre",
+      "url": "https://dp.trustedlist.fi/fi-tl-v6.xml",
+      "filename": "VRK CA for Qualified Certificates - G2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Population Register Centre",
+      "url": "https://dp.trustedlist.fi/fi-tl-v6.xml",
+      "filename": "VRK CA for Healthcare Professionals Qualified Certificates",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Population Register Centre",
+      "url": "https://dp.trustedlist.fi/fi-tl-v6.xml",
+      "filename": "VRK CA for Service Providers - G3",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Population Register Centre",
+      "url": "https://dp.trustedlist.fi/fi-tl-v6.xml",
+      "filename": "VRK CA for Social Welfare and Health Care Service Providers",
+      "reason": "not-under-supervision"
+    }
+  ]
+}

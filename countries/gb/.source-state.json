@@ -1,0 +1,33 @@
+{
+  "pageUrl": "https://ec.europa.eu/tools/lotl/Final_EU_TSL-UKsigned.xml",
+  "pageTlsFingerprintSha256": null,
+  "lastRun": "2026-07-21T06:44:30.480Z",
+  "sources": {
+    "https://ec.europa.eu/tools/lotl/Final_EU_TSL-UKsigned.xml": {
+      "org": "UK Trusted List",
+      "filename": "gb-tsl.xml",
+      "extension": "xml",
+      "sha256": "c6185978315d1470b023b59af02ab1a200e6e6bec8c60f949e9151f61b2583e5",
+      "contentLength": null,
+      "lastModifiedHeader": "Tue, 28 Apr 2026 18:31:45 GMT",
+      "etag": "\"1c407-65089717ca640\"",
+      "firstSeen": "2026-07-21T06:44:30.476Z",
+      "lastChanged": "2026-07-21T06:44:30.476Z",
+      "lastSeen": "2026-07-21T06:44:30.476Z"
+    }
+  },
+  "knownGaps": [
+    {
+      "org": "NTRUK-SC090312",
+      "url": "https://ec.europa.eu/tools/lotl/Final_EU_TSL-UKsigned.xml",
+      "filename": "Trustassured",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATUK-800969916",
+      "url": "https://ec.europa.eu/tools/lotl/Final_EU_TSL-UKsigned.xml",
+      "filename": "Digital Certificate Service",
+      "reason": "not-under-supervision"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "pageUrl": "https://tsl.digital.gob.es/TSL.xml",
+  "pageTlsFingerprintSha256": null,
+  "lastRun": "2026-07-21T06:43:28.506Z",
+  "sources": {
+    "https://tsl.digital.gob.es/TSL.xml": {
+      "org": "ES Trusted List",
+      "filename": "es-tsl.xml",
+      "extension": "xml",
+      "sha256": "082281d180f7ad8b608eb2de78fa881e726f91c9a9183922861d50218275c187",
+      "contentLength": "2979117",
+      "lastModifiedHeader": "Wed, 01 Jul 2026 07:51:10 GMT",
+      "etag": null,
+      "firstSeen": "2026-07-21T06:42:14.417Z",
+      "lastChanged": "2026-07-21T06:42:14.417Z",
+      "lastSeen": "2026-07-21T06:43:28.506Z"
+    }
+  },
+  "knownGaps": []
+}

@@ -1,0 +1,57 @@
+{
+  "pageUrl": "https://www.llv.li/serviceportal2/amtsstellen/amt-fuer-kommunikation/trustedlist-li.xml",
+  "pageTlsFingerprintSha256": null,
+  "lastRun": "2026-07-21T06:43:56.005Z",
+  "sources": {
+    "https://www.llv.li/serviceportal2/amtsstellen/amt-fuer-kommunikation/trustedlist-li.xml": {
+      "org": "LI Trusted List",
+      "filename": "li-tsl.xml",
+      "extension": "xml",
+      "sha256": "f406b0346fd742340f5173c9080aa1368534b7e5503de1697bb827a6baf7ca1f",
+      "contentLength": "27764",
+      "lastModifiedHeader": "Tue, 16 Jun 2026 06:30:25 GMT",
+      "etag": "\"1a185-6545914077ab3-gzip\"",
+      "firstSeen": "2026-07-21T06:43:56.003Z",
+      "lastChanged": "2026-07-21T06:43:56.003Z",
+      "lastSeen": "2026-07-21T06:43:56.003Z"
+    }
+  },
+  "knownGaps": [
+    {
+      "org": "NTRLI-FL-0002.000.966-5",
+      "url": "https://www.llv.li/serviceportal2/amtsstellen/amt-fuer-kommunikation/trustedlist-li.xml",
+      "filename": "Liechtenstein Post Qualified CA",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRLI-FL-0002.292.302-7",
+      "url": "https://www.llv.li/serviceportal2/amtsstellen/amt-fuer-kommunikation/trustedlist-li.xml",
+      "filename": "lisign-qualified-01",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRLI-FL-0002.292.302-7",
+      "url": "https://www.llv.li/serviceportal2/amtsstellen/amt-fuer-kommunikation/trustedlist-li.xml",
+      "filename": "lisign-qualified-05",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRLI-FL-0002.292.302-7",
+      "url": "https://www.llv.li/serviceportal2/amtsstellen/amt-fuer-kommunikation/trustedlist-li.xml",
+      "filename": "lisign-qualified-mobile-07",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRLI-FL-0002.523.017-8",
+      "url": "https://www.llv.li/serviceportal2/amtsstellen/amt-fuer-kommunikation/trustedlist-li.xml",
+      "filename": "SwissSign LI Qualified Platinum CA 2016 - G22",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRLI-FL-0002.523.017-8",
+      "url": "https://www.llv.li/serviceportal2/amtsstellen/amt-fuer-kommunikation/trustedlist-li.xml",
+      "filename": "SwissSign LI Platinum Qualified CA 2016 - G3",
+      "reason": "not-under-supervision"
+    }
+  ]
+}

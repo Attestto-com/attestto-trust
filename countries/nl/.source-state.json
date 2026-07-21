@@ -1,0 +1,351 @@
+{
+  "pageUrl": "https://www.rdi.nl/site/binaries/content/assets/site-content/bestanden/current-tsl.xml",
+  "pageTlsFingerprintSha256": null,
+  "lastRun": "2026-07-21T06:44:05.542Z",
+  "sources": {
+    "https://www.rdi.nl/site/binaries/content/assets/site-content/bestanden/current-tsl.xml": {
+      "org": "NL Trusted List",
+      "filename": "nl-tsl.xml",
+      "extension": "xml",
+      "sha256": "0a0cc4cbdec9e989318f2c5da634cb24cb69b349d57c39acc7e3804c62fb7979",
+      "contentLength": null,
+      "lastModifiedHeader": "Fri, 26 Jun 2026 10:26:49 GMT",
+      "etag": "W/\"1748791566491\"",
+      "firstSeen": "2026-07-21T06:44:05.526Z",
+      "lastChanged": "2026-07-21T06:44:05.526Z",
+      "lastSeen": "2026-07-21T06:44:05.526Z"
+    }
+  },
+  "knownGaps": [
+    {
+      "org": "NTRNL-50000535",
+      "url": "https://www.rdi.nl/site/binaries/content/assets/site-content/bestanden/current-tsl.xml",
+      "filename": "UZI-register Medewerker op naam CA G21",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRNL-50000535",
+      "url": "https://www.rdi.nl/site/binaries/content/assets/site-content/bestanden/current-tsl.xml",
+      "filename": "UZI-register Medewerker op naam CA G2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRNL-50000535",
+      "url": "https://www.rdi.nl/site/binaries/content/assets/site-content/bestanden/current-tsl.xml",
+      "filename": "UZI-register Medewerker op naam",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRNL-50000535",
+      "url": "https://www.rdi.nl/site/binaries/content/assets/site-content/bestanden/current-tsl.xml",
+      "filename": "UZI-register Zorgverlener CA G21",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRNL-50000535",
+      "url": "https://www.rdi.nl/site/binaries/content/assets/site-content/bestanden/current-tsl.xml",
+      "filename": "UZI-register Zorgverlener CA G2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRNL-50000535",
+      "url": "https://www.rdi.nl/site/binaries/content/assets/site-content/bestanden/current-tsl.xml",
+      "filename": "UZI-register Zorgverlener CA",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRNL-27322631",
+      "url": "https://www.rdi.nl/site/binaries/content/assets/site-content/bestanden/current-tsl.xml",
+      "filename": "Digidentity SSCD CA - G2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRNL-27322631",
+      "url": "https://www.rdi.nl/site/binaries/content/assets/site-content/bestanden/current-tsl.xml",
+      "filename": "MachtigingOnline SSCD CA - G2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRNL-27322631",
+      "url": "https://www.rdi.nl/site/binaries/content/assets/site-content/bestanden/current-tsl.xml",
+      "filename": "Digidentity BV PKIoverheid Burger CA - G3",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRNL-27322631",
+      "url": "https://www.rdi.nl/site/binaries/content/assets/site-content/bestanden/current-tsl.xml",
+      "filename": "Digidentity - G4 PKIo EUTL G-Sigs NP - 2024",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRNL-27322631",
+      "url": "https://www.rdi.nl/site/binaries/content/assets/site-content/bestanden/current-tsl.xml",
+      "filename": "Digidentity - G4 PKIo EUTL G-Sigs LP - 2024",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRNL-34104947",
+      "url": "https://www.rdi.nl/site/binaries/content/assets/site-content/bestanden/current-tsl.xml",
+      "filename": "DigiNotar PKIoverheid CA Organisatie - G2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRNL-34104947",
+      "url": "https://www.rdi.nl/site/binaries/content/assets/site-content/bestanden/current-tsl.xml",
+      "filename": "DigiNotar PKIoverheid CA Overheid en Bedrijven",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRNL-34104947",
+      "url": "https://www.rdi.nl/site/binaries/content/assets/site-content/bestanden/current-tsl.xml",
+      "filename": "DigiNotar PKIoverheid CA Overheid",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRNL-34104947",
+      "url": "https://www.rdi.nl/site/binaries/content/assets/site-content/bestanden/current-tsl.xml",
+      "filename": "DigiNotar Qualified CA",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRNL-12056805",
+      "url": "https://www.rdi.nl/site/binaries/content/assets/site-content/bestanden/current-tsl.xml",
+      "filename": "ESG Burger CA-G2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRNL-12056805",
+      "url": "https://www.rdi.nl/site/binaries/content/assets/site-content/bestanden/current-tsl.xml",
+      "filename": "ESG CA - G2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRNL-12056805",
+      "url": "https://www.rdi.nl/site/binaries/content/assets/site-content/bestanden/current-tsl.xml",
+      "filename": "ESG Organisatie CA-G2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRNL-12056805",
+      "url": "https://www.rdi.nl/site/binaries/content/assets/site-content/bestanden/current-tsl.xml",
+      "filename": "ESG Persoonlijk CA - G2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRNL-34115845",
+      "url": "https://www.rdi.nl/site/binaries/content/assets/site-content/bestanden/current-tsl.xml",
+      "filename": "Getronics CSP Justitie CA - G2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRNL-34115845",
+      "url": "https://www.rdi.nl/site/binaries/content/assets/site-content/bestanden/current-tsl.xml",
+      "filename": "Getronics CSP Organisatie CA - G2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRNL-34115845",
+      "url": "https://www.rdi.nl/site/binaries/content/assets/site-content/bestanden/current-tsl.xml",
+      "filename": "Getronics PinkRoccade PKIoverheid CA - Overheid en Bedrijven",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRNL-34115845",
+      "url": "https://www.rdi.nl/site/binaries/content/assets/site-content/bestanden/current-tsl.xml",
+      "filename": "Getronics PinkRoccade Qualified Certificate CA",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRNL-34115845",
+      "url": "https://www.rdi.nl/site/binaries/content/assets/site-content/bestanden/current-tsl.xml",
+      "filename": "Getronics Qualified Certificate Individual CA",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRNL-27124701",
+      "url": "https://www.rdi.nl/site/binaries/content/assets/site-content/bestanden/current-tsl.xml",
+      "filename": "KPN PKIoverheid Organisatie CA - G2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRNL-27124701",
+      "url": "https://www.rdi.nl/site/binaries/content/assets/site-content/bestanden/current-tsl.xml",
+      "filename": "KPN PKIoverheid Organisatie Persoon CA - G3",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRNL-27124701",
+      "url": "https://www.rdi.nl/site/binaries/content/assets/site-content/bestanden/current-tsl.xml",
+      "filename": "KPN PKIoverheid EV CA",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRNL-52959597",
+      "url": "https://www.rdi.nl/site/binaries/content/assets/site-content/bestanden/current-tsl.xml",
+      "filename": "KPN Corporate Market CSP Justitie CA - G2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRNL-52959597",
+      "url": "https://www.rdi.nl/site/binaries/content/assets/site-content/bestanden/current-tsl.xml",
+      "filename": "KPN Corporate Market CSP Organisatie CA - G2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRNL-27370985",
+      "url": "https://www.rdi.nl/site/binaries/content/assets/site-content/bestanden/current-tsl.xml",
+      "filename": "Ministerie van Defensie Certificatie Autoriteit - G2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRNL-27370985",
+      "url": "https://www.rdi.nl/site/binaries/content/assets/site-content/bestanden/current-tsl.xml",
+      "filename": "Ministerie van Defensie Certificatie Autoriteit Defensiepas - G2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRNL-27370985",
+      "url": "https://www.rdi.nl/site/binaries/content/assets/site-content/bestanden/current-tsl.xml",
+      "filename": "Ministerie van Defensie Certificatie Autoriteit Defensiepas",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRNL-27370985",
+      "url": "https://www.rdi.nl/site/binaries/content/assets/site-content/bestanden/current-tsl.xml",
+      "filename": "Ministerie van Defensie Certificatie Autoriteit",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRNL-52766179",
+      "url": "https://www.rdi.nl/site/binaries/content/assets/site-content/bestanden/current-tsl.xml",
+      "filename": "MinIenM Taxi CA Boordcomputerkaarten - G2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRNL-30237459",
+      "url": "https://www.rdi.nl/site/binaries/content/assets/site-content/bestanden/current-tsl.xml",
+      "filename": "QuoVadis PKIoverheid CA G2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRNL-30237459",
+      "url": "https://www.rdi.nl/site/binaries/content/assets/site-content/bestanden/current-tsl.xml",
+      "filename": "QuoVadis CSP Burger CA - G2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRNL-30237459",
+      "url": "https://www.rdi.nl/site/binaries/content/assets/site-content/bestanden/current-tsl.xml",
+      "filename": "QuoVadis EU Issuing Certification Authority G2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRNL-30237459",
+      "url": "https://www.rdi.nl/site/binaries/content/assets/site-content/bestanden/current-tsl.xml",
+      "filename": "QuoVadis EU Issuing Certification Authority G3",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRNL-30237459",
+      "url": "https://www.rdi.nl/site/binaries/content/assets/site-content/bestanden/current-tsl.xml",
+      "filename": "QuoVadis EU Issuing Certification Authority",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRNL-30237459",
+      "url": "https://www.rdi.nl/site/binaries/content/assets/site-content/bestanden/current-tsl.xml",
+      "filename": "QuoVadis EU Qualified Issuing Certification Authority",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRNL-30237459",
+      "url": "https://www.rdi.nl/site/binaries/content/assets/site-content/bestanden/current-tsl.xml",
+      "filename": "QuoVadis PKIoverheid Burger CA - G3",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRNL-30237459",
+      "url": "https://www.rdi.nl/site/binaries/content/assets/site-content/bestanden/current-tsl.xml",
+      "filename": "QuoVadis PKIoverheid EV CA",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRNL-30237459",
+      "url": "https://www.rdi.nl/site/binaries/content/assets/site-content/bestanden/current-tsl.xml",
+      "filename": "QuoVadis Qualified Web ICA G1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRNL-30237459",
+      "url": "https://www.rdi.nl/site/binaries/content/assets/site-content/bestanden/current-tsl.xml",
+      "filename": "QuoVadis EU TSA 01",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRNL-30237459",
+      "url": "https://www.rdi.nl/site/binaries/content/assets/site-content/bestanden/current-tsl.xml",
+      "filename": "QuoVadis EU TSA 02",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRNL-30237459",
+      "url": "https://www.rdi.nl/site/binaries/content/assets/site-content/bestanden/current-tsl.xml",
+      "filename": "QuoVadis EU TSA 03",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRNL-30237459",
+      "url": "https://www.rdi.nl/site/binaries/content/assets/site-content/bestanden/current-tsl.xml",
+      "filename": "QuoVadis EU RSA TSA 1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRNL-30237459",
+      "url": "https://www.rdi.nl/site/binaries/content/assets/site-content/bestanden/current-tsl.xml",
+      "filename": "QuoVadis EU RSA TSA 2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRNL-30237459",
+      "url": "https://www.rdi.nl/site/binaries/content/assets/site-content/bestanden/current-tsl.xml",
+      "filename": "QuoVadis EU RSA TSA 3",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRNL-52455289",
+      "url": "https://www.rdi.nl/site/binaries/content/assets/site-content/bestanden/current-tsl.xml",
+      "filename": "Aangetekend Mailen Plus",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRNL-52455289",
+      "url": "https://www.rdi.nl/site/binaries/content/assets/site-content/bestanden/current-tsl.xml",
+      "filename": "Aangetekend Mailen Plus",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRNL-52455289",
+      "url": "https://www.rdi.nl/site/binaries/content/assets/site-content/bestanden/current-tsl.xml",
+      "filename": "Aangetekend Mailen Plus",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRNL-76121526",
+      "url": "https://www.rdi.nl/site/binaries/content/assets/site-content/bestanden/current-tsl.xml",
+      "filename": "NotarisID Subscriber CA",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRNL-76121526",
+      "url": "https://www.rdi.nl/site/binaries/content/assets/site-content/bestanden/current-tsl.xml",
+      "filename": "NotarisID Subscriber CA G2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRNL-69887594",
+      "url": "https://www.rdi.nl/site/binaries/content/assets/site-content/bestanden/current-tsl.xml",
+      "filename": "SecuMailer",
+      "reason": "not-under-supervision"
+    }
+  ]
+}

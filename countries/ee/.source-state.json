@@ -1,0 +1,279 @@
+{
+  "pageUrl": "https://sr.riik.ee/tsl/estonian-tsl.xml",
+  "pageTlsFingerprintSha256": null,
+  "lastRun": "2026-07-21T06:43:17.488Z",
+  "sources": {
+    "https://sr.riik.ee/tsl/estonian-tsl.xml": {
+      "org": "EE Trusted List",
+      "filename": "ee-tsl.xml",
+      "extension": "xml",
+      "sha256": "c6b7b872fadcafdd24ad772f7b6649c5c87e3aa27ea44952727ea73d2c435918",
+      "contentLength": null,
+      "lastModifiedHeader": "Mon, 18 May 2026 13:12:10 GMT",
+      "etag": "W/\"6a0b102a-649e1\"",
+      "firstSeen": "2026-07-21T06:43:17.483Z",
+      "lastChanged": "2026-07-21T06:43:17.483Z",
+      "lastSeen": "2026-07-21T06:43:17.483Z"
+    }
+  },
+  "knownGaps": [
+    {
+      "org": "VATEE-100687640",
+      "url": "https://sr.riik.ee/tsl/estonian-tsl.xml",
+      "filename": "ESTEID-SK",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATEE-100687640",
+      "url": "https://sr.riik.ee/tsl/estonian-tsl.xml",
+      "filename": "ESTEID-SK 2007",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATEE-100687640",
+      "url": "https://sr.riik.ee/tsl/estonian-tsl.xml",
+      "filename": "ESTEID qualified certificates for electronic signatures (ESTEID-SK 2011)",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATEE-100687640",
+      "url": "https://sr.riik.ee/tsl/estonian-tsl.xml",
+      "filename": "EID-SK 2007",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATEE-100687640",
+      "url": "https://sr.riik.ee/tsl/estonian-tsl.xml",
+      "filename": "EID-SK 2011 qualified certificates for electronic signatures",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATEE-100687640",
+      "url": "https://sr.riik.ee/tsl/estonian-tsl.xml",
+      "filename": "KLASS3-SK",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATEE-100687640",
+      "url": "https://sr.riik.ee/tsl/estonian-tsl.xml",
+      "filename": "Klass3-SK 2010 qualified certificate for electronic seal",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATEE-100687640",
+      "url": "https://sr.riik.ee/tsl/estonian-tsl.xml",
+      "filename": "ESTEID-SK OCSP RESPONDER 2005",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATEE-100687640",
+      "url": "https://sr.riik.ee/tsl/estonian-tsl.xml",
+      "filename": "ESTEID-SK 2007 OCSP RESPONDER",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATEE-100687640",
+      "url": "https://sr.riik.ee/tsl/estonian-tsl.xml",
+      "filename": "ESTEID-SK 2007 OCSP RESPONDER 2010",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATEE-100687640",
+      "url": "https://sr.riik.ee/tsl/estonian-tsl.xml",
+      "filename": "EID-SK 2007 OCSP RESPONDER",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATEE-100687640",
+      "url": "https://sr.riik.ee/tsl/estonian-tsl.xml",
+      "filename": "EID-SK 2007 OCSP RESPONDER 2010",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATEE-100687640",
+      "url": "https://sr.riik.ee/tsl/estonian-tsl.xml",
+      "filename": "KLASS3-SK OCSP RESPONDER 2009",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATEE-100687640",
+      "url": "https://sr.riik.ee/tsl/estonian-tsl.xml",
+      "filename": "KLASS3-SK 2010 OCSP RESPONDER",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATEE-100687640",
+      "url": "https://sr.riik.ee/tsl/estonian-tsl.xml",
+      "filename": "SK Proxy OCSP Responder 2009",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATEE-100687640",
+      "url": "https://sr.riik.ee/tsl/estonian-tsl.xml",
+      "filename": "ESTEID-SK OCSP RESPONDER",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATEE-100687640",
+      "url": "https://sr.riik.ee/tsl/estonian-tsl.xml",
+      "filename": "KLASS3-SK OCSP RESPONDER (2006)",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATEE-100687640",
+      "url": "https://sr.riik.ee/tsl/estonian-tsl.xml",
+      "filename": "SK Time-Stamping Authority for qualified electronic time stamps",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATEE-100687640",
+      "url": "https://sr.riik.ee/tsl/estonian-tsl.xml",
+      "filename": "SK Time-Stamping Authority for qualified electronic time stamps (SK-TSA 2019)",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATEE-100687640",
+      "url": "https://sr.riik.ee/tsl/estonian-tsl.xml",
+      "filename": "SK Time-Stamping Authority for qualified electronic time stamps (SK-TSA 2020)",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATEE-100687640",
+      "url": "https://sr.riik.ee/tsl/estonian-tsl.xml",
+      "filename": "SK Time-Stamping Authority for qualified electronic time stamps (SK-TSA 2021)",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATEE-101114112",
+      "url": "https://sr.riik.ee/tsl/estonian-tsl.xml",
+      "filename": "TSA0",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATEE-101114112",
+      "url": "https://sr.riik.ee/tsl/estonian-tsl.xml",
+      "filename": "TSA1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATEE-101114112",
+      "url": "https://sr.riik.ee/tsl/estonian-tsl.xml",
+      "filename": "TSA1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATEE-101114112",
+      "url": "https://sr.riik.ee/tsl/estonian-tsl.xml",
+      "filename": "TSA2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATEE-101114112",
+      "url": "https://sr.riik.ee/tsl/estonian-tsl.xml",
+      "filename": "TSA1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATEE-101114112",
+      "url": "https://sr.riik.ee/tsl/estonian-tsl.xml",
+      "filename": "TSA2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATEE-101114112",
+      "url": "https://sr.riik.ee/tsl/estonian-tsl.xml",
+      "filename": "TSA1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATEE-101114112",
+      "url": "https://sr.riik.ee/tsl/estonian-tsl.xml",
+      "filename": "TSA2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATEE-101114112",
+      "url": "https://sr.riik.ee/tsl/estonian-tsl.xml",
+      "filename": "H1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATEE-101114112",
+      "url": "https://sr.riik.ee/tsl/estonian-tsl.xml",
+      "filename": "H2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATEE-101114112",
+      "url": "https://sr.riik.ee/tsl/estonian-tsl.xml",
+      "filename": "H3",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATEE-101114112",
+      "url": "https://sr.riik.ee/tsl/estonian-tsl.xml",
+      "filename": "H4",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATEE-101114112",
+      "url": "https://sr.riik.ee/tsl/estonian-tsl.xml",
+      "filename": "H5",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATEE-101114112",
+      "url": "https://sr.riik.ee/tsl/estonian-tsl.xml",
+      "filename": "H1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATEE-101114112",
+      "url": "https://sr.riik.ee/tsl/estonian-tsl.xml",
+      "filename": "H2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATEE-101114112",
+      "url": "https://sr.riik.ee/tsl/estonian-tsl.xml",
+      "filename": "H3",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATEE-101114112",
+      "url": "https://sr.riik.ee/tsl/estonian-tsl.xml",
+      "filename": "H4",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATEE-101114112",
+      "url": "https://sr.riik.ee/tsl/estonian-tsl.xml",
+      "filename": "H5",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATEE-101114112",
+      "url": "https://sr.riik.ee/tsl/estonian-tsl.xml",
+      "filename": "Guardtime KSI ajatempliteenus",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATEE-101114112",
+      "url": "https://sr.riik.ee/tsl/estonian-tsl.xml",
+      "filename": "Guardtime KSI ajatempliteenus (2020)",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATEE-101114112",
+      "url": "https://sr.riik.ee/tsl/estonian-tsl.xml",
+      "filename": "Guardtime KSI ajatempliteenus (2021)",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATEE-101114112",
+      "url": "https://sr.riik.ee/tsl/estonian-tsl.xml",
+      "filename": "Guardtime KSI Time-stamping service (2023)",
+      "reason": "not-under-supervision"
+    }
+  ]
+}

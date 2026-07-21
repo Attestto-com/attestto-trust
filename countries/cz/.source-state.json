@@ -1,0 +1,375 @@
+{
+  "pageUrl": "https://tsl.gov.cz/publ/TSL_CZ.xtsl",
+  "pageTlsFingerprintSha256": null,
+  "lastRun": "2026-07-21T06:43:02.667Z",
+  "sources": {
+    "https://tsl.gov.cz/publ/TSL_CZ.xtsl": {
+      "org": "CZ Trusted List",
+      "filename": "cz-tsl.xml",
+      "extension": "xml",
+      "sha256": "3956425d012f827d0ec5444b65d63e88c3cacac2210d3978627f18e473e57bd9",
+      "contentLength": "500185",
+      "lastModifiedHeader": "Wed, 24 Jun 2026 10:03:28 GMT",
+      "etag": "\"0d87b4c03dd1:0\"",
+      "firstSeen": "2026-07-21T06:43:02.615Z",
+      "lastChanged": "2026-07-21T06:43:02.615Z",
+      "lastSeen": "2026-07-21T06:43:02.615Z"
+    }
+  },
+  "knownGaps": [
+    {
+      "org": "I.CA",
+      "url": "https://tsl.gov.cz/publ/TSL_CZ.xtsl",
+      "filename": "(9) I.CA - Qualified Time Stamping Authority, nCipher DSE200",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "I.CA",
+      "url": "https://tsl.gov.cz/publ/TSL_CZ.xtsl",
+      "filename": "(10) I.CA - Qualified Time Stamping Authority, Time Stamp Server 1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "I.CA",
+      "url": "https://tsl.gov.cz/publ/TSL_CZ.xtsl",
+      "filename": "(12) I.CA - Qualified Time Stamping Authority, Time Stamp Server 2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "I.CA",
+      "url": "https://tsl.gov.cz/publ/TSL_CZ.xtsl",
+      "filename": "(17) I.CA - Time Stamping Authority, TSS/TSU 1, 12/2009",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "I.CA",
+      "url": "https://tsl.gov.cz/publ/TSL_CZ.xtsl",
+      "filename": "(18) I.CA - Time Stamping Authority, TSS/TSU 2, 12/2009",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "I.CA",
+      "url": "https://tsl.gov.cz/publ/TSL_CZ.xtsl",
+      "filename": "(19) I.CA - Time Stamping Authority, TSS/TSU 3, 12/2009",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "I.CA",
+      "url": "https://tsl.gov.cz/publ/TSL_CZ.xtsl",
+      "filename": "(34) I.CA - Time Stamping Authority, TSS/TSU 1, 12/2011",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "I.CA",
+      "url": "https://tsl.gov.cz/publ/TSL_CZ.xtsl",
+      "filename": "(35) I.CA - Time Stamping Authority, TSS/TSU 3, 12/2011",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "I.CA",
+      "url": "https://tsl.gov.cz/publ/TSL_CZ.xtsl",
+      "filename": "(36) I.CA - Time Stamping Authority, TSS/TSU 2, 12/2011",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "I.CA",
+      "url": "https://tsl.gov.cz/publ/TSL_CZ.xtsl",
+      "filename": "(53) I.CA - Time Stamping Authority, TSS/TSU 1, 11/2013",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "I.CA",
+      "url": "https://tsl.gov.cz/publ/TSL_CZ.xtsl",
+      "filename": "(54) I.CA - Time Stamping Authority, TSS/TSU 2, 11/2013",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "I.CA",
+      "url": "https://tsl.gov.cz/publ/TSL_CZ.xtsl",
+      "filename": "(55) I.CA - Time Stamping Authority, TSS/TSU 3, 11/2013",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "I.CA",
+      "url": "https://tsl.gov.cz/publ/TSL_CZ.xtsl",
+      "filename": "(56) I.CA - Time Stamping Authority, TSS/TSU 4, 11/2013",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "I.CA",
+      "url": "https://tsl.gov.cz/publ/TSL_CZ.xtsl",
+      "filename": "(77)  I.CA Time Stamping Authority TSS/TSU 4 12/2015",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "PostSignum QCA",
+      "url": "https://tsl.gov.cz/publ/TSL_CZ.xtsl",
+      "filename": "(13) PostSignum - Qualified Time Stamping Authority, TSU 1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "PostSignum QCA",
+      "url": "https://tsl.gov.cz/publ/TSL_CZ.xtsl",
+      "filename": "(14) PostSignum - Qualified Time Stamping Authority, TSU 2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "PostSignum QCA",
+      "url": "https://tsl.gov.cz/publ/TSL_CZ.xtsl",
+      "filename": "(15) PostSignum - Qualified Time Stamping Authority, TSU 3",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "PostSignum QCA",
+      "url": "https://tsl.gov.cz/publ/TSL_CZ.xtsl",
+      "filename": "(25) PostSignum - Qualified Time Stamping Authority, TSU 1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "PostSignum QCA",
+      "url": "https://tsl.gov.cz/publ/TSL_CZ.xtsl",
+      "filename": "(26) PostSignum - Qualified Time Stamping Authority, TSU 2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "PostSignum QCA",
+      "url": "https://tsl.gov.cz/publ/TSL_CZ.xtsl",
+      "filename": "(27) PostSignum - Qualified Time Stamping Authority, TSU 3",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "PostSignum QCA",
+      "url": "https://tsl.gov.cz/publ/TSL_CZ.xtsl",
+      "filename": "(28) PostSignum - Qualified Time Stamping Authority, TSU 1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "PostSignum QCA",
+      "url": "https://tsl.gov.cz/publ/TSL_CZ.xtsl",
+      "filename": "(29) PostSignum - Qualified Time Stamping Authority, TSU 2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "PostSignum QCA",
+      "url": "https://tsl.gov.cz/publ/TSL_CZ.xtsl",
+      "filename": "(30) PostSignum - Qualified Time Stamping Authority, TSU 3",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "PostSignum QCA",
+      "url": "https://tsl.gov.cz/publ/TSL_CZ.xtsl",
+      "filename": "(31) PostSignum - Qualified Time Stamping Authority, TSU 4",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "PostSignum QCA",
+      "url": "https://tsl.gov.cz/publ/TSL_CZ.xtsl",
+      "filename": "(32) PostSignum - Qualified Time Stamping Authority, TSU 5",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "PostSignum QCA",
+      "url": "https://tsl.gov.cz/publ/TSL_CZ.xtsl",
+      "filename": "(33) PostSignum - Qualified Time Stamping Authority, TSU 6",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "PostSignum QCA",
+      "url": "https://tsl.gov.cz/publ/TSL_CZ.xtsl",
+      "filename": "(37) PostSignum - Qualified Time Stamping Authority, TSU 1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "PostSignum QCA",
+      "url": "https://tsl.gov.cz/publ/TSL_CZ.xtsl",
+      "filename": "(38) PostSignum - Qualified Time Stamping Authority, TSU 2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "PostSignum QCA",
+      "url": "https://tsl.gov.cz/publ/TSL_CZ.xtsl",
+      "filename": "(39) PostSignum - Qualified Time Stamping Authority, TSU 3",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "PostSignum QCA",
+      "url": "https://tsl.gov.cz/publ/TSL_CZ.xtsl",
+      "filename": "(40) PostSignum - Qualified Time Stamping Authority, TSU 4",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "PostSignum QCA",
+      "url": "https://tsl.gov.cz/publ/TSL_CZ.xtsl",
+      "filename": "(41) PostSignum - Qualified Time Stamping Authority, TSU 1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "PostSignum QCA",
+      "url": "https://tsl.gov.cz/publ/TSL_CZ.xtsl",
+      "filename": "(42) PostSignum - Qualified Time Stamping Authority, TSU 2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "PostSignum QCA",
+      "url": "https://tsl.gov.cz/publ/TSL_CZ.xtsl",
+      "filename": "(43) PostSignum - Qualified Time Stamping Authority, TSU 3",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "PostSignum QCA",
+      "url": "https://tsl.gov.cz/publ/TSL_CZ.xtsl",
+      "filename": "(44) PostSignum - Qualified Time Stamping Authority, TSU 4",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "PostSignum QCA",
+      "url": "https://tsl.gov.cz/publ/TSL_CZ.xtsl",
+      "filename": "(45) PostSignum - Qualified Time Stamping Authority, TSU 5",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "PostSignum QCA",
+      "url": "https://tsl.gov.cz/publ/TSL_CZ.xtsl",
+      "filename": "(46) PostSignum - Qualified Time Stamping Authority, TSU 6",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "PostSignum QCA",
+      "url": "https://tsl.gov.cz/publ/TSL_CZ.xtsl",
+      "filename": "(47) PostSignum - Qualified Time Stamping Authority, TSU 1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "PostSignum QCA",
+      "url": "https://tsl.gov.cz/publ/TSL_CZ.xtsl",
+      "filename": "(48) PostSignum - Qualified Time Stamping Authority, TSU 2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "PostSignum QCA",
+      "url": "https://tsl.gov.cz/publ/TSL_CZ.xtsl",
+      "filename": "(49) PostSignum - Qualified Time Stamping Authority, TSU 3",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "PostSignum QCA",
+      "url": "https://tsl.gov.cz/publ/TSL_CZ.xtsl",
+      "filename": "(50) PostSignum - Qualified Time Stamping Authority, TSU 4",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "PostSignum QCA",
+      "url": "https://tsl.gov.cz/publ/TSL_CZ.xtsl",
+      "filename": "(51) PostSignum - Qualified Time Stamping Authority, TSU 5",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "PostSignum QCA",
+      "url": "https://tsl.gov.cz/publ/TSL_CZ.xtsl",
+      "filename": "(52) PostSignum - Qualified Time Stamping Authority, TSU 6",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "PostSignum QCA",
+      "url": "https://tsl.gov.cz/publ/TSL_CZ.xtsl",
+      "filename": "(58) PostSignum - Qualified Time Stamping Authority, TSU 1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "PostSignum QCA",
+      "url": "https://tsl.gov.cz/publ/TSL_CZ.xtsl",
+      "filename": "(59) PostSignum - Qualified Time Stamping Authority, TSU 2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "PostSignum QCA",
+      "url": "https://tsl.gov.cz/publ/TSL_CZ.xtsl",
+      "filename": "(60) PostSignum - Qualified Time Stamping Authority, TSU 3",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "PostSignum QCA",
+      "url": "https://tsl.gov.cz/publ/TSL_CZ.xtsl",
+      "filename": "(61) PostSignum - Qualified Time Stamping Authority, TSU 4",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "PostSignum QCA",
+      "url": "https://tsl.gov.cz/publ/TSL_CZ.xtsl",
+      "filename": "(62) PostSignum - Qualified Time Stamping Authority, TSU 5",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "PostSignum QCA",
+      "url": "https://tsl.gov.cz/publ/TSL_CZ.xtsl",
+      "filename": "(63) PostSignum - Qualified Time Stamping Authority, TSU 6",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "PostSignum QCA",
+      "url": "https://tsl.gov.cz/publ/TSL_CZ.xtsl",
+      "filename": "(68) PostSignum - Qualified Time Stamping Authority, TSU 1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "PostSignum QCA",
+      "url": "https://tsl.gov.cz/publ/TSL_CZ.xtsl",
+      "filename": "(69) PostSignum - Qualified Time Stamping Authority, TSU 2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "PostSignum QCA",
+      "url": "https://tsl.gov.cz/publ/TSL_CZ.xtsl",
+      "filename": "(70) PostSignum - Qualified Time Stamping Authority, TSU 3",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "PostSignum QCA",
+      "url": "https://tsl.gov.cz/publ/TSL_CZ.xtsl",
+      "filename": "(71) PostSignum - Qualified Time Stamping Authority, TSU 4",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "PostSignum QCA",
+      "url": "https://tsl.gov.cz/publ/TSL_CZ.xtsl",
+      "filename": "(72) PostSignum - Qualified Time Stamping Authority, TSU 5",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "PostSignum QCA",
+      "url": "https://tsl.gov.cz/publ/TSL_CZ.xtsl",
+      "filename": "(73) PostSignum - Qualified Time Stamping Authority, TSU 6",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "eIdentity a.s.",
+      "url": "https://tsl.gov.cz/publ/TSL_CZ.xtsl",
+      "filename": "(24) ACAeID2 - Time Stamping Authority TSA1, TSU1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "eIdentity a.s.",
+      "url": "https://tsl.gov.cz/publ/TSL_CZ.xtsl",
+      "filename": "(65) ACAeID2 - Time Stamping Authority TSA1, TSU2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "eIdentity a.s.",
+      "url": "https://tsl.gov.cz/publ/TSL_CZ.xtsl",
+      "filename": "(74) ACAeID2 - Time Stamping Authority TSA1, TSU3",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "eIdentity a.s.",
+      "url": "https://tsl.gov.cz/publ/TSL_CZ.xtsl",
+      "filename": "(75) ACAeID2 - Time Stamping Authority TSA1, TSU4",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "eIdentity a.s.",
+      "url": "https://tsl.gov.cz/publ/TSL_CZ.xtsl",
+      "filename": "(76) ACAeID2 - Time Stamping Authority TSA1, TSU5",
+      "reason": "not-under-supervision"
+    }
+  ]
+}

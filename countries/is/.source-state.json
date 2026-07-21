@@ -1,0 +1,27 @@
+{
+  "pageUrl": "https://tsl.fjarskiptastofa.is/library/skrar/tsl/tsl.xml",
+  "pageTlsFingerprintSha256": null,
+  "lastRun": "2026-07-21T06:43:51.273Z",
+  "sources": {
+    "https://tsl.fjarskiptastofa.is/library/skrar/tsl/tsl.xml": {
+      "org": "IS Trusted List",
+      "filename": "is-tsl.xml",
+      "extension": "xml",
+      "sha256": "b2c1fdfa09cd8f6ae39b90c1a8d64b872b257901bb6b99af43a74975153b2b15",
+      "contentLength": "64603",
+      "lastModifiedHeader": "Tue, 28 Apr 2026 21:51:36 GMT",
+      "etag": "\"69f12be8-fc5b\"",
+      "firstSeen": "2026-07-21T06:43:51.270Z",
+      "lastChanged": "2026-07-21T06:43:51.270Z",
+      "lastSeen": "2026-07-21T06:43:51.270Z"
+    }
+  },
+  "knownGaps": [
+    {
+      "org": "NTRIS-521000-2790",
+      "url": "https://tsl.fjarskiptastofa.is/library/skrar/tsl/tsl.xml",
+      "filename": "ocsp.audkenni.is",
+      "reason": "not-under-supervision"
+    }
+  ]
+}

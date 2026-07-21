@@ -1,0 +1,195 @@
+{
+  "pageUrl": "https://trustedlist.adr.gov.ro/trustedlist.xml",
+  "pageTlsFingerprintSha256": null,
+  "lastRun": "2026-07-21T06:44:21.304Z",
+  "sources": {
+    "https://trustedlist.adr.gov.ro/trustedlist.xml": {
+      "org": "RO Trusted List",
+      "filename": "ro-tsl.xml",
+      "extension": "xml",
+      "sha256": "9bc664cbe5bb79238cc22668ba92abc448f174ef2ae1aa3d3619c97a5baf0ce2",
+      "contentLength": "859381",
+      "lastModifiedHeader": "Thu, 09 Jul 2026 11:16:37 GMT",
+      "etag": "\"6a4f8315-d1cf5\"",
+      "firstSeen": "2026-07-21T06:44:21.281Z",
+      "lastChanged": "2026-07-21T06:44:21.281Z",
+      "lastSeen": "2026-07-21T06:44:21.281Z"
+    }
+  },
+  "knownGaps": [
+    {
+      "org": "VATRO-12458924",
+      "url": "https://trustedlist.adr.gov.ro/trustedlist.xml",
+      "filename": "Trans Sped Qualified CA II",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATRO-12458924",
+      "url": "https://trustedlist.adr.gov.ro/trustedlist.xml",
+      "filename": "Trans Sped SAFE CA II",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATRO-12458924",
+      "url": "https://trustedlist.adr.gov.ro/trustedlist.xml",
+      "filename": "Trans Sped Qualified CA",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATRO-12458924",
+      "url": "https://trustedlist.adr.gov.ro/trustedlist.xml",
+      "filename": "Trans Sped SAFE CA I",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATRO-12458924",
+      "url": "https://trustedlist.adr.gov.ro/trustedlist.xml",
+      "filename": "Trans Sped Qualified CA",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATRO-12458924",
+      "url": "https://trustedlist.adr.gov.ro/trustedlist.xml",
+      "filename": "Trans Sped Qualified CA",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATRO-12458924",
+      "url": "https://trustedlist.adr.gov.ro/trustedlist.xml",
+      "filename": "Trans Sped Qualified CA",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATRO-12458924",
+      "url": "https://trustedlist.adr.gov.ro/trustedlist.xml",
+      "filename": "Trans Sped Qualified CA",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATRO-12458924",
+      "url": "https://trustedlist.adr.gov.ro/trustedlist.xml",
+      "filename": "Trans Sped Advanced eIDAS CA C3",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATRO-18288250",
+      "url": "https://trustedlist.adr.gov.ro/trustedlist.xml",
+      "filename": "certSIGN Qval",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATRO-18288250",
+      "url": "https://trustedlist.adr.gov.ro/trustedlist.xml",
+      "filename": "certSIGN Qualified 2023 RSA CA",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATRO-18288250",
+      "url": "https://trustedlist.adr.gov.ro/trustedlist.xml",
+      "filename": "certSIGN Web CA G4 DV",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATRO-18288250",
+      "url": "https://trustedlist.adr.gov.ro/trustedlist.xml",
+      "filename": "certSIGN Web CA G4 OV",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATRO-2163993",
+      "url": "https://trustedlist.adr.gov.ro/trustedlist.xml",
+      "filename": "Cert Digital Qualified CA",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATRO-2163993",
+      "url": "https://trustedlist.adr.gov.ro/trustedlist.xml",
+      "filename": "Cert Digital Non-Repudiation CA Class 4",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATRO-2163993",
+      "url": "https://trustedlist.adr.gov.ro/trustedlist.xml",
+      "filename": "Cert Digital Qualified CA Class 3",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATRO-2163993",
+      "url": "https://trustedlist.adr.gov.ro/trustedlist.xml",
+      "filename": "CertDigital Qualified CA Class 3 G2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATRO-2163993",
+      "url": "https://trustedlist.adr.gov.ro/trustedlist.xml",
+      "filename": "Cert Digital Non-Repudiation CA Class 4",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATRO-2163993",
+      "url": "https://trustedlist.adr.gov.ro/trustedlist.xml",
+      "filename": "CertDigital Enterprise CA Class 3 G2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATRO-2163993",
+      "url": "https://trustedlist.adr.gov.ro/trustedlist.xml",
+      "filename": "CertDigital Organization CA Class 2 G2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATRO-2163993",
+      "url": "https://trustedlist.adr.gov.ro/trustedlist.xml",
+      "filename": "CertDigital WEB CA G3",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATRO-2163993",
+      "url": "https://trustedlist.adr.gov.ro/trustedlist.xml",
+      "filename": "CertDigital Time Stamping Authority G3",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATRO-2163993",
+      "url": "https://trustedlist.adr.gov.ro/trustedlist.xml",
+      "filename": "CertDigital Web Validation Authority",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATRO-2163993",
+      "url": "https://trustedlist.adr.gov.ro/trustedlist.xml",
+      "filename": "CertDigital Time Stamping Authority G3",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATRO-2163993",
+      "url": "https://trustedlist.adr.gov.ro/trustedlist.xml",
+      "filename": "CERTDIGITAL ROOT CA G4",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATRO-2163993",
+      "url": "https://trustedlist.adr.gov.ro/trustedlist.xml",
+      "filename": "CERTDIGITAL VALIDATION AUTHORITY G4",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Serviciul de Telecomunicatii Speciale",
+      "url": "https://trustedlist.adr.gov.ro/trustedlist.xml",
+      "filename": "STS Qval QESig/QESeal",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "ZIPPER SERVICES SRL",
+      "url": "https://trustedlist.adr.gov.ro/trustedlist.xml",
+      "filename": "Zipper QVal QESig/QESeal",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "ZIPPER SERVICES SRL",
+      "url": "https://trustedlist.adr.gov.ro/trustedlist.xml",
+      "filename": "Zipper QVal QESig/QESeal",
+      "reason": "not-under-supervision"
+    }
+  ]
+}

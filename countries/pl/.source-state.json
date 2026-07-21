@@ -1,0 +1,297 @@
+{
+  "pageUrl": "https://www.nccert.pl/tsl/PL_TSL.xml",
+  "pageTlsFingerprintSha256": null,
+  "lastRun": "2026-07-21T06:44:13.604Z",
+  "sources": {
+    "https://www.nccert.pl/tsl/PL_TSL.xml": {
+      "org": "PL Trusted List",
+      "filename": "pl-tsl.xml",
+      "extension": "xml",
+      "sha256": "3362ed2f3578d4d3cf26bc9e0a28086013a819bf21dbf60e696c9670e77dfbf4",
+      "contentLength": null,
+      "lastModifiedHeader": "Wed, 03 Jun 2026 10:52:20 GMT",
+      "etag": "\"53ca7bd47f3dc1:0\"",
+      "firstSeen": "2026-07-21T06:44:13.588Z",
+      "lastChanged": "2026-07-21T06:44:13.588Z",
+      "lastSeen": "2026-07-21T06:44:13.588Z"
+    }
+  },
+  "knownGaps": [
+    {
+      "org": "CERTUM",
+      "url": "https://www.nccert.pl/tsl/PL_TSL.xml",
+      "filename": "Certification authority issuing qualified certificates",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "CERTUM",
+      "url": "https://www.nccert.pl/tsl/PL_TSL.xml",
+      "filename": "Certification authority issuing qualified certificates",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "CERTUM",
+      "url": "https://www.nccert.pl/tsl/PL_TSL.xml",
+      "filename": "Certification authority issuing qualified certificates",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "CERTUM",
+      "url": "https://www.nccert.pl/tsl/PL_TSL.xml",
+      "filename": "Certification authority issuing qualified certificates",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "CERTUM",
+      "url": "https://www.nccert.pl/tsl/PL_TSL.xml",
+      "filename": "Data Validation and Certification Server",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "CERTUM",
+      "url": "https://www.nccert.pl/tsl/PL_TSL.xml",
+      "filename": "Data Validation and Certification Server",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "CERTUM",
+      "url": "https://www.nccert.pl/tsl/PL_TSL.xml",
+      "filename": "Delivery Authority",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "CERTUM",
+      "url": "https://www.nccert.pl/tsl/PL_TSL.xml",
+      "filename": "Delivery Authority",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "CERTUM",
+      "url": "https://www.nccert.pl/tsl/PL_TSL.xml",
+      "filename": "Time Stamping Authority",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "CERTUM",
+      "url": "https://www.nccert.pl/tsl/PL_TSL.xml",
+      "filename": "Time Stamping Authority",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "CERTUM",
+      "url": "https://www.nccert.pl/tsl/PL_TSL.xml",
+      "filename": "Time Stamping Authority",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "CERTUM",
+      "url": "https://www.nccert.pl/tsl/PL_TSL.xml",
+      "filename": "Time Stamping Authority",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATPL-5250001090",
+      "url": "https://www.nccert.pl/tsl/PL_TSL.xml",
+      "filename": "Certification authority issuing qualified certificates",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATPL-5250001090",
+      "url": "https://www.nccert.pl/tsl/PL_TSL.xml",
+      "filename": "Certification authority issuing qualified certificates",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATPL-5250001090",
+      "url": "https://www.nccert.pl/tsl/PL_TSL.xml",
+      "filename": "Certification authority issuing qualified certificates",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATPL-5250001090",
+      "url": "https://www.nccert.pl/tsl/PL_TSL.xml",
+      "filename": "Certification authority issuing qualified certificates",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATPL-5250001090",
+      "url": "https://www.nccert.pl/tsl/PL_TSL.xml",
+      "filename": "Time Stamping Authority",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATPL-5250001090",
+      "url": "https://www.nccert.pl/tsl/PL_TSL.xml",
+      "filename": "Time Stamping Authority",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATPL-5250001090",
+      "url": "https://www.nccert.pl/tsl/PL_TSL.xml",
+      "filename": "Time Stamping Authority",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATPL-5250001090",
+      "url": "https://www.nccert.pl/tsl/PL_TSL.xml",
+      "filename": "Time Stamping Authority",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATPL-5260300517",
+      "url": "https://www.nccert.pl/tsl/PL_TSL.xml",
+      "filename": "Certification authority issuing qualified certificates",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATPL-5260300517",
+      "url": "https://www.nccert.pl/tsl/PL_TSL.xml",
+      "filename": "Certification authority issuing qualified certificates",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATPL-5260300517",
+      "url": "https://www.nccert.pl/tsl/PL_TSL.xml",
+      "filename": "Certification authority issuing qualified certificates",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATPL-5260300517",
+      "url": "https://www.nccert.pl/tsl/PL_TSL.xml",
+      "filename": "Certification authority issuing qualified certificates",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATPL-5260300517",
+      "url": "https://www.nccert.pl/tsl/PL_TSL.xml",
+      "filename": "Time Stamping Authority",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATPL-5260300517",
+      "url": "https://www.nccert.pl/tsl/PL_TSL.xml",
+      "filename": "Time Stamping Authority",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATPL-5260300517",
+      "url": "https://www.nccert.pl/tsl/PL_TSL.xml",
+      "filename": "Time Stamping Authority",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATPL-5260300517",
+      "url": "https://www.nccert.pl/tsl/PL_TSL.xml",
+      "filename": "Time Stamping Authority",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATPL-5260300517",
+      "url": "https://www.nccert.pl/tsl/PL_TSL.xml",
+      "filename": "Time Stamping Authority",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATPL-5260300517",
+      "url": "https://www.nccert.pl/tsl/PL_TSL.xml",
+      "filename": "Time Stamping Authority",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATPL-5260300517",
+      "url": "https://www.nccert.pl/tsl/PL_TSL.xml",
+      "filename": "Time Stamping Authority",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "TP Internet Sp. z o.o.",
+      "url": "https://www.nccert.pl/tsl/PL_TSL.xml",
+      "filename": "Certification authority issuing qualified certificates",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "TP Internet Sp. z o.o.",
+      "url": "https://www.nccert.pl/tsl/PL_TSL.xml",
+      "filename": "Certification authority issuing qualified certificates",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "TP Internet Sp. z o.o.",
+      "url": "https://www.nccert.pl/tsl/PL_TSL.xml",
+      "filename": "Time Stamping Authority",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATPL-6751399572",
+      "url": "https://www.nccert.pl/tsl/PL_TSL.xml",
+      "filename": "Certification authority issuing qualified certificates",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATPL-6751399572",
+      "url": "https://www.nccert.pl/tsl/PL_TSL.xml",
+      "filename": "Certification authority issuing qualified certificates",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATPL-5261029614",
+      "url": "https://www.nccert.pl/tsl/PL_TSL.xml",
+      "filename": "Certification Authority issuing Qualified Certificates",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATPL-5261029614",
+      "url": "https://www.nccert.pl/tsl/PL_TSL.xml",
+      "filename": "Time Stamping Authority",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATPL-5261029614",
+      "url": "https://www.nccert.pl/tsl/PL_TSL.xml",
+      "filename": "Certification Authority issuing Qualified Certificates",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATPL-5261029614",
+      "url": "https://www.nccert.pl/tsl/PL_TSL.xml",
+      "filename": "Time Stamping Authority",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATPL-5261029614",
+      "url": "https://www.nccert.pl/tsl/PL_TSL.xml",
+      "filename": "OCSP Responder",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATPL-5261029614",
+      "url": "https://www.nccert.pl/tsl/PL_TSL.xml",
+      "filename": "Time Stamping Authority",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VATPL-9512352379",
+      "url": "https://www.nccert.pl/tsl/PL_TSL.xml",
+      "filename": "Time Stamping Authority",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "CERTUM",
+      "url": "https://www.nccert.pl/tsl/PL_TSL.xml",
+      "filename": "Data Validation and Certification Server",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "CERTUM",
+      "url": "https://www.nccert.pl/tsl/PL_TSL.xml",
+      "filename": "Delivery Authority",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "CERTUM",
+      "url": "https://www.nccert.pl/tsl/PL_TSL.xml",
+      "filename": "OCSP responder",
+      "reason": "not-under-supervision"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "org": "NTRIS-521000-2790",
+    "stagedFile": "NTRIS-521000-2790 - Fullgilt audkenni.pem",
+    "subject": "Fullgilt audkenni",
+    "issuer": "Islandsrot",
+    "serialNumber": "cc",
+    "sha256": "605861e1a4fb523dccb8226d3c08867d5f24d608b45b4cf6366c7d0ae3c97cf7",
+    "validFrom": "2008-06-06T20:16:56.000Z",
+    "validTo": "2023-06-06T20:16:56.000Z",
+    "role": "intermediate",
+    "status": "new",
+    "sourceUrl": "https://tsl.fjarskiptastofa.is/library/skrar/tsl/tsl.xml",
+    "sourceEntry": "Fullgilt audkenni",
+    "crossCheckReminder": "Verify this fingerprint independently against NTRIS-521000-2790's own published root/intermediate certificate before promoting to current/."
+  },
+  {
+    "org": "NTRIS-521000-2790",
+    "stagedFile": "NTRIS-521000-2790 - Fullgilt audkenni 2021.pem",
+    "subject": "Fullgilt audkenni 2021",
+    "issuer": "Islandsrot 2021",
+    "serialNumber": "65f209f20a1bcc670e999f04369886de",
+    "sha256": "23defccae804624754de5f109052ee442f629a731b00ed785df7d92104d92086",
+    "validFrom": "2021-09-09T14:07:36.000Z",
+    "validTo": "2036-09-09T14:07:36.000Z",
+    "role": "intermediate",
+    "status": "new",
+    "sourceUrl": "https://tsl.fjarskiptastofa.is/library/skrar/tsl/tsl.xml",
+    "sourceEntry": "Fullgilt audkenni 2021",
+    "crossCheckReminder": "Verify this fingerprint independently against NTRIS-521000-2790's own published root/intermediate certificate before promoting to current/."
+  }
+]

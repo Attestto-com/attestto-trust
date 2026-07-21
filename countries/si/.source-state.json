@@ -1,0 +1,309 @@
+{
+  "pageUrl": "https://www.tl.gov.si/SI_TL.xml",
+  "pageTlsFingerprintSha256": null,
+  "lastRun": "2026-07-21T06:44:27.752Z",
+  "sources": {
+    "https://www.tl.gov.si/SI_TL.xml": {
+      "org": "SI Trusted List",
+      "filename": "si-tsl.xml",
+      "extension": "xml",
+      "sha256": "03cece6d16b87f9740a263bce140b6cfa5405f2cceabd1840c7a4a6f729e2a85",
+      "contentLength": null,
+      "lastModifiedHeader": "Tue, 07 Jul 2026 11:57:47 GMT",
+      "etag": "\"a9194-6560419772cc0-gzip\"",
+      "firstSeen": "2026-07-21T06:44:27.739Z",
+      "lastChanged": "2026-07-21T06:44:27.739Z",
+      "lastSeen": "2026-07-21T06:44:27.739Z"
+    }
+  },
+  "knownGaps": [
+    {
+      "org": "Republika Slovenija",
+      "url": "https://www.tl.gov.si/SI_TL.xml",
+      "filename": "SIGOV-CA",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Republika Slovenija",
+      "url": "https://www.tl.gov.si/SI_TL.xml",
+      "filename": "SIGEN-CA",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Republika Slovenija",
+      "url": "https://www.tl.gov.si/SI_TL.xml",
+      "filename": "SI-TSA 1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Republika Slovenija",
+      "url": "https://www.tl.gov.si/SI_TL.xml",
+      "filename": "SI-TSA 2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Republika Slovenija",
+      "url": "https://www.tl.gov.si/SI_TL.xml",
+      "filename": "SI-TSA 1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Republika Slovenija",
+      "url": "https://www.tl.gov.si/SI_TL.xml",
+      "filename": "SI-TSA 2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Ministry of Digital Transformation",
+      "url": "https://www.tl.gov.si/SI_TL.xml",
+      "filename": "SI-TSA 1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Ministry of Digital Transformation",
+      "url": "https://www.tl.gov.si/SI_TL.xml",
+      "filename": "SI-TSA 2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Ministry of Digital Transformation",
+      "url": "https://www.tl.gov.si/SI_TL.xml",
+      "filename": "SI-TSA1 (Republika Slovenija)",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Ministry of Digital Transformation",
+      "url": "https://www.tl.gov.si/SI_TL.xml",
+      "filename": "SI-TSA2 (Republika Slovenija)",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Ministry of Digital Transformation",
+      "url": "https://www.tl.gov.si/SI_TL.xml",
+      "filename": "SI-TSA1 G3",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Ministry of Digital Transformation",
+      "url": "https://www.tl.gov.si/SI_TL.xml",
+      "filename": "SI-TSA2 G3",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Halcom d.d.",
+      "url": "https://www.tl.gov.si/SI_TL.xml",
+      "filename": "HALCOM CA PO",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Halcom d.d.",
+      "url": "https://www.tl.gov.si/SI_TL.xml",
+      "filename": "HALCOM CA PO 2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Halcom d.d.",
+      "url": "https://www.tl.gov.si/SI_TL.xml",
+      "filename": "HALCOM CA FO",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Halcom d.d.",
+      "url": "https://www.tl.gov.si/SI_TL.xml",
+      "filename": "HALCOM CA TS 1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Halcom d.d.",
+      "url": "https://www.tl.gov.si/SI_TL.xml",
+      "filename": "HALCOM CA PO 3",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Halcom d.d.",
+      "url": "https://www.tl.gov.si/SI_TL.xml",
+      "filename": "HALCOM SECURE SERVER CA",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Halcom d.d.",
+      "url": "https://www.tl.gov.si/SI_TL.xml",
+      "filename": "HALCOM SECURE SERVER CA 1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Halcom d.d.",
+      "url": "https://www.tl.gov.si/SI_TL.xml",
+      "filename": "Halcom Root CA",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Halcom d.d.",
+      "url": "https://www.tl.gov.si/SI_TL.xml",
+      "filename": "Halcom CA PO e-signature 1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Halcom d.d.",
+      "url": "https://www.tl.gov.si/SI_TL.xml",
+      "filename": "Halcom CA FO e-signature 1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Halcom d.d.",
+      "url": "https://www.tl.gov.si/SI_TL.xml",
+      "filename": "HALCOM CA TS 4",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Halcom d.d.",
+      "url": "https://www.tl.gov.si/SI_TL.xml",
+      "filename": "HALCOM CA TS 5",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Nova Ljubljanska banka d.d., Ljubljana",
+      "url": "https://www.tl.gov.si/SI_TL.xml",
+      "filename": "CA NLB",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Nova Ljubljanska banka d.d., Ljubljana",
+      "url": "https://www.tl.gov.si/SI_TL.xml",
+      "filename": "AC NLB",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Pošta Slovenije, POŠTArCA",
+      "url": "https://www.tl.gov.si/SI_TL.xml",
+      "filename": "POŠTArCA",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Pošta Slovenije, POŠTArCA",
+      "url": "https://www.tl.gov.si/SI_TL.xml",
+      "filename": "Qualified electronic time stamps",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Pošta Slovenije, POŠTArCA",
+      "url": "https://www.tl.gov.si/SI_TL.xml",
+      "filename": "TSA 1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Pošta Slovenije, POŠTArCA",
+      "url": "https://www.tl.gov.si/SI_TL.xml",
+      "filename": "TSA 2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Pošta Slovenije, POŠTArCA",
+      "url": "https://www.tl.gov.si/SI_TL.xml",
+      "filename": "TSA 1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Pošta Slovenije, POŠTArCA",
+      "url": "https://www.tl.gov.si/SI_TL.xml",
+      "filename": "TSA 2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Ministry of defence",
+      "url": "https://www.tl.gov.si/SI_TL.xml",
+      "filename": "SIMoD-CA-Restricted",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Ministry of defence",
+      "url": "https://www.tl.gov.si/SI_TL.xml",
+      "filename": "SIMoD-CA-Restricted",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Ministry of defence",
+      "url": "https://www.tl.gov.si/SI_TL.xml",
+      "filename": "SIMoD-CA-Restricted",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Ministry of defence",
+      "url": "https://www.tl.gov.si/SI_TL.xml",
+      "filename": "SIMoD-CA-Restricted",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Ministry of defence",
+      "url": "https://www.tl.gov.si/SI_TL.xml",
+      "filename": "SIMoD-CA-Root",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Ministry of defence",
+      "url": "https://www.tl.gov.si/SI_TL.xml",
+      "filename": "SIMoD-CA-Root",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Ministry of defence",
+      "url": "https://www.tl.gov.si/SI_TL.xml",
+      "filename": "SIMoD-CA-Restricted",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "EIUS d.o.o.",
+      "url": "https://www.tl.gov.si/SI_TL.xml",
+      "filename": "EIUS QMAIL",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "EIUS d.o.o.",
+      "url": "https://www.tl.gov.si/SI_TL.xml",
+      "filename": "EIUS VALIDATOR",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "EIUS d.o.o.",
+      "url": "https://www.tl.gov.si/SI_TL.xml",
+      "filename": "EIUS TSA",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "EIUS d.o.o.",
+      "url": "https://www.tl.gov.si/SI_TL.xml",
+      "filename": "EIUS QMAIL",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "EIUS d.o.o.",
+      "url": "https://www.tl.gov.si/SI_TL.xml",
+      "filename": "EIUS VALIDATOR",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "EIUS d.o.o.",
+      "url": "https://www.tl.gov.si/SI_TL.xml",
+      "filename": "EIUS QMAIL",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "EIUS d.o.o.",
+      "url": "https://www.tl.gov.si/SI_TL.xml",
+      "filename": "EIUS VALIDATOR",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "SETCCE D.O.O.",
+      "url": "https://www.tl.gov.si/SI_TL.xml",
+      "filename": "SETCCE ePero®START Qualifield Validation Service",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "SETCCE D.O.O.",
+      "url": "https://www.tl.gov.si/SI_TL.xml",
+      "filename": "BetrSign® Kvalificirana storitev za potrjevanje veljavnosti",
+      "reason": "not-under-supervision"
+    }
+  ]
+}

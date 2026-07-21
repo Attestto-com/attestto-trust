@@ -1,0 +1,459 @@
+{
+  "pageUrl": "https://www.nmhh.hu/tl/pub/HU_TL.xml",
+  "pageTlsFingerprintSha256": null,
+  "lastRun": "2026-07-21T06:43:48.451Z",
+  "sources": {
+    "https://www.nmhh.hu/tl/pub/HU_TL.xml": {
+      "org": "HU Trusted List",
+      "filename": "hu-tsl.xml",
+      "extension": "xml",
+      "sha256": "aa2dabaaea6266d907e12c4225d4173262466b9c6add91776776a00dd6c528a3",
+      "contentLength": null,
+      "lastModifiedHeader": "Wed, 15 Jul 2026 08:47:50 GMT",
+      "etag": "\"164d45-656a260dc3980-gzip\"",
+      "firstSeen": "2026-07-21T06:43:48.411Z",
+      "lastChanged": "2026-07-21T06:43:48.411Z",
+      "lastSeen": "2026-07-21T06:43:48.411Z"
+    }
+  },
+  "knownGaps": [
+    {
+      "org": "MAV INFORMATIKA",
+      "url": "https://www.nmhh.hu/tl/pub/HU_TL.xml",
+      "filename": "Trust&CA QKET v2.0 (Qualified certificates for public administration)",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "MAV INFORMATIKA",
+      "url": "https://www.nmhh.hu/tl/pub/HU_TL.xml",
+      "filename": "Trust&Sign QCA v1.0",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "MAV INFORMATIKA",
+      "url": "https://www.nmhh.hu/tl/pub/HU_TL.xml",
+      "filename": "Trust&Sign TSA v2.0",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "MAV INFORMATIKA",
+      "url": "https://www.nmhh.hu/tl/pub/HU_TL.xml",
+      "filename": "Info&CA TSA v4.0",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Microsec Ltd.",
+      "url": "https://www.nmhh.hu/tl/pub/HU_TL.xml",
+      "filename": "Qualified e-Szigno CA",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Microsec Ltd.",
+      "url": "https://www.nmhh.hu/tl/pub/HU_TL.xml",
+      "filename": "Qualified e-Szigno CA7",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Microsec Ltd.",
+      "url": "https://www.nmhh.hu/tl/pub/HU_TL.xml",
+      "filename": "Qualified e-Szigno PCA",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Microsec Ltd.",
+      "url": "https://www.nmhh.hu/tl/pub/HU_TL.xml",
+      "filename": "Qualified e-Szigno TSA",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Microsec Ltd.",
+      "url": "https://www.nmhh.hu/tl/pub/HU_TL.xml",
+      "filename": "Qualified e-Szigno TSA 2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Microsec Ltd.",
+      "url": "https://www.nmhh.hu/tl/pub/HU_TL.xml",
+      "filename": "Qualified e-Szigno TSA 3",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Microsec Ltd.",
+      "url": "https://www.nmhh.hu/tl/pub/HU_TL.xml",
+      "filename": "Qualified e-Szigno TSA 4",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Microsec Ltd.",
+      "url": "https://www.nmhh.hu/tl/pub/HU_TL.xml",
+      "filename": "Qualified e-Szigno TSA 5",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "MATAV",
+      "url": "https://www.nmhh.hu/tl/pub/HU_TL.xml",
+      "filename": "Magyar Telekom Minositett CA",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "MATAV",
+      "url": "https://www.nmhh.hu/tl/pub/HU_TL.xml",
+      "filename": "Matav Minositett CA",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "MATAV",
+      "url": "https://www.nmhh.hu/tl/pub/HU_TL.xml",
+      "filename": "Magyar Telekom Minositett KET CA",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "MATAV",
+      "url": "https://www.nmhh.hu/tl/pub/HU_TL.xml",
+      "filename": "TSA1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "MATAV",
+      "url": "https://www.nmhh.hu/tl/pub/HU_TL.xml",
+      "filename": "TSA1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "MATAV",
+      "url": "https://www.nmhh.hu/tl/pub/HU_TL.xml",
+      "filename": "TSA1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "MATAV",
+      "url": "https://www.nmhh.hu/tl/pub/HU_TL.xml",
+      "filename": "TSS1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "MATAV",
+      "url": "https://www.nmhh.hu/tl/pub/HU_TL.xml",
+      "filename": "TSS1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "MATAV",
+      "url": "https://www.nmhh.hu/tl/pub/HU_TL.xml",
+      "filename": "TSS1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "MATAV",
+      "url": "https://www.nmhh.hu/tl/pub/HU_TL.xml",
+      "filename": "TSS1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "MATAV",
+      "url": "https://www.nmhh.hu/tl/pub/HU_TL.xml",
+      "filename": "TSS1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "MATAV",
+      "url": "https://www.nmhh.hu/tl/pub/HU_TL.xml",
+      "filename": "TSA2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "MATAV",
+      "url": "https://www.nmhh.hu/tl/pub/HU_TL.xml",
+      "filename": "TSA2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "MATAV",
+      "url": "https://www.nmhh.hu/tl/pub/HU_TL.xml",
+      "filename": "TSA2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "MATAV",
+      "url": "https://www.nmhh.hu/tl/pub/HU_TL.xml",
+      "filename": "TSS3",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "MATAV",
+      "url": "https://www.nmhh.hu/tl/pub/HU_TL.xml",
+      "filename": "TSS2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "MATAV",
+      "url": "https://www.nmhh.hu/tl/pub/HU_TL.xml",
+      "filename": "TSS2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "MATAV",
+      "url": "https://www.nmhh.hu/tl/pub/HU_TL.xml",
+      "filename": "TSS2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "MATAV",
+      "url": "https://www.nmhh.hu/tl/pub/HU_TL.xml",
+      "filename": "TSS2-2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "MATAV",
+      "url": "https://www.nmhh.hu/tl/pub/HU_TL.xml",
+      "filename": "TSS2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "MATAV",
+      "url": "https://www.nmhh.hu/tl/pub/HU_TL.xml",
+      "filename": "TSA1 2011",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "MATAV",
+      "url": "https://www.nmhh.hu/tl/pub/HU_TL.xml",
+      "filename": "TSA2 2011",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "MATAV",
+      "url": "https://www.nmhh.hu/tl/pub/HU_TL.xml",
+      "filename": "TSA3 2011",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "MATAV",
+      "url": "https://www.nmhh.hu/tl/pub/HU_TL.xml",
+      "filename": "TSA1 2014",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "MATAV",
+      "url": "https://www.nmhh.hu/tl/pub/HU_TL.xml",
+      "filename": "TSA2 2014",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "MATAV",
+      "url": "https://www.nmhh.hu/tl/pub/HU_TL.xml",
+      "filename": "TSU4 2021",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "MATAV",
+      "url": "https://www.nmhh.hu/tl/pub/HU_TL.xml",
+      "filename": "TSU5 2021",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "MATAV",
+      "url": "https://www.nmhh.hu/tl/pub/HU_TL.xml",
+      "filename": "TSU6 2021",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NetLock Ltd.",
+      "url": "https://www.nmhh.hu/tl/pub/HU_TL.xml",
+      "filename": "NetLock Minositett Kozjegyzoi (Class QA) Tanusitvanykiado",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NetLock Ltd.",
+      "url": "https://www.nmhh.hu/tl/pub/HU_TL.xml",
+      "filename": "NetLock Minositett Kozigazgatasi Tanusitvanykiado",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NetLock Ltd.",
+      "url": "https://www.nmhh.hu/tl/pub/HU_TL.xml",
+      "filename": "NetLock Minositett Idobelyeg Szolgaltato 6",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NetLock Ltd.",
+      "url": "https://www.nmhh.hu/tl/pub/HU_TL.xml",
+      "filename": "NetLock Minositett Idobelyeg Szolgaltato 5",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NetLock Ltd.",
+      "url": "https://www.nmhh.hu/tl/pub/HU_TL.xml",
+      "filename": "NetLock Minositett Idobelyeg Szolgaltato 4",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NetLock Ltd.",
+      "url": "https://www.nmhh.hu/tl/pub/HU_TL.xml",
+      "filename": "NetLock Minositett Idobelyeg Szolgaltato 7",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NetLock Ltd.",
+      "url": "https://www.nmhh.hu/tl/pub/HU_TL.xml",
+      "filename": "NetLock Minősített Időbélyeg Szolgáltató G1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NetLock Ltd.",
+      "url": "https://www.nmhh.hu/tl/pub/HU_TL.xml",
+      "filename": "NetLock Minősített Időbélyeg Szolgáltató G2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NetLock Ltd.",
+      "url": "https://www.nmhh.hu/tl/pub/HU_TL.xml",
+      "filename": "NetLock Minősített Időbélyeg Szolgáltató G3",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NetLock Ltd.",
+      "url": "https://www.nmhh.hu/tl/pub/HU_TL.xml",
+      "filename": "NetLock Minositett Idobelyeg Szolgaltato 8",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NetLock Ltd.",
+      "url": "https://www.nmhh.hu/tl/pub/HU_TL.xml",
+      "filename": "NetLock Minositett Idobelyeg Szolgaltato 9",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NetLock Ltd.",
+      "url": "https://www.nmhh.hu/tl/pub/HU_TL.xml",
+      "filename": "NetLock Minositett Idobelyeg Szolgaltato 10",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NetLock Ltd.",
+      "url": "https://www.nmhh.hu/tl/pub/HU_TL.xml",
+      "filename": "NetLock Minositett Idobelyeg Szolgaltato 3",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NetLock Ltd.",
+      "url": "https://www.nmhh.hu/tl/pub/HU_TL.xml",
+      "filename": "NetLock Minősített Időbélyeg Szolgáltató G4",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NetLock Ltd.",
+      "url": "https://www.nmhh.hu/tl/pub/HU_TL.xml",
+      "filename": "NetLock Minősített Időbélyeg Szolgáltató G5",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NetLock Ltd.",
+      "url": "https://www.nmhh.hu/tl/pub/HU_TL.xml",
+      "filename": "NetLock Minősített Időbélyeg Szolgáltató G6",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NetLock Ltd.",
+      "url": "https://www.nmhh.hu/tl/pub/HU_TL.xml",
+      "filename": "NetLock Minősített Időbélyeg Szolgáltató G7",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NetLock Ltd.",
+      "url": "https://www.nmhh.hu/tl/pub/HU_TL.xml",
+      "filename": "NetLock Minősített Időbélyeg Szolgáltató G8",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NetLock Ltd.",
+      "url": "https://www.nmhh.hu/tl/pub/HU_TL.xml",
+      "filename": "NetLock Minősített Időbélyeg Szolgáltató G9",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NetLock Ltd.",
+      "url": "https://www.nmhh.hu/tl/pub/HU_TL.xml",
+      "filename": "NetLock Minősített Időbélyeg Szolgáltató G10",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NetLock Ltd.",
+      "url": "https://www.nmhh.hu/tl/pub/HU_TL.xml",
+      "filename": "NetLock Minősített Időbélyeg Szolgáltató 4",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NetLock Ltd.",
+      "url": "https://www.nmhh.hu/tl/pub/HU_TL.xml",
+      "filename": "NetLock Minősített Időbélyeg Szolgáltató 2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NetLock Ltd.",
+      "url": "https://www.nmhh.hu/tl/pub/HU_TL.xml",
+      "filename": "NetLock Minősített Időbélyeg Szolgáltató 1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NetLock Ltd.",
+      "url": "https://www.nmhh.hu/tl/pub/HU_TL.xml",
+      "filename": "NetLock Minősített Időbélyeg Szolgáltató 3",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NetLock Ltd.",
+      "url": "https://www.nmhh.hu/tl/pub/HU_TL.xml",
+      "filename": "NETLOCK Qualified Preservation Service QSCD",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NetLock Ltd.",
+      "url": "https://www.nmhh.hu/tl/pub/HU_TL.xml",
+      "filename": "NETLOCK Qualified Preservation Service SCD",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NISZ National Infocommunications Services Company Limited by Shares",
+      "url": "https://www.nmhh.hu/tl/pub/HU_TL.xml",
+      "filename": "Qualified Time Stamp Service TSS 2014 01",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NISZ National Infocommunications Services Company Limited by Shares",
+      "url": "https://www.nmhh.hu/tl/pub/HU_TL.xml",
+      "filename": "Qualified Time Stamp Service TSS 2014 02",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NISZ National Infocommunications Services Company Limited by Shares",
+      "url": "https://www.nmhh.hu/tl/pub/HU_TL.xml",
+      "filename": "Qualified Time Stamp Service TSS 2014 03",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NISZ National Infocommunications Services Company Limited by Shares",
+      "url": "https://www.nmhh.hu/tl/pub/HU_TL.xml",
+      "filename": "Qualified Time Stamp Service TSS 2014 04",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NISZ National Infocommunications Services Company Limited by Shares",
+      "url": "https://www.nmhh.hu/tl/pub/HU_TL.xml",
+      "filename": "Qualified Time Stamp Service TSS 2014 05",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "e-Postoffice Szolgáltató Korlátolt Felelősségű Társaság",
+      "url": "https://www.nmhh.hu/tl/pub/HU_TL.xml",
+      "filename": "e-Post",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "FaceKom Services Zrt.",
+      "url": "https://www.nmhh.hu/tl/pub/HU_TL.xml",
+      "filename": "FaceKom QTSP CA 2023",
+      "reason": "not-under-supervision"
+    }
+  ]
+}

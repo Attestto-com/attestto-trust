@@ -1,0 +1,243 @@
+{
+  "pageUrl": "https://elektroninisparasas.lt/LT-TSL.xml",
+  "pageTlsFingerprintSha256": null,
+  "lastRun": "2026-07-21T06:43:58.548Z",
+  "sources": {
+    "https://elektroninisparasas.lt/LT-TSL.xml": {
+      "org": "LT Trusted List",
+      "filename": "lt-tsl.xml",
+      "extension": "xml",
+      "sha256": "ee274d7f9721d656fd5d9da78ed51cf9ec2da1ac2807cb0eea315b6df04e4a95",
+      "contentLength": null,
+      "lastModifiedHeader": "Thu, 18 Jun 2026 06:38:52 GMT",
+      "etag": "\"8f307-654816dec9700-gzip\"",
+      "firstSeen": "2026-07-21T06:43:58.540Z",
+      "lastChanged": "2026-07-21T06:43:58.540Z",
+      "lastSeen": "2026-07-21T06:43:58.540Z"
+    }
+  },
+  "knownGaps": [
+    {
+      "org": "Gyventoju registro tarnyba prie LR VRM - i.k. 188756767",
+      "url": "https://elektroninisparasas.lt/LT-TSL.xml",
+      "filename": "GRT_OCSP Service-1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Gyventoju registro tarnyba prie LR VRM - i.k. 188756767",
+      "url": "https://elektroninisparasas.lt/LT-TSL.xml",
+      "filename": "GRT_OCSP Service-2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Gyventoju registro tarnyba prie LR VRM - i.k. 188756767",
+      "url": "https://elektroninisparasas.lt/LT-TSL.xml",
+      "filename": "GRT_OCSP Service-3 (IssuingCA-A)",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Gyventoju registro tarnyba prie LR VRM - i.k. 188756767",
+      "url": "https://elektroninisparasas.lt/LT-TSL.xml",
+      "filename": "GRT_OCSP Service-4 (IssuingCA-B)",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Gyventoju registro tarnyba prie LR VRM - i.k. 188756767",
+      "url": "https://elektroninisparasas.lt/LT-TSL.xml",
+      "filename": "GRT_OCSP Service-5",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Gyventoju registro tarnyba prie LR VRM - i.k. 188756767",
+      "url": "https://elektroninisparasas.lt/LT-TSL.xml",
+      "filename": "GRT_Qualified certificates for electronic signature-1",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Gyventoju registro tarnyba prie LR VRM - i.k. 188756767",
+      "url": "https://elektroninisparasas.lt/LT-TSL.xml",
+      "filename": "GRT_Qualified certificates for electronic signature-2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Gyventoju registro tarnyba prie LR VRM - i.k. 188756767",
+      "url": "https://elektroninisparasas.lt/LT-TSL.xml",
+      "filename": "GRT_Qualified certificates for electronic signature-3 (IssuingCA-A)",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Gyventoju registro tarnyba prie LR VRM - i.k. 188756767",
+      "url": "https://elektroninisparasas.lt/LT-TSL.xml",
+      "filename": "GRT_Qualified certificates for electronic signature-4 (IssuingCA-B)",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Gyventoju registro tarnyba prie LR VRM - i.k. 188756767",
+      "url": "https://elektroninisparasas.lt/LT-TSL.xml",
+      "filename": "GRT_Qualified certificates for electronic signature-5(IssuingCA-A)",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Gyventoju registro tarnyba prie LR VRM - i.k. 188756767",
+      "url": "https://elektroninisparasas.lt/LT-TSL.xml",
+      "filename": "GRT_Qualified certificates for electronic signature-6(IssuingCA-B)",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Gyventoju registro tarnyba prie LR VRM - i.k. 188756767",
+      "url": "https://elektroninisparasas.lt/LT-TSL.xml",
+      "filename": "GRT_OCSP Service-6(IssuingCA-A)",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Gyventoju registro tarnyba prie LR VRM - i.k. 188756767",
+      "url": "https://elektroninisparasas.lt/LT-TSL.xml",
+      "filename": "GRT_OCSP Service-7(IssuingCA-B)",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Gyventoju registro tarnyba prie LR VRM - i.k. 188756767",
+      "url": "https://elektroninisparasas.lt/LT-TSL.xml",
+      "filename": "GRT_OCSP Service-8 (IssuingCA-A)",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Gyventoju registro tarnyba prie LR VRM - i.k. 188756767",
+      "url": "https://elektroninisparasas.lt/LT-TSL.xml",
+      "filename": "GRT_OCSP Service-9 (IssuingCA-B)",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VI Registru Centras - I.k. 124110246",
+      "url": "https://elektroninisparasas.lt/LT-TSL.xml",
+      "filename": "RC_OCSP Service-2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VI Registru Centras - I.k. 124110246",
+      "url": "https://elektroninisparasas.lt/LT-TSL.xml",
+      "filename": "RC_OCSP Service-3",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VI Registru Centras - I.k. 124110246",
+      "url": "https://elektroninisparasas.lt/LT-TSL.xml",
+      "filename": "RC_OCSP Service-4",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VI Registru Centras - I.k. 124110246",
+      "url": "https://elektroninisparasas.lt/LT-TSL.xml",
+      "filename": "RC_OCSP Service",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VI Registru Centras - I.k. 124110246",
+      "url": "https://elektroninisparasas.lt/LT-TSL.xml",
+      "filename": "RC_Qualified certificates for electronic signature-2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VI Registru Centras - I.k. 124110246",
+      "url": "https://elektroninisparasas.lt/LT-TSL.xml",
+      "filename": "RC_Qualified certificates for electronic signature-3",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VI Registru Centras - I.k. 124110246",
+      "url": "https://elektroninisparasas.lt/LT-TSL.xml",
+      "filename": "RC_Qualified certificates for electronic signature",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VI Registru Centras - I.k. 124110246",
+      "url": "https://elektroninisparasas.lt/LT-TSL.xml",
+      "filename": "RC_Qualified certificates for electronic signature-4",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VI Registru Centras - I.k. 124110246",
+      "url": "https://elektroninisparasas.lt/LT-TSL.xml",
+      "filename": "RC_OCSP Service-5",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VI Registru Centras - I.k. 124110246",
+      "url": "https://elektroninisparasas.lt/LT-TSL.xml",
+      "filename": "RC_OCSP Service-6",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VI Registru Centras - I.k. 124110246",
+      "url": "https://elektroninisparasas.lt/LT-TSL.xml",
+      "filename": "RC_OCSP Service-7",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VI Registru Centras - I.k. 124110246",
+      "url": "https://elektroninisparasas.lt/LT-TSL.xml",
+      "filename": "RC_OCSP Service-8",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "VI Registru Centras - I.k. 124110246",
+      "url": "https://elektroninisparasas.lt/LT-TSL.xml",
+      "filename": "RC_Qualified certificates for electronic signature-5",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Skaitmeninio sertifikavimo centras",
+      "url": "https://elektroninisparasas.lt/LT-TSL.xml",
+      "filename": "SSC_OCSP Service-2 (SSC Qualified Class 3)",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Skaitmeninio sertifikavimo centras",
+      "url": "https://elektroninisparasas.lt/LT-TSL.xml",
+      "filename": "SSC_OCSP Service",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Skaitmeninio sertifikavimo centras",
+      "url": "https://elektroninisparasas.lt/LT-TSL.xml",
+      "filename": "SSC_Qualified certificates for electronic signature-1 (SSC Class 3)",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Skaitmeninio sertifikavimo centras",
+      "url": "https://elektroninisparasas.lt/LT-TSL.xml",
+      "filename": "SSC_Qualified certificates for electronic signature-2 (SSC Qualified Class 3)",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Skaitmeninio sertifikavimo centras",
+      "url": "https://elektroninisparasas.lt/LT-TSL.xml",
+      "filename": "SSC_Qualified certificates for electronic signature-3 (SSC Qualified Class 3 VS)",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Skaitmeninio sertifikavimo centras",
+      "url": "https://elektroninisparasas.lt/LT-TSL.xml",
+      "filename": "SSC_Qualified certificates for electronic signature-4 (SSC Qualified Class 3)",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Skaitmeninio sertifikavimo centras",
+      "url": "https://elektroninisparasas.lt/LT-TSL.xml",
+      "filename": "SSC_Qualified certificates for electronic signature-5 (SSC GDL Class 2-4 QCA)",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Skaitmeninio sertifikavimo centras",
+      "url": "https://elektroninisparasas.lt/LT-TSL.xml",
+      "filename": "SSC_Qualified certificates for electronic signature-6 (SSC GDL VS Class 2-4 QCA)",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Migration Department",
+      "url": "https://elektroninisparasas.lt/LT-TSL.xml",
+      "filename": "MD_OCSP_Service_1 (OCSP for MD CA)",
+      "reason": "not-under-supervision"
+    }
+  ]
+}

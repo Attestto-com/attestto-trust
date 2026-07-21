@@ -1,0 +1,20 @@
+{
+  "pageUrl": "https://www.digst.dk/TSLDK_v6xml",
+  "pageTlsFingerprintSha256": null,
+  "lastRun": "2026-07-21T06:43:15.533Z",
+  "sources": {
+    "https://www.digst.dk/TSLDK_v6xml": {
+      "org": "DK Trusted List",
+      "filename": "dk-tsl.xml",
+      "extension": "xml",
+      "sha256": "4fcbf5c7d4a3e6b62d54efd36123ae467dfd6f3dee6961a30a3df59e83c03326",
+      "contentLength": "92502",
+      "lastModifiedHeader": "Tue, 26 May 2026 13:34:10 GMT",
+      "etag": "\"1dced1455445c56\"",
+      "firstSeen": "2026-07-21T06:43:15.530Z",
+      "lastChanged": "2026-07-21T06:43:15.530Z",
+      "lastSeen": "2026-07-21T06:43:15.530Z"
+    }
+  },
+  "knownGaps": []
+}

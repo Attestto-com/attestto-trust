@@ -1,0 +1,129 @@
+{
+  "pageUrl": "https://nkom.no/files/TL/NO_TL.xml",
+  "pageTlsFingerprintSha256": null,
+  "lastRun": "2026-07-21T06:44:08.183Z",
+  "sources": {
+    "https://nkom.no/files/TL/NO_TL.xml": {
+      "org": "NO Trusted List",
+      "filename": "no-tsl.xml",
+      "extension": "xml",
+      "sha256": "f7e8f4bbf65062d24da61cf79568fbbb116d76b321d2f57b69e7bcd645261be7",
+      "contentLength": "304629",
+      "lastModifiedHeader": "Mon, 20 Apr 2026 06:23:06 GMT",
+      "etag": "0x8DE9EA54948E434",
+      "firstSeen": "2026-07-21T06:44:08.173Z",
+      "lastChanged": "2026-07-21T06:44:08.173Z",
+      "lastSeen": "2026-07-21T06:44:08.173Z"
+    }
+  },
+  "knownGaps": [
+    {
+      "org": "NTRNO-983163432",
+      "url": "https://nkom.no/files/TL/NO_TL.xml",
+      "filename": "Qualified certificates for electronic signature (ZebSign Community ID CA 1)",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRNO-983163327",
+      "url": "https://nkom.no/files/TL/NO_TL.xml",
+      "filename": "Qualified certificates for electronic signature (Buypass Class 3 CA 1)",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRNO-988312495",
+      "url": "https://nkom.no/files/TL/NO_TL.xml",
+      "filename": "Qualified certificates for electronic signature (Commfides CPN Person-High CA)",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRNO-810969652",
+      "url": "https://nkom.no/files/TL/NO_TL.xml",
+      "filename": "Qualified certificates for electronic signature (BankID Fokus Bank Bank CA 1)",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRNO-988477052",
+      "url": "https://nkom.no/files/TL/NO_TL.xml",
+      "filename": "Qualified certificates for electronic signature (BankID Bankenes ID-tjeneste Bank CA 1)",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRNO-984851006",
+      "url": "https://nkom.no/files/TL/NO_TL.xml",
+      "filename": "Qualified certificates for electronic signature (BankID DnB NOR Bank CA 1)",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRNO-911044110",
+      "url": "https://nkom.no/files/TL/NO_TL.xml",
+      "filename": "Qualified certificates for electronic signature (BankID Nordea Bank CA 1)",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRNO-911044110",
+      "url": "https://nkom.no/files/TL/NO_TL.xml",
+      "filename": "Qualified certificates for electronic signature (BankID Nordea Bank CA 3)",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRNO-979319568",
+      "url": "https://nkom.no/files/TL/NO_TL.xml",
+      "filename": "Qualified certificates for electronic signature (BankID Terra Gruppen Bank CA 1)",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRNO-986401598",
+      "url": "https://nkom.no/files/TL/NO_TL.xml",
+      "filename": "Qualified certificates for electronic signature (BankID SpareBank 1 Bank CA 1)",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRNO-986401598",
+      "url": "https://nkom.no/files/TL/NO_TL.xml",
+      "filename": "Qualified certificates for electronic signature (BankID SpareBank 1 Bank CA 3)",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRNO-982582709",
+      "url": "https://nkom.no/files/TL/NO_TL.xml",
+      "filename": "Qualified certificates for electronic signature (BankID SEB Bank CA 2)",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRNO-982582709",
+      "url": "https://nkom.no/files/TL/NO_TL.xml",
+      "filename": "Qualified certificates for electronic sinature (BankID SEB Privatbanken Bank CA 1)",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRNO-971171324",
+      "url": "https://nkom.no/files/TL/NO_TL.xml",
+      "filename": "Qualified certificates for electronic signature (BankID Handelsbanken Bank CA 2)",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRNO-971171324",
+      "url": "https://nkom.no/files/TL/NO_TL.xml",
+      "filename": "Qualified certificates for electronic signature (BankID Handelsbanken Bank CA 1)",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRNO-981291220",
+      "url": "https://nkom.no/files/TL/NO_TL.xml",
+      "filename": "Qualified certificates for electronic signature (BankID Skandiabanken Bank CA 2)",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRNO-981291220",
+      "url": "https://nkom.no/files/TL/NO_TL.xml",
+      "filename": "Qualified certificates for electronic signature (BankID SkandiaBanken Bank CA 1)",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "NTRNO-923609016",
+      "url": "https://nkom.no/files/TL/NO_TL.xml",
+      "filename": "Qualified certificates for electronic signature (Statoil Root CA)",
+      "reason": "not-under-supervision"
+    }
+  ]
+}

@@ -1,0 +1,261 @@
+{
+  "pageUrl": "https://crc.bg/files/_en/TSL_BG.xml",
+  "pageTlsFingerprintSha256": null,
+  "lastRun": "2026-07-21T06:42:54.022Z",
+  "sources": {
+    "https://crc.bg/files/_en/TSL_BG.xml": {
+      "org": "BG Trusted List",
+      "filename": "bg-tsl.xml",
+      "extension": "xml",
+      "sha256": "b7ac246a31e6d805f4830cb36449ed86cdecef328a66a37b9bca9c2969b6fd66",
+      "contentLength": "627531",
+      "lastModifiedHeader": "Mon, 01 Jun 2026 11:30:52 GMT",
+      "etag": "\"9934b-6532f86f2df74\"",
+      "firstSeen": "2026-07-21T06:42:54.007Z",
+      "lastChanged": "2026-07-21T06:42:54.007Z",
+      "lastSeen": "2026-07-21T06:42:54.007Z"
+    }
+  },
+  "knownGaps": [
+    {
+      "org": "B-Trust",
+      "url": "https://crc.bg/files/_en/TSL_BG.xml",
+      "filename": "B-Trust Operational CA QES",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "B-Trust",
+      "url": "https://crc.bg/files/_en/TSL_BG.xml",
+      "filename": "B-Trust Operational QCA for SIA LATTELECOM",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "B-Trust",
+      "url": "https://crc.bg/files/_en/TSL_BG.xml",
+      "filename": "B-Trust Qualified Time Stamp Authority",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "B-Trust",
+      "url": "https://crc.bg/files/_en/TSL_BG.xml",
+      "filename": "B-Trust Qualified Signature Validation Service",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "B-Trust",
+      "url": "https://crc.bg/files/_en/TSL_BG.xml",
+      "filename": "B-Trust Qualified Long-Terms Preservation Service",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "B-Trust",
+      "url": "https://crc.bg/files/_en/TSL_BG.xml",
+      "filename": "B-Trust Qualified Long-Terms Preservation Service",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "B-Trust",
+      "url": "https://crc.bg/files/_en/TSL_BG.xml",
+      "filename": "B-Trust Qualified Electronic Registered Delivery Service",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Bankservice PLC - BULSTAT U 000640954",
+      "url": "https://crc.bg/files/_en/TSL_BG.xml",
+      "filename": "B-Trust Operational CA – Universal Electronic Signature",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "InfoNotary PLC",
+      "url": "https://crc.bg/files/_en/TSL_BG.xml",
+      "filename": "i-Notary Company Q Sign CA",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "InfoNotary PLC",
+      "url": "https://crc.bg/files/_en/TSL_BG.xml",
+      "filename": "i-Notary Personal Q Sign CA",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "InfoNotary PLC",
+      "url": "https://crc.bg/files/_en/TSL_BG.xml",
+      "filename": "InfoNotary Qualified Sign CA OCSP Responder",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "InfoNotary PLC",
+      "url": "https://crc.bg/files/_en/TSL_BG.xml",
+      "filename": "InfoNotary Qualified Legal Person Seal CA OCSP Responder",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "InfoNotary PLC",
+      "url": "https://crc.bg/files/_en/TSL_BG.xml",
+      "filename": "InfoNotary Qualified Domain CA OCSP Responder",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "InfoNotary PLC",
+      "url": "https://crc.bg/files/_en/TSL_BG.xml",
+      "filename": "InfoNotary Advanced Personal Sign CA OCSP Responder",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "InfoNotary PLC",
+      "url": "https://crc.bg/files/_en/TSL_BG.xml",
+      "filename": "InfoNotary Advanced Legal Person Seal CA OCSP Responder",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "InfoNotary PLC",
+      "url": "https://crc.bg/files/_en/TSL_BG.xml",
+      "filename": "InfoNotary Qualified TimeStamping Service CA OCSP Responder",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "InfoNotary PLC",
+      "url": "https://crc.bg/files/_en/TSL_BG.xml",
+      "filename": "InfoNotary Qualified Validation Services CA OCSP Responder",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "StampIT",
+      "url": "https://crc.bg/files/_en/TSL_BG.xml",
+      "filename": "StampIT Qualified CA",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "StampIT",
+      "url": "https://crc.bg/files/_en/TSL_BG.xml",
+      "filename": "StampIT Global TSA",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "StampIT",
+      "url": "https://crc.bg/files/_en/TSL_BG.xml",
+      "filename": "StampIT Global OCSP",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Spektar ORG",
+      "url": "https://crc.bg/files/_en/TSL_BG.xml",
+      "filename": "Spektar Qualified  CA",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Spektar ORG",
+      "url": "https://crc.bg/files/_en/TSL_BG.xml",
+      "filename": "Spektar Secondary Qualified  CA",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "System for Electronic Payments /SEP Bulgaria JSC",
+      "url": "https://crc.bg/files/_en/TSL_BG.xml",
+      "filename": "MobiSafe CA",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "System for Electronic Payments /SEP Bulgaria JSC",
+      "url": "https://crc.bg/files/_en/TSL_BG.xml",
+      "filename": "SEP QES CA",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "System for Electronic Payments /SEP Bulgaria JSC",
+      "url": "https://crc.bg/files/_en/TSL_BG.xml",
+      "filename": "eSign QES CA",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "System for Electronic Payments /SEP Bulgaria JSC",
+      "url": "https://crc.bg/files/_en/TSL_BG.xml",
+      "filename": "eSign Sep QES CA",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "System for Electronic Payments /SEP Bulgaria JSC",
+      "url": "https://crc.bg/files/_en/TSL_BG.xml",
+      "filename": "eSign Sep OCSP",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "System for Electronic Payments /SEP Bulgaria JSC",
+      "url": "https://crc.bg/files/_en/TSL_BG.xml",
+      "filename": "eSign Sep TSA",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "System for Electronic Payments /SEP Bulgaria JSC",
+      "url": "https://crc.bg/files/_en/TSL_BG.xml",
+      "filename": "eSign Sep TSA",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Evrotrust",
+      "url": "https://crc.bg/files/_en/TSL_BG.xml",
+      "filename": "Evrotrust RSA Operational CA",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Evrotrust",
+      "url": "https://crc.bg/files/_en/TSL_BG.xml",
+      "filename": "Evrotrust RSA QS Validation",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Evrotrust",
+      "url": "https://crc.bg/files/_en/TSL_BG.xml",
+      "filename": "Evrotrust RSA Validation",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Evrotrust",
+      "url": "https://crc.bg/files/_en/TSL_BG.xml",
+      "filename": "Evrotrust TSA",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Evrotrust",
+      "url": "https://crc.bg/files/_en/TSL_BG.xml",
+      "filename": "Evrotrust Qualified Validation Service",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Evrotrust",
+      "url": "https://crc.bg/files/_en/TSL_BG.xml",
+      "filename": "Evrotrust QREMS SU",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Evrotrust",
+      "url": "https://crc.bg/files/_en/TSL_BG.xml",
+      "filename": "Evrotrust QERDS SU",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Evrotrust",
+      "url": "https://crc.bg/files/_en/TSL_BG.xml",
+      "filename": "Evrotrust Timestamp TSU",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Evrotrust",
+      "url": "https://crc.bg/files/_en/TSL_BG.xml",
+      "filename": "Evrotrust Qualified Validation Service SU",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Evrotrust",
+      "url": "https://crc.bg/files/_en/TSL_BG.xml",
+      "filename": "Evrotrust RSA Operational CA OCSP",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Evrotrust",
+      "url": "https://crc.bg/files/_en/TSL_BG.xml",
+      "filename": "Evrotrust QPSES SU",
+      "reason": "not-under-supervision"
+    }
+  ]
+}

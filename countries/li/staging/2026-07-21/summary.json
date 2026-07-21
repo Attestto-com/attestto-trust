@@ -1,0 +1,62 @@
+[
+  {
+    "org": "NTRLI-FL-0002.000.966-5",
+    "stagedFile": "NTRLI-FL-0002.000.966-5 - Liechtenstein Post Advanced CA.pem",
+    "subject": "Liechtenstein Post Advanced CA",
+    "issuer": "QuoVadis Root Certification Authority",
+    "serialNumber": "421fd29d",
+    "sha256": "e985dc36c652bb5455de3b6eb04b573fed1299b5c816f328f0c2a227004c7652",
+    "validFrom": "2008-03-03T17:29:37.000Z",
+    "validTo": "2018-03-03T17:28:52.000Z",
+    "role": "intermediate",
+    "status": "new",
+    "sourceUrl": "https://www.llv.li/serviceportal2/amtsstellen/amt-fuer-kommunikation/trustedlist-li.xml",
+    "sourceEntry": "Liechtenstein Post Advanced CA",
+    "crossCheckReminder": "Verify this fingerprint independently against NTRLI-FL-0002.000.966-5's own published root/intermediate certificate before promoting to current/."
+  },
+  {
+    "org": "NTRLI-AK-1",
+    "stagedFile": "NTRLI-AK-1 - Trusted List CA 1.pem",
+    "subject": "Trusted List CA 1",
+    "issuer": "Trusted List CA 1",
+    "serialNumber": "d4d4191b97f8d192",
+    "sha256": "0fd3c96107d2222603e6907ca290302da3017a2c4424aebbf19b2ab1743ed530",
+    "validFrom": "2014-02-07T13:56:34.000Z",
+    "validTo": "2019-02-07T13:56:34.000Z",
+    "role": "root",
+    "status": "new",
+    "sourceUrl": "https://www.llv.li/serviceportal2/amtsstellen/amt-fuer-kommunikation/trustedlist-li.xml",
+    "sourceEntry": "Trusted List CA 1",
+    "crossCheckReminder": "Verify this fingerprint independently against NTRLI-AK-1's own published root/intermediate certificate before promoting to current/."
+  },
+  {
+    "org": "NTRLI-AK-1",
+    "stagedFile": "NTRLI-AK-1 - Trusted List CA 2.pem",
+    "subject": "Trusted List CA 2",
+    "issuer": "Trusted List CA 2",
+    "serialNumber": "8f92cd649f694e5a",
+    "sha256": "a8eb0c45ee669b55078b36aa6e28c1a710d9582baff5ad3209e7257b5aafde0f",
+    "validFrom": "2017-02-02T13:40:12.000Z",
+    "validTo": "2027-02-02T13:40:12.000Z",
+    "role": "root",
+    "status": "new",
+    "sourceUrl": "https://www.llv.li/serviceportal2/amtsstellen/amt-fuer-kommunikation/trustedlist-li.xml",
+    "sourceEntry": "Trusted List CA 2",
+    "crossCheckReminder": "Verify this fingerprint independently against NTRLI-AK-1's own published root/intermediate certificate before promoting to current/."
+  },
+  {
+    "org": "NTRLI-AK-1",
+    "stagedFile": "NTRLI-AK-1 - Trusted List CA 3.pem",
+    "subject": "Trusted List CA 3",
+    "issuer": "Trusted List CA 3",
+    "serialNumber": "4d66d9e5614a889ae0bf780c82b346671a4c99a6",
+    "sha256": "5f5d2624bb82127627ebab8cde36f1f678e09a305a04e735afbeb967b177c7db",
+    "validFrom": "2024-11-28T11:21:54.000Z",
+    "validTo": "2034-11-28T11:21:54.000Z",
+    "role": "root",
+    "status": "new",
+    "sourceUrl": "https://www.llv.li/serviceportal2/amtsstellen/amt-fuer-kommunikation/trustedlist-li.xml",
+    "sourceEntry": "Trusted List CA 3",
+    "crossCheckReminder": "Verify this fingerprint independently against NTRLI-AK-1's own published root/intermediate certificate before promoting to current/."
+  }
+]

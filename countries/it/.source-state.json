@@ -1,0 +1,423 @@
+{
+  "pageUrl": "https://eidas.agid.gov.it/TL/TSL-IT.xml",
+  "pageTlsFingerprintSha256": null,
+  "lastRun": "2026-07-21T06:43:54.330Z",
+  "sources": {
+    "https://eidas.agid.gov.it/TL/TSL-IT.xml": {
+      "org": "IT Trusted List",
+      "filename": "it-tsl.xml",
+      "extension": "xml",
+      "sha256": "c662c6acc5c69865ab88926d1143a2808c2711f7a0c76fe229ae302a157ba25c",
+      "contentLength": "581058",
+      "lastModifiedHeader": "Fri, 12 Jun 2026 14:02:48 GMT",
+      "etag": "W/\"6a2c1188-2b7601\"",
+      "firstSeen": "2026-07-21T06:43:54.243Z",
+      "lastChanged": "2026-07-21T06:43:54.243Z",
+      "lastSeen": "2026-07-21T06:43:54.243Z"
+    }
+  },
+  "knownGaps": [
+    {
+      "org": "INFOCERT SPA",
+      "url": "https://eidas.agid.gov.it/TL/TSL-IT.xml",
+      "filename": "CN=InfoCert Firma Qualificata,OU=Certificatore Accreditato,serialNumber=07945211006,O=INFOCERT SPA,C=IT",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "INFOCERT SPA",
+      "url": "https://eidas.agid.gov.it/TL/TSL-IT.xml",
+      "filename": "CN=InfoCert-OpenTrust Qualified Electronic Signature CA,OU=For issuance in InfoCert-OpenTrust Personal Signature Remote SSCD,O=InfoCert SpA,C=IT",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "INFOCERT SPA",
+      "url": "https://eidas.agid.gov.it/TL/TSL-IT.xml",
+      "filename": "CN=InfoCert Extended Validation SHA256 - CA 3, OU=WSA Trust Service Provider, O=InfoCert S.p.A., C=IT",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "INFOCERT SPA",
+      "url": "https://eidas.agid.gov.it/TL/TSL-IT.xml",
+      "filename": "CN=InfoCert Organization Validation SHA256 - CA 3, OU=WSA Trust Service Provider, O=InfoCert S.p.A., C=IT",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "INFOCERT SPA",
+      "url": "https://eidas.agid.gov.it/TL/TSL-IT.xml",
+      "filename": "CN=InfoCert Organization Validation CA 3, SERIALNUMBER=07945211006, OU=WSA Trust Service Provider, O=InfoCert S.p.A., C=IT",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "INFOCERT SPA",
+      "url": "https://eidas.agid.gov.it/TL/TSL-IT.xml",
+      "filename": "CN=InfoCert Organization Validation 2019 CA 3, SERIALNUMBER=07945211006, OU=WSA Trust Service Provider, O=InfoCert S.p.A., C=IT",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Monte dei Paschi di Siena Bank S.p.A.",
+      "url": "https://eidas.agid.gov.it/TL/TSL-IT.xml",
+      "filename": "CN=MPS Root Certification Authority,O=Banca Monte dei Paschi di Siena S.p.A.,C=IT",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Monte dei Paschi di Siena Bank S.p.A.",
+      "url": "https://eidas.agid.gov.it/TL/TSL-IT.xml",
+      "filename": "CN=MPS Production Identrus Certification Authority,OU=MPS Identrus Infrastructure,O=Banca Monte dei Paschi di Siena S.p.A.",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Monte dei Paschi di Siena Bank S.p.A.",
+      "url": "https://eidas.agid.gov.it/TL/TSL-IT.xml",
+      "filename": "CN=MPS Production Identrus Certification Authority,OU=MPS Identrus Infrastructure,O=Banca Monte dei Paschi di Siena S.p.A.,C=IT",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Consiglio Nazionale Dottori Commercialisti ed Esperti Contabili",
+      "url": "https://eidas.agid.gov.it/TL/TSL-IT.xml",
+      "filename": "CN=Certicomm CNDCEC,serialNumber=09758941000,OU=Firma Qualificata,O=Consiglio Nazionale Dottori Commercialisti ed Esperti Contabili,C=IT",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Consiglio Nazionale Dottori Commercialisti ed Esperti Contabili",
+      "url": "https://eidas.agid.gov.it/TL/TSL-IT.xml",
+      "filename": "CN=Certicomm CNDCEC 2,serialNumber=09758941000,OU=CA Accreditata,O=Consiglio Nazionale Dottori Commercialisti ed Esperti Contabili,C=IT",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Consiglio Nazionale Dottori Commercialisti ed Esperti Contabili",
+      "url": "https://eidas.agid.gov.it/TL/TSL-IT.xml",
+      "filename": "CN=CNDCEC Qualified Electronic Signature CA, 2.5.4.97=VATIT-09758941000, OU=Qualified Trust Service Provider, O=Consiglio Nazionale dei Dottori Commercialisti e degli Esperti Contabili, C=IT",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Consiglio Nazionale Forense",
+      "url": "https://eidas.agid.gov.it/TL/TSL-IT.xml",
+      "filename": "EMAIL=certificazione@consiglionazionaleforense.it,CN=Consiglio Nazionale Forense - Firma Digitale,O=Consiglio Nazionale Forense,L=Roma,ST=RM,C=IT",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Intesa Sanpaolo S.p.A.",
+      "url": "https://eidas.agid.gov.it/TL/TSL-IT.xml",
+      "filename": "CN=Intesa Sanpaolo S.p.A. Firma Digitale 01,O=Intesa Sanpaolo S.p.A.,C=IT",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Intesa Sanpaolo S.p.A.",
+      "url": "https://eidas.agid.gov.it/TL/TSL-IT.xml",
+      "filename": "CN=Intesa Sanpaolo S.p.A. Firma Digitale 02,O=Intesa Sanpaolo S.p.A.,C=IT",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Intesa Sanpaolo S.p.A.",
+      "url": "https://eidas.agid.gov.it/TL/TSL-IT.xml",
+      "filename": "CN=Intesa Sanpaolo S.p.A. IdenTrust Certification Authority,OU=Intesa Sanpaolo S.p.A. IdenTrust Infrastructure,O=Intesa Sanpaolo S.p.A.,C=IT",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Intesa Sanpaolo S.p.A.",
+      "url": "https://eidas.agid.gov.it/TL/TSL-IT.xml",
+      "filename": "CN=Intesa Sanpaolo S.p.A. IdenTrust Certification Authority II,OU=Intesa Sanpaolo S.p.A. IdenTrust Infrastructure,O=Intesa Sanpaolo S.p.A.,C=IT",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Intesa Sanpaolo S.p.A.",
+      "url": "https://eidas.agid.gov.it/TL/TSL-IT.xml",
+      "filename": "CN=Intesa Sanpaolo S.p.A. Firma Qualificata, O=Intesa Sanpaolo S.p.A., C=IT",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Postecom",
+      "url": "https://eidas.agid.gov.it/TL/TSL-IT.xml",
+      "filename": "CN=Postecert per Regione Emilia-Romagna CA2,OU=Certification Authority,O=Postecom S.p.A.,C=IT",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Postecom",
+      "url": "https://eidas.agid.gov.it/TL/TSL-IT.xml",
+      "filename": "CN=Postecom CA3,OU=Certification Authority,O=Postecom S.p.A.,C=IT",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Sogei SpA",
+      "url": "https://eidas.agid.gov.it/TL/TSL-IT.xml",
+      "filename": "OU=CA FIRMA,OU=Servizi di Certificazione,O=Sogei SpA,C=IT",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Banca di Roma",
+      "url": "https://eidas.agid.gov.it/TL/TSL-IT.xml",
+      "filename": "CN=bancaroma Production Identrus Certification Authority,OU=bancaroma Identrus Infrastructure,O=Banca di Roma S.p.A.,C=IT",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Banca di Roma",
+      "url": "https://eidas.agid.gov.it/TL/TSL-IT.xml",
+      "filename": "CN=bancaroma Production Identrus Certification Authority,OU=bancaroma Identrus Infrastructure,O=Banca di Roma S.p.A.",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Enel.it",
+      "url": "https://eidas.agid.gov.it/TL/TSL-IT.xml",
+      "filename": "OU=Certificazione Titolari,OU=Servizi di Firma Qualificata,O=Enel.it S.p.A.,C=IT",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Finital - Finanziaria Italiana S.p.A.",
+      "url": "https://eidas.agid.gov.it/TL/TSL-IT.xml",
+      "filename": "CN=Finital CA,OU=CA Division,O=Finital S.p.A.,L=Arezzo,ST=AR,C=IT",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Centro Tecnico per la RUPA",
+      "url": "https://eidas.agid.gov.it/TL/TSL-IT.xml",
+      "filename": "CN=CT RUPA CA1,OU=Sicurezza,O=Centro Tecnico per la Rete Unitaria Pubblica Amministrazione,C=IT",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Centro Nazionale per l'Informatica nella PA",
+      "url": "https://eidas.agid.gov.it/TL/TSL-IT.xml",
+      "filename": "CN=CNIPA CA1,OU=Servizi di Sicurezza e Certificazione,O=Centro Nazionale per l'Informatica nella PA,C=IT",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "ESERCITO ITALIANO",
+      "url": "https://eidas.agid.gov.it/TL/TSL-IT.xml",
+      "filename": "CN=EICERT,OU=COMANDO C4IEW,O=ESERCITO ITALIANO,C=IT",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Namirial S.p.A.",
+      "url": "https://eidas.agid.gov.it/TL/TSL-IT.xml",
+      "filename": "CN=Namirial Qualified eSignature,OU=Namirial Trust Service Provider,O=Namirial S.p.A.,C=IT",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "BNL Multiservizi S.p.A.",
+      "url": "https://eidas.agid.gov.it/TL/TSL-IT.xml",
+      "filename": "EMAIL=multicertify@bnlmultiservizi.it,CN=BNL Multiservizi SpA - Firma Digitale AIPA CR 24,OU=Certification Service Provider,O=BNL Multiservizi S.p.A.,C=IT",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "BNL Multiservizi S.p.A.",
+      "url": "https://eidas.agid.gov.it/TL/TSL-IT.xml",
+      "filename": "EMAIL=multicertify@bnlmultiservizi.it,CN=CA BNL Multiservizi S.p.A. Open Market,OU=Certification Service Provider,O=BNL Multiservizi S.p.A.,C=IT",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "BNL Multiservizi S.p.A.",
+      "url": "https://eidas.agid.gov.it/TL/TSL-IT.xml",
+      "filename": "EMAIL=multicertify@bnlmultiservizi.it,CN=BNL S.p.A. - Corporate Firma,OU=Certification Service Provider,O=BNL Multiservizi S.p.A.,C=IT",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "BNL Multiservizi S.p.A.",
+      "url": "https://eidas.agid.gov.it/TL/TSL-IT.xml",
+      "filename": "EMAIL=multicertify@bnlmultiservizi.it,CN=- BNL S.p.A. - Firma Digitale AIPA CR 24,OU=Certification Service Provider,O=BNL Multiservizi S.p.A.,C=IT",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "BNL Multiservizi S.p.A.",
+      "url": "https://eidas.agid.gov.it/TL/TSL-IT.xml",
+      "filename": "EMAIL=multicertify@bnlmultiservizi.it,CN=BNL S.p.A. - Firma Digitale AIPA/CR/24,OU=Certification Service Provider,O=BNL Multiservizi S.p.A.,C=IT",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "BNL Multiservizi S.p.A.",
+      "url": "https://eidas.agid.gov.it/TL/TSL-IT.xml",
+      "filename": "EMAIL=multicertify@bnlmultiservizi.it,CN=BNL S.p.A. Firma Digitale,OU=Certification Service Provider,O=BNL Multiservizi S.p.A.,C=IT",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "BNL Multiservizi S.p.A.",
+      "url": "https://eidas.agid.gov.it/TL/TSL-IT.xml",
+      "filename": "EMAIL=multicertify@bnlmultiservizi.it,CN=BNL Multiservizi S.p.A. - Firma Digitale,OU=Certification Service Provider,O=BNL Multiservizi S.p.A.,C=IT",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "BNL Multiservizi S.p.A.",
+      "url": "https://eidas.agid.gov.it/TL/TSL-IT.xml",
+      "filename": "EMAIL=multicertify@bnlmultiservizi.it,CN=Firma digitale - Molise Dati,OU=Certification Service Provider,O=BNL Multiservizi S.p.A.,C=IT",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "BNL Multiservizi S.p.A.",
+      "url": "https://eidas.agid.gov.it/TL/TSL-IT.xml",
+      "filename": "EMAIL=multicertify@bnlmultiservizi.it,CN=Firma Digitale AIPA - Provincia di Firenze,OU=Certification Service Provider,O=BNL Multiservizi S.p.A.,C=IT",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "BNL Multiservizi S.p.A.",
+      "url": "https://eidas.agid.gov.it/TL/TSL-IT.xml",
+      "filename": "EMAIL=multicertify@bnlmultiservizi.it,CN=Firma Digitale AIPA Cons. Portale San. Ped. OPBG,OU=Certification Service Provider,O=BNL Multiservizi S.p.A.,C=IT",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "BNL Multiservizi S.p.A.",
+      "url": "https://eidas.agid.gov.it/TL/TSL-IT.xml",
+      "filename": "EMAIL=multicertify@bnlmultiservizi.it,CN=Firma Digitale AIPA - Ascoli Piceno,OU=Certification Service Provider,O=BNL Multiservizi S.p.A.,C=IT",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "BNL Multiservizi S.p.A.",
+      "url": "https://eidas.agid.gov.it/TL/TSL-IT.xml",
+      "filename": "EMAIL=multicertify@bnlmultiservizi.it,CN=Firma Digitale Banca Agrileasing,OU=Certification Service Provider,O=BNL Multiservizi S.p.A.,C=IT",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "BNL Multiservizi S.p.A.",
+      "url": "https://eidas.agid.gov.it/TL/TSL-IT.xml",
+      "filename": "EMAIL=multicertify@bnlmultiservizi.it,CN=Firma Digitale Comune di Bologna,OU=Certification Service Provider,O=BNL Multiservizi S.p.A.,C=IT",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "BNL Multiservizi S.p.A.",
+      "url": "https://eidas.agid.gov.it/TL/TSL-IT.xml",
+      "filename": "EMAIL=multicertify@bnlmultiservizi.it,CN=Firma Digitale Intersiel S.p.A.,OU=Certification Service Provider,O=BNL Multiservizi S.p.A.,C=IT",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "BNL Multiservizi S.p.A.",
+      "url": "https://eidas.agid.gov.it/TL/TSL-IT.xml",
+      "filename": "EMAIL=multicertify@bnlmultiservizi.it,CN=Firma Digitale Provincia di Campobasso,OU=Certification Service Provider,O=BNL Multiservizi S.p.A.,C=IT",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "BNL Multiservizi S.p.A.",
+      "url": "https://eidas.agid.gov.it/TL/TSL-IT.xml",
+      "filename": "EMAIL=multicertify@bnlmultiservizi.it,CN=Firma digitale Provincia di Varese,OU=Certification Service Provider,O=BNL Multiservizi S.p.A.,C=IT",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "BNL Multiservizi S.p.A.",
+      "url": "https://eidas.agid.gov.it/TL/TSL-IT.xml",
+      "filename": "EMAIL=multicertify@bnlmultiservizi.it,CN=Firma Digitale Regione Campania,OU=Certification Service Provider,O=BNL Multiservizi S.p.A.,C=IT",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "BNL Multiservizi S.p.A.",
+      "url": "https://eidas.agid.gov.it/TL/TSL-IT.xml",
+      "filename": "EMAIL=multicertify@bnlmultiservizi.it,CN=Firma Digitale Regione Lazio,OU=Certification Service Provider,O=BNL Multiservizi S.p.A.,L=Roma,ST=RM,C=IT",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "BNL Multiservizi S.p.A.",
+      "url": "https://eidas.agid.gov.it/TL/TSL-IT.xml",
+      "filename": "EMAIL=multicertify@bnlmultiservizi.it,CN=Firma Digitale Regione Liguria,OU=Certification Service Provider,O=BNL Multiservizi S.p.A.,C=IT",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "BNL Multiservizi S.p.A.",
+      "url": "https://eidas.agid.gov.it/TL/TSL-IT.xml",
+      "filename": "EMAIL=multicertify@bnlmultiservizi.it,CN=Firma Digitale RTRT,OU=Certification Service Provider,O=BNL Multiservizi S.p.A.,C=IT",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "BNL Multiservizi S.p.A.",
+      "url": "https://eidas.agid.gov.it/TL/TSL-IT.xml",
+      "filename": "EMAIL=multicertify@bnlmultiservizi.it,CN=Firma Digitale TELCAL,OU=Certification Service Provider,O=BNL Multiservizi S.p.A.,C=IT",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "BNL Multiservizi S.p.A.",
+      "url": "https://eidas.agid.gov.it/TL/TSL-IT.xml",
+      "filename": "EMAIL=multicertify@bnlmultiservizi.it,CN=Firma Digitale-Comune di Firenze,OU=Certification Service Provider,O=BNL Multiservizi S.p.A.,C=IT",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "BNL Multiservizi S.p.A.",
+      "url": "https://eidas.agid.gov.it/TL/TSL-IT.xml",
+      "filename": "EMAIL=multicertify@bnlmultiservizi.it,CN=IZSAM - FIRMA DIGITALE,OU=Certification Service Provider,O=BNL Multiservizi S.p.A.,C=IT",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "BNL Multiservizi S.p.A.",
+      "url": "https://eidas.agid.gov.it/TL/TSL-IT.xml",
+      "filename": "EMAIL=multicertify@bnlmultiservizi.it,CN=REGIONE EMILIA-ROMAGNA FORMAZIONE FIRMA DIGITALE,OU=Certification Service Provider,O=BNL Multiservizi S.p.A.,C=I",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "BNL Multiservizi S.p.A.",
+      "url": "https://eidas.agid.gov.it/TL/TSL-IT.xml",
+      "filename": "EMAIL=multicertify@bnlmultiservizi.it,CN=SIEMENS MEDICAL SOLUTIONS,OU=Certification Service Provider,O=BNL Multiservizi S.p.A.,L=Roma,ST=RM,C=IT",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "BNL Multiservizi S.p.A.",
+      "url": "https://eidas.agid.gov.it/TL/TSL-IT.xml",
+      "filename": "EMAIL=multicertify@bnlmultiservizi.it,CN=Teleskill Italia S.p.A-Firma Digitale AIPA CR 24,OU=Certification Service Provider,O=BNL Multiservizi S.p.A.,C=IT",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Lottomatica S.p.A.",
+      "url": "https://eidas.agid.gov.it/TL/TSL-IT.xml",
+      "filename": "C=IT, O=Lottomatica S.p.A., OID.2.5.4.97=VATIT-13109741002, CN=Lottomatica EU Qualified Certificates CA",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Lottomatica S.p.A.",
+      "url": "https://eidas.agid.gov.it/TL/TSL-IT.xml",
+      "filename": "C=IT, O=Lottomatica S.p.A., OID.2.5.4.97=VATIT-13109741002, CN=Lottomatica EU Qualified Timestamp Authority",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Nexi S.p.A.",
+      "url": "https://eidas.agid.gov.it/TL/TSL-IT.xml",
+      "filename": "CN=NEXI EU Qualified Certificates CA, OU=Qualified Trust Service Provider, 2.5.4.97=VATIT-13212880150, O=NEXI S.p.A., L=Milano, C=IT",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Nexi Payments S.p.A.",
+      "url": "https://eidas.agid.gov.it/TL/TSL-IT.xml",
+      "filename": "CN=NEXI EU Qualified Certificates CA, OU=Qualified Trust Service Provider, OID.2.5.4.97=VATIT-04107060966, O=Nexi Payments S.p.A., L=Milano, C=IT",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Lottomatica Holding S.r.l.",
+      "url": "https://eidas.agid.gov.it/TL/TSL-IT.xml",
+      "filename": "C=IT, O=Lottomatica Holding S.r.l., OID.2.5.4.97=VATIT-13044331000, CN=Lottomatica EU Qualified Certificates CA",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Lottomatica Holding S.r.l.",
+      "url": "https://eidas.agid.gov.it/TL/TSL-IT.xml",
+      "filename": "C=IT, O=Lottomatica Holding S.r.l., OID.2.5.4.97=VATIT-13044331000, CN=Lottomatica EU Qualified Timestamp Authority",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Lottomatica Holding S.r.l.",
+      "url": "https://eidas.agid.gov.it/TL/TSL-IT.xml",
+      "filename": "C=IT, O=Lottomatica Holding S.r.l., OID.2.5.4.97=VATIT-02611940038, CN=Lottomatica EU Qualified Certificates CA",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Lottomatica Holding S.r.l.",
+      "url": "https://eidas.agid.gov.it/TL/TSL-IT.xml",
+      "filename": "C=IT, O=Lottomatica Holding S.r.l., OID.2.5.4.97=VATIT-02611940038, CN=Lottomatica EU Qualified Timestamp Authority",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Register S.p.A.",
+      "url": "https://eidas.agid.gov.it/TL/TSL-IT.xml",
+      "filename": "CN=Register Time Stamping Authority, OU=Digital Trust Services, SERIALNUMBER=04628270482, O=Register S.p.A., C=IT",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Azienda Zero",
+      "url": "https://eidas.agid.gov.it/TL/TSL-IT.xml",
+      "filename": "OID.2.5.4.97=VATIT-05018720283, CN=Azienda Zero CA Qualificata eIDAS 1, OU=TSP, O=Azienda Zero, C=IT",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Azienda Zero",
+      "url": "https://eidas.agid.gov.it/TL/TSL-IT.xml",
+      "filename": "OID.2.5.4.97=VATIT-05018720283, CN=Azienda Zero TSA Qualificata eIDAS 1, OU=TSP, O=Azienda Zero, C=IT",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "POSTEL - S.P.A.",
+      "url": "https://eidas.agid.gov.it/TL/TSL-IT.xml",
+      "filename": "O=POSTEL - S.P.A., L=ROMA, C=IT, OID.2.5.4.97=VATIT-05692591000, CN=PosteNotifica Servizio Postel SERCQ",
+      "reason": "not-under-supervision"
+    }
+  ]
+}

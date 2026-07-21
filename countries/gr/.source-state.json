@@ -1,0 +1,135 @@
+{
+  "pageUrl": "https://www.eett.gr/tsl/tl-el.xml",
+  "pageTlsFingerprintSha256": null,
+  "lastRun": "2026-07-21T06:43:23.789Z",
+  "sources": {
+    "https://www.eett.gr/tsl/tl-el.xml": {
+      "org": "EL Trusted List",
+      "filename": "gr-tsl.xml",
+      "extension": "xml",
+      "sha256": "344de4bf8ca2b623d2cc5f3e0299a606aabe0f0b7c357263a4dc0970cbe2a3e1",
+      "contentLength": null,
+      "lastModifiedHeader": null,
+      "etag": null,
+      "firstSeen": "2026-07-21T06:43:23.765Z",
+      "lastChanged": "2026-07-21T06:43:23.765Z",
+      "lastSeen": "2026-07-21T06:43:23.765Z"
+    }
+  },
+  "knownGaps": [
+    {
+      "org": "ADACOM S.A.",
+      "url": "https://www.eett.gr/tsl/tl-el.xml",
+      "filename": "ADACOM Qualified Certificate Services CA",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "ADACOM S.A.",
+      "url": "https://www.eett.gr/tsl/tl-el.xml",
+      "filename": "ADACOM Qualified Services CA",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "ATHENS STOCK EXCHANGE S.A.",
+      "url": "https://www.eett.gr/tsl/tl-el.xml",
+      "filename": "ATHEX Qualified Certificates CA G2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "ATHENS STOCK EXCHANGE S.A.",
+      "url": "https://www.eett.gr/tsl/tl-el.xml",
+      "filename": "Athex Qualified Timestamping Authority",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "ATHENS STOCK EXCHANGE S.A.",
+      "url": "https://www.eett.gr/tsl/tl-el.xml",
+      "filename": "ATHEX SSL Certificates CA G2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "ATHENS STOCK EXCHANGE S.A.",
+      "url": "https://www.eett.gr/tsl/tl-el.xml",
+      "filename": "ATHEX eSeal CA G2",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "ATHENS STOCK EXCHANGE S.A.",
+      "url": "https://www.eett.gr/tsl/tl-el.xml",
+      "filename": "ATHEX Qualified eSign Certificates CA-G3",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "ATHENS STOCK EXCHANGE S.A.",
+      "url": "https://www.eett.gr/tsl/tl-el.xml",
+      "filename": "ATHEX Qualified eSeal Certificates CA-G3",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "ATHENS STOCK EXCHANGE S.A.",
+      "url": "https://www.eett.gr/tsl/tl-el.xml",
+      "filename": "ATHEX Qualified WEB Certificates CA-G3",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "ATHENS STOCK EXCHANGE S.A.",
+      "url": "https://www.eett.gr/tsl/tl-el.xml",
+      "filename": "ATHEX Qualified Timestamp Certificates CA-G3",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "ATHENS STOCK EXCHANGE S.A.",
+      "url": "https://www.eett.gr/tsl/tl-el.xml",
+      "filename": "ASYK Qualified Certificates CA",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "ATHENS STOCK EXCHANGE S.A.",
+      "url": "https://www.eett.gr/tsl/tl-el.xml",
+      "filename": "ATHEX Qualified Certificates CA",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "ATHENS STOCK EXCHANGE S.A.",
+      "url": "https://www.eett.gr/tsl/tl-el.xml",
+      "filename": "ATHEX Qualified eSign Certificates CA G3 R20",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "ATHENS STOCK EXCHANGE S.A.",
+      "url": "https://www.eett.gr/tsl/tl-el.xml",
+      "filename": "ATHEX Qualified eSeal Certificates CA G3 R20",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "ATHENS STOCK EXCHANGE S.A.",
+      "url": "https://www.eett.gr/tsl/tl-el.xml",
+      "filename": "ATHEX Qualified WEB Certificates CA G3 R20",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "ATHENS STOCK EXCHANGE S.A.",
+      "url": "https://www.eett.gr/tsl/tl-el.xml",
+      "filename": "ATHEX Qualified Timestamp CA G3 R20",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Hellenic Public Administration Root CA - HPARCA",
+      "url": "https://www.eett.gr/tsl/tl-el.xml",
+      "filename": "HELLENIC PUBLIC ADMINISTRATION CERTIFICATION SERVICES",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Hellenic Public Administration Root CA - HPARCA",
+      "url": "https://www.eett.gr/tsl/tl-el.xml",
+      "filename": "Hellenic Public Administration CA - HPARCA",
+      "reason": "not-under-supervision"
+    },
+    {
+      "org": "Hellenic Public Administration Root CA - HPARCA",
+      "url": "https://www.eett.gr/tsl/tl-el.xml",
+      "filename": "Hellenic Public Administration Root CA (HPARCA) – Certification Services for Citizens",
+      "reason": "not-under-supervision"
+    }
+  ]
+}
