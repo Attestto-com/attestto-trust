@@ -14,7 +14,8 @@ node scripts/monitors/run.mjs <iso2>
 
 | Country | Adapter | Status | Shape |
 |---|---|---|---|
-| Chile | `sources/cl.mjs` | ✅ built | ~13 CAs, HTML page of zip/rar bundle links |
+| Chile (accredited CAs) | `sources/cl.mjs` | ✅ built | ~13 accredited *private* CAs (E-Cert, Acepta, Certinet, …), HTML page of zip/rar bundle links at entidadacreditadora.gob.cl |
+| Chile (State PKI) | `sources/cl-estado.mjs` | ✅ built | The Chilean *State* hierarchy at firma.digital.gob.cl: 2 "Autoridad Certificadora del Estado de Chile" roots (G1/G2) + ~713 per-entity sub-CAs (municipalities, ministries, courts, universities), individual `.pem` files. Staged into `countries/cl-estado/`, kept separate from the accredited-private-CA branch above. |
 | Peru | `sources/pe.mjs` | ✅ built | Single ETSI TSL XML, ~30 TSPs inline |
 | EU/EEA + UK | `run-eu.mjs` + `lib/extract-lotl.mjs` | ✅ built | The EU **LOTL** (List of Trusted Lists) — one signed index → ~31 national Trusted Lists (27 EU + IS/LI/NO + UK). `run-eu.mjs` fans out per-country, reusing the Peru TSL parser (`extract-tsl.mjs`, made namespace-agnostic) with `caOnly` filtering to keep CA certs (roots + intermediates), fanning into `countries/<iso2>/`. First full run: 29/31 lists, ~1270 CA certs. Mirrors what each list *authoritatively publishes* (predominantly accredited issuing CAs, plus embedded roots) — it does not chase self-signed roots up each chain via AIA. XAdES signature verification of the lists is documented future work. |
 | Uruguay | `sources/uy.mjs` | ✅ built | Single direct root `.cer` file |
