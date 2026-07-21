@@ -24,7 +24,7 @@
   ],
   "scripts": {
     "generate": "node scripts/generate-exports.mjs",
-    "test": "node --test tests/",
+    "test": "node --test tests/*.mjs",
     "prepublishOnly": "npm test"
   },
   "keywords": [

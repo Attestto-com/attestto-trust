@@ -22,7 +22,12 @@ import forge from 'node-forge'
 const root = join(dirname(fileURLToPath(import.meta.url)), '..')
 const countriesDir = join(root, 'countries')
 
-const cn = (name) => name.getField('CN')?.value || null
+// node-forge decodes ASN.1 UTF8String fields as a raw byte-per-char "binary"
+// string ("AC Raíz" comes back as "AC RaÃ­z"), so re-decode as UTF-8 to get
+// accented CA names right. Same fix already applied in
+// scripts/monitors/lib/extract-certs.mjs.
+const decodeUtf8 = (s) => (s == null ? s : Buffer.from(s, 'binary').toString('utf8'))
+const cn = (name) => decodeUtf8(name.getField('CN')?.value) || null
 
 function refreshCountry(iso2) {
   const currentDir = join(countriesDir, iso2, 'current')
