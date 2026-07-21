@@ -1,0 +1,20 @@
+{
+  "pageUrl": "https://repo.fpki.gov/fcpca/fcpcag2.crt",
+  "pageTlsFingerprintSha256": "d4cf8b2e2b33643167e1537fd78bd37f60cfbaebed016d188321aa03c295191d",
+  "lastRun": "2026-07-21T01:01:30.294Z",
+  "sources": {
+    "https://repo.fpki.gov/fcpca/fcpcag2.crt": {
+      "org": "US Federal PKI",
+      "filename": "fcpcag2.crt",
+      "extension": "crt",
+      "sha256": "5f9aecc24616b2191372600dd80f6dd320c8ca5a0ceb7f09c985ebf0696934fc",
+      "contentLength": "1505",
+      "lastModifiedHeader": "Mon, 24 Apr 2023 17:14:54 GMT",
+      "etag": "\"5e1-5fa1825426bf7\"",
+      "firstSeen": "2026-07-21T01:01:30.292Z",
+      "lastChanged": "2026-07-21T01:01:30.292Z",
+      "lastSeen": "2026-07-21T01:01:30.292Z"
+    }
+  },
+  "knownGaps": []
+}

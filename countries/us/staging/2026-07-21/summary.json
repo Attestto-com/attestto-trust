@@ -1,0 +1,17 @@
+[
+  {
+    "org": "US Federal PKI",
+    "stagedFile": "US Federal PKI - Federal Common Policy CA G2.pem",
+    "subject": "Federal Common Policy CA G2",
+    "issuer": "Federal Common Policy CA G2",
+    "serialNumber": "21e5b9a0cc956de278ca012ba8fdc58a98b3fbea",
+    "sha256": "5f9aecc24616b2191372600dd80f6dd320c8ca5a0ceb7f09c985ebf0696934fc",
+    "validFrom": "2020-10-14T13:35:12.000Z",
+    "validTo": "2040-10-14T13:35:12.000Z",
+    "role": "root",
+    "status": "new",
+    "sourceUrl": "https://repo.fpki.gov/fcpca/fcpcag2.crt",
+    "sourceEntry": "fcpcag2.crt",
+    "crossCheckReminder": "Verify this fingerprint independently against US Federal PKI's own published root/intermediate certificate before promoting to current/."
+  }
+]
