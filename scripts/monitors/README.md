@@ -10,6 +10,12 @@ them for manual review. They never write to `countries/<iso2>/current/`
 node scripts/monitors/run.mjs <iso2>
 ```
 
+Monitors only ever write to `staging/` — they never promote into the
+`current/` trust store. **Before promoting anything, read
+[`PROMOTION.md`](PROMOTION.md)**: it explains why staging is not trusting,
+and the two ways to make promotion safe at scale (promote roots only for
+direct-cert sources; verify the list signature for signed-list sources).
+
 ## Country status
 
 | Country | Adapter | Status | Shape |
