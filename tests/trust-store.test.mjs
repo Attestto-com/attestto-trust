@@ -202,9 +202,9 @@ describe('Spain (es)', () => {
 // ── Cross-country checks ───────────────────────────────────────────
 
 describe('cross-country integrity', () => {
-  it('total trust store has 16 certificates (CR 8 + BR 4 + AR 2 + ES 2)', () => {
+  it('total trust store has 18 certificates (CR 10 + BR 4 + AR 2 + ES 2)', () => {
     const total = cr.ALL_CERTS.length + br.ALL_CERTS.length + ar.ALL_CERTS.length + es.ALL_CERTS.length
-    assert.equal(total, 16, `Expected 16 total, got ${total}`)
+    assert.equal(total, 18, `Expected 18 total, got ${total}`)
   })
 
   it('no duplicate export names across countries', () => {
