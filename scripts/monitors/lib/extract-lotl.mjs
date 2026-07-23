@@ -30,8 +30,30 @@ function firstTag(block, localName) {
 }
 
 /**
+ * Extract signing identities from an OtherTSLPointer block's
+ * ServiceDigitalIdentity elements. Returns an array of typed values:
+ *   cert    — base64 DER (whitespace-stripped)
+ *   ski     — hex-encoded Subject Key Identifier
+ *   subject — X.509 DN string
+ *
+ * @param {string} block - one <OtherTSLPointer>…</OtherTSLPointer> fragment
+ * @returns {Array<{type: 'cert'|'ski'|'subject', value: string}>}
+ */
+function parseSigningIdentities(block) {
+  const ids = []
+  const certRe = /<[^>]*X509Certificate>\s*([A-Za-z0-9+/=\s]+?)\s*<\/[^>]*X509Certificate>/g
+  let m
+  while ((m = certRe.exec(block))) ids.push({ type: 'cert', value: m[1].replace(/\s+/g, '') })
+  const skiRe = /<[^>]*X509SKI>\s*([A-Za-z0-9+/=\s]+?)\s*<\/[^>]*X509SKI>/g
+  while ((m = skiRe.exec(block))) ids.push({ type: 'ski', value: Buffer.from(m[1].replace(/\s+/g, ''), 'base64').toString('hex') })
+  const subjRe = /<[^>]*X509SubjectName>\s*([\s\S]*?)\s*<\/[^>]*X509SubjectName>/g
+  while ((m = subjRe.exec(block))) ids.push({ type: 'subject', value: m[1].trim() })
+  return ids
+}
+
+/**
  * @param {string} xml - the LOTL XML document
- * @returns {Array<{territory: string, iso2: string, tslUrl: string}>}
+ * @returns {Array<{territory: string, iso2: string, tslUrl: string, signingIdentities: Array<{type: string, value: string}>}>}
  *   one entry per national territory whose pointer has a machine-readable
  *   XML Trusted List. `territory` is the raw eIDAS code (e.g. "EL"),
  *   `iso2` the ISO-normalized repo directory name (e.g. "gr").
@@ -52,12 +74,14 @@ export function parseLotlPointers(xml) {
     if (!loc) continue
 
     // First XML pointer for a territory wins (defensive against duplicates).
-    if (!byTerritory.has(territory)) byTerritory.set(territory, loc)
+    // Store both the URL and the full block so we can extract signing identities.
+    if (!byTerritory.has(territory)) byTerritory.set(territory, { loc, block })
   }
 
-  return [...byTerritory.entries()].map(([territory, tslUrl]) => ({
+  return [...byTerritory.entries()].map(([territory, { loc: tslUrl, block }]) => ({
     territory,
     iso2: TERRITORY_TO_ISO2[territory] || territory.toLowerCase(),
     tslUrl,
+    signingIdentities: parseSigningIdentities(block),
   }))
 }

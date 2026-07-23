@@ -46,4 +46,16 @@ describe('extract-lotl.parseLotlPointers', () => {
   it('returns an empty list for non-LOTL XML instead of throwing', () => {
     assert.deepEqual(parseLotlPointers('<nope/>'), [])
   })
+
+  it('extracts at least one signing identity per pointer', () => {
+    const pointers = parseLotlPointers(LOTL)
+    for (const p of pointers) {
+      assert.ok(Array.isArray(p.signingIdentities), `${p.iso2}: no signingIdentities`)
+      assert.ok(p.signingIdentities.length >= 1, `${p.iso2}: empty signingIdentities`)
+      for (const id of p.signingIdentities) {
+        assert.ok(['cert', 'ski', 'subject'].includes(id.type))
+        assert.ok(id.value)
+      }
+    }
+  })
 })
