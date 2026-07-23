@@ -1,6 +1,8 @@
 {
-  "name": "GLEIF Root of Trust (vLEI)",
+  "name": "GLEIF vLEI Root of Trust",
   "aid": "EDP1vHcw_wc4M__Fj53-cJaBnZZASd-aMTaSyWEQ-PC2",
+  "rootAid": "EDP1vHcw_wc4M__Fj53-cJaBnZZASd-aMTaSyWEQ-PC2",
+  "geda": "EINmHd5g7iV-UldkkkKyBIH052bIyxZNBn9pq-zNrYoS",
   "keyStateDigest": null,
   "witnesses": [
     "BDkq35LUU63xnFmfhljYYRY0ymkCg7goyeCxN30tsvmS",
@@ -14,5 +16,6 @@
     "BM4Ef3zlUzIAIx-VC8mXziIbtj-ZltM8Aor6TZzmTldj",
     "BNfDO63ZpGc3xiFb0-jIOUnbr_bA-ixMva5cZb3s4BHB"
   ],
-  "capturedAt": "2026-07-23"
+  "capturedAt": "2026-07-23",
+  "chain": "GLEIF Root -> GEDA -> QVI -> Legal Entity"
 }

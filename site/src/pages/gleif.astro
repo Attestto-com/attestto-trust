@@ -25,7 +25,8 @@ const anchor = loadGlobalAnchors().find((a) => a.id === 'gleif-vlei');
 
   <section class="pki-about" aria-label="About this anchor">
     <dl class="pki-about__grid">
-      <div><dt>{t.globalAnchorRootAid}</dt><dd><code>{anchor.rootAid.aid}</code></dd></div>
+      <div><dt>{t.globalAnchorRootAid}</dt><dd><code>{anchor.rootAid.rootAid ?? anchor.rootAid.aid}</code></dd></div>
+      {anchor.rootAid.geda && <div><dt>{t.globalAnchorGeda}</dt><dd><code>{anchor.rootAid.geda}</code></dd></div>}
       {anchor.rootAid.keyStateDigest && <div><dt>Key state</dt><dd><code>{anchor.rootAid.keyStateDigest}</code></dd></div>}
       <div><dt>{t.globalAnchorQvis}</dt><dd>{anchor.qviCount}</dd></div>
       <div><dt>Model</dt><dd>{anchor.technology.keyModel}</dd></div>
