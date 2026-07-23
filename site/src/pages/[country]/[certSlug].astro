@@ -123,6 +123,23 @@ const selfSigned = cert.issuer === cert.subject;
       <dt>{t.certFieldSha256}</dt>
       <dd><CopyValue value={cert.sha256} label={t.certFieldSha256.toLowerCase()} /></dd>
 
+      {cert.didPki && (<Fragment>
+      <dt>{t.certFieldDidPki}</dt>
+      <dd>
+        <div class="hash-row">
+          <CopyValue value={cert.didPki} label="did:pki" />
+          <a
+            class="did-resolve mono"
+            href={`https://resolver.attestto.com/1.0/identifiers/${cert.didPki}`}
+            rel="noopener noreferrer"
+            target="_blank"
+            title={t.certDidPkiResolveTitle}
+          >{t.certDidPkiResolve} &rarr;</a>
+        </div>
+        <p class="did-hint">{t.certDidPkiHint}</p>
+      </dd>
+      </Fragment>)}
+
       {cert.crlUrls?.length > 0 && (<Fragment>
       <dt>CRL</dt>
       <dd>{cert.crlUrls.map((u) => <div><a href={u} rel="noopener noreferrer" target="_blank" class="mono endpoint" title="Certificate Revocation List (opens in a new tab)">{u}</a></div>)}</dd>
@@ -183,4 +200,13 @@ const selfSigned = cert.issuer === cert.subject;
     min-width: 2.5rem;
   }
   .chain__body { display: flex; align-items: center; gap: var(--space-3); flex-wrap: wrap; }
+
+  .did-resolve {
+    font-size: var(--text-xs);
+    font-weight: 650;
+    color: var(--color-highlight);
+    white-space: nowrap;
+  }
+  .did-resolve:hover { text-decoration: underline; }
+  .did-hint { color: var(--color-text-muted); font-size: var(--text-xs); margin: var(--space-2) 0 0; }
 </style>

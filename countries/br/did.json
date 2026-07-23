@@ -1,0 +1,10 @@
+{
+  "method": "did:pki",
+  "generatedAt": "2026-07-23T12:39:49.867Z",
+  "dids": {
+    "AC-RAIZ-ICP-BRASIL-v10.pem": "did:pki:br:icp:autoridade-certificadora-raiz-brasileira",
+    "AC-RAIZ-ICP-BRASIL-v11.pem": "did:pki:br:icp:autoridade-certificadora-raiz-brasileira",
+    "AC-RAIZ-ICP-BRASIL-v12.pem": "did:pki:br:icp:autoridade-certificadora-raiz-brasileira",
+    "AC-RAIZ-ICP-BRASIL-v5.pem": "did:pki:br:icp:autoridade-certificadora-raiz-brasileira"
+  }
+}

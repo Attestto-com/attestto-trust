@@ -1,0 +1,8 @@
+{
+  "method": "did:pki",
+  "generatedAt": "2026-07-23T12:39:49.854Z",
+  "dids": {
+    "AC-RAIZ-REPUBLICA-ARGENTINA.pem": "did:pki:ar:infraestructura-de-firma-digital:raiz",
+    "AUTORIDAD-CERTIFICANTE-FIRMA-DIGITAL.pem": "did:pki:ar:jefatura-de-gabinete-de-ministros:autoridad-certificante-de-firma-digital"
+  }
+}

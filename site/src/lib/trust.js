@@ -43,6 +43,19 @@ function readRevocation(code) {
   return existsSync(p) ? JSON.parse(readFileSync(p, 'utf-8')) : null;
 }
 
+// did:pki identifier per PEM file (map file -> did string), precomputed by the
+// workspace tool scripts/refresh-did-pki.mjs from the resolver's canonical
+// derivation. May be absent, and may omit certs whose DID isn't valid yet.
+function readDidPki(code) {
+  const p = join(countriesDir, code, 'did.json');
+  if (!existsSync(p)) return {};
+  try {
+    return JSON.parse(readFileSync(p, 'utf-8')).dids || {};
+  } catch {
+    return {};
+  }
+}
+
 export const COUNTRIES = readdirSync(countriesDir)
   .filter((code) => {
     const dir = join(countriesDir, code);
@@ -134,6 +147,7 @@ export function loadCountry(code) {
   const meta = COUNTRIES.find((c) => c.code === code);
   if (!meta) throw new Error(`Unknown country: ${code}`);
   const manifest = readManifest(code);
+  const didByFile = readDidPki(code);
 
   const usedSlugs = new Set();
   const certs = manifest.certificates.map((c) => {
@@ -152,6 +166,7 @@ export function loadCountry(code) {
       issuerDisplay: fixMojibake(c.issuer),
       slug,
       validity,
+      didPki: didByFile[c.file] || null,
       children: [],
       parent: null,
     };

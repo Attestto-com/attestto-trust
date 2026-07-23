@@ -1,0 +1,15 @@
+{
+  "method": "did:pki",
+  "generatedAt": "2026-07-23T12:41:09.039Z",
+  "dids": {
+    "CA POLITICA PERSONA FISICA - COSTA RICA v2.pem": "did:pki:cr:politica:persona-fisica",
+    "CA POLITICA PERSONA JURIDICA - COSTA RICA v2.pem": "did:pki:cr:politica:persona-juridica",
+    "CA POLITICA SELLADO DE TIEMPO - COSTA RICA v2.pem": "did:pki:cr:politica:sellado-de-tiempo",
+    "CA RAIZ NACIONAL - COSTA RICA v2.pem": "did:pki:cr:raiz-nacional",
+    "CA SINPE - PERSONA FISICA v2 (2023).pem": "did:pki:cr:sinpe:persona-fisica",
+    "CA SINPE - PERSONA FISICA v2 (2026).pem": "did:pki:cr:sinpe:persona-fisica",
+    "CA SINPE - PERSONA FISICA v2.pem": "did:pki:cr:sinpe:persona-fisica",
+    "CA SINPE - PERSONA JURIDICA v2 (2026).pem": "did:pki:cr:sinpe:persona-juridica",
+    "CA SINPE - PERSONA JURIDICA v2.pem": "did:pki:cr:sinpe:persona-juridica"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "method": "did:pki",
+  "generatedAt": "2026-07-23T12:39:49.909Z",
+  "dids": {
+    "ECEP-ONPE-CA-ROOT-5.pem": "did:pki:pe:oficina-nacional-de-procesos-electorales:ecep-onpe-ca-root-5",
+    "ECEP-ONPE-ELECTORAL-CA-ROOT-5.pem": "did:pki:pe:oficina-nacional-de-procesos-electorales:ecep-onpe-electoral-ca-root-5",
+    "ECEP-RENIEC.pem": "did:pki:pe:registro-nacional-de-identificacion-y-estado-civil:ecep-reniec",
+    "ECERNEP-PERU-CA-ROOT-3.pem": "did:pki:pe:entidad-de-certificacion-nacional-para-el-estado-peruano:ecernep-peru-ca-root-3",
+    "ECERNEP-PERU-CA-ROOT-5.pem": "did:pki:pe:entidad-de-certificacion-nacional-para-el-estado-peruano:ecernep-peru-ca-root-5",
+    "ECERNEP-PERU-CA-ROOT-6.pem": "did:pki:pe:entidad-de-certificacion-nacional-para-el-estado-peruano:ecernep-peru-ca-root-6",
+    "RENIEC-Certification-Authority.pem": "did:pki:pe:registro-nacional-de-identificacion-y-estado-civil:reniec-certification-authority",
+    "RENIEC-High-Grade-Certification-Authority.pem": "did:pki:pe:registro-nacional-de-identificacion-y-estado-civil:reniec-high-grade-certification-authority"
+  }
+}
