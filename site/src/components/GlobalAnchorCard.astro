@@ -1,42 +1,73 @@
 ---
 const { anchor, lang, base, t } = Astro.props;
-const shortAid = anchor.rootAid.aid.length > 16
-  ? `${anchor.rootAid.aid.slice(0, 8)}…${anchor.rootAid.aid.slice(-4)}`
-  : anchor.rootAid.aid;
 const detailHref = `${base}${lang === 'es' ? '/es' : ''}/gleif`;
-const sourceLink = (anchor.relatedLinks || []).find((l) => /gleif\.org/.test(l.url));
+const colAnchor = lang === 'es' ? 'Ancla' : 'Anchor';
+const colIds = lang === 'es' ? 'Identificadores' : 'Identifiers';
 ---
-<article class="ga-card">
-  <header class="ga-card__head">
-    <img class="ga-card__glyph" src="/gleif-logo.svg" alt="" width="28" height="28" />
-    <h3 class="ga-card__title">{anchor.name}</h3>
-    <span class="ga-card__tag">{t.globalAnchorTag}</span>
-  </header>
-  <dl class="ga-card__facts">
-    <div><dt>{t.globalAnchorRootAid}</dt><dd><code>{shortAid}</code></dd></div>
-    <div><dt>{t.globalAnchorQvis}</dt><dd>{anchor.qviCount}</dd></div>
-    <div><dt>KERI / ACDC</dt><dd>{anchor.identifierSpace?.join(' · ')}</dd></div>
-  </dl>
-  <p class="ga-card__framing">{t.globalAnchorFraming}</p>
-  <div class="ga-card__actions">
-    <a class="btn" href={detailHref}>{t.globalAnchorView}</a>
-    {sourceLink && (
-      <a class="btn btn--ghost" href={sourceLink.url} rel="noopener noreferrer" target="_blank"
-         title={`${t.globalAnchorSource} (opens in a new tab)`}>{t.globalAnchorSource} ↗</a>
-    )}
-  </div>
-</article>
+<table class="ga-table">
+  <colgroup>
+    <col class="ga-table__col-name" />
+    <col class="ga-table__col-auth" />
+    <col class="ga-table__col-num" />
+    <col class="ga-table__col-id" />
+  </colgroup>
+  <thead>
+    <tr>
+      <th scope="col">{colAnchor}</th>
+      <th scope="col">{t.homeColAuthority}</th>
+      <th scope="col" class="ga-table__num">{t.globalAnchorQvis}</th>
+      <th scope="col">{colIds}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="ga-table__name">
+        <a href={detailHref} aria-label={anchor.name}>
+          <img class="ga-table__logo" src="/gleif-logo.svg" alt="" width="24" height="24" />
+          <span class="ga-table__nm">{anchor.name}</span>
+          <span class="ga-table__go" aria-hidden="true">→</span>
+        </a>
+      </td>
+      <td class="ga-table__auth">{anchor.authority?.name}</td>
+      <td class="ga-table__num"><strong>{anchor.qviCount}</strong></td>
+      <td class="ga-table__id">{anchor.identifierSpace?.join(' · ')}</td>
+    </tr>
+  </tbody>
+</table>
 
 <style>
-  .ga-card { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: var(--space-5); max-width: 46rem; }
-  .ga-card__head { display: flex; align-items: center; gap: var(--space-3); }
-  .ga-card__glyph { width: 1.75rem; height: 1.75rem; object-fit: contain; flex-shrink: 0; }
-  .ga-card__title { margin: 0; }
-  .ga-card__tag { margin-left: auto; font-size: var(--text-xs); font-weight: 600; text-transform: uppercase; letter-spacing: 0.03em; padding: 2px 10px; border-radius: 999px; background: var(--color-highlight-soft); color: var(--color-highlight); }
-  .ga-card__facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr)); gap: var(--space-3); margin: var(--space-4) 0; }
-  .ga-card__facts dt { font-size: var(--text-xs); color: var(--color-text-subtle); text-transform: uppercase; letter-spacing: 0.03em; }
-  .ga-card__facts dd { margin: 2px 0 0; font-weight: 600; font-size: var(--text-sm); }
-  .ga-card__framing { color: var(--color-text-muted); font-size: var(--text-sm); line-height: 1.5; margin: 0 0 var(--space-4); }
-  .ga-card__actions { display: flex; flex-wrap: wrap; gap: var(--space-3); }
-  .btn--ghost { background: transparent; }
+  .ga-table { width: 100%; border-collapse: collapse; table-layout: fixed; }
+  .ga-table__col-name { width: 22%; }
+  .ga-table__col-auth { width: 46%; }
+  .ga-table__col-num { width: 14%; }
+  .ga-table__col-id { width: 18%; }
+  .ga-table thead th {
+    text-align: left;
+    font-size: var(--text-xs);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--color-text-subtle);
+    font-weight: 600;
+    padding: var(--space-2) var(--space-4);
+    border-bottom: 1px solid var(--color-border);
+  }
+  .ga-table thead th.ga-table__num { text-align: right; }
+  .ga-table tbody tr { border-bottom: 1px solid var(--color-border); transition: background 0.12s; }
+  .ga-table tbody tr:hover { background: var(--color-surface); }
+  .ga-table td { padding: var(--space-3) var(--space-4); font-size: var(--text-sm); vertical-align: middle; }
+  .ga-table__name a { display: inline-flex; align-items: center; gap: var(--space-3); font-weight: 650; color: var(--color-text); }
+  .ga-table__name a:hover { color: var(--color-accent); text-decoration: none; }
+  .ga-table__logo { width: 1.5rem; height: 1.5rem; object-fit: contain; flex-shrink: 0; }
+  .ga-table__go { color: var(--color-accent); font-size: var(--text-lg); }
+  .ga-table__auth { color: var(--color-text-muted); }
+  .ga-table__num { text-align: right; }
+  .ga-table__num strong { font-size: var(--text-base); }
+  .ga-table__id { color: var(--color-text-muted); white-space: nowrap; }
+  @media (max-width: 720px) {
+    .ga-table thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+    .ga-table, .ga-table tbody, .ga-table tr, .ga-table td { display: block; width: 100%; }
+    .ga-table tbody tr { padding: var(--space-3) 0; }
+    .ga-table td { padding: var(--space-1) var(--space-4); }
+    .ga-table__num { text-align: left; }
+  }
 </style>
