@@ -1,0 +1,25 @@
+name: Notify resolver of trust changes
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'countries/**'
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: POST /admin/refresh (source=main)
+        env:
+          SECRET: ${{ secrets.RESOLVER_REFRESH_SECRET }}
+        run: |
+          if [ -z "$SECRET" ]; then
+            echo "RESOLVER_REFRESH_SECRET not set — skipping notify"
+            exit 0
+          fi
+          curl --fail --silent --show-error --retry 3 --max-time 30 \
+            -X POST https://resolver.attestto.com/admin/refresh \
+            -H "Authorization: Bearer $SECRET" \
+            -H "Content-Type: application/json" \
+            -d '{"source":"main"}'
