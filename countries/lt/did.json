@@ -1,0 +1,17 @@
+{
+  "method": "did:pki",
+  "generatedAt": "2026-07-23T19:17:35.854Z",
+  "dids": {
+    "adic-ca-a-113e3fe4.pem": "did:pki:lt:asmens-dokumentu-israsymo-centras-prie-lr-vrm:adic-ca-a",
+    "adic-ca-a-b3b9c859.pem": "did:pki:lt:asmens-dokumentu-israsymo-centras-prie-lr-vrm:adic-ca-a",
+    "adic-ca-a.pem": "did:pki:lt:asmens-dokumentu-israsymo-centras-prie-lr-vrm:adic-ca-a",
+    "adic-ca-b-465b11af.pem": "did:pki:lt:asmens-dokumentu-israsymo-centras-prie-lr-vrm:adic-ca-b",
+    "adic-ca-b-6c0769c7.pem": "did:pki:lt:asmens-dokumentu-israsymo-centras-prie-lr-vrm:adic-ca-b",
+    "adic-ca-b.pem": "did:pki:lt:asmens-dokumentu-israsymo-centras-prie-lr-vrm:adic-ca-b",
+    "adic-ca-ecc.pem": "did:pki:lt:asmens-dokumentu-israsymo-centras-prie-lr-vrm:adic-ca-ecc",
+    "md-ca.pem": "did:pki:lt:migracijos-departamentas-prie-lr-vrm:md-ca",
+    "rcsc-issuingca-2-bf62c1e4.pem": "did:pki:lt:vi-registru-centras-ik-124110246:rcsc-issuingca-2",
+    "rcsc-issuingca-2.pem": "did:pki:lt:vi-registru-centras-ik-124110246:rcsc-issuingca-2",
+    "rcsc-issuingca.pem": "did:pki:lt:vi-registru-centras-ik-124110246:rcsc-issuingca"
+  }
+}

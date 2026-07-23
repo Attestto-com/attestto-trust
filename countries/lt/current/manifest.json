@@ -1,0 +1,194 @@
+{
+  "country": "LT",
+  "generatedAt": "2026-07-23T19:16:46.735Z",
+  "count": 11,
+  "certificates": [
+    {
+      "file": "adic-ca-a-113e3fe4.pem",
+      "sha256": "113e3fe44dfd6d4b196bb45736094a04504b377a650e70092d8d2e0247c507d6",
+      "subject": "ADIC CA-A",
+      "issuer": "ADIC Root CA",
+      "serialNumber": "2ee772083df5c3e1000000000008",
+      "validFrom": "2018-12-17T16:26:43.000Z",
+      "validTo": "2024-12-17T16:26:43.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://nsc.vrm.lt/cdp/ADIC_Root_CA.crl"
+      ],
+      "ocspUrls": [
+        "http://nsc.vrm.lt/OCSP/ocspresponder.nsc"
+      ]
+    },
+    {
+      "file": "adic-ca-a-b3b9c859.pem",
+      "sha256": "b3b9c8591297db3b9e57013ddebddf486758f322072af0d1d19a0781069e4c9f",
+      "subject": "ADIC CA-A",
+      "issuer": "ADIC Root CA",
+      "serialNumber": "2ee772083df5c3e100000000000a",
+      "validFrom": "2021-02-18T10:40:25.000Z",
+      "validTo": "2027-02-18T10:40:25.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://nsc.vrm.lt/cdp/ADIC_Root_CA.crl"
+      ],
+      "ocspUrls": [
+        "http://nsc.vrm.lt/OCSP/ocspresponder.nsc"
+      ]
+    },
+    {
+      "file": "adic-ca-a.pem",
+      "sha256": "2bb9f0a723f1bc35d67935a579840563d872e5923e7b12d474e0382a9f1bb537",
+      "subject": "ADIC CA-A",
+      "issuer": "ADIC Root CA",
+      "serialNumber": "2ee772083df5c3e1000000000002",
+      "validFrom": "2015-12-29T16:48:17.000Z",
+      "validTo": "2021-12-29T16:48:17.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://nsc.vrm.lt/cdp/ADIC_Root_CA.crl"
+      ],
+      "ocspUrls": [
+        "http://nsc.vrm.lt/OCSP/ocspresponder.nsc"
+      ]
+    },
+    {
+      "file": "adic-ca-b-465b11af.pem",
+      "sha256": "465b11afe07372131f06078c8db5876b5edc80a2174c7fddb0ca01aadc3157f2",
+      "subject": "ADIC CA-B",
+      "issuer": "ADIC Root CA",
+      "serialNumber": "2ee772083df5c3e1000000000009",
+      "validFrom": "2018-12-17T16:29:41.000Z",
+      "validTo": "2024-12-17T16:29:41.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://nsc.vrm.lt/cdp/ADIC_Root_CA.crl"
+      ],
+      "ocspUrls": [
+        "http://nsc.vrm.lt/OCSP/ocspresponder.nsc"
+      ]
+    },
+    {
+      "file": "adic-ca-b-6c0769c7.pem",
+      "sha256": "6c0769c7ae3e971eb5163f766e7f9ca0121dc68e4eab03565d9fbbf2d944a77a",
+      "subject": "ADIC CA-B",
+      "issuer": "ADIC Root CA",
+      "serialNumber": "2ee772083df5c3e100000000000b",
+      "validFrom": "2021-02-18T10:42:56.000Z",
+      "validTo": "2027-02-18T10:42:56.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://nsc.vrm.lt/cdp/ADIC_Root_CA.crl"
+      ],
+      "ocspUrls": [
+        "http://nsc.vrm.lt/OCSP/ocspresponder.nsc"
+      ]
+    },
+    {
+      "file": "adic-ca-b.pem",
+      "sha256": "2c632ea2868b84b4b97bf0c70604cf3d04521c6b4e8df199c0261f09c2df9fc8",
+      "subject": "ADIC CA-B",
+      "issuer": "ADIC Root CA",
+      "serialNumber": "2ee772083df5c3e1000000000003",
+      "validFrom": "2015-12-29T16:50:15.000Z",
+      "validTo": "2021-12-29T16:50:15.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://nsc.vrm.lt/cdp/ADIC_Root_CA.crl"
+      ],
+      "ocspUrls": [
+        "http://nsc.vrm.lt/OCSP/ocspresponder.nsc"
+      ]
+    },
+    {
+      "file": "adic-ca-ecc.pem",
+      "sha256": "9716c6dda3a46565302a12fc6229c7fa0a01a623414c59a96c8b108bf770b6bf",
+      "subject": "ADIC CA ECC",
+      "issuer": "ADIC Root CA ECC",
+      "serialNumber": "3348bc3293867d97000000000009",
+      "validFrom": "2023-05-29T13:33:38.000Z",
+      "validTo": "2033-05-29T13:33:38.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-384",
+      "crlUrls": [
+        "http://nsc.vrm.lt/cdp/ADIC_Root_CA_ECC.crl"
+      ],
+      "ocspUrls": [
+        "http://nsc.vrm.lt/OCSP/ocspresponder.nsc"
+      ]
+    },
+    {
+      "file": "md-ca.pem",
+      "sha256": "2d220466c19e16ed4b7bc05ff49a21c6f146778fd40176970906d79fc24e2070",
+      "subject": "MD CA",
+      "issuer": "MD Root CA",
+      "serialNumber": "1077a478d7182fba000000000005",
+      "validFrom": "2025-08-27T08:22:07.000Z",
+      "validTo": "2035-08-27T08:22:07.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-384",
+      "crlUrls": [
+        "http://nsc.vrm.lt/cdp/MD_Root_CA.crl"
+      ],
+      "ocspUrls": [
+        "http://nsc.vrm.lt/OCSP2/ocspresponder.nsc"
+      ]
+    },
+    {
+      "file": "rcsc-issuingca-2-bf62c1e4.pem",
+      "sha256": "bf62c1e467ca553b2ed4b5c53af2cba526197fa1db02a24ec35390dc2087f6df",
+      "subject": "RCSC IssuingCA-2",
+      "issuer": "RCSC RootCA",
+      "serialNumber": "2554746f8a1d3379000000000008",
+      "validFrom": "2025-05-05T22:17:30.000Z",
+      "validTo": "2034-05-05T22:17:30.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://csp2.rcsc.lt/cdp/RCSC_RootCA.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp2.rcsc.lt/ocspresponder.rcsc"
+      ]
+    },
+    {
+      "file": "rcsc-issuingca-2.pem",
+      "sha256": "9b40e3ff7685ea3a6b27fb9daba12bceb769d1bd94561d9e735923dbc1e928cd",
+      "subject": "RCSC IssuingCA-2",
+      "issuer": "RCSC RootCA",
+      "serialNumber": "2554746f8a1d3379000000000006",
+      "validFrom": "2021-05-20T12:59:40.000Z",
+      "validTo": "2030-05-20T12:59:40.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://csp2.rcsc.lt/cdp/RCSC_RootCA.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp2.rcsc.lt/ocspresponder.rcsc"
+      ]
+    },
+    {
+      "file": "rcsc-issuingca.pem",
+      "sha256": "1670585bb2d77bcc89007890ce8ba37c30b193cd30507b101ab5c2150bbc80e6",
+      "subject": "RCSC IssuingCA",
+      "issuer": "RCSC RootCA",
+      "serialNumber": "5773f88261267ceb000000000002",
+      "validFrom": "2017-05-25T14:30:43.000Z",
+      "validTo": "2026-05-25T14:30:43.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://csp2.rcsc.lt/cdp/RCSC_RootCA.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp2.rcsc.lt/ocspresponder.rcsc"
+      ]
+    }
+  ]
+}
