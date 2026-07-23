@@ -1,0 +1,15 @@
+{
+  "country": "IT",
+  "generatedAt": "2026-07-23T12:26:00.299Z",
+  "snapshotExpiresAt": "2028-08-13T13:40:50.000Z",
+  "note": "snapshotExpiresAt is the earliest CRL nextUpdate across the promoted CAs; refresh revocation data by this date. Roots carry no CRL (trust anchors are not CRL-revocable).",
+  "crls": [
+    {
+      "url": "http://ldap.cie.interno.gov.it/cierootca.crl",
+      "status": "ok",
+      "thisUpdate": "2024-05-16T13:40:50.000Z",
+      "nextUpdate": "2028-08-13T13:40:50.000Z",
+      "revokedCount": 9
+    }
+  ]
+}

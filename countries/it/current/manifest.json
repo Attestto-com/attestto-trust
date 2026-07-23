@@ -1,0 +1,37 @@
+{
+  "country": "IT",
+  "generatedAt": "2026-07-23T12:25:58.753Z",
+  "count": 2,
+  "certificates": [
+    {
+      "file": "CIE-National-Root-CA-2016.pem",
+      "sha256": "87364fb476e74962e7c495b9bbaf727813ee007cb56a0ada6ab9868123db267e",
+      "subject": "National root CA for the Italian Electronic Identity Card",
+      "issuer": "National root CA for the Italian Electronic Identity Card",
+      "serialNumber": "466a29edb58c6a35",
+      "validFrom": "2016-06-06T14:37:24.000Z",
+      "validTo": "2036-06-06T14:37:24.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://ldap.cie.interno.gov.it/cierootca.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "CIE-National-Root-CA-2024.pem",
+      "sha256": "40f425927e8a1e6a297a15c2a9d79e2221bf4fe25b2f21e3bfad53a1ba58b0d7",
+      "subject": "National root CA for the Italian Electronic Identity Card",
+      "issuer": "National root CA for the Italian Electronic Identity Card",
+      "serialNumber": "771f4d5061619cca",
+      "validFrom": "2024-05-16T13:55:12.000Z",
+      "validTo": "2044-05-16T13:55:12.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://ldap.cie.interno.gov.it/cierootca.crl"
+      ],
+      "ocspUrls": []
+    }
+  ]
+}
