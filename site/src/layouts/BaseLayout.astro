@@ -110,7 +110,9 @@ const devsHref = lang === 'es' ? `${base}/es#developers` : `${base}/#developers`
 
     <script>
       import { initFilters } from '../scripts/filterable.js';
+      import { initConsent } from '../scripts/consent.js';
       initFilters();
+      initConsent();
     </script>
 
     <script define:vars={{ lang, copiedText: t.copySuccess }}>

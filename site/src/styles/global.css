@@ -270,6 +270,44 @@ main.container { padding-top: var(--space-8); padding-bottom: var(--space-10); }
   font-size: var(--text-sm);
 }
 
+/* Consent banner (analytics gate) — injected client-side by scripts/consent.js */
+.consent-banner {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+  padding: var(--space-3) var(--space-5);
+  background: var(--color-surface);
+  border-top: 1px solid var(--color-border);
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+}
+.consent-banner__text { margin: 0; max-width: 60ch; }
+.consent-banner__actions { display: flex; gap: var(--space-2); flex-shrink: 0; }
+.consent-banner__btn {
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-sm);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid var(--color-border-strong);
+  background: var(--color-surface-alt);
+  color: var(--color-text-muted);
+}
+.consent-banner__btn--accept {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  color: var(--color-accent-contrast);
+}
+.consent-banner__btn--accept:hover { background: var(--color-accent-hover); }
+.consent-banner__btn--decline:hover { color: var(--color-text); border-color: var(--color-text-subtle); }
+
 .visually-hidden {
   position: absolute;
   width: 1px; height: 1px;
