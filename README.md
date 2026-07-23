@@ -62,11 +62,12 @@ sha256sum attestto-trust/countries/cr/current/root-ca.pem
 | Argentina | [`ar/`](countries/ar) | [/ar](https://trust.attestto.org/ar) | AC Raíz de la República Argentina |
 | Spain | [`es/`](countries/es) | [/es](https://trust.attestto.org/es) | FNMT-RCM (Ceres) |
 | Estonia | [`ee/`](countries/ee) | [/ee](https://trust.attestto.org/ee) | RIA — SK ID Solutions / Zetes (eIDAS) |
+| France | [`fr/`](countries/fr) | [/fr](https://trust.attestto.org/fr) | ANSSI eIDAS Trusted List (~20 QTSPs) |
 | Germany | [`de/`](countries/de) | [/de](https://trust.attestto.org/de) | Bundesnetzagentur (BNetzA) eIDAS Trusted List |
 | Italy | [`it/`](countries/it) | [/it](https://trust.attestto.org/it) | AgID eIDAS Trusted List (~25 QTSPs) + CIE national eID |
 | Peru | [`pe/`](countries/pe) | [/pe](https://trust.attestto.org/pe) | INDECOPI — IOFE (RENIEC, ONPE, ECERNEP) |
 
-More countries are staged and land after a per-country promotion review: Mexico, Colombia, Chile, Ecuador, Uruguay, Panama, and other European trusted lists. Italy's full qualified-signature list (229 accredited-QTSP CAs) and Germany's (101 accredited-QTSP CAs) are now live, promoted wholesale after verifying each national Trusted List's XAdES signature through the EU LOTL chain of trust (see `scripts/monitors/verify-eu-tsl.mjs`).
+More countries are staged and land after a per-country promotion review: Mexico, Colombia, Chile, Ecuador, Uruguay, Panama, and other European trusted lists. Italy's full qualified-signature list (229 accredited-QTSP CAs), Germany's (101 accredited-QTSP CAs), and France's (79 accredited-QTSP CAs) are now live, promoted wholesale after verifying each national Trusted List's XAdES signature through the EU LOTL chain of trust (see `scripts/monitors/verify-eu-tsl.mjs`).
 
 ## Key concepts
 
