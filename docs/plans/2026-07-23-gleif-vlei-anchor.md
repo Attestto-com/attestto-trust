@@ -424,7 +424,7 @@ Add after `const countries = loadAllCountries();`:
 ```js
 const anchors = loadGlobalAnchors();
 ```
-Insert this section immediately AFTER the closing `</section>` of the `#countries` section and BEFORE the `#developers` section:
+Insert this section immediately AFTER the closing `</section>` of the `.intro` hero section and BEFORE the `#countries` section (GLEIF is a global root, so it sits above the national roots):
 ```astro
   {anchors.length > 0 && (
     <section id="global" aria-labelledby="global-h">
@@ -436,7 +436,7 @@ Insert this section immediately AFTER the closing `</section>` of the `#countrie
 
 - [ ] **Step 4: Mirror the section in `site/src/pages/es/index.astro`**
 
-Apply the SAME three edits to the Spanish home page (import, `const anchors = loadGlobalAnchors();`, and the section block), placing the section in the same position relative to its `#countries` and `#developers` sections. The `lang` there is `'es'`.
+Apply the SAME three edits to the Spanish home page (import, `const anchors = loadGlobalAnchors();`, and the section block), placing the section in the same position: after the `.intro` hero and before the `#countries` section. The `lang` there is `'es'`.
 
 - [ ] **Step 5: Build to verify**
 

@@ -132,8 +132,9 @@ GLEIF directly.
 
 The build-time loader gains a small parallel path: alongside `loadAllCountries()`, a
 `loadGlobalAnchors()` reads `anchors/*/meta.json` (+ `root-aid.json`, `qvis.json`). The home page
-renders a **new "Global / Organizational identity" section** after the country table and before the
-developer section — a distinct card (`GlobalAnchorCard.astro`), not a row in the country table (no
+renders a **new "Global / Organizational identity" section** above the country table (after the hero,
+before the countries section), since GLEIF is a global root that sits atop the national roots — a
+distinct card (`GlobalAnchorCard.astro`), not a row in the country table (no
 flag, no region grouping). The card shows: the anchor name, a "Global root" tag, the Root AID
 (truncated + copyable), the QVI count, the KERI/ACDC tech tag, the explicit "not a national CA — we
 mirror, verify at GLEIF" framing, and two actions (an internal `/gleif` detail page and an external
