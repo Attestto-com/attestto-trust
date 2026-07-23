@@ -224,6 +224,7 @@ export const getCountryName = (code, lang) => {
     ar: { en: 'Argentina', es: 'Argentina' },
     es: { en: 'Spain', es: 'España' },
     ee: { en: 'Estonia', es: 'Estonia' },
+    de: { en: 'Germany', es: 'Alemania' },
     it: { en: 'Italy', es: 'Italia' },
     pe: { en: 'Peru', es: 'Perú' }
   };
