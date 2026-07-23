@@ -1,0 +1,13 @@
+{
+  "generatedAt": "2026-07-23",
+  "artifacts": [
+    {
+      "filename": "root-aid.json",
+      "sha256": "4fc26f927be4b26449bd002184bfdc90ff1da6c559ae614e90e7f6af9c0b55b4"
+    },
+    {
+      "filename": "qvis.json",
+      "sha256": "c688cf21282349f3e3a3447e1f503ed598fccdb5b539a7ab534f36132e0d2035"
+    }
+  ]
+}
