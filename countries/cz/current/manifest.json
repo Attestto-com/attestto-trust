@@ -1,0 +1,616 @@
+{
+  "country": "CZ",
+  "generatedAt": "2026-07-23T18:57:32.830Z",
+  "count": 34,
+  "certificates": [
+    {
+      "file": "acaeid-qualified-issuing-certificate-kvalifikovany-systemovy-certifikat-vydavaji.pem",
+      "sha256": "6ec500c00e41bda571a8532f17bcd5df737ee9fcef39cad34a85a8eeddc26b96",
+      "subject": "ACAeID - Qualified Issuing Certificate (kvalifikovaný systémový certifikát vydávající CA)",
+      "issuer": "ACAeID - Qualified Root Certificate (kvalifikovaný systémový certifikát kořenové CA)",
+      "serialNumber": "04",
+      "validFrom": "2005-11-15T13:52:37.000Z",
+      "validTo": "2011-11-15T13:52:37.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://www.acaeid.cz/root/crl/actual.crl",
+        "http://pub1.acaeid.cz/root/crl/actual.crl",
+        "http://pub2.acaeid.cz/root/crl/actual.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "acaeid2-1-qualified-issuing-certificate-kvalifikovany-systemovy-certifikat-vydav.pem",
+      "sha256": "caa0258cb1984217cf52d664daa7c9f68792f19637e63c59f53245d21b6d6a2e",
+      "subject": "ACAeID2.1 - Qualified Issuing Certificate (kvalifikovaný systémový certifikát vydávající CA)",
+      "issuer": "ACAeID2 - Qualified Root Certificate (kvalifikovaný systémový certifikát kořenové CA)",
+      "serialNumber": "4109a08d",
+      "validFrom": "2015-02-01T18:05:44.000Z",
+      "validTo": "2021-02-01T18:05:44.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://www.acaeid.cz/root2/crl/actual.crl",
+        "http://pub1.acaeid.cz/root2/crl/actual.crl",
+        "http://pub2.acaeid.cz/root2/crl/actual.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "acaeid2-qualified-issuing-certificate-kvalifikovany-systemovy-certifikat-vydavaj.pem",
+      "sha256": "0af09567aefb2e6b8c76fe459cf2cce0d5182a6d093d01bea21c6423edc47b46",
+      "subject": "ACAeID2 - Qualified Issuing Certificate (kvalifikovaný systémový certifikát vydávající CA)",
+      "issuer": "ACAeID2 - Qualified Root Certificate (kvalifikovaný systémový certifikát kořenové CA)",
+      "serialNumber": "08d5baaf",
+      "validFrom": "2010-02-22T17:29:38.000Z",
+      "validTo": "2016-02-22T17:29:38.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://www.acaeid.cz/root2/crl/actual.crl",
+        "http://pub1.acaeid.cz/root2/crl/actual.crl",
+        "http://pub2.acaeid.cz/root2/crl/actual.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "acaeid3-1-issuing-certificate.pem",
+      "sha256": "b891934ac432d91fd40484a60a253f6fd041ecf0256ed52660a0c4200d1ae6cc",
+      "subject": "ACAeID3.1 - Issuing Certificate",
+      "issuer": "ACAeID3 - Root Certificate",
+      "serialNumber": "19f87045",
+      "validFrom": "2017-10-24T14:35:48.000Z",
+      "validTo": "2024-10-24T14:35:48.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://www.acaeid.cz/root3/crl/actual.crl",
+        "http://pub1.acaeid.cz/root3/crl/actual.crl",
+        "http://pub2.acaeid.cz/root3/crl/actual.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.eidentity.cz"
+      ]
+    },
+    {
+      "file": "acaeid3-2-issuing-certificate.pem",
+      "sha256": "6d66fc4e8bf3bb3679fe047290ed45b69462dc17880d9996ac8aec509c701d84",
+      "subject": "ACAeID3.2 - Issuing Certificate",
+      "issuer": "ACAeID3 - Root Certificate",
+      "serialNumber": "3e665676",
+      "validFrom": "2021-06-21T08:33:23.000Z",
+      "validTo": "2028-06-21T08:33:23.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-3072",
+      "crlUrls": [
+        "http://www.acaeid.cz/root3/crl/actual.crl",
+        "http://pub1.acaeid.cz/root3/crl/actual.crl",
+        "http://pub2.acaeid.cz/root3/crl/actual.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.eidentity.cz"
+      ]
+    },
+    {
+      "file": "acaeid3-3-issuing-certificate.pem",
+      "sha256": "922b74719eeacccea9cf5014f7afe53826e359ce26e210d473dfe1433ab6cce9",
+      "subject": "ACAeID3.3 - Issuing Certificate",
+      "issuer": "ACAeID3 - Root Certificate",
+      "serialNumber": "77237e30",
+      "validFrom": "2025-02-14T08:06:59.000Z",
+      "validTo": "2032-02-14T08:06:59.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-3072",
+      "crlUrls": [
+        "http://www.acaeid.cz/root3/crl/actual.crl",
+        "http://pub1.acaeid.cz/root3/crl/actual.crl",
+        "http://pub2.acaeid.cz/root3/crl/actual.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.eidentity.cz"
+      ]
+    },
+    {
+      "file": "i-ca-eu-qualified-ca2-ecc-06-2022.pem",
+      "sha256": "a7cdf7f580ea9016fd3ae07f642f5fb58a971224e6c4e92a498a33537b2034c8",
+      "subject": "I.CA EU Qualified CA2/ECC 06/2022",
+      "issuer": "I.CA Root CA/ECC 05/2022",
+      "serialNumber": "05f5e52c",
+      "validFrom": "2022-06-20T14:37:34.000Z",
+      "validTo": "2032-06-17T14:37:34.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-384",
+      "crlUrls": [
+        "http://qcrldp1.ica.cz/rca22_ecc.crl",
+        "http://qcrldp2.ica.cz/rca22_ecc.crl",
+        "http://qcrldp3.ica.cz/rca22_ecc.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.ica.cz/rca22_ecc"
+      ]
+    },
+    {
+      "file": "i-ca-eu-qualified-ca2-rsa-06-2022.pem",
+      "sha256": "5f9147824201b2e23d8e128f99adb9ec11c495796960fa0faef05f901a347c66",
+      "subject": "I.CA EU Qualified CA2/RSA 06/2022",
+      "issuer": "I.CA Root CA/RSA 05/2022",
+      "serialNumber": "05f5e52a",
+      "validFrom": "2022-06-20T14:03:51.000Z",
+      "validTo": "2032-06-17T14:03:51.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://qcrldp1.ica.cz/rca22_rsa.crl",
+        "http://qcrldp2.ica.cz/rca22_rsa.crl",
+        "http://qcrldp3.ica.cz/rca22_rsa.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.ica.cz/rca22_rsa"
+      ]
+    },
+    {
+      "file": "i-ca-qualified-2-ca-ecc-06-2019.pem",
+      "sha256": "b7fac27aa688e9736cb63bbb0c8aa40175f6a3ea6e2514d734311dcac9b5a545",
+      "subject": "I.CA Qualified 2 CA/ECC 06/2019",
+      "issuer": "I.CA Root CA/ECC 12/2016",
+      "serialNumber": "05f5e509",
+      "validFrom": "2019-06-19T11:21:01.000Z",
+      "validTo": "2029-06-16T11:21:01.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-521",
+      "crlUrls": [
+        "http://qcrldp1.ica.cz/rca16_ecc.crl",
+        "http://qcrldp2.ica.cz/rca16_ecc.crl",
+        "http://qcrldp3.ica.cz/rca16_ecc.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.ica.cz/rca16_ecc"
+      ]
+    },
+    {
+      "file": "i-ca-qualified-2-ca-rsa-02-2016.pem",
+      "sha256": "076abc2269327eef500a0c57527262bac831f9d2df4ef2d439e74ce17036aa3a",
+      "subject": "I.CA Qualified 2 CA/RSA 02/2016",
+      "issuer": "I.CA Root CA/RSA",
+      "serialNumber": "05f5e4ee",
+      "validFrom": "2016-02-11T12:17:11.000Z",
+      "validTo": "2026-02-08T12:17:11.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://qcrldp1.ica.cz/rca15_rsa.crl",
+        "http://qcrldp2.ica.cz/rca15_rsa.crl",
+        "http://qcrldp3.ica.cz/rca15_rsa.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.ica.cz/rca15_rsa"
+      ]
+    },
+    {
+      "file": "i-ca-qualified-ca-rsa-07-2015.pem",
+      "sha256": "de2ea05839b82dca5283a604c7d8dff947f54695bbb4dafb964840b1e611da7e",
+      "subject": "I.CA Qualified CA/RSA 07/2015",
+      "issuer": "I.CA Root CA/RSA",
+      "serialNumber": "05f5e4ec",
+      "validFrom": "2015-07-08T12:37:26.000Z",
+      "validTo": "2025-07-05T12:37:26.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://qcrldp1.ica.cz/rca15_rsa.crl",
+        "http://qcrldp2.ica.cz/rca15_rsa.crl",
+        "http://qcrldp3.ica.cz/rca15_rsa.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.ica.cz/rca15_rsa"
+      ]
+    },
+    {
+      "file": "i-ca-qualified-certification-authority-09-2009.pem",
+      "sha256": "c0c05a8d8da55eaf27aa9b910b0a6ef0d8bbded346928db872e182c2073e9802",
+      "subject": "I.CA - Qualified Certification Authority, 09/2009",
+      "issuer": "I.CA - Qualified Certification Authority, 09/2009",
+      "serialNumber": "00a037a0",
+      "validFrom": "2009-09-01T00:00:00.000Z",
+      "validTo": "2019-09-01T00:00:00.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "i-ca-qualified-root-certificate-1aa980c8.pem",
+      "sha256": "1aa980c8c0d316f25029978982f033cbb3a3f4188d669f2de6a8d84ee00a1575",
+      "subject": "I.CA - Qualified root certificate",
+      "issuer": "I.CA - Qualified root certificate",
+      "serialNumber": "009d2a60",
+      "validFrom": "2008-04-01T00:00:00.000Z",
+      "validTo": "2018-04-01T00:00:00.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "i-ca-qualified-root-certificate-kvalifikovany-certifikat-poskytovatele-pseudonym.pem",
+      "sha256": "5dff586c9b7849b90adb3a9979447d002ce3cfb710ef8aa0e826ec0c0a89b030",
+      "subject": "I.CA - Qualified root certificate (kvalifikovaný certifikát poskytovatele) - PSEUDONYM",
+      "issuer": "I.CA - Qualified root certificate (kvalifikovaný certifikát poskytovatele) - PSEUDONYM",
+      "serialNumber": "00989681",
+      "validFrom": "2002-03-22T00:00:00.000Z",
+      "validTo": "2008-03-22T00:00:00.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://q.ica.cz/qica.crl",
+        "http://b.ica.cz/qica.crl",
+        "http://r.ica.cz/qica.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "i-ca-qualified-root-certificate.pem",
+      "sha256": "ee711e703e77050e5cbf186a81eb8d169d05bf0438dbc655e70eff17436e0ea2",
+      "subject": "I.CA - Qualified root certificate",
+      "issuer": "I.CA - Qualified root certificate",
+      "serialNumber": "009a1d20",
+      "validFrom": "2005-06-01T00:00:00.000Z",
+      "validTo": "2011-06-01T00:00:00.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "i-ca-ssl-ev-ca-rsa-10-2017.pem",
+      "sha256": "75f5c8db96b8e2148a6a958a478311f05c758fb7d96d5b8bc04e5b9d359c3b09",
+      "subject": "I.CA SSL EV CA/RSA 10/2017",
+      "issuer": "I.CA Root CA/RSA",
+      "serialNumber": "05f5e4fe",
+      "validFrom": "2017-10-26T09:08:18.000Z",
+      "validTo": "2027-10-24T09:08:18.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://qcrldp1.ica.cz/rca15_rsa.crl",
+        "http://qcrldp2.ica.cz/rca15_rsa.crl",
+        "http://qcrldp3.ica.cz/rca15_rsa.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.ica.cz/rca15_rsa"
+      ]
+    },
+    {
+      "file": "i-ca-tls-ev-ca-rsa-06-2022.pem",
+      "sha256": "b9ef51a5f69a974f8d290b0a75fb253b7339053002aecb6516a270ea88aef4ed",
+      "subject": "I.CA TLS EV CA/RSA 06/2022",
+      "issuer": "I.CA TLS Root CA/RSA 05/2022",
+      "serialNumber": "05f5e52f",
+      "validFrom": "2022-06-22T14:41:24.000Z",
+      "validTo": "2032-06-19T14:41:24.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://qcrldp1.ica.cz/rcatls22_rsa.crl",
+        "http://qcrldp2.ica.cz/rcatls22_rsa.crl",
+        "http://qcrldp3.ica.cz/rcatls22_rsa.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.ica.cz/rcatls22_rsa"
+      ]
+    },
+    {
+      "file": "i-ca-tsa-ca-rsa-06-2022.pem",
+      "sha256": "52b27152bd36bce43c76dd4f8e8068a39a2230ebcd21a354c27485d12ff6f9e1",
+      "subject": "I.CA TSA CA/RSA 06/2022",
+      "issuer": "I.CA Root CA/RSA 05/2022",
+      "serialNumber": "05f5e52b",
+      "validFrom": "2022-06-20T14:21:28.000Z",
+      "validTo": "2032-06-17T14:21:28.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://qcrldp1.ica.cz/rca22_rsa.crl",
+        "http://qcrldp2.ica.cz/rca22_rsa.crl",
+        "http://qcrldp3.ica.cz/rca22_rsa.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.ica.cz/rca22_rsa"
+      ]
+    },
+    {
+      "file": "i-ca-tsaca-rsa-03-2022.pem",
+      "sha256": "6ab6349834712b0d898c5700fe4e1a9c203c5b98fef57187101689081997f27f",
+      "subject": "I.CA TSACA/RSA 03/2022",
+      "issuer": "I.CA Root CA/RSA",
+      "serialNumber": "05f5e522",
+      "validFrom": "2022-03-17T13:43:27.000Z",
+      "validTo": "2032-03-14T13:43:27.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-3072",
+      "crlUrls": [
+        "http://qcrldp1.ica.cz/rca15_rsa.crl",
+        "http://qcrldp2.ica.cz/rca15_rsa.crl",
+        "http://qcrldp3.ica.cz/rca15_rsa.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.ica.cz/rca15_rsa"
+      ]
+    },
+    {
+      "file": "i-ca-tsaca-rsa-05-2017.pem",
+      "sha256": "4ab8bc6061743e0980bfd121370a88c511c4f29eb4bc089765886b64c791f768",
+      "subject": "I.CA TSACA/RSA 05/2017",
+      "issuer": "I.CA Root CA/RSA",
+      "serialNumber": "05f5e4f4",
+      "validFrom": "2017-05-04T09:16:51.000Z",
+      "validTo": "2027-05-02T09:16:51.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://qcrldp1.ica.cz/rca15_rsa.crl",
+        "http://qcrldp2.ica.cz/rca15_rsa.crl",
+        "http://qcrldp3.ica.cz/rca15_rsa.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.ica.cz/rca15_rsa"
+      ]
+    },
+    {
+      "file": "komercni-banka-qualified-ca-rsa.pem",
+      "sha256": "163eea7a8d5dac5e85a5df54874011bcf6f9b3fe4d69e17155ca538077ca7775",
+      "subject": "Komerční banka Qualified CA/RSA",
+      "issuer": "KB Root 3 CA",
+      "serialNumber": "18000000051acec99384567da4000000000005",
+      "validFrom": "2023-02-20T12:46:26.000Z",
+      "validTo": "2033-02-20T12:46:26.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://www.kb.cz/pki/rcakb3.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "nca-subca1-ecc-07-2022.pem",
+      "sha256": "f1878ab75805b6414c07b49f035b41a19c7881d51099e707f0e9e3463b0af92d",
+      "subject": "NCA SubCA1/ECC 07/2022",
+      "issuer": "NCA Root CA/ECC 06/2022",
+      "serialNumber": "03fa",
+      "validFrom": "2022-07-01T10:11:01.000Z",
+      "validTo": "2032-06-28T10:11:01.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-521",
+      "crlUrls": [
+        "http://crldp1.narodni-ca.cz/rca22_ecc.crl",
+        "http://crldp2.narodni-ca.cz/rca22_ecc.crl",
+        "http://crldp3.narodni-ca.cz/rca22_ecc.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.narodni-ca.cz/rca22_ecc"
+      ]
+    },
+    {
+      "file": "nca-subca1-ecc-10-2023.pem",
+      "sha256": "acb2150bff6485cd843784756dd872f58148b45b16dbac23a3c8ebd695933587",
+      "subject": "NCA SubCA1/ECC 10/2023",
+      "issuer": "NCA Root CA/ECC 10/2023",
+      "serialNumber": "0401",
+      "validFrom": "2023-10-23T08:43:30.000Z",
+      "validTo": "2033-10-20T08:43:30.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-521",
+      "crlUrls": [
+        "http://crldp1.narodni-ca.gov.cz/rca23_ecc.crl",
+        "http://crldp2.narodni-ca.gov.cz/rca23_ecc.crl",
+        "http://crldp3.narodni-ca.gov.cz/rca23_ecc.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.narodni-ca.gov.cz/rca23_ecc"
+      ]
+    },
+    {
+      "file": "nca-subca1-rsa-05-2022.pem",
+      "sha256": "60fb6c64b6a50c3c9fa3a6a72ed89d1f09a9474f32627699134d0166e6c57b4e",
+      "subject": "NCA SubCA1/RSA 05/2022",
+      "issuer": "NCA Root CA/RSA 04/2022",
+      "serialNumber": "03f2",
+      "validFrom": "2022-05-12T11:41:01.000Z",
+      "validTo": "2032-05-09T11:41:01.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-3072",
+      "crlUrls": [
+        "http://crldp1.narodni-ca.cz/rca22_rsa.crl",
+        "http://crldp2.narodni-ca.cz/rca22_rsa.crl",
+        "http://crldp3.narodni-ca.cz/rca22_rsa.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.narodni-ca.cz/rca22_rsa"
+      ]
+    },
+    {
+      "file": "nca-subca1-rsa-10-2023.pem",
+      "sha256": "a442ec1e4490aaae709cfc6f42a9afcc89198dc2e06fbdd215c69a0a7c53324a",
+      "subject": "NCA SubCA1/RSA 10/2023",
+      "issuer": "NCA Root CA/RSA 10/2023",
+      "serialNumber": "0400",
+      "validFrom": "2023-10-23T08:36:15.000Z",
+      "validTo": "2033-10-20T08:36:15.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-3072",
+      "crlUrls": [
+        "http://crldp1.narodni-ca.gov.cz/rca23_rsa.crl",
+        "http://crldp2.narodni-ca.gov.cz/rca23_rsa.crl",
+        "http://crldp3.narodni-ca.gov.cz/rca23_rsa.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.narodni-ca.gov.cz/rca23_rsa"
+      ]
+    },
+    {
+      "file": "nca-subca1-rsa-12-2018.pem",
+      "sha256": "eb0944c491c807eb795b5eba6d2017cf4e3fb36d990ad560eb81cc2729bd28a5",
+      "subject": "NCA SubCA1/RSA 12/2018",
+      "issuer": "NCA Root CA/RSA 12/2018",
+      "serialNumber": "03e9",
+      "validFrom": "2018-12-10T18:51:02.000Z",
+      "validTo": "2028-12-07T18:51:02.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-3072",
+      "crlUrls": [
+        "http://crldp1.narodni-ca.cz/rca18_rsa.crl",
+        "http://crldp2.narodni-ca.cz/rca18_rsa.crl",
+        "http://crldp3.narodni-ca.cz/rca18_rsa.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.narodni-ca.cz/rca18_rsa"
+      ]
+    },
+    {
+      "file": "postsignum-qualified-ca-2.pem",
+      "sha256": "3ae4f4de5f3e2070a11845bdfe6dca6e412bb7e4ed84fd4f1b7b496cadff2cac",
+      "subject": "PostSignum Qualified CA 2",
+      "issuer": "PostSignum Root QCA 2",
+      "serialNumber": "71",
+      "validFrom": "2010-01-19T11:31:20.000Z",
+      "validTo": "2020-01-19T11:30:20.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://www.postsignum.cz/crl/psrootqca2.crl",
+        "http://www2.postsignum.cz/crl/psrootqca2.crl",
+        "http://postsignum.ttc.cz/crl/psrootqca2.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "postsignum-qualified-ca-3-tsa.pem",
+      "sha256": "270b33efcde50e45211cc4dbc21e92813eb9cbd6882b973373d671c33f8ddb07",
+      "subject": "PostSignum Qualified CA 3-TSA",
+      "issuer": "PostSignum Root QCA 2",
+      "serialNumber": "00d5",
+      "validFrom": "2018-10-25T07:29:17.000Z",
+      "validTo": "2025-01-19T08:04:31.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://www.postsignum.cz/crl/psrootqca2.crl",
+        "http://www2.postsignum.cz/crl/psrootqca2.crl",
+        "http://postsignum.ttc.cz/crl/psrootqca2.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "postsignum-qualified-ca-3.pem",
+      "sha256": "d35e250cb02e27bb3fc52d1f1a0dfd88fa9813be1b777320aae912b54e3b1f02",
+      "subject": "PostSignum Qualified CA 3",
+      "issuer": "PostSignum Root QCA 2",
+      "serialNumber": "00a4",
+      "validFrom": "2014-03-26T08:01:32.000Z",
+      "validTo": "2024-03-26T07:00:36.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://www.postsignum.cz/crl/psrootqca2.crl",
+        "http://www2.postsignum.cz/crl/psrootqca2.crl",
+        "http://postsignum.ttc.cz/crl/psrootqca2.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "postsignum-qualified-ca-4.pem",
+      "sha256": "4779ba66c768fe7e5a5bb74a225fa8b69cd6942af481355630e5ad78b34dff2b",
+      "subject": "PostSignum Qualified CA 4",
+      "issuer": "PostSignum Root QCA 4",
+      "serialNumber": "1011",
+      "validFrom": "2018-09-27T07:39:23.000Z",
+      "validTo": "2033-09-27T07:39:23.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.postsignum.cz/crl/psrootqca4.crl",
+        "http://crl2.postsignum.cz/crl/psrootqca4.crl",
+        "http://crl.postsignum.eu/crl/psrootqca4.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.postsignum.cz/OCSP/RQCA4/"
+      ]
+    },
+    {
+      "file": "postsignum-qualified-ca-5.pem",
+      "sha256": "bd0636abc7f7501899c3fbd00ae071bb070b3e82ecaff9a27f6e1fb1e7e2a2ea",
+      "subject": "PostSignum Qualified CA 5",
+      "issuer": "PostSignum Root QCA 4",
+      "serialNumber": "106b",
+      "validFrom": "2018-10-03T05:06:53.000Z",
+      "validTo": "2033-10-03T05:06:53.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.postsignum.cz/crl/psrootqca4.crl",
+        "http://crl2.postsignum.cz/crl/psrootqca4.crl",
+        "http://crl.postsignum.eu/crl/psrootqca4.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.postsignum.cz/OCSP/RQCA4/"
+      ]
+    },
+    {
+      "file": "postsignum-qualified-ca.pem",
+      "sha256": "6e7923e286cfc4a79037cfc9125e1c6671887b1aa5e3673af98f38a467df96c3",
+      "subject": "PostSignum Qualified CA",
+      "issuer": "PostSignum Root QCA",
+      "serialNumber": "1c",
+      "validFrom": "2005-04-07T08:33:17.000Z",
+      "validTo": "2020-04-07T08:32:26.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://www.postsignum.cz/crl/psrootqca.crl",
+        "http://postsignum.ttc.cz/crl/psrootqca.crl",
+        "ldap://qca.postsignum.cz/cn%3dPostSignum%20Root%20QCA,o%3dCeska%20posta%20s.p.%20[IC%2047114983],c%3dCZ?certificateRevocationList",
+        "ldap://postsignum.ttc.cz/cn%3dPostSignum%20Root%20QCA,o%3dCeska%20posta%20s.p.%20[IC%2047114983],c%3dCZ?certificateRevocationList"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "postsignum-qualified-ecc-r1-ca1.pem",
+      "sha256": "e4d6cdf6bd2de1eecefc0b754b9489c58c779fadbc6be239cc478a0ae7a8a23b",
+      "subject": "PostSignum Qualified ECC R1 CA1",
+      "issuer": "PostSignum Root QCA ECC R1",
+      "serialNumber": "7f0250247bbcedfc634822f2fc97e0b2188a465b",
+      "validFrom": "2024-01-30T09:41:08.000Z",
+      "validTo": "2034-01-30T09:41:08.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-521",
+      "crlUrls": [
+        "http://crl.postsignum.cz/crl/psrooteccr1.crl",
+        "http://crl2.postsignum.cz/crl/psrooteccr1.crl",
+        "http://crl.postsignum.eu/crl/psrooteccr1.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.postsignum.cz/OCSP/RQCAECCR1/"
+      ]
+    },
+    {
+      "file": "postsignum-qualified-ecc-r1-ca3.pem",
+      "sha256": "ebf8d157abefca4ad91b5a9b7b04cc2124242c1603af2605cd9395d9c938ef3a",
+      "subject": "PostSignum Qualified ECC R1 CA3",
+      "issuer": "PostSignum Root QCA ECC R1",
+      "serialNumber": "274a71e0a6aca3febded62e4cdbfdd7baee9475a",
+      "validFrom": "2024-01-30T12:08:45.000Z",
+      "validTo": "2034-01-30T12:08:45.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-521",
+      "crlUrls": [
+        "http://crl.postsignum.cz/crl/psrooteccr1.crl",
+        "http://crl2.postsignum.cz/crl/psrooteccr1.crl",
+        "http://crl.postsignum.eu/crl/psrooteccr1.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.postsignum.cz/OCSP/RQCAECCR1/"
+      ]
+    }
+  ]
+}

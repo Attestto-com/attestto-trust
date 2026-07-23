@@ -1,0 +1,26 @@
+{
+  "code": "cz",
+  "name": "Czech Republic",
+  "flag": "🇨🇿",
+  "model": "accredited-tsl",
+  "authority": {
+    "name": "Digitální a informační agentura (DIA) — Digital and Information Agency, Czech eIDAS supervisory body and national Trusted List scheme operator",
+    "operator": "Accredited QTSPs under eIDAS (První certifikační autorita, a.s. (I.CA), Česká pošta, s.p. / PostSignum, Software602 a.s. / ACAeID, eIdentity a.s., and the Komerční banka root, among others)",
+    "url": "https://tsl.gov.cz/publ/TSL_CZ.xtsl"
+  },
+  "governingLaw": "Reglamento eIDAS (UE) 910/2014 · Zákon č. 297/2016 Sb., o službách vytvářejících důvěru pro elektronické transakce",
+  "technology": {
+    "keyAlgorithms": ["RSA-2048", "RSA-3072", "RSA-4096", "EC P-384", "EC P-521"],
+    "signatureStandards": ["CAdES", "PAdES", "XAdES", "ASiC"],
+    "trustList": "ETSI TS 119 612 — the Czech Trusted List (TSL_CZ.xtsl, DIA)"
+  },
+  "capabilities": ["Qualified e-signature & e-seal (eIDAS)", "Qualified timestamping", "Qualified website authentication (QWAC / PSD2)"],
+  "relatedLinks": [
+    { "label": "DIA — Czech Trusted List (TSL_CZ.xtsl)", "url": "https://tsl.gov.cz/publ/TSL_CZ.xtsl" },
+    { "label": "DIA — Digitální a informační agentura", "url": "https://www.dia.gov.cz/" },
+    { "label": "EU LOTL — List of the Lists (European Commission)", "url": "https://ec.europa.eu/tools/lotl/eu-lotl.xml" },
+    { "label": "Independent verifier (Attestto)", "url": "https://verify.attestto.com" }
+  ],
+  "source": { "type": "tsl", "url": "https://tsl.gov.cz/publ/TSL_CZ.xtsl" },
+  "notes": "The Czech Republic's qualified-signature trust is a federation of accredited QTSPs (První certifikační autorita, a.s. (I.CA), Česká pošta, s.p. / PostSignum, Software602 a.s. / ACAeID, eIdentity a.s., and the Komerční banka root, among others) supervised by the Digitální a informační agentura (DIA), the Digital and Information Agency acting as the Czech eIDAS supervisory body, and published in the Czech national eIDAS Trusted List (TSL_CZ.xtsl, ETSI TS 119 612). The 34 currently-granted CA certificates were promoted wholesale after verifying the Trusted List's XAdES signature through the EU LOTL chain of trust: the LOTL signature was checked against the pinned European Commission signing anchor, and the Czech TSL's signature (signer: G=Filip, SN=Bílek, CN=Filip Bílek, O=Digitální a informační agentura, 2.5.4.97=NTRCZ-17651921, C=CZ; cert SHA-256 553819860388eb5dc4836bf16897a58a0964cd04d1acddfc4b2e36d0908e10ae) against the identity the LOTL declares for the Czech Republic, so the list's single seal vouches for every certificate it contains (eIDAS Art. 22). Only services with a currently-granted status and a CA / qualified-certificate service type were selected; withdrawn, deprecated, and non-CA services were dropped. Verification evidence is in VERIFICATION.md. Key algorithms across the set are mixed: 12 CAs use RSA-2048, 10 use RSA-4096, 6 use RSA-3072, 5 use EC P-521, and 1 uses EC P-384. Fourteen certificates in the set have passed their notAfter and are retained as archived-but-granted entries; they surface under the Expired status filter."
+}
