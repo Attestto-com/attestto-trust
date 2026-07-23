@@ -1,0 +1,26 @@
+{
+  "code": "dk",
+  "name": "Denmark",
+  "flag": "🇩🇰",
+  "model": "accredited-tsl",
+  "authority": {
+    "name": "Digitaliseringsstyrelsen — Danish Agency for Digital Government (Agency for Digitisation), Denmark's eIDAS supervisory body and national Trusted List scheme operator",
+    "operator": "Accredited QTSPs under eIDAS (Den Danske Stat / the Danish State PKI, IN Groupe Denmark A/S, and Penneo A/S, among others)",
+    "url": "https://www.digst.dk/TSLDK_v6xml"
+  },
+  "governingLaw": "Reglamento eIDAS (UE) 910/2014 · Lov om supplerende bestemmelser til forordning om elektronisk identifikation og tillidstjenester (LOV nr 617 af 08/06/2016)",
+  "technology": {
+    "keyAlgorithms": ["RSA-4096", "RSA-3072", "EC P-384"],
+    "signatureStandards": ["CAdES", "PAdES", "XAdES", "ASiC"],
+    "trustList": "ETSI TS 119 612 — the Danish Trusted List (TSLDK, Digitaliseringsstyrelsen)"
+  },
+  "capabilities": ["Qualified e-signature & e-seal (eIDAS)", "Qualified timestamping", "Qualified website authentication (QWAC / PSD2)"],
+  "relatedLinks": [
+    { "label": "Digitaliseringsstyrelsen — Danish Trusted List (TSLDK v6)", "url": "https://www.digst.dk/TSLDK_v6xml" },
+    { "label": "Digitaliseringsstyrelsen — Danish Agency for Digital Government", "url": "https://www.digst.dk/" },
+    { "label": "EU LOTL — List of the Lists (European Commission)", "url": "https://ec.europa.eu/tools/lotl/eu-lotl.xml" },
+    { "label": "Independent verifier (Attestto)", "url": "https://verify.attestto.com" }
+  ],
+  "source": { "type": "tsl", "url": "https://www.digst.dk/TSLDK_v6xml" },
+  "notes": "Denmark's qualified-signature trust is a federation of accredited QTSPs (Den Danske Stat / the Danish State PKI, IN Groupe Denmark A/S, and Penneo A/S, among others) supervised by Digitaliseringsstyrelsen, the Danish Agency for Digital Government (Agency for Digitisation) acting as Denmark's eIDAS supervisory body and national Trusted List scheme operator, and published in the Danish national eIDAS Trusted List (TSLDK, ETSI TS 119 612). As an EU / eIDAS participant, Denmark is referenced from the EU LOTL. The 5 currently-granted CA certificates were promoted wholesale after verifying the Trusted List's XAdES signature through the EU LOTL chain of trust: the LOTL signature was checked against the pinned European Commission signing anchor, and the Danish TSL's signature (signer: C=DK, O=Digitaliseringsstyrelsen, CN=Jesper Egelund Siig; cert SHA-256 ebd5d5e16adb24be7553cde77f98d4b105bb5c5be46f51348e342c23dc3f10ef) against the identity the LOTL declares for Denmark, so the list's single seal vouches for every certificate it contains (eIDAS Art. 22). Only services with a currently-granted status and a CA / qualified-certificate service type were selected; withdrawn, deprecated, and non-CA services were dropped. Verification evidence is in VERIFICATION.md. Key algorithms across the set are mixed: the Den Danske Stat kvalificeret rod-CA and the Penneo Qualified Root CA 06/22/RSA use RSA-4096, the Den Danske Stat kvalificeret udstedende-CA 1 uses RSA-3072, and the IN Groupe Denmark Qualified issuing CA I uses EC P-384. The 5 entries span three QTSP PKIs: the Danish State PKI (the self-signed Den Danske Stat kvalificeret rod-CA plus its qualified udstedende-CA 1), the self-signed Penneo Qualified Root CA 06/22/RSA, and the IN Groupe Denmark Qualified issuing CA I. The IN Groupe Denmark Qualified issuing CA I is issued by the IN Groupe Denmark Root CA, which is not carried by the list and must be sourced separately if root-anchored path building is required."
+}

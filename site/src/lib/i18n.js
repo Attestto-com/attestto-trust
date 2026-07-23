@@ -252,6 +252,7 @@ export const getCountryName = (code, lang) => {
     lt: { en: 'Lithuania', es: 'Lituania' },
     at: { en: 'Austria', es: 'Austria' },
     cz: { en: 'Czech Republic', es: 'Chequia' },
+    dk: { en: 'Denmark', es: 'Dinamarca' },
     nl: { en: 'Netherlands', es: 'Países Bajos' },
     no: { en: 'Norway', es: 'Noruega' },
     pe: { en: 'Peru', es: 'Perú' },
