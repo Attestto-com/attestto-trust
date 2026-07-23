@@ -45,6 +45,7 @@ const aboutFacts = [
   data.technology?.signatureStandards?.length > 0 && {
     label: 'Signature standards',
     value: data.technology.signatureStandards.join(', '),
+    linkStandards: true,
   },
   data.revocation?.snapshotExpiresAt && {
     label: 'Revocation snapshot',
@@ -87,6 +88,7 @@ const aboutFacts = [
   <AboutPanel
     ariaLabel="About this PKI"
     notes={data.notes}
+    notesPosition="bottom"
     facts={aboutFacts}
     capabilities={data.capabilities}
     capabilitiesLabel="Capabilities"

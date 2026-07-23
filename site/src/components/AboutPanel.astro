@@ -3,10 +3,30 @@
 // Layout is defined ONCE here and used by country pages and the GLEIF page,
 // so a layout change lands in every consumer.
 //
-// Order: notes (on top) -> facts grid -> capabilities (optional) -> links.
+// Facts render one-per-row (label above value). Notes position is prop-driven:
+//   notesPosition="top"    -> notes render before the facts (GLEIF layout)
+//   notesPosition="bottom" -> notes render after facts + capabilities, before links
+//
+// Order (bottom): facts -> capabilities -> notes -> links.
+// Order (top):    notes -> facts -> capabilities -> links.
+
+// Official ETSI specification URLs for the eIDAS signature standards.
+// Each URL was verified to return HTTP 200 (application/pdf). Version-pinned
+// to the current published deliverable; unrecognized tokens stay plain text.
+const STANDARD_LINKS = {
+  CAdES: 'https://www.etsi.org/deliver/etsi_en/319100_319199/31912201/01.03.01_60/en_31912201v010301p.pdf',
+  PAdES: 'https://www.etsi.org/deliver/etsi_en/319100_319199/31914201/01.02.01_60/en_31914201v010201p.pdf',
+  XAdES: 'https://www.etsi.org/deliver/etsi_en/319100_319199/31913201/01.03.01_60/en_31913201v010301p.pdf',
+  // ASiC and its ASiC-E / ASiC-S profiles are all defined by EN 319 162.
+  ASiC: 'https://www.etsi.org/deliver/etsi_en/319100_319199/31916201/01.01.01_60/en_31916201v010101p.pdf',
+  'ASiC-E': 'https://www.etsi.org/deliver/etsi_en/319100_319199/31916201/01.01.01_60/en_31916201v010101p.pdf',
+  'ASiC-S': 'https://www.etsi.org/deliver/etsi_en/319100_319199/31916201/01.01.01_60/en_31916201v010101p.pdf',
+};
+
 const {
   facts = [],
   notes,
+  notesPosition = 'bottom',
   capabilities = [],
   capabilitiesLabel = 'Capabilities',
   links = [],
@@ -18,16 +38,42 @@ const {
 const shownFacts = facts.filter((f) => f && f.value != null && f.value !== '');
 const shownCaps = capabilities?.filter(Boolean) ?? [];
 const shownLinks = links?.filter((l) => l && l.url) ?? [];
+
+// Split a "Signature standards" value into { token, url } segments so each
+// recognized standard renders as an inline link; unrecognized tokens stay plain.
+const linkifyStandards = (value) =>
+  String(value)
+    .split(',')
+    .map((raw) => {
+      const token = raw.trim();
+      return { token, url: STANDARD_LINKS[token] ?? null };
+    });
 ---
 <section class="pki-about" aria-label={ariaLabel}>
-  {notes && <p class="pki-about__notes">{notes}</p>}
+  {notes && notesPosition === 'top' && <p class="pki-about__notes pki-about__notes--top">{notes}</p>}
 
   {shownFacts.length > 0 && (
     <dl class="pki-about__grid">
       {shownFacts.map((f) => (
-        <div>
+        <div class="pki-about__row">
           <dt>{f.label}</dt>
-          <dd>{f.mono ? <code>{f.value}</code> : f.value}</dd>
+          <dd>
+            {f.linkStandards ? (
+              linkifyStandards(f.value).map((seg, i) => (
+                <>
+                  {i > 0 && <span aria-hidden="true">, </span>}
+                  {seg.url ? (
+                    <a
+                      href={seg.url}
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      title={`${seg.token} specification (${newTabHint})`}
+                    >{seg.token}</a>
+                  ) : seg.token}
+                </>
+              ))
+            ) : f.mono ? <code>{f.value}</code> : f.value}
+          </dd>
         </div>
       ))}
     </dl>
@@ -39,6 +85,8 @@ const shownLinks = links?.filter((l) => l && l.url) ?? [];
       {shownCaps.map((c) => <span class="chip">{c}</span>)}
     </div>
   )}
+
+  {notes && notesPosition === 'bottom' && <p class="pki-about__notes pki-about__notes--bottom">{notes}</p>}
 
   {shownLinks.length > 0 && (
     <ul class="pki-about__links" aria-label={linksLabel}>
@@ -65,13 +113,18 @@ const shownLinks = links?.filter((l) => l && l.url) ?? [];
     border-radius: var(--radius-md);
     background: var(--color-surface);
   }
-  /* Notes sit on top of the facts (the /gleif layout, now shared everywhere). */
-  .pki-about__notes { margin: 0 0 var(--space-4); color: var(--color-text-muted); font-size: var(--text-sm); line-height: 1.5; }
-  .pki-about__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: var(--space-3); margin: 0; }
+  .pki-about__notes { margin: 0; color: var(--color-text-muted); font-size: var(--text-sm); line-height: 1.5; }
+  .pki-about__notes--top { margin-bottom: var(--space-4); }
+  .pki-about__notes--bottom { margin-top: var(--space-4); }
+  /* One fact per row: small uppercase label, value stacked below. */
+  .pki-about__grid { display: grid; grid-template-columns: 1fr; gap: var(--space-3); margin: 0; }
+  .pki-about__row { padding-bottom: var(--space-2); border-bottom: 1px solid var(--color-border); }
+  .pki-about__row:last-child { padding-bottom: 0; border-bottom: none; }
   .pki-about__grid dt { font-size: var(--text-xs); color: var(--color-text-subtle); text-transform: uppercase; letter-spacing: 0.03em; }
   .pki-about__grid dd { margin: 2px 0 0; font-size: var(--text-sm); font-weight: 600; }
   /* Monospace values (AID / fingerprint) wrap instead of overflowing. */
   .pki-about__grid dd code { font-size: var(--text-xs); word-break: break-all; font-weight: 400; }
+  .pki-about__grid dd a { font-weight: 600; }
   .pki-about__caps { margin-top: var(--space-3); display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-2); }
   .pki-about__caplabel { font-size: var(--text-xs); color: var(--color-text-subtle); text-transform: uppercase; letter-spacing: 0.03em; }
   .chip { display: inline-block; padding: 2px 10px; border-radius: 999px; background: var(--color-highlight-soft); color: var(--color-highlight); font-size: var(--text-xs); font-weight: 600; }

@@ -45,6 +45,7 @@ const aboutFacts = [
   data.technology?.signatureStandards?.length > 0 && {
     label: 'Estándares de firma',
     value: data.technology.signatureStandards.join(', '),
+    linkStandards: true,
   },
   data.revocation?.snapshotExpiresAt && {
     label: 'Instantánea de revocación',
@@ -87,6 +88,7 @@ const aboutFacts = [
   <AboutPanel
     ariaLabel="Sobre esta PKI"
     notes={data.notes}
+    notesPosition="bottom"
     facts={aboutFacts}
     capabilities={data.capabilities}
     capabilitiesLabel="Capacidades"
