@@ -1,8 +1,13 @@
 # attestto-trust
 
+[![Live directory](https://img.shields.io/badge/directory-trust.attestto.org-7B72ED)](https://trust.attestto.org)
 [![npm version](https://img.shields.io/npm/v/@attestto/trust.svg)](https://www.npmjs.com/package/@attestto/trust)
+[![License: Apache-2.0](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](./LICENSE)
+[![Sponsor](https://img.shields.io/badge/sponsor-%E2%9D%A4-db61a2)](https://github.com/sponsors/Attestto-com)
 
 > Independent public mirror of national digital signature trust roots and intermediates. Hash-pinned, version-controlled, git history is the audit trail.
+
+**Browse the live directory at [trust.attestto.org](https://trust.attestto.org)** — every mirrored root and intermediate, per country, with its SHA-256 fingerprint, validity window, key algorithm, CRL/OCSP endpoints, and a one-click `.pem` download.
 
 `@attestto/trust` is a critical trust infrastructure piece for the [Attestto Open](https://attestto.org) ecosystem. Most national PKI repositories are partially broken — wrong content-types, half-deployed HTTPS, mixed-case URL quirks, missing branches, dead links. Every developer integrating a country's digital signature stack hits the same wall. This repo mirrors the binary bytes published by each country's issuing authority as-is, hash-pinned, and version-controlled. The legal source of truth remains the issuing authority in each country. We are not a Certificate Authority — we do not issue, reissue, sign, or vouch for any certificate. **Always verify the SHA-256 against the issuing authority's repository when you can reach it.**
 
@@ -50,19 +55,15 @@ sha256sum attestto-trust/countries/cr/current/root-ca.pem
 
 ## Countries
 
-| Country | Code | Status | Branches covered |
+| Country | Package export | Live page | Authority |
 |---|---|---|---|
-| Costa Rica | [`cr/`](countries/cr) | ✅ live | Persona Física, Persona Jurídica, Sellado de Tiempo |
-| Brazil | [`br/`](countries/br) | ✅ live | AC Raiz v5, v10, v11, v12 |
-| Mexico | `mx/` | planned | — |
-| Argentina | [`ar/`](countries/ar) | ✅ live | AC Raíz + Autoridad Certificante Firma Digital |
-| Spain | [`es/`](countries/es) | ✅ live | AC Raíz FNMT-RCM, AC FNMT Usuarios |
-| Colombia | `co/` | planned | — |
-| Chile | `cl/` | planned | — |
-| Peru | `pe/` | planned | — |
-| Ecuador | `ec/` | planned | — |
-| Uruguay | `uy/` | planned | — |
-| Panama | `pa/` | planned | — |
+| Costa Rica | [`cr/`](countries/cr) | [trust.attestto.org/cr](https://trust.attestto.org/cr) | BCCR / SINPE / MICITT Firma Digital |
+| Brazil | [`br/`](countries/br) | [/br](https://trust.attestto.org/br) | ITI — ICP-Brasil |
+| Argentina | [`ar/`](countries/ar) | [/ar](https://trust.attestto.org/ar) | AC Raíz de la República Argentina |
+| Spain | [`es/`](countries/es) | [/es](https://trust.attestto.org/es) | FNMT-RCM (Ceres) |
+| Peru | [`pe/`](countries/pe) | [/pe](https://trust.attestto.org/pe) | INDECOPI — IOFE (RENIEC, ONPE, ECERNEP) |
+
+More countries are staged and land after a per-country promotion review: Mexico, Colombia, Chile, Ecuador, Uruguay, Panama, and several European trusted lists.
 
 ## Key concepts
 
