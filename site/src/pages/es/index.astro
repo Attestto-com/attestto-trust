@@ -10,6 +10,7 @@ const countries = loadAllCountries();
 const anchors = loadGlobalAnchors();
 const totalCountries = countries.length;
 const totalCerts = countries.reduce((sum, c) => sum + (c.count || 0), 0);
+const totalDids = countries.reduce((sum, c) => sum + (c.didCount || 0), 0);
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 const lang = 'es';
@@ -27,6 +28,7 @@ const t = TRANSLATIONS[lang];
     <dl class="intro__stats" aria-label={`${totalCountries} ${t.homeCountriesH2}, ${totalCerts} ${t.countryCertsStat}`}>
       <div><dt>{t.homeCountriesH2}</dt><dd>{totalCountries}</dd></div>
       <div><dt>{t.countryCertsStat}</dt><dd>{totalCerts.toLocaleString(lang)}</dd></div>
+      <div><dt>{t.countryDidStat}</dt><dd>{totalDids.toLocaleString(lang)}</dd></div>
     </dl>
   </section>
 
