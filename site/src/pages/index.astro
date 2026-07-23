@@ -1,10 +1,13 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import CountryTable from '../components/CountryTable.astro';
+import GlobalAnchorCard from '../components/GlobalAnchorCard.astro';
 import { loadAllCountries } from '../lib/trust.js';
+import { loadGlobalAnchors } from '../lib/anchors.js';
 import { TRANSLATIONS } from '../lib/i18n.js';
 
 const countries = loadAllCountries();
+const anchors = loadGlobalAnchors();
 const totalCountries = countries.length;
 const totalCerts = countries.reduce((sum, c) => sum + (c.count || 0), 0);
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
@@ -26,6 +29,13 @@ const t = TRANSLATIONS[lang];
       <div><dt>{t.countryCertsStat}</dt><dd>{totalCerts.toLocaleString(lang)}</dd></div>
     </dl>
   </section>
+
+  {anchors.length > 0 && (
+    <section id="global" aria-labelledby="global-h">
+      <h2 id="global-h">{t.homeGlobalH2}</h2>
+      {anchors.map((anchor) => <GlobalAnchorCard anchor={anchor} lang={lang} base={base} t={t} />)}
+    </section>
+  )}
 
   <section id="countries" aria-labelledby="countries-h">
     <h2 id="countries-h">{t.homeCountriesH2}</h2>

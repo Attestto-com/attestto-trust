@@ -106,6 +106,14 @@ export const TRANSLATIONS = {
     validityDayLeft: '{0} day left',
     validityDaysAgo: '{0} days ago',
     validityDayAgo: '{0} day ago',
+    // Global anchors
+    homeGlobalH2: 'Global / Organizational identity',
+    globalAnchorTag: 'Global root',
+    globalAnchorRootAid: 'Root AID',
+    globalAnchorQvis: 'Qualified issuers',
+    globalAnchorFraming: 'Not a national CA. Organizational identity (vLEI / LEI) that we mirror; verify against GLEIF as the source of truth.',
+    globalAnchorView: 'View anchor',
+    globalAnchorSource: 'GLEIF root of trust',
   },
   es: {
     // Layout
@@ -213,6 +221,14 @@ export const TRANSLATIONS = {
     validityDayLeft: 'queda {0} día',
     validityDaysAgo: 'hace {0} días',
     validityDayAgo: 'hace {0} día',
+    // Global anchors
+    homeGlobalH2: 'Identidad global / organizacional',
+    globalAnchorTag: 'Raíz global',
+    globalAnchorRootAid: 'AID raíz',
+    globalAnchorQvis: 'Emisores cualificados',
+    globalAnchorFraming: 'No es una CA nacional. Identidad organizacional (vLEI / LEI) que reflejamos; verifique con GLEIF como fuente de verdad.',
+    globalAnchorView: 'Ver ancla',
+    globalAnchorSource: 'Raíz de confianza de GLEIF',
   }
 };
 
