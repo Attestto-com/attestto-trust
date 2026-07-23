@@ -1,6 +1,6 @@
 {
   "country": "ES",
-  "generatedAt": "2026-07-23T08:23:22.024Z",
+  "generatedAt": "2026-07-23T10:02:15.978Z",
   "count": 2,
   "certificates": [
     {
@@ -11,7 +11,15 @@
       "serialNumber": "455f3ae15c21cdba544f82aa4751ebdb",
       "validFrom": "2014-10-28T11:48:58.000Z",
       "validTo": "2029-10-28T11:48:58.000Z",
-      "role": "intermediate"
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "ldap://ldapfnmt.cert.fnmt.es/CN=CRL,OU=AC%20RAIZ%20FNMT-RCM,O=FNMT-RCM,C=ES?authorityRevocationList;binary?base?objectclass=cRLDistributionPoint",
+        "http://www.cert.fnmt.es/crls/ARLFNMTRCM.crl"
+      ],
+      "ocspUrls": [
+        "http://ocspfnmtrcmca.cert.fnmt.es/ocspfnmtrcmca/OcspResponder"
+      ]
     },
     {
       "file": "AC-RAIZ-FNMT-RCM.pem",
@@ -21,7 +29,10 @@
       "serialNumber": "5d938d306736c8061d1ac754846907",
       "validFrom": "2008-10-29T15:59:56.000Z",
       "validTo": "2030-01-01T00:00:00.000Z",
-      "role": "root"
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
     }
   ]
 }

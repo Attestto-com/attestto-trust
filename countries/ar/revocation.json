@@ -1,0 +1,22 @@
+{
+  "country": "AR",
+  "generatedAt": "2026-07-23T10:03:55.107Z",
+  "snapshotExpiresAt": "2026-09-19T23:52:58.000Z",
+  "note": "snapshotExpiresAt is the earliest CRL nextUpdate across the promoted CAs; refresh revocation data by this date. Roots carry no CRL (trust anchors are not CRL-revocable).",
+  "crls": [
+    {
+      "url": "http://acraiz.cdp1.gov.ar/ca.crl",
+      "status": "ok",
+      "thisUpdate": "2026-03-19T11:32:58.000Z",
+      "nextUpdate": "2026-09-19T23:52:58.000Z",
+      "revokedCount": 3
+    },
+    {
+      "url": "http://acraiz.cdp2.gov.ar/ca.crl",
+      "status": "ok",
+      "thisUpdate": "2026-03-19T11:32:58.000Z",
+      "nextUpdate": "2026-09-19T23:52:58.000Z",
+      "revokedCount": 3
+    }
+  ]
+}

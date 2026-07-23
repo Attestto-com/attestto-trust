@@ -13,11 +13,13 @@
  *
  * Run after every cert add/rotate. CI fails the build if manifest.json drifts.
  */
+import 'reflect-metadata'
 import { readFileSync, writeFileSync, readdirSync, existsSync, statSync } from 'node:fs'
-import { createHash } from 'node:crypto'
+import { createHash, X509Certificate } from 'node:crypto'
 import { join, dirname } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import forge from 'node-forge'
+import * as x509 from '@peculiar/x509'
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..')
 const countriesDir = join(root, 'countries')
@@ -36,6 +38,61 @@ const cn = (name) =>
   decodeUtf8(name.getField('O')?.value) ||
   null
 
+// node-forge cannot read non-RSA (e.g. EC) public keys and throws on such
+// certs. The platform X.509 parser handles EC, so we fall back to it. It reads
+// proper UTF-8 (no binary re-decode needed) and returns the same fields.
+const nativeRdn = (dn, key) => {
+  for (const part of dn.split(/\r?\n|,(?=\s*[A-Za-z]+=)/)) {
+    const m = part.trim().match(/^([A-Za-z.]+)=(.*)$/)
+    if (m && m[1] === key) return m[2].trim()
+  }
+  return null
+}
+const nativeName = (dn) => nativeRdn(dn, 'CN') || nativeRdn(dn, 'OU') || nativeRdn(dn, 'O') || null
+
+// Static, cert-embedded metadata used for display: key algorithm, and the CRL
+// and OCSP endpoints (present on intermediates/leaves; roots are self-signed and
+// carry none). @peculiar/x509 parses RSA and EC uniformly. These fields are
+// deterministic (fixed in the cert) so they are safe in the CI-checked manifest —
+// unlike CRL freshness (nextUpdate), which is time-varying and lives elsewhere.
+function extractExtras(pem) {
+  const cert = new x509.X509Certificate(pem)
+  const a = cert.publicKey.algorithm
+  let keyAlgorithm = a.name
+  if (a.name?.startsWith('RSA')) keyAlgorithm = `RSA-${a.modulusLength}`
+  else if (a.name === 'ECDSA') keyAlgorithm = `EC ${a.namedCurve}`
+
+  const crlExt = cert.getExtension(x509.CRLDistributionPointsExtension)
+  const crlUrls = crlExt
+    ? crlExt.distributionPoints.flatMap((d) =>
+        (d.distributionPoint?.fullName || [])
+          .filter((n) => n.uniformResourceIdentifier)
+          .map((n) => n.uniformResourceIdentifier),
+      )
+    : []
+
+  const aiaExt = cert.getExtension(x509.AuthorityInfoAccessExtension)
+  const ocspUrls = (aiaExt?.ocsp || []).map((o) => o.value || o).filter(Boolean)
+
+  return { keyAlgorithm, crlUrls, ocspUrls }
+}
+
+function parseCertNative(pem, file) {
+  const x = new X509Certificate(pem)
+  const subject = nativeName(x.subject)
+  const issuer = nativeName(x.issuer)
+  return {
+    file,
+    sha256: createHash('sha256').update(x.raw).digest('hex'),
+    subject,
+    issuer,
+    serialNumber: x.serialNumber.toLowerCase(),
+    validFrom: new Date(x.validFrom).toISOString(),
+    validTo: new Date(x.validTo).toISOString(),
+    role: subject === issuer ? 'root' : 'intermediate',
+  }
+}
+
 function refreshCountry(iso2) {
   const currentDir = join(countriesDir, iso2, 'current')
   if (!existsSync(currentDir)) {
@@ -48,21 +105,28 @@ function refreshCountry(iso2) {
 
   const entries = pems.map((file) => {
     const pem = readFileSync(join(currentDir, file), 'utf8')
-    const cert = forge.pki.certificateFromPem(pem)
-    const der = forge.asn1.toDer(forge.pki.certificateToAsn1(cert)).getBytes()
-    const sha256 = createHash('sha256').update(Buffer.from(der, 'binary')).digest('hex')
-    const subjectCN = cn(cert.subject)
-    const issuerCN = cn(cert.issuer)
-    return {
-      file,
-      sha256,
-      subject: subjectCN,
-      issuer: issuerCN,
-      serialNumber: cert.serialNumber,
-      validFrom: cert.validity.notBefore.toISOString(),
-      validTo: cert.validity.notAfter.toISOString(),
-      role: subjectCN === issuerCN ? 'root' : 'intermediate',
+    let base
+    try {
+      const cert = forge.pki.certificateFromPem(pem)
+      const der = forge.asn1.toDer(forge.pki.certificateToAsn1(cert)).getBytes()
+      const sha256 = createHash('sha256').update(Buffer.from(der, 'binary')).digest('hex')
+      const subjectCN = cn(cert.subject)
+      const issuerCN = cn(cert.issuer)
+      base = {
+        file,
+        sha256,
+        subject: subjectCN,
+        issuer: issuerCN,
+        serialNumber: cert.serialNumber,
+        validFrom: cert.validity.notBefore.toISOString(),
+        validTo: cert.validity.notAfter.toISOString(),
+        role: subjectCN === issuerCN ? 'root' : 'intermediate',
+      }
+    } catch {
+      // Non-RSA key (e.g. EC): node-forge can't read it. Use the platform parser.
+      base = parseCertNative(pem, file)
     }
+    return { ...base, ...extractExtras(pem) }
   })
 
   // Content-bearing fields only. generatedAt is intentionally excluded so we

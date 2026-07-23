@@ -1,6 +1,6 @@
 {
   "country": "BR",
-  "generatedAt": "2026-07-21T00:50:21.137Z",
+  "generatedAt": "2026-07-23T10:02:15.927Z",
   "count": 4,
   "certificates": [
     {
@@ -11,7 +11,12 @@
       "serialNumber": "00d2d58b44bf819342",
       "validFrom": "2019-07-01T19:15:59.000Z",
       "validTo": "2032-07-01T12:00:59.000Z",
-      "role": "root"
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://acraiz.icpbrasil.gov.br/LCRacraizv10.crl"
+      ],
+      "ocspUrls": []
     },
     {
       "file": "AC-RAIZ-ICP-BRASIL-v11.pem",
@@ -21,7 +26,12 @@
       "serialNumber": "242b60d4cd43697f",
       "validFrom": "2019-07-01T19:26:18.000Z",
       "validTo": "2032-07-01T12:00:18.000Z",
-      "role": "root"
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://acraiz.icpbrasil.gov.br/LCRacraizv11.crl"
+      ],
+      "ocspUrls": []
     },
     {
       "file": "AC-RAIZ-ICP-BRASIL-v12.pem",
@@ -31,7 +41,12 @@
       "serialNumber": "00e18ff4b61d07bd0f",
       "validFrom": "2024-10-22T14:41:24.000Z",
       "validTo": "2037-10-22T12:00:24.000Z",
-      "role": "root"
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://acraiz.icpbrasil.gov.br/LCRacraizv12.crl"
+      ],
+      "ocspUrls": []
     },
     {
       "file": "AC-RAIZ-ICP-BRASIL-v5.pem",
@@ -41,7 +56,12 @@
       "serialNumber": "01",
       "validFrom": "2016-03-02T13:01:38.000Z",
       "validTo": "2029-03-02T23:59:38.000Z",
-      "role": "root"
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://acraiz.icpbrasil.gov.br/LCRacraizv5.crl"
+      ],
+      "ocspUrls": []
     }
   ]
 }

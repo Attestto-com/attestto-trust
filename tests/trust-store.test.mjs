@@ -33,15 +33,17 @@ import * as cr from '../countries/cr/index.js'
 import * as br from '../countries/br/index.js'
 import * as ar from '../countries/ar/index.js'
 import * as es from '../countries/es/index.js'
+import * as pe from '../countries/pe/index.js'
 
 // ── Root exports ───────────────────────────────────────────────────
 
 describe('root index.js exports', () => {
-  it('exports cr, br, ar, es namespaces', () => {
+  it('exports cr, br, ar, es, pe namespaces', () => {
     assert.ok(trust.cr, 'cr namespace missing')
     assert.ok(trust.br, 'br namespace missing')
     assert.ok(trust.ar, 'ar namespace missing')
     assert.ok(trust.es, 'es namespace missing')
+    assert.ok(trust.pe, 'pe namespace missing')
   })
 
   it('each namespace has ALL_CERTS array', () => {
@@ -49,6 +51,7 @@ describe('root index.js exports', () => {
     assert.ok(Array.isArray(trust.br.ALL_CERTS), 'br.ALL_CERTS not an array')
     assert.ok(Array.isArray(trust.ar.ALL_CERTS), 'ar.ALL_CERTS not an array')
     assert.ok(Array.isArray(trust.es.ALL_CERTS), 'es.ALL_CERTS not an array')
+    assert.ok(Array.isArray(trust.pe.ALL_CERTS), 'pe.ALL_CERTS not an array')
   })
 })
 
@@ -199,12 +202,52 @@ describe('Spain (es)', () => {
   })
 })
 
+// ── Country: Peru ──────────────────────────────────────────────────
+
+describe('Peru (pe)', () => {
+  it('exports 8 national-authority certificates', () => {
+    assert.equal(pe.ALL_CERTS.length, 8, `Expected 8, got ${pe.ALL_CERTS.length}`)
+  })
+
+  it('includes RENIEC, ONPE and ECERNEP/PCM anchors', () => {
+    const names = pe.ALL_CERTS.map(c => c.exportName)
+    assert.ok(names.includes('RENIEC_CERTIFICATION_AUTHORITY'), 'Missing RENIEC CA')
+    assert.ok(names.includes('ECEP_ONPE_CA_ROOT_5'), 'Missing ONPE root')
+    assert.ok(names.includes('ECERNEP_PERU_CA_ROOT_6'), 'Missing ECERNEP ROOT 6 (EC)')
+  })
+
+  it('all PEM strings are valid format', () => {
+    for (const cert of pe.ALL_CERTS) {
+      assert.ok(cert.pem.startsWith('-----BEGIN CERTIFICATE-----'), `${cert.name}: bad PEM header`)
+      assert.ok(cert.pem.trimEnd().endsWith('-----END CERTIFICATE-----'), `${cert.name}: bad PEM footer`)
+    }
+  })
+
+  it('manifest SHA-256 hashes match DER content of PEM files (incl. the EC root)', () => {
+    const manifestPath = join(ROOT, 'countries/pe/current/manifest.json')
+    assert.ok(existsSync(manifestPath), 'manifest.json missing')
+    const manifest = JSON.parse(readFileSync(manifestPath, 'utf-8'))
+    for (const entry of manifest.certificates) {
+      const pemPath = join(ROOT, 'countries/pe/current', entry.file)
+      assert.ok(existsSync(pemPath), `PEM file missing: ${entry.file}`)
+      const der = pemToDer(readFileSync(pemPath, 'utf-8'))
+      const sha256 = createHash('sha256').update(der).digest('hex')
+      assert.equal(sha256, entry.sha256, `SHA-256 mismatch for ${entry.file}`)
+    }
+  })
+})
+
 // ── Cross-country checks ───────────────────────────────────────────
 
 describe('cross-country integrity', () => {
-  it('total trust store has 18 certificates (CR 10 + BR 4 + AR 2 + ES 2)', () => {
-    const total = cr.ALL_CERTS.length + br.ALL_CERTS.length + ar.ALL_CERTS.length + es.ALL_CERTS.length
-    assert.equal(total, 18, `Expected 18 total, got ${total}`)
+  it('total trust store has 26 certificates (CR 10 + BR 4 + AR 2 + ES 2 + PE 8)', () => {
+    const total =
+      cr.ALL_CERTS.length +
+      br.ALL_CERTS.length +
+      ar.ALL_CERTS.length +
+      es.ALL_CERTS.length +
+      pe.ALL_CERTS.length
+    assert.equal(total, 26, `Expected 26 total, got ${total}`)
   })
 
   it('no duplicate export names across countries', () => {
@@ -213,13 +256,14 @@ describe('cross-country integrity', () => {
       ...br.ALL_CERTS.map(c => c.exportName),
       ...ar.ALL_CERTS.map(c => c.exportName),
       ...es.ALL_CERTS.map(c => c.exportName),
+      ...pe.ALL_CERTS.map(c => c.exportName),
     ]
     const unique = new Set(allNames)
     assert.equal(unique.size, allNames.length, 'Duplicate export names found')
   })
 
   it('every PEM decodes to valid base64 content', () => {
-    const all = [...cr.ALL_CERTS, ...br.ALL_CERTS, ...ar.ALL_CERTS, ...es.ALL_CERTS]
+    const all = [...cr.ALL_CERTS, ...br.ALL_CERTS, ...ar.ALL_CERTS, ...es.ALL_CERTS, ...pe.ALL_CERTS]
     for (const cert of all) {
       const b64 = cert.pem
         .replace('-----BEGIN CERTIFICATE-----', '')

@@ -12,7 +12,7 @@ const repoRoot = resolve(siteRoot, '..');
 const countriesDir = join(repoRoot, 'countries');
 const outRoot = join(siteRoot, 'public', 'pems');
 
-const COUNTRIES = ['cr', 'br', 'ar'];
+const COUNTRIES = ['cr', 'br', 'ar', 'es', 'pe'];
 
 async function main() {
   // Clean previous output for a deterministic build.

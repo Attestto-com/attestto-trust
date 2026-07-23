@@ -1,6 +1,6 @@
 {
   "country": "CR",
-  "generatedAt": "2026-07-22T08:59:24.506Z",
+  "generatedAt": "2026-07-23T10:02:15.973Z",
   "count": 10,
   "certificates": [
     {
@@ -11,7 +11,14 @@
       "serialNumber": "480000075fb95366adf65a608700020000075f",
       "validFrom": "2024-06-07T23:39:29.000Z",
       "validTo": "2028-06-06T23:39:29.000Z",
-      "role": "intermediate"
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://fdi.sinpe.fi.cr/repositorio/CA%20SINPE%20-%20PERSONA%20JURIDICA%20v2(2).crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.sinpe.fi.cr/ocsp"
+      ]
     },
     {
       "file": "CA POLITICA PERSONA FISICA - COSTA RICA v2.pem",
@@ -21,7 +28,13 @@
       "serialNumber": "4e00000002738de677fe8e6840000000000002",
       "validFrom": "2015-02-25T18:08:38.000Z",
       "validTo": "2031-02-25T18:18:38.000Z",
-      "role": "intermediate"
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://www.firmadigital.go.cr/repositorio/CA%20RAIZ%20NACIONAL%20-%20COSTA%20RICA%20v2.crl",
+        "http://www.micit.go.cr/firmadigital/repositorio/CA%20RAIZ%20NACIONAL%20-%20COSTA%20RICA%20v2.crl"
+      ],
+      "ocspUrls": []
     },
     {
       "file": "CA POLITICA PERSONA JURIDICA - COSTA RICA v2.pem",
@@ -31,7 +44,13 @@
       "serialNumber": "4e00000003def1a16e0fc7ef05000000000003",
       "validFrom": "2015-02-25T21:11:37.000Z",
       "validTo": "2031-02-25T21:21:37.000Z",
-      "role": "intermediate"
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://www.firmadigital.go.cr/repositorio/CA%20RAIZ%20NACIONAL%20-%20COSTA%20RICA%20v2.crl",
+        "http://www.micit.go.cr/firmadigital/repositorio/CA%20RAIZ%20NACIONAL%20-%20COSTA%20RICA%20v2.crl"
+      ],
+      "ocspUrls": []
     },
     {
       "file": "CA POLITICA SELLADO DE TIEMPO - COSTA RICA v2.pem",
@@ -41,7 +60,13 @@
       "serialNumber": "4e0000000498391ff803b85bdc000000000004",
       "validFrom": "2015-02-25T21:47:43.000Z",
       "validTo": "2031-02-25T21:57:43.000Z",
-      "role": "intermediate"
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://www.firmadigital.go.cr/repositorio/CA%20RAIZ%20NACIONAL%20-%20COSTA%20RICA%20v2.crl",
+        "http://www.micit.go.cr/firmadigital/repositorio/CA%20RAIZ%20NACIONAL%20-%20COSTA%20RICA%20v2.crl"
+      ],
+      "ocspUrls": []
     },
     {
       "file": "CA RAIZ NACIONAL - COSTA RICA v2.pem",
@@ -51,7 +76,10 @@
       "serialNumber": "74b8cf638fab72bc46c1d2bacd00050c",
       "validFrom": "2015-02-24T22:19:55.000Z",
       "validTo": "2039-02-24T22:28:44.000Z",
-      "role": "root"
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
     },
     {
       "file": "CA SINPE - PERSONA FISICA v2 (2023).pem",
@@ -61,7 +89,13 @@
       "serialNumber": "4b000000070070bff1d8840e7e000000000007",
       "validFrom": "2023-01-28T19:54:14.000Z",
       "validTo": "2031-01-28T20:04:14.000Z",
-      "role": "intermediate"
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://www.firmadigital.go.cr/repositorio/CA%20POLITICA%20PERSONA%20FISICA%20-%20COSTA%20RICA%20v2.crl",
+        "http://www.micit.go.cr/firmadigital/repositorio/CA%20POLITICA%20PERSONA%20FISICA%20-%20COSTA%20RICA%20v2.crl"
+      ],
+      "ocspUrls": []
     },
     {
       "file": "CA SINPE - PERSONA FISICA v2 (2026).pem",
@@ -71,7 +105,13 @@
       "serialNumber": "4b0000000a08df187f9bc3cb5100010000000a",
       "validFrom": "2026-02-08T23:50:40.000Z",
       "validTo": "2034-02-09T00:00:40.000Z",
-      "role": "intermediate"
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-3072",
+      "crlUrls": [
+        "http://www.firmadigital.go.cr/repositorio/CA%20POLITICA%20PERSONA%20FISICA%20-%20COSTA%20RICA%20v2(1).crl",
+        "http://www.micit.go.cr/firmadigital/repositorio/CA%20POLITICA%20PERSONA%20FISICA%20-%20COSTA%20RICA%20v2(1).crl"
+      ],
+      "ocspUrls": []
     },
     {
       "file": "CA SINPE - PERSONA FISICA v2.pem",
@@ -81,7 +121,13 @@
       "serialNumber": "4b00000005dbfe03b535751ac3000000000005",
       "validFrom": "2019-12-20T21:54:01.000Z",
       "validTo": "2027-12-20T22:04:01.000Z",
-      "role": "intermediate"
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://www.firmadigital.go.cr/repositorio/CA%20POLITICA%20PERSONA%20FISICA%20-%20COSTA%20RICA%20v2.crl",
+        "http://www.micit.go.cr/firmadigital/repositorio/CA%20POLITICA%20PERSONA%20FISICA%20-%20COSTA%20RICA%20v2.crl"
+      ],
+      "ocspUrls": []
     },
     {
       "file": "CA SINPE - PERSONA JURIDICA v2 (2026).pem",
@@ -91,7 +137,13 @@
       "serialNumber": "70000000098aae36928801fcbc000100000009",
       "validFrom": "2026-02-09T00:00:27.000Z",
       "validTo": "2034-02-09T00:10:27.000Z",
-      "role": "intermediate"
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-3072",
+      "crlUrls": [
+        "http://www.firmadigital.go.cr/repositorio/CA%20POLITICA%20PERSONA%20JURIDICA%20-%20COSTA%20RICA%20v2(1).crl",
+        "http://www.micit.go.cr/firmadigital/repositorio/CA%20POLITICA%20PERSONA%20JURIDICA%20-%20COSTA%20RICA%20v2(1).crl"
+      ],
+      "ocspUrls": []
     },
     {
       "file": "CA SINPE - PERSONA JURIDICA v2.pem",
@@ -101,7 +153,13 @@
       "serialNumber": "70000000069d5084d8cbea738a000000000006",
       "validFrom": "2023-01-14T21:40:38.000Z",
       "validTo": "2031-01-14T21:50:38.000Z",
-      "role": "intermediate"
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://www.firmadigital.go.cr/repositorio/CA%20POLITICA%20PERSONA%20JURIDICA%20-%20COSTA%20RICA%20v2.crl",
+        "http://www.micit.go.cr/firmadigital/repositorio/CA%20POLITICA%20PERSONA%20JURIDICA%20-%20COSTA%20RICA%20v2.crl"
+      ],
+      "ocspUrls": []
     }
   ]
 }

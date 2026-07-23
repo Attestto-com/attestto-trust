@@ -1,0 +1,24 @@
+{
+  "code": "cr",
+  "name": "Costa Rica",
+  "flag": "🇨🇷",
+  "model": "national-hierarchy",
+  "authority": {
+    "name": "MICITT — Dirección de Certificadores de Firma Digital (DCFD)",
+    "operator": "BCCR / SINPE",
+    "url": "https://www.bccr.fi.cr/firma-digital"
+  },
+  "governingLaw": "Ley 8454",
+  "technology": {
+    "keyAlgorithms": ["RSA-4096"],
+    "signatureStandards": ["CAdES", "PAdES", "XAdES"]
+  },
+  "capabilities": ["Persona Física", "Persona Jurídica", "Sellado de Tiempo", "Sello Electrónico"],
+  "relatedLinks": [
+    { "label": "BCCR — Firma Digital", "url": "https://www.bccr.fi.cr/firma-digital" },
+    { "label": "MICITT — DCFD (acreditación)", "url": "https://www.micitt.go.cr/servicios/firma-digital-certificada" },
+    { "label": "Independent verifier (Attestto)", "url": "https://verify.attestto.com" }
+  ],
+  "source": { "type": "manual", "note": "Root and CA certificates published by BCCR/MICITT repositories." },
+  "notes": "Single national hierarchy: one root (CA RAIZ NACIONAL - COSTA RICA) operated by BCCR/SINPE under MICITT accreditation. RSA throughout; OCSP available (ocsp.sinpe.fi.cr)."
+}
