@@ -24,6 +24,7 @@ const anchor = loadGlobalAnchors().find((a) => a.id === 'gleif-vlei');
   </header>
 
   <section class="pki-about" aria-label="Acerca de esta ancla">
+    <p class="pki-about__notes">{anchor.notes}</p>
     <dl class="pki-about__grid">
       <div><dt>{t.globalAnchorRootAid}</dt><dd><code>{anchor.rootAid.rootAid ?? anchor.rootAid.aid}</code></dd></div>
       {anchor.rootAid.geda && <div><dt>{t.globalAnchorGeda}</dt><dd><code>{anchor.rootAid.geda}</code></dd></div>}
@@ -33,7 +34,6 @@ const anchor = loadGlobalAnchors().find((a) => a.id === 'gleif-vlei');
       <div><dt>Credencial</dt><dd>{anchor.technology.credentialFormat}</dd></div>
       <div><dt>Cadena</dt><dd>{anchor.technology.chain}</dd></div>
     </dl>
-    <p class="pki-about__notes">{anchor.notes}</p>
     <ul class="pki-about__links">
       {anchor.relatedLinks.map((l) => <li><a href={l.url} rel="noopener noreferrer" target="_blank">{l.label} ↗</a></li>)}
     </ul>
@@ -64,7 +64,7 @@ const anchor = loadGlobalAnchors().find((a) => a.id === 'gleif-vlei');
   .pki-about__grid dd { margin: 0; font-size: var(--text-sm); font-weight: 500; }
   @media (max-width: 560px) { .pki-about__grid > div { grid-template-columns: 1fr; gap: 2px; } }
   .pki-about__grid dd code { font-size: var(--text-xs); word-break: break-all; font-weight: 400; }
-  .pki-about__notes { margin: var(--space-3) 0 0; color: var(--color-text-muted); font-size: var(--text-sm); line-height: 1.5; }
+  .pki-about__notes { margin: 0 0 var(--space-4); color: var(--color-text-muted); font-size: var(--text-sm); line-height: 1.5; }
   .pki-about__links { margin: var(--space-3) 0 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: var(--space-3); }
   .pki-about__links a { font-size: var(--text-sm); }
   .qvi-table { width: 100%; border-collapse: collapse; font-size: var(--text-sm); }

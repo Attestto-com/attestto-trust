@@ -1,13 +1,13 @@
 {
   "_comment": "Editable overlay: maps QVI LEI -> external link (official site or future referral link). Not part of the hash-pinned GLEIF mirror.",
   "links": {
-    "83680008RNIDW9LD8Z21": { "name": "SHECA", "url": null },
-    "353800460NTF5K7NU940": { "name": "TOPPAN Edge Inc.", "url": null },
-    "984500C2EED6A7382A87": { "name": "TradeGo", "url": null },
-    "636700LQ8SMYXSBX5D74": { "name": "Global vLEI", "url": null },
-    "836800VC81GMPMG59W77": { "name": "Certizen", "url": null },
-    "894500D5AV38KEBZAS18": { "name": "FINEMA", "url": null },
-    "300300CQ1FG1K4KM7075": { "name": "CFCA", "url": null },
-    "984500983AD71E4FBC41": { "name": "Provenant", "url": null }
+    "83680008RNIDW9LD8Z21": { "name": "SHECA", "url": "https://www.sheca.com/" },
+    "353800460NTF5K7NU940": { "name": "TOPPAN Edge Inc.", "url": "https://www.edge.toppan.com/" },
+    "984500C2EED6A7382A87": { "name": "TradeGo", "url": "https://tradego.com/" },
+    "636700LQ8SMYXSBX5D74": { "name": "Global vLEI", "url": "https://globalvlei.com/" },
+    "836800VC81GMPMG59W77": { "name": "Certizen", "url": "https://www.certlei.com/" },
+    "894500D5AV38KEBZAS18": { "name": "FINEMA", "url": "https://finema.co/" },
+    "300300CQ1FG1K4KM7075": { "name": "CFCA", "url": "https://www.cfca.com.cn/" },
+    "984500983AD71E4FBC41": { "name": "Provenant", "url": "https://provenant.net/" }
   }
 }
