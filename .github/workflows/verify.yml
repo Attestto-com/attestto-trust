@@ -60,3 +60,5 @@ jobs:
             git diff -- 'anchors/*/manifest.json'
             exit 1
           fi
+      - name: Run test suite
+        run: npm test

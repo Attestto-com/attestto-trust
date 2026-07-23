@@ -205,6 +205,7 @@ export function loadCountry(code) {
     ...meta,
     generatedAt: manifest.generatedAt,
     count: manifest.count ?? certs.length,
+    didCount: Object.keys(didByFile).length,
     revocation: readRevocation(code),
     certs,
     roots,

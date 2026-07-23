@@ -1,6 +1,6 @@
 {
   "country": "EE",
-  "generatedAt": "2026-07-23T12:05:15.247Z",
+  "generatedAt": "2026-07-23T19:40:30.337Z",
   "count": 16,
   "certificates": [
     {
@@ -43,191 +43,6 @@
       "ocspUrls": []
     },
     {
-      "file": "EID-SK-2016.pem",
-      "sha256": "e73f1f19a4459a6067a45e84db585d6c1df8f12a739d733f5b28996546f1875a",
-      "subject": "EID-SK 2016",
-      "issuer": "EE Certification Centre Root CA",
-      "serialNumber": "3b803a6b69c12a8c57c55005311bc4da",
-      "validFrom": "2016-08-30T09:21:09.000Z",
-      "validTo": "2030-12-17T23:59:59.000Z",
-      "role": "intermediate",
-      "keyAlgorithm": "RSA-4096",
-      "crlUrls": [
-        "http://www.sk.ee/repository/crls/eeccrca.crl"
-      ],
-      "ocspUrls": [
-        "http://ocsp.sk.ee/CA"
-      ]
-    },
-    {
-      "file": "ESTEID-SK-2015.pem",
-      "sha256": "74d992d3910bcf7e34b8b5cd28f91eaeb4f41f3da6394d78b8c43672d43f4f0f",
-      "subject": "ESTEID-SK 2015",
-      "issuer": "EE Certification Centre Root CA",
-      "serialNumber": "4548090b879cef215672acd3de6c1b5b",
-      "validFrom": "2015-12-17T12:38:43.000Z",
-      "validTo": "2030-12-17T23:59:59.000Z",
-      "role": "intermediate",
-      "keyAlgorithm": "RSA-4096",
-      "crlUrls": [
-        "http://www.sk.ee/repository/crls/eeccrca.crl"
-      ],
-      "ocspUrls": [
-        "http://ocsp.sk.ee/CA"
-      ]
-    },
-    {
-      "file": "ESTEID2018.pem",
-      "sha256": "c45ae81ac8b5ed5d8065213fd3dc250c7b3277368a3e97bd8299effaf8b65e31",
-      "subject": "ESTEID2018",
-      "issuer": "EE-GovCA2018",
-      "serialNumber": "7547faac14744b8b5ba366d4fe6655ed",
-      "validFrom": "2018-09-20T09:22:28.000Z",
-      "validTo": "2033-09-05T09:11:03.000Z",
-      "role": "intermediate",
-      "keyAlgorithm": "EC P-521",
-      "crlUrls": [
-        "http://c.sk.ee/EE-GovCA2018.crl"
-      ],
-      "ocspUrls": [
-        "http://aia.sk.ee/ee-govca2018"
-      ]
-    },
-    {
-      "file": "ESTEID2025.pem",
-      "sha256": "30eba818e427a442bad8f5b218b6b73cc5445d2170e94b8d36b230c006498ac7",
-      "subject": "ESTEID2025",
-      "issuer": "EEGovCA2025",
-      "serialNumber": "50542b706b4aeff8c23fe1b200e4cfbdb8251a57",
-      "validFrom": "2025-05-07T13:20:07.000Z",
-      "validTo": "2040-05-03T13:20:06.000Z",
-      "role": "intermediate",
-      "keyAlgorithm": "EC P-384",
-      "crlUrls": [
-        "http://crl.eidpki.ee/EEGovCA2025.crl"
-      ],
-      "ocspUrls": []
-    },
-    {
-      "file": "KLASS3-SK-2016.pem",
-      "sha256": "a5a859ce0310a85f42a5411da63f83b4144eb94bc8a65a9975ac8682f667db77",
-      "subject": "KLASS3-SK 2016",
-      "issuer": "EE Certification Centre Root CA",
-      "serialNumber": "5e533b132560342b584957308b3078dc",
-      "validFrom": "2016-12-08T12:50:56.000Z",
-      "validTo": "2030-12-17T23:59:59.000Z",
-      "role": "intermediate",
-      "keyAlgorithm": "RSA-4096",
-      "crlUrls": [
-        "http://www.sk.ee/repository/crls/eeccrca.crl"
-      ],
-      "ocspUrls": [
-        "http://ocsp.sk.ee/CA"
-      ]
-    },
-    {
-      "file": "SK-ID-Solutions-EID-Q-2021E.pem",
-      "sha256": "3b355e9b664df0fa3fcc9222725a9411d72207e318ac9ef1028b211fe03a1052",
-      "subject": "SK ID Solutions EID-Q 2021E",
-      "issuer": "SK ID Solutions ROOT G1E",
-      "serialNumber": "79cb98f10b484aaa615aeee0235060e3",
-      "validFrom": "2021-10-04T12:09:04.000Z",
-      "validTo": "2036-10-04T12:09:04.000Z",
-      "role": "intermediate",
-      "keyAlgorithm": "EC P-384",
-      "crlUrls": [
-        "http://c.sk.ee/SK_ROOT_G1E.crl"
-      ],
-      "ocspUrls": [
-        "http://ocsp.sk.ee/CA"
-      ]
-    },
-    {
-      "file": "SK-ID-Solutions-EID-Q-2021R.pem",
-      "sha256": "089dd33525ccb996c5f1debeddc17f1b3c0c4df17c9a993a32ca05570147bf03",
-      "subject": "SK ID Solutions EID-Q 2021R",
-      "issuer": "SK ID Solutions ROOT G1R",
-      "serialNumber": "3828c481f7e3de7f615af1c21a8f1a15",
-      "validFrom": "2021-10-04T12:21:22.000Z",
-      "validTo": "2036-10-04T12:21:22.000Z",
-      "role": "intermediate",
-      "keyAlgorithm": "RSA-4096",
-      "crlUrls": [
-        "http://c.sk.ee/SK_ROOT_G1R.crl"
-      ],
-      "ocspUrls": [
-        "http://ocsp.sk.ee/CA"
-      ]
-    },
-    {
-      "file": "SK-ID-Solutions-EID-Q-2024E.pem",
-      "sha256": "95c4e7e2b5c2617e877442f4276146f8895cee8baa33340efa03e45a66d62d25",
-      "subject": "SK ID Solutions EID-Q 2024E",
-      "issuer": "SK ID Solutions ROOT G1E",
-      "serialNumber": "2459a405c42f43440e86f71e52cf2cb7725a148e",
-      "validFrom": "2024-07-02T08:34:58.000Z",
-      "validTo": "2039-06-29T08:34:57.000Z",
-      "role": "intermediate",
-      "keyAlgorithm": "EC P-384",
-      "crlUrls": [
-        "http://c.sk.ee/SK_ROOT_G1E.crl"
-      ],
-      "ocspUrls": [
-        "http://ocsp.sk.ee/CA"
-      ]
-    },
-    {
-      "file": "SK-ID-Solutions-EID-Q-2024R.pem",
-      "sha256": "c66244d29cf8033b1d4a6f16d8b0f9db7b27cdabce5ad0c05eff70eda1257235",
-      "subject": "SK ID Solutions EID-Q 2024R",
-      "issuer": "SK ID Solutions ROOT G1R",
-      "serialNumber": "5cccbfcf81da307221547880b9fb4a0487c7a89c",
-      "validFrom": "2024-07-02T08:40:24.000Z",
-      "validTo": "2039-06-29T08:40:23.000Z",
-      "role": "intermediate",
-      "keyAlgorithm": "RSA-4096",
-      "crlUrls": [
-        "http://c.sk.ee/SK_ROOT_G1R.crl"
-      ],
-      "ocspUrls": [
-        "http://ocsp.sk.ee/CA"
-      ]
-    },
-    {
-      "file": "SK-ID-Solutions-ORG-2021E.pem",
-      "sha256": "ec5702f39e835e12dabed3f319e3411e78377498c211a7e1dc5c376ef174c381",
-      "subject": "SK ID Solutions ORG 2021E",
-      "issuer": "SK ID Solutions ROOT G1E",
-      "serialNumber": "1f9b0121ce194e3d615af105691417f4",
-      "validFrom": "2021-10-04T12:18:12.000Z",
-      "validTo": "2036-10-04T12:18:12.000Z",
-      "role": "intermediate",
-      "keyAlgorithm": "EC P-384",
-      "crlUrls": [
-        "http://c.sk.ee/SK_ROOT_G1E.crl"
-      ],
-      "ocspUrls": [
-        "http://ocsp.sk.ee/CA"
-      ]
-    },
-    {
-      "file": "SK-ID-Solutions-ORG-2021R.pem",
-      "sha256": "b6828250c19c96104aaaf30928c40cced2618fb555c5e9b514a17c137c8f56ba",
-      "subject": "SK ID Solutions ORG 2021R",
-      "issuer": "SK ID Solutions ROOT G1R",
-      "serialNumber": "4eb7411ff9154501615af2ecf3f4c4b6",
-      "validFrom": "2021-10-04T12:26:20.000Z",
-      "validTo": "2036-10-04T12:26:20.000Z",
-      "role": "intermediate",
-      "keyAlgorithm": "RSA-4096",
-      "crlUrls": [
-        "http://c.sk.ee/SK_ROOT_G1R.crl"
-      ],
-      "ocspUrls": [
-        "http://ocsp.sk.ee/CA"
-      ]
-    },
-    {
       "file": "SK-ID-Solutions-ROOT-G1E.pem",
       "sha256": "a272de102a8038f7e100eacfb6db1c930d3cb9f51d76b218de3a4a433bcfd182",
       "subject": "SK ID Solutions ROOT G1E",
@@ -252,6 +67,191 @@
       "keyAlgorithm": "RSA-4096",
       "crlUrls": [],
       "ocspUrls": []
+    },
+    {
+      "file": "eid-sk-2016.pem",
+      "sha256": "e73f1f19a4459a6067a45e84db585d6c1df8f12a739d733f5b28996546f1875a",
+      "subject": "EID-SK 2016",
+      "issuer": "EE Certification Centre Root CA",
+      "serialNumber": "3b803a6b69c12a8c57c55005311bc4da",
+      "validFrom": "2016-08-30T09:21:09.000Z",
+      "validTo": "2030-12-17T23:59:59.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://www.sk.ee/repository/crls/eeccrca.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.sk.ee/CA"
+      ]
+    },
+    {
+      "file": "esteid-sk-2015.pem",
+      "sha256": "74d992d3910bcf7e34b8b5cd28f91eaeb4f41f3da6394d78b8c43672d43f4f0f",
+      "subject": "ESTEID-SK 2015",
+      "issuer": "EE Certification Centre Root CA",
+      "serialNumber": "4548090b879cef215672acd3de6c1b5b",
+      "validFrom": "2015-12-17T12:38:43.000Z",
+      "validTo": "2030-12-17T23:59:59.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://www.sk.ee/repository/crls/eeccrca.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.sk.ee/CA"
+      ]
+    },
+    {
+      "file": "esteid2018.pem",
+      "sha256": "c45ae81ac8b5ed5d8065213fd3dc250c7b3277368a3e97bd8299effaf8b65e31",
+      "subject": "ESTEID2018",
+      "issuer": "EE-GovCA2018",
+      "serialNumber": "7547faac14744b8b5ba366d4fe6655ed",
+      "validFrom": "2018-09-20T09:22:28.000Z",
+      "validTo": "2033-09-05T09:11:03.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-521",
+      "crlUrls": [
+        "http://c.sk.ee/EE-GovCA2018.crl"
+      ],
+      "ocspUrls": [
+        "http://aia.sk.ee/ee-govca2018"
+      ]
+    },
+    {
+      "file": "esteid2025.pem",
+      "sha256": "30eba818e427a442bad8f5b218b6b73cc5445d2170e94b8d36b230c006498ac7",
+      "subject": "ESTEID2025",
+      "issuer": "EEGovCA2025",
+      "serialNumber": "50542b706b4aeff8c23fe1b200e4cfbdb8251a57",
+      "validFrom": "2025-05-07T13:20:07.000Z",
+      "validTo": "2040-05-03T13:20:06.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-384",
+      "crlUrls": [
+        "http://crl.eidpki.ee/EEGovCA2025.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "klass3-sk-2016.pem",
+      "sha256": "a5a859ce0310a85f42a5411da63f83b4144eb94bc8a65a9975ac8682f667db77",
+      "subject": "KLASS3-SK 2016",
+      "issuer": "EE Certification Centre Root CA",
+      "serialNumber": "5e533b132560342b584957308b3078dc",
+      "validFrom": "2016-12-08T12:50:56.000Z",
+      "validTo": "2030-12-17T23:59:59.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://www.sk.ee/repository/crls/eeccrca.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.sk.ee/CA"
+      ]
+    },
+    {
+      "file": "sk-id-solutions-eid-q-2021e.pem",
+      "sha256": "3b355e9b664df0fa3fcc9222725a9411d72207e318ac9ef1028b211fe03a1052",
+      "subject": "SK ID Solutions EID-Q 2021E",
+      "issuer": "SK ID Solutions ROOT G1E",
+      "serialNumber": "79cb98f10b484aaa615aeee0235060e3",
+      "validFrom": "2021-10-04T12:09:04.000Z",
+      "validTo": "2036-10-04T12:09:04.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-384",
+      "crlUrls": [
+        "http://c.sk.ee/SK_ROOT_G1E.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.sk.ee/CA"
+      ]
+    },
+    {
+      "file": "sk-id-solutions-eid-q-2021r.pem",
+      "sha256": "089dd33525ccb996c5f1debeddc17f1b3c0c4df17c9a993a32ca05570147bf03",
+      "subject": "SK ID Solutions EID-Q 2021R",
+      "issuer": "SK ID Solutions ROOT G1R",
+      "serialNumber": "3828c481f7e3de7f615af1c21a8f1a15",
+      "validFrom": "2021-10-04T12:21:22.000Z",
+      "validTo": "2036-10-04T12:21:22.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://c.sk.ee/SK_ROOT_G1R.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.sk.ee/CA"
+      ]
+    },
+    {
+      "file": "sk-id-solutions-eid-q-2024e.pem",
+      "sha256": "95c4e7e2b5c2617e877442f4276146f8895cee8baa33340efa03e45a66d62d25",
+      "subject": "SK ID Solutions EID-Q 2024E",
+      "issuer": "SK ID Solutions ROOT G1E",
+      "serialNumber": "2459a405c42f43440e86f71e52cf2cb7725a148e",
+      "validFrom": "2024-07-02T08:34:58.000Z",
+      "validTo": "2039-06-29T08:34:57.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-384",
+      "crlUrls": [
+        "http://c.sk.ee/SK_ROOT_G1E.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.sk.ee/CA"
+      ]
+    },
+    {
+      "file": "sk-id-solutions-eid-q-2024r.pem",
+      "sha256": "c66244d29cf8033b1d4a6f16d8b0f9db7b27cdabce5ad0c05eff70eda1257235",
+      "subject": "SK ID Solutions EID-Q 2024R",
+      "issuer": "SK ID Solutions ROOT G1R",
+      "serialNumber": "5cccbfcf81da307221547880b9fb4a0487c7a89c",
+      "validFrom": "2024-07-02T08:40:24.000Z",
+      "validTo": "2039-06-29T08:40:23.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://c.sk.ee/SK_ROOT_G1R.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.sk.ee/CA"
+      ]
+    },
+    {
+      "file": "sk-id-solutions-org-2021e.pem",
+      "sha256": "ec5702f39e835e12dabed3f319e3411e78377498c211a7e1dc5c376ef174c381",
+      "subject": "SK ID Solutions ORG 2021E",
+      "issuer": "SK ID Solutions ROOT G1E",
+      "serialNumber": "1f9b0121ce194e3d615af105691417f4",
+      "validFrom": "2021-10-04T12:18:12.000Z",
+      "validTo": "2036-10-04T12:18:12.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-384",
+      "crlUrls": [
+        "http://c.sk.ee/SK_ROOT_G1E.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.sk.ee/CA"
+      ]
+    },
+    {
+      "file": "sk-id-solutions-org-2021r.pem",
+      "sha256": "b6828250c19c96104aaaf30928c40cced2618fb555c5e9b514a17c137c8f56ba",
+      "subject": "SK ID Solutions ORG 2021R",
+      "issuer": "SK ID Solutions ROOT G1R",
+      "serialNumber": "4eb7411ff9154501615af2ecf3f4c4b6",
+      "validFrom": "2021-10-04T12:26:20.000Z",
+      "validTo": "2036-10-04T12:26:20.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://c.sk.ee/SK_ROOT_G1R.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.sk.ee/CA"
+      ]
     }
   ]
 }

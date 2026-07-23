@@ -76,6 +76,6 @@ uu8wd+RU4riEmViAqhOLUTpPSPaLtrM=
 
 /** All certificates for this country, in alphabetical order. */
 export const ALL_CERTS = [
-  { name: 'AC-FNMT-Usuarios', exportName: 'AC_FNMT_USUARIOS', pem: AC_FNMT_USUARIOS },
+  { name: 'ac-fnmt-usuarios', exportName: 'AC_FNMT_USUARIOS', pem: AC_FNMT_USUARIOS },
   { name: 'AC-RAIZ-FNMT-RCM', exportName: 'AC_RAIZ_FNMT_RCM', pem: AC_RAIZ_FNMT_RCM }
 ]
