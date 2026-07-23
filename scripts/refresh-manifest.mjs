@@ -27,7 +27,14 @@ const countriesDir = join(root, 'countries')
 // accented CA names right. Same fix already applied in
 // scripts/monitors/lib/extract-certs.mjs.
 const decodeUtf8 = (s) => (s == null ? s : Buffer.from(s, 'binary').toString('utf8'))
-const cn = (name) => decodeUtf8(name.getField('CN')?.value) || null
+// Prefer CN, but some roots (e.g. AC RAIZ FNMT-RCM) carry no CN and put the
+// identifying name in OU, with O as a last resort. Falling back keeps those CA
+// names populated instead of null.
+const cn = (name) =>
+  decodeUtf8(name.getField('CN')?.value) ||
+  decodeUtf8(name.getField('OU')?.value) ||
+  decodeUtf8(name.getField('O')?.value) ||
+  null
 
 function refreshCountry(iso2) {
   const currentDir = join(countriesDir, iso2, 'current')
@@ -58,14 +65,39 @@ function refreshCountry(iso2) {
     }
   })
 
-  const manifest = {
+  // Content-bearing fields only. generatedAt is intentionally excluded so we
+  // can compare against the committed manifest and keep regeneration idempotent.
+  const content = {
     country: iso2.toUpperCase(),
-    generatedAt: new Date().toISOString(),
     count: entries.length,
     certificates: entries,
   }
 
-  writeFileSync(join(currentDir, 'manifest.json'), JSON.stringify(manifest, null, 2) + '\n')
+  // Preserve generatedAt when the certificates are unchanged; bump it only when
+  // content actually changes. Without this, new Date() drifts on every run and
+  // the CI drift check can never pass (SOC-90 / SECURITY-AUDIT-2026-07-19 SEV-1).
+  const manifestPath = join(currentDir, 'manifest.json')
+  let generatedAt = new Date().toISOString()
+  if (existsSync(manifestPath)) {
+    try {
+      const prev = JSON.parse(readFileSync(manifestPath, 'utf8'))
+      const { generatedAt: prevGeneratedAt, ...prevContent } = prev
+      if (prevGeneratedAt && JSON.stringify(prevContent) === JSON.stringify(content)) {
+        generatedAt = prevGeneratedAt
+      }
+    } catch {
+      // Unparseable prior manifest: fall through to a fresh timestamp.
+    }
+  }
+
+  const manifest = {
+    country: content.country,
+    generatedAt,
+    count: content.count,
+    certificates: content.certificates,
+  }
+
+  writeFileSync(manifestPath, JSON.stringify(manifest, null, 2) + '\n')
 
   // Concatenated bundle
   const bundle = pems.map((f) => readFileSync(join(currentDir, f), 'utf8').trim()).join('\n') + '\n'
