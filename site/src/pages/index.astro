@@ -5,6 +5,8 @@ import { loadAllCountries } from '../lib/trust.js';
 import { TRANSLATIONS } from '../lib/i18n.js';
 
 const countries = loadAllCountries();
+const totalCountries = countries.length;
+const totalCerts = countries.reduce((sum, c) => sum + (c.count || 0), 0);
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 const lang = 'en';
@@ -15,8 +17,14 @@ const t = TRANSLATIONS[lang];
   description={t.siteDesc}
 >
   <section class="intro">
-    <h1>{t.homeH1}</h1>
-    <p class="lede" set:html={t.homeLede} />
+    <div class="intro__text">
+      <h1>{t.homeH1}</h1>
+      <p class="lede" set:html={t.homeLede} />
+    </div>
+    <dl class="intro__stats" aria-label={`${totalCountries} ${t.homeCountriesH2}, ${totalCerts} ${t.countryCertsStat}`}>
+      <div><dt>{t.homeCountriesH2}</dt><dd>{totalCountries}</dd></div>
+      <div><dt>{t.countryCertsStat}</dt><dd>{totalCerts.toLocaleString(lang)}</dd></div>
+    </dl>
   </section>
 
   <section id="countries" aria-labelledby="countries-h">
@@ -44,8 +52,24 @@ const t = TRANSLATIONS[lang];
 </BaseLayout>
 
 <style>
-  .intro { max-width: 46rem; margin-bottom: var(--space-8); }
+  .intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: var(--space-6);
+    flex-wrap: wrap;
+    margin-bottom: var(--space-8);
+  }
+  .intro__text { max-width: 46rem; }
   .lede { font-size: var(--text-lg); color: var(--color-text-muted); }
+  .intro__stats { display: flex; gap: var(--space-6); margin: 0; flex-shrink: 0; }
+  .intro__stats div { text-align: right; }
+  .intro__stats dt { font-size: var(--text-xs); color: var(--color-text-subtle); text-transform: uppercase; letter-spacing: 0.05em; }
+  .intro__stats dd { margin: 0; font-size: var(--text-2xl); font-weight: 700; font-variant-numeric: tabular-nums; }
+  @media (max-width: 640px) {
+    .intro__stats { gap: var(--space-5); }
+    .intro__stats div { text-align: left; }
+  }
 
   .developers { margin-top: var(--space-10); }
   .dev-grid {
