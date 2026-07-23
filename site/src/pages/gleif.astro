@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import AboutPanel from '../components/AboutPanel.astro';
 import { loadGlobalAnchors } from '../lib/anchors.js';
 import { TRANSLATIONS } from '../lib/i18n.js';
 
@@ -7,6 +8,16 @@ const lang = 'en';
 const t = TRANSLATIONS[lang];
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const anchor = loadGlobalAnchors().find((a) => a.id === 'gleif-vlei');
+
+const aboutFacts = [
+  { label: t.globalAnchorRootAid, value: anchor.rootAid.rootAid ?? anchor.rootAid.aid, mono: true },
+  anchor.rootAid.geda && { label: t.globalAnchorGeda, value: anchor.rootAid.geda, mono: true },
+  anchor.rootAid.keyStateDigest && { label: 'Key state', value: anchor.rootAid.keyStateDigest, mono: true },
+  { label: t.globalAnchorQvis, value: anchor.qviCount },
+  { label: 'Model', value: anchor.technology.keyModel },
+  { label: 'Credential', value: anchor.technology.credentialFormat },
+  { label: 'Chain', value: anchor.technology.chain },
+].filter(Boolean);
 ---
 <BaseLayout title={`${anchor.name} — ${t.homeGlobalH2}`} description={anchor.notes}>
   <nav class="breadcrumbs" aria-label="Breadcrumb">
@@ -23,21 +34,12 @@ const anchor = loadGlobalAnchors().find((a) => a.id === 'gleif-vlei');
     </div>
   </header>
 
-  <section class="pki-about" aria-label="About this anchor">
-    <p class="pki-about__notes">{anchor.notes}</p>
-    <dl class="pki-about__grid">
-      <div><dt>{t.globalAnchorRootAid}</dt><dd><code>{anchor.rootAid.rootAid ?? anchor.rootAid.aid}</code></dd></div>
-      {anchor.rootAid.geda && <div><dt>{t.globalAnchorGeda}</dt><dd><code>{anchor.rootAid.geda}</code></dd></div>}
-      {anchor.rootAid.keyStateDigest && <div><dt>Key state</dt><dd><code>{anchor.rootAid.keyStateDigest}</code></dd></div>}
-      <div><dt>{t.globalAnchorQvis}</dt><dd>{anchor.qviCount}</dd></div>
-      <div><dt>Model</dt><dd>{anchor.technology.keyModel}</dd></div>
-      <div><dt>Credential</dt><dd>{anchor.technology.credentialFormat}</dd></div>
-      <div><dt>Chain</dt><dd>{anchor.technology.chain}</dd></div>
-    </dl>
-    <ul class="pki-about__links">
-      {anchor.relatedLinks.map((l) => <li><a href={l.url} rel="noopener noreferrer" target="_blank">{l.label} ↗</a></li>)}
-    </ul>
-  </section>
+  <AboutPanel
+    ariaLabel="About this anchor"
+    notes={anchor.notes}
+    facts={aboutFacts}
+    links={anchor.relatedLinks}
+  />
 
   <section aria-label="Qualified vLEI Issuers">
     <h2>{t.globalAnchorQvis} ({anchor.qviCount})</h2>
@@ -56,17 +58,6 @@ const anchor = loadGlobalAnchors().find((a) => a.id === 'gleif-vlei');
   .anchor-head { display: flex; gap: var(--space-4); align-items: center; margin-bottom: var(--space-6); padding-bottom: var(--space-5); border-bottom: 1px solid var(--color-border); }
   .anchor-head h1 { margin: 0; }
   .anchor-head__authority { margin: var(--space-1) 0 0; color: var(--color-text-muted); font-size: var(--text-sm); }
-  .pki-about { margin: var(--space-4) 0; padding: var(--space-4); border: 1px solid var(--color-border); border-radius: var(--radius-md); background: var(--color-surface); }
-  .pki-about__grid { display: grid; grid-template-columns: 1fr; gap: 0; margin: 0; }
-  .pki-about__grid > div { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-4); align-items: baseline; padding: var(--space-3) 0; border-bottom: 1px solid var(--color-border); }
-  .pki-about__grid > div:last-child { border-bottom: none; }
-  .pki-about__grid dt { font-size: var(--text-xs); color: var(--color-text-subtle); text-transform: uppercase; letter-spacing: 0.03em; }
-  .pki-about__grid dd { margin: 0; font-size: var(--text-sm); font-weight: 500; }
-  @media (max-width: 560px) { .pki-about__grid > div { grid-template-columns: 1fr; gap: 2px; } }
-  .pki-about__grid dd code { font-size: var(--text-xs); word-break: break-all; font-weight: 400; }
-  .pki-about__notes { margin: 0 0 var(--space-4); color: var(--color-text-muted); font-size: var(--text-sm); line-height: 1.5; }
-  .pki-about__links { margin: var(--space-3) 0 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: var(--space-3); }
-  .pki-about__links a { font-size: var(--text-sm); }
   .qvi-table { width: 100%; border-collapse: collapse; font-size: var(--text-sm); }
   .qvi-table th, .qvi-table td { text-align: left; padding: var(--space-2) var(--space-3); border-bottom: 1px solid var(--color-border); }
   .qvi-table code { font-size: var(--text-xs); word-break: break-all; }

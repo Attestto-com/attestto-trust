@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import TreeNode from '../../components/TreeNode.astro';
+import AboutPanel from '../../components/AboutPanel.astro';
 import { COUNTRIES, loadCountry } from '../../lib/trust.js';
 import { TRANSLATIONS, getCountryName } from '../../lib/i18n.js';
 
@@ -28,6 +29,28 @@ const expiredCount = data.certs.filter((c) => c.validity.state === 'expired').le
 const orphanCount = data.certs.filter((c) => c.orphan).length;
 // Status chips only earn their space when there is something to filter out.
 const showStatusChips = expiredCount > 0 || orphanCount > 0;
+
+// About-panel facts. Only rows whose data exists are included (filtered here
+// and again defensively by the shared component).
+const aboutFacts = [
+  data.model && {
+    label: 'Model',
+    value: data.model === 'accredited-tsl' ? 'Accredited CAs (ETSI Trusted List)' : 'National hierarchy',
+  },
+  data.governingLaw && { label: 'Governing law', value: data.governingLaw },
+  data.technology?.keyAlgorithms?.length > 0 && {
+    label: 'Key algorithms',
+    value: data.technology.keyAlgorithms.join(', '),
+  },
+  data.technology?.signatureStandards?.length > 0 && {
+    label: 'Signature standards',
+    value: data.technology.signatureStandards.join(', '),
+  },
+  data.revocation?.snapshotExpiresAt && {
+    label: 'Revocation snapshot',
+    value: `current, refresh due ${fmtDate(data.revocation.snapshotExpiresAt)}`,
+  },
+].filter(Boolean);
 ---
 <BaseLayout
   title={`${getCountryName(data.code, lang)} ${t.cardIssuer}s`}
@@ -60,35 +83,16 @@ const showStatusChips = expiredCount > 0 || orphanCount > 0;
     </dl>
   </header>
 
-  <section class="pki-about" aria-label="About this PKI">
-    <dl class="pki-about__grid">
-      {data.model && (
-        <div><dt>Model</dt><dd>{data.model === 'accredited-tsl' ? 'Accredited CAs (ETSI Trusted List)' : 'National hierarchy'}</dd></div>
-      )}
-      {data.governingLaw && <div><dt>Governing law</dt><dd>{data.governingLaw}</dd></div>}
-      {data.technology?.keyAlgorithms?.length > 0 && (
-        <div><dt>Key algorithms</dt><dd>{data.technology.keyAlgorithms.join(', ')}</dd></div>
-      )}
-      {data.technology?.signatureStandards?.length > 0 && (
-        <div><dt>Signature standards</dt><dd>{data.technology.signatureStandards.join(', ')}</dd></div>
-      )}
-      {data.revocation?.snapshotExpiresAt && (
-        <div><dt>Revocation snapshot</dt><dd>current, refresh due <time datetime={data.revocation.snapshotExpiresAt}>{fmtDate(data.revocation.snapshotExpiresAt)}</time></dd></div>
-      )}
-    </dl>
-    {data.capabilities?.length > 0 && (
-      <div class="pki-about__caps">
-        <span class="pki-about__caplabel">Capabilities</span>
-        {data.capabilities.map((c) => <span class="chip">{c}</span>)}
-      </div>
-    )}
-    {data.notes && <p class="pki-about__notes">{data.notes}</p>}
-    {data.relatedLinks?.length > 0 && (
-      <ul class="pki-about__links" aria-label="Related official resources">
-        {data.relatedLinks.map((l) => <li><a href={l.url} rel="noopener noreferrer" target="_blank" title={`${l.label} (opens in a new tab)`} aria-label={`${l.label} (opens in a new tab)`}>{l.label} <span aria-hidden="true">↗</span></a></li>)}
-      </ul>
-    )}
-  </section>
+  <AboutPanel
+    ariaLabel="About this PKI"
+    notes={data.notes}
+    facts={aboutFacts}
+    capabilities={data.capabilities}
+    capabilitiesLabel="Capabilities"
+    links={data.relatedLinks}
+    linksLabel="Related official resources"
+    newTabHint="opens in a new tab"
+  />
 
   <div data-filter-scope>
     <div class="filter">
@@ -147,22 +151,6 @@ const showStatusChips = expiredCount > 0 || orphanCount > 0;
   .country-head__flag { font-size: 2.75rem; line-height: 1; }
   .country-head h1 { margin: 0; }
   .country-head__authority { margin: var(--space-1) 0 0; color: var(--color-text-muted); font-size: var(--text-sm); max-width: 62ch; line-height: 1.45; overflow-wrap: anywhere; }
-  .pki-about {
-    margin: var(--space-4) 0;
-    padding: var(--space-4);
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius-md);
-    background: var(--color-surface);
-  }
-  .pki-about__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: var(--space-3); margin: 0; }
-  .pki-about__grid dt { font-size: var(--text-xs); color: var(--color-text-subtle); text-transform: uppercase; letter-spacing: 0.03em; }
-  .pki-about__grid dd { margin: 2px 0 0; font-size: var(--text-sm); font-weight: 600; }
-  .pki-about__caps { margin-top: var(--space-3); display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-2); }
-  .pki-about__caplabel { font-size: var(--text-xs); color: var(--color-text-subtle); text-transform: uppercase; letter-spacing: 0.03em; }
-  .chip { display: inline-block; padding: 2px 10px; border-radius: 999px; background: var(--color-highlight-soft); color: var(--color-highlight); font-size: var(--text-xs); font-weight: 600; }
-  .pki-about__notes { margin: var(--space-3) 0 0; color: var(--color-text-muted); font-size: var(--text-sm); line-height: 1.5; }
-  .pki-about__links { margin: var(--space-3) 0 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: var(--space-3); }
-  .pki-about__links a { font-size: var(--text-sm); }
   .country-head__stats {
     display: flex;
     gap: var(--space-5);
