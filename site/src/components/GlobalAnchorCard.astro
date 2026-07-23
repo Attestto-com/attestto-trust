@@ -8,7 +8,7 @@ const sourceLink = (anchor.relatedLinks || []).find((l) => /gleif\.org/.test(l.u
 ---
 <article class="ga-card">
   <header class="ga-card__head">
-    <span class="ga-card__glyph" aria-hidden="true">🌐</span>
+    <img class="ga-card__glyph" src="/gleif-logo.svg" alt="" width="28" height="28" />
     <h3 class="ga-card__title">{anchor.name}</h3>
     <span class="ga-card__tag">{t.globalAnchorTag}</span>
   </header>
@@ -30,7 +30,7 @@ const sourceLink = (anchor.relatedLinks || []).find((l) => /gleif\.org/.test(l.u
 <style>
   .ga-card { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: var(--space-5); max-width: 46rem; }
   .ga-card__head { display: flex; align-items: center; gap: var(--space-3); }
-  .ga-card__glyph { font-size: 1.75rem; line-height: 1; }
+  .ga-card__glyph { width: 1.75rem; height: 1.75rem; object-fit: contain; flex-shrink: 0; }
   .ga-card__title { margin: 0; }
   .ga-card__tag { margin-left: auto; font-size: var(--text-xs); font-weight: 600; text-transform: uppercase; letter-spacing: 0.03em; padding: 2px 10px; border-radius: 999px; background: var(--color-highlight-soft); color: var(--color-highlight); }
   .ga-card__facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr)); gap: var(--space-3); margin: var(--space-4) 0; }

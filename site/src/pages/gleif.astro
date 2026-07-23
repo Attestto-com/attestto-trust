@@ -16,7 +16,7 @@ const anchor = loadGlobalAnchors().find((a) => a.id === 'gleif-vlei');
     </ol>
   </nav>
   <header class="anchor-head">
-    <span aria-hidden="true" style="font-size:2.5rem">🌐</span>
+    <img src="/gleif-logo.svg" alt="GLEIF logo" width="40" height="40" style="object-fit:contain;flex-shrink:0" />
     <div>
       <h1>{anchor.name}</h1>
       <p class="anchor-head__authority">{t.countryPublishedBy} <a href={anchor.authority.url} rel="noopener noreferrer" target="_blank">{anchor.authority.name}</a></p>
@@ -55,6 +55,14 @@ const anchor = loadGlobalAnchors().find((a) => a.id === 'gleif-vlei');
   .anchor-head { display: flex; gap: var(--space-4); align-items: center; margin-bottom: var(--space-6); padding-bottom: var(--space-5); border-bottom: 1px solid var(--color-border); }
   .anchor-head h1 { margin: 0; }
   .anchor-head__authority { margin: var(--space-1) 0 0; color: var(--color-text-muted); font-size: var(--text-sm); }
+  .pki-about { margin: var(--space-4) 0; padding: var(--space-4); border: 1px solid var(--color-border); border-radius: var(--radius-md); background: var(--color-surface); }
+  .pki-about__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: var(--space-3); margin: 0; }
+  .pki-about__grid dt { font-size: var(--text-xs); color: var(--color-text-subtle); text-transform: uppercase; letter-spacing: 0.03em; }
+  .pki-about__grid dd { margin: 2px 0 0; font-size: var(--text-sm); font-weight: 600; }
+  .pki-about__grid dd code { font-size: var(--text-xs); word-break: break-all; font-weight: 400; }
+  .pki-about__notes { margin: var(--space-3) 0 0; color: var(--color-text-muted); font-size: var(--text-sm); line-height: 1.5; }
+  .pki-about__links { margin: var(--space-3) 0 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: var(--space-3); }
+  .pki-about__links a { font-size: var(--text-sm); }
   .qvi-table { width: 100%; border-collapse: collapse; font-size: var(--text-sm); }
   .qvi-table th, .qvi-table td { text-align: left; padding: var(--space-2) var(--space-3); border-bottom: 1px solid var(--color-border); }
   .qvi-table code { font-size: var(--text-xs); word-break: break-all; }
