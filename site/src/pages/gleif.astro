@@ -1,0 +1,61 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { loadGlobalAnchors } from '../lib/anchors.js';
+import { TRANSLATIONS } from '../lib/i18n.js';
+
+const lang = 'en';
+const t = TRANSLATIONS[lang];
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const anchor = loadGlobalAnchors().find((a) => a.id === 'gleif-vlei');
+---
+<BaseLayout title={`${anchor.name} — ${t.homeGlobalH2}`} description={anchor.notes}>
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+      <li><a href={`${base}/`}>{t.countryNavHome}</a></li>
+      <li aria-current="page">{anchor.name}</li>
+    </ol>
+  </nav>
+  <header class="anchor-head">
+    <span aria-hidden="true" style="font-size:2.5rem">🌐</span>
+    <div>
+      <h1>{anchor.name}</h1>
+      <p class="anchor-head__authority">{t.countryPublishedBy} <a href={anchor.authority.url} rel="noopener noreferrer" target="_blank">{anchor.authority.name}</a></p>
+    </div>
+  </header>
+
+  <section class="pki-about" aria-label="About this anchor">
+    <dl class="pki-about__grid">
+      <div><dt>{t.globalAnchorRootAid}</dt><dd><code>{anchor.rootAid.aid}</code></dd></div>
+      {anchor.rootAid.keyStateDigest && <div><dt>Key state</dt><dd><code>{anchor.rootAid.keyStateDigest}</code></dd></div>}
+      <div><dt>{t.globalAnchorQvis}</dt><dd>{anchor.qviCount}</dd></div>
+      <div><dt>Model</dt><dd>{anchor.technology.keyModel}</dd></div>
+      <div><dt>Credential</dt><dd>{anchor.technology.credentialFormat}</dd></div>
+      <div><dt>Chain</dt><dd>{anchor.technology.chain}</dd></div>
+    </dl>
+    <p class="pki-about__notes">{anchor.notes}</p>
+    <ul class="pki-about__links">
+      {anchor.relatedLinks.map((l) => <li><a href={l.url} rel="noopener noreferrer" target="_blank">{l.label} ↗</a></li>)}
+    </ul>
+  </section>
+
+  <section aria-label="Qualified vLEI Issuers">
+    <h2>{t.globalAnchorQvis} ({anchor.qviCount})</h2>
+    <table class="qvi-table">
+      <thead><tr><th>Name</th><th>LEI</th><th>AID</th><th>Status</th></tr></thead>
+      <tbody>
+        {anchor.qvis.map((q) => (
+          <tr><td>{q.name}</td><td><code>{q.lei}</code></td><td>{q.aid ? <code>{q.aid}</code> : '—'}</td><td>{q.status}</td></tr>
+        ))}
+      </tbody>
+    </table>
+  </section>
+</BaseLayout>
+
+<style>
+  .anchor-head { display: flex; gap: var(--space-4); align-items: center; margin-bottom: var(--space-6); padding-bottom: var(--space-5); border-bottom: 1px solid var(--color-border); }
+  .anchor-head h1 { margin: 0; }
+  .anchor-head__authority { margin: var(--space-1) 0 0; color: var(--color-text-muted); font-size: var(--text-sm); }
+  .qvi-table { width: 100%; border-collapse: collapse; font-size: var(--text-sm); }
+  .qvi-table th, .qvi-table td { text-align: left; padding: var(--space-2) var(--space-3); border-bottom: 1px solid var(--color-border); }
+  .qvi-table code { font-size: var(--text-xs); word-break: break-all; }
+</style>
