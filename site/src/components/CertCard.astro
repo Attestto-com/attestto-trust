@@ -18,6 +18,8 @@ const fmt = (iso) =>
 <article
   class="cert-card"
   data-filter-item
+  data-status={cert.validity.state}
+  data-orphan={cert.orphan ? 'true' : 'false'}
   data-search={`${cert.subjectDisplay} ${cert.issuerDisplay} ${cert.serialNumber} ${cert.sha256} ${cert.role}`.toLowerCase()}
 >
   <header class="cert-card__head">

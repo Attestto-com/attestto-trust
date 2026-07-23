@@ -24,6 +24,10 @@ const fmtDate = (iso) =>
 
 const rootCount = data.roots.filter((c) => c.role === 'root' || c.issuer === c.subject).length;
 const intermediateCount = data.certs.filter((c) => c.role === 'intermediate').length;
+const expiredCount = data.certs.filter((c) => c.validity.state === 'expired').length;
+const orphanCount = data.certs.filter((c) => c.orphan).length;
+// Status chips only earn their space when there is something to filter out.
+const showStatusChips = expiredCount > 0 || orphanCount > 0;
 ---
 <BaseLayout
   title={`${getCountryName(data.code, lang)} - ${t.cardIssuer}s`}
@@ -103,6 +107,22 @@ const intermediateCount = data.certs.filter((c) => c.role === 'intermediate').le
       <p class="filter__status" data-filter-status role="status" aria-live="polite"></p>
     </div>
 
+    {showStatusChips && (
+      <div class="cert-filters">
+        <div class="cert-filters__chips" role="group" aria-label={t.filterChipsAria}>
+          <button type="button" class="cert-chip" data-filter-chip data-chip-value="current" data-chip-default={expiredCount > 0 ? true : undefined}>{t.filterChipCurrent}</button>
+          {expiredCount > 0 && (
+            <button type="button" class="cert-chip" data-filter-chip data-chip-value="expired">{t.filterChipExpired} <span class="cert-chip__n">{expiredCount}</span></button>
+          )}
+          {orphanCount > 0 && (
+            <button type="button" class="cert-chip" data-filter-chip data-chip-value="unchained">{t.filterChipUnchained} <span class="cert-chip__n">{orphanCount}</span></button>
+          )}
+          <button type="button" class="cert-chip" data-filter-chip data-chip-value="all" data-chip-default={expiredCount === 0 ? true : undefined}>{t.filterChipAll}</button>
+        </div>
+        {expiredCount > 0 && <p class="cert-filters__hint">{t.filterChipsHint}</p>}
+      </div>
+    )}
+
     <section aria-label={t.countryHierarchyAria.replace('{0}', getCountryName(data.code, lang))}>
       <ul class="tree" id="ca-tree" role="tree">
         {data.roots.map((root) => <TreeNode cert={root} code={data.code} depth={0} />)}
@@ -167,6 +187,35 @@ const intermediateCount = data.certs.filter((c) => c.role === 'intermediate').le
   }
   .filter__input:focus-visible { box-shadow: var(--focus-ring); border-color: var(--color-accent); }
   .filter__status { margin: var(--space-2) 0 0; font-size: var(--text-sm); color: var(--color-text-muted); }
+
+  .cert-filters { margin: 0 0 var(--space-6); }
+  .cert-filters__chips { display: flex; flex-wrap: wrap; gap: var(--space-2); }
+  .cert-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-1);
+    font-size: var(--text-sm);
+    font-weight: 600;
+    padding: var(--space-1) var(--space-3);
+    border-radius: var(--radius-pill);
+    border: 1px solid var(--color-border-strong);
+    background: var(--color-surface);
+    color: var(--color-text-muted);
+    cursor: pointer;
+  }
+  .cert-chip:hover { color: var(--color-text); border-color: var(--color-text-subtle); }
+  .cert-chip[aria-pressed='true'] {
+    background: var(--color-accent-soft);
+    border-color: var(--color-accent);
+    color: var(--color-accent-light);
+  }
+  .cert-chip__n {
+    font-variant-numeric: tabular-nums;
+    font-size: var(--text-xs);
+    color: var(--color-text-subtle);
+  }
+  .cert-chip[aria-pressed='true'] .cert-chip__n { color: var(--color-accent-light); }
+  .cert-filters__hint { margin: var(--space-2) 0 0; font-size: var(--text-xs); color: var(--color-text-subtle); }
 
   .tree { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-4); }
   .no-results { color: var(--color-text-muted); }
