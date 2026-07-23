@@ -5,8 +5,35 @@ import { TRANSLATIONS } from '../lib/i18n.js';
 const lang = Astro.currentLocale === 'es' ? 'es' : 'en';
 const t = TRANSLATIONS[lang];
 
-const { title, description } = Astro.props;
+const { title, description, jsonLd = [] } = Astro.props;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+// Site-wide structured data. Rendered on every page in addition to any
+// page-specific objects passed via the `jsonLd` prop. URLs mirror the real
+// footer links and the logo asset shipped in site/public/.
+const siteJsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'Attestto',
+    url: 'https://attestto.org',
+    logo: 'https://trust.attestto.org/logo-full-white.svg',
+    sameAs: [
+      'https://github.com/Attestto-com',
+      'https://attestto.com',
+      'https://attestto.org',
+      'https://discord.gg/F3AhFVarXz',
+    ],
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'Attestto Trust',
+    url: 'https://trust.attestto.org',
+  },
+];
+
+const allJsonLd = [...siteJsonLd, ...jsonLd];
 const baseHref = lang === 'es' ? `${base}/es` : (base || '/');
 
 const pageTitle = title ? `${title} · ${t.siteTitle}` : `${t.siteTitle} · ${t.homeTitle}`;
@@ -47,6 +74,9 @@ const devsHref = lang === 'es' ? `${base}/es#developers` : `${base}/#developers`
     <meta name="theme-color" content="#0a0a14" />
     <link rel="icon" type="image/svg+xml" href={`${base}/favicon.svg`} />
     <link rel="canonical" href={new URL(Astro.url.pathname, Astro.site).href} />
+    {allJsonLd.map((obj) => (
+      <script type="application/ld+json" set:html={JSON.stringify(obj)} />
+    ))}
   </head>
   <body>
     <a class="skip-link" href="#main">{lang === 'es' ? 'Saltar al contenido' : 'Skip to content'}</a>

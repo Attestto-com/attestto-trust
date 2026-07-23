@@ -52,10 +52,42 @@ const aboutFacts = [
     value: `vigente, actualizar antes de ${fmtDate(data.revocation.snapshotExpiresAt)}`,
   },
 ].filter(Boolean);
+
+const countryName = getCountryName(data.code, lang);
+const countryUrl = `https://trust.attestto.org/es/${data.code}`;
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: t.countryNavHome, item: 'https://trust.attestto.org/es/' },
+      { '@type': 'ListItem', position: 2, name: countryName, item: countryUrl },
+    ],
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Dataset',
+    name: `Anclas de confianza PKI nacionales de ${countryName}`,
+    description: `${data.count} anclas de confianza publicadas por ${data.authority?.name}, estructuradas como una jerarquía verificable de certificados raíz e intermedios con huellas SHA-256 y descargas del .pem original.`,
+    url: countryUrl,
+    license: 'https://www.apache.org/licenses/LICENSE-2.0',
+    isAccessibleForFree: true,
+    creator: { '@type': 'Organization', name: 'Attestto', url: 'https://attestto.org' },
+    keywords: ['PKI', 'X.509', 'eIDAS', 'trusted list', 'digital signature', 'did:pki'],
+    distribution: [
+      {
+        '@type': 'DataDownload',
+        encodingFormat: 'application/x-pem-file',
+        contentUrl: `https://github.com/Attestto-com/attestto-trust/tree/main/countries/${data.code}`,
+      },
+    ],
+  },
+];
 ---
 <BaseLayout
   title={`${getCountryName(data.code, lang)} - ${t.cardIssuer}s`}
   description={t.countryHierarchyAria.replace('{0}', getCountryName(data.code, lang)) + `: ${data.count} anclas de confianza publicadas por ${data.authority?.name}.`}
+  jsonLd={jsonLd}
 >
   <nav class="breadcrumbs" aria-label="Breadcrumb">
     <ol>

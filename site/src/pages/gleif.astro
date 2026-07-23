@@ -18,8 +18,37 @@ const aboutFacts = [
   { label: 'Credential', value: anchor.technology.credentialFormat },
   { label: 'Chain', value: anchor.technology.chain },
 ].filter(Boolean);
+
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: t.countryNavHome, item: 'https://trust.attestto.org/' },
+      { '@type': 'ListItem', position: 2, name: anchor.name, item: 'https://trust.attestto.org/gleif' },
+    ],
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Dataset',
+    name: anchor.name,
+    description: anchor.notes,
+    url: 'https://trust.attestto.org/gleif',
+    license: 'https://www.apache.org/licenses/LICENSE-2.0',
+    isAccessibleForFree: true,
+    creator: { '@type': 'Organization', name: 'Attestto', url: 'https://attestto.org' },
+    keywords: ['vLEI', 'LEI', 'GLEIF', 'KERI', 'ACDC', 'digital signature'],
+    distribution: [
+      {
+        '@type': 'DataDownload',
+        encodingFormat: 'application/json',
+        contentUrl: 'https://github.com/Attestto-com/attestto-trust',
+      },
+    ],
+  },
+];
 ---
-<BaseLayout title={`${anchor.name} — ${t.homeGlobalH2}`} description={anchor.notes}>
+<BaseLayout title={`${anchor.name} — ${t.homeGlobalH2}`} description={anchor.notes} jsonLd={jsonLd}>
   <nav class="breadcrumbs" aria-label="Breadcrumb">
     <ol>
       <li><a href={`${base}/`}>{t.countryNavHome}</a></li>

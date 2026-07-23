@@ -15,10 +15,32 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 const lang = 'en';
 const t = TRANSLATIONS[lang];
+
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Dataset',
+    name: 'National PKI trust anchors',
+    description: 'Independent public mirror of national PKI trust anchors, structured and human-readable. Root and intermediate certificate authorities behind national digital signature systems, each with SHA-256 fingerprint, validity window, and original .pem download.',
+    url: 'https://trust.attestto.org',
+    license: 'https://www.apache.org/licenses/LICENSE-2.0',
+    isAccessibleForFree: true,
+    creator: { '@type': 'Organization', name: 'Attestto', url: 'https://attestto.org' },
+    keywords: ['PKI', 'X.509', 'eIDAS', 'trusted list', 'digital signature', 'did:pki'],
+    distribution: [
+      {
+        '@type': 'DataDownload',
+        encodingFormat: 'application/x-pem-file',
+        contentUrl: 'https://github.com/Attestto-com/attestto-trust',
+      },
+    ],
+  },
+];
 ---
 <BaseLayout
   title={t.homeTitle}
   description={t.siteDesc}
+  jsonLd={jsonLd}
 >
   <section class="intro">
     <div class="intro__text">
