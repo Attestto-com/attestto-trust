@@ -1,0 +1,26 @@
+{
+  "code": "nl",
+  "name": "Netherlands",
+  "flag": "🇳🇱",
+  "model": "accredited-tsl",
+  "authority": {
+    "name": "Rijksinspectie Digitale Infrastructuur (RDI) — Dutch eIDAS supervisory body (formerly Agentschap Telecom) and national Trusted List operator",
+    "operator": "Accredited QTSPs under PKIoverheid / eIDAS (Staat der Nederlanden PKIoverheid, DigiCert QuoVadis, Digidentity, KPN, Cleverbase, UZI-register / CIBG, and others)",
+    "url": "https://www.rdi.nl/site/binaries/content/assets/site-content/bestanden/current-tsl.xml"
+  },
+  "governingLaw": "Reglamento eIDAS (UE) 910/2014 · Telecommunicatiewet · Uitvoeringswet eIDAS-verordening",
+  "technology": {
+    "keyAlgorithms": ["RSA-4096"],
+    "signatureStandards": ["CAdES", "PAdES", "XAdES", "ASiC"],
+    "trustList": "ETSI TS 119 612 — the Dutch Trusted List (current-tsl.xml, RDI)"
+  },
+  "capabilities": ["Qualified e-signature & e-seal (eIDAS)", "Qualified timestamping", "Qualified website authentication (QWAC / PSD2)"],
+  "relatedLinks": [
+    { "label": "RDI — Dutch Trusted List (current-tsl.xml)", "url": "https://www.rdi.nl/site/binaries/content/assets/site-content/bestanden/current-tsl.xml" },
+    { "label": "RDI — Vertrouwensdiensten (eIDAS)", "url": "https://www.rdi.nl/onderwerpen/vertrouwensdiensten" },
+    { "label": "EU LOTL — List of the Lists (European Commission)", "url": "https://ec.europa.eu/tools/lotl/eu-lotl.xml" },
+    { "label": "Independent verifier (Attestto)", "url": "https://verify.attestto.com" }
+  ],
+  "source": { "type": "tsl", "url": "https://www.rdi.nl/site/binaries/content/assets/site-content/bestanden/current-tsl.xml" },
+  "notes": "The Netherlands' qualified-signature trust is a federation of accredited QTSPs (the government PKIoverheid hierarchy operated by Logius / Staat der Nederlanden, DigiCert QuoVadis, Digidentity, KPN, Cleverbase, and the UZI-register healthcare CAs run by CIBG) supervised by the Rijksinspectie Digitale Infrastructuur (RDI, formerly Agentschap Telecom) and published in the Dutch national eIDAS Trusted List (current-tsl.xml, ETSI TS 119 612). The 30 currently-granted CA certificates were promoted wholesale after verifying the Trusted List's XAdES signature through the EU LOTL chain of trust: the LOTL signature was checked against the pinned European Commission signing anchor, and the Dutch TSL's signature (signer: C=NL, O=Rijksinspectie Digitale Infrastructuur, CN=RDI NL TSL Signer 2) against the identity the LOTL declares for the Netherlands, so the list's single seal vouches for every certificate it contains (eIDAS Art. 22). Only services with a currently-granted status and a CA / qualified-certificate service type were selected; withdrawn, deprecated, and non-CA services were dropped. Verification evidence is in VERIFICATION.md. One certificate in the set (QuoVadis EU Issuing Certification Authority G4) has passed its notAfter and is retained as an archived-but-granted entry; it surfaces under the Expired status filter. All 30 CAs in this set use RSA-4096, reflecting the uniform key policy of the PKIoverheid root program."
+}

@@ -37,6 +37,7 @@ import * as ee from '../countries/ee/index.js'
 import * as de from '../countries/de/index.js'
 import * as fr from '../countries/fr/index.js'
 import * as italy from '../countries/it/index.js'
+import * as nl from '../countries/nl/index.js'
 import * as pe from '../countries/pe/index.js'
 
 // ── Root exports ───────────────────────────────────────────────────
@@ -61,6 +62,7 @@ describe('root index.js exports', () => {
     assert.ok(Array.isArray(trust.ee.ALL_CERTS), 'ee.ALL_CERTS not an array')
     assert.ok(Array.isArray(trust.de.ALL_CERTS), 'de.ALL_CERTS not an array')
     assert.ok(Array.isArray(trust.it.ALL_CERTS), 'it.ALL_CERTS not an array')
+    assert.ok(Array.isArray(trust.nl.ALL_CERTS), 'nl.ALL_CERTS not an array')
     assert.ok(Array.isArray(trust.pe.ALL_CERTS), 'pe.ALL_CERTS not an array')
   })
 })
@@ -364,6 +366,41 @@ describe('France (fr)', () => {
   })
 })
 
+// ── Country: Netherlands ───────────────────────────────────────────
+
+describe('Netherlands (nl)', () => {
+  it('exports the granted RDI TSL CA set (>= 20 certs)', () => {
+    // 30 currently-granted QTSP CAs verified via the LOTL/XAdES chain.
+    assert.ok(nl.ALL_CERTS.length >= 20, `Expected >=20, got ${nl.ALL_CERTS.length}`)
+  })
+
+  it('is a high-volume country: getBySha256 helper, no per-cert named consts', () => {
+    assert.equal(typeof nl.getBySha256, 'function', 'getBySha256 helper missing')
+    assert.equal(nl.QUOVADIS_EU_ISSUING_CERTIFICATION_AUTHORITY_G4, undefined, 'should not emit per-cert named consts at this volume')
+  })
+
+  it('all PEM strings are valid format', () => {
+    for (const cert of nl.ALL_CERTS) {
+      assert.ok(cert.pem.startsWith('-----BEGIN CERTIFICATE-----'), `${cert.name}: bad PEM header`)
+      assert.ok(cert.pem.trimEnd().endsWith('-----END CERTIFICATE-----'), `${cert.name}: bad PEM footer`)
+    }
+  })
+
+  it('manifest SHA-256 hashes match DER content of PEM files', () => {
+    const manifestPath = join(ROOT, 'countries/nl/current/manifest.json')
+    assert.ok(existsSync(manifestPath), 'manifest.json missing')
+    const manifest = JSON.parse(readFileSync(manifestPath, 'utf-8'))
+    assert.equal(manifest.country, 'NL')
+    for (const entry of manifest.certificates) {
+      const pemPath = join(ROOT, 'countries/nl/current', entry.file)
+      assert.ok(existsSync(pemPath), `PEM file missing: ${entry.file}`)
+      const der = pemToDer(readFileSync(pemPath, 'utf-8'))
+      const sha256 = createHash('sha256').update(der).digest('hex')
+      assert.equal(sha256, entry.sha256, `SHA-256 mismatch for ${entry.file}`)
+    }
+  })
+})
+
 // ── Country: Peru ──────────────────────────────────────────────────
 
 describe('Peru (pe)', () => {
@@ -402,11 +439,11 @@ describe('Peru (pe)', () => {
 // ── Cross-country checks ───────────────────────────────────────────
 
 describe('cross-country integrity', () => {
-  it('total trust store carries the small-country anchors plus the TSL sets (>= 440)', () => {
+  it('total trust store carries the small-country anchors plus the TSL sets (>= 470)', () => {
     // CR 10 + BR 4 + AR 2 + ES 2 + EE 16 + PE 8 = 42 fixed, plus the
-    // TSL-driven sets: Italy (~231), Germany (~101), and France (~79). The
-    // TSL sets are dynamic (AgID / BNetzA / ANSSI lists), so this is a floor
-    // tripwire rather than an exact count.
+    // TSL-driven sets: Italy (~231), Germany (~101), France (~79), and the
+    // Netherlands (~30). The TSL sets are dynamic (AgID / BNetzA / ANSSI / RDI
+    // lists), so this is a floor tripwire rather than an exact count.
     const fixed =
       cr.ALL_CERTS.length +
       br.ALL_CERTS.length +
@@ -415,8 +452,9 @@ describe('cross-country integrity', () => {
       ee.ALL_CERTS.length +
       pe.ALL_CERTS.length
     assert.equal(fixed, 42, `small-country anchors changed: expected 42, got ${fixed}`)
-    const total = fixed + italy.ALL_CERTS.length + de.ALL_CERTS.length + fr.ALL_CERTS.length
-    assert.ok(total >= 440, `Expected >= 440 total, got ${total}`)
+    const total =
+      fixed + italy.ALL_CERTS.length + de.ALL_CERTS.length + fr.ALL_CERTS.length + nl.ALL_CERTS.length
+    assert.ok(total >= 470, `Expected >= 470 total, got ${total}`)
   })
 
   it('no duplicate export names across countries', () => {
@@ -429,6 +467,7 @@ describe('cross-country integrity', () => {
       ...de.ALL_CERTS.map(c => c.exportName),
       ...fr.ALL_CERTS.map(c => c.exportName),
       ...italy.ALL_CERTS.map(c => c.exportName),
+      ...nl.ALL_CERTS.map(c => c.exportName),
       ...pe.ALL_CERTS.map(c => c.exportName),
     ]
     const unique = new Set(allNames)
@@ -436,7 +475,7 @@ describe('cross-country integrity', () => {
   })
 
   it('every PEM decodes to valid base64 content', () => {
-    const all = [...cr.ALL_CERTS, ...br.ALL_CERTS, ...ar.ALL_CERTS, ...es.ALL_CERTS, ...ee.ALL_CERTS, ...de.ALL_CERTS, ...italy.ALL_CERTS, ...pe.ALL_CERTS]
+    const all = [...cr.ALL_CERTS, ...br.ALL_CERTS, ...ar.ALL_CERTS, ...es.ALL_CERTS, ...ee.ALL_CERTS, ...de.ALL_CERTS, ...italy.ALL_CERTS, ...nl.ALL_CERTS, ...pe.ALL_CERTS]
     for (const cert of all) {
       const b64 = cert.pem
         .replace('-----BEGIN CERTIFICATE-----', '')
