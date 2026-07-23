@@ -231,7 +231,8 @@ export const getCountryName = (code, lang) => {
     it: { en: 'Italy', es: 'Italia' },
     at: { en: 'Austria', es: 'Austria' },
     nl: { en: 'Netherlands', es: 'Países Bajos' },
-    pe: { en: 'Peru', es: 'Perú' }
+    pe: { en: 'Peru', es: 'Perú' },
+    pt: { en: 'Portugal', es: 'Portugal' }
   };
   const l = lang === 'es' ? 'es' : 'en';
   return names[code]?.[l] || names[code]?.en || code;
