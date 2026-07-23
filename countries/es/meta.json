@@ -10,7 +10,7 @@
   },
   "governingLaw": "Reglamento eIDAS (UE) 910/2014 · Ley 6/2020",
   "technology": {
-    "keyAlgorithms": ["RSA-4096"],
+    "keyAlgorithms": ["RSA-2048", "RSA-3072", "RSA-4096", "RSA-8192", "EC-P256", "EC-P384", "EC-P521"],
     "signatureStandards": ["CAdES", "PAdES", "XAdES"]
   },
   "capabilities": ["Certificado de Persona Física", "Qualified e-signature (eIDAS)"],
@@ -19,6 +19,6 @@
     { "label": "FNMT — CERES (certificados)", "url": "https://www.fnmt.es/ceres" },
     { "label": "Independent verifier (Attestto)", "url": "https://verify.attestto.com" }
   ],
-  "source": { "type": "manual", "note": "AC RAIZ FNMT-RCM and AC FNMT Usuarios published by FNMT CERES." },
+  "source": { "type": "tsl", "note": "Coverage sourced from the Spanish national Trusted List (Lista de Servicios de Confianza), LOTL-verified via XAdES signature chain from the EU List of Trusted Lists. Signer: MINISTRY OF ECONOMIC AFFAIRS AND DIGITAL TRANSFORMATION / SPANISH TRUST SCHEME OPERATOR." },
   "notes": "FNMT-RCM is Spain's public-sector qualified trust service provider under eIDAS. The AC RAIZ FNMT-RCM carries its name in the OU field (no CN), which is why the directory reads it from OU. RSA throughout."
 }

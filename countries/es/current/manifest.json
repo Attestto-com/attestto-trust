@@ -1,20 +1,164 @@
 {
   "country": "ES",
-  "generatedAt": "2026-07-23T19:40:30.345Z",
-  "count": 2,
+  "generatedAt": "2026-07-23T21:51:30.964Z",
+  "count": 139,
   "certificates": [
     {
-      "file": "AC-RAIZ-FNMT-RCM.pem",
-      "sha256": "ebc5570c29018c4d67b1aa127baf12f703b4611ebc17b7dab5573894179b93fa",
-      "subject": "AC RAIZ FNMT-RCM",
-      "issuer": "AC RAIZ FNMT-RCM",
-      "serialNumber": "5d938d306736c8061d1ac754846907",
-      "validFrom": "2008-10-29T15:59:56.000Z",
-      "validTo": "2030-01-01T00:00:00.000Z",
-      "role": "root",
+      "file": "ac-camerfirma-for-legal-persons-2016.pem",
+      "sha256": "3a8066266d28bd28ccd0f564c8fbc1219b4ffae403e01e5039d30f2400f0eb09",
+      "subject": "AC CAMERFIRMA FOR LEGAL PERSONS - 2016",
+      "issuer": "CHAMBERS OF COMMERCE ROOT - 2016",
+      "serialNumber": "54b16ee111245a42",
+      "validFrom": "2016-04-14T08:33:07.000Z",
+      "validTo": "2040-03-09T08:33:07.000Z",
+      "role": "intermediate",
       "keyAlgorithm": "RSA-4096",
-      "crlUrls": [],
-      "ocspUrls": []
+      "crlUrls": [
+        "http://crl.camerfirma.com/chambersofcommerceroot-2016.crl",
+        "http://crl1.camerfirma.com/chambersofcommerceroot-2016.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.camerfirma.com"
+      ]
+    },
+    {
+      "file": "ac-camerfirma-for-natural-persons-2016.pem",
+      "sha256": "eedd457af1353d76f48e7c6123f39140e5f9a069ca51b43eea8615c9cec0d4bb",
+      "subject": "AC CAMERFIRMA FOR NATURAL PERSONS - 2016",
+      "issuer": "CHAMBERS OF COMMERCE ROOT - 2016",
+      "serialNumber": "51514cb44fa454f5",
+      "validFrom": "2016-04-14T08:48:09.000Z",
+      "validTo": "2040-03-09T08:48:09.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.camerfirma.com/chambersofcommerceroot-2016.crl",
+        "http://crl1.camerfirma.com/chambersofcommerceroot-2016.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.camerfirma.com"
+      ]
+    },
+    {
+      "file": "ac-camerfirma-qualified-certificates-2021.pem",
+      "sha256": "4d187d4e5bba7bbad422b75befb4dcb2179d1ccd115a18d2c8350fffac316b34",
+      "subject": "AC CAMERFIRMA QUALIFIED CERTIFICATES - 2021",
+      "issuer": "CAMERFIRMA ROOT 2021",
+      "serialNumber": "1c200d921123b898380fc2b92419bba99b94c2c2",
+      "validFrom": "2021-10-20T15:12:16.000Z",
+      "validTo": "2037-10-16T15:12:16.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.ca.camerfirma.com/camerfirmaroot2021.crl",
+        "http://crl1.ca.camerfirma.com/camerfirmaroot2021.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp2021.camerfirma.com"
+      ]
+    },
+    {
+      "file": "ac-consulares-g2.pem",
+      "sha256": "5de90851a1a2235c515b8636c6a685990317cd4f30ef4a573e08ec07aaf1824c",
+      "subject": "AC CONSULARES G2",
+      "issuer": "AC RAIZ FNMT-RCM G2",
+      "serialNumber": "435a581918e046db23ca63dae0fa0687311b4c35",
+      "validFrom": "2024-10-10T11:06:37.000Z",
+      "validTo": "2039-10-07T11:06:36.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-256",
+      "crlUrls": [
+        "http://www.cert.fnmt.es/crls/ARLFNMTRCMG2.crl"
+      ],
+      "ocspUrls": [
+        "http://ocspcaraizg2.cert.fnmt.es/ocspcaraizG2/OcspResponder"
+      ]
+    },
+    {
+      "file": "ac-dgp-004.pem",
+      "sha256": "6ad43c815cd847af82b180a2a0bd3902b3520e19cf0ed210d80099e597429900",
+      "subject": "AC DGP 004",
+      "issuer": "AC RAIZ DGP 2",
+      "serialNumber": "17eb754a90b00fd65b62e1daf8273711",
+      "validFrom": "2018-08-02T10:50:02.000Z",
+      "validTo": "2033-08-02T10:50:02.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://pki.policia.es/cnp/crls/ARL.crl",
+        "ldap://ldap.policia.es/CN=CRL,CN=AC%20RAIZ%20DGP%202,OI=VATES-S2816015H,OU=CNP,O=DIRECCION%20GENERAL%20DE%20LA%20POLICIA,C=ES?authorityRevocationList?base?objectclass=cRLDistributionPoint"
+      ],
+      "ocspUrls": [
+        "http://ocsp.policia.es"
+      ]
+    },
+    {
+      "file": "ac-entidades-g2.pem",
+      "sha256": "ec751e45282021d1bcaf029c497d05cddec1e3a76329ab845afac35e759c24dd",
+      "subject": "AC ENTIDADES G2",
+      "issuer": "AC RAIZ FNMT-RCM G2",
+      "serialNumber": "18bfc871813bc9803103f15b705070c056204f3d",
+      "validFrom": "2024-10-10T10:01:55.000Z",
+      "validTo": "2039-10-07T10:01:54.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-256",
+      "crlUrls": [
+        "http://www.cert.fnmt.es/crls/ARLFNMTRCMG2.crl"
+      ],
+      "ocspUrls": [
+        "http://ocspcaraizg2.cert.fnmt.es/ocspcaraizG2/OcspResponder"
+      ]
+    },
+    {
+      "file": "ac-firmaprofesional-cualificados.pem",
+      "sha256": "2b75cc4f36759cfc4c6637b1e0e54359457db57e74de4d2dc5d02cddff2960cf",
+      "subject": "AC Firmaprofesional - CUALIFICADOS",
+      "issuer": "Autoridad de Certificacion Firmaprofesional CIF A62634068",
+      "serialNumber": "0d0366455e6e29d4",
+      "validFrom": "2014-09-18T10:00:54.000Z",
+      "validTo": "2030-12-31T04:02:55.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://crl.firmaprofesional.com/fproot.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.firmaprofesional.com"
+      ]
+    },
+    {
+      "file": "ac-firmaprofesional-secure-web-2025.pem",
+      "sha256": "b78c7f63e24583c7d40c1d33d8dbe116b382b4beb9ebc41a1a068d519baf4bad",
+      "subject": "AC Firmaprofesional - Secure Web 2025",
+      "issuer": "Autoridad de Certificacion Firmaprofesional CIF A62634068",
+      "serialNumber": "0737b88736b6e0b3db088f236aae3c7c",
+      "validFrom": "2025-02-25T12:35:39.000Z",
+      "validTo": "2028-02-25T12:35:39.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://crl.firmaprofesional.com/fproot.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.firmaprofesional.com"
+      ]
+    },
+    {
+      "file": "ac-firmaprofesional-timestamp-2021.pem",
+      "sha256": "75b14d4d63806f30f538060f2eb65c1365bfc0cd7f3ecdc6c0070218b6e46759",
+      "subject": "AC Firmaprofesional - Timestamp 2021",
+      "issuer": "Autoridad de Certificacion Firmaprofesional CIF A62634068",
+      "serialNumber": "08a9744596640672cdd227c2621607c4",
+      "validFrom": "2021-04-13T09:32:20.000Z",
+      "validTo": "2030-12-31T04:02:00.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.firmaprofesional.com/fproot.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.firmaprofesional.com"
+      ]
     },
     {
       "file": "ac-fnmt-usuarios.pem",
@@ -32,6 +176,2231 @@
       ],
       "ocspUrls": [
         "http://ocspfnmtrcmca.cert.fnmt.es/ocspfnmtrcmca/OcspResponder"
+      ]
+    },
+    {
+      "file": "ac-raiz-dnie-2-c5c380eb.pem",
+      "sha256": "c5c380eb9240fb36a16e15f5d6bad0bf611f6d03f0ef24229919e7d2d8126c11",
+      "subject": "AC RAIZ DNIE 2",
+      "issuer": "AC RAIZ DNIE 2",
+      "serialNumber": "2b1bbbcb61cf482452455d3d5edbe2a3",
+      "validFrom": "2013-09-27T10:26:05.000Z",
+      "validTo": "2043-09-27T10:26:05.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "ac-raiz-dnie-2.pem",
+      "sha256": "c5c380eb9240fb36a16e15f5d6bad0bf611f6d03f0ef24229919e7d2d8126c11",
+      "subject": "AC RAIZ DNIE 2",
+      "issuer": "AC RAIZ DNIE 2",
+      "serialNumber": "2b1bbbcb61cf482452455d3d5edbe2a3",
+      "validFrom": "2013-09-27T10:26:05.000Z",
+      "validTo": "2043-09-27T10:26:05.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "ac-representacion-g2.pem",
+      "sha256": "0df2883b6074d5b7d7940b69ca658a3a9a747a8e171f653ad4ce0230087d9d64",
+      "subject": "AC REPRESENTACIÓN G2",
+      "issuer": "AC RAIZ FNMT-RCM G2",
+      "serialNumber": "0a6cd3c0ffc1db0f7cb5cdd49a6ef807af2d7806",
+      "validFrom": "2024-12-16T11:01:31.000Z",
+      "validTo": "2039-12-13T11:01:30.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-256",
+      "crlUrls": [
+        "http://www.cert.fnmt.es/crls/ARLFNMTRCMG2.crl"
+      ],
+      "ocspUrls": [
+        "http://ocspcaraizg2.cert.fnmt.es/ocspcaraizG2/OcspResponder"
+      ]
+    },
+    {
+      "file": "ac-representacion.pem",
+      "sha256": "8fd16a179944d5d1d420af09405eda7abf2a9c742883e8c2f89e0d90afaf754b",
+      "subject": "AC Representación",
+      "issuer": "AC RAIZ FNMT-RCM",
+      "serialNumber": "61c2d4d4f6a9ae77559266b98dafd621",
+      "validFrom": "2015-06-30T09:51:53.000Z",
+      "validTo": "2029-12-31T10:51:53.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "ldap://ldapfnmt.cert.fnmt.es/CN=CRL,OU=AC%20RAIZ%20FNMT-RCM,O=FNMT-RCM,C=ES?authorityRevocationList;binary?base?objectclass=cRLDistributionPoint",
+        "http://www.cert.fnmt.es/crls/ARLFNMTRCM.crl"
+      ],
+      "ocspUrls": [
+        "http://ocspfnmtrcmca.cert.fnmt.es/ocspfnmtrcmca/OcspResponder"
+      ]
+    },
+    {
+      "file": "ac-sector-publico-g2.pem",
+      "sha256": "983329b00c3052d7eccd46bf2cf3e29d05ae93d1aa146bd5078c3726ae8271fe",
+      "subject": "AC SECTOR PÚBLICO G2",
+      "issuer": "AC RAIZ FNMT-RCM G2",
+      "serialNumber": "4993b39d79a35ca319ae7de679fbfd3cd61c1f7a",
+      "validFrom": "2024-12-16T10:58:13.000Z",
+      "validTo": "2039-12-13T10:58:12.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-256",
+      "crlUrls": [
+        "http://www.cert.fnmt.es/crls/ARLFNMTRCMG2.crl"
+      ],
+      "ocspUrls": [
+        "http://ocspcaraizg2.cert.fnmt.es/ocspcaraizG2/OcspResponder"
+      ]
+    },
+    {
+      "file": "ac-sector-publico.pem",
+      "sha256": "8265756dd5cd8a37ee61e40351288e4b16a89dd248c1ec4eba25aaf161abf498",
+      "subject": "AC Sector Público",
+      "issuer": "AC RAIZ FNMT-RCM",
+      "serialNumber": "348160c51f5edbcb5ddf89cab4573392",
+      "validFrom": "2019-11-28T08:48:09.000Z",
+      "validTo": "2029-11-28T08:48:09.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "ldap://ldapfnmt.cert.fnmt.es/CN=CRL,OU=AC%20RAIZ%20FNMT-RCM,O=FNMT-RCM,C=ES?authorityRevocationList;binary?base?objectclass=cRLDistributionPoint",
+        "http://www.cert.fnmt.es/crls/ARLFNMTRCM.crl"
+      ],
+      "ocspUrls": [
+        "http://ocspfnmtrcmca.cert.fnmt.es/ocspfnmtrcmca/OcspResponder"
+      ]
+    },
+    {
+      "file": "ac-servidores-seguros-tipo1.pem",
+      "sha256": "1edb6bd91274882db795bfc514f8aabe10ad955cbccfd3fd5a5b5febb2ce5b68",
+      "subject": "AC SERVIDORES SEGUROS TIPO1",
+      "issuer": "AC RAIZ FNMT-RCM SERVIDORES SEGUROS",
+      "serialNumber": "508986cdb4170efe5c1b6bd5c824eb5b",
+      "validFrom": "2018-12-20T10:15:49.000Z",
+      "validTo": "2033-12-20T10:15:49.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-384",
+      "crlUrls": [
+        "http://www.cert.fnmt.es/crls/ARLSERVIDORESSEGUROS.crl"
+      ],
+      "ocspUrls": [
+        "http://ocspfnmtssr.cert.fnmt.es/ocspssr/OcspResponder"
+      ]
+    },
+    {
+      "file": "ac-tsa-clientes.pem",
+      "sha256": "8e6af1e1377adf7ef19a89796d2c3dd72ac09d86448a47c92c2ff91ec3d0259e",
+      "subject": "AC TSA CLIENTES",
+      "issuer": "AC RAIZ FNMT-RCM TSA",
+      "serialNumber": "5cd7a6ad9ff9bdb06b430636442c0391825218c5",
+      "validFrom": "2024-10-10T10:04:18.000Z",
+      "validTo": "2039-10-07T10:04:17.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-384",
+      "crlUrls": [
+        "http://www.cert.fnmt.es/crls/ACRAIZFNMTTSA.crl"
+      ],
+      "ocspUrls": [
+        "http://ocspraiztsa.cert.fnmt.es/ocspraiztsa/OcspResponder"
+      ]
+    },
+    {
+      "file": "ac-unidades-de-sellado-de-tiempo.pem",
+      "sha256": "9ce630b35f8ae2c6419e734ad9d2fa30476dd9e7394b1e93b27f83f776a024ea",
+      "subject": "AC Unidades de Sellado de Tiempo",
+      "issuer": "AC RAIZ FNMT-RCM",
+      "serialNumber": "2ced1a5e02805bbc5ddf8a3aecaa985a",
+      "validFrom": "2019-11-28T08:50:02.000Z",
+      "validTo": "2029-11-28T08:50:02.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "ldap://ldapfnmt.cert.fnmt.es/CN=CRL,OU=AC%20RAIZ%20FNMT-RCM,O=FNMT-RCM,C=ES?authorityRevocationList;binary?base?objectclass=cRLDistributionPoint",
+        "http://www.cert.fnmt.es/crls/ARLFNMTRCM.crl"
+      ],
+      "ocspUrls": [
+        "http://ocspfnmtrcmca.cert.fnmt.es/ocspfnmtrcmca/OcspResponder"
+      ]
+    },
+    {
+      "file": "ac-usuarios-g2.pem",
+      "sha256": "283a9f9fe9674f67efd6e27bb543e0ec192cbeff20fc836c2243654744c5af89",
+      "subject": "AC USUARIOS G2",
+      "issuer": "AC RAIZ FNMT-RCM G2",
+      "serialNumber": "5dd5d6a543498efe35685e8253c703e9a6de89a9",
+      "validFrom": "2024-12-16T10:54:50.000Z",
+      "validTo": "2039-12-13T10:54:49.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-256",
+      "crlUrls": [
+        "http://www.cert.fnmt.es/crls/ARLFNMTRCMG2.crl"
+      ],
+      "ocspUrls": [
+        "http://ocspcaraizg2.cert.fnmt.es/ocspcaraizG2/OcspResponder"
+      ]
+    },
+    {
+      "file": "aca-1.pem",
+      "sha256": "c6dfaaace235da93e1c87d4ec7768652563d54c538b31e8cbd0680e91db75316",
+      "subject": "ACA 1",
+      "issuer": "ACA ROOT 2",
+      "serialNumber": "534f8eeb4149de83477ec5c5633029206e6b8955",
+      "validFrom": "2024-03-18T15:51:30.000Z",
+      "validTo": "2044-03-18T15:51:30.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-521",
+      "crlUrls": [
+        "http://acacrl.acabogacia.org/crl/ACA_root2_ARL.crl",
+        "https://acacrl.acabogacia.org/crl/ACA_root2_ARL.crl"
+      ],
+      "ocspUrls": [
+        "http://acaocsp.acabogacia.org/"
+      ]
+    },
+    {
+      "file": "aca-2.pem",
+      "sha256": "dea1d4d5422ccec8364a58a8e6d221fdbe1673246b335438671f67a86017efdc",
+      "subject": "ACA 2",
+      "issuer": "ACA ROOT 2",
+      "serialNumber": "3705a42c126781af5737c3fba240e022d1dfe361",
+      "validFrom": "2024-03-18T16:26:13.000Z",
+      "validTo": "2044-03-18T16:26:13.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-521",
+      "crlUrls": [
+        "http://acacrl.acabogacia.org/crl/ACA_root2_ARL.crl",
+        "https://acacrl.acabogacia.org/crl/ACA_root2_ARL.crl"
+      ],
+      "ocspUrls": [
+        "http://acaocsp.acabogacia.org/"
+      ]
+    },
+    {
+      "file": "aca-ca1.pem",
+      "sha256": "705eb3a0b1f09deda3ed45766bbbc02197700abb1e2d1d9e2862ac589dc9fd77",
+      "subject": "ACA CA1",
+      "issuer": "ACA ROOT",
+      "serialNumber": "491ef8c2bf4724d3576bd181fc6705ad",
+      "validFrom": "2016-06-23T12:09:37.000Z",
+      "validTo": "2030-06-23T12:09:37.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://www.acabogacia.org/crl/aca_arl.crl",
+        "http://crl.acabogacia.org/crl/aca_arl.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.redabogacia.org"
+      ]
+    },
+    {
+      "file": "aca-ca2.pem",
+      "sha256": "7e9316a5cecfb90a53adc3c7769450f42cdc3a9b85df4c7577b053dcbb255812",
+      "subject": "ACA CA2",
+      "issuer": "ACA ROOT",
+      "serialNumber": "49a91da5cd0d70c3576bd11e009d55dd",
+      "validFrom": "2016-06-23T12:07:58.000Z",
+      "validTo": "2030-06-23T12:07:58.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://www.acabogacia.org/crl/aca_arl.crl",
+        "http://crl.acabogacia.org/crl/aca_arl.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.redabogacia.org"
+      ]
+    },
+    {
+      "file": "accv-ecc1-cliente.pem",
+      "sha256": "5caf44b2923b146cb575ab2ab9a0a293a134602335d97e579c44493532f48496",
+      "subject": "ACCV ECC1 CLIENTE",
+      "issuer": "ACCV ROOT ECC EIDAS 2023",
+      "serialNumber": "488b28611292f4986643d0d61ff9691a0b25c0ec",
+      "validFrom": "2023-07-25T12:15:02.000Z",
+      "validTo": "2047-07-19T12:15:01.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-521",
+      "crlUrls": [
+        "http://www.accv.es/gestcert/accv_root_ecc_eidas_2023.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.accv.es"
+      ]
+    },
+    {
+      "file": "accv-ecc1-componentes.pem",
+      "sha256": "d26e702d039a5713ddabf710e47193734e5550711763785051788d0fd2d7f4ea",
+      "subject": "ACCV ECC1 COMPONENTES",
+      "issuer": "ACCV ROOT ECC EIDAS 2023",
+      "serialNumber": "32839bbfb23a223605260a0d72821fd2859cb3cc",
+      "validFrom": "2023-07-25T12:20:39.000Z",
+      "validTo": "2047-07-19T12:20:38.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-521",
+      "crlUrls": [
+        "http://www.accv.es/gestcert/accv_root_ecc_eidas_2023.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.accv.es"
+      ]
+    },
+    {
+      "file": "accv-ecc1-profesionales.pem",
+      "sha256": "34fdb6f3d2d1070dd8428bce11d62294e1ff2c49e8b128b61160d748c7a537aa",
+      "subject": "ACCV ECC1 PROFESIONALES",
+      "issuer": "ACCV ROOT ECC EIDAS 2023",
+      "serialNumber": "5f102b55234393d15caf3b3c9909058aeb8e6bff",
+      "validFrom": "2023-07-25T12:18:11.000Z",
+      "validTo": "2047-07-19T12:18:10.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-521",
+      "crlUrls": [
+        "http://www.accv.es/gestcert/accv_root_ecc_eidas_2023.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.accv.es"
+      ]
+    },
+    {
+      "file": "accv-ecc1-tls.pem",
+      "sha256": "93c087ab9331b74c0fccce11bc61fb9fa6d432077d8f1018194fa4cca664d781",
+      "subject": "ACCV ECC1 TLS",
+      "issuer": "ACCV ROOT ECC TLS 2024",
+      "serialNumber": "4c7e6e23f36f962b7378651b8a607fe052c3a7aa",
+      "validFrom": "2024-02-27T14:20:09.000Z",
+      "validTo": "2039-02-23T14:20:08.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-384",
+      "crlUrls": [
+        "http://www.accv.es/gestcert/accv_root_ecc_tls_2024.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.accv.es"
+      ]
+    },
+    {
+      "file": "accv-ecc1-tsa.pem",
+      "sha256": "677c8f5f17696dcc96f592c8b02eb50ae21a7a1c970997d4a7feb93d094e9957",
+      "subject": "ACCV ECC1 TSA",
+      "issuer": "ACCV ROOT ECC TSA EIDAS 2024",
+      "serialNumber": "09c28c6807a8ac01fe43d8c57506c53b22925ca4",
+      "validFrom": "2024-02-27T14:21:45.000Z",
+      "validTo": "2048-02-21T14:21:44.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-521",
+      "crlUrls": [
+        "http://www.accv.es/gestcert/accv_root_ecc_eidas_tsa_2024.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.accv.es"
+      ]
+    },
+    {
+      "file": "accv-rsa1-cliente.pem",
+      "sha256": "a66b485645a5d66a5714a360e02ddf3ab71875e77db198ba321a8f62ff01d7e1",
+      "subject": "ACCV RSA1 CLIENTE",
+      "issuer": "ACCV ROOT RSA EIDAS 2023",
+      "serialNumber": "1036ced2d94d91d8adddd33711b89759008e3f38",
+      "validFrom": "2023-07-25T12:09:25.000Z",
+      "validTo": "2047-07-19T12:09:24.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://www.accv.es/gestcert/accv_root_rsa_eidas_2023.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.accv.es"
+      ]
+    },
+    {
+      "file": "accv-rsa1-componentes.pem",
+      "sha256": "50d5748d831c2864459b23d8b99df53dba43bbbb2bc4bfcddb5731b52b56b69e",
+      "subject": "ACCV RSA1 COMPONENTES",
+      "issuer": "ACCV ROOT RSA EIDAS 2023",
+      "serialNumber": "15d332eb590ac8f4c70f5e8547537546d9859325",
+      "validFrom": "2023-07-25T12:20:01.000Z",
+      "validTo": "2047-07-19T12:20:00.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://www.accv.es/gestcert/accv_root_rsa_eidas_2023.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.accv.es"
+      ]
+    },
+    {
+      "file": "accv-rsa1-profesionales.pem",
+      "sha256": "60adc74248a45f7df968587f38119f50e99b4e06d1a6241dc6b8f6d19cd2a38a",
+      "subject": "ACCV RSA1 PROFESIONALES",
+      "issuer": "ACCV ROOT RSA EIDAS 2023",
+      "serialNumber": "2a4c4bff017cb1f5d9e67954ceeb6211b1b769b2",
+      "validFrom": "2023-07-25T12:17:19.000Z",
+      "validTo": "2047-07-19T12:17:18.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://www.accv.es/gestcert/accv_root_rsa_eidas_2023.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.accv.es"
+      ]
+    },
+    {
+      "file": "accv-rsa1-tls.pem",
+      "sha256": "346440cf7674a529305545563322fcfb38f5a4b3f1e7e852dff8a4b7a5ef72d1",
+      "subject": "ACCV RSA1 TLS",
+      "issuer": "ACCV ROOT RSA TLS 2024",
+      "serialNumber": "167a018da5247a15433761a6ad5d8294a6424ee0",
+      "validFrom": "2024-02-27T14:18:56.000Z",
+      "validTo": "2039-02-23T14:18:55.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://www.accv.es/gestcert/accv_root_rsa_tls_2024.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.accv.es"
+      ]
+    },
+    {
+      "file": "accv-rsa1-tsa.pem",
+      "sha256": "fdd5aadd52b5995ef4b4a933a789746d4559daf2f1a15a594bd151aa18d99939",
+      "subject": "ACCV RSA1 TSA",
+      "issuer": "ACCV ROOT RSA TSA EIDAS 2024",
+      "serialNumber": "70f404e09f4a542507a597a5b834db34ff7b9785",
+      "validFrom": "2024-02-27T14:20:58.000Z",
+      "validTo": "2048-02-21T14:20:57.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://www.accv.es/gestcert/accv_root_rsa_eidas_tsa_2024.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.accv.es"
+      ]
+    },
+    {
+      "file": "accvca-120.pem",
+      "sha256": "3bc51856040ad7ff6683aa85a0d34f9ea680cd23c37cb8a0423b0f89a24405b9",
+      "subject": "ACCVCA-120",
+      "issuer": "ACCVRAIZ1",
+      "serialNumber": "6482c4ab654b00a6",
+      "validFrom": "2011-10-13T14:55:04.000Z",
+      "validTo": "2026-12-31T23:59:00.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://www.accv.es/fileadmin/Archivos/certificados/raizaccv1_der.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.accv.es"
+      ]
+    },
+    {
+      "file": "ancert-certificados-fern-v2.pem",
+      "sha256": "a885ec8218b1c96730b0264ecfbbdee06c97b701faf80dccb26920f5e727ad73",
+      "subject": "ANCERT Certificados FERN V2",
+      "issuer": "ANCERT Certificados CGN V2",
+      "serialNumber": "2b0a88107bb8e7d5cdf78ac2acee5e50",
+      "validFrom": "2016-06-21T10:24:51.000Z",
+      "validTo": "2030-05-25T00:01:00.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://www.ancert.com/crl/ANCERTCGN_V2.crl",
+        "http://www2.ancert.com/crl/ANCERTCGN_V2.crl",
+        "http://www3.ancert.com/crl/ANCERTCGN_V2.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.ac.ancert.com/ocsp.xuda"
+      ]
+    },
+    {
+      "file": "ancert-certificados-notariales-corporativos-v2.pem",
+      "sha256": "0ca8b7a01506cafaa1879e7491c662f8264eb3a2f1f0e0657da3d6a912ff1487",
+      "subject": "ANCERT Certificados Notariales Corporativos V2",
+      "issuer": "ANCERT Certificados Notariales V2",
+      "serialNumber": "3c73f76ae7e08ca131e99f7b9daf0c6a",
+      "validFrom": "2016-06-21T10:05:56.000Z",
+      "validTo": "2030-05-25T00:01:00.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://www.ancert.com/crl/ANCERTNOT_V2.crl",
+        "http://www2.ancert.com/crl/ANCERTNOT_V2.crl",
+        "http://www3.ancert.com/crl/ANCERTNOT_V2.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.ac.ancert.com/ocsp.xuda"
+      ]
+    },
+    {
+      "file": "ancert-certificados-notariales-personales-v2.pem",
+      "sha256": "c4472508c3bc689fc59e8bf77a6ddedfbb29a43316bd0946d544e54dfc001535",
+      "subject": "ANCERT Certificados Notariales Personales V2",
+      "issuer": "ANCERT Certificados Notariales V2",
+      "serialNumber": "201cf3ee70f608b50926fa493927175b",
+      "validFrom": "2016-06-21T09:50:59.000Z",
+      "validTo": "2030-05-25T00:01:00.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://www.ancert.com/crl/ANCERTNOT_V2.crl",
+        "http://www2.ancert.com/crl/ANCERTNOT_V2.crl",
+        "http://www3.ancert.com/crl/ANCERTNOT_V2.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.ac.ancert.com/ocsp.xuda"
+      ]
+    },
+    {
+      "file": "ancert-certificados-para-empleados-v2.pem",
+      "sha256": "e718f67c8b1f8e1fc0176a361c98e6299fd3f439cfa46eddb46a57b4ac08b443",
+      "subject": "ANCERT Certificados para empleados V2",
+      "issuer": "ANCERT Certificados CGN V2",
+      "serialNumber": "03f0de1d15130a38d56efeba5820c613",
+      "validFrom": "2016-06-21T10:27:52.000Z",
+      "validTo": "2030-05-25T00:01:00.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://www.ancert.com/crl/ANCERTCGN_V2.crl",
+        "http://www2.ancert.com/crl/ANCERTCGN_V2.crl",
+        "http://www3.ancert.com/crl/ANCERTCGN_V2.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.ac.ancert.com/ocsp.xuda"
+      ]
+    },
+    {
+      "file": "anf-ac-qualified-certificates-for-eseal.pem",
+      "sha256": "3431292a66fb3ea53f8b706ea4d980381cb865df6c99f0524536545b58cf9fff",
+      "subject": "ANF AC Qualified Certificates for eSeal",
+      "issuer": "ANF Global Root CA",
+      "serialNumber": "03476f81a0fd402201dad85d",
+      "validFrom": "2022-11-11T13:01:36.000Z",
+      "validTo": "2035-11-08T13:01:36.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.anf.es/crl/ANF_Global_Root_CA_2036_arl.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.anf.es/spain/AV"
+      ]
+    },
+    {
+      "file": "anf-ac-qualified-certificates-for-esignature.pem",
+      "sha256": "b7cdf23a73a2da1b515a64403e90a3b90c45ddfbb2558bc1c12fb9bcfa2e5a23",
+      "subject": "ANF AC Qualified Certificates for eSignature",
+      "issuer": "ANF Global Root CA",
+      "serialNumber": "0345c5cdea742ec405553ca7",
+      "validFrom": "2022-11-11T12:44:14.000Z",
+      "validTo": "2035-11-08T12:44:14.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.anf.es/crl/ANF_Global_Root_CA_2036_arl.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.anf.es/spain/AV"
+      ]
+    },
+    {
+      "file": "anf-ac-qualified-tsa.pem",
+      "sha256": "afbc8e2d546ca7499d8a8104a765b00d2a30f3b0275394d67a8d60c03d0163b5",
+      "subject": "ANF AC Qualified TSA",
+      "issuer": "ANF Global Root CA",
+      "serialNumber": "0339e1cbec831d897da7fee5",
+      "validFrom": "2024-11-13T11:31:26.000Z",
+      "validTo": "2035-11-11T11:31:26.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.anf.es/crl/ANF_Global_Root_CA_2036_arl.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.anf.es/spain/AV"
+      ]
+    },
+    {
+      "file": "anf-high-assurance-ap-ca1.pem",
+      "sha256": "4dc54f4c5bdac19557066e32f62f8c486b155b00f53d102de78c98ee61a2c317",
+      "subject": "ANF High Assurance AP CA1",
+      "issuer": "ANF Global Root CA",
+      "serialNumber": "0c68fc7dc48d8380",
+      "validFrom": "2016-05-20T15:08:29.000Z",
+      "validTo": "2026-05-18T15:08:29.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "https://www.anf.es/crl/ANF_Global_Root_CA_arl.crl",
+        "https://crl.anf.es/crl/ANF_Global_Root_CA_arl.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.anf.es/spain/AV"
+      ]
+    },
+    {
+      "file": "anf-high-assurance-ev-ca1-1c28a8c0.pem",
+      "sha256": "1c28a8c009f25850b9155533d4a9a14c534b24da84756e82d6150b5062d63704",
+      "subject": "ANF High Assurance EV CA1",
+      "issuer": "ANF Global Root CA",
+      "serialNumber": "065d666546a45900",
+      "validFrom": "2016-05-20T14:48:24.000Z",
+      "validTo": "2026-05-18T14:48:24.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://www.anf.es/crl/ANF_Global_Root_CA_2036_arl.crl",
+        "http://crl.anf.es/crl/ANF_Global_Root_CA_2036_arl.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.anf.es/spain/AV"
+      ]
+    },
+    {
+      "file": "anf-high-assurance-ev-ca1.pem",
+      "sha256": "1c28a8c009f25850b9155533d4a9a14c534b24da84756e82d6150b5062d63704",
+      "subject": "ANF High Assurance EV CA1",
+      "issuer": "ANF Global Root CA",
+      "serialNumber": "065d666546a45900",
+      "validFrom": "2016-05-20T14:48:24.000Z",
+      "validTo": "2026-05-18T14:48:24.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://www.anf.es/crl/ANF_Global_Root_CA_2036_arl.crl",
+        "http://crl.anf.es/crl/ANF_Global_Root_CA_2036_arl.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.anf.es/spain/AV"
+      ]
+    },
+    {
+      "file": "anf-qualified-for-eseal-ca.pem",
+      "sha256": "16ad38142bf3d07d421b7393e699444240b178f9480eaf37e0eda83365c539cf",
+      "subject": "ANF Qualified for eSeal CA",
+      "issuer": "ANF AC SL Root CA",
+      "serialNumber": "03370bc95a4b263538f8af6b",
+      "validFrom": "2022-10-07T14:28:18.000Z",
+      "validTo": "2032-10-04T14:28:18.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.anf.es/crl/ANF_AC_SL_Root_CA-arl.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.anf.es/spain/AV"
+      ]
+    },
+    {
+      "file": "anf-qualified-for-esignature-ca.pem",
+      "sha256": "5999789a17df8674d098db057df8ed3764e96529d4a0eb56246de3c46fb0e28a",
+      "subject": "ANF Qualified for eSignature CA",
+      "issuer": "ANF AC SL Root CA",
+      "serialNumber": "0337a81cb2e8c4be6f331f79",
+      "validFrom": "2022-10-07T14:16:18.000Z",
+      "validTo": "2032-10-04T14:16:18.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.anf.es/crl/ANF_AC_SL_Root_CA-arl.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.anf.es/spain/AV"
+      ]
+    },
+    {
+      "file": "anf-qualified-tsa.pem",
+      "sha256": "1d14934f39076ab984c59765f31da40cba05b008dd67ea35a9f9b9b63e0671ca",
+      "subject": "ANF Qualified TSA",
+      "issuer": "ANF AC SL Root CA",
+      "serialNumber": "03374aad6f0b98f21a91a73f",
+      "validFrom": "2023-05-24T12:54:58.000Z",
+      "validTo": "2033-05-21T12:54:58.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.anf.es/crl/ANF_AC_SL_Root_CA-arl.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.anf.es/spain/AV"
+      ]
+    },
+    {
+      "file": "anf-secure-server-ca.pem",
+      "sha256": "306bf8099636a44fffb5eedce6e30c0f36c7d43f6cca5a2ca3ab71668f353320",
+      "subject": "ANF Secure Server CA",
+      "issuer": "ANF Secure Server Root CA",
+      "serialNumber": "203079930ae06e7640bf556b",
+      "validFrom": "2020-11-09T12:47:22.000Z",
+      "validTo": "2030-11-07T12:47:22.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.anf.es/crl/ANFSecureServerRootCA-arl.crl",
+        "http://www.anf.es/crl/ANFSecureServerRootCA-arl.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.anf.es/spain/AV"
+      ]
+    },
+    {
+      "file": "anf-secure-ssl-ca.pem",
+      "sha256": "79a49f18ea13d923457c3b9f63dd92ae33252990e4da281b63412034c747b3b9",
+      "subject": "ANF Secure SSL CA",
+      "issuer": "ANF AC SL Root CA",
+      "serialNumber": "0337bc6096f3165a5ac36e11",
+      "validFrom": "2023-05-24T13:42:03.000Z",
+      "validTo": "2033-05-21T13:42:03.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.anf.es/crl/ANF_AC_SL_Root_CA-arl.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.anf.es/spain/AV"
+      ]
+    },
+    {
+      "file": "autoridad-de-certificacion-de-los-registradores-ac-externa.pem",
+      "sha256": "fb7e801d60d040923059bd31cc04fa49c5208605a009c5cbd017390067e65717",
+      "subject": "Autoridad de Certificación de los Registradores - AC Externa",
+      "issuer": "Autoridad de Certificación Raíz de los Registradores",
+      "serialNumber": "0f5842bff29193455755916434563654",
+      "validFrom": "2016-06-06T15:06:11.000Z",
+      "validTo": "2028-06-06T15:06:11.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://pki.registradores.org/crls/arl_psc_corpme.crl",
+        "ldap://ldap.registradores.org/CN=AC%20RAIZ,O=Colegio%20de%20Registradores%20-%20Q2863012G,C=ES?authorityRevocationList?base?objectclass=cRLDistributionPoint"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "autoridad-de-certificacion-de-los-registradores-ac-interna-f67a0c98.pem",
+      "sha256": "f67a0c987d0d7d5e7ecc4a69fd20005ed2bd503b6dca052492b2d5a3ed0bb3d8",
+      "subject": "Autoridad de Certificación de los Registradores - AC Interna",
+      "issuer": "Autoridad de Certificación Raíz de los Registradores",
+      "serialNumber": "1903bce34282776057558af9e9b77e2b",
+      "validFrom": "2016-06-06T14:38:48.000Z",
+      "validTo": "2028-06-06T14:38:48.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://pki.registradores.org/crls/arl_psc_corpme.crl",
+        "ldap://ldap.registradores.org/CN=AC%20RAIZ,O=Colegio%20de%20Registradores%20-%20Q2863012G,C=ES?authorityRevocationList?base?objectclass=cRLDistributionPoint"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "autoridad-de-certificacion-de-los-registradores-ac-interna.pem",
+      "sha256": "f67a0c987d0d7d5e7ecc4a69fd20005ed2bd503b6dca052492b2d5a3ed0bb3d8",
+      "subject": "Autoridad de Certificación de los Registradores - AC Interna",
+      "issuer": "Autoridad de Certificación Raíz de los Registradores",
+      "serialNumber": "1903bce34282776057558af9e9b77e2b",
+      "validFrom": "2016-06-06T14:38:48.000Z",
+      "validTo": "2028-06-06T14:38:48.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://pki.registradores.org/crls/arl_psc_corpme.crl",
+        "ldap://ldap.registradores.org/CN=AC%20RAIZ,O=Colegio%20de%20Registradores%20-%20Q2863012G,C=ES?authorityRevocationList?base?objectclass=cRLDistributionPoint"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "bewor-tech-ca1.pem",
+      "sha256": "8a386ed1c0932603d3b5f4789b7fcb33cf09c81a56de97fc826747956c2e786d",
+      "subject": "BEWOR TECH CA1",
+      "issuer": "UANATACA ROOT 2016",
+      "serialNumber": "44c3b873f185be24",
+      "validFrom": "2020-05-12T08:46:35.000Z",
+      "validTo": "2033-05-12T08:46:35.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl1.uanataca.com/public/pki/crl/arl_uanataca.crl",
+        "http://crl2.uanataca.com/public/pki/crl/arl_uanataca.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp1.uanataca.com/public/pki/ocsp/",
+        "http://ocsp2.uanataca.com/public/pki/ocsp/"
+      ]
+    },
+    {
+      "file": "ca-administrazio-publikoa-administracion-publica-2025.pem",
+      "sha256": "7e4e551152f06c51db576236162514bafd7abce1a3a4141a1a7949bdcfe1a432",
+      "subject": "CA ADMINISTRAZIO PUBLIKOA-ADMINISTRACION PUBLICA 2025",
+      "issuer": "ROOT CA QC IZENPE 2025",
+      "serialNumber": "7a9aaf09faadde78d95af5f5f01ad759",
+      "validFrom": "2025-09-25T13:05:27.000Z",
+      "validTo": "2045-09-25T13:05:27.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-384",
+      "crlUrls": [
+        "http://crl.izenpe.eus/crls/izqcroot.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "ca-de-certificados-ssl-ev.pem",
+      "sha256": "db476339ccbfcc9e4bd1d6cb606ca27f00679e1ef8a581e7236309b9d63ffe37",
+      "subject": "CA de Certificados SSL EV",
+      "issuer": "Izenpe.com",
+      "serialNumber": "687db7171744da235b3f625a7393f8a5",
+      "validFrom": "2018-07-06T12:36:41.000Z",
+      "validTo": "2028-07-06T12:36:41.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.izenpe.com/cgi-bin/arl2"
+      ],
+      "ocspUrls": [
+        "http://ocsp.izenpe.com"
+      ]
+    },
+    {
+      "file": "ca-herritarrak-eta-enpresa-ciudadania-y-empresa-2025.pem",
+      "sha256": "d852490ed91838b06f6885e17153738debfe9a5ff9ddb96ba0e36e5d4572efee",
+      "subject": "CA HERRITARRAK ETA ENPRESA-CIUDADANIA Y EMPRESA 2025",
+      "issuer": "ROOT CA QC IZENPE 2025",
+      "serialNumber": "eac8d4ccd12f373f4773d60b756f9992",
+      "validFrom": "2025-09-25T12:41:16.000Z",
+      "validTo": "2045-09-25T12:41:16.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-384",
+      "crlUrls": [
+        "http://crl.izenpe.eus/crls/izqcroot.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "ca-vintegris-trustservices.pem",
+      "sha256": "75a6330ed167b2877a4387931303ba93d78f72f55a137aa5506fd32930b7e297",
+      "subject": "CA Vintegris TrustServices",
+      "issuer": "CA Vintegris ROOT TrustServices",
+      "serialNumber": "219baa55e24d3aa1b9ba47f921d509382293e028",
+      "validFrom": "2022-01-24T13:09:20.000Z",
+      "validTo": "2032-01-22T13:09:19.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl1.vincasign.net/cavintegris.crl",
+        "http://crl2.vincasign.net/cavintegris.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "caedicom04.pem",
+      "sha256": "b211c48c2bd45066dddc3c62658b135d85fe1305896fe32faa2be70ba4aa0773",
+      "subject": "CAEDICOM04",
+      "issuer": "CAEDICOM Root",
+      "serialNumber": "31444885ca45af8d3e554dead000ea7861675a83",
+      "validFrom": "2021-09-23T13:50:20.000Z",
+      "validTo": "2034-05-21T10:20:00.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://acedicom.edicomgroup.com/caedicomroot.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.acedicom.edicomgroup.com/caedicomroot"
+      ]
+    },
+    {
+      "file": "centro-tecnologico-del-notariado-ca-qc-corporativos.pem",
+      "sha256": "39e379db8a2f67cc5c6e8ccfe0526c74edd977e9f855042f32e21c546e0f148c",
+      "subject": "Centro Tecnológico del Notariado CA-QC Corporativos",
+      "issuer": "Centro Tecnológico del Notariado RootCA-QC",
+      "serialNumber": "17c1835fdf8272345fd39d42a2a79394fc5357be",
+      "validFrom": "2025-03-12T11:19:53.000Z",
+      "validTo": "2035-03-10T11:11:05.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://tsp.ctnotariado.com/crl/CTNotariadoRootCA-QC.crl",
+        "http://tsp2.ctnotariado.com/crl/CTNotariadoRootCA-QC.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "centro-tecnologico-del-notariado-ca-qc-no-corporativos.pem",
+      "sha256": "dc272648c1f47b2594d117485c66caf2ed4806099c89ec356dc436fc19bcc3bb",
+      "subject": "Centro Tecnológico del Notariado CA-QC No Corporativos",
+      "issuer": "Centro Tecnológico del Notariado RootCA-QC",
+      "serialNumber": "044125cfd1e59c39c3177d596f1583f6b3905f0b",
+      "validFrom": "2025-03-12T11:31:21.000Z",
+      "validTo": "2035-03-10T11:11:05.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://tsp.ctnotariado.com/crl/CTNotariadoRootCA-QC.crl",
+        "http://tsp2.ctnotariado.com/crl/CTNotariadoRootCA-QC.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "cert.pem",
+      "sha256": "f038421f07f20d63a20d3691e5a178ab8459ebe570c1647b7690554ef23876ab",
+      "subject": "AC Componentes Informáticos",
+      "issuer": "AC RAIZ FNMT-RCM",
+      "serialNumber": "34c6ab044e36991251c8250b6c94d6c0",
+      "validFrom": "2013-06-24T10:52:59.000Z",
+      "validTo": "2028-06-24T10:52:59.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "ldap://ldapfnmt.cert.fnmt.es/CN=CRL,OU=AC%20RAIZ%20FNMT-RCM,O=FNMT-RCM,C=ES?authorityRevocationList;binary?base?objectclass=cRLDistributionPoint",
+        "http://www.cert.fnmt.es/crls/ARLFNMTRCM.crl"
+      ],
+      "ocspUrls": [
+        "http://ocspfnmtrcmca.cert.fnmt.es/ocspfnmtrcmca/OcspResponder"
+      ]
+    },
+    {
+      "file": "certibox-ca-subordinada-01.pem",
+      "sha256": "e9485e076281b783846f4c03e9291d02cd22fd1a0da2c55f051dd48673440ae8",
+      "subject": "CERTIBOX CA Subordinada 01",
+      "issuer": "CERTIBOX ROOT CA",
+      "serialNumber": "4b996e980e4f0f94",
+      "validFrom": "2023-03-06T11:43:15.000Z",
+      "validTo": "2036-03-05T11:43:15.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl1.uanataca.com/tsp/crl/arl_deh.crl",
+        "http://crl2.uanataca.com/tsp/crl/arl_deh.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp1.uanataca.com/public/pki/ocsp/",
+        "http://ocsp2.uanataca.com/public/pki/ocsp/"
+      ]
+    },
+    {
+      "file": "defensa-ec-wpg2016.pem",
+      "sha256": "814406331b979fb14e87d1cb38ed0ef2bb5bee0a1e728937d6bdd5d494fcd5e6",
+      "subject": "DEFENSA-EC-WPG2016",
+      "issuer": "DEFENSA-EC-RAIZ",
+      "serialNumber": "4e42ea0da1c2c13f57d1187ffaed2f1e",
+      "validFrom": "2016-09-08T07:51:27.000Z",
+      "validTo": "2027-09-08T07:51:27.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://pki.mde.es/crl/DEFENSA-CRL-EC-RAIZ.crl",
+        "ldap://ldap.mde.es/cn=DEFENSA-CRL-EC-RAIZ,OU=PKI,O=MDEF,C=ES?certificateRevocationList?base?objectclass=cRLDistributionPoint"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "digitel-ts-qualified-ca-g1.pem",
+      "sha256": "86a62f63dcabec9f3d50beb185f43ba0f44253d67cd23b6c7959117ac550ba61",
+      "subject": "DIGITEL TS QUALIFIED CA G1",
+      "issuer": "DIGITEL TS CA ROOT 01",
+      "serialNumber": "1583ed1b2ae96d3e",
+      "validFrom": "2022-05-06T11:19:47.000Z",
+      "validTo": "2035-05-03T11:19:46.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl1.pki.digitelts.es/DTSROOTCA01.crl",
+        "http://crl2.pki.digitelts.es/DTSROOTCA01.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.pki.digitelts.es"
+      ]
+    },
+    {
+      "file": "docuten-tech-ca1.pem",
+      "sha256": "b0cd0c093ea1d652754014c6af2e2bb21be1838e958e906b05505ecbad60bd97",
+      "subject": "DOCUTEN TECH CA1",
+      "issuer": "UANATACA ROOT 2016",
+      "serialNumber": "2f8b203da55d2fa3",
+      "validFrom": "2020-09-18T08:52:21.000Z",
+      "validTo": "2033-09-18T08:52:21.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl1.uanataca.com/public/pki/crl/arl_uanataca.crl",
+        "http://crl2.uanataca.com/public/pki/crl/arl_uanataca.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp1.uanataca.com/public/pki/ocsp/",
+        "http://ocsp2.uanataca.com/public/pki/ocsp/"
+      ]
+    },
+    {
+      "file": "ead-trust-ecc-256-subca-for-qualified-web-dv-ov-cert-2024.pem",
+      "sha256": "459e0f12a7723f40c718a3721862747c9a2894a8721d50fe6ba4e22bec49313c",
+      "subject": "EAD Trust ECC 256 SubCA For Qualified Web DV/OV Cert 2024",
+      "issuer": "EAD Trust ECC 256 Root CA For Qualified Web DV/OV Cert 2024",
+      "serialNumber": "7584774778738653",
+      "validFrom": "2024-11-22T11:42:10.000Z",
+      "validTo": "2036-11-19T11:42:10.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-256",
+      "crlUrls": [
+        "http://crl.eadtrust.eu/eadtrust-root-ecc256eaddvov2024.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.eadtrust.eu"
+      ]
+    },
+    {
+      "file": "ead-trust-ecc-256-subca-for-qualified-web-ev-psd2-cert-2024.pem",
+      "sha256": "6284c3d2bb5e4a6a5551135e8f54c62585445c1a562724c7c0d507389ba557c2",
+      "subject": "EAD Trust ECC 256 SubCA For Qualified Web EV/PSD2 Cert 2024",
+      "issuer": "EAD Trust ECC 256 Root CA For Qualified Web EV/PSD2 Cert 2024",
+      "serialNumber": "3539068547653869",
+      "validFrom": "2024-11-22T11:58:13.000Z",
+      "validTo": "2036-11-19T11:58:13.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-256",
+      "crlUrls": [
+        "http://crl.eadtrust.eu/eadtrust-root-ecc256eadevpsd22024.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.eadtrust.eu"
+      ]
+    },
+    {
+      "file": "ead-trust-ecc-384-subca-for-qualified-web-dv-ov-cert-2024.pem",
+      "sha256": "1485b4a7ded010281402a543deb64e77f6655de08ffde38b6616e26b2025fa1f",
+      "subject": "EAD Trust ECC 384 SubCA For Qualified Web DV/OV Cert 2024",
+      "issuer": "EAD Trust ECC 384 Root CA For Qualified Web DV/OV Cert 2024",
+      "serialNumber": "0281509778002487",
+      "validFrom": "2024-11-22T11:42:20.000Z",
+      "validTo": "2036-11-19T11:42:20.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-384",
+      "crlUrls": [
+        "http://crl.eadtrust.eu/eadtrust-root-ecc384eaddvov2024.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.eadtrust.eu"
+      ]
+    },
+    {
+      "file": "ead-trust-ecc-384-subca-for-qualified-web-ev-psd2-cert-2024.pem",
+      "sha256": "3845f56e3f6c150e2fb572d62f8c61ba7d9a164e45677eb71998c471b758c39f",
+      "subject": "EAD Trust ECC 384 SubCA For Qualified Web EV/PSD2 Cert 2024",
+      "issuer": "EAD Trust ECC 384 Root CA For Qualified Web EV/PSD2 Cert 2024",
+      "serialNumber": "1338021818280851",
+      "validFrom": "2024-11-22T11:58:20.000Z",
+      "validTo": "2036-11-19T11:58:20.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-384",
+      "crlUrls": [
+        "http://crl.eadtrust.eu/eadtrust-root-ecc384eadevpsd22024.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.eadtrust.eu"
+      ]
+    },
+    {
+      "file": "ead-trust-rsa-4096-subca-for-qualified-web-dv-ov-cert-2024.pem",
+      "sha256": "f56a99f8a7b4dc807f23c723eb620ac296d980bde143e317e18eb64eb56ff6ce",
+      "subject": "EAD Trust RSA 4096 SubCA For Qualified Web DV/OV Cert 2024",
+      "issuer": "EAD Trust RSA 4096 Root CA For Qualified Web DV/OV Cert 2024",
+      "serialNumber": "7716111025827193",
+      "validFrom": "2024-11-22T11:25:41.000Z",
+      "validTo": "2036-11-19T11:25:41.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.eadtrust.eu/eadtrust-root-rsa4096eaddvov2024.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.eadtrust.eu"
+      ]
+    },
+    {
+      "file": "ead-trust-rsa-4096-subca-for-qualified-web-ev-psd2-cert-2024.pem",
+      "sha256": "c3b28ba9153823bde198a665eb35c3ddf8d3dffaf73710951ce3af97ba8d1b3a",
+      "subject": "EAD Trust RSA 4096 SubCA For Qualified Web EV/PSD2 Cert 2024",
+      "issuer": "EAD Trust RSA 4096 Root CA For Qualified Web EV/PSD2 Cert 2024",
+      "serialNumber": "4396514414735877",
+      "validFrom": "2024-11-22T11:44:05.000Z",
+      "validTo": "2036-11-19T11:44:05.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.eadtrust.eu/eadtrust-root-rsa4096eadevpsd22024.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.eadtrust.eu"
+      ]
+    },
+    {
+      "file": "ead-trust-rsa-8192-subca-for-qualified-web-dv-ov-cert-2024.pem",
+      "sha256": "4b4c8eac327760e87fc92566c9065a7cc6109fdde02ba1726621ce3730132080",
+      "subject": "EAD Trust RSA 8192 SubCA For Qualified Web DV/OV Cert 2024",
+      "issuer": "EAD Trust RSA 8192 Root CA For Qualified Web DV/OV Cert 2024",
+      "serialNumber": "1194571823911038",
+      "validFrom": "2024-11-22T11:41:57.000Z",
+      "validTo": "2036-11-19T11:41:57.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-8192",
+      "crlUrls": [
+        "http://crl.eadtrust.eu/eadtrust-root-rsa8192eaddvov2024.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.eadtrust.eu"
+      ]
+    },
+    {
+      "file": "ead-trust-rsa-8192-subca-for-qualified-web-ev-psd2-cert-2024.pem",
+      "sha256": "8f540ab3e89d71e9d2f71286f5d8404526f4fe41ebfee54d18b5e02df0d388da",
+      "subject": "EAD Trust RSA 8192 SubCA For Qualified Web EV/PSD2 Cert 2024",
+      "issuer": "EAD Trust RSA 8192 Root CA For Qualified Web EV/PSD2 Cert 2024",
+      "serialNumber": "2905946328850591",
+      "validFrom": "2024-11-22T11:57:59.000Z",
+      "validTo": "2036-11-19T11:57:59.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-8192",
+      "crlUrls": [
+        "http://crl.eadtrust.eu/eadtrust-root-rsa8192eadevpsd22024.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.eadtrust.eu"
+      ]
+    },
+    {
+      "file": "eadtrust-ecc-256-subca-for-qualified-certificates-2019-36099359.pem",
+      "sha256": "360993593406e5aa311663edff5a3409a8dd1e30708c9cabe34efd8e5392733d",
+      "subject": "EADTrust ECC 256 SubCA For Qualified Certificates 2019",
+      "issuer": "EADTrust ECC 256 Root CA For Qualified Certificates 2019",
+      "serialNumber": "0497899141824083",
+      "validFrom": "2019-06-06T11:23:12.000Z",
+      "validTo": "2035-06-02T11:23:12.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-256",
+      "crlUrls": [
+        "http://crl.eadtrust.eu/eadtrust-root-ecc256eadq2019.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.eadtrust.eu"
+      ]
+    },
+    {
+      "file": "eadtrust-ecc-256-subca-for-qualified-certificates-2019.pem",
+      "sha256": "e5f78053300c169d79a7fb387361ad2a8d1a9bb750b9183c7bb19734d542f07c",
+      "subject": "EADTrust ECC 256 SubCA For Qualified Certificates 2019",
+      "issuer": "EADTrust ECC 256 Root CA For Qualified Certificates 2019",
+      "serialNumber": "4574430821502398",
+      "validFrom": "2019-06-06T11:23:12.000Z",
+      "validTo": "2035-06-02T11:23:12.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-256",
+      "crlUrls": [
+        "http://crl.eadtrust.eu/eadtrust-root-ecc256eadq2019.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.eadtrust.eu"
+      ]
+    },
+    {
+      "file": "eadtrust-ecc-256-subca-for-qualified-web-dv-ov-cert-2019.pem",
+      "sha256": "0e1f3a20040ed5b272dcc939e7b8d5b0f4bed764c95ce16cb0a47ca4560a3695",
+      "subject": "EADTrust ECC 256 SubCA For Qualified Web DV/OV Cert 2019",
+      "issuer": "EADTrust ECC 256 Root CA For Qualified Web DV/OV Cert 2019",
+      "serialNumber": "1175874658209439",
+      "validFrom": "2019-06-06T11:35:52.000Z",
+      "validTo": "2031-06-03T11:35:52.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-256",
+      "crlUrls": [
+        "http://crl.eadtrust.eu/eadtrust-root-ecc256eaddvov2019.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.eadtrust.eu"
+      ]
+    },
+    {
+      "file": "eadtrust-ecc-256-subca-for-qualified-web-ev-psd2-cert-2019.pem",
+      "sha256": "b76911a3352d1a27b3c355f049cf6fbfc5e3e4975bfdbdbc1fa041327fc76d7c",
+      "subject": "EADTrust ECC 256 SubCA For Qualified Web EV/PSD2 Cert 2019",
+      "issuer": "EADTrust ECC 256 Root CA For Qualified Web EV/PSD2 Cert 2019",
+      "serialNumber": "3222735846434044",
+      "validFrom": "2019-06-06T11:49:24.000Z",
+      "validTo": "2031-06-03T11:49:24.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-256",
+      "crlUrls": [
+        "http://crl.eadtrust.eu/eadtrust-root-ecc256eadevpsd22019.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.eadtrust.eu"
+      ]
+    },
+    {
+      "file": "eadtrust-ecc-384-subca-for-qualified-certificates-2019-0414b954.pem",
+      "sha256": "0414b95412a98b2d9c8bdd671672199d7a9ce5b97f69073801adcbe0ded97b41",
+      "subject": "EADTrust ECC 384 SubCA For Qualified Certificates 2019",
+      "issuer": "EADTrust ECC 384 Root CA For Qualified Certificates 2019",
+      "serialNumber": "5826225808087601",
+      "validFrom": "2019-06-06T11:23:16.000Z",
+      "validTo": "2035-06-02T11:23:16.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-384",
+      "crlUrls": [
+        "http://crl.eadtrust.eu/eadtrust-root-ecc384eadq2019.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.eadtrust.eu"
+      ]
+    },
+    {
+      "file": "eadtrust-ecc-384-subca-for-qualified-certificates-2019.pem",
+      "sha256": "f8ea34651355c407c903875608b0ffa188805e93081ad03a39b8226dc35eadb4",
+      "subject": "EADTrust ECC 384 SubCA For Qualified Certificates 2019",
+      "issuer": "EADTrust ECC 384 Root CA For Qualified Certificates 2019",
+      "serialNumber": "9036069168628841",
+      "validFrom": "2019-06-06T11:23:16.000Z",
+      "validTo": "2035-06-02T11:23:16.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-384",
+      "crlUrls": [
+        "http://crl.eadtrust.eu/eadtrust-root-ecc384eadq2019.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.eadtrust.eu"
+      ]
+    },
+    {
+      "file": "eadtrust-ecc-384-subca-for-qualified-web-dv-ov-cert-2019.pem",
+      "sha256": "80ab1baac5caa236e8801792ffc88ddcce45a930fa30e578db944d51282e1570",
+      "subject": "EADTrust ECC 384 SubCA For Qualified Web DV/OV Cert 2019",
+      "issuer": "EADTrust ECC 384 Root CA For Qualified Web DV/OV Cert 2019",
+      "serialNumber": "5020327159496368",
+      "validFrom": "2019-06-06T11:35:55.000Z",
+      "validTo": "2031-06-03T11:35:55.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-384",
+      "crlUrls": [
+        "http://crl.eadtrust.eu/eadtrust-root-ecc384eaddvov2019.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.eadtrust.eu"
+      ]
+    },
+    {
+      "file": "eadtrust-ecc-384-subca-for-qualified-web-ev-psd2-cert-2019.pem",
+      "sha256": "c8792b47355fa3d152aa5e86f37c27650be1e05137bd36e8778acf270bb18b54",
+      "subject": "EADTrust ECC 384 SubCA For Qualified Web EV/PSD2 Cert 2019",
+      "issuer": "EADTrust ECC 384 Root CA For Qualified Web EV/PSD2 Cert 2019",
+      "serialNumber": "0451316570466335",
+      "validFrom": "2019-06-06T11:49:26.000Z",
+      "validTo": "2031-06-03T11:49:26.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-384",
+      "crlUrls": [
+        "http://crl.eadtrust.eu/eadtrust-root-ecc384eadevpsd22019.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.eadtrust.eu"
+      ]
+    },
+    {
+      "file": "eadtrust-rsa-2048-subca-for-qualified-certificates-2019-29400d5d.pem",
+      "sha256": "29400d5d520da0852e4dd53a5b85d3268f9a3dcc6061c285474440cb859e09a8",
+      "subject": "EADTrust RSA 2048 SubCA For Qualified Certificates 2019",
+      "issuer": "EADTrust RSA 2048 Root CA For Qualified Certificates 2019",
+      "serialNumber": "7468055941811627",
+      "validFrom": "2019-06-06T10:56:23.000Z",
+      "validTo": "2035-06-02T10:56:23.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://crl.eadtrust.eu/eadtrust-root-rsa2048eadq2019.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.eadtrust.eu"
+      ]
+    },
+    {
+      "file": "eadtrust-rsa-2048-subca-for-qualified-certificates-2019.pem",
+      "sha256": "82340ea4d7acd80df97dc7598c9495588cc8873ec9506dad0c11ea119433399d",
+      "subject": "EADTrust RSA 2048 SubCA For Qualified Certificates 2019",
+      "issuer": "EADTrust RSA 2048 Root CA For Qualified Certificates 2019",
+      "serialNumber": "009608178774838912",
+      "validFrom": "2019-06-06T10:56:21.000Z",
+      "validTo": "2035-06-02T10:56:21.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://crl.eadtrust.eu/eadtrust-root-rsa2048eadq2019.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.eadtrust.eu"
+      ]
+    },
+    {
+      "file": "eadtrust-rsa-4096-subca-for-qualified-certificates-2019-7fd0ffdf.pem",
+      "sha256": "7fd0ffdf3aa0c96993dc6d1adad779226381ac7b5c48a01d1a2e4afc6c2f777a",
+      "subject": "EADTrust RSA 4096 SubCA For Qualified Certificates 2019",
+      "issuer": "EADTrust RSA 4096 Root CA For Qualified Certificates 2019",
+      "serialNumber": "6430067724977372",
+      "validFrom": "2019-06-06T10:56:57.000Z",
+      "validTo": "2035-06-02T10:56:57.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.eadtrust.eu/eadtrust-root-rsa4096eadq2019.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.eadtrust.eu"
+      ]
+    },
+    {
+      "file": "eadtrust-rsa-4096-subca-for-qualified-certificates-2019.pem",
+      "sha256": "04bf1da6d0168bdd3f2dec2e22c50d558bde5c7cc9516c83cb6393352a9f0f9c",
+      "subject": "EADTrust RSA 4096 SubCA For Qualified Certificates 2019",
+      "issuer": "EADTrust RSA 4096 Root CA For Qualified Certificates 2019",
+      "serialNumber": "4876636522683322",
+      "validFrom": "2019-06-06T10:56:35.000Z",
+      "validTo": "2035-06-02T10:56:35.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.eadtrust.eu/eadtrust-root-rsa4096eadq2019.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.eadtrust.eu"
+      ]
+    },
+    {
+      "file": "eadtrust-rsa-4096-subca-for-qualified-web-dv-ov-cert-2019.pem",
+      "sha256": "072c239e48ee4117f279351a1f39e2b2c85a34da655243efff18d99bcb10f914",
+      "subject": "EADTrust RSA 4096 SubCA For Qualified Web DV/OV Cert 2019",
+      "issuer": "EADTrust RSA 4096 Root CA For Qualified Web DV/OV Cert 2019",
+      "serialNumber": "6466664244783397",
+      "validFrom": "2019-06-06T11:24:14.000Z",
+      "validTo": "2031-06-03T11:24:14.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.eadtrust.eu/eadtrust-root-rsa4096eaddvov2019.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.eadtrust.eu"
+      ]
+    },
+    {
+      "file": "eadtrust-rsa-4096-subca-for-qualified-web-ev-psd2-cert-2019.pem",
+      "sha256": "009dbad686cecd81d13acac4f673dcba5eeb789e63173cde136cb2880c1dce79",
+      "subject": "EADTrust RSA 4096 SubCA For Qualified Web EV/PSD2 Cert 2019",
+      "issuer": "EADTrust RSA 4096 Root CA For Qualified Web EV/PSD2 Cert 2019",
+      "serialNumber": "4612719804164426",
+      "validFrom": "2019-06-06T11:37:02.000Z",
+      "validTo": "2031-06-03T11:37:02.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.eadtrust.eu/eadtrust-root-rsa4096eadevpsd22019.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.eadtrust.eu"
+      ]
+    },
+    {
+      "file": "eadtrust-rsa-8192-subca-for-qualified-certificates-2019-22e41b48.pem",
+      "sha256": "22e41b4879faa21161d46502c7fc1439e5490eccff43421f6e9c086142708196",
+      "subject": "EADTrust RSA 8192 SubCA For Qualified Certificates 2019",
+      "issuer": "EADTrust RSA 8192 Root CA For Qualified Certificates 2019",
+      "serialNumber": "009989545109335481",
+      "validFrom": "2019-06-06T11:23:01.000Z",
+      "validTo": "2035-06-02T11:23:01.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-8192",
+      "crlUrls": [
+        "http://crl.eadtrust.eu/eadtrust-root-rsa8192eadq2019.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.eadtrust.eu"
+      ]
+    },
+    {
+      "file": "eadtrust-rsa-8192-subca-for-qualified-certificates-2019.pem",
+      "sha256": "2002b8d5af02c5a961e10a4da3c27f63f35d7f7aad941599da36d52e03b7a89d",
+      "subject": "EADTrust RSA 8192 SubCA For Qualified Certificates 2019",
+      "issuer": "EADTrust RSA 8192 Root CA For Qualified Certificates 2019",
+      "serialNumber": "5116387347563059",
+      "validFrom": "2019-06-06T11:20:51.000Z",
+      "validTo": "2035-06-02T11:20:51.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-8192",
+      "crlUrls": [
+        "http://crl.eadtrust.eu/eadtrust-root-rsa8192eadq2019.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.eadtrust.eu"
+      ]
+    },
+    {
+      "file": "eadtrust-rsa-8192-subca-for-qualified-web-dv-ov-cert-2019.pem",
+      "sha256": "a14616d1e8c0b49e0e21cae2b542a8351a26747d3a18a45999c38ba1d078b6cb",
+      "subject": "EADTrust RSA 8192 SubCA For Qualified Web DV/OV Cert 2019",
+      "issuer": "EADTrust RSA 8192 Root CA For Qualified Web DV/OV Cert 2019",
+      "serialNumber": "2229710012399137",
+      "validFrom": "2019-06-06T11:33:34.000Z",
+      "validTo": "2031-06-03T11:33:34.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-8192",
+      "crlUrls": [
+        "http://crl.eadtrust.eu/eadtrust-root-rsa8192eaddvov2019.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.eadtrust.eu"
+      ]
+    },
+    {
+      "file": "eadtrust-rsa-8192-subca-for-qualified-web-ev-psd2-cert-2019.pem",
+      "sha256": "514a806a46d7b79725b92cea06855415d924e76dc5d51e4ed5ca3955cb6ec85d",
+      "subject": "EADTrust RSA 8192 SubCA For Qualified Web EV/PSD2 Cert 2019",
+      "issuer": "EADTrust RSA 8192 Root CA For Qualified Web EV/PSD2 Cert 2019",
+      "serialNumber": "7692120971313300",
+      "validFrom": "2019-06-06T11:49:10.000Z",
+      "validTo": "2031-06-03T11:49:10.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-8192",
+      "crlUrls": [
+        "http://crl.eadtrust.eu/eadtrust-root-rsa8192eadevpsd22019.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.eadtrust.eu"
+      ]
+    },
+    {
+      "file": "eaeko-haetako-langileen-ca-ca-personal-de-aapp-vascas-2.pem",
+      "sha256": "1f11a6555cc6f24d43e6e4e30ee804d41645847b7fd1565a191863345c4e256f",
+      "subject": "EAEko HAetako langileen CA - CA personal de AAPP vascas (2)",
+      "issuer": "Izenpe.com",
+      "serialNumber": "646fd5de0435433749a3a9d148fe408d",
+      "validFrom": "2009-02-24T08:03:29.000Z",
+      "validTo": "2037-12-12T23:00:00.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.izenpe.com/cgi-bin/arl2"
+      ],
+      "ocspUrls": [
+        "http://ocsp.izenpe.com:8094"
+      ]
+    },
+    {
+      "file": "ec-ciutadania.pem",
+      "sha256": "0fd99aae1ffcd5d9f0ad76edddcbef6b884cc85c16bfcfa4b5246155d6597ed6",
+      "subject": "EC-Ciutadania",
+      "issuer": "EC-ACC",
+      "serialNumber": "73eeae15e3dfada8541a95ecf258624f",
+      "validFrom": "2014-09-18T08:21:00.000Z",
+      "validTo": "2030-09-18T08:21:00.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://epscd.catcert.net/crl/ec-acc.crl",
+        "http://epscd2.catcert.net/crl/ec-acc.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.catcert.cat"
+      ]
+    },
+    {
+      "file": "ec-sectorpublic.pem",
+      "sha256": "356a5f4d994e9efa7caefc491768911d65ec25977465b610e2f29aa4472631c3",
+      "subject": "EC-SectorPublic",
+      "issuer": "EC-ACC",
+      "serialNumber": "71b065397c8e07d2541a967f75593792",
+      "validFrom": "2014-09-18T08:23:27.000Z",
+      "validTo": "2030-09-18T08:23:27.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://epscd.catcert.net/crl/ec-acc.crl",
+        "http://epscd2.catcert.net/crl/ec-acc.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.catcert.cat"
+      ]
+    },
+    {
+      "file": "electronic-identification-ca1.pem",
+      "sha256": "eedcf31633609acb492895fd55aa591a109c44d3b0fc1d0621e0fb41a2cb492b",
+      "subject": "ELECTRONIC IDENTIFICATION CA1",
+      "issuer": "UANATACA ROOT 2016",
+      "serialNumber": "36c02037577b6751",
+      "validFrom": "2020-02-25T10:57:13.000Z",
+      "validTo": "2033-02-24T10:57:13.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl1.uanataca.com/public/pki/crl/arl_uanataca.crl",
+        "http://crl2.uanataca.com/public/pki/crl/arl_uanataca.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp1.uanataca.com/public/pki/ocsp/",
+        "http://ocsp2.uanataca.com/public/pki/ocsp/"
+      ]
+    },
+    {
+      "file": "entrust-certification-authority-es-qwac2.pem",
+      "sha256": "c97f2f6e6a8adb6ecfe4978f08ca8f6f0123a94784522b610adf6ab51439fc62",
+      "subject": "Entrust Certification Authority - ES QWAC2",
+      "issuer": "Entrust Root Certification Authority - G2",
+      "serialNumber": "7a8872b868a359dab1b02ecf4fc9718d",
+      "validFrom": "2021-11-16T00:00:00.000Z",
+      "validTo": "2030-12-01T00:00:00.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://crl.entrust.net/g2ca.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.entrust.net"
+      ]
+    },
+    {
+      "file": "entrust-certification-authority-qtsp1.pem",
+      "sha256": "681ebc1822b079b97e0404e4687d9b6c0c0892c820f55738a282aae62529bdd8",
+      "subject": "Entrust Certification Authority - QTSP1",
+      "issuer": "Entrust Root Certification Authority - G2",
+      "serialNumber": "009c6cf695700c60000000000051d393a6",
+      "validFrom": "2019-07-26T18:31:45.000Z",
+      "validTo": "2030-11-26T19:01:45.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://crl.entrust.net/g2ca.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.entrust.net"
+      ]
+    },
+    {
+      "file": "esfirma-ac-aapp-2.pem",
+      "sha256": "2c1823619d8073116c8f148bd38579de9c05391602dbceb96573e4a188e1326e",
+      "subject": "ESFIRMA AC AAPP 2",
+      "issuer": "ESFIRMA AC RAIZ 2",
+      "serialNumber": "4214fd5fd473b63a",
+      "validFrom": "2017-11-02T13:12:47.000Z",
+      "validTo": "2030-11-02T13:12:47.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "https://crls1.esfirma.com/acraiz/acraiz2.crl",
+        "https://crls2.esfirma.com/acraiz/acraiz2.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.esfirma.com/acraiz2/"
+      ]
+    },
+    {
+      "file": "firmafy-ca-subordinada-01.pem",
+      "sha256": "0e043bccc0e9dd778a1d241369ec5f645bd89a536f0eb8d9a24ee3c93351844e",
+      "subject": "Firmafy CA Subordinada 01",
+      "issuer": "Firmafy CA ROOT",
+      "serialNumber": "18372dc500f6106b",
+      "validFrom": "2023-03-06T13:10:12.000Z",
+      "validTo": "2038-03-05T13:10:12.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl1.modernpki.com/tsp/crl/arl_firmafy.crl",
+        "http://crl2.modernpki.com/tsp/crl/arl_firmafy.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp1.modernpki.com/public/pki/ocsp/",
+        "http://ocsp2.modernpki.com/public/pki/ocsp/"
+      ]
+    },
+    {
+      "file": "firmaprofesional-ica-a01-qwac-2022.pem",
+      "sha256": "cc1b9f9e4370fb68141d28a115eaa863f8eadb7a04e2bd23b3c62f9d9f17c263",
+      "subject": "FIRMAPROFESIONAL ICA A01 QWAC 2022",
+      "issuer": "FIRMAPROFESIONAL CA ROOT-A WEB",
+      "serialNumber": "0ae150740595e437c5042eb9ff0b9d46",
+      "validFrom": "2022-07-19T12:16:44.000Z",
+      "validTo": "2027-07-18T12:16:44.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-384",
+      "crlUrls": [
+        "http://crl.firmaprofesional.com/caroot-a_web.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.firmaprofesional.com"
+      ]
+    },
+    {
+      "file": "firmaprofesional-ica-b01-qualified-2022.pem",
+      "sha256": "4a86f3337cec89a67896b8a6cbbada84ac181eb009679e1504156c34bc9f8aa1",
+      "subject": "FIRMAPROFESIONAL ICA B01 QUALIFIED 2022",
+      "issuer": "FIRMAPROFESIONAL CA ROOT-B GP",
+      "serialNumber": "234cc6c76e82f25c09085f42b873a703",
+      "validFrom": "2022-07-19T11:03:59.000Z",
+      "validTo": "2047-03-31T09:04:41.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-384",
+      "crlUrls": [
+        "http://crl.firmaprofesional.com/caroot-b_gp.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.firmaprofesional.com"
+      ]
+    },
+    {
+      "file": "firmaprofesional-ica-b02-qualified-qtsa-2022.pem",
+      "sha256": "1f3f4497df9bac9d72f99975b37ded7d5db93005b1bf80e07102766f3ae405b9",
+      "subject": "FIRMAPROFESIONAL ICA B02 QUALIFIED QTSA 2022",
+      "issuer": "FIRMAPROFESIONAL CA ROOT-B GP",
+      "serialNumber": "5b72aede7568bd023d37a57b311c8277",
+      "validFrom": "2022-07-19T11:04:31.000Z",
+      "validTo": "2047-03-31T09:04:41.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-384",
+      "crlUrls": [
+        "http://crl.firmaprofesional.com/caroot-b_gp.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.firmaprofesional.com"
+      ]
+    },
+    {
+      "file": "herritar-eta-erakundeen-ca-ca-de-ciudadanos-y-entidades-4.pem",
+      "sha256": "2626b19563bc78d9b1442b93ce98d14a1e4b74264acc90222f1f3c2385c27337",
+      "subject": "Herritar eta Erakundeen CA - CA de Ciudadanos y Entidades (4)",
+      "issuer": "Izenpe.com",
+      "serialNumber": "554402b4c68dd2bd49a3aa5ab05d028d",
+      "validFrom": "2009-02-24T08:05:46.000Z",
+      "validTo": "2037-12-12T23:00:00.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.izenpe.com/cgi-bin/arl2"
+      ],
+      "ocspUrls": [
+        "http://ocsp.izenpe.com:8094"
+      ]
+    },
+    {
+      "file": "indenova-sub-ca-003.pem",
+      "sha256": "3452e96743442607f21d85084c3db897e37549fed23f135cdbd202e690d52e25",
+      "subject": "inDenova SUB CA 003",
+      "issuer": "Certification Authority Root Indenova SL",
+      "serialNumber": "10f6920d39d8",
+      "validFrom": "2021-05-31T08:32:46.000Z",
+      "validTo": "2041-05-31T08:32:46.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.esigna.es/root/ca_root_indenova_sl.crl",
+        "http://crl1.esigna.es/root/ca_root_indenova_sl.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp2.esigna.es"
+      ]
+    },
+    {
+      "file": "indize-ca-subordinada-01.pem",
+      "sha256": "416da00480ebc81482e3dc203cbdd43d695ff122127add986f2879b629d1f062",
+      "subject": "INDIZE CA Subordinada 01",
+      "issuer": "UANATACA ROOT 2016",
+      "serialNumber": "062bd618600c6912",
+      "validFrom": "2021-11-24T12:00:15.000Z",
+      "validTo": "2034-11-24T12:00:15.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl1.uanataca.com/public/pki/crl/arl_uanataca.crl",
+        "http://crl2.uanataca.com/public/pki/crl/arl_uanataca.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp1.uanataca.com/public/pki/ocsp/",
+        "http://ocsp2.uanataca.com/public/pki/ocsp/"
+      ]
+    },
+    {
+      "file": "infocert-camerfirma-qualified-certificates-2024.pem",
+      "sha256": "51583118e6c5e5d210df34dd3597f1136a5b16482218fcc2dd3b85f7a5c81cff",
+      "subject": "INFOCERT-CAMERFIRMA QUALIFIED CERTIFICATES - 2024",
+      "issuer": "INFOCERT-CAMERFIRMA CERTIFICATES 2024",
+      "serialNumber": "3df730e0dc9952d7bff2cd3023d3745fb2031452",
+      "validFrom": "2024-02-16T11:55:23.000Z",
+      "validTo": "2040-02-16T11:55:23.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-384",
+      "crlUrls": [
+        "http://crl.ca.camerfirma.com/root_certificates_2024.crl",
+        "http://crl1.ca.camerfirma.com/root_certificates_2024.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.camerfirma.com"
+      ]
+    },
+    {
+      "file": "infocert-camerfirma-qualified-tsa-2024.pem",
+      "sha256": "b4ce3f048f90aebe5e168e7b8781354844525bbcdef878e2421cbb3f467118dd",
+      "subject": "INFOCERT-CAMERFIRMA QUALIFIED TSA - 2024",
+      "issuer": "INFOCERT-CAMERFIRMA TIMESTAMP 2024",
+      "serialNumber": "28a4a018b3a12e205af8793498de7a3d7b214c2b",
+      "validFrom": "2024-02-16T12:03:17.000Z",
+      "validTo": "2040-02-16T12:03:17.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-384",
+      "crlUrls": [
+        "http://crl.ca.camerfirma.com/root_timestamp_2024.crl",
+        "http://crl1.ca.camerfirma.com/root_timestamp_2024.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.camerfirma.com"
+      ]
+    },
+    {
+      "file": "ivsign-global-ca.pem",
+      "sha256": "d6ea13d3b7705717e3ad56073b1a9dde005797603b9aa73a710448e962f541c5",
+      "subject": "IvSign Global CA",
+      "issuer": "IvSign Root CA",
+      "serialNumber": "00cd8a3c418d6dc73e69",
+      "validFrom": "2020-09-11T09:59:33.000Z",
+      "validTo": "2032-09-11T09:59:33.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl1.ivsign.com/ivsignroot.crl",
+        "http://crl2.ivsign.com/ivsignroot.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.ivsign.com",
+        "http://ocsp2.ivsign.com"
+      ]
+    },
+    {
+      "file": "permisso-ca-subordinada-01.pem",
+      "sha256": "4ad810ef18db53e00f84d0bc6128350344e666e7d3d37efe1a8c21164460bfac",
+      "subject": "Permisso CA Subordinada 01",
+      "issuer": "UANATACA ROOT 2016",
+      "serialNumber": "4773221232bc4a9e",
+      "validFrom": "2023-03-06T13:55:18.000Z",
+      "validTo": "2036-03-09T13:55:18.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl1.uanataca.com/public/pki/crl/arl_uanataca.crl",
+        "http://crl2.uanataca.com/public/pki/crl/arl_uanataca.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp1.uanataca.com/public/pki/ocsp/",
+        "http://ocsp2.uanataca.com/public/pki/ocsp/"
+      ]
+    },
+    {
+      "file": "sectigo-qualified-legal-person-ca-e35.pem",
+      "sha256": "d11d9167b76ccf32af9ffe0d5bf66a82bb568540ae39f5965441fbbd55e1d9d8",
+      "subject": "Sectigo Qualified Legal Person CA E35",
+      "issuer": "Sectigo Qualified Legal Person Root E45",
+      "serialNumber": "bf55b3b08ba28abad271e2ef2492b3c8",
+      "validFrom": "2020-10-05T00:00:00.000Z",
+      "validTo": "2035-10-04T23:59:59.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-256",
+      "crlUrls": [
+        "http://crl.sectigo.com/SectigoQualifiedLegalPersonRootE45.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.sectigo.com"
+      ]
+    },
+    {
+      "file": "sectigo-qualified-legal-person-ca-r35.pem",
+      "sha256": "3395966916f8d39dceb5f75cff8b8ef4edcb362b1c0c27924da42d07dd18f159",
+      "subject": "Sectigo Qualified Legal Person CA R35",
+      "issuer": "Sectigo Qualified Legal Person Root R45",
+      "serialNumber": "00d40b1204c9e4513275768b644f7a9df5",
+      "validFrom": "2020-10-05T00:00:00.000Z",
+      "validTo": "2035-10-04T23:59:59.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-3072",
+      "crlUrls": [
+        "http://crl.sectigo.com/SectigoQualifiedLegalPersonRootR45.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.sectigo.com"
+      ]
+    },
+    {
+      "file": "sectigo-qualified-natural-person-ca-e35.pem",
+      "sha256": "53b24005fd13671f549989c8c669059eabe77ad19ddee1e70f72c9fbb3c0d9f9",
+      "subject": "Sectigo Qualified Natural Person CA E35",
+      "issuer": "Sectigo Qualified Natural Person Root E45",
+      "serialNumber": "c0721eeb06ad9b21780fa4db48c9db25",
+      "validFrom": "2020-10-05T00:00:00.000Z",
+      "validTo": "2035-10-04T23:59:59.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-256",
+      "crlUrls": [
+        "http://crl.sectigo.com/SectigoQualifiedNaturalPersonRootE45.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.sectigo.com"
+      ]
+    },
+    {
+      "file": "sectigo-qualified-natural-person-ca-r35.pem",
+      "sha256": "ac866830d7b8d71273c7cde057a8d53e934c4e6f16947d138a123cbec8c63bde",
+      "subject": "Sectigo Qualified Natural Person CA R35",
+      "issuer": "Sectigo Qualified Natural Person Root R45",
+      "serialNumber": "42211ba7e8e10a81d25da9bd8fd8120a",
+      "validFrom": "2020-10-05T00:00:00.000Z",
+      "validTo": "2035-10-04T23:59:59.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-3072",
+      "crlUrls": [
+        "http://crl.sectigo.com/SectigoQualifiedNaturalPersonRootR45.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.sectigo.com"
+      ]
+    },
+    {
+      "file": "sectigo-qualified-time-stamping-ca-r35.pem",
+      "sha256": "cd0a3e00a1bdae3a159fa9e3d70f8e664f560fdce16357cbe440ed0b0d88244f",
+      "subject": "Sectigo Qualified Time Stamping CA R35",
+      "issuer": "Sectigo Qualified Time Stamping Root R45",
+      "serialNumber": "0cda8301d3f3280e71cdb028a352c65b",
+      "validFrom": "2020-10-05T00:00:00.000Z",
+      "validTo": "2035-10-04T23:59:59.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-3072",
+      "crlUrls": [
+        "http://crl.sectigo.com/SectigoQualifiedTimeStampingRootR45.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.sectigo.com"
+      ]
+    },
+    {
+      "file": "sectigo-qualified-website-authentication-ca-e35.pem",
+      "sha256": "562d6a5b4b067465ffd0fbfc9bb05755cdacf55b5ee5c6f910b8b53db128f57a",
+      "subject": "Sectigo Qualified Website Authentication CA E35",
+      "issuer": "USERTrust ECC Certification Authority",
+      "serialNumber": "9e568d21ded89307c34080ff2d995901",
+      "validFrom": "2020-10-05T00:00:00.000Z",
+      "validTo": "2035-10-04T23:59:59.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-256",
+      "crlUrls": [
+        "http://crl.usertrust.com/USERTrustECCCertificationAuthority.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.usertrust.com"
+      ]
+    },
+    {
+      "file": "sectigo-qualified-website-authentication-ca-e39.pem",
+      "sha256": "05461634195849a1bccc99264912054fdeb987a52e661312ae9cca3e3ed8d318",
+      "subject": "Sectigo Qualified Website Authentication CA E39",
+      "issuer": "Sectigo Public Server Authentication Root E46",
+      "serialNumber": "42cf38ec30d857fb9ce9dd5a5fc8f38f",
+      "validFrom": "2024-09-18T00:00:00.000Z",
+      "validTo": "2039-09-17T23:59:59.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-256",
+      "crlUrls": [
+        "http://crl.sectigo.com/SectigoPublicServerAuthenticationRootE46.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.sectigo.com"
+      ]
+    },
+    {
+      "file": "sectigo-qualified-website-authentication-ca-natural-e35.pem",
+      "sha256": "a9841d2e47cbe6d71d8fafdf38387f93f43d76d792504efb17a21020c58c0b89",
+      "subject": "Sectigo Qualified Website Authentication CA Natural E35",
+      "issuer": "USERTrust ECC Certification Authority",
+      "serialNumber": "6866d57377f27657da8268a09e3faeb5",
+      "validFrom": "2020-11-17T00:00:00.000Z",
+      "validTo": "2035-11-16T23:59:59.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-256",
+      "crlUrls": [
+        "http://crl.usertrust.com/USERTrustECCCertificationAuthority.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.usertrust.com"
+      ]
+    },
+    {
+      "file": "sectigo-qualified-website-authentication-ca-natural-e39.pem",
+      "sha256": "00c367a774b7ce9a0f791342383f865f2af6cd37674b85167e6f239e313d60bb",
+      "subject": "Sectigo Qualified Website Authentication CA Natural E39",
+      "issuer": "Sectigo Public Server Authentication Root E46",
+      "serialNumber": "ca5522c3b17f7bd99e922f595d26cc86",
+      "validFrom": "2024-09-18T00:00:00.000Z",
+      "validTo": "2039-09-17T23:59:59.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-256",
+      "crlUrls": [
+        "http://crl.sectigo.com/SectigoPublicServerAuthenticationRootE46.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.sectigo.com"
+      ]
+    },
+    {
+      "file": "sectigo-qualified-website-authentication-ca-natural-r35.pem",
+      "sha256": "339e6b92be5459f26a8dc3c5f3720933c838e236601b050048c047a123e6f8e7",
+      "subject": "Sectigo Qualified Website Authentication CA Natural R35",
+      "issuer": "USERTrust RSA Certification Authority",
+      "serialNumber": "0086380b2d3e65b9801030481e0e74362e",
+      "validFrom": "2020-11-17T00:00:00.000Z",
+      "validTo": "2035-11-16T23:59:59.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-3072",
+      "crlUrls": [
+        "http://crl.usertrust.com/USERTrustRSACertificationAuthority.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.usertrust.com"
+      ]
+    },
+    {
+      "file": "sectigo-qualified-website-authentication-ca-natural-r39.pem",
+      "sha256": "3ccf0306bed8c910b327a15f2159fdd1e414474f77696c3d98781b1160277bca",
+      "subject": "Sectigo Qualified Website Authentication CA Natural R39",
+      "issuer": "Sectigo Public Server Authentication Root R46",
+      "serialNumber": "6f62368ac38fc63e62cb6029aeae9e0f",
+      "validFrom": "2024-09-18T00:00:00.000Z",
+      "validTo": "2039-09-17T23:59:59.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-3072",
+      "crlUrls": [
+        "http://crl.sectigo.com/SectigoPublicServerAuthenticationRootR46.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.sectigo.com"
+      ]
+    },
+    {
+      "file": "sectigo-qualified-website-authentication-ca-r35.pem",
+      "sha256": "002393fa0a6825f77ef686e208620b97177791f02f07db2518480fbe37ce7bd8",
+      "subject": "Sectigo Qualified Website Authentication CA R35",
+      "issuer": "USERTrust RSA Certification Authority",
+      "serialNumber": "2762378048a1b3628d507e29220de220",
+      "validFrom": "2020-10-05T00:00:00.000Z",
+      "validTo": "2035-10-04T23:59:59.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-3072",
+      "crlUrls": [
+        "http://crl.usertrust.com/USERTrustRSACertificationAuthority.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.usertrust.com"
+      ]
+    },
+    {
+      "file": "sectigo-qualified-website-authentication-ca-r39.pem",
+      "sha256": "ac8c7ef96eb4b535fbfb4e7521f130536198a60dff716312b22d4acc4afe9a7d",
+      "subject": "Sectigo Qualified Website Authentication CA R39",
+      "issuer": "Sectigo Public Server Authentication Root R46",
+      "serialNumber": "008fa10a69b6a87db1336c32c2153bc319",
+      "validFrom": "2024-09-18T00:00:00.000Z",
+      "validTo": "2039-09-17T23:59:59.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-3072",
+      "crlUrls": [
+        "http://crl.sectigo.com/SectigoPublicServerAuthenticationRootR46.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.sectigo.com"
+      ]
+    },
+    {
+      "file": "sia-sub01-2025.pem",
+      "sha256": "59b49880637b4db199077cf0e3881b354356406bca191471e6062740d8d517a2",
+      "subject": "SIA SUB01 2025",
+      "issuer": "SIA ROOT 2025",
+      "serialNumber": "4a96e348e4c6b689f49cd6e4baefae9172e88274",
+      "validFrom": "2025-06-06T10:36:43.000Z",
+      "validTo": "2045-06-01T10:36:43.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-384",
+      "crlUrls": [
+        "http://crl.sia.es/arl_2025.crl",
+        "https://crl.sia.es/arl_2025.crl"
+      ],
+      "ocspUrls": [
+        "https://crl.sia.es/ocsp"
+      ]
+    },
+    {
+      "file": "sia-sub01.pem",
+      "sha256": "68690054b917c0e4a96092c4b359f7418098b64ef149a70b785a389c45515d10",
+      "subject": "SIA SUB01",
+      "issuer": "SIA ROOT",
+      "serialNumber": "54ca01dc",
+      "validFrom": "2015-01-29T09:56:43.000Z",
+      "validTo": "2030-01-29T10:26:43.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "https://psc.sia.es/arl.crl"
+      ],
+      "ocspUrls": [
+        "https://psc.sia.es/ocsp"
+      ]
+    },
+    {
+      "file": "signe-autoridad-de-certificacion-2020.pem",
+      "sha256": "b8df384f1fcd6ecb3f4d7dd6380e54d354c61256560a599d80453247d93af5ea",
+      "subject": "SIGNE Autoridad de Certificacion - 2020",
+      "issuer": "Autoridad de Certificacion Firmaprofesional CIF A62634068",
+      "serialNumber": "547b28543c3112c972b6f2915f231875",
+      "validFrom": "2020-07-30T09:26:04.000Z",
+      "validTo": "2030-12-31T04:02:55.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.firmaprofesional.com/fproot.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.firmaprofesional.com"
+      ]
+    },
+    {
+      "file": "signe-subca-2024.pem",
+      "sha256": "244166240947c4074418df2606fc3ebf5a765f6b9692185fc091ea669986da35",
+      "subject": "SIGNE SUBCA 2024",
+      "issuer": "SIGNE ROOT 2024",
+      "serialNumber": "2da8ee5e569e7f8a6f5635bba81fd4a4",
+      "validFrom": "2024-12-04T12:53:43.000Z",
+      "validTo": "2049-11-28T12:16:00.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-384",
+      "crlUrls": [
+        "http://www.signe.es/signe-ac/crl/signe-root.crl"
+      ],
+      "ocspUrls": [
+        "http://servicios.signe.es/ocsp"
+      ]
+    },
+    {
+      "file": "signe-tsa-2024.pem",
+      "sha256": "22d9b511689ff6cb797a31e77324dcbc0eb3c0a35bbcde4f8de77f1554f87603",
+      "subject": "SIGNE TSA 2024",
+      "issuer": "SIGNE ROOT 2024",
+      "serialNumber": "13f10ca3d463254164609b367dbd3dec",
+      "validFrom": "2024-12-04T12:57:24.000Z",
+      "validTo": "2049-11-28T12:16:00.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-384",
+      "crlUrls": [
+        "http://www.signe.es/signe-ac/crl/signe-root.crl"
+      ],
+      "ocspUrls": [
+        "http://servicios.signe.es/ocsp"
+      ]
+    },
+    {
+      "file": "subca-ciutadania-q-g3-a-2.pem",
+      "sha256": "e6dc96bb0dbcb242490fdf348cb8c9ec012e9cb959ff4458bb503e5efb1e1735",
+      "subject": "SubCA CIUTADANIA Q (G3) A.2",
+      "issuer": "CA CONSORCI AOC (G3) ROOT-A",
+      "serialNumber": "11e2784711b03e60e1bf8efdd3e542c6",
+      "validFrom": "2023-02-02T10:21:26.000Z",
+      "validTo": "2048-01-20T10:21:14.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-384",
+      "crlUrls": [
+        "http://epscd.aoc.cat/crl/caroot-a.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.aoc.cat"
+      ]
+    },
+    {
+      "file": "subca-q-tsa-g3-a-5.pem",
+      "sha256": "63eb5ba0de32d4ae2dbc5f2dd159df4e7eb24d61ba5370784eb072398650c330",
+      "subject": "SubCA Q TSA (G3) A.5",
+      "issuer": "CA CONSORCI AOC (G3) ROOT-A",
+      "serialNumber": "2179cf25f716fabf5ba02f4c27dec41c",
+      "validFrom": "2023-02-02T10:24:17.000Z",
+      "validTo": "2048-01-20T10:21:14.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-384",
+      "crlUrls": [
+        "http://epscd.aoc.cat/crl/caroot-a.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.aoc.cat"
+      ]
+    },
+    {
+      "file": "subca-sector-public-q-g3-a-1.pem",
+      "sha256": "2b7b390ff652aeca8b2f352325ae89fb153aa99440aa9fe80257b6d79887a560",
+      "subject": "SubCA SECTOR PUBLIC Q (G3) A.1",
+      "issuer": "CA CONSORCI AOC (G3) ROOT-A",
+      "serialNumber": "59c6dab8ee911b4f8da0ab5dc1cafeba",
+      "validFrom": "2023-03-02T11:36:51.000Z",
+      "validTo": "2048-01-20T10:21:14.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-384",
+      "crlUrls": [
+        "http://epscd.aoc.cat/crl/caroot-a.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.aoc.cat"
+      ]
+    },
+    {
+      "file": "subca-sector-public-r-q-g3-a-3.pem",
+      "sha256": "783ed47b5175a90288d2767568426e8fc5ff726fa4bc0a035f4bbf3a9386a60f",
+      "subject": "SubCA SECTOR PUBLIC R Q (G3) A.3",
+      "issuer": "CA CONSORCI AOC (G3) ROOT-A",
+      "serialNumber": "0dd45b5b0aab9ad8dcda37b2e124236b",
+      "validFrom": "2023-03-02T11:38:03.000Z",
+      "validTo": "2048-01-20T10:21:14.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-384",
+      "crlUrls": [
+        "http://epscd.aoc.cat/crl/caroot-a.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.aoc.cat"
+      ]
+    },
+    {
+      "file": "subca-ssl-2024.pem",
+      "sha256": "b87f2ca5ad30259ff3e5588de131c3626d5727cae24f9bc9b007026dbcc2d652",
+      "subject": "SUBCA SSL 2024",
+      "issuer": "ROOT CA SSL IZENPE 2024",
+      "serialNumber": "45c858662468eea028baedb26e098d37",
+      "validFrom": "2024-09-24T09:52:19.000Z",
+      "validTo": "2034-09-24T10:22:19.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-384",
+      "crlUrls": [
+        "http://crl.izenpe.eus/2024/izsslroot.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "uanataca-ca1-2016.pem",
+      "sha256": "35a99284a220789ba0e062eeff1b5f2f74be43754469977cb318c7c86ad48f9f",
+      "subject": "UANATACA CA1 2016",
+      "issuer": "UANATACA ROOT 2016",
+      "serialNumber": "5bc160006870521b",
+      "validFrom": "2016-03-11T10:35:33.000Z",
+      "validTo": "2029-03-11T10:35:33.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl1.uanataca.com/public/pki/crl/arl_uanataca.crl",
+        "http://crl2.uanataca.com/public/pki/crl/arl_uanataca.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp1.uanataca.com/public/pki/ocsp/",
+        "http://ocsp2.uanataca.com/public/pki/ocsp/"
+      ]
+    },
+    {
+      "file": "uanataca-ca1-2021.pem",
+      "sha256": "9b083dc45b1bec211f93098f915d3d5ee2d7dfa93720fed4e286b83c1ef4469a",
+      "subject": "UANATACA CA1 2021",
+      "issuer": "UANATACA ROOT 2016",
+      "serialNumber": "7b5b486e15a98286",
+      "validFrom": "2021-06-03T10:52:31.000Z",
+      "validTo": "2034-06-03T10:52:31.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl1.uanataca.com/public/pki/crl/arl_uanataca.crl",
+        "http://crl2.uanataca.com/public/pki/crl/arl_uanataca.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp1.uanataca.com/public/pki/ocsp/",
+        "http://ocsp2.uanataca.com/public/pki/ocsp/"
+      ]
+    },
+    {
+      "file": "uanataca-ca2-2016.pem",
+      "sha256": "00ff2ff2efba98c6b023ad1035559a606dd9fc48a39d3407cc07a678379a7909",
+      "subject": "UANATACA CA2 2016",
+      "issuer": "UANATACA ROOT 2016",
+      "serialNumber": "2027ca2ed163ad13",
+      "validFrom": "2016-03-11T10:37:31.000Z",
+      "validTo": "2029-03-11T10:37:31.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl1.uanataca.com/public/pki/crl/arl_uanataca.crl",
+        "http://crl2.uanataca.com/public/pki/crl/arl_uanataca.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp1.uanataca.com/public/pki/ocsp/",
+        "http://ocsp2.uanataca.com/public/pki/ocsp/"
+      ]
+    },
+    {
+      "file": "uanataca-ca2-2021.pem",
+      "sha256": "15ceab339144d48d352eef1c227f4d2ef4fc1756dead602c22be32d52100e69a",
+      "subject": "UANATACA CA2 2021",
+      "issuer": "UANATACA ROOT 2016",
+      "serialNumber": "1f3023ad716db5bb",
+      "validFrom": "2021-06-03T10:55:44.000Z",
+      "validTo": "2034-06-03T10:55:44.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl1.uanataca.com/public/pki/crl/arl_uanataca.crl",
+        "http://crl2.uanataca.com/public/pki/crl/arl_uanataca.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp1.uanataca.com/public/pki/ocsp/",
+        "http://ocsp2.uanataca.com/public/pki/ocsp/"
+      ]
+    },
+    {
+      "file": "validated-id-subordinate-ca-01.pem",
+      "sha256": "a83d4488255c469f6626e3711c69229bdc8ada567cf29b2ea65fad19292831c2",
+      "subject": "Validated ID Subordinate CA 01",
+      "issuer": "Validated ID Root CA",
+      "serialNumber": "251a68b9f3376e35",
+      "validFrom": "2021-10-21T12:10:03.000Z",
+      "validTo": "2034-10-21T12:10:03.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl1.validatedid.com/tsp/crl/arl_validatedid.crl",
+        "http://crl2.validatedid.com/tsp/crl/arl_validatedid.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "vincasign-nebulasuite2-authority.pem",
+      "sha256": "da1326d22e64f7c21f388121f68c8f700d305c69fb0b5e8b9fc2846f7ae7cb70",
+      "subject": "vinCAsign nebulaSUITE2 Authority",
+      "issuer": "vinCAsign Qualified Authority",
+      "serialNumber": "6fa617f9bbcbe414097028274c3a96bbf9fd406d",
+      "validFrom": "2017-09-27T14:20:46.000Z",
+      "validTo": "2030-09-27T14:20:46.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl3.vincasign.net/casub.crl",
+        "http://crl4.vincasign.net/casub.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp3.vincasign.net",
+        "http://ocsp4.vincasign.net"
       ]
     }
   ]
