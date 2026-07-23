@@ -56,10 +56,12 @@ const anchor = loadGlobalAnchors().find((a) => a.id === 'gleif-vlei');
   .anchor-head h1 { margin: 0; }
   .anchor-head__authority { margin: var(--space-1) 0 0; color: var(--color-text-muted); font-size: var(--text-sm); }
   .pki-about { margin: var(--space-4) 0; padding: var(--space-4); border: 1px solid var(--color-border); border-radius: var(--radius-md); background: var(--color-surface); }
-  .pki-about__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-4) var(--space-6); margin: 0; }
+  .pki-about__grid { display: grid; grid-template-columns: 1fr; gap: 0; margin: 0; }
+  .pki-about__grid > div { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-4); align-items: baseline; padding: var(--space-3) 0; border-bottom: 1px solid var(--color-border); }
+  .pki-about__grid > div:last-child { border-bottom: none; }
   .pki-about__grid dt { font-size: var(--text-xs); color: var(--color-text-subtle); text-transform: uppercase; letter-spacing: 0.03em; }
-  .pki-about__grid dd { margin: 2px 0 0; font-size: var(--text-sm); font-weight: 500; }
-  @media (max-width: 560px) { .pki-about__grid { grid-template-columns: 1fr; } }
+  .pki-about__grid dd { margin: 0; font-size: var(--text-sm); font-weight: 500; }
+  @media (max-width: 560px) { .pki-about__grid > div { grid-template-columns: 1fr; gap: 2px; } }
   .pki-about__grid dd code { font-size: var(--text-xs); word-break: break-all; font-weight: 400; }
   .pki-about__notes { margin: var(--space-3) 0 0; color: var(--color-text-muted); font-size: var(--text-sm); line-height: 1.5; }
   .pki-about__links { margin: var(--space-3) 0 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: var(--space-3); }
