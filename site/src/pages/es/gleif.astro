@@ -44,7 +44,7 @@ const anchor = loadGlobalAnchors().find((a) => a.id === 'gleif-vlei');
       <thead><tr><th>Nombre</th><th>LEI</th><th>AID</th><th>Estado</th></tr></thead>
       <tbody>
         {anchor.qvis.map((q) => (
-          <tr><td>{q.name}</td><td><code>{q.lei}</code></td><td>{q.aid ? <code>{q.aid}</code> : '—'}</td><td>{q.status}</td></tr>
+          <tr><td>{q.url ? <a href={q.url} target="_blank" rel="noopener noreferrer">{q.name}</a> : q.name}</td><td><code>{q.lei}</code></td><td>{q.aid ? <code>{q.aid}</code> : '—'}</td><td>{q.status}</td></tr>
         ))}
       </tbody>
     </table>

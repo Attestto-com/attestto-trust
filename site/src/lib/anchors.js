@@ -39,7 +39,20 @@ export function loadGlobalAnchors() {
       const meta = readJson(join(dir, 'meta.json'))
       const rootAid = readJson(join(dir, 'root-aid.json'))
       const qviDoc = existsSync(join(dir, 'qvis.json')) ? readJson(join(dir, 'qvis.json')) : { qvis: [] }
-      const qvis = qviDoc.qvis || []
+      let qvis = qviDoc.qvis || []
+      // Merge editable link overlay (absent-safe — never throws)
+      try {
+        const linksPath = join(dir, 'qvi-links.json')
+        if (existsSync(linksPath)) {
+          const linksDoc = readJson(linksPath)
+          const links = linksDoc.links || {}
+          qvis = qvis.map((q) => {
+            const entry = links[q.lei]
+            const url = entry && entry.url ? entry.url : null
+            return url ? { ...q, url } : q
+          })
+        }
+      } catch (_) { /* ignore — overlay is best-effort */ }
       return { ...meta, rootAid, qvis, qviCount: qvis.length }
     })
     .sort((a, b) => a.name.localeCompare(b.name))
