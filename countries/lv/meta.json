@@ -1,0 +1,26 @@
+{
+  "code": "lv",
+  "name": "Latvia",
+  "flag": "🇱🇻",
+  "model": "accredited-tsl",
+  "authority": {
+    "name": "Digitālās drošības uzraudzības komiteja (DDUK) — Digital Security Supervisory Committee, Latvia's eIDAS supervisory body and national Trusted List scheme operator",
+    "operator": "Accredited QTSP under eIDAS: VAS Latvijas Valsts radio un televīzijas centrs (LVRTC / NTRLV-40003011203), issuer of the eParaksts and LV eID qualified certificate services",
+    "url": "https://trustlist.gov.lv/tsl/latvian-tsl.xml"
+  },
+  "governingLaw": "Reglamento eIDAS (UE) 910/2014 · Elektronisko dokumentu likums (Latvia's Electronic Documents Law)",
+  "technology": {
+    "keyAlgorithms": ["RSA-4096", "EC P-521"],
+    "signatureStandards": ["CAdES", "PAdES", "XAdES", "ASiC"],
+    "trustList": "ETSI TS 119 612 — the Latvian Trusted List (latvian-tsl.xml, DDUK)"
+  },
+  "capabilities": ["Qualified e-signature & e-seal (eIDAS)", "Qualified timestamping", "Qualified website authentication (QWAC / PSD2)"],
+  "relatedLinks": [
+    { "label": "DDUK — Latvian Trusted List (latvian-tsl.xml)", "url": "https://trustlist.gov.lv/tsl/latvian-tsl.xml" },
+    { "label": "eParaksts — LVRTC qualified trust services", "url": "https://www.eparaksts.lv/" },
+    { "label": "EU LOTL — List of the Lists (European Commission)", "url": "https://ec.europa.eu/tools/lotl/eu-lotl.xml" },
+    { "label": "Independent verifier (Attestto)", "url": "https://verify.attestto.com" }
+  ],
+  "source": { "type": "tsl", "url": "https://trustlist.gov.lv/tsl/latvian-tsl.xml" },
+  "notes": "Latvia's qualified-signature trust is issued by the accredited QTSP VAS Latvijas Valsts radio un televīzijas centrs (LVRTC / NTRLV-40003011203), which operates the eParaksts and LV eID qualified certificate services, supervised by the Digitālās drošības uzraudzības komiteja (DDUK), the Digital Security Supervisory Committee acting as Latvia's eIDAS supervisory body and national Trusted List scheme operator, and published in the Latvian national eIDAS Trusted List (latvian-tsl.xml, ETSI TS 119 612). As an EU / eIDAS participant, Latvia is referenced from the EU LOTL. The 5 currently-granted CA certificates were promoted wholesale after verifying the Trusted List's XAdES signature through the EU LOTL chain of trust: the LOTL signature was checked against the pinned European Commission signing anchor, and the Latvian TSL's signature (signer: C=LV, O=Digitālās drošības uzraudzības komiteja, CN=Latvian Trust List Scheme Operator; cert SHA-256 8b044cf46b90f954f44383fc8ef252d66f1f7a6a1da8ca4f9b5ed9aff024dae2) against the identity the LOTL declares for Latvia, so the list's single seal vouches for every certificate it contains (eIDAS Art. 22). Only services with a currently-granted status and a CA / qualified-certificate service type were selected; withdrawn, deprecated, and non-CA services (including the legacy E-ME SSI/PSI PKI, which is not under supervision) were dropped. Verification evidence is in VERIFICATION.md. Key algorithms across the set are mixed: the eParaksts and LV eID issuing CAs of the 2017 and 2021 generations use RSA-4096, and the LV eID ICA 2025 uses EC P-521. All 5 entries are LVRTC issuing CAs (eParaksts ICA 2017 / 2021 and LV eID ICA 2017 / 2021 / 2025), all issued by the self-signed eParaksts Root CA, which is not carried by the list and must be sourced separately if root-anchored path building is required. The eParaksts ICA 2017 and LV eID ICA 2017 have passed their notAfter and are retained as archived-but-granted entries; they surface under the Expired status filter."
+}

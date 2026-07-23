@@ -40,6 +40,8 @@
     "./it/pems/*": "./countries/it/current/*.pem",
     "./lt": "./countries/lt/index.js",
     "./lt/pems/*": "./countries/lt/current/*.pem",
+    "./lv": "./countries/lv/index.js",
+    "./lv/pems/*": "./countries/lv/current/*.pem",
     "./nl": "./countries/nl/index.js",
     "./nl/pems/*": "./countries/nl/current/*.pem",
     "./no": "./countries/no/index.js",
