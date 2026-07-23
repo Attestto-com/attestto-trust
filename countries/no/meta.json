@@ -1,0 +1,26 @@
+{
+  "code": "no",
+  "name": "Norway",
+  "flag": "🇳🇴",
+  "model": "accredited-tsl",
+  "authority": {
+    "name": "Nasjonal kommunikasjonsmyndighet (Nkom) — Norwegian Communications Authority, Norway's eIDAS supervisory body and national Trusted List scheme operator",
+    "operator": "Accredited QTSPs under eIDAS (BankID / Bankenes ID-tjeneste AS, Buypass AS, Commfides Norge AS, and Scrive AS, among others)",
+    "url": "https://nkom.no/files/TL/NO_TL.xml"
+  },
+  "governingLaw": "Reglamento eIDAS (UE) 910/2014 · Lov om gjennomføring av EUs forordning om elektronisk identifikasjon og tillitstjenester (lov-2018-06-15-44)",
+  "technology": {
+    "keyAlgorithms": ["RSA-4096", "RSA-2048", "EC P-384"],
+    "signatureStandards": ["CAdES", "PAdES", "XAdES", "ASiC"],
+    "trustList": "ETSI TS 119 612 — the Norwegian Trusted List (NO_TL.xml, Nkom)"
+  },
+  "capabilities": ["Qualified e-signature & e-seal (eIDAS)", "Qualified timestamping", "Qualified website authentication (QWAC / PSD2)"],
+  "relatedLinks": [
+    { "label": "Nkom — Norwegian Trusted List (NO_TL.xml)", "url": "https://nkom.no/files/TL/NO_TL.xml" },
+    { "label": "Nkom — Nasjonal kommunikasjonsmyndighet", "url": "https://nkom.no/" },
+    { "label": "EU LOTL — List of the Lists (European Commission)", "url": "https://ec.europa.eu/tools/lotl/eu-lotl.xml" },
+    { "label": "Independent verifier (Attestto)", "url": "https://verify.attestto.com" }
+  ],
+  "source": { "type": "tsl", "url": "https://nkom.no/files/TL/NO_TL.xml" },
+  "notes": "Norway's qualified-signature trust is a federation of accredited QTSPs (BankID / Bankenes ID-tjeneste AS, Buypass AS, Commfides Norge AS, and Scrive AS, among others) supervised by Nasjonal kommunikasjonsmyndighet (Nkom), the Norwegian Communications Authority acting as Norway's eIDAS supervisory body, and published in the Norwegian national eIDAS Trusted List (NO_TL.xml, ETSI TS 119 612). As an EEA / eIDAS participant, Norway is referenced from the EU LOTL. The 26 currently-granted CA certificates were promoted wholesale after verifying the Trusted List's XAdES signature through the EU LOTL chain of trust: the LOTL signature was checked against the pinned European Commission signing anchor, and the Norwegian TSL's signature (signer: C=NO, O=NASJONAL KOMMUNIKASJONSMYNDIGHET, OU=IT, CN=NASJONAL KOMMUNIKASJONSMYNDIGHET, 2.5.4.97=NTRNO-974446871; cert SHA-256 818582f37c3cc9cc17443868d488aede65901d0e9a6d6c3a2124ca70c23cd40e) against the identity the LOTL declares for Norway, so the list's single seal vouches for every certificate it contains (eIDAS Art. 22). Only services with a currently-granted status and a CA / qualified-certificate service type were selected; withdrawn, deprecated, and non-CA services were dropped. Verification evidence is in VERIFICATION.md. Key algorithms across the set are mixed: 20 CAs use RSA-4096, 4 use RSA-2048, and 2 use EC P-384. Eight certificates in the set have passed their notAfter and are retained as archived-but-granted entries; they surface under the Expired status filter."
+}
