@@ -243,6 +243,7 @@ export const getCountryName = (code, lang) => {
     es: { en: 'Spain', es: 'España' },
     be: { en: 'Belgium', es: 'Bélgica' },
     ee: { en: 'Estonia', es: 'Estonia' },
+    fi: { en: 'Finland', es: 'Finlandia' },
     fr: { en: 'France', es: 'Francia' },
     gr: { en: 'Greece', es: 'Grecia' },
     hu: { en: 'Hungary', es: 'Hungría' },

@@ -65,6 +65,7 @@ sha256sum attestto-trust/countries/cr/current/root-ca.pem
 | Belgium | [`be/`](countries/be) | [/be](https://trust.attestto.org/be) | FPS Economy (Federal Public Service Economy) eIDAS Trusted List |
 | Czech Republic | [`cz/`](countries/cz) | [/cz](https://trust.attestto.org/cz) | DIA (Digitální a informační agentura) eIDAS Trusted List |
 | Estonia | [`ee/`](countries/ee) | [/ee](https://trust.attestto.org/ee) | RIA — SK ID Solutions / Zetes (eIDAS) |
+| Finland | [`fi/`](countries/fi) | [/fi](https://trust.attestto.org/fi) | Traficom (Liikenne- ja viestintävirasto) eIDAS Trusted List / DVV FINeID |
 | France | [`fr/`](countries/fr) | [/fr](https://trust.attestto.org/fr) | ANSSI eIDAS Trusted List (~20 QTSPs) |
 | Germany | [`de/`](countries/de) | [/de](https://trust.attestto.org/de) | Bundesnetzagentur (BNetzA) eIDAS Trusted List |
 | Greece | [`gr/`](countries/gr) | [/gr](https://trust.attestto.org/gr) | EETT (Hellenic Telecommunications and Post Commission) eIDAS Trusted List |
@@ -76,7 +77,7 @@ sha256sum attestto-trust/countries/cr/current/root-ca.pem
 | Poland | [`pl/`](countries/pl) | [/pl](https://trust.attestto.org/pl) | NCCert (Narodowe Centrum Certyfikacji) / NBP eIDAS Trusted List |
 | Portugal | [`pt/`](countries/pt) | [/pt](https://trust.attestto.org/pt) | GNS — Autoridade Credenciadora / SCEE eIDAS Trusted List |
 
-More countries are staged and land after a per-country promotion review: Mexico, Colombia, Chile, Ecuador, Uruguay, Panama, and other European trusted lists. Italy's full qualified-signature list (229 accredited-QTSP CAs), Germany's (101 accredited-QTSP CAs), Greece's (105 accredited-QTSP CAs), France's (79 accredited-QTSP CAs), the Netherlands' (30 accredited-QTSP CAs), Belgium's (52 accredited-QTSP CAs), Austria's (39 accredited-QTSP CAs), Portugal's (30 accredited-QTSP CAs), Poland's (29 accredited-QTSP CAs), Hungary's (62 accredited-QTSP CAs), the Czech Republic's (34 accredited-QTSP CAs), and Norway's (26 accredited-QTSP CAs) are now live, promoted wholesale after verifying each national Trusted List's XAdES signature through the EU LOTL chain of trust (see `scripts/monitors/verify-eu-tsl.mjs`).
+More countries are staged and land after a per-country promotion review: Mexico, Colombia, Chile, Ecuador, Uruguay, Panama, and other European trusted lists. Italy's full qualified-signature list (229 accredited-QTSP CAs), Germany's (101 accredited-QTSP CAs), Greece's (105 accredited-QTSP CAs), France's (79 accredited-QTSP CAs), the Netherlands' (30 accredited-QTSP CAs), Belgium's (52 accredited-QTSP CAs), Austria's (39 accredited-QTSP CAs), Portugal's (30 accredited-QTSP CAs), Poland's (29 accredited-QTSP CAs), Hungary's (62 accredited-QTSP CAs), the Czech Republic's (34 accredited-QTSP CAs), Norway's (26 accredited-QTSP CAs), and Finland's (12 DVV/VRK FINeID CAs) are now live, promoted wholesale after verifying each national Trusted List's XAdES signature through the EU LOTL chain of trust (see `scripts/monitors/verify-eu-tsl.mjs`).
 
 ## Global / organizational anchors
 
