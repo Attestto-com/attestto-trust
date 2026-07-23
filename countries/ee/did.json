@@ -1,22 +1,22 @@
 {
   "method": "did:pki",
-  "generatedAt": "2026-07-23T12:39:49.897Z",
+  "generatedAt": "2026-07-23T17:14:19.658Z",
   "dids": {
     "EE-Certification-Centre-Root-CA.pem": "did:pki:ee:as-sertifitseerimiskeskus:ee-certification-centre-root-ca",
     "EE-GovCA2018.pem": "did:pki:ee:sk-id-solutions:ee-govca2018",
     "EEGovCA2025.pem": "did:pki:ee:zetes-estonia-ou:eegovca2025",
-    "EID-SK-2016.pem": "did:pki:ee:as-sertifitseerimiskeskus:eid-sk-2016",
-    "ESTEID-SK-2015.pem": "did:pki:ee:as-sertifitseerimiskeskus:esteid-sk-2015",
-    "ESTEID2018.pem": "did:pki:ee:sk-id-solutions:esteid2018",
-    "ESTEID2025.pem": "did:pki:ee:zetes-estonia-ou:esteid2025",
-    "KLASS3-SK-2016.pem": "did:pki:ee:as-sertifitseerimiskeskus:kls3-sk-2016",
-    "SK-ID-Solutions-EID-Q-2021E.pem": "did:pki:ee:sk-id-solutions:id-solutions-eid-q-2021e",
-    "SK-ID-Solutions-EID-Q-2021R.pem": "did:pki:ee:sk-id-solutions:id-solutions-eid-q-2021r",
-    "SK-ID-Solutions-EID-Q-2024E.pem": "did:pki:ee:sk-id-solutions:id-solutions-eid-q-2024e",
-    "SK-ID-Solutions-EID-Q-2024R.pem": "did:pki:ee:sk-id-solutions:id-solutions-eid-q-2024r",
-    "SK-ID-Solutions-ORG-2021E.pem": "did:pki:ee:sk-id-solutions:id-solutions-org-2021e",
-    "SK-ID-Solutions-ORG-2021R.pem": "did:pki:ee:sk-id-solutions:id-solutions-org-2021r",
     "SK-ID-Solutions-ROOT-G1E.pem": "did:pki:ee:sk-id-solutions:id-solutions-root-g1e",
-    "SK-ID-Solutions-ROOT-G1R.pem": "did:pki:ee:sk-id-solutions:id-solutions-root-g1r"
+    "SK-ID-Solutions-ROOT-G1R.pem": "did:pki:ee:sk-id-solutions:id-solutions-root-g1r",
+    "eid-sk-2016.pem": "did:pki:ee:as-sertifitseerimiskeskus:eid-sk-2016",
+    "esteid-sk-2015.pem": "did:pki:ee:as-sertifitseerimiskeskus:esteid-sk-2015",
+    "esteid2018.pem": "did:pki:ee:sk-id-solutions:esteid2018",
+    "esteid2025.pem": "did:pki:ee:zetes-estonia-ou:esteid2025",
+    "klass3-sk-2016.pem": "did:pki:ee:as-sertifitseerimiskeskus:kls3-sk-2016",
+    "sk-id-solutions-eid-q-2021e.pem": "did:pki:ee:sk-id-solutions:id-solutions-eid-q-2021e",
+    "sk-id-solutions-eid-q-2021r.pem": "did:pki:ee:sk-id-solutions:id-solutions-eid-q-2021r",
+    "sk-id-solutions-eid-q-2024e.pem": "did:pki:ee:sk-id-solutions:id-solutions-eid-q-2024e",
+    "sk-id-solutions-eid-q-2024r.pem": "did:pki:ee:sk-id-solutions:id-solutions-eid-q-2024r",
+    "sk-id-solutions-org-2021e.pem": "did:pki:ee:sk-id-solutions:id-solutions-org-2021e",
+    "sk-id-solutions-org-2021r.pem": "did:pki:ee:sk-id-solutions:id-solutions-org-2021r"
   }
 }
