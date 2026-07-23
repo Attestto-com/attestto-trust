@@ -74,6 +74,14 @@ sha256sum attestto-trust/countries/cr/current/root-ca.pem
 
 More countries are staged and land after a per-country promotion review: Mexico, Colombia, Chile, Ecuador, Uruguay, Panama, and other European trusted lists. Italy's full qualified-signature list (229 accredited-QTSP CAs), Germany's (101 accredited-QTSP CAs), Greece's (105 accredited-QTSP CAs), France's (79 accredited-QTSP CAs), the Netherlands' (30 accredited-QTSP CAs), Belgium's (52 accredited-QTSP CAs), Austria's (39 accredited-QTSP CAs), and Portugal's (30 accredited-QTSP CAs) are now live, promoted wholesale after verifying each national Trusted List's XAdES signature through the EU LOTL chain of trust (see `scripts/monitors/verify-eu-tsl.mjs`).
 
+## Global / organizational anchors
+
+Beyond national PKI, the directory mirrors global organizational-identity roots under `anchors/`.
+The first is **GLEIF vLEI** (`anchors/gleif-vlei/`) — the GLEIF root of trust and its authorized
+Qualified vLEI Issuers, hash-pinned and version-controlled. vLEI is KERI/ACDC (not X.509), so it is
+pinned as an AID key-state rather than a CA certificate. We mirror what GLEIF publishes and do not
+issue or vouch for any credential. See [trust.attestto.org/gleif](https://trust.attestto.org/gleif).
+
 ## Key concepts
 
 ### Certificate manifest

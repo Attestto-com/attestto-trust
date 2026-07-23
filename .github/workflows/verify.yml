@@ -51,3 +51,12 @@ jobs:
             git diff -- 'countries/*/current/manifest.json' 'countries/*/current/chain.pem'
             exit 1
           fi
+      - name: Regenerate anchor manifests
+        run: node scripts/refresh-anchors-manifest.mjs
+      - name: Fail if anchor manifest drifted
+        run: |
+          if ! git diff --quiet -- 'anchors/*/manifest.json'; then
+            echo "::error::An anchors/*/manifest.json is out of date — run 'node scripts/refresh-anchors-manifest.mjs' and commit"
+            git diff -- 'anchors/*/manifest.json'
+            exit 1
+          fi
