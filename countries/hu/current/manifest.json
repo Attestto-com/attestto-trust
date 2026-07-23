@@ -1,0 +1,1137 @@
+{
+  "country": "HU",
+  "generatedAt": "2026-07-23T18:39:10.069Z",
+  "count": 62,
+  "certificates": [
+    {
+      "file": "allampolgari-tanusitvanykiado-qualified-citizen-ca.pem",
+      "sha256": "f30c01d9ecdfe89631068434ff4c072c13f596e2973784adb3252db62a2a2d82",
+      "subject": "Állampolgári Tanúsítványkiadó - Qualified Citizen CA",
+      "issuer": "Főtanúsítványkiadó - Kormányzati Hitelesítés Szolgáltató",
+      "serialNumber": "168eb19b12ff157b",
+      "validFrom": "2015-12-18T11:27:19.000Z",
+      "validTo": "2030-12-18T11:27:19.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://qca.hiteles.gov.hu/crl/GOVCA-ROOT.crl"
+      ],
+      "ocspUrls": [
+        "http://qocsp.hiteles.gov.hu/ocsp-root"
+      ]
+    },
+    {
+      "file": "digitalis-allampolgarsag-tanusitvanykiado-dap-ca.pem",
+      "sha256": "89e9f42886b25325fbab7a920347087dc77f069926a4bda6d357bdbf36cc8f26",
+      "subject": "Digitális Állampolgárság Tanúsítványkiadó (DAP-CA)",
+      "issuer": "GovCA Főtanúsítványkiadó",
+      "serialNumber": "232b8bb90ae609b6d424830550f4db1c6dd6b414",
+      "validFrom": "2024-11-28T10:16:45.000Z",
+      "validTo": "2044-11-23T10:16:44.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-384",
+      "crlUrls": [
+        "http://qca.hiteles.gov.hu/ecc/crl/govca-ecc-root.crl"
+      ],
+      "ocspUrls": [
+        "http://qca.hiteles.gov.hu/ecc/ocsp-root"
+      ]
+    },
+    {
+      "file": "e-szigno-qualified-ca-2017.pem",
+      "sha256": "5abe5818f6d02f05106c6c355540e1be217c2354b535cf2507bf8515e1a6044a",
+      "subject": "e-Szigno Qualified CA 2017",
+      "issuer": "e-Szigno Root CA 2017",
+      "serialNumber": "9c68095849e08beab447ef0a",
+      "validFrom": "2017-09-17T21:00:00.000Z",
+      "validTo": "2042-08-22T09:00:00.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-256",
+      "crlUrls": [
+        "http://rootca2017-crl1.e-szigno.hu/rootca2017.crl",
+        "http://rootca2017-crl2.e-szigno.hu/rootca2017.crl",
+        "http://rootca2017-crl3.e-szigno.hu/rootca2017.crl"
+      ],
+      "ocspUrls": [
+        "http://rootca2017-ocsp1.e-szigno.hu",
+        "http://rootca2017-ocsp2.e-szigno.hu",
+        "http://rootca2017-ocsp3.e-szigno.hu"
+      ]
+    },
+    {
+      "file": "e-szigno-qualified-organization-ca-2017.pem",
+      "sha256": "12ea26f6eeefec76ab8592545403ab88515b00e275d9888713407a86fc5c7fd7",
+      "subject": "e-Szigno Qualified Organization CA 2017",
+      "issuer": "e-Szigno Root CA 2017",
+      "serialNumber": "9d6d3eff75e60fff2ca1060a",
+      "validFrom": "2017-09-17T21:00:00.000Z",
+      "validTo": "2042-08-22T09:00:00.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-256",
+      "crlUrls": [
+        "http://rootca2017-crl1.e-szigno.hu/rootca2017.crl",
+        "http://rootca2017-crl2.e-szigno.hu/rootca2017.crl",
+        "http://rootca2017-crl3.e-szigno.hu/rootca2017.crl"
+      ],
+      "ocspUrls": [
+        "http://rootca2017-ocsp1.e-szigno.hu",
+        "http://rootca2017-ocsp2.e-szigno.hu",
+        "http://rootca2017-ocsp3.e-szigno.hu"
+      ]
+    },
+    {
+      "file": "e-szigno-qualified-pseudonymous-ca-2017.pem",
+      "sha256": "1648ce4ab1bb65c485cb2236c768fabb865147d426915b92afbca81e9b2ee3bc",
+      "subject": "e-Szigno Qualified Pseudonymous CA 2017",
+      "issuer": "e-Szigno Root CA 2017",
+      "serialNumber": "9f1d566220b1e414fb913d0a",
+      "validFrom": "2017-09-17T21:00:00.000Z",
+      "validTo": "2042-08-22T09:00:00.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-256",
+      "crlUrls": [
+        "http://rootca2017-crl1.e-szigno.hu/rootca2017.crl",
+        "http://rootca2017-crl2.e-szigno.hu/rootca2017.crl",
+        "http://rootca2017-crl3.e-szigno.hu/rootca2017.crl"
+      ],
+      "ocspUrls": [
+        "http://rootca2017-ocsp1.e-szigno.hu",
+        "http://rootca2017-ocsp2.e-szigno.hu",
+        "http://rootca2017-ocsp3.e-szigno.hu"
+      ]
+    },
+    {
+      "file": "e-szigno-qualified-qcp-ca-2017.pem",
+      "sha256": "6081bee5b0df191ac4e265ac0f6f7899f078b8c89f06055ae166af91df70d6e0",
+      "subject": "e-Szigno Qualified QCP CA 2017",
+      "issuer": "e-Szigno Root CA 2017",
+      "serialNumber": "9e2c5eb959fd774cdd866a0a",
+      "validFrom": "2017-09-17T21:00:00.000Z",
+      "validTo": "2042-08-22T09:00:00.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-256",
+      "crlUrls": [
+        "http://rootca2017-crl1.e-szigno.hu/rootca2017.crl",
+        "http://rootca2017-crl2.e-szigno.hu/rootca2017.crl",
+        "http://rootca2017-crl3.e-szigno.hu/rootca2017.crl"
+      ],
+      "ocspUrls": [
+        "http://rootca2017-ocsp1.e-szigno.hu",
+        "http://rootca2017-ocsp2.e-szigno.hu",
+        "http://rootca2017-ocsp3.e-szigno.hu"
+      ]
+    },
+    {
+      "file": "e-szigno-qualified-smime-ca-2023.pem",
+      "sha256": "a40938babd88ff42144b611298e90b3426194099152c49eaa4a8a6eaf42d2dd2",
+      "subject": "e-Szigno Qualified SMIME CA 2023",
+      "issuer": "e-Szigno Root CA 2017",
+      "serialNumber": "f7755c9f6c4afa2fcb93ed0a",
+      "validFrom": "2023-09-18T07:30:00.000Z",
+      "validTo": "2042-08-21T07:30:00.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-256",
+      "crlUrls": [
+        "http://rootca2017-crl1.e-szigno.hu/rootca2017.crl",
+        "http://rootca2017-crl2.e-szigno.hu/rootca2017.crl",
+        "http://rootca2017-crl3.e-szigno.hu/rootca2017.crl"
+      ],
+      "ocspUrls": [
+        "http://rootca2017-ocsp1.e-szigno.hu",
+        "http://rootca2017-ocsp2.e-szigno.hu",
+        "http://rootca2017-ocsp3.e-szigno.hu"
+      ]
+    },
+    {
+      "file": "e-szigno-qualified-tls-ca-2018.pem",
+      "sha256": "7df800075f5203c017364e81195a9ac9ff00c507d64a70f737d8d3e8cb3f0845",
+      "subject": "e-Szigno Qualified TLS CA 2018",
+      "issuer": "e-Szigno Root CA 2017",
+      "serialNumber": "b7f33eb778eb631cbe7c800a",
+      "validFrom": "2018-07-31T09:00:00.000Z",
+      "validTo": "2042-08-22T09:00:00.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-256",
+      "crlUrls": [
+        "http://rootca2017-crl1.e-szigno.hu/rootca2017.crl",
+        "http://rootca2017-crl2.e-szigno.hu/rootca2017.crl",
+        "http://rootca2017-crl3.e-szigno.hu/rootca2017.crl"
+      ],
+      "ocspUrls": [
+        "http://rootca2017-ocsp1.e-szigno.hu",
+        "http://rootca2017-ocsp2.e-szigno.hu",
+        "http://rootca2017-ocsp3.e-szigno.hu"
+      ]
+    },
+    {
+      "file": "e-szigno-qualified-tls-ca-2023.pem",
+      "sha256": "9e4115fd70e2317e15bf811552610643b32818a0304aa3c97685a76465493261",
+      "subject": "e-Szigno Qualified TLS CA 2023",
+      "issuer": "e-Szigno TLS Root CA 2023",
+      "serialNumber": "ec1e078082032645c428920a",
+      "validFrom": "2023-07-19T15:24:13.000Z",
+      "validTo": "2026-07-18T15:24:13.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-256",
+      "crlUrls": [
+        "http://tlsrootca2023-crl.e-szigno.hu/tlsrootca2023.crl"
+      ],
+      "ocspUrls": [
+        "http://tlsrootca2023-ocsp.e-szigno.hu"
+      ]
+    },
+    {
+      "file": "e-szigno-qualified-tls-ca-2024.pem",
+      "sha256": "fab9218ffd63b29f6377dd8883d51bb5a147b5f689ebdcc3d6fba7874af34e70",
+      "subject": "e-Szigno Qualified TLS CA 2024",
+      "issuer": "e-Szigno Root CA 2024",
+      "serialNumber": "0109a91b642070f2ea054f9f0a",
+      "validFrom": "2024-07-31T10:00:00.000Z",
+      "validTo": "2049-07-13T10:00:00.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-384",
+      "crlUrls": [
+        "http://erootca2024-crl.e-szigno.hu/erootca2024.crl"
+      ],
+      "ocspUrls": [
+        "http://erootca2024-ocsp.e-szigno.hu"
+      ]
+    },
+    {
+      "file": "e-szigno-qualified-tls-ca-2025-eu.pem",
+      "sha256": "a0afdbcf00353b72a32748998bba311c1c4c393516401f19832d14e47cdc26ac",
+      "subject": "e-Szigno Qualified TLS CA 2025 EU",
+      "issuer": "e-Szigno Root CA 2024",
+      "serialNumber": "011415608832d2500db79c320a",
+      "validFrom": "2025-01-06T13:00:00.000Z",
+      "validTo": "2049-07-13T11:59:59.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-384",
+      "crlUrls": [
+        "http://erootca2024-crl.e-szigno.hu/erootca2024.crl"
+      ],
+      "ocspUrls": [
+        "http://erootca2024-ocsp.e-szigno.hu"
+      ]
+    },
+    {
+      "file": "e-szigno-qualified-tls-ca-2025.pem",
+      "sha256": "930f2575d4893c0761533ad83442a22c025905c5f3ed6118953ec5a6d846e05f",
+      "subject": "e-Szigno Qualified TLS CA 2025",
+      "issuer": "e-Szigno TLS Root CA 2024",
+      "serialNumber": "01137330590f74842f0ee1ee0a",
+      "validFrom": "2025-01-06T13:00:00.000Z",
+      "validTo": "2028-01-05T12:59:59.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-256",
+      "crlUrls": [
+        "http://etlsrootca2024-crl.e-szigno.hu/etlsrootca2024.crl"
+      ],
+      "ocspUrls": [
+        "http://etlsrootca2024-ocsp.e-szigno.hu"
+      ]
+    },
+    {
+      "file": "e-szigno-qualified-tls-ca-2026.pem",
+      "sha256": "cbba5afbb7e493c2d1edfbb3b162394bfcec0345a66dc1a167b203d534fbc15f",
+      "subject": "e-Szigno Qualified TLS CA 2026",
+      "issuer": "e-Szigno TLS Root CA 2023",
+      "serialNumber": "014185eeb7d30ee5dc4c01020a",
+      "validFrom": "2026-03-18T14:00:00.000Z",
+      "validTo": "2029-03-17T13:59:59.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-256",
+      "crlUrls": [
+        "http://tlsrootca2023-crl.e-szigno.hu/tlsrootca2023.crl"
+      ],
+      "ocspUrls": [
+        "http://tlsrootca2023-ocsp.e-szigno.hu"
+      ]
+    },
+    {
+      "file": "e-szigno-rsa-qualified-ca-2025.pem",
+      "sha256": "bc9416fcf40953ae91ffae5beecc06effcbfafb191ecc01a84b01e60955f1ef2",
+      "subject": "e-Szigno RSA Qualified CA 2025",
+      "issuer": "e-Szigno RSA Root CA 2025",
+      "serialNumber": "0134dae5c71359c3c56b23060a",
+      "validFrom": "2025-09-05T13:30:00.000Z",
+      "validTo": "2050-09-04T13:29:59.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://rootca2025-crl.e-szigno.hu/rootca2025.crl"
+      ],
+      "ocspUrls": [
+        "http://rootca2025-ocsp.e-szigno.hu"
+      ]
+    },
+    {
+      "file": "e-szigno-rsa-qualified-qcp-ca-2025-8474513f.pem",
+      "sha256": "8474513f02221abda47cc3fda9314ccfde0af281bb45daa781cccde7f4524c53",
+      "subject": "e-Szigno RSA Qualified QCP CA 2025",
+      "issuer": "e-Szigno RSA Root CA 2025",
+      "serialNumber": "01357be9f64cb84d7d032f320a",
+      "validFrom": "2025-09-05T13:30:00.000Z",
+      "validTo": "2050-09-04T13:29:59.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://rootca2025-crl.e-szigno.hu/rootca2025.crl"
+      ],
+      "ocspUrls": [
+        "http://rootca2025-ocsp.e-szigno.hu"
+      ]
+    },
+    {
+      "file": "e-szigno-rsa-qualified-qcp-ca-2025.pem",
+      "sha256": "8474513f02221abda47cc3fda9314ccfde0af281bb45daa781cccde7f4524c53",
+      "subject": "e-Szigno RSA Qualified QCP CA 2025",
+      "issuer": "e-Szigno RSA Root CA 2025",
+      "serialNumber": "01357be9f64cb84d7d032f320a",
+      "validFrom": "2025-09-05T13:30:00.000Z",
+      "validTo": "2050-09-04T13:29:59.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://rootca2025-crl.e-szigno.hu/rootca2025.crl"
+      ],
+      "ocspUrls": [
+        "http://rootca2025-ocsp.e-szigno.hu"
+      ]
+    },
+    {
+      "file": "e-szigno-rsa-qualified-tls-ca-2026.pem",
+      "sha256": "399cc6d3d41b81f582139244b6b5d8f09e95e571030a6277f8f4051b2e17af66",
+      "subject": "e-Szigno RSA Qualified TLS CA 2026",
+      "issuer": "e-Szigno RSA TLS Root CA 2025",
+      "serialNumber": "013ed5549ef71d0972a4c2320a",
+      "validFrom": "2026-03-18T14:00:00.000Z",
+      "validTo": "2029-03-17T13:59:59.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-3072",
+      "crlUrls": [
+        "http://tlsrootca2025-crl.e-szigno.hu/tlsrootca2025.crl"
+      ],
+      "ocspUrls": [
+        "http://tlsrootca2025-ocsp.e-szigno.hu"
+      ]
+    },
+    {
+      "file": "e-szigno-tsa-ca-2017.pem",
+      "sha256": "9e94bb8adad7a6ce4dcb1208f1239dc1e43483f1b7e81f74a90a20fb5e5c49b7",
+      "subject": "e-Szigno TSA CA 2017",
+      "issuer": "e-Szigno Root CA 2017",
+      "serialNumber": "a98958cfd801af006f1e690a",
+      "validFrom": "2017-09-17T21:00:00.000Z",
+      "validTo": "2042-08-22T09:00:00.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-256",
+      "crlUrls": [
+        "http://rootca2017-crl1.e-szigno.hu/rootca2017.crl",
+        "http://rootca2017-crl2.e-szigno.hu/rootca2017.crl",
+        "http://rootca2017-crl3.e-szigno.hu/rootca2017.crl"
+      ],
+      "ocspUrls": [
+        "http://rootca2017-ocsp1.e-szigno.hu",
+        "http://rootca2017-ocsp2.e-szigno.hu",
+        "http://rootca2017-ocsp3.e-szigno.hu"
+      ]
+    },
+    {
+      "file": "e-szigno-tsa-ca-2020.pem",
+      "sha256": "b4c177e357565c99e90ed886d799f8c6beff806da5a048551878489b9c27e488",
+      "subject": "e-Szigno TSA CA 2020",
+      "issuer": "e-Szigno Root CA 2017",
+      "serialNumber": "d11c60534e95c90ea5b9600a",
+      "validFrom": "2020-08-25T13:00:00.000Z",
+      "validTo": "2042-08-22T09:00:00.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-256",
+      "crlUrls": [
+        "http://rootca2017-crl1.e-szigno.hu/rootca2017.crl",
+        "http://rootca2017-crl2.e-szigno.hu/rootca2017.crl",
+        "http://rootca2017-crl3.e-szigno.hu/rootca2017.crl"
+      ],
+      "ocspUrls": [
+        "http://rootca2017-ocsp1.e-szigno.hu",
+        "http://rootca2017-ocsp2.e-szigno.hu",
+        "http://rootca2017-ocsp3.e-szigno.hu"
+      ]
+    },
+    {
+      "file": "govca-minositett-idobelyegzo-tanusitvanykiado.pem",
+      "sha256": "70cc668ad4382ca95e9b321f50694a1881635027cd38723c08941230574858d1",
+      "subject": "GovCA Minősített Időbélyegző Tanúsítványkiadó",
+      "issuer": "GovCA Főtanúsítványkiadó",
+      "serialNumber": "34d932d112d9b09da76b031c05fd91be1a2ce428",
+      "validFrom": "2025-04-07T12:00:14.000Z",
+      "validTo": "2045-04-07T12:00:13.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-384",
+      "crlUrls": [
+        "http://qca.hiteles.gov.hu/ecc/crl/govca-ecc-root.crl"
+      ],
+      "ocspUrls": [
+        "http://qca.hiteles.gov.hu/ecc/ocsp-root"
+      ]
+    },
+    {
+      "file": "govca-minositett-kozigazgatasi-tanusitvanykiado.pem",
+      "sha256": "da256bcb0a9393bb3bbeab0944892dcfc94ced17d117239cd232545112d4434e",
+      "subject": "GovCA Minősített Közigazgatási Tanúsítványkiadó",
+      "issuer": "GovCA Főtanúsítványkiadó",
+      "serialNumber": "079fbf68ed8409f6224fe7cfbf250b40cb940824",
+      "validFrom": "2025-11-11T09:12:07.000Z",
+      "validTo": "2045-11-11T09:12:06.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-384",
+      "crlUrls": [
+        "http://qca.hiteles.gov.hu/ecc/crl/govca-ecc-root.crl"
+      ],
+      "ocspUrls": [
+        "http://qca.hiteles.gov.hu/ecc/ocsp-root"
+      ]
+    },
+    {
+      "file": "govca-minositett-tanusitvanykiado-2024.pem",
+      "sha256": "337b02bc8a40170a9897ac0657ad7fdf3a06a4e6188fd15192081b13edd32822",
+      "subject": "GovCA Minősített Tanúsítványkiadó 2024",
+      "issuer": "GovCA Főtanúsítványkiadó",
+      "serialNumber": "77e056fb08f0a60ab3613aae428cb9d556467ec4",
+      "validFrom": "2024-03-12T13:09:11.000Z",
+      "validTo": "2044-03-12T13:09:10.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-384",
+      "crlUrls": [
+        "http://qca.hiteles.gov.hu/ecc/crl/govca-ecc-root.crl"
+      ],
+      "ocspUrls": [
+        "http://qca.hiteles.gov.hu/ecc/ocsp-root"
+      ]
+    },
+    {
+      "file": "govca-minositett-tanusitvanykiado.pem",
+      "sha256": "2b4564c9077ba412ac4710842be86b70c6e28f25d38c2db0b164543046a4b8cf",
+      "subject": "GovCA Minősített Tanúsítványkiadó",
+      "issuer": "GovCA Főtanúsítványkiadó",
+      "serialNumber": "5397b44ff19bcf2262c37269ea3a59cef34892a9",
+      "validFrom": "2023-09-14T08:59:18.000Z",
+      "validTo": "2043-09-14T08:59:17.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-384",
+      "crlUrls": [
+        "http://qca.hiteles.gov.hu/ecc/crl/govca-ecc-root.crl"
+      ],
+      "ocspUrls": [
+        "http://qca.hiteles.gov.hu/ecc/ocsp-root"
+      ]
+    },
+    {
+      "file": "minositett-kozigazgatasi-tanusitvanykiado-gov-ca.pem",
+      "sha256": "1dcb52fe7cfcb5c6c56e133e52d7aa38f413ae79fff0f4325da878051294d26d",
+      "subject": "Minősített Közigazgatási Tanúsítványkiadó - GOV CA",
+      "issuer": "KGYHSZ (Public Administration Root CA - Hungary)",
+      "serialNumber": "437c9841",
+      "validFrom": "2014-03-20T09:34:06.000Z",
+      "validTo": "2024-03-20T10:04:06.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://crl.kgyhsz.gov.hu/KGYHSZ_CA_20091210.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.kgyhsz.gov.hu/ocsp/"
+      ]
+    },
+    {
+      "file": "minositett-tanusitvanykiado-v2-gov-ca-f9885503.pem",
+      "sha256": "f9885503ef87a30f9e95dff53b0baf31b088df0f20e14deeb9c9ef62d452d888",
+      "subject": "Minősített Tanúsítványkiadó v2 - GOV CA",
+      "issuer": "Főtanúsítványkiadó - Kormányzati Hitelesítés Szolgáltató",
+      "serialNumber": "5cf26adc77a18c7c",
+      "validFrom": "2014-01-22T09:24:19.000Z",
+      "validTo": "2029-01-22T09:24:19.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://qca.hiteles.gov.hu/crl/GOVCA-ROOT.crl"
+      ],
+      "ocspUrls": [
+        "http://qocsp.hiteles.gov.hu/ocsp-root"
+      ]
+    },
+    {
+      "file": "minositett-tanusitvanykiado-v2-gov-ca.pem",
+      "sha256": "f9885503ef87a30f9e95dff53b0baf31b088df0f20e14deeb9c9ef62d452d888",
+      "subject": "Minősített Tanúsítványkiadó v2 - GOV CA",
+      "issuer": "Főtanúsítványkiadó - Kormányzati Hitelesítés Szolgáltató",
+      "serialNumber": "5cf26adc77a18c7c",
+      "validFrom": "2014-01-22T09:24:19.000Z",
+      "validTo": "2029-01-22T09:24:19.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://qca.hiteles.gov.hu/crl/GOVCA-ROOT.crl"
+      ],
+      "ocspUrls": [
+        "http://qocsp.hiteles.gov.hu/ocsp-root"
+      ]
+    },
+    {
+      "file": "netlock-arany-class-gold-fotanusitvany.pem",
+      "sha256": "6c61dac3a2def031506be036d2a6fe401994fbd13df9c8d466599274c446ec98",
+      "subject": "NetLock Arany (Class Gold) Főtanúsítvány",
+      "issuer": "NetLock Arany (Class Gold) Főtanúsítvány",
+      "serialNumber": "49412ce40010",
+      "validFrom": "2008-12-11T15:08:21.000Z",
+      "validTo": "2028-12-06T15:08:21.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "netlock-minositett-eat-class-q-legal-tanusitvanykiado-6284a03b.pem",
+      "sha256": "6284a03bafae861a30e3a25a030428306f7eb52bd0ba577a1d962a809a830c9e",
+      "subject": "NetLock Minősített Eat. (Class Q Legal) Tanúsítványkiadó",
+      "issuer": "NetLock Arany (Class Gold) Főtanúsítvány",
+      "serialNumber": "49412ce40017",
+      "validFrom": "2009-07-31T10:51:20.000Z",
+      "validTo": "2024-10-15T10:51:20.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://crl1.netlock.hu/index.cgi?crl=gold",
+        "http://crl2.netlock.hu/index.cgi?crl=gold",
+        "http://crl3.netlock.hu/index.cgi?crl=gold"
+      ],
+      "ocspUrls": [
+        "http://ocsp1.netlock.hu/gold.cgi",
+        "http://ocsp2.netlock.hu/gold.cgi",
+        "http://ocsp3.netlock.hu/gold.cgi"
+      ]
+    },
+    {
+      "file": "netlock-minositett-eat-class-q-legal-tanusitvanykiado.pem",
+      "sha256": "6284a03bafae861a30e3a25a030428306f7eb52bd0ba577a1d962a809a830c9e",
+      "subject": "NetLock Minősített Eat. (Class Q Legal) Tanúsítványkiadó",
+      "issuer": "NetLock Arany (Class Gold) Főtanúsítvány",
+      "serialNumber": "49412ce40017",
+      "validFrom": "2009-07-31T10:51:20.000Z",
+      "validTo": "2024-10-15T10:51:20.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://crl1.netlock.hu/index.cgi?crl=gold",
+        "http://crl2.netlock.hu/index.cgi?crl=gold",
+        "http://crl3.netlock.hu/index.cgi?crl=gold"
+      ],
+      "ocspUrls": [
+        "http://ocsp1.netlock.hu/gold.cgi",
+        "http://ocsp2.netlock.hu/gold.cgi",
+        "http://ocsp3.netlock.hu/gold.cgi"
+      ]
+    },
+    {
+      "file": "netlock-minositett-eat-spec-class-q-legal-spec-kiado.pem",
+      "sha256": "a5f2fd0d66db4dd77a2914ed3c747cbd97e734cf4e2b6f217fb41aa4eafdead2",
+      "subject": "NetLock Minősített Eat. Spec. (Class Q Legal Spec.) Kiadó",
+      "issuer": "NetLock Arany (Class Gold) Főtanúsítvány",
+      "serialNumber": "49412ce40026",
+      "validFrom": "2012-08-07T15:17:48.000Z",
+      "validTo": "2027-10-23T15:17:48.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://crl1.netlock.hu/index.cgi?crl=gold",
+        "http://crl2.netlock.hu/index.cgi?crl=gold",
+        "http://crl3.netlock.hu/index.cgi?crl=gold"
+      ],
+      "ocspUrls": [
+        "http://ocsp1.netlock.hu/gold.cgi",
+        "http://ocsp2.netlock.hu/gold.cgi",
+        "http://ocsp3.netlock.hu/gold.cgi"
+      ]
+    },
+    {
+      "file": "netlock-minositett-kozigazgatasi-class-q-tanusitvanykiado.pem",
+      "sha256": "eba22784d20902a9f9af3f640d14889a53d7f3c4b5b0697016b8d749ade97f3e",
+      "subject": "NetLock Minősített Közigazgatási (Class Q) Tanúsítványkiadó",
+      "issuer": "KGYHSZ (Public Administration Root CA - Hungary)",
+      "serialNumber": "437c94d1",
+      "validFrom": "2011-02-16T09:49:09.000Z",
+      "validTo": "2021-02-16T10:19:09.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://crl.kgyhsz.gov.hu/KGYHSZ_CA_20091210.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "netlock-qualified-public-administration-ca.pem",
+      "sha256": "9e48a8b70e6cf4cf7099db8995ee9ef5179911dc8830369bf66518cd5fa8ac01",
+      "subject": "NETLOCK Qualified Public Administration CA",
+      "issuer": "KGYHSZ (Public Administration Root CA - Hungary)",
+      "serialNumber": "5922e8ae",
+      "validFrom": "2020-04-02T08:48:13.000Z",
+      "validTo": "2029-12-10T15:22:58.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://crl.kgyhsz.gov.hu/KGYHSZ_CA_20091210.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.kgyhsz.gov.hu/ocsp/"
+      ]
+    },
+    {
+      "file": "netlock-qualified-public-administration-ecc-ca-2026.pem",
+      "sha256": "a01af65ffcd95b7f0201513567149d476c88fd059013bbb57048cb3efd5fdb56",
+      "subject": "NETLOCK Qualified Public Administration ECC CA 2026",
+      "issuer": "NETLOCK Root ECC CA",
+      "serialNumber": "6492eb84002ddb507b8e8e8920d5",
+      "validFrom": "2026-02-02T13:08:00.000Z",
+      "validTo": "2036-01-31T13:08:00.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-384",
+      "crlUrls": [
+        "http://crl.ecc.netlock.hu/index.cgi?crl=rooteccca"
+      ],
+      "ocspUrls": [
+        "http://ocsp.ecc.netlock.hu/rooteccca.cgi"
+      ]
+    },
+    {
+      "file": "netlock-qualified-public-administration-rsa-4096-ca-2026.pem",
+      "sha256": "f0417ef0002d49add5c019612dcbf02eafc90f6b8ca4fd5227db982bf3386031",
+      "subject": "NETLOCK Qualified Public Administration RSA 4096 CA 2026",
+      "issuer": "NETLOCK RSA 4096 CA",
+      "serialNumber": "651a7c42002a49c0a3d4524434cc",
+      "validFrom": "2026-02-02T13:13:39.000Z",
+      "validTo": "2036-01-31T13:13:39.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.rsa.netlock.hu/index.cgi?crl=rsa4096ca"
+      ],
+      "ocspUrls": [
+        "http://ocsp.rsa.netlock.hu/rsa4096ca.cgi"
+      ]
+    },
+    {
+      "file": "netlock-trust-qualified-ca.pem",
+      "sha256": "5498963dffa651604f467e108e65a183470fa9b557c129ddf8c9d812b4f0bf96",
+      "subject": "NETLOCK Trust Qualified CA",
+      "issuer": "NetLock Arany (Class Gold) Főtanúsítvány",
+      "serialNumber": "49412ce40045",
+      "validFrom": "2016-09-28T17:28:33.000Z",
+      "validTo": "2028-07-07T17:28:33.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://crl1.netlock.hu/index.cgi?crl=gold",
+        "http://crl2.netlock.hu/index.cgi?crl=gold",
+        "http://crl3.netlock.hu/index.cgi?crl=gold"
+      ],
+      "ocspUrls": [
+        "http://ocsp1.netlock.hu/gold.cgi",
+        "http://ocsp2.netlock.hu/gold.cgi",
+        "http://ocsp3.netlock.hu/gold.cgi"
+      ]
+    },
+    {
+      "file": "netlock-trust-qualified-ecc-ca-2026.pem",
+      "sha256": "05ee261e9ff93fa261ca51174b54a2b95dbae6024d221663a1e0590b1a1a5bb1",
+      "subject": "NETLOCK Trust Qualified ECC CA 2026",
+      "issuer": "NETLOCK Root ECC CA",
+      "serialNumber": "6492eb84002e56700bb7a2153784",
+      "validFrom": "2026-02-02T13:19:43.000Z",
+      "validTo": "2036-01-31T13:19:43.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-384",
+      "crlUrls": [
+        "http://crl.ecc.netlock.hu/index.cgi?crl=rooteccca"
+      ],
+      "ocspUrls": [
+        "http://ocsp.ecc.netlock.hu/rooteccca.cgi"
+      ]
+    },
+    {
+      "file": "netlock-trust-qualified-ecc-ca.pem",
+      "sha256": "4282734163bf9ff8424f1eefb06839ff25de67d6c1fd50793691740b6045b76c",
+      "subject": "NETLOCK Trust Qualified ECC CA",
+      "issuer": "NETLOCK Root ECC CA",
+      "serialNumber": "6492eb84001f8f62b156b3dbca3d",
+      "validFrom": "2024-04-26T13:41:07.000Z",
+      "validTo": "2034-04-24T13:41:07.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-384",
+      "crlUrls": [
+        "http://crl.ecc.netlock.hu/index.cgi?crl=rooteccca"
+      ],
+      "ocspUrls": [
+        "http://ocsp.ecc.netlock.hu/rooteccca.cgi"
+      ]
+    },
+    {
+      "file": "netlock-trust-qualified-ev-ca-2.pem",
+      "sha256": "36efd13ae5dc6d01b6c1956841b45d18ce8085fbc197d90e8a8a21a9b01ebfba",
+      "subject": "NETLOCK Trust Qualified EV CA 2",
+      "issuer": "NetLock Arany (Class Gold) Főtanúsítvány",
+      "serialNumber": "49412ce4005a93cf96ebf57cf11d",
+      "validFrom": "2019-04-02T11:54:30.000Z",
+      "validTo": "2028-10-31T11:54:30.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://crl1.netlock.hu/index.cgi?crl=gold",
+        "http://crl2.netlock.hu/index.cgi?crl=gold",
+        "http://crl3.netlock.hu/index.cgi?crl=gold"
+      ],
+      "ocspUrls": [
+        "http://ocsp1.netlock.hu/gold.cgi",
+        "http://ocsp2.netlock.hu/gold.cgi",
+        "http://ocsp3.netlock.hu/gold.cgi"
+      ]
+    },
+    {
+      "file": "netlock-trust-qualified-ev-ca-3.pem",
+      "sha256": "7ecaca4a3585a3b40e25574415512d56b57999b753017856f2ab15fa1f21f6d0",
+      "subject": "NETLOCK Trust Qualified EV CA 3",
+      "issuer": "NetLock Arany (Class Gold) Főtanúsítvány",
+      "serialNumber": "49412ce40068a9ae1334342823b3",
+      "validFrom": "2020-02-10T16:32:26.000Z",
+      "validTo": "2028-11-14T16:32:26.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://crl1.netlock.hu/index.cgi?crl=gold",
+        "http://crl2.netlock.hu/index.cgi?crl=gold",
+        "http://crl3.netlock.hu/index.cgi?crl=gold"
+      ],
+      "ocspUrls": [
+        "http://ocsp1.netlock.hu/gold.cgi",
+        "http://ocsp2.netlock.hu/gold.cgi",
+        "http://ocsp3.netlock.hu/gold.cgi"
+      ]
+    },
+    {
+      "file": "netlock-trust-qualified-ev-ca.pem",
+      "sha256": "b0f25a6d9a96315c7cdaea3e490e7bfa9fb17310b0701b7cd6ff432530837730",
+      "subject": "NETLOCK Trust Qualified EV CA",
+      "issuer": "NetLock Arany (Class Gold) Főtanúsítvány",
+      "serialNumber": "49412ce40046",
+      "validFrom": "2016-09-28T17:29:31.000Z",
+      "validTo": "2028-07-07T17:29:31.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://crl1.netlock.hu/index.cgi?crl=gold",
+        "http://crl2.netlock.hu/index.cgi?crl=gold",
+        "http://crl3.netlock.hu/index.cgi?crl=gold"
+      ],
+      "ocspUrls": [
+        "http://ocsp1.netlock.hu/gold.cgi",
+        "http://ocsp2.netlock.hu/gold.cgi",
+        "http://ocsp3.netlock.hu/gold.cgi"
+      ]
+    },
+    {
+      "file": "netlock-trust-qualified-qscd-ca.pem",
+      "sha256": "9e4362a918a89009877c7b8b190e763ae012ad47c1cca5fccf166fc092bc2ade",
+      "subject": "NETLOCK Trust Qualified QSCD CA",
+      "issuer": "NetLock Arany (Class Gold) Főtanúsítvány",
+      "serialNumber": "49412ce40047",
+      "validFrom": "2016-09-28T17:30:17.000Z",
+      "validTo": "2028-07-07T17:30:17.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://crl1.netlock.hu/index.cgi?crl=gold",
+        "http://crl2.netlock.hu/index.cgi?crl=gold",
+        "http://crl3.netlock.hu/index.cgi?crl=gold"
+      ],
+      "ocspUrls": [
+        "http://ocsp1.netlock.hu/gold.cgi",
+        "http://ocsp2.netlock.hu/gold.cgi",
+        "http://ocsp3.netlock.hu/gold.cgi"
+      ]
+    },
+    {
+      "file": "netlock-trust-qualified-qscd-ecc-ca.pem",
+      "sha256": "cad759baf84ab3079377c32af8353d08c3c599e76f5adea203e45c42047d6c66",
+      "subject": "NETLOCK Trust Qualified QSCD ECC CA",
+      "issuer": "NETLOCK Root ECC CA",
+      "serialNumber": "6492eb8400213264dc092eaa1398",
+      "validFrom": "2024-04-26T13:46:34.000Z",
+      "validTo": "2034-04-24T13:46:34.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-384",
+      "crlUrls": [
+        "http://crl.ecc.netlock.hu/index.cgi?crl=rooteccca"
+      ],
+      "ocspUrls": [
+        "http://ocsp.ecc.netlock.hu/rooteccca.cgi"
+      ]
+    },
+    {
+      "file": "netlock-trust-qualified-qscd-rsa-4096-ca-2026.pem",
+      "sha256": "18ec286841619ded7f592097794fbeecb90428ce10236c56c8fff0d020cef9f5",
+      "subject": "NETLOCK Trust Qualified QSCD RSA 4096 CA 2026",
+      "issuer": "NETLOCK RSA 4096 CA",
+      "serialNumber": "651a7c42002b778789f786d324f7",
+      "validFrom": "2026-02-02T13:21:48.000Z",
+      "validTo": "2036-01-31T13:21:48.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.rsa.netlock.hu/index.cgi?crl=rsa4096ca"
+      ],
+      "ocspUrls": [
+        "http://ocsp.rsa.netlock.hu/rsa4096ca.cgi"
+      ]
+    },
+    {
+      "file": "netlock-trust-qualified-qscd-rsa-4096-ca.pem",
+      "sha256": "3fefebeb17e25d5fc09bac3efbd03a79a979b1ca2ee5faf9cc05470d3bcf3aca",
+      "subject": "NETLOCK Trust Qualified QSCD RSA 4096 CA",
+      "issuer": "NETLOCK RSA 4096 CA",
+      "serialNumber": "651a7c420020667243fc26d6878b",
+      "validFrom": "2024-04-24T14:16:04.000Z",
+      "validTo": "2034-04-22T14:16:04.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.rsa.netlock.hu/index.cgi?crl=rsa4096ca"
+      ],
+      "ocspUrls": [
+        "http://ocsp.rsa.netlock.hu/rsa4096ca.cgi"
+      ]
+    },
+    {
+      "file": "netlock-trust-qualified-rqscd-ca.pem",
+      "sha256": "a59f880816a50886d4d5996e64918dd9d401472aa685d28e7deca5299f05fce0",
+      "subject": "NETLOCK Trust Qualified RQSCD CA",
+      "issuer": "NetLock Arany (Class Gold) Főtanúsítvány",
+      "serialNumber": "49412ce400704d2f8b16dddd4415",
+      "validFrom": "2020-11-23T10:02:43.000Z",
+      "validTo": "2028-07-24T10:02:43.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://crl1.netlock.hu/index.cgi?crl=gold",
+        "http://crl2.netlock.hu/index.cgi?crl=gold",
+        "http://crl3.netlock.hu/index.cgi?crl=gold"
+      ],
+      "ocspUrls": [
+        "http://ocsp1.netlock.hu/gold.cgi",
+        "http://ocsp2.netlock.hu/gold.cgi",
+        "http://ocsp3.netlock.hu/gold.cgi"
+      ]
+    },
+    {
+      "file": "netlock-trust-qualified-rqscd-vra-ecc-ca-2025.pem",
+      "sha256": "db005d09d59f952f80fa2848fc179754dd4015061acb696728846062e522e4de",
+      "subject": "NETLOCK Trust Qualified RQSCD VRA ECC CA 2025",
+      "issuer": "NETLOCK Root ECC CA",
+      "serialNumber": "6492eb840029b159923d296530b8",
+      "validFrom": "2025-08-26T09:38:32.000Z",
+      "validTo": "2035-08-24T09:38:32.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-384",
+      "crlUrls": [
+        "http://crl.ecc.netlock.hu/index.cgi?crl=rooteccca"
+      ],
+      "ocspUrls": [
+        "http://ocsp.ecc.netlock.hu/rooteccca.cgi"
+      ]
+    },
+    {
+      "file": "netlock-trust-qualified-rqscd-vra-ecc-ca.pem",
+      "sha256": "6360fbe1cc8ba4a24c02db5abea95a17ccf274a742dcb9b4340ae879c54f46dd",
+      "subject": "NETLOCK Trust Qualified RQSCD VRA ECC CA",
+      "issuer": "NETLOCK Root ECC CA",
+      "serialNumber": "6492eb84001df5d2476cfbba2e09",
+      "validFrom": "2024-04-24T14:20:19.000Z",
+      "validTo": "2034-04-22T14:20:19.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-384",
+      "crlUrls": [
+        "http://crl.ecc.netlock.hu/index.cgi?crl=rooteccca"
+      ],
+      "ocspUrls": [
+        "http://ocsp.ecc.netlock.hu/rooteccca.cgi"
+      ]
+    },
+    {
+      "file": "netlock-trust-qualified-rqscd-vra-rsa-4096-ca-2026.pem",
+      "sha256": "0b0faca6a31afca3dac88960adbb77e5d99b856de56ba5848022bfdf2aade45b",
+      "subject": "NETLOCK Trust Qualified RQSCD VRA RSA 4096 CA 2026",
+      "issuer": "NETLOCK RSA 4096 CA",
+      "serialNumber": "651a7c42002cb06a6112fb83505f",
+      "validFrom": "2026-02-02T13:24:04.000Z",
+      "validTo": "2036-01-31T13:24:04.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.rsa.netlock.hu/index.cgi?crl=rsa4096ca"
+      ],
+      "ocspUrls": [
+        "http://ocsp.rsa.netlock.hu/rsa4096ca.cgi"
+      ]
+    },
+    {
+      "file": "netlock-trust-qualified-rsa-4096-ca-2026.pem",
+      "sha256": "19c13bdde4b6a1cbe1304ce86e28243b8c96fdcca6b83eab9aef3170e5ae3ef0",
+      "subject": "NETLOCK Trust Qualified RSA 4096 CA 2026",
+      "issuer": "NETLOCK RSA 4096 CA",
+      "serialNumber": "651a7c42002d713cddee7bbdd466",
+      "validFrom": "2026-02-02T13:26:03.000Z",
+      "validTo": "2036-01-31T13:26:03.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.rsa.netlock.hu/index.cgi?crl=rsa4096ca"
+      ],
+      "ocspUrls": [
+        "http://ocsp.rsa.netlock.hu/rsa4096ca.cgi"
+      ]
+    },
+    {
+      "file": "netlock-trust-qualified-scd-ca.pem",
+      "sha256": "7ce1db7d16e9bfe80693214a3d7c6263aa24789e399017e69ede4802ecf6f711",
+      "subject": "NETLOCK Trust Qualified SCD CA",
+      "issuer": "NetLock Arany (Class Gold) Főtanúsítvány",
+      "serialNumber": "49412ce40049",
+      "validFrom": "2016-09-28T17:37:34.000Z",
+      "validTo": "2028-07-07T17:37:34.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://crl1.netlock.hu/index.cgi?crl=gold",
+        "http://crl2.netlock.hu/index.cgi?crl=gold",
+        "http://crl3.netlock.hu/index.cgi?crl=gold"
+      ],
+      "ocspUrls": [
+        "http://ocsp1.netlock.hu/gold.cgi",
+        "http://ocsp2.netlock.hu/gold.cgi",
+        "http://ocsp3.netlock.hu/gold.cgi"
+      ]
+    },
+    {
+      "file": "netlock-trust-qualified-scd-ecc-ca-2026.pem",
+      "sha256": "d9d3ab8106008cc67012a5d585ee7d657e4fe30463265072cadc1e21a9228436",
+      "subject": "NETLOCK Trust Qualified SCD ECC CA 2026",
+      "issuer": "NETLOCK Root ECC CA",
+      "serialNumber": "6492eb84002fb8bdc1321a553069",
+      "validFrom": "2026-02-02T13:27:49.000Z",
+      "validTo": "2036-01-31T13:27:49.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-384",
+      "crlUrls": [
+        "http://crl.ecc.netlock.hu/index.cgi?crl=rooteccca"
+      ],
+      "ocspUrls": [
+        "http://ocsp.ecc.netlock.hu/rooteccca.cgi"
+      ]
+    },
+    {
+      "file": "netlock-trust-qualified-scd-ecc-ca.pem",
+      "sha256": "7dca097ab7649e648217d0ade6b33992ebf2dd794b38bccf1b2b5fa52064bb2c",
+      "subject": "NETLOCK Trust Qualified SCD ECC CA",
+      "issuer": "NETLOCK Root ECC CA",
+      "serialNumber": "6492eb8400201ae958a3a31987d7",
+      "validFrom": "2024-04-26T13:43:56.000Z",
+      "validTo": "2034-04-24T13:43:56.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-384",
+      "crlUrls": [
+        "http://crl.ecc.netlock.hu/index.cgi?crl=rooteccca"
+      ],
+      "ocspUrls": [
+        "http://ocsp.ecc.netlock.hu/rooteccca.cgi"
+      ]
+    },
+    {
+      "file": "netlock-trust-qualified-tsa-ecc-ca.pem",
+      "sha256": "1b835831b59cf83c2181163ddf98c43f050b4325fb3fd1bd02c04154ae26b8c9",
+      "subject": "NETLOCK Trust Qualified TSA ECC CA",
+      "issuer": "NETLOCK TSA ECC CA",
+      "serialNumber": "64dde3430017a12298aa691b7785",
+      "validFrom": "2024-04-11T14:18:17.000Z",
+      "validTo": "2034-04-09T14:18:17.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-384",
+      "crlUrls": [
+        "http://crl.ecc.netlock.hu/index.cgi?crl=tsaeccca"
+      ],
+      "ocspUrls": [
+        "http://ocsp.ecc.netlock.hu/tsaeccca.cgi"
+      ]
+    },
+    {
+      "file": "netlock-trust-qualified-tsa-rsa-4096-ca.pem",
+      "sha256": "908b388c9b05feee2cb842e5a0c685f3c01fd3af427d3ca2d7a7a9352ca62d2d",
+      "subject": "NETLOCK Trust Qualified TSA RSA 4096 CA",
+      "issuer": "NETLOCK RSA 4096 CA",
+      "serialNumber": "651a7c42001c5659e116aaf44387",
+      "validFrom": "2024-04-11T14:24:37.000Z",
+      "validTo": "2034-04-09T14:24:37.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.rsa.netlock.hu/index.cgi?crl=rsa4096ca"
+      ],
+      "ocspUrls": [
+        "http://ocsp.rsa.netlock.hu/rsa4096ca.cgi"
+      ]
+    },
+    {
+      "file": "qualified-e-szigno-ca-2009.pem",
+      "sha256": "b884ed6527433687627d35157e904690d2dff6a5dcd3ce267bbaf159c06f5054",
+      "subject": "Qualified e-Szigno CA 2009",
+      "issuer": "Microsec e-Szigno Root CA 2009",
+      "serialNumber": "16",
+      "validFrom": "2009-12-02T16:00:00.000Z",
+      "validTo": "2029-12-29T16:00:00.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://crl.e-szigno.hu/rootca2009.crl"
+      ],
+      "ocspUrls": [
+        "http://rootocsp2009.e-szigno.hu"
+      ]
+    },
+    {
+      "file": "qualified-e-szigno-organization-ca-2016.pem",
+      "sha256": "60af9e5f39d873b236be142bc706da571849aed7fae635fc5a1461a0cf7459c5",
+      "subject": "Qualified e-Szigno Organization CA 2016",
+      "issuer": "Microsec e-Szigno Root CA 2009",
+      "serialNumber": "0090274984cbf0d2d9afaff30a",
+      "validFrom": "2016-08-29T02:00:00.000Z",
+      "validTo": "2029-12-29T20:00:00.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://rootca2009-crl1.e-szigno.hu/rootca2009.crl",
+        "http://rootca2009-crl2.e-szigno.hu/rootca2009.crl",
+        "http://rootca2009-crl3.e-szigno.hu/rootca2009.crl"
+      ],
+      "ocspUrls": [
+        "http://rootca2009-ocsp1.e-szigno.hu",
+        "http://rootca2009-ocsp2.e-szigno.hu",
+        "http://rootca2009-ocsp3.e-szigno.hu"
+      ]
+    },
+    {
+      "file": "qualified-e-szigno-qcp-ca-2012-cfcb60c1.pem",
+      "sha256": "cfcb60c1f0180c68e3ea5d24b4a05e9d9900d87c3d83d503ce1690b3c1656458",
+      "subject": "Qualified e-Szigno QCP CA 2012",
+      "issuer": "Microsec e-Szigno Root CA 2009",
+      "serialNumber": "2eeba3b3af911a4b31bdb10a",
+      "validFrom": "2012-03-30T12:00:00.000Z",
+      "validTo": "2029-12-29T12:00:00.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://crl.e-szigno.hu/rootca2009.crl"
+      ],
+      "ocspUrls": [
+        "http://rootocsp2009.e-szigno.hu"
+      ]
+    },
+    {
+      "file": "qualified-e-szigno-qcp-ca-2012.pem",
+      "sha256": "cfcb60c1f0180c68e3ea5d24b4a05e9d9900d87c3d83d503ce1690b3c1656458",
+      "subject": "Qualified e-Szigno QCP CA 2012",
+      "issuer": "Microsec e-Szigno Root CA 2009",
+      "serialNumber": "2eeba3b3af911a4b31bdb10a",
+      "validFrom": "2012-03-30T12:00:00.000Z",
+      "validTo": "2029-12-29T12:00:00.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://crl.e-szigno.hu/rootca2009.crl"
+      ],
+      "ocspUrls": [
+        "http://rootocsp2009.e-szigno.hu"
+      ]
+    },
+    {
+      "file": "qualified-e-szigno-tls-ca-2018.pem",
+      "sha256": "f7c7e28fb5e79f314aaac6bbba932f15e1a72069f435d4c9e707f93ca1482ee3",
+      "subject": "Qualified e-Szigno TLS CA 2018",
+      "issuer": "Microsec e-Szigno Root CA 2009",
+      "serialNumber": "00b86edf27d8f6967c6470630a",
+      "validFrom": "2018-07-31T09:00:00.000Z",
+      "validTo": "2029-12-29T09:00:00.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://rootca2009-crl1.e-szigno.hu/rootca2009.crl",
+        "http://rootca2009-crl2.e-szigno.hu/rootca2009.crl",
+        "http://rootca2009-crl3.e-szigno.hu/rootca2009.crl"
+      ],
+      "ocspUrls": [
+        "http://rootca2009-ocsp1.e-szigno.hu",
+        "http://rootca2009-ocsp2.e-szigno.hu",
+        "http://rootca2009-ocsp3.e-szigno.hu"
+      ]
+    },
+    {
+      "file": "qualified-ket-e-szigno-ca-2009.pem",
+      "sha256": "54d0947a37d535619e6a77c69f4f795563f43b2a59dec08fea34c363e5fe6f59",
+      "subject": "Qualified KET e-Szigno CA 2009",
+      "issuer": "KGYHSZ (Public Administration Root CA - Hungary)",
+      "serialNumber": "437c94a7",
+      "validFrom": "2010-12-17T10:19:34.000Z",
+      "validTo": "2020-12-17T10:49:34.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://crl.kgyhsz.gov.hu/KGYHSZ_CA_20091210.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "qualified-ket-e-szigno-ca-2018.pem",
+      "sha256": "d9e445b22c6fcb37b296fcd1331486569651a8db98071753fefc73d2c97bf732",
+      "subject": "Qualified KET e-Szigno CA 2018",
+      "issuer": "Microsec e-Szigno Root CA 2009",
+      "serialNumber": "00bc3d9a56d441a2bb5987620a",
+      "validFrom": "2018-09-06T09:00:00.000Z",
+      "validTo": "2029-12-29T09:00:00.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://rootca2009-crl1.e-szigno.hu/rootca2009.crl",
+        "http://rootca2009-crl2.e-szigno.hu/rootca2009.crl",
+        "http://rootca2009-crl3.e-szigno.hu/rootca2009.crl"
+      ],
+      "ocspUrls": [
+        "http://rootca2009-ocsp1.e-szigno.hu",
+        "http://rootca2009-ocsp2.e-szigno.hu",
+        "http://rootca2009-ocsp3.e-szigno.hu"
+      ]
+    },
+    {
+      "file": "qualified-pseudonymous-e-szigno-ca-2009.pem",
+      "sha256": "f8684d2812ba98a52fe94528c4cb152378a2d73a828810a8c7b8529875c64674",
+      "subject": "Qualified Pseudonymous e-Szigno CA 2009",
+      "issuer": "Microsec e-Szigno Root CA 2009",
+      "serialNumber": "17",
+      "validFrom": "2009-12-02T16:00:00.000Z",
+      "validTo": "2029-12-29T16:00:00.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://crl.e-szigno.hu/rootca2009.crl"
+      ],
+      "ocspUrls": [
+        "http://rootocsp2009.e-szigno.hu"
+      ]
+    }
+  ]
+}
