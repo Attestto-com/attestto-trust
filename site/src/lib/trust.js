@@ -2,13 +2,29 @@
 // Reads ../../../countries/<cc>/current/manifest.json, builds the CA hierarchy
 // from issuer -> subject links, assigns URL-safe slugs, and computes a validity
 // state for each certificate relative to the build date.
-import { readFileSync } from 'node:fs';
+import { readFileSync, existsSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
-import { dirname, join, resolve } from 'node:path';
+import { dirname, join } from 'node:path';
+
+// Locate the repo-root countries/ directory by walking up from this module,
+// rather than counting a fixed number of '..' segments. The number of levels
+// differs between dev (site/src/lib) and build (site/dist/.prerender/chunks,
+// which is deeper and shifted with the Astro 7 output layout). Walking up until
+// countries/ is found is robust to those build-layout changes.
+function findCountriesDir(start) {
+  let dir = start;
+  for (let i = 0; i < 12; i++) {
+    const candidate = join(dir, 'countries');
+    if (existsSync(candidate)) return candidate;
+    const parent = dirname(dir);
+    if (parent === dir) break;
+    dir = parent;
+  }
+  throw new Error(`Could not locate countries/ directory walking up from ${start}`);
+}
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const repoRoot = resolve(__dirname, '..', '..', '..');
-const countriesDir = join(repoRoot, 'countries');
+const countriesDir = findCountriesDir(__dirname);
 
 // Static per-country presentation metadata. Authoritative sources noted where known.
 export const COUNTRIES = [
