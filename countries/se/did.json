@@ -1,0 +1,14 @@
+{
+  "method": "did:pki",
+  "generatedAt": "2026-07-23T19:23:42.013Z",
+  "dids": {
+    "idnow-ts-ocsp-ca-01.pem": "did:pki:se:idnow-trust-services-ab:ts-ocsp-ca-01",
+    "idnow-ts-qualified-electronic-seal-ca-01.pem": "did:pki:se:idnow-trust-services-ab:ts-qualified-electronic-seal-ca-01",
+    "idnow-ts-qualified-electronic-signature-ca-01.pem": "did:pki:se:idnow-trust-services-ab:ts-qualified-electronic-signature-ca-01",
+    "idnow-ts-root-ca-01.pem": "did:pki:se:idnow-trust-services-ab:ts-root-ca-01",
+    "idnow-ts-tsa-ca-01.pem": "did:pki:se:idnow-trust-services-ab:ts-tsa-ca-01",
+    "trustweaver-ca.pem": "did:pki:se:trustweaver:ca",
+    "zealid-issuing-ca-2020.pem": "did:pki:se:zealid-ab:issuing-ca-2020",
+    "zealid-tsa-ca-2022.pem": "did:pki:se:zealid-ab:tsa-ca-2022"
+  }
+}
