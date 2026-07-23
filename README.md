@@ -61,9 +61,10 @@ sha256sum attestto-trust/countries/cr/current/root-ca.pem
 | Brazil | [`br/`](countries/br) | [/br](https://trust.attestto.org/br) | ITI — ICP-Brasil |
 | Argentina | [`ar/`](countries/ar) | [/ar](https://trust.attestto.org/ar) | AC Raíz de la República Argentina |
 | Spain | [`es/`](countries/es) | [/es](https://trust.attestto.org/es) | FNMT-RCM (Ceres) |
+| Estonia | [`ee/`](countries/ee) | [/ee](https://trust.attestto.org/ee) | RIA — SK ID Solutions / Zetes (eIDAS) |
 | Peru | [`pe/`](countries/pe) | [/pe](https://trust.attestto.org/pe) | INDECOPI — IOFE (RENIEC, ONPE, ECERNEP) |
 
-More countries are staged and land after a per-country promotion review: Mexico, Colombia, Chile, Ecuador, Uruguay, Panama, and several European trusted lists.
+More countries are staged and land after a per-country promotion review: Mexico, Colombia, Chile, Ecuador, Uruguay, Panama, Italy, and other European trusted lists.
 
 ## Key concepts
 
