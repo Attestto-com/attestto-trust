@@ -250,6 +250,7 @@ export const getCountryName = (code, lang) => {
     at: { en: 'Austria', es: 'Austria' },
     nl: { en: 'Netherlands', es: 'Países Bajos' },
     pe: { en: 'Peru', es: 'Perú' },
+    pl: { en: 'Poland', es: 'Polonia' },
     pt: { en: 'Portugal', es: 'Portugal' }
   };
   const l = lang === 'es' ? 'es' : 'en';
