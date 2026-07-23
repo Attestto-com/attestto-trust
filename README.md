@@ -64,11 +64,12 @@ sha256sum attestto-trust/countries/cr/current/root-ca.pem
 | Estonia | [`ee/`](countries/ee) | [/ee](https://trust.attestto.org/ee) | RIA — SK ID Solutions / Zetes (eIDAS) |
 | France | [`fr/`](countries/fr) | [/fr](https://trust.attestto.org/fr) | ANSSI eIDAS Trusted List (~20 QTSPs) |
 | Germany | [`de/`](countries/de) | [/de](https://trust.attestto.org/de) | Bundesnetzagentur (BNetzA) eIDAS Trusted List |
+| Greece | [`gr/`](countries/gr) | [/gr](https://trust.attestto.org/gr) | EETT (Hellenic Telecommunications and Post Commission) eIDAS Trusted List |
 | Italy | [`it/`](countries/it) | [/it](https://trust.attestto.org/it) | AgID eIDAS Trusted List (~25 QTSPs) + CIE national eID |
 | Netherlands | [`nl/`](countries/nl) | [/nl](https://trust.attestto.org/nl) | RDI (Rijksinspectie Digitale Infrastructuur) eIDAS Trusted List |
 | Peru | [`pe/`](countries/pe) | [/pe](https://trust.attestto.org/pe) | INDECOPI — IOFE (RENIEC, ONPE, ECERNEP) |
 
-More countries are staged and land after a per-country promotion review: Mexico, Colombia, Chile, Ecuador, Uruguay, Panama, and other European trusted lists. Italy's full qualified-signature list (229 accredited-QTSP CAs), Germany's (101 accredited-QTSP CAs), France's (79 accredited-QTSP CAs), and the Netherlands' (30 accredited-QTSP CAs) are now live, promoted wholesale after verifying each national Trusted List's XAdES signature through the EU LOTL chain of trust (see `scripts/monitors/verify-eu-tsl.mjs`).
+More countries are staged and land after a per-country promotion review: Mexico, Colombia, Chile, Ecuador, Uruguay, Panama, and other European trusted lists. Italy's full qualified-signature list (229 accredited-QTSP CAs), Germany's (101 accredited-QTSP CAs), Greece's (105 accredited-QTSP CAs), France's (79 accredited-QTSP CAs), and the Netherlands' (30 accredited-QTSP CAs) are now live, promoted wholesale after verifying each national Trusted List's XAdES signature through the EU LOTL chain of trust (see `scripts/monitors/verify-eu-tsl.mjs`).
 
 ## Key concepts
 

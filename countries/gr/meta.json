@@ -1,0 +1,26 @@
+{
+  "code": "gr",
+  "name": "Greece",
+  "flag": "🇬🇷",
+  "model": "accredited-tsl",
+  "authority": {
+    "name": "EETT — Hellenic Telecommunications and Post Commission (Εθνική Επιτροπή Τηλεπικοινωνιών και Ταχυδρομείων), Greek eIDAS supervisory body and national Trusted List operator",
+    "operator": "Accredited QTSPs under eIDAS (HARICA — Hellenic Academic and Research Institutions CA, ADACOM, BYTE Computer, APED — Hellenic Public Administration Certification Authority, and others)",
+    "url": "https://www.eett.gr/tsl/tl-el.xml"
+  },
+  "governingLaw": "Reglamento eIDAS (UE) 910/2014 · Ley 4727/2020 (Digital Governance Law) · Ley 3471/2006",
+  "technology": {
+    "keyAlgorithms": ["RSA-2048", "RSA-3072", "RSA-4096", "EC P-384"],
+    "signatureStandards": ["CAdES", "PAdES", "XAdES", "ASiC"],
+    "trustList": "ETSI TS 119 612 — the Greek Trusted List (tl-el.xml, EETT)"
+  },
+  "capabilities": ["Qualified e-signature & e-seal (eIDAS)", "Qualified timestamping", "Qualified website authentication (QWAC / PSD2)"],
+  "relatedLinks": [
+    { "label": "EETT — Greek Trusted List (tl-el.xml)", "url": "https://www.eett.gr/tsl/tl-el.xml" },
+    { "label": "EETT — Trust services (eIDAS)", "url": "https://www.eett.gr/en/electronic-signatures/" },
+    { "label": "EU LOTL — List of the Lists (European Commission)", "url": "https://ec.europa.eu/tools/lotl/eu-lotl.xml" },
+    { "label": "Independent verifier (Attestto)", "url": "https://verify.attestto.com" }
+  ],
+  "source": { "type": "tsl", "url": "https://www.eett.gr/tsl/tl-el.xml" },
+  "notes": "Greece's qualified-signature trust is a federation of accredited QTSPs (HARICA, the Hellenic Academic and Research Institutions Certification Authority operated by the Aristotle University of Thessaloniki, plus ADACOM, BYTE Computer, and the Hellenic Public Administration Certification Authority / APED, among others) supervised by EETT — the Hellenic Telecommunications and Post Commission — and published in the Greek national eIDAS Trusted List (tl-el.xml, ETSI TS 119 612). The 105 currently-granted CA certificates were promoted wholesale after verifying the Trusted List's XAdES signature through the EU LOTL chain of trust: the LOTL signature was checked against the pinned European Commission signing anchor, and the Greek TSL's signature (signer: C=EL, L=Athens, O=Hellenic Telecommunications and Post Commission\\, EETT, CN=Hellenic Trusted List Scheme Operator-1; cert SHA-256 d57cf92cd96b39e352bf37e3d6f1bcfbd64db9f0c488f1daa4333410aa190175) against the identity the LOTL declares for Greece, so the list's single seal vouches for every certificate it contains (eIDAS Art. 22). Only services with a currently-granted status and a CA / qualified-certificate service type were selected; withdrawn, deprecated, and non-CA services were dropped. Verification evidence is in VERIFICATION.md. Key algorithms across the set are mixed: 87 CAs use RSA-4096, 13 use EC P-384, 4 use RSA-2048, and 1 uses RSA-3072. Twenty-nine certificates in the set have passed their notAfter and are retained as archived-but-granted entries; they surface under the Expired status filter."
+}

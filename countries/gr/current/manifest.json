@@ -1,0 +1,1718 @@
+{
+  "country": "GR",
+  "generatedAt": "2026-07-23T15:40:36.458Z",
+  "count": 105,
+  "certificates": [
+    {
+      "file": "academy-of-athens-client-ca-r1.pem",
+      "sha256": "ddaa5f72e10fd3ad072ad2c0d21958dbf1709e7aed13b38c264728fce5c9ba1e",
+      "subject": "Academy of Athens Client CA R1",
+      "issuer": "Hellenic Academic and Research Institutions RootCA 2011",
+      "serialNumber": "1d0443890920e31b",
+      "validFrom": "2017-04-04T11:02:00.000Z",
+      "validTo": "2025-04-02T11:02:00.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crlv1.harica.gr/HaricaRootCA2011/crlv1.der.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.harica.gr"
+      ]
+    },
+    {
+      "file": "academy-of-athens-client-rsa-subca-r3.pem",
+      "sha256": "fd2f33248f3964564687980235a5f0bcb3ab562e47f404f742e53342c5375280",
+      "subject": "Academy of Athens Client RSA SubCA R3",
+      "issuer": "Hellenic Academic and Research Institutions RootCA 2015",
+      "serialNumber": "2a802df52d4e69b9471c59abc78b5ee1",
+      "validFrom": "2020-01-21T12:56:57.000Z",
+      "validTo": "2028-01-19T12:56:57.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crlv1.harica.gr/HaricaRootCA2015/crlv1.der.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.harica.gr"
+      ]
+    },
+    {
+      "file": "adacom-ca-for-eu-qualified-e-seals.pem",
+      "sha256": "dce5ab8fddd1a3cd890e79013a3c01cb22bafc12fe1dc16f9f423a36dae747c7",
+      "subject": "ADACOM CA for EU Qualified e-Seals",
+      "issuer": "Symantec Class 2 Public Primary Certification Authority - G6",
+      "serialNumber": "0a80bc749f3fc8f6c50bde231af701a6",
+      "validFrom": "2017-03-02T00:00:00.000Z",
+      "validTo": "2025-03-01T23:59:59.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://s.symcb.com/pca2-g6.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "adacom-ca-for-eu-qualified-e-signatures.pem",
+      "sha256": "027466ad7f9063e00be76126ab870035c20e1fcb89b3247766c841bd5272326f",
+      "subject": "ADACOM CA for EU Qualified e-Signatures",
+      "issuer": "Symantec Class 2 Public Primary Certification Authority - G6",
+      "serialNumber": "73680ebd27ba6dc4df1ee2fbd900f565",
+      "validFrom": "2017-03-02T00:00:00.000Z",
+      "validTo": "2025-03-01T23:59:59.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://s.symcb.com/pca2-g6.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "adacom-eprescription-ca-g1.pem",
+      "sha256": "62ee3127866b23c4d406774bbad1209aa02355357436dd0238a3cf15519264f4",
+      "subject": "ADACOM ePrescription CA G1",
+      "issuer": "ADACOM Global Qualified CA",
+      "serialNumber": "18554c48c114ac80660bc5243d3b876d",
+      "validFrom": "2020-08-10T00:00:00.000Z",
+      "validTo": "2030-08-09T23:59:59.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.adacom.com/ca/qroot.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "adacom-qualified-eseals-ca-g1.pem",
+      "sha256": "6edabb764dadfb913bc742ae7a335564b66fc6a2aa6a950547260f5663607628",
+      "subject": "ADACOM Qualified eSeals CA G1",
+      "issuer": "ADACOM Global Qualified CA",
+      "serialNumber": "4e63d40e7f101306dbae228d6a647b00",
+      "validFrom": "2020-08-10T00:00:00.000Z",
+      "validTo": "2030-08-09T23:59:59.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.adacom.com/ca/qroot.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "adacom-qualified-eseals-ca-g2.pem",
+      "sha256": "850225c00e680e8f11afbba88cd01fee719bafd48d44e4e529e92e47ba9b0c62",
+      "subject": "ADACOM Qualified eSeals CA G2",
+      "issuer": "ADACOM Global Qualified CA",
+      "serialNumber": "4648a3cd1bbbeb4e309f7e3a873da39e",
+      "validFrom": "2021-09-02T00:00:00.000Z",
+      "validTo": "2031-09-01T23:59:59.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.adacom.com/ca/qroot.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "adacom-qualified-esignatures-ca-g1.pem",
+      "sha256": "f4e9419e06f537b19e49b868edc9b3ac7f4ba1296391f76108bcf41aa9656288",
+      "subject": "ADACOM Qualified eSignatures CA G1",
+      "issuer": "ADACOM Global Qualified CA",
+      "serialNumber": "6eabd7c45f83e09486d070e86ee73381",
+      "validFrom": "2020-08-10T00:00:00.000Z",
+      "validTo": "2030-08-09T23:59:59.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.adacom.com/ca/qroot.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "adacom-qualified-esignatures-ca-g2.pem",
+      "sha256": "f851216119f70332166318427524618501ce602c5a73e958690b321370ae7bbc",
+      "subject": "ADACOM Qualified eSignatures CA G2",
+      "issuer": "ADACOM Global Qualified CA",
+      "serialNumber": "263b43b825128d8666057e7cae27d0b6",
+      "validFrom": "2021-09-02T00:00:00.000Z",
+      "validTo": "2031-09-01T23:59:59.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.adacom.com/ca/qroot.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "adacom-qualified-timestamping-ca.pem",
+      "sha256": "e0fba24cbc1a650ae93e6acd01df99457feb261492dc42dc309cb3d8e6a0b85f",
+      "subject": "ADACOM Qualified Timestamping CA",
+      "issuer": "ADACOM Global Qualified CA",
+      "serialNumber": "743b9fd9cc1e1693596a9dd0e628519e",
+      "validFrom": "2019-02-14T00:00:00.000Z",
+      "validTo": "2039-02-13T23:59:59.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.adacom.com/tsa/qroot.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "aped-qualified-esignature-issuing-ca.pem",
+      "sha256": "00463b300e50172d6c96c5016cf372800d9a2f0f629a015b4853657b25ae8d0e",
+      "subject": "APED Qualified eSignature Issuing CA",
+      "issuer": "APED Global Root CA",
+      "serialNumber": "3be7beb6fa604f85b5a9b7b67beb7756",
+      "validFrom": "2020-11-23T00:00:00.000Z",
+      "validTo": "2030-11-23T23:59:59.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.aped.gov.gr/ca/APEDRoot.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "aped-qualified-timestamping-issuing-ca.pem",
+      "sha256": "617df207c51979d14eb35e05afe7530c3002909cf1fd333f70ffc189df1bc662",
+      "subject": "APED Qualified Timestamping Issuing CA",
+      "issuer": "APED Global Root CA",
+      "serialNumber": "28901421ae97b7d47c4cc4eb60ea0597",
+      "validFrom": "2020-11-23T00:00:00.000Z",
+      "validTo": "2030-11-23T23:59:59.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.aped.gov.gr/ca/APEDRoot.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "aristotle-university-of-thessaloniki-central-ca-r5.pem",
+      "sha256": "e83566e6f599481678c0d99892169c87f77914c621fdf1e659c7085772d4a487",
+      "subject": "Aristotle University of Thessaloniki Central CA R5",
+      "issuer": "Hellenic Academic and Research Institutions RootCA 2011",
+      "serialNumber": "18dd87ae1f4bb679",
+      "validFrom": "2015-05-05T13:35:54.000Z",
+      "validTo": "2023-05-03T13:35:54.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://crlv1.harica.gr/HaricaRootCA2011/crlv1.der.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.harica.gr"
+      ]
+    },
+    {
+      "file": "aristotle-university-of-thessaloniki-client-rsa-subca-r1.pem",
+      "sha256": "663fde94f8836a1febd83be8310979312d65ff8c1b716394e68f41d82396c1f8",
+      "subject": "Aristotle University of Thessaloniki Client RSA SubCA R1",
+      "issuer": "Hellenic Academic and Research Institutions RootCA 2015",
+      "serialNumber": "34138f19ad11938b",
+      "validFrom": "2019-02-20T10:32:48.000Z",
+      "validTo": "2027-02-18T10:32:48.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crlv1.harica.gr/HaricaRootCA2015/crlv1.der.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.harica.gr"
+      ]
+    },
+    {
+      "file": "aristotle-university-of-thessaloniki-client-rsa-subca-r3.pem",
+      "sha256": "523575047371bba88263e5ab5ded8f6b0695c5d2a192a6dd11406c476ba3c72f",
+      "subject": "Aristotle University of Thessaloniki Client RSA SubCA R3",
+      "issuer": "Hellenic Academic and Research Institutions RootCA 2015",
+      "serialNumber": "396cbb1871dd3628da0b98c80b16437a",
+      "validFrom": "2020-01-21T12:47:13.000Z",
+      "validTo": "2028-01-19T12:47:13.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crlv1.harica.gr/HaricaRootCA2015/crlv1.der.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.harica.gr"
+      ]
+    },
+    {
+      "file": "byte-eidas-qualified-services-ca-r1.pem",
+      "sha256": "802235869f3d8b1806c27dec2734754e93004dff4839e51ece5628d28e9df1bb",
+      "subject": "BYTE eIDAS Qualified Services CA R1",
+      "issuer": "BYTE Root Certification Authority 001",
+      "serialNumber": "55b55023e4242e57",
+      "validFrom": "2023-11-14T14:07:23.000Z",
+      "validTo": "2036-05-14T14:07:23.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://pki.byte.gr/crl/crl_root.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "byte-eprescription-certification-authority-001.pem",
+      "sha256": "291c9952a032f95f09552b7145c57293517b1fe97e68779ce4162220d6aa372a",
+      "subject": "BYTE ePrescription Certification Authority 001",
+      "issuer": "BYTE Root Certification Authority 001",
+      "serialNumber": "6f68fd4b090137b1",
+      "validFrom": "2014-09-10T22:11:41.000Z",
+      "validTo": "2027-03-11T22:11:41.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://pki.byte.gr/crl/crl_root.crl"
+      ],
+      "ocspUrls": [
+        "http://pki.byte.gr/ocsp"
+      ]
+    },
+    {
+      "file": "byte-eprescription-certification-authority-002.pem",
+      "sha256": "0f2f6570aa8be96d33fa350a7953c3dd240d1c8c96d794141c46485e6d9dfeab",
+      "subject": "BYTE ePrescription Certification Authority 002",
+      "issuer": "BYTE Root Certification Authority 001",
+      "serialNumber": "66231397d6c3a0d4",
+      "validFrom": "2024-02-15T15:52:56.000Z",
+      "validTo": "2036-08-15T15:52:56.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://pki.byte.gr/crl/crl_root.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "byte-general-certification-authority-001.pem",
+      "sha256": "bdee623df8e20daef16c2253fa1d1afe0b553953bdc627dcd422924aea390a34",
+      "subject": "BYTE General Certification Authority 001",
+      "issuer": "BYTE Root Certification Authority 001",
+      "serialNumber": "6e4ac6fa70a47a53",
+      "validFrom": "2014-09-10T22:12:59.000Z",
+      "validTo": "2027-03-11T22:12:59.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://pki.byte.gr/crl/crl_root.crl"
+      ],
+      "ocspUrls": [
+        "http://pki.byte.gr/ocsp"
+      ]
+    },
+    {
+      "file": "byte-general-certification-authority-002.pem",
+      "sha256": "ad35f5a68b308c7901605901c7158dbe01bbb68f2603c5bfd5047db842b203f9",
+      "subject": "BYTE General Certification Authority 002",
+      "issuer": "BYTE Root Certification Authority 001",
+      "serialNumber": "377758c5422f9664",
+      "validFrom": "2024-02-15T15:54:42.000Z",
+      "validTo": "2036-08-15T15:54:42.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://pki.byte.gr/crl/crl_root.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "byte-kshde-certification-authority-001.pem",
+      "sha256": "96e44dca8f33867659fda703a61d4d4f1077ef4cf4f8330e04b28544deb572ef",
+      "subject": "BYTE KSHDE Certification Authority 001",
+      "issuer": "BYTE Root Certification Authority 001",
+      "serialNumber": "747f1a283a08dc8b",
+      "validFrom": "2020-10-12T14:04:58.000Z",
+      "validTo": "2033-04-12T14:04:58.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://pki.byte.gr/crl/crl_root.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "chambers-central-association-esignature-rsa-1.pem",
+      "sha256": "e61a16cabbfdc30ee42c01816cd42246d11ae1b130f669c18ce7a9ca323268a5",
+      "subject": "Chambers Central Association eSignature RSA 1",
+      "issuer": "HARICA Qualified RSA Root CA 2021",
+      "serialNumber": "036df27349b922beaa48e3b4f41e6cfd",
+      "validFrom": "2023-11-28T11:02:53.000Z",
+      "validTo": "2038-11-24T11:02:52.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.harica.gr/HARICA-Qualified-Root-2021-RSA.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "democritus-university-of-thrace-ca-r1.pem",
+      "sha256": "f71da328231c30d7e3c059c6261423d10c4ff2c8eb92eb9093a5d9af7160ab55",
+      "subject": "Democritus University of Thrace CA R1",
+      "issuer": "Hellenic Academic and Research Institutions RootCA 2011",
+      "serialNumber": "1b7d95c4ee63ce7d",
+      "validFrom": "2015-09-29T13:11:55.000Z",
+      "validTo": "2023-09-27T13:11:55.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crlv1.harica.gr/HaricaRootCA2011/crlv1.der.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.harica.gr"
+      ]
+    },
+    {
+      "file": "democritus-university-of-thrace-client-rsa-subca-r1.pem",
+      "sha256": "e57bbf5079f98293b4142f348972e68e351e52b90373f05f46f09ccb30af5bf0",
+      "subject": "Democritus University of Thrace Client RSA SubCA R1",
+      "issuer": "Hellenic Academic and Research Institutions RootCA 2015",
+      "serialNumber": "638b242226277dfc5b772c81fab4922c",
+      "validFrom": "2020-03-24T09:46:26.000Z",
+      "validTo": "2028-03-22T09:46:26.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.harica.gr/HaricaRootCA2015.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.harica.gr"
+      ]
+    },
+    {
+      "file": "eastern-macedonia-and-thrace-institute-of-technology-ca-r1.pem",
+      "sha256": "fbeacb1ee5bd5f33515c64ac752ff078224d88ee406474c331f9543d4b721846",
+      "subject": "Eastern Macedonia and Thrace Institute of Technology CA R1",
+      "issuer": "Hellenic Academic and Research Institutions RootCA 2011",
+      "serialNumber": "14cc760d65a83960",
+      "validFrom": "2016-03-21T10:25:22.000Z",
+      "validTo": "2024-03-19T10:25:22.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crlv1.harica.gr/HaricaRootCA2011/crlv1.der.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.harica.gr"
+      ]
+    },
+    {
+      "file": "ecclesiastical-academy-of-vella-client-rsa-subca-r1.pem",
+      "sha256": "978bcf39c3c3aacefe1048fa0360283dc2ebfa5150024c5e378514d3e75e7295",
+      "subject": "Ecclesiastical Academy of Vella Client RSA SubCA R1",
+      "issuer": "Hellenic Academic and Research Institutions RootCA 2011",
+      "serialNumber": "6a042ec821d7be27",
+      "validFrom": "2018-05-23T07:53:30.000Z",
+      "validTo": "2026-05-21T07:53:30.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crlv1.harica.gr/HaricaRootCA2011/crlv1.der.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.harica.gr"
+      ]
+    },
+    {
+      "file": "ecclesiastical-academy-of-vella-of-ioannina-client-rsa-subca-r3.pem",
+      "sha256": "e74ad44b0d56eebe39bb185c52ab9befe4f75899b6a81416e9103d5c29bf27fb",
+      "subject": "Ecclesiastical Academy of Vella of Ioannina Client RSA SubCA R3",
+      "issuer": "Hellenic Academic and Research Institutions RootCA 2015",
+      "serialNumber": "781bb21753dcb9200cd0f01b136828fb",
+      "validFrom": "2020-01-21T13:04:09.000Z",
+      "validTo": "2028-01-19T13:04:09.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crlv1.harica.gr/HaricaRootCA2015/crlv1.der.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.harica.gr"
+      ]
+    },
+    {
+      "file": "greek-academic-network-ca-r2.pem",
+      "sha256": "8cfe1315b167fcbfc8b1a9eb54e97f13282ee2507e0d23b0148d053ae8736fe3",
+      "subject": "Greek Academic Network CA R2",
+      "issuer": "Hellenic Academic and Research Institutions RootCA 2011",
+      "serialNumber": "18dd87ae1f4bb678",
+      "validFrom": "2015-05-05T13:26:44.000Z",
+      "validTo": "2023-05-03T13:26:44.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://crlv1.harica.gr/HaricaRootCA2011/crlv1.der.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.harica.gr"
+      ]
+    },
+    {
+      "file": "greek-federation-of-judicial-officers-client-rsa-subca-r3.pem",
+      "sha256": "2a508a5fe6173c4e8f0126694a1a6a71d9000451fa31db033b8705890441ecc5",
+      "subject": "Greek Federation of Judicial Officers Client RSA SubCA R3",
+      "issuer": "Hellenic Academic and Research Institutions RootCA 2015",
+      "serialNumber": "05ac593830e1ef6fcf468e7da996fcf0",
+      "validFrom": "2020-01-21T12:53:33.000Z",
+      "validTo": "2028-01-19T12:53:33.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crlv1.harica.gr/HaricaRootCA2015/crlv1.der.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.harica.gr"
+      ]
+    },
+    {
+      "file": "greek-federation-of-judicial-officers-client-rsa-subca-r4.pem",
+      "sha256": "8884a7e1a5e7fed19e60e3598e10ef2105adff02a0b91df227069097f9dfdb62",
+      "subject": "Greek Federation of Judicial Officers Client RSA SubCA R4",
+      "issuer": "Hellenic Academic and Research Institutions RootCA 2015",
+      "serialNumber": "4a2caa00d20aac8fe99054235b15babe",
+      "validFrom": "2020-07-08T08:20:22.000Z",
+      "validTo": "2028-07-06T08:20:22.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.harica.gr/HaricaRootCA2015.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.harica.gr"
+      ]
+    },
+    {
+      "file": "greek-federation-of-judicial-officers-client-subca-r1.pem",
+      "sha256": "2d819af397e289dc41709c4aaf6da3b1904749c37a995860745803716d7d5690",
+      "subject": "Greek Federation of Judicial Officers Client SubCA R1",
+      "issuer": "Hellenic Academic and Research Institutions RootCA 2015",
+      "serialNumber": "225f61e114a253ba",
+      "validFrom": "2019-02-20T10:02:52.000Z",
+      "validTo": "2027-02-18T10:02:52.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crlv1.harica.gr/HaricaRootCA2015/crlv1.der.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.harica.gr"
+      ]
+    },
+    {
+      "file": "greek-federation-of-judicial-officers-esignature-ecc-1.pem",
+      "sha256": "2cc3cf710842f05c52ad4b91322a76cacfaa2e74ad57a8fb53c56c2717deac38",
+      "subject": "Greek Federation of Judicial Officers eSignature ECC 1",
+      "issuer": "HARICA Qualified ECC Root CA 2021",
+      "serialNumber": "267d2cae2d4c1a6a4dfb7d9b8aad1e5c",
+      "validFrom": "2024-06-11T08:44:48.000Z",
+      "validTo": "2039-06-08T08:44:47.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-384",
+      "crlUrls": [
+        "http://crl.harica.gr/HARICA-Qualified-Root-2021-ECC.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "greek-federation-of-judicial-officers-esignature-rsa-5.pem",
+      "sha256": "69372538f59e30df5e15fe0f1ab1d3d4d8ebe04a652b31f13c2112f5a598cd29",
+      "subject": "Greek Federation of Judicial Officers eSignature RSA 5",
+      "issuer": "HARICA Qualified RSA Root CA 2021",
+      "serialNumber": "36ffe3d1f4f468a0cd01811bcff2c76c",
+      "validFrom": "2024-06-11T08:47:40.000Z",
+      "validTo": "2039-06-08T08:47:39.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-3072",
+      "crlUrls": [
+        "http://crl.harica.gr/HARICA-Qualified-Root-2021-RSA.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "greek-universities-network-client-rsa-subca-r1.pem",
+      "sha256": "bd4420c592a6f7f252ae898124e002f1b9cfe1f2538864d56b34a7b4dfb31fc8",
+      "subject": "Greek Universities Network Client RSA SubCA R1",
+      "issuer": "Hellenic Academic and Research Institutions RootCA 2015",
+      "serialNumber": "3a57ac850d47eab182b377e8d7bf734c",
+      "validFrom": "2020-03-24T09:59:16.000Z",
+      "validTo": "2028-03-22T09:59:16.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.harica.gr/HaricaRootCA2015.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.harica.gr"
+      ]
+    },
+    {
+      "file": "grnet-client-rsa-subca-r1.pem",
+      "sha256": "a1a04e4cfc56fd1917eb481fc46629a2e46656756fa08e22487f54b64e1ca3e7",
+      "subject": "GRnet Client RSA SubCA R1",
+      "issuer": "Hellenic Academic and Research Institutions RootCA 2015",
+      "serialNumber": "7987f879914d8e5a",
+      "validFrom": "2019-02-20T10:18:26.000Z",
+      "validTo": "2027-02-18T10:18:26.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crlv1.harica.gr/HaricaRootCA2015/crlv1.der.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.harica.gr"
+      ]
+    },
+    {
+      "file": "grnet-client-rsa-subca-r4.pem",
+      "sha256": "538a45aaf9003d4d3988bbfcf9f859b325ce5f775dc0601205058517f9bc15e5",
+      "subject": "GRNET Client RSA SubCA R4",
+      "issuer": "Hellenic Academic and Research Institutions RootCA 2015",
+      "serialNumber": "1920cf7f72fabfacfdc8adc6a4495a3b",
+      "validFrom": "2020-01-21T12:59:58.000Z",
+      "validTo": "2028-01-19T12:59:58.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crlv1.harica.gr/HaricaRootCA2015/crlv1.der.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.harica.gr"
+      ]
+    },
+    {
+      "file": "harica-document-signing-ecc-1.pem",
+      "sha256": "e4266db30119983bad6a19a12c6bd4196da4fdd64dba71a6462ce1100cbc5137",
+      "subject": "HARICA Document Signing ECC 1",
+      "issuer": "HARICA Qualified ECC Root CA 2021",
+      "serialNumber": "41e95d0f00c07dd289f633739777dda4",
+      "validFrom": "2023-07-18T09:28:23.000Z",
+      "validTo": "2038-07-14T09:28:22.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-384",
+      "crlUrls": [
+        "http://crl.harica.gr/HARICA-Qualified-Root-2021-ECC.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "harica-document-signing-rsa-1.pem",
+      "sha256": "805ccc56c3f0119624886a0f68550bc117bf49fdb1e303ab256dc45fc7760948",
+      "subject": "HARICA Document Signing RSA 1",
+      "issuer": "HARICA Qualified RSA Root CA 2021",
+      "serialNumber": "032305fa1c4c231eb681e680a54685e5",
+      "validFrom": "2023-07-18T09:27:33.000Z",
+      "validTo": "2038-07-14T09:27:32.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.harica.gr/HARICA-Qualified-Root-2021-RSA.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "harica-institutional-client-subca-r1.pem",
+      "sha256": "fee2cd981c00c5cf3b0a47f3f4bc5db1e6f4307ad45ce78f998f9bcbd82478ea",
+      "subject": "HARICA Institutional Client SubCA R1",
+      "issuer": "Hellenic Academic and Research Institutions RootCA 2015",
+      "serialNumber": "6f43001dc32166bfdf29afd73986b1f5",
+      "validFrom": "2020-07-08T08:17:03.000Z",
+      "validTo": "2035-07-05T08:17:03.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.harica.gr/HaricaRootCA2015.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.harica.gr"
+      ]
+    },
+    {
+      "file": "harica-institutional-esignature-ecc-1.pem",
+      "sha256": "92f58f7c5d16d6bdf0b228632328b24a72d4d9ea1c4377df7a010e83580d9528",
+      "subject": "HARICA Institutional eSignature ECC 1",
+      "issuer": "HARICA Qualified ECC Root CA 2021",
+      "serialNumber": "0da04f91d877e873f4972872014a6170",
+      "validFrom": "2023-07-18T09:29:57.000Z",
+      "validTo": "2038-07-14T09:29:56.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-384",
+      "crlUrls": [
+        "http://crl.harica.gr/HARICA-Qualified-Root-2021-ECC.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "harica-institutional-esignature-ecc-2.pem",
+      "sha256": "5d968b19bff1deb125cc10836eb9bb3160a3ee60ffdf1cb8a434b8fa729c1ee2",
+      "subject": "HARICA Institutional eSignature ECC 2",
+      "issuer": "HARICA Qualified ECC Root CA 2021",
+      "serialNumber": "0e0bf6fde2ec8b491058467db86322b3",
+      "validFrom": "2023-10-17T09:14:23.000Z",
+      "validTo": "2038-10-13T09:14:22.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-384",
+      "crlUrls": [
+        "http://crl.harica.gr/HARICA-Qualified-Root-2021-ECC.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "harica-institutional-esignature-rsa-1.pem",
+      "sha256": "914d6da7bcd4b31c25730b3b7a188dcd7aee49ea40f6e087bc2859085c0dcff9",
+      "subject": "HARICA Institutional eSignature RSA 1",
+      "issuer": "HARICA Qualified RSA Root CA 2021",
+      "serialNumber": "180ec66cf06c1a6363023ffc28062b7a",
+      "validFrom": "2023-07-18T09:29:30.000Z",
+      "validTo": "2038-07-14T09:29:29.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.harica.gr/HARICA-Qualified-Root-2021-RSA.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "harica-institutional-esignature-rsa-2.pem",
+      "sha256": "b83a40f46449e36ea4eca25afa47bc9c46492af58bb46d9f7f533697a474d2df",
+      "subject": "HARICA Institutional eSignature RSA 2",
+      "issuer": "HARICA Qualified RSA Root CA 2021",
+      "serialNumber": "72e2de7797d798356d25be8efb1e1e60",
+      "validFrom": "2023-10-17T09:14:57.000Z",
+      "validTo": "2038-10-13T09:14:56.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.harica.gr/HARICA-Qualified-Root-2021-RSA.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "harica-qualified-certificates-for-eseals-ecc-2.pem",
+      "sha256": "ebd4dc7f13add30493a9778dc2a81d0062af63b2d394e6ab6c1a5fe92b5e60c0",
+      "subject": "HARICA Qualified Certificates for eSeals ECC 2",
+      "issuer": "HARICA Qualified ECC Root CA 2021",
+      "serialNumber": "157ea9c4d9c1b99e53b7874bfe934274",
+      "validFrom": "2023-10-17T09:11:41.000Z",
+      "validTo": "2038-10-13T09:11:40.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-384",
+      "crlUrls": [
+        "http://crl.harica.gr/HARICA-Qualified-Root-2021-ECC.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "harica-qualified-certificates-for-eseals-ecc.pem",
+      "sha256": "3ce8739cd3c5f7007b205d7190ee8b53e057d8af7acf98e555e04d86d2d4f4e5",
+      "subject": "HARICA Qualified Certificates for eSeals ECC",
+      "issuer": "HARICA Qualified ECC Root CA 2021",
+      "serialNumber": "6d7337cb8d2be3c5ec76ecefd9528b79",
+      "validFrom": "2021-03-19T09:27:14.000Z",
+      "validTo": "2036-03-15T09:27:13.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-384",
+      "crlUrls": [
+        "http://crl.harica.gr/HARICA-Qualified-Root-2021-ECC.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "harica-qualified-certificates-for-eseals-rsa-2.pem",
+      "sha256": "7ef2a00acb1d00f93c099799d19d32bcb2e268d481fa485612baeb449d5ad21c",
+      "subject": "HARICA Qualified Certificates for eSeals RSA 2",
+      "issuer": "HARICA Qualified RSA Root CA 2021",
+      "serialNumber": "082ec99c4e336b9627d0604a36200e7f",
+      "validFrom": "2023-10-17T09:12:50.000Z",
+      "validTo": "2038-10-13T09:12:49.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.harica.gr/HARICA-Qualified-Root-2021-RSA.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "harica-qualified-certificates-for-eseals-rsa.pem",
+      "sha256": "31d06d7a6e7e154f662f2cd9840a63fe0395f5229867f735de07cc17784e8882",
+      "subject": "HARICA Qualified Certificates for eSeals RSA",
+      "issuer": "HARICA Qualified RSA Root CA 2021",
+      "serialNumber": "4f523f4de2f7d0f0e53465a35c517873",
+      "validFrom": "2021-03-19T09:28:32.000Z",
+      "validTo": "2036-03-15T09:28:31.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.harica.gr/HARICA-Qualified-Root-2021-RSA.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "harica-qualified-certificates-for-esignatures-ecc-2.pem",
+      "sha256": "342403a48752ea009d6da33b4d44a5c0794bbb4867b819d0ac6088c050a783fd",
+      "subject": "HARICA Qualified Certificates for eSignatures ECC 2",
+      "issuer": "HARICA Qualified ECC Root CA 2021",
+      "serialNumber": "10fc8cb6a03b1a8bd8a9ca1db3b66ab6",
+      "validFrom": "2023-10-17T09:13:17.000Z",
+      "validTo": "2038-10-13T09:13:16.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-384",
+      "crlUrls": [
+        "http://crl.harica.gr/HARICA-Qualified-Root-2021-ECC.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "harica-qualified-certificates-for-esignatures-ecc.pem",
+      "sha256": "f4402df91fba7eb35fa40a7f9463718faa4f8a05bc6e26622447983dbba97d34",
+      "subject": "HARICA Qualified Certificates for eSignatures ECC",
+      "issuer": "HARICA Qualified ECC Root CA 2021",
+      "serialNumber": "21ea89078799fcd5139fec88bf246b2b",
+      "validFrom": "2021-03-19T09:29:07.000Z",
+      "validTo": "2036-03-15T09:29:06.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-384",
+      "crlUrls": [
+        "http://crl.harica.gr/HARICA-Qualified-Root-2021-ECC.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "harica-qualified-certificates-for-esignatures-rsa-2.pem",
+      "sha256": "a58079410623d3300d2c0e2340f6da885774cc0af8a5b4a0b9e689ab5b8fe420",
+      "subject": "HARICA Qualified Certificates for eSignatures RSA 2",
+      "issuer": "HARICA Qualified RSA Root CA 2021",
+      "serialNumber": "0d10cbc6995ada59dbefcaa85e3da820",
+      "validFrom": "2023-10-17T09:13:53.000Z",
+      "validTo": "2038-10-13T09:13:52.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.harica.gr/HARICA-Qualified-Root-2021-RSA.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "harica-qualified-certificates-for-esignatures-rsa.pem",
+      "sha256": "1a77147aef9d854fcb9b59d91c1dbfdd054b253e08ad44fd3e67de78e37dc634",
+      "subject": "HARICA Qualified Certificates for eSignatures RSA",
+      "issuer": "HARICA Qualified RSA Root CA 2021",
+      "serialNumber": "7555eb380ecca38321b61d4ad3741ebf",
+      "validFrom": "2021-03-19T09:29:40.000Z",
+      "validTo": "2036-03-15T09:29:39.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.harica.gr/HARICA-Qualified-Root-2021-RSA.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "harica-qualified-legal-entities-ecc-subca-r2.pem",
+      "sha256": "dd5bac4f1bb5356ae98d3f0c8e24c59df84199a56f78f1c161196aad70283094",
+      "subject": "HARICA Qualified Legal Entities ECC SubCA R2",
+      "issuer": "Hellenic Academic and Research Institutions ECC RootCA 2015",
+      "serialNumber": "7dfcbd9c297564e383c0a60429f8bebc",
+      "validFrom": "2019-03-06T11:01:46.000Z",
+      "validTo": "2034-03-02T11:01:46.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-384",
+      "crlUrls": [
+        "http://crlv1.harica.gr/HaricaECCRootCA2015/crlv1.der.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.harica.gr"
+      ]
+    },
+    {
+      "file": "harica-qualified-legal-entities-subca-r1.pem",
+      "sha256": "93add7c8486bf15a416949e1637bc219a3455e374e0eaf980153035ab17f3ec5",
+      "subject": "HARICA Qualified Legal Entities SubCA R1",
+      "issuer": "Hellenic Academic and Research Institutions RootCA 2011",
+      "serialNumber": "35541624b13e5746b56040cd846854da",
+      "validFrom": "2017-06-06T12:49:06.000Z",
+      "validTo": "2025-06-04T12:49:06.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crlv1.harica.gr/HaricaRootCA2011/crlv1.der.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.harica.gr"
+      ]
+    },
+    {
+      "file": "harica-qualified-legal-entities-subca-r2.pem",
+      "sha256": "cdf27eea0c3a5512369108fd74635d2d4cf50e94d6ca199bed7de81b0d09a336",
+      "subject": "HARICA Qualified Legal Entities SubCA R2",
+      "issuer": "Hellenic Academic and Research Institutions RootCA 2015",
+      "serialNumber": "3a819e083fbdb8f5",
+      "validFrom": "2019-02-20T10:22:08.000Z",
+      "validTo": "2034-02-16T10:22:08.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crlv1.harica.gr/HaricaRootCA2015/crlv1.der.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.harica.gr"
+      ]
+    },
+    {
+      "file": "harica-qualified-legal-entities-subca-r3.pem",
+      "sha256": "c6cb08b5d6dfe461aece9aa3cf03af7fed1341c9e6ee0052129c27ca754933f2",
+      "subject": "HARICA Qualified Legal Entities SubCA R3",
+      "issuer": "Hellenic Academic and Research Institutions RootCA 2015",
+      "serialNumber": "276b5c96f15b8a378c6e79c3a901ebee",
+      "validFrom": "2019-03-14T13:46:51.000Z",
+      "validTo": "2034-03-10T13:46:51.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crlv1.harica.gr/HaricaRootCA2015/crlv1.der.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.harica.gr"
+      ]
+    },
+    {
+      "file": "harica-qualified-natural-entities-ecc-subca-r2.pem",
+      "sha256": "4d961aee0d2dd0adf433b4aac261ce5871665cf39fca1b4838ae6620da685046",
+      "subject": "HARICA Qualified Natural Entities ECC SubCA R2",
+      "issuer": "Hellenic Academic and Research Institutions ECC RootCA 2015",
+      "serialNumber": "2bb9d0ce90ba22620cb00e3674228050",
+      "validFrom": "2019-03-06T11:04:30.000Z",
+      "validTo": "2034-03-02T11:04:30.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-384",
+      "crlUrls": [
+        "http://crlv1.harica.gr/HaricaECCRootCA2015/crlv1.der.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.harica.gr"
+      ]
+    },
+    {
+      "file": "harica-qualified-natural-entities-subca-r1.pem",
+      "sha256": "357554ced3c49ba13ddd55a5682629b6fce2acfc4519ab2be04b3a8601a59f2f",
+      "subject": "HARICA Qualified Natural Entities SubCA R1",
+      "issuer": "Hellenic Academic and Research Institutions RootCA 2011",
+      "serialNumber": "713cd4ce1167dd081a4daed2b2051ad5",
+      "validFrom": "2017-06-06T13:03:39.000Z",
+      "validTo": "2025-06-04T13:03:39.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crlv1.harica.gr/HaricaRootCA2011/crlv1.der.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.harica.gr"
+      ]
+    },
+    {
+      "file": "harica-qualified-natural-entities-subca-r2.pem",
+      "sha256": "094f78c53ec5d8082bc5d5aad1b11d5df952be56933358dbf5963542913a50cd",
+      "subject": "HARICA Qualified Natural Entities SubCA R2",
+      "issuer": "Hellenic Academic and Research Institutions RootCA 2015",
+      "serialNumber": "125612ea376d8022",
+      "validFrom": "2019-02-20T10:27:09.000Z",
+      "validTo": "2034-02-16T10:27:09.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crlv1.harica.gr/HaricaRootCA2015/crlv1.der.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.harica.gr"
+      ]
+    },
+    {
+      "file": "harica-qualified-natural-entities-subca-r3.pem",
+      "sha256": "addbe88b468154cf8f7773288c8c50f760879e490892aa9272815b814e721e7d",
+      "subject": "HARICA Qualified Natural Entities SubCA R3",
+      "issuer": "Hellenic Academic and Research Institutions RootCA 2015",
+      "serialNumber": "7fceaa8da1026dfa7714d13fde15f8fa",
+      "validFrom": "2019-03-14T13:51:15.000Z",
+      "validTo": "2034-03-10T13:51:15.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crlv1.harica.gr/HaricaRootCA2015/crlv1.der.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.harica.gr"
+      ]
+    },
+    {
+      "file": "harica-qualified-time-stamping-certificates-ecc.pem",
+      "sha256": "90508e0f4668590a89a2eea9ce24bd5345358b71ce2420764ff4f76f6f083091",
+      "subject": "HARICA Qualified Time-stamping Certificates ECC",
+      "issuer": "HARICA Qualified ECC Root CA 2021",
+      "serialNumber": "192c80d79f07df7fb8d27136b90b4d25",
+      "validFrom": "2021-03-19T09:44:16.000Z",
+      "validTo": "2036-03-15T09:44:15.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-384",
+      "crlUrls": [
+        "http://crl.harica.gr/HARICA-Qualified-Root-2021-ECC.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "harica-qualified-time-stamping-certificates-rsa.pem",
+      "sha256": "5d75a3bd64305cb43d79f948cc3297515ee2fba28f4ab4fc43296ed42799d1bf",
+      "subject": "HARICA Qualified Time-stamping Certificates RSA",
+      "issuer": "HARICA Qualified RSA Root CA 2021",
+      "serialNumber": "3d5206fa156eade46e15791c2df6a8be",
+      "validFrom": "2021-03-19T09:41:22.000Z",
+      "validTo": "2036-03-15T09:41:21.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.harica.gr/HARICA-Qualified-Root-2021-RSA.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "harica-qualified-time-stamping-rsa-subca-r1.pem",
+      "sha256": "1d3bdb9882f3d16ad807903da797ec4abac27365d9b3c9b0e227b6b7e265972a",
+      "subject": "HARICA Qualified Time Stamping RSA SubCA R1",
+      "issuer": "Hellenic Academic and Research Institutions RootCA 2015",
+      "serialNumber": "18435138ffc0643f973d4f8777048c71",
+      "validFrom": "2020-05-20T07:26:36.000Z",
+      "validTo": "2035-05-17T07:26:36.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.harica.gr/HaricaRootCA2015.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.harica.gr"
+      ]
+    },
+    {
+      "file": "harica-qualified-web-authentication-certificates-ecc.pem",
+      "sha256": "3572cc46440d3f79056cd041f3bbe358292965043b4ce52dbb9eaf9d96278307",
+      "subject": "HARICA Qualified Web Authentication Certificates ECC",
+      "issuer": "HARICA Qualified ECC Root CA 2021",
+      "serialNumber": "39c68142343ba5df94b62fde0b8dee2c",
+      "validFrom": "2021-03-19T09:34:47.000Z",
+      "validTo": "2036-03-15T09:34:46.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-384",
+      "crlUrls": [
+        "http://crl.harica.gr/HARICA-Qualified-Root-2021-ECC.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "harica-qualified-web-authentication-certificates-rsa.pem",
+      "sha256": "9a8fd69bf4f5dad68dedf9b732264df3644d2e2d1fbd463f726cc77087636b71",
+      "subject": "HARICA Qualified Web Authentication Certificates RSA",
+      "issuer": "HARICA Qualified RSA Root CA 2021",
+      "serialNumber": "4eb0eefa7e98ef5999f27f1b7dded32c",
+      "validFrom": "2021-03-19T09:35:42.000Z",
+      "validTo": "2036-03-15T09:35:41.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.harica.gr/HARICA-Qualified-Root-2021-RSA.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "harica-qwac-ecc-subca-r1.pem",
+      "sha256": "ba0312f7b72f6b64b4ccee34b5f628cf65a1f3b9f16b8dfe7ada90c54e475a1c",
+      "subject": "HARICA QWAC ECC SubCA R1",
+      "issuer": "Hellenic Academic and Research Institutions ECC RootCA 2015",
+      "serialNumber": "016d8a9e368f13c21eb429f4b25b0955",
+      "validFrom": "2020-02-27T12:27:59.000Z",
+      "validTo": "2035-02-23T12:27:59.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-384",
+      "crlUrls": [
+        "http://crl.harica.gr/HaricaECCRootCA2015.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.harica.gr"
+      ]
+    },
+    {
+      "file": "harica-qwac-rsa-subca-r1.pem",
+      "sha256": "dab3fa0d6e821006fe709ae12176aba2f397706cc9c71f5c1c0d098044daebdc",
+      "subject": "HARICA QWAC RSA SubCA R1",
+      "issuer": "Hellenic Academic and Research Institutions RootCA 2015",
+      "serialNumber": "217078dcecb0a8db0a155ccc967860ec",
+      "validFrom": "2020-02-27T12:19:17.000Z",
+      "validTo": "2035-02-23T12:19:17.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.harica.gr/HaricaRootCA2015.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.harica.gr"
+      ]
+    },
+    {
+      "file": "harica-ssl-rsa-subca-r3.pem",
+      "sha256": "70b6a10c0ca76dece7adbe970b76a37d8a02857b134c7505b184ebd5fca4f3ea",
+      "subject": "HARICA SSL RSA SubCA R3",
+      "issuer": "Hellenic Academic and Research Institutions RootCA 2015",
+      "serialNumber": "40db9a6e5b6e827d4804ba4e0aa0bd0f",
+      "validFrom": "2019-03-14T13:26:53.000Z",
+      "validTo": "2034-03-10T13:26:53.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crlv1.harica.gr/HaricaRootCA2015/crlv1.der.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.harica.gr"
+      ]
+    },
+    {
+      "file": "harokopio-university-ca-r1.pem",
+      "sha256": "26f7adb721cc2d3e26df063a6fe28739894b1847060c351dc6f5311c57df0b5f",
+      "subject": "Harokopio University CA R1",
+      "issuer": "Hellenic Academic and Research Institutions RootCA 2011",
+      "serialNumber": "1667a192d778134f",
+      "validFrom": "2016-02-02T14:16:23.000Z",
+      "validTo": "2024-01-31T14:16:23.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crlv1.harica.gr/HaricaRootCA2011/crlv1.der.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.harica.gr"
+      ]
+    },
+    {
+      "file": "harokopio-university-client-rsa-subca-r1.pem",
+      "sha256": "6ec8d3551bd0454b0cc4b9db876366ae08764c5fcf15b00f9411bde30d5336ae",
+      "subject": "Harokopio University Client RSA SubCA R1",
+      "issuer": "Hellenic Academic and Research Institutions RootCA 2015",
+      "serialNumber": "3604be85ae18a1db22ff2be3b1024c2e",
+      "validFrom": "2020-03-24T10:13:10.000Z",
+      "validTo": "2028-03-22T10:13:10.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.harica.gr/HaricaRootCA2015.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.harica.gr"
+      ]
+    },
+    {
+      "file": "international-hellenic-university-ca-r1.pem",
+      "sha256": "884c51d643be1126e72f3b1b7238ba57e0268c1d6c4a22acdd6249c1758a53b6",
+      "subject": "International Hellenic University CA R1",
+      "issuer": "Hellenic Academic and Research Institutions RootCA 2011",
+      "serialNumber": "17c1f157952f14e8",
+      "validFrom": "2016-03-21T10:01:58.000Z",
+      "validTo": "2024-03-19T10:01:58.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crlv1.harica.gr/HaricaRootCA2011/crlv1.der.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.harica.gr"
+      ]
+    },
+    {
+      "file": "international-hellenic-university-client-rsa-subca-r1.pem",
+      "sha256": "4e78271768494088ed1f9bb2712531ab5d138c6c59b46650d285b35858e67b13",
+      "subject": "International Hellenic University Client RSA SubCA R1",
+      "issuer": "Hellenic Academic and Research Institutions RootCA 2015",
+      "serialNumber": "638679695ebaf6648eb4a82345d87387",
+      "validFrom": "2020-01-21T12:03:13.000Z",
+      "validTo": "2028-01-19T12:03:13.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crlv1.harica.gr/HaricaRootCA2015/crlv1.der.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.harica.gr"
+      ]
+    },
+    {
+      "file": "ionian-university-client-ca-r1.pem",
+      "sha256": "c95a9426410e11e70eed947806fd87f6f0de77b98f1c454be10d35c4442dc1dd",
+      "subject": "Ionian University Client CA R1",
+      "issuer": "Hellenic Academic and Research Institutions RootCA 2011",
+      "serialNumber": "5172577142cfe39461f30b59cc5214bf",
+      "validFrom": "2017-07-12T09:28:23.000Z",
+      "validTo": "2025-07-10T09:28:23.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crlv1.harica.gr/HaricaRootCA2011/crlv1.der.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.harica.gr"
+      ]
+    },
+    {
+      "file": "ionian-university-client-rsa-subca-r2.pem",
+      "sha256": "fc3a98938e2ed3bd36e0d41f18517649322906b2e6b33690891325aaecd19644",
+      "subject": "Ionian University Client RSA SubCA R2",
+      "issuer": "Hellenic Academic and Research Institutions RootCA 2015",
+      "serialNumber": "7c41c8a6f221887d512082ca63a6a4f3",
+      "validFrom": "2020-01-21T12:42:31.000Z",
+      "validTo": "2028-01-19T12:42:31.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crlv1.harica.gr/HaricaRootCA2015/crlv1.der.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.harica.gr"
+      ]
+    },
+    {
+      "file": "ministry-of-digital-governance-hellenic-republic-subca-r1.pem",
+      "sha256": "6014f88c181ca075e2f7b82a1f518fa604a22486abb72a76591962fb08646c63",
+      "subject": "Ministry of Digital Governance (Hellenic Republic) SubCA R1",
+      "issuer": "Hellenic Academic and Research Institutions RootCA 2015",
+      "serialNumber": "47fbc93dc4a8c04ebd37c0762b91925b",
+      "validFrom": "2020-09-03T09:49:47.000Z",
+      "validTo": "2028-09-01T09:49:47.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.harica.gr/HaricaRootCA2015.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.harica.gr"
+      ]
+    },
+    {
+      "file": "national-and-kapodistrian-univ-of-athens-client-rsa-subca-r1.pem",
+      "sha256": "f3d916d1b73201f049eda7e597fe0a5ccd5711a6958fbc0b7a6f7fa64f7afe47",
+      "subject": "National and Kapodistrian Univ. of Athens Client RSA SubCA R1",
+      "issuer": "Hellenic Academic and Research Institutions RootCA 2015",
+      "serialNumber": "3f53f31cf0acb0dc9b3d1d5751a4f6a6",
+      "validFrom": "2020-03-24T10:51:09.000Z",
+      "validTo": "2028-03-22T10:51:09.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.harica.gr/HaricaRootCA2015.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.harica.gr"
+      ]
+    },
+    {
+      "file": "national-and-kapodistrian-university-of-athens-ca-r2.pem",
+      "sha256": "58aa92961c1e035054adda64e883bfae1b21439cbf7ad61e33f67dc56e295f6a",
+      "subject": "National and Kapodistrian University of Athens CA R2",
+      "issuer": "Hellenic Academic and Research Institutions RootCA 2011",
+      "serialNumber": "18dd87ae1f4bb677",
+      "validFrom": "2015-05-05T13:24:53.000Z",
+      "validTo": "2023-05-03T13:24:53.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://crlv1.harica.gr/HaricaRootCA2011/crlv1.der.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.harica.gr"
+      ]
+    },
+    {
+      "file": "national-technical-university-of-athens-client-rsa-subca-r1.pem",
+      "sha256": "887d7f1deb7f0712c85afabf50cadf89bf02eb13e552cbf52d7b5df3f21db0da",
+      "subject": "National Technical University of Athens Client RSA SubCA R1",
+      "issuer": "Hellenic Academic and Research Institutions RootCA 2015",
+      "serialNumber": "36c676021860fee9bb22820629e38ffa",
+      "validFrom": "2020-01-21T12:30:23.000Z",
+      "validTo": "2028-01-19T12:30:23.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crlv1.harica.gr/HaricaRootCA2015/crlv1.der.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.harica.gr"
+      ]
+    },
+    {
+      "file": "panteion-univ-of-social-and-political-sciences-client-subca-r1.pem",
+      "sha256": "2d1b244faceafad94755b5e99aabf7ac91c599da73bfa461eeebafb4b969b5c9",
+      "subject": "Panteion Univ. of Social and Political Sciences Client SubCA R1",
+      "issuer": "Hellenic Academic and Research Institutions RootCA 2015",
+      "serialNumber": "098dd7772d4982fd293a954715a1ed34",
+      "validFrom": "2020-03-24T10:30:20.000Z",
+      "validTo": "2028-03-22T10:30:20.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.harica.gr/HaricaRootCA2015.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.harica.gr"
+      ]
+    },
+    {
+      "file": "panteion-university-of-social-and-political-sciences-ca-r1.pem",
+      "sha256": "23d3aa2c53136f789ff7c231e92b6210fcc7b80e5da4287c5df1bc525b4f4612",
+      "subject": "Panteion University of Social and Political Sciences CA R1",
+      "issuer": "Hellenic Academic and Research Institutions RootCA 2011",
+      "serialNumber": "1a9c32cb810394bb",
+      "validFrom": "2016-03-21T10:18:35.000Z",
+      "validTo": "2024-03-19T10:18:35.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crlv1.harica.gr/HaricaRootCA2011/crlv1.der.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.harica.gr"
+      ]
+    },
+    {
+      "file": "technical-chamber-of-greece-ca-r1.pem",
+      "sha256": "d8f0878e91e109cde70858a4e2d5defc5d09dfcde724765b33e260738ab1f993",
+      "subject": "Technical Chamber of Greece CA R1",
+      "issuer": "BYTE Root Certification Authority 001",
+      "serialNumber": "38aa2f6e7d68a70f",
+      "validFrom": "2022-10-21T13:56:35.000Z",
+      "validTo": "2035-04-21T13:56:35.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://pki.byte.gr/crl/crl_root.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "technical-university-of-crete-ca-r1.pem",
+      "sha256": "bdbcfe1193fbb923abee14ca66228fec890b18e02102c0d9a98ef2e8626eca7b",
+      "subject": "Technical University of Crete CA R1",
+      "issuer": "Hellenic Academic and Research Institutions RootCA 2011",
+      "serialNumber": "18dd87ae1f4bb675",
+      "validFrom": "2015-03-18T12:50:53.000Z",
+      "validTo": "2023-03-16T12:50:53.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://crlv1.harica.gr/HaricaRootCA2011/crlv1.der.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.harica.gr"
+      ]
+    },
+    {
+      "file": "technical-university-of-crete-client-rsa-subca-r1.pem",
+      "sha256": "22e5e6db5cae428eda96aed0564e2b9770eca2cc025158e37a9ddeede31f45e5",
+      "subject": "Technical University of Crete Client RSA SubCA R1",
+      "issuer": "Hellenic Academic and Research Institutions RootCA 2015",
+      "serialNumber": "2bc9d246094e9524ac1900677c1a8ef8",
+      "validFrom": "2020-03-24T10:41:33.000Z",
+      "validTo": "2028-03-22T10:41:33.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.harica.gr/HaricaRootCA2015.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.harica.gr"
+      ]
+    },
+    {
+      "file": "technological-education-institute-of-central-greece-ca-r1.pem",
+      "sha256": "0865869b3fc822566213de933f084cfe512673d2a38e399abaea9cea91b340b3",
+      "subject": "Technological Education Institute of Central Greece CA R1",
+      "issuer": "Hellenic Academic and Research Institutions RootCA 2011",
+      "serialNumber": "102b8893df0990ad",
+      "validFrom": "2016-11-16T10:29:53.000Z",
+      "validTo": "2024-11-14T10:29:53.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crlv1.harica.gr/HaricaRootCA2011/crlv1.der.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.harica.gr"
+      ]
+    },
+    {
+      "file": "technological-educational-institute-of-epirus-ca-r3.pem",
+      "sha256": "fd2954a6bc7f47dd443f6164d8454245bb0cfe9cf55ace37dbb35b8e4895a7d9",
+      "subject": "Technological Educational Institute of Epirus CA R3",
+      "issuer": "Hellenic Academic and Research Institutions RootCA 2011",
+      "serialNumber": "17d7aa837a2b43ce",
+      "validFrom": "2015-09-29T13:07:52.000Z",
+      "validTo": "2023-09-27T13:07:52.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crlv1.harica.gr/HaricaRootCA2011/crlv1.der.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.harica.gr"
+      ]
+    },
+    {
+      "file": "technological-educational-institute-of-western-greece-ca-r1.pem",
+      "sha256": "0b89633f122f75821950ae27e0badd40d49bb50f0cb1b75ee4f4662ace4cb3d8",
+      "subject": "Technological Educational Institute of Western Greece CA R1",
+      "issuer": "Hellenic Academic and Research Institutions RootCA 2011",
+      "serialNumber": "1fa317bae9d2b716",
+      "validFrom": "2015-12-22T12:59:23.000Z",
+      "validTo": "2023-12-20T12:59:23.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crlv1.harica.gr/HaricaRootCA2011/crlv1.der.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.harica.gr"
+      ]
+    },
+    {
+      "file": "technological-educational-institution-of-central-macedonia-ca-r3.pem",
+      "sha256": "6777464451c99b85b12ad323f73f7136c82bf4d13e175e9508258fc1375c73c7",
+      "subject": "Technological Educational Institution of Central Macedonia CA R3",
+      "issuer": "Hellenic Academic and Research Institutions RootCA 2011",
+      "serialNumber": "18dd87ae1f4bb682",
+      "validFrom": "2015-07-28T07:24:20.000Z",
+      "validTo": "2023-07-26T07:24:20.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crlv1.harica.gr/HaricaRootCA2011/crlv1.der.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.harica.gr"
+      ]
+    },
+    {
+      "file": "technological-educational-institution-of-thessaloniki-ca-r3.pem",
+      "sha256": "adeb0ac1b37f5da44a6848e14b735970f920ff9c7625da8aa099a89ea6d77c72",
+      "subject": "Technological Educational Institution of Thessaloniki CA R3",
+      "issuer": "Hellenic Academic and Research Institutions RootCA 2011",
+      "serialNumber": "18dd87ae1f4bb67a",
+      "validFrom": "2015-07-28T07:06:19.000Z",
+      "validTo": "2023-07-26T07:06:19.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crlv1.harica.gr/HaricaRootCA2011/crlv1.der.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.harica.gr"
+      ]
+    },
+    {
+      "file": "technological-educational-institution-of-thessaly-ca-r2.pem",
+      "sha256": "bf8abe927d18eb66ef9fb525ed20ee091eb782a48fda6f4cf232d0668fcd5cc6",
+      "subject": "Technological Educational Institution of Thessaly CA R2",
+      "issuer": "Hellenic Academic and Research Institutions RootCA 2011",
+      "serialNumber": "18dd87ae1f4bb67e",
+      "validFrom": "2015-07-28T07:19:48.000Z",
+      "validTo": "2023-07-26T07:19:48.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crlv1.harica.gr/HaricaRootCA2011/crlv1.der.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.harica.gr"
+      ]
+    },
+    {
+      "file": "union-of-hellenic-chambers-of-commerce-ca-001.pem",
+      "sha256": "1a4f071d4a56b9442003ba2def04c56944b4d0738e4806ce97a2fc68c3b420e5",
+      "subject": "Union Of Hellenic Chambers Of Commerce CA 001",
+      "issuer": "BYTE Root Certification Authority 001",
+      "serialNumber": "567c8ffb3228c341",
+      "validFrom": "2021-10-21T09:39:45.000Z",
+      "validTo": "2034-04-21T09:39:45.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://pki.byte.gr/crl/crl_root.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "university-of-crete-ca-r3.pem",
+      "sha256": "fc8889a411d1910b7a6de159fb328f84dffd2756a39a78e91cb9bb90c6fea6e4",
+      "subject": "University of Crete CA R3",
+      "issuer": "Hellenic Academic and Research Institutions RootCA 2011",
+      "serialNumber": "1b64732ef0b53d56",
+      "validFrom": "2016-02-02T14:26:25.000Z",
+      "validTo": "2024-01-31T14:26:25.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crlv1.harica.gr/HaricaRootCA2011/crlv1.der.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.harica.gr"
+      ]
+    },
+    {
+      "file": "university-of-crete-client-rsa-subca-r1.pem",
+      "sha256": "87aad978a5fe2ee941e4068f9963ea29bdaa58878d2412249a82cd22f8126d82",
+      "subject": "University of Crete Client RSA SubCA R1",
+      "issuer": "Hellenic Academic and Research Institutions RootCA 2015",
+      "serialNumber": "1e0b491d8fa481ef2d52b24578abcf18",
+      "validFrom": "2020-03-24T10:57:37.000Z",
+      "validTo": "2028-03-22T10:57:37.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.harica.gr/HaricaRootCA2015.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.harica.gr"
+      ]
+    },
+    {
+      "file": "university-of-ioannina-ca-r2.pem",
+      "sha256": "3a5f4ef758dad62e4369246445e068e4dadfdd4862dcdc352cbca3f58cb1028a",
+      "subject": "University of Ioannina CA R2",
+      "issuer": "Hellenic Academic and Research Institutions RootCA 2011",
+      "serialNumber": "18dd87ae1f4bb681",
+      "validFrom": "2015-07-28T07:22:47.000Z",
+      "validTo": "2023-07-26T07:22:47.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crlv1.harica.gr/HaricaRootCA2011/crlv1.der.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.harica.gr"
+      ]
+    },
+    {
+      "file": "university-of-ioannina-client-rsa-subca-r1.pem",
+      "sha256": "42a21f37285804f2e736075cb54874368cf0e2110088b3f138412eec88590954",
+      "subject": "University of Ioannina Client RSA SubCA R1",
+      "issuer": "Hellenic Academic and Research Institutions RootCA 2015",
+      "serialNumber": "2a29da7fb6b3c731628bd14291b18813",
+      "validFrom": "2020-01-21T12:12:55.000Z",
+      "validTo": "2028-01-19T12:12:55.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crlv1.harica.gr/HaricaRootCA2015/crlv1.der.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.harica.gr"
+      ]
+    },
+    {
+      "file": "university-of-macedonia-ca-r1.pem",
+      "sha256": "17b4e0ad0482a3d027f58bdfc8a9bd55f75cabc8df059a4056a16cc8dee533ef",
+      "subject": "University of Macedonia CA R1",
+      "issuer": "Hellenic Academic and Research Institutions RootCA 2011",
+      "serialNumber": "1e6448d7dffe92f2",
+      "validFrom": "2015-09-29T13:09:54.000Z",
+      "validTo": "2023-09-27T13:09:54.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crlv1.harica.gr/HaricaRootCA2011/crlv1.der.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.harica.gr"
+      ]
+    },
+    {
+      "file": "university-of-macedonia-client-rsa-subca-r1.pem",
+      "sha256": "444cefedd83f6315c5ec86b2f1cd63b1dbf2387cfa2beb0fb400153f2af9408f",
+      "subject": "University of Macedonia Client RSA SubCA R1",
+      "issuer": "Hellenic Academic and Research Institutions RootCA 2015",
+      "serialNumber": "5451504d35ad11c9a6b846e79532bffb",
+      "validFrom": "2020-03-24T11:05:32.000Z",
+      "validTo": "2028-03-22T11:05:32.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.harica.gr/HaricaRootCA2015.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.harica.gr"
+      ]
+    },
+    {
+      "file": "university-of-patras-ca-r1.pem",
+      "sha256": "1ba440f7eb048a402a87091c4940740462549a2af3962f8bc7184ad0b04b831d",
+      "subject": "University of Patras CA R1",
+      "issuer": "Hellenic Academic and Research Institutions RootCA 2011",
+      "serialNumber": "1224c52f31ffaab4",
+      "validFrom": "2015-09-29T13:11:21.000Z",
+      "validTo": "2023-09-27T13:11:21.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crlv1.harica.gr/HaricaRootCA2011/crlv1.der.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.harica.gr"
+      ]
+    },
+    {
+      "file": "university-of-patras-client-rsa-subca-r1.pem",
+      "sha256": "46716ebf6a22aea1df1f97e62a5ef7095127ce4550b6242eba6907afc5c482cf",
+      "subject": "University of Patras Client RSA SubCA R1",
+      "issuer": "Hellenic Academic and Research Institutions RootCA 2015",
+      "serialNumber": "217d97e4f49d23d6e4bd42c5288c7a35",
+      "validFrom": "2020-01-21T12:21:31.000Z",
+      "validTo": "2028-01-19T12:21:31.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crlv1.harica.gr/HaricaRootCA2015/crlv1.der.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.harica.gr"
+      ]
+    },
+    {
+      "file": "university-of-piraeus-ca-r1.pem",
+      "sha256": "3abce953019df2581edacab58be8e143fe690a7f93c28c373c207627f818264e",
+      "subject": "University of Piraeus CA R1",
+      "issuer": "Hellenic Academic and Research Institutions RootCA 2011",
+      "serialNumber": "17ebefc209ffba91",
+      "validFrom": "2015-12-22T12:54:09.000Z",
+      "validTo": "2023-12-20T12:54:09.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crlv1.harica.gr/HaricaRootCA2011/crlv1.der.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.harica.gr"
+      ]
+    },
+    {
+      "file": "university-of-piraeus-client-rsa-subca-r1.pem",
+      "sha256": "bc489c6dc2bde253f586da34134d6640b8b583a312089ce10933c4bc03fc5f33",
+      "subject": "University of Piraeus Client RSA SubCA R1",
+      "issuer": "Hellenic Academic and Research Institutions RootCA 2015",
+      "serialNumber": "06c4330bfc874ac7ec0cbd55230f0f0d",
+      "validFrom": "2020-03-24T10:46:37.000Z",
+      "validTo": "2028-03-22T10:46:37.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.harica.gr/HaricaRootCA2015.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.harica.gr"
+      ]
+    },
+    {
+      "file": "university-of-the-aegean-client-rsa-subca-r1.pem",
+      "sha256": "55b80def607f88e31c584067d09d43344d94117baf648365847b1ce5b67677c9",
+      "subject": "University of the Aegean Client RSA SubCA R1",
+      "issuer": "Hellenic Academic and Research Institutions RootCA 2015",
+      "serialNumber": "5c75cb1eb88cc0a02aa354497356ff2b",
+      "validFrom": "2020-01-21T12:38:53.000Z",
+      "validTo": "2028-01-19T12:38:53.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crlv1.harica.gr/HaricaRootCA2015/crlv1.der.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.harica.gr"
+      ]
+    },
+    {
+      "file": "university-of-the-peloponnese-ca-r2.pem",
+      "sha256": "c973beaca65449451e5c4131570d05e72f34d2adebd94db2e51e9a544e1e0101",
+      "subject": "University of the Peloponnese CA R2",
+      "issuer": "Hellenic Academic and Research Institutions RootCA 2011",
+      "serialNumber": "18dd87ae1f4bb67d",
+      "validFrom": "2015-07-28T07:18:38.000Z",
+      "validTo": "2023-07-26T07:18:38.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crlv1.harica.gr/HaricaRootCA2011/crlv1.der.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.harica.gr"
+      ]
+    },
+    {
+      "file": "university-of-the-peloponnese-client-rsa-subca-r1.pem",
+      "sha256": "ea4793e2eb814d43261f8068aefde783b837e7c021ac19c8e9b08551f2d6c83f",
+      "subject": "University of the Peloponnese Client RSA SubCA R1",
+      "issuer": "Hellenic Academic and Research Institutions RootCA 2015",
+      "serialNumber": "7d6c907fb2b5282762e484a8153fdbaf",
+      "validFrom": "2020-03-24T11:10:25.000Z",
+      "validTo": "2028-03-22T11:10:25.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.harica.gr/HaricaRootCA2015.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.harica.gr"
+      ]
+    },
+    {
+      "file": "university-of-west-attica-client-rsa-subca-r1.pem",
+      "sha256": "7d35bf04c857282b422e851ea8a622b75d2eccbab65d5ba62598c1da4a11d502",
+      "subject": "University of West Attica Client RSA SubCA R1",
+      "issuer": "Hellenic Academic and Research Institutions RootCA 2015",
+      "serialNumber": "35a11942e5a78a05107f3ed1a9963b11",
+      "validFrom": "2020-05-20T07:29:31.000Z",
+      "validTo": "2028-05-18T07:29:31.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.harica.gr/HaricaRootCA2015.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.harica.gr"
+      ]
+    },
+    {
+      "file": "university-of-western-macedonia-ca-r3.pem",
+      "sha256": "08a2773f908b89e35f83dc270afb8bc65e8d192f0dd24b5211617168d60dd3ab",
+      "subject": "University of Western Macedonia CA R3",
+      "issuer": "Hellenic Academic and Research Institutions RootCA 2011",
+      "serialNumber": "18dd87ae1f4bb67c",
+      "validFrom": "2015-07-28T07:16:02.000Z",
+      "validTo": "2023-07-26T07:16:02.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crlv1.harica.gr/HaricaRootCA2011/crlv1.der.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.harica.gr"
+      ]
+    },
+    {
+      "file": "university-of-western-macedonia-client-rsa-subca-r1.pem",
+      "sha256": "0cb6684f601c416f992a89409914a32a0c2099716875f5f78ec0c46b1b57099c",
+      "subject": "University of Western Macedonia Client RSA SubCA R1",
+      "issuer": "Hellenic Academic and Research Institutions RootCA 2015",
+      "serialNumber": "34700b6cc7b7493f5ed0db5c92cf5c52",
+      "validFrom": "2020-03-24T11:15:25.000Z",
+      "validTo": "2028-03-22T11:15:25.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.harica.gr/HaricaRootCA2015.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.harica.gr"
+      ]
+    }
+  ]
+}
