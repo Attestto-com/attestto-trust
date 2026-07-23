@@ -91,18 +91,19 @@ code, .mono {
 }
 .brand {
   display: inline-flex;
-  align-items: baseline;
-  gap: var(--space-2);
-  font-weight: 700;
-  font-size: var(--text-lg);
+  align-items: center;
+  gap: 0.6rem;
   color: var(--color-text);
 }
 .brand:hover { text-decoration: none; }
-.brand__mark { color: var(--color-accent); }
+.brand__logo { height: 26px; width: auto; display: block; }
 .brand__sub {
   font-weight: 500;
   color: var(--color-text-muted);
   font-size: var(--text-sm);
+  padding-left: 0.6rem;
+  border-left: 1px solid var(--color-border);
+  line-height: 1.2;
 }
 .site-nav {
   display: flex;
