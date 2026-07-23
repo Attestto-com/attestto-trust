@@ -2,7 +2,7 @@
 // site can serve downloadable trust anchors at /pems/<cc>/<file>.
 // Runs before `astro build` (see package.json). Source of truth is ../../countries.
 import { mkdir, readdir, copyFile, rm } from 'node:fs/promises';
-import { existsSync } from 'node:fs';
+import { existsSync, readdirSync, statSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join, resolve } from 'node:path';
 
@@ -12,7 +12,18 @@ const repoRoot = resolve(siteRoot, '..');
 const countriesDir = join(repoRoot, 'countries');
 const outRoot = join(siteRoot, 'public', 'pems');
 
-const COUNTRIES = ['cr', 'br', 'ar', 'es', 'pe'];
+// Discover live countries the same way the site loader does (site/src/lib/trust.js):
+// a country is promoted once it has both meta.json and current/manifest.json.
+// Deriving the list here (rather than hardcoding it) keeps pem downloads from
+// silently going missing whenever a new country is promoted.
+const COUNTRIES = readdirSync(countriesDir).filter((cc) => {
+  const dir = join(countriesDir, cc);
+  return (
+    statSync(dir).isDirectory() &&
+    existsSync(join(dir, 'meta.json')) &&
+    existsSync(join(dir, 'current', 'manifest.json'))
+  );
+});
 
 async function main() {
   // Clean previous output for a deterministic build.

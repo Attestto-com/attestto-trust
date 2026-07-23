@@ -1,7 +1,7 @@
 {
   "name": "@attestto/trust",
   "version": "1.0.0",
-  "description": "Independent public mirror of X.509 trust anchors for national digital signature infrastructures. Countries: Costa Rica, Brazil, Argentina, Spain, Peru. Live directory at trust.attestto.org.",
+  "description": "Independent public mirror of X.509 trust anchors for national digital signature infrastructures. Countries: Costa Rica, Brazil, Argentina, Spain, Estonia, Peru. Live directory at trust.attestto.org.",
   "homepage": "https://trust.attestto.org",
   "funding": "https://github.com/sponsors/Attestto-com",
   "type": "module",
@@ -16,6 +16,8 @@
     "./ar/pems/*": "./countries/ar/current/*.pem",
     "./es": "./countries/es/index.js",
     "./es/pems/*": "./countries/es/current/*.pem",
+    "./ee": "./countries/ee/index.js",
+    "./ee/pems/*": "./countries/ee/current/*.pem",
     "./pe": "./countries/pe/index.js",
     "./pe/pems/*": "./countries/pe/current/*.pem"
   },

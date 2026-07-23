@@ -33,16 +33,18 @@ import * as cr from '../countries/cr/index.js'
 import * as br from '../countries/br/index.js'
 import * as ar from '../countries/ar/index.js'
 import * as es from '../countries/es/index.js'
+import * as ee from '../countries/ee/index.js'
 import * as pe from '../countries/pe/index.js'
 
 // ── Root exports ───────────────────────────────────────────────────
 
 describe('root index.js exports', () => {
-  it('exports cr, br, ar, es, pe namespaces', () => {
+  it('exports cr, br, ar, es, ee, pe namespaces', () => {
     assert.ok(trust.cr, 'cr namespace missing')
     assert.ok(trust.br, 'br namespace missing')
     assert.ok(trust.ar, 'ar namespace missing')
     assert.ok(trust.es, 'es namespace missing')
+    assert.ok(trust.ee, 'ee namespace missing')
     assert.ok(trust.pe, 'pe namespace missing')
   })
 
@@ -51,6 +53,7 @@ describe('root index.js exports', () => {
     assert.ok(Array.isArray(trust.br.ALL_CERTS), 'br.ALL_CERTS not an array')
     assert.ok(Array.isArray(trust.ar.ALL_CERTS), 'ar.ALL_CERTS not an array')
     assert.ok(Array.isArray(trust.es.ALL_CERTS), 'es.ALL_CERTS not an array')
+    assert.ok(Array.isArray(trust.ee.ALL_CERTS), 'ee.ALL_CERTS not an array')
     assert.ok(Array.isArray(trust.pe.ALL_CERTS), 'pe.ALL_CERTS not an array')
   })
 })
@@ -202,6 +205,44 @@ describe('Spain (es)', () => {
   })
 })
 
+// ── Country: Estonia ───────────────────────────────────────────────
+
+describe('Estonia (ee)', () => {
+  it('exports 16 certificates (5 roots + 11 issuing CAs)', () => {
+    assert.equal(ee.ALL_CERTS.length, 16, `Expected 16, got ${ee.ALL_CERTS.length}`)
+  })
+
+  it('includes all five roots (legacy, GovCA2018/2025, SK ROOT G1E/G1R)', () => {
+    const names = ee.ALL_CERTS.map(c => c.exportName)
+    assert.ok(names.includes('EE_CERTIFICATION_CENTRE_ROOT_CA'), 'Missing EE Certification Centre Root CA')
+    assert.ok(names.includes('EE_GOVCA2018'), 'Missing EE-GovCA2018')
+    assert.ok(names.includes('EEGOVCA2025'), 'Missing EEGovCA2025 (Zetes)')
+    assert.ok(names.includes('SK_ID_SOLUTIONS_ROOT_G1E'), 'Missing SK ROOT G1E (EC)')
+    assert.ok(names.includes('SK_ID_SOLUTIONS_ROOT_G1R'), 'Missing SK ROOT G1R')
+  })
+
+  it('all PEM strings are valid format', () => {
+    for (const cert of ee.ALL_CERTS) {
+      assert.ok(cert.pem.startsWith('-----BEGIN CERTIFICATE-----'), `${cert.name}: bad PEM header`)
+      assert.ok(cert.pem.trimEnd().endsWith('-----END CERTIFICATE-----'), `${cert.name}: bad PEM footer`)
+    }
+  })
+
+  it('manifest SHA-256 hashes match DER content of PEM files (RSA + EC roots)', () => {
+    const manifestPath = join(ROOT, 'countries/ee/current/manifest.json')
+    assert.ok(existsSync(manifestPath), 'manifest.json missing')
+    const manifest = JSON.parse(readFileSync(manifestPath, 'utf-8'))
+    assert.equal(manifest.country, 'EE')
+    for (const entry of manifest.certificates) {
+      const pemPath = join(ROOT, 'countries/ee/current', entry.file)
+      assert.ok(existsSync(pemPath), `PEM file missing: ${entry.file}`)
+      const der = pemToDer(readFileSync(pemPath, 'utf-8'))
+      const sha256 = createHash('sha256').update(der).digest('hex')
+      assert.equal(sha256, entry.sha256, `SHA-256 mismatch for ${entry.file}`)
+    }
+  })
+})
+
 // ── Country: Peru ──────────────────────────────────────────────────
 
 describe('Peru (pe)', () => {
@@ -240,14 +281,15 @@ describe('Peru (pe)', () => {
 // ── Cross-country checks ───────────────────────────────────────────
 
 describe('cross-country integrity', () => {
-  it('total trust store has 26 certificates (CR 10 + BR 4 + AR 2 + ES 2 + PE 8)', () => {
+  it('total trust store has 42 certificates (CR 10 + BR 4 + AR 2 + ES 2 + EE 16 + PE 8)', () => {
     const total =
       cr.ALL_CERTS.length +
       br.ALL_CERTS.length +
       ar.ALL_CERTS.length +
       es.ALL_CERTS.length +
+      ee.ALL_CERTS.length +
       pe.ALL_CERTS.length
-    assert.equal(total, 26, `Expected 26 total, got ${total}`)
+    assert.equal(total, 42, `Expected 42 total, got ${total}`)
   })
 
   it('no duplicate export names across countries', () => {
@@ -256,6 +298,7 @@ describe('cross-country integrity', () => {
       ...br.ALL_CERTS.map(c => c.exportName),
       ...ar.ALL_CERTS.map(c => c.exportName),
       ...es.ALL_CERTS.map(c => c.exportName),
+      ...ee.ALL_CERTS.map(c => c.exportName),
       ...pe.ALL_CERTS.map(c => c.exportName),
     ]
     const unique = new Set(allNames)
@@ -263,7 +306,7 @@ describe('cross-country integrity', () => {
   })
 
   it('every PEM decodes to valid base64 content', () => {
-    const all = [...cr.ALL_CERTS, ...br.ALL_CERTS, ...ar.ALL_CERTS, ...es.ALL_CERTS, ...pe.ALL_CERTS]
+    const all = [...cr.ALL_CERTS, ...br.ALL_CERTS, ...ar.ALL_CERTS, ...es.ALL_CERTS, ...ee.ALL_CERTS, ...pe.ALL_CERTS]
     for (const cert of all) {
       const b64 = cert.pem
         .replace('-----BEGIN CERTIFICATE-----', '')

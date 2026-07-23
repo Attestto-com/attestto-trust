@@ -30,7 +30,7 @@ const countriesDir = findCountriesDir(__dirname);
 // countries/<cc>/meta.json (authority, related links, capabilities, technology,
 // notes). This loader discovers every country that has BOTH a meta.json and a
 // promoted current/manifest.json, so adding a country is data-only.
-const COUNTRY_ORDER = ['cr', 'br', 'ar', 'es', 'pe'];
+const COUNTRY_ORDER = ['cr', 'br', 'ar', 'es', 'ee', 'pe'];
 
 function readMeta(code) {
   return JSON.parse(readFileSync(join(countriesDir, code, 'meta.json'), 'utf-8'));
