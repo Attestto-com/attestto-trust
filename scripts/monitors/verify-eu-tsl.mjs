@@ -24,12 +24,18 @@ function slug(s) {
 }
 
 export function selectDesiredCerts(certs) {
-  const used = new Set()
-  const out = []
+  const used = new Set(), out = []
   for (const c of certs) {
-    let base = slug(c.subjectCN || 'cert')
+    const base = slug(c.subjectCN || 'cert')
     let name = base
-    if (used.has(name)) name = `${base}-${(c.sha256 || '').slice(0, 8)}`
+    if (used.has(name)) {
+      const sha = (c.sha256 || '').toLowerCase()
+      name = `${base}-${sha.slice(0, 8)}`
+      let n = 8
+      while (used.has(name) && n < sha.length) { name = `${base}-${sha.slice(0, ++n)}` }
+      let ctr = 2
+      while (used.has(name)) { name = `${base}-${sha.slice(0, 8)}-${ctr++}` }
+    }
     used.add(name)
     out.push({ filename: `${name}.pem`, pem: c.pem })
   }
@@ -80,6 +86,7 @@ async function main() {
   const timestamp = new Date().toISOString()
 
   const anchorPem = readFileSync(join(root, 'trust-anchors/eu-lotl/EC-LOTL-signer.pem'), 'utf8')
+  // Strips PEM header/footer lines and all whitespace to yield raw base64 DER for identity comparison.
   const ecAnchor = [{ type: 'cert', value: anchorPem.replace(/-----[^-]+-----|\s+/g, '') }]
 
   const lotlXml = await fetchText(LOTL_URL)
@@ -89,6 +96,8 @@ async function main() {
   const lotlAuth = authorizeSigner(lotlSig.signerCert, ecAnchor, { allowChain: true })
   if (!lotlAuth.authorized) throw new Error('LOTL signer not the pinned EC anchor — refresh EC LOTL anchors from OJEU')
 
+  // Intentional abort point: if the verified LOTL fails to parse, the entire run must crash
+  // rather than silently continuing with no country pointers.
   let pointers = parseLotlPointers(lotlXml)
   if (only.length) pointers = pointers.filter((p) => only.includes(p.iso2))
 

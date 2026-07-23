@@ -38,4 +38,18 @@ describe('selectDesiredCerts', () => {
   it('returns empty array for empty input', () => {
     assert.deepEqual(selectDesiredCerts([]), [])
   })
+
+  it('produces distinct filenames for three certs sharing the same subjectCN', () => {
+    const certs = [
+      { subjectCN: 'Regione Toscana - CA Cittadini', pem: '-A-', sha256: 'aabbccdd11223344' },
+      { subjectCN: 'Regione Toscana - CA Cittadini', pem: '-B-', sha256: 'bb22cc33dd445566' },
+      { subjectCN: 'Regione Toscana - CA Cittadini', pem: '-C-', sha256: 'aabbccdd99887766' },
+    ]
+    const out = selectDesiredCerts(certs)
+    assert.equal(out.length, 3)
+    const names = out.map((o) => o.filename)
+    const unique = new Set(names)
+    assert.equal(unique.size, 3, `expected 3 distinct filenames, got: ${names.join(', ')}`)
+    assert.ok(out.every((o) => o.filename.endsWith('.pem') && o.pem))
+  })
 })
