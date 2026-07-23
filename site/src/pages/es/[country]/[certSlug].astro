@@ -4,7 +4,7 @@ import RoleBadge from '../../../components/RoleBadge.astro';
 import ValidityChip from '../../../components/ValidityChip.astro';
 import CopyValue from '../../../components/CopyValue.astro';
 import { COUNTRIES, loadCountry, chainOf, pemHref } from '../../../lib/trust.js';
-import { TRANSLATIONS, getCountryName, getCountryAuthority } from '../../../lib/i18n.js';
+import { TRANSLATIONS, getCountryName } from '../../../lib/i18n.js';
 
 export function getStaticPaths() {
   const paths = [];
@@ -58,7 +58,7 @@ const selfSigned = cert.issuer === cert.subject;
       <ValidityChip validity={cert.validity} />
     </div>
     <h1>{cert.subjectDisplay}</h1>
-    <p class="detail-head__sub">{getCountryName(code, lang)} · {t.countryPublishedBy} {getCountryAuthority(code, lang)}</p>
+    <p class="detail-head__sub">{getCountryName(code, lang)} · {t.countryPublishedBy} {data.authority?.name}</p>
     <div class="detail-head__actions">
       <a class="btn btn--primary" href={pemHref(code, cert.file)} download>{t.certDownloadPem}</a>
       <a class="btn" href={`${base}/es/${code}`}>{t.certBackTo.replace('{0}', getCountryName(code, lang))}</a>
@@ -103,6 +103,11 @@ const selfSigned = cert.issuer === cert.subject;
       <dt>{t.certFieldRole}</dt>
       <dd><RoleBadge role={cert.role} /></dd>
 
+      {cert.keyAlgorithm && (<Fragment>
+      <dt>Algoritmo de clave</dt>
+      <dd class="mono">{cert.keyAlgorithm}</dd>
+      </Fragment>)}
+
       <dt>{t.certFieldValidity}</dt>
       <dd><ValidityChip validity={cert.validity} /></dd>
 
@@ -118,6 +123,16 @@ const selfSigned = cert.issuer === cert.subject;
       <dt>{t.certFieldSha256}</dt>
       <dd><CopyValue value={cert.sha256} label={t.certFieldSha256.toLowerCase()} /></dd>
 
+      {cert.crlUrls?.length > 0 && (<Fragment>
+      <dt>CRL</dt>
+      <dd>{cert.crlUrls.map((u) => <div><a href={u} rel="noopener" class="mono endpoint">{u}</a></div>)}</dd>
+      </Fragment>)}
+
+      {cert.ocspUrls?.length > 0 && (<Fragment>
+      <dt>OCSP</dt>
+      <dd>{cert.ocspUrls.map((u) => <div><a href={u} rel="noopener" class="mono endpoint">{u}</a></div>)}</dd>
+      </Fragment>)}
+
       <dt>{t.certFieldFile}</dt>
       <dd><code class="mono">{cert.file}</code></dd>
     </dl>
@@ -125,7 +140,7 @@ const selfSigned = cert.issuer === cert.subject;
 
   <section class="panel panel--muted" aria-labelledby="prov-h">
     <h2 id="prov-h">{t.certProvenanceH2}</h2>
-    <p set:html={t.certProvenanceText.replace('{0}', data.authorityUrl ? `<a href="${data.authorityUrl}" rel="noopener">${getCountryAuthority(code, lang)}</a>` : getCountryAuthority(code, lang))} />
+    <p set:html={t.certProvenanceText.replace('{0}', data.authority?.url ? `<a href="${data.authority?.url}" rel="noopener">${data.authority?.name}</a>` : data.authority?.name)} />
     <p class="panel__hint">
       {t.certProvenanceGenerated.replace('{0}', fmt(data.generatedAt))}
     </p>

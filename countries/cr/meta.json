@@ -17,6 +17,7 @@
   "relatedLinks": [
     { "label": "BCCR — Firma Digital", "url": "https://www.bccr.fi.cr/firma-digital" },
     { "label": "MICITT — DCFD (acreditación)", "url": "https://www.micitt.go.cr/servicios/firma-digital-certificada" },
+    { "label": "BCCR CentralDirecto — Validación y revocación", "url": "https://www.centraldirecto.fi.cr/spa/Bccr.Firma.InformacionPublica.CD.spa/#/" },
     { "label": "Independent verifier (Attestto)", "url": "https://verify.attestto.com" }
   ],
   "source": { "type": "manual", "note": "Root and CA certificates published by BCCR/MICITT repositories." },

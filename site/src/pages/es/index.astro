@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { loadAllCountries } from '../../lib/trust.js';
-import { TRANSLATIONS, getCountryName, getCountryAuthority } from '../../lib/i18n.js';
+import { TRANSLATIONS, getCountryName } from '../../lib/i18n.js';
 
 const countries = loadAllCountries();
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
@@ -30,7 +30,7 @@ const fmtDate = (iso) =>
             <span class="country-card__flag" aria-hidden="true">{c.flag}</span>
             <span class="country-card__body">
               <span class="country-card__name">{getCountryName(c.code, lang)}</span>
-              <span class="country-card__authority">{getCountryAuthority(c.code, lang)}</span>
+              <span class="country-card__authority">{c.authority?.name}</span>
               <span class="country-card__stats">
                 <strong>{c.count}</strong> {c.count === 1 ? t.homeCertSuffix : t.homeCertsSuffix}
                 <span class="country-card__sep" aria-hidden="true">•</span>
