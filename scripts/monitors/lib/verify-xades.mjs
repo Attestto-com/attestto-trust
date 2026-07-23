@@ -44,9 +44,11 @@ function normalizeDN(dn) {
 function certSki(cert) {
   const ext = cert.getExtension('2.5.29.14')
   if (!ext) return null
-  // strip the OCTET STRING wrapper if present, compare on the raw key id bytes
+  // DER OCTET STRING wrapper is: 04 <len> <payload>. Only unwrap a genuine
+  // envelope (second byte equals the remaining length); a bare key id whose
+  // first byte is coincidentally 0x04 must be left intact.
   const bytes = new Uint8Array(ext.value)
-  const body = bytes.length > 2 && bytes[0] === 0x04 ? bytes.slice(2) : bytes
+  const body = (bytes[0] === 0x04 && bytes[1] === bytes.length - 2) ? bytes.slice(2) : bytes
   return Buffer.from(body).toString('hex')
 }
 
@@ -61,9 +63,11 @@ export function authorizeSigner(signerCert, allowedIdentities, { allowChain = fa
       return { authorized: true, reason: null }
     }
     if (id.type === 'ski' && signerSkiHex) {
-      // normalize: strip leading DER OCTET STRING wrapper (04 <len>) if present
+      // normalize: strip DER OCTET STRING wrapper (04 <len>) only when genuine
+      // (second byte equals remaining length); bare ids whose first byte is 0x04
+      // must be left intact to avoid false-reject.
       const raw = Buffer.from(id.value.toLowerCase().replace(/\s+/g, ''), 'hex')
-      const normalized = raw.length > 2 && raw[0] === 0x04
+      const normalized = (raw[0] === 0x04 && raw[1] === raw.length - 2)
         ? raw.slice(2).toString('hex')
         : raw.toString('hex')
       if (normalized === signerSkiHex) {
@@ -76,7 +80,12 @@ export function authorizeSigner(signerCert, allowedIdentities, { allowChain = fa
   }
 
   if (allowChain) {
-    // EC-anchor case only: authorize if the signer chains to a provided cert.
+    // Chain-authorization: authorize when the signer's ISSUER DN equals the
+    // anchor cert's SUBJECT DN (name-only equality). This does NOT cryptographically
+    // verify that the anchor actually signed the signer cert — the anchor is merely
+    // a pinned trust root whose name we trust. Exact identity match (above) is the
+    // real security control; allowChain is a deliberate relaxation for the
+    // pinned-EC-anchor case where we hold the CA cert but not the leaf cert.
     for (const id of allowedIdentities || []) {
       if (id.type !== 'cert') continue
       try {
