@@ -1,5 +1,6 @@
 import 'reflect-metadata'
 import { readFileSync, writeFileSync, mkdirSync } from 'node:fs'
+import { createHash } from 'node:crypto'
 import { join, dirname } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { execFileSync } from 'node:child_process'
@@ -46,7 +47,7 @@ function writeVerificationReport(root, p, signerCert, r, certCount, timestamp) {
   mkdirSync(dir, { recursive: true })
   const subject = signerCert ? signerCert.subject : '(unknown)'
   const sha256 = signerCert
-    ? Buffer.from(signerCert.rawData).toString('hex').slice(0, 64)
+    ? createHash('sha256').update(Buffer.from(signerCert.rawData)).digest('hex')
     : '(unknown)'
   const md = [
     `# TSL Verification Report — ${p.iso2.toUpperCase()}`,
@@ -56,7 +57,7 @@ function writeVerificationReport(root, p, signerCert, r, certCount, timestamp) {
     '## Signer Certificate',
     '',
     `- **Subject:** ${subject}`,
-    `- **SHA-256 (raw DER, first 32 bytes):** ${sha256}`,
+    `- **SHA-256 (cert DER):** ${sha256}`,
     '',
     '## Promoted Certificates',
     '',
