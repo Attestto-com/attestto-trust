@@ -281,14 +281,28 @@ run rather than one giant commit. Per-country page/manifest volume is monitored
 as countries are added; if the static build becomes a bottleneck it is addressed
 separately (out of scope here).
 
-## Implementation risk — spike first
+## Implementation risk — spike PASSED (2026-07-23)
 
 XAdES verification of real EU TSLs is notoriously finicky (canonicalization,
-transform chains, the EC's specific signature profile). **Task 1 of the
-implementation plan is a feasibility spike:** verify the real live LOTL with
-`@peculiar/xadesjs` end to end and confirm it handles the EC profile. If it
-cannot, surface that immediately (evaluate `xml-crypto` or a WebCrypto-based
-path) before building the orchestrator on top.
+transform chains, the EC's specific signature profile). The de-risking spike was
+run before planning and **passed**:
+
+- Library is `xadesjs@2.6.7` (npm name is `xadesjs`, not `@peculiar/xadesjs`),
+  with `@xmldom/xmldom` for parsing and Node's `webcrypto` engine
+  (`XAdES.Application.setEngine('NodeJS', webcrypto)`), `@peculiar/x509` for the
+  cert. Added as devDependencies.
+- `SignedXml.Verify()` returned **true** on the live EU LOTL (476 KB, profile:
+  `rsa-sha512` + exclusive C14N + enveloped; signer subject `CN=EUROPEAN
+  COMMISSION`, DIGIT).
+- `Verify()` also returned **true** on the live Italian TSL (2.8 MB; signer
+  `CN=AgID, O=Agenzia per l'Italia Digitale` — Italy's actual scheme operator,
+  issued by a Ministero della Difesa CA).
+
+So the enveloped-signature verification (C14N + digests + signature value) works
+out of the box for both the LOTL and a national list; no `xml-crypto` fallback
+needed. The remaining work is the trust wiring (authorize the signer against
+LOTL-declared identities), status/freshness filtering, reconcile, and the
+export-model change — not the core crypto.
 
 ## Out of scope
 

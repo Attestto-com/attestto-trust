@@ -53,7 +53,9 @@
   },
   "devDependencies": {
     "@peculiar/x509": "^2.0.0",
+    "@xmldom/xmldom": "^0.8.13",
     "node-forge": "^1.4.0",
-    "reflect-metadata": "^0.2.2"
+    "reflect-metadata": "^0.2.2",
+    "xadesjs": "^2.6.7"
   }
 }
