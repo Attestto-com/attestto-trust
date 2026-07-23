@@ -13,9 +13,9 @@
   --color-surface-alt: #16162b;
   --color-border: #26263f;
   --color-border-strong: #3a3a5c;
-  --color-text: #e8e8f2;
-  --color-text-muted: #9494ad;
-  --color-text-subtle: #6b6b85;
+  --color-text: #ffffff;
+  --color-text-muted: #d3d3e0;
+  --color-text-subtle: #b4b4c6;
 
   /* Accent: violet (links, CTAs) — verify --violet / --violet-2 */
   --color-accent: #7b72ed;

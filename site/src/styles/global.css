@@ -124,7 +124,9 @@ code, .mono {
 }
 .mirror-banner strong { color: var(--color-text); font-weight: 650; }
 
-main { padding: var(--space-10) 0 var(--space-10); }
+/* main also carries .container, whose `padding: 0 …` would otherwise zero the
+   vertical padding on specificity — scope the vertical padding to main.container. */
+main.container { padding-top: var(--space-8); padding-bottom: var(--space-10); }
 
 .site-footer {
   border-top: 1px solid var(--color-border);
@@ -243,8 +245,8 @@ main { padding: var(--space-10) 0 var(--space-10); }
   gap: var(--space-2) var(--space-4);
   align-items: start;
 }
-.kv dt { color: var(--color-text-muted); font-weight: 600; font-size: var(--text-sm); }
-.kv dd { margin: 0; word-break: break-word; }
+.kv dt { color: var(--color-text-muted); font-weight: 500; font-size: var(--text-sm); }
+.kv dd { margin: 0; word-break: break-word; font-weight: 600; }
 .kv dd.mono { font-size: var(--text-sm); }
 
 @media (max-width: 640px) {
