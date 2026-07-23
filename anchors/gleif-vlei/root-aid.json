@@ -1,0 +1,18 @@
+{
+  "name": "GLEIF Root of Trust (vLEI)",
+  "aid": "EDP1vHcw_wc4M__Fj53-cJaBnZZASd-aMTaSyWEQ-PC2",
+  "keyStateDigest": null,
+  "witnesses": [
+    "BDkq35LUU63xnFmfhljYYRY0ymkCg7goyeCxN30tsvmS",
+    "BDwydI_FJJ-tvAtCl1tIu_VQqYTI3Q0JyHDhO1v2hZBt",
+    "BFl6k3UznzmEVuMpBOtUUiR2RO2NZkR3mKrZkNRaZedo",
+    "BGYJwPAzjyJgsipO7GY9ZsBTeoUJrdzjI2w_5N-Nl6gG",
+    "BHxz8CDS_mNxAhAxQe1qxdEIzS625HoYgEMgqjZH_g2X",
+    "BICY3-X3S3iEsKH73Q1fF_w1JrXJ41V0c4Dn9aQjOSQ-",
+    "BLmvLSt1mDShWS67aJNP4gBVBhtOc3YEu8SytqVSsyfw",
+    "BLo6wQR73-eH5v90at_Wt8Ep_0xfz05qBjM3_B1UtKbC",
+    "BM4Ef3zlUzIAIx-VC8mXziIbtj-ZltM8Aor6TZzmTldj",
+    "BNfDO63ZpGc3xiFb0-jIOUnbr_bA-ixMva5cZb3s4BHB"
+  ],
+  "capturedAt": "2026-07-23"
+}

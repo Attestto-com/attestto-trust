@@ -1,0 +1,14 @@
+{
+  "generatedAt": "2026-07-23",
+  "source": "https://www.gleif.org/en/organizational-identity/get-a-vlei-list-of-qualified-vlei-issuing-organizations",
+  "qvis": [
+    { "name": "SHECA", "lei": "83680008RNIDW9LD8Z21", "aid": null, "status": "authorized" },
+    { "name": "TOPPAN Edge Inc.", "lei": "353800460NTF5K7NU940", "aid": null, "status": "authorized" },
+    { "name": "TradeGo", "lei": "984500C2EED6A7382A87", "aid": null, "status": "authorized" },
+    { "name": "Global vLEI", "lei": "636700LQ8SMYXSBX5D74", "aid": null, "status": "authorized" },
+    { "name": "Certizen", "lei": "836800VC81GMPMG59W77", "aid": null, "status": "authorized" },
+    { "name": "FINEMA", "lei": "894500D5AV38KEBZAS18", "aid": null, "status": "authorized" },
+    { "name": "CFCA", "lei": "300300CQ1FG1K4KM7075", "aid": null, "status": "authorized" },
+    { "name": "Provenant", "lei": "984500983AD71E4FBC41", "aid": null, "status": "authorized" }
+  ]
+}
