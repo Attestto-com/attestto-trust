@@ -46,8 +46,8 @@ jobs:
         run: node scripts/refresh-manifest.mjs
       - name: Fail if manifest drifted
         run: |
-          if ! git diff --quiet current/manifest.json; then
-            echo "::error::current/manifest.json is out of date — run 'node scripts/refresh-manifest.mjs' and commit"
-            git diff current/manifest.json
+          if ! git diff --quiet -- 'countries/*/current/manifest.json' 'countries/*/current/chain.pem'; then
+            echo "::error::A generated manifest.json or chain.pem is out of date — run 'node scripts/refresh-manifest.mjs' and commit"
+            git diff -- 'countries/*/current/manifest.json' 'countries/*/current/chain.pem'
             exit 1
           fi
