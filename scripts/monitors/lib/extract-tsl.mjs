@@ -50,13 +50,17 @@ function tspOrgName(tspBlock) {
 
 /**
  * A service is "active" only if its status is a proper ETSI status URI that
- * isn't withdrawn/revoked/ceased. This covers both the EU "granted" status
- * and Peru's "undersupervision"; Peru's literal "No acredited" string isn't
- * a URI, so it fails the prefix check and is correctly treated as inactive.
+ * matches the granted-status positive allowlist (granted, accredited,
+ * undersupervision, supervisionincessation, setbynationallaw). The deny-terms
+ * backstop rejects any URI that somehow slips through with revocation wording.
+ *
+ * Peru's literal "No acredited" string isn't a URI so it fails the prefix
+ * check and is correctly treated as inactive.
  */
 function isActiveStatus(status) {
   if (!status || !status.startsWith('http://uri.etsi.org/')) return false
-  return !/withdrawn|revoked|ceased|deregistered/i.test(status)
+  if (/withdrawn|revoked|ceased|deregistered|deprecated/i.test(status)) return false
+  return /granted|accredited|undersupervision|supervisionincessation|setbynationallaw/i.test(status)
 }
 
 /**
