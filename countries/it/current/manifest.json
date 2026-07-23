@@ -1,7 +1,7 @@
 {
   "country": "IT",
-  "generatedAt": "2026-07-23T12:25:58.753Z",
-  "count": 2,
+  "generatedAt": "2026-07-23T14:38:56.130Z",
+  "count": 231,
   "certificates": [
     {
       "file": "CIE-National-Root-CA-2016.pem",
@@ -30,6 +30,3411 @@
       "keyAlgorithm": "RSA-4096",
       "crlUrls": [
         "http://ldap.cie.interno.gov.it/cierootca.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "actalis-authentication-root-ca.pem",
+      "sha256": "55926084ec963a64b96e2abe01ce0ba86a64fbfebcc7aab5afc155b37fd76066",
+      "subject": "Actalis Authentication Root CA",
+      "issuer": "Actalis Authentication Root CA",
+      "serialNumber": "570a119742c4e3cc",
+      "validFrom": "2011-09-22T11:22:02.000Z",
+      "validTo": "2030-09-22T11:22:02.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "actalis-ca-per-firma-digitale-qualificata-2.pem",
+      "sha256": "acc73559341ce71947ccee9c677042548bf1bac44eb7ba61fca84113293424d9",
+      "subject": "Actalis CA per Firma Digitale Qualificata 2",
+      "issuer": "Actalis CA per Firma Digitale Qualificata 2",
+      "serialNumber": "01",
+      "validFrom": "2013-03-06T10:56:37.000Z",
+      "validTo": "2023-03-06T10:56:37.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "ldap://ldap.actalis.it/ou%3dActalis%20CA%20per%20Firma%20Digitale%20Qualificata%202,o%3DCNIPA?certificaterevocationlist"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "actalis-ca-per-firma-digitale-qualificata.pem",
+      "sha256": "4359d9de6af2c3f490579c1ba26cad9c246e50f0d1dcdab580bb14a273a57574",
+      "subject": "Actalis CA per Firma Digitale Qualificata",
+      "issuer": "Actalis CA per Firma Digitale Qualificata",
+      "serialNumber": "01",
+      "validFrom": "2006-03-17T14:15:44.000Z",
+      "validTo": "2016-03-16T14:15:44.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "ldap://fe.csp.multicertify.com/ou%3dActalis%20CA%20per%20Firma%20Digitale%20Qualificata,o%3DCNIPA?certificaterevocationlist"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "actalis-eu-qualified-certificates-ca-g1-2d67cdf7.pem",
+      "sha256": "2d67cdf7d0c9302f6c1ef2e823df02ef0340aa87c26e918b2ade94fe905ad59c",
+      "subject": "Actalis EU Qualified Certificates CA G1",
+      "issuer": "Actalis EU Qualified Certificates CA G1",
+      "serialNumber": "4cd6406f031e430c",
+      "validFrom": "2017-04-24T13:18:38.000Z",
+      "validTo": "2037-04-19T13:18:38.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "actalis-eu-qualified-certificates-ca-g1-2d67cdf7d.pem",
+      "sha256": "2d67cdf7d0c9302f6c1ef2e823df02ef0340aa87c26e918b2ade94fe905ad59c",
+      "subject": "Actalis EU Qualified Certificates CA G1",
+      "issuer": "Actalis EU Qualified Certificates CA G1",
+      "serialNumber": "4cd6406f031e430c",
+      "validFrom": "2017-04-24T13:18:38.000Z",
+      "validTo": "2037-04-19T13:18:38.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "actalis-eu-qualified-certificates-ca-g1.pem",
+      "sha256": "2d67cdf7d0c9302f6c1ef2e823df02ef0340aa87c26e918b2ade94fe905ad59c",
+      "subject": "Actalis EU Qualified Certificates CA G1",
+      "issuer": "Actalis EU Qualified Certificates CA G1",
+      "serialNumber": "4cd6406f031e430c",
+      "validFrom": "2017-04-24T13:18:38.000Z",
+      "validTo": "2037-04-19T13:18:38.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "actalis-eu-qualified-certificates-ca-g2-e4c10a68.pem",
+      "sha256": "e4c10a68028a7cd51d158f3d98ae9cfc0c8a9ebd7718f95676f44f2b0c24d130",
+      "subject": "Actalis EU Qualified Certificates CA G2",
+      "issuer": "Actalis EU Qualified Certificates CA G2",
+      "serialNumber": "2e2985ea7550dea1",
+      "validFrom": "2017-09-22T14:15:13.000Z",
+      "validTo": "2037-09-17T14:15:13.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "actalis-eu-qualified-certificates-ca-g2-e4c10a680.pem",
+      "sha256": "e4c10a68028a7cd51d158f3d98ae9cfc0c8a9ebd7718f95676f44f2b0c24d130",
+      "subject": "Actalis EU Qualified Certificates CA G2",
+      "issuer": "Actalis EU Qualified Certificates CA G2",
+      "serialNumber": "2e2985ea7550dea1",
+      "validFrom": "2017-09-22T14:15:13.000Z",
+      "validTo": "2037-09-17T14:15:13.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "actalis-eu-qualified-certificates-ca-g2.pem",
+      "sha256": "e4c10a68028a7cd51d158f3d98ae9cfc0c8a9ebd7718f95676f44f2b0c24d130",
+      "subject": "Actalis EU Qualified Certificates CA G2",
+      "issuer": "Actalis EU Qualified Certificates CA G2",
+      "serialNumber": "2e2985ea7550dea1",
+      "validFrom": "2017-09-22T14:15:13.000Z",
+      "validTo": "2037-09-17T14:15:13.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "actalis-eu-qualified-timestamp-ca-g1.pem",
+      "sha256": "01f9d45bed35ce1889abdfc68b62419de3cfd0a0f2374ceda2058913dffd2373",
+      "subject": "Actalis EU Qualified TimeStamp CA G1",
+      "issuer": "Actalis EU Qualified TimeStamp CA G1",
+      "serialNumber": "382319d0bd5505a6",
+      "validFrom": "2017-10-18T12:59:18.000Z",
+      "validTo": "2037-10-13T12:59:18.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "actalis-firma-digitale.pem",
+      "sha256": "96976b6fd2b59117023b59afaf032017c48cdad9392baf33264e982eda084dde",
+      "subject": "Actalis - Firma Digitale",
+      "issuer": "Actalis - Firma Digitale",
+      "serialNumber": "3d9b",
+      "validFrom": "2003-09-26T09:13:28.000Z",
+      "validTo": "2014-09-30T23:59:59.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "ldap://fe.csp.multicertify.com:389/ou%3DActalis%20-%20Firma%20Digitale%2Co%3DCSP?certificaterevocationlist"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "actalis-qualified-certificates-ca-3461c217.pem",
+      "sha256": "3461c217546358c61dbef304260a99d6bcb82ee4b3d288da9c7058b14e38a001",
+      "subject": "Actalis Qualified Certificates CA",
+      "issuer": "Actalis Qualified Certificates CA",
+      "serialNumber": "60",
+      "validFrom": "2004-03-15T06:37:00.000Z",
+      "validTo": "2014-03-15T23:59:00.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://ca.actalis.it/cgi-bin/aipads/getCRL",
+        "ldap://ldap.actalis.it/cn%3DActalis%20Qualified%20Certificates%20CA%2Cou%3DCertification%20Service%20Provider%206%2Co%3DActalis%20S.p.A.%2Cc%3DIT?certificateRevocationList;binary"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "actalis-qualified-certificates-ca-4ac2f1e0.pem",
+      "sha256": "4ac2f1e0a9a5ebc187174143f1597ff17bd3c0405e3eff29a4b16e6246130196",
+      "subject": "Actalis Qualified Certificates CA",
+      "issuer": "Actalis Qualified Certificates CA",
+      "serialNumber": "3f",
+      "validFrom": "2002-03-01T08:07:00.000Z",
+      "validTo": "2012-03-01T23:59:00.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://ca.actalis.it/cgi-bin/aipads/getCRL",
+        "ldap://ldap.actalis.it/cn%3DActalis%20Qualified%20Certificates%20CA%2Cou%3DCertification%20Service%20Provider%2Co%3DActalis%20S.p.A.%2Cc%3DIT?certificateRevocationList;binary"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "actalis-qualified-certificates-ca-e3afc15b.pem",
+      "sha256": "e3afc15bd4c06b4dbd9526167bec3be854e33a0d8c2d6811841004b027a23956",
+      "subject": "Actalis Qualified Certificates CA",
+      "issuer": "Actalis Qualified Certificates CA",
+      "serialNumber": "4c",
+      "validFrom": "2002-10-22T07:43:00.000Z",
+      "validTo": "2012-10-22T23:59:00.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "ldap://ldap.actalis.it/cn%3DActalis%20Qualified%20Certificates%20CA%2Cou%3DCertification%20Service%20Provider%202%2Co%3DActalis%20S.p.A.%2Cc%3DIT?certificateRevocationList"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "actalis-qualified-certificates-ca-g1.pem",
+      "sha256": "476187a5db574587a8d5e8984e709758db605b00d07ca636cd421165854226e3",
+      "subject": "Actalis Qualified Certificates CA G1",
+      "issuer": "Actalis Qualified Certificates CA G1",
+      "serialNumber": "1faebbad26bd7e7a",
+      "validFrom": "2010-08-16T10:23:11.000Z",
+      "validTo": "2022-08-16T10:23:11.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "ldap://ldap.actalis.it/cn%3dActalis%20Qualified%20Certificates%20CA%20G1,ou%3dQualified%20Certification%20Service%20Provider,o%3dActalis%20S.p.A.%2f03358520967,c%3dIT?certificateRevocationList;binary",
+        "http://portal.actalis.it/Repository/QLFG1/getCRL"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "actalis-qualified-certificates-ca.pem",
+      "sha256": "5dc9ac33c4ca0e3ce82c07b16b96cf7b901d426727a0411c4b9db64b2fc30c95",
+      "subject": "Actalis Qualified Certificates CA",
+      "issuer": "Actalis Qualified Certificates CA",
+      "serialNumber": "0186a1",
+      "validFrom": "2003-10-29T10:02:48.000Z",
+      "validTo": "2013-10-29T10:00:42.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "ldap://ldap.actalis.it/cn%3dActalis%20Qualified%20Certificates%20CA,ou%3dQualified%20Certification%20Service%20Provider,o%3dActalis%20S.p.A.,c%3dIT?certificateRevocationList;binary"
+      ],
+      "ocspUrls": [
+        "https://onlinevalidation.actalis.it/QC"
+      ]
+    },
+    {
+      "file": "actalis-s-p-a-direzione-commerciale-firma.pem",
+      "sha256": "79d10397ee0063d6d7e11b3ebc9f8847e3683b5b325928dde39d3a47b49fac6a",
+      "subject": "Actalis S.p.A. - Direzione Commerciale Firma",
+      "issuer": "Actalis S.p.A. - Direzione Commerciale Firma",
+      "serialNumber": "01",
+      "validFrom": "2003-09-04T15:22:48.000Z",
+      "validTo": "2013-09-04T15:22:48.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "ldap://fe.csp.multicertify.com:389/ou%3DActalis%20S.p.A.%20-%20Direzione%20Commerciale%20Firma%2Co%3DActalis%20S.p.A.%20-%20Direzione%20Commerciale?certificaterevocationlist"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "actalis-tsa-1-eidas.pem",
+      "sha256": "794ce6b6ca1a88b702406d89c5d84a436f77315db88ebdd26fb05a32bff3ef26",
+      "subject": "Actalis TSA 1 EIDAS",
+      "issuer": "Actalis TSA 1 EIDAS",
+      "serialNumber": "39b948f50627b032",
+      "validFrom": "2016-07-04T11:32:58.000Z",
+      "validTo": "2036-07-04T11:32:58.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "ldap://ldap.actalis.it/cn%3dActalis%20TSA%201%20EIDAS,ou%3dQualified%20Time%20Stamping%20Authority,o%3dActalis%20S.p.A.,c%3dIT?certificateRevocationList;binary",
+        "http://portal.actalis.it/Repository/TSCAG2/getCRL"
+      ],
+      "ocspUrls": [
+        "http://portal.actalis.it/VA/TSCAG2"
+      ]
+    },
+    {
+      "file": "aria-spa-eu-qualified-certificates-ca.pem",
+      "sha256": "9d20777d90b1c1e499f92ed761201162ffd0b575e3d194116e062cb309cfd6b6",
+      "subject": "ARIA SPA EU Qualified Certificates CA",
+      "issuer": "ARIA SPA EU Qualified Certificates CA",
+      "serialNumber": "01",
+      "validFrom": "2019-06-24T13:05:51.000Z",
+      "validTo": "2024-06-23T13:05:51.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "arubapec-eu-qualified-certificates-ca-g1-cd6d570a.pem",
+      "sha256": "cd6d570a5757c99ae963349966697762bfa50b36b1461235a3252627caf97d80",
+      "subject": "ArubaPEC EU Qualified Certificates CA G1",
+      "issuer": "ArubaPEC EU Qualified Certificates CA G1",
+      "serialNumber": "4d4afd13e8ae2789",
+      "validFrom": "2017-04-26T06:28:06.000Z",
+      "validTo": "2037-04-21T06:28:06.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "arubapec-eu-qualified-certificates-ca-g1-cd6d570a5.pem",
+      "sha256": "cd6d570a5757c99ae963349966697762bfa50b36b1461235a3252627caf97d80",
+      "subject": "ArubaPEC EU Qualified Certificates CA G1",
+      "issuer": "ArubaPEC EU Qualified Certificates CA G1",
+      "serialNumber": "4d4afd13e8ae2789",
+      "validFrom": "2017-04-26T06:28:06.000Z",
+      "validTo": "2037-04-21T06:28:06.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "arubapec-eu-qualified-certificates-ca-g1.pem",
+      "sha256": "cd6d570a5757c99ae963349966697762bfa50b36b1461235a3252627caf97d80",
+      "subject": "ArubaPEC EU Qualified Certificates CA G1",
+      "issuer": "ArubaPEC EU Qualified Certificates CA G1",
+      "serialNumber": "4d4afd13e8ae2789",
+      "validFrom": "2017-04-26T06:28:06.000Z",
+      "validTo": "2037-04-21T06:28:06.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "arubapec-eu-qualified-certificates-ca-g2-3456a32f.pem",
+      "sha256": "3456a32f3e5c96275db44319b0a835e81754ee523e6f3d19cb5f39f56a53cce9",
+      "subject": "ArubaPEC EU Qualified Certificates CA G2",
+      "issuer": "ArubaPEC EU Qualified Certificates CA G2",
+      "serialNumber": "47dddcaf8d023041",
+      "validFrom": "2017-09-23T07:23:54.000Z",
+      "validTo": "2037-09-18T07:23:54.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "arubapec-eu-qualified-certificates-ca-g2-3456a32f3.pem",
+      "sha256": "3456a32f3e5c96275db44319b0a835e81754ee523e6f3d19cb5f39f56a53cce9",
+      "subject": "ArubaPEC EU Qualified Certificates CA G2",
+      "issuer": "ArubaPEC EU Qualified Certificates CA G2",
+      "serialNumber": "47dddcaf8d023041",
+      "validFrom": "2017-09-23T07:23:54.000Z",
+      "validTo": "2037-09-18T07:23:54.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "arubapec-eu-qualified-certificates-ca-g2.pem",
+      "sha256": "3456a32f3e5c96275db44319b0a835e81754ee523e6f3d19cb5f39f56a53cce9",
+      "subject": "ArubaPEC EU Qualified Certificates CA G2",
+      "issuer": "ArubaPEC EU Qualified Certificates CA G2",
+      "serialNumber": "47dddcaf8d023041",
+      "validFrom": "2017-09-23T07:23:54.000Z",
+      "validTo": "2037-09-18T07:23:54.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "arubapec-eu-qualified-timestamp-ca-g1.pem",
+      "sha256": "bc2975dbda1c6b49556596cd206aa2b4c9b2de10d4672488985210bd77bf1f36",
+      "subject": "ArubaPEC EU Qualified TimeStamp CA G1",
+      "issuer": "ArubaPEC EU Qualified TimeStamp CA G1",
+      "serialNumber": "3413e46c3d4d05ec",
+      "validFrom": "2017-10-27T12:53:42.000Z",
+      "validTo": "2037-10-22T12:53:42.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "arubapec-per-arma-dei-carabinieri-ca-1.pem",
+      "sha256": "ac931602b0cde9064a95a51dc1e24df29be6a0b4a705bceebbb3bd8b91c7532b",
+      "subject": "ArubaPEC per Arma dei Carabinieri CA 1",
+      "issuer": "ArubaPEC per Arma dei Carabinieri CA 1",
+      "serialNumber": "447a1e2f7dcb696a2a81c514372157b1",
+      "validFrom": "2009-02-27T00:00:00.000Z",
+      "validTo": "2029-02-27T23:59:59.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://onsitecrl.arubapec.trustitalia.it/ArubaPECSpAArubaPECperCertificationAuthorityCarabinieri1/LatestCRL.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.arubapec.trustitalia.it"
+      ]
+    },
+    {
+      "file": "arubapec-per-ca-di-firma-qualificata.pem",
+      "sha256": "8622f6dd2521bc878b28bee30785543292411e233a7cc63e0899175cdcfe3a2e",
+      "subject": "ArubaPEC per CA di firma qualificata",
+      "issuer": "ArubaPEC per CA di firma qualificata",
+      "serialNumber": "52e5da665923840a7d7a663bd3ba4ee7",
+      "validFrom": "2016-06-15T00:00:00.000Z",
+      "validTo": "2036-06-15T23:59:59.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://crl.arubapec.it/ArubaPECSpAArubaPECpermodATefirmaqualificata/LatestCRL.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.arubapec.it"
+      ]
+    },
+    {
+      "file": "arubapec-per-regione-basilicata-ca-1.pem",
+      "sha256": "a801f677a073b961e2eeb16856c1a797befbdd4d3c2434ac062b392c8676ec3f",
+      "subject": "ArubaPEC per Regione Basilicata CA 1",
+      "issuer": "ArubaPEC per Regione Basilicata CA 1",
+      "serialNumber": "1dbf9c46f613e34e4fe761fc45392c52",
+      "validFrom": "2013-03-21T00:00:00.000Z",
+      "validTo": "2033-03-21T23:59:59.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://crl.arubapec.it/ArubaPECSpAArubaPECperCARegioneBasilicatadiFirmaQualificata/LatestCRL.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.arubapec.it"
+      ]
+    },
+    {
+      "file": "arubapec-s-p-a-ng-ca-1.pem",
+      "sha256": "1ee9bc2eda15997f302d23a0e2f4f68569cc065cb3d7d0d6f332d0fc4eca65a0",
+      "subject": "ArubaPEC S.p.A. NG CA 1",
+      "issuer": "ArubaPEC S.p.A. NG CA 1",
+      "serialNumber": "5c2b2ef99fa80f1dc3a76ff19a0a3fba",
+      "validFrom": "2007-12-13T00:00:00.000Z",
+      "validTo": "2016-12-12T23:59:59.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://onsitecrl.arubapec.trustitalia.it/ArubaPECSpACertificationAuthority/LatestCRL.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.arubapec.trustitalia.it"
+      ]
+    },
+    {
+      "file": "arubapec-s-p-a-ng-ca-2.pem",
+      "sha256": "07afd7627785f2d777171956a11673e0257ca46398c542a0281435a3ede3422a",
+      "subject": "ArubaPEC S.p.A. NG CA 2",
+      "issuer": "ArubaPEC S.p.A. NG CA 2",
+      "serialNumber": "587891739ca64ead681a7459d5de045a",
+      "validFrom": "2008-08-05T00:00:00.000Z",
+      "validTo": "2028-08-04T23:59:59.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://onsitecrl.arubapec.trustitalia.it/ArubaPECSpACertificationAuthorityB/LatestCRL.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.arubapec.trustitalia.it"
+      ]
+    },
+    {
+      "file": "arubapec-s-p-a-ng-ca-3.pem",
+      "sha256": "df2d8ca10ef988423b07adfe0156cd43f4b02b01597ee272395639385cc1485a",
+      "subject": "ArubaPEC S.p.A. NG CA 3",
+      "issuer": "ArubaPEC S.p.A. NG CA 3",
+      "serialNumber": "6cad805e30383cc586f31fab2f6e95f7",
+      "validFrom": "2010-10-22T00:00:00.000Z",
+      "validTo": "2030-10-22T23:59:59.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://onsitecrl.arubapec.trustitalia.it/ArubaPECSpACertificationAuthorityC/LatestCRL.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.arubapec.trustitalia.it"
+      ]
+    },
+    {
+      "file": "arubapec-s-p-a-ng-tsa-1-eidas.pem",
+      "sha256": "1b4ef349b998c9b647e21f335ae79212f3f956746b0ce71ad4623cb577f89cbe",
+      "subject": "ArubaPEC S.p.A. NG TSA 1 EIDAS",
+      "issuer": "ArubaPEC S.p.A. NG TSA 1 EIDAS",
+      "serialNumber": "502c9bbb29abaab9856d19f1ff11c6e9",
+      "validFrom": "2016-07-04T00:00:00.000Z",
+      "validTo": "2036-07-04T23:59:59.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://crl.arubapec.it/ArubaPECSpAQualifiedTimeStampingAuthority/LatestCRL.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.arubapec.it"
+      ]
+    },
+    {
+      "file": "asmez-firma-digitale.pem",
+      "sha256": "693a034032f97cef40f7fb2ff5312aa93d7e361fb2b496c858e29eb779b34efc",
+      "subject": "ASMEZ firma digitale",
+      "issuer": "ASMEZ firma digitale",
+      "serialNumber": "01",
+      "validFrom": "2004-02-26T14:42:40.000Z",
+      "validTo": "2007-02-25T14:42:40.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "ldap://fe.csp.multicertify.com:389/ou%3DASMEZ%20Firma%20digitale%2Co%3DASMEZ?certificaterevocationlist"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "banca-d-italia-b29224c3.pem",
+      "sha256": "b29224c320ad97d9d1e6daa014b39f0a3577d4ae97aefe02f4dbb059d08c3640",
+      "subject": "Banca d'Italia",
+      "issuer": "Banca d'Italia",
+      "serialNumber": "47c62891",
+      "validFrom": "2014-11-24T08:43:33.000Z",
+      "validTo": "2034-11-24T09:13:33.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "ldap://ldap.firmadigitale.bancaditalia.it/cn=WinCombined1,cn=Banca%20d'Italia,ou=Servizi%20di%20certificazione,o=Banca%20d'Italia/00950501007,c=IT?certificateRevocationList",
+        "http://www.firmadigitale.bancaditalia.it/crl/crl1.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "banca-d-italia-ed7d70d0.pem",
+      "sha256": "ed7d70d017e3b5c215034327fd9a2d53bd464af7bf3de8c173acab47e7fb9ea0",
+      "subject": "Banca d'Italia",
+      "issuer": "Banca d'Italia",
+      "serialNumber": "47c2e8cb",
+      "validFrom": "2008-02-25T15:42:03.000Z",
+      "validTo": "2018-02-25T16:12:03.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "ldap://ldap.firmadigitale.bancaditalia.it/cn=Banca%20d'Italia,ou=Servizi%20di%20certificazione,o=Banca%20d'Italia/00950501007,c=IT?certificateRevocationList",
+        "http://www.firmadigitale.bancaditalia.it/crl/crl.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "banca-d-italia.pem",
+      "sha256": "ed7d70d017e3b5c215034327fd9a2d53bd464af7bf3de8c173acab47e7fb9ea0",
+      "subject": "Banca d'Italia",
+      "issuer": "Banca d'Italia",
+      "serialNumber": "47c2e8cb",
+      "validFrom": "2008-02-25T15:42:03.000Z",
+      "validTo": "2018-02-25T16:12:03.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "ldap://ldap.firmadigitale.bancaditalia.it/cn=Banca%20d'Italia,ou=Servizi%20di%20certificazione,o=Banca%20d'Italia/00950501007,c=IT?certificateRevocationList",
+        "http://www.firmadigitale.bancaditalia.it/crl/crl.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "bancaintesa-production-identrus-certification-authority.pem",
+      "sha256": "d65a47dc41e98545118b3c96fe984c82c556c649b1ca9aad2b81f978c0424919",
+      "subject": "Bancaintesa Production Identrus Certification Authority",
+      "issuer": "Bancaintesa Production Identrus Certification Authority",
+      "serialNumber": "00e1",
+      "validFrom": "2004-11-10T09:45:58.000Z",
+      "validTo": "2011-05-05T20:57:37.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "ldap://ldap.ca.bancaintesa.it/cn%3dBancaintesa%20Production%20Identrus%20Certification%20Authority,ou%3dBancaintesa%20Identrus%20Infrastructure,o%3dBancaintesa%20S.p.A.?certificateRevocationList"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "bnl-s-p-a-corporate-firma.pem",
+      "sha256": "95ecbc7cb2f4ededadde87a5b7d5913b26a1cc819dcf5bb13140554c010136b4",
+      "subject": "- BNL S.p.A. Corporate Firma",
+      "issuer": "- BNL S.p.A. Corporate Firma",
+      "serialNumber": "022dcf",
+      "validFrom": "2003-09-09T08:24:28.000Z",
+      "validTo": "2014-09-30T23:59:59.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "ldap://fe.csp.multicertify.com:389/ou%3D-%20BNL%20S.p.A.%20Corporate%20Firma%2Co%3DActalis%20S.p.A.?certificaterevocationlist"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "ca-di-firma-qualificata-per-modello-ate.pem",
+      "sha256": "556af89ce58cc0537b0c3905c7254be59054ec9829b49b823219343a38b99128",
+      "subject": "CA di Firma Qualificata per Modello ATe",
+      "issuer": "CA di Firma Qualificata per Modello ATe",
+      "serialNumber": "5bc2ad129e3e9019",
+      "validFrom": "2018-03-28T10:23:33.000Z",
+      "validTo": "2038-03-23T10:23:33.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "ca-provincia-di-brescia-firma-digitale-a-norma.pem",
+      "sha256": "1c31b3f06ca04fb4e741860eb27a7244e0d22b356d35c626c8fdba277badc07d",
+      "subject": "Ca Provincia di Brescia firma digitale a norma",
+      "issuer": "Ca Provincia di Brescia firma digitale a norma",
+      "serialNumber": "01",
+      "validFrom": "2003-12-23T13:08:34.000Z",
+      "validTo": "2013-12-23T13:08:34.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "ldap://fe.csp.multicertify.com:389/ou%3DCa%20Provincia%20di%20Brescia%20firma%20digitale%20a%20norma%2Co%3DProvincia%20di%20Brescia?certificaterevocationlist"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "ca-qualificata-bnl-erogata-da-actalis.pem",
+      "sha256": "6c67342ae8916b045c5f9a1d34f510b8bc31f90d03d3012a6704a22467df11ef",
+      "subject": "CA Qualificata BNL erogata da Actalis",
+      "issuer": "CA Qualificata BNL erogata da Actalis",
+      "serialNumber": "01",
+      "validFrom": "2011-09-27T12:33:14.000Z",
+      "validTo": "2031-09-25T12:33:14.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "ldap://ldap.actalis.it/cn=CA%20Qualificata%20BNL%20erogata%20da%20Actalis,ou=Qualified%20Certification%20Service%20Provider,o=Actalis%20S.p.A.%2F03358520967,c=IT?certificaterevocationlist"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "ca-qualificata-regione-campania-erogata-da-actalis.pem",
+      "sha256": "921fbf654232208231e982c6b6c040f0f55687f84ef5315073b00ad9fa3b154b",
+      "subject": "CA Qualificata Regione Campania erogata da Actalis",
+      "issuer": "CA Qualificata Regione Campania erogata da Actalis",
+      "serialNumber": "6e29c2cd0f3511fe",
+      "validFrom": "2012-08-22T12:25:11.000Z",
+      "validTo": "2032-08-22T12:25:11.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "ldap://ldap.actalis.it/cn%3dCA%20Qualificata%20Regione%20Campania%20erogata%20da%20Actalis,ou%3dQualified%20Certification%20Service%20Provider,o%3dActalis%20S.p.A.%2F03358520967,c%3dIT?certificaterevocationlist;binary",
+        "http://portal.actalis.it/Repository/QLFRC/getCRL"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "cedacricert-2017.pem",
+      "sha256": "f801c80b1d0995e8366d2dcd144e7c1365cf0fcd4827b892818a3640250000fe",
+      "subject": "Cedacricert 2017",
+      "issuer": "Cedacricert 2017",
+      "serialNumber": "01",
+      "validFrom": "2017-05-29T13:07:08.000Z",
+      "validTo": "2037-05-29T13:07:08.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "cedacricert-7e376504.pem",
+      "sha256": "7e376504d2df7385c6db20c1315802fab9633cf00a01016cd33a4696da5ebe3d",
+      "subject": "Cedacricert",
+      "issuer": "Cedacricert",
+      "serialNumber": "2cb8",
+      "validFrom": "2009-06-09T08:42:53.000Z",
+      "validTo": "2019-06-09T08:42:53.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "ldap://ldap.cedacricert.it/cn%3dCedacricert,o%3dCedacri%20SpA,c%3dIT?certificateRevocationList",
+        "http://www.cedacricert.it/crl/crl.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "cedacricert-853d20e0.pem",
+      "sha256": "853d20e018ee0c75368cd8561b73a3a22a465fc741612a329e915886db276a4b",
+      "subject": "Cedacricert",
+      "issuer": "Cedacricert",
+      "serialNumber": "3e06ea94",
+      "validFrom": "2002-12-23T10:52:22.000Z",
+      "validTo": "2008-12-22T10:52:22.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "ldap://ldap.cedacricert.it/CN=Cedacricert,O=Cedacrinord SpA,C=IT,DC=cacdn,DC=org?certificateRevocationList"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "cedacricert-ca1-2017.pem",
+      "sha256": "a7a787e88c3c6b76efb755f6a1abf27da6ac21136d68f694f9b23326321bda0e",
+      "subject": "Cedacricert CA1 2017",
+      "issuer": "Cedacricert CA1 2017",
+      "serialNumber": "01",
+      "validFrom": "2017-08-08T09:25:54.000Z",
+      "validTo": "2037-08-08T09:25:54.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "cedacricert-eu-2019.pem",
+      "sha256": "460e09ea06d417eac229d07bd43fb18491fb2e24a2af8681fcf5bf06ffe79a06",
+      "subject": "Cedacricert EU 2019",
+      "issuer": "Cedacricert EU 2019",
+      "serialNumber": "0203f1ad3c5ef1fc",
+      "validFrom": "2019-07-09T10:08:21.000Z",
+      "validTo": "2039-07-10T10:08:21.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "cedacricert.pem",
+      "sha256": "fbc2ad037bff8c67252f5d2fcbb51f91d87ae62a30ec29fa0f98d8cdd94eccfb",
+      "subject": "Cedacricert",
+      "issuer": "Cedacricert",
+      "serialNumber": "01",
+      "validFrom": "2004-04-21T09:56:21.000Z",
+      "validTo": "2010-04-21T09:52:38.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "ldap://ldap.cedacricert.it/cn%3dCedacricert,o%3dCedacri%20SpA,c%3dIT?certificateRevocationList"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "certicomm-firma-qualificata.pem",
+      "sha256": "9af054875d1c15bbf6c9cbb7f22a6f4d9a0e983d3ee6bf3ab9488919e57ccbed",
+      "subject": "Certicomm Firma Qualificata",
+      "issuer": "Certicomm Firma Qualificata",
+      "serialNumber": "01",
+      "validFrom": "2005-09-16T16:02:35.000Z",
+      "validTo": "2017-09-16T16:01:03.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "ldap://ldap.certicomm.it/cn%3dCerticomm%20Firma%20Qualificata,ou%3dFirma%20Qualificata,o%3dCerticomm,c%3dIT?certificateRevocationList"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "certification-authority-icbpi.pem",
+      "sha256": "ed4840ea4b516073b256e4d049da3cae358c4daabbf9269ef146fb4bb037bcdb",
+      "subject": "Certification Authority ICBPI",
+      "issuer": "Certification Authority ICBPI",
+      "serialNumber": "7b1295bc731e9990",
+      "validFrom": "2012-12-21T09:29:03.000Z",
+      "validTo": "2037-12-21T09:29:03.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "ldap://ldap.icbpi.it/cn%3dCertification%20Authority%20ICBPI,ou%3dQualified%20Certification%20Service%20Provider,o%3dICBPI%20S.p.A.%2f13212880150,c%3dIT?certificateRevocationList;binary",
+        "http://ca.icbpi.it/Repository/QLF/getCRL"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "certificatore-saritel.pem",
+      "sha256": "c7789d712dc90f74ad958837ab52ad8da57856470b90b38731b3c49a7c2d4e99",
+      "subject": "Certificatore Saritel",
+      "issuer": "Certificatore Saritel",
+      "serialNumber": "07",
+      "validFrom": "2001-03-26T19:20:00.000Z",
+      "validTo": "2006-03-26T23:59:00.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-1024",
+      "crlUrls": [
+        "https://www.firmasicura.it/Certificatore/CRL"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "comune-di-livorno-firma-digitale.pem",
+      "sha256": "0126a4fbf0c31df9d66367693669a9782ecc475eb25ccb46b207d8b01a0e8dbe",
+      "subject": "Comune di Livorno Firma digitale",
+      "issuer": "Comune di Livorno Firma digitale",
+      "serialNumber": "01",
+      "validFrom": "2004-04-06T15:05:18.000Z",
+      "validTo": "2014-04-07T15:05:18.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "ldap://fe.csp.multicertify.com:389/ou%3DComune%20di%20Livorno%20Firma%20digitale%2Co%3DComune%20di%20Livorno?certificaterevocationlist"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "consiglio-nazionale-del-notariato-certification-authority.pem",
+      "sha256": "60e4aaf517c94ae63db051f2f7d8f23b2087a45191a5da77a59e205b892ff886",
+      "subject": "Consiglio Nazionale del Notariato Certification Authority",
+      "issuer": "Consiglio Nazionale del Notariato Certification Authority",
+      "serialNumber": "01a8",
+      "validFrom": "2008-07-15T13:19:48.000Z",
+      "validTo": "2020-07-15T13:19:48.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "ldap://ldap.ca.notariato.org/cn%3dConsiglio%20Nazionale%20del%20Notariato%20Certification%20Authority,ou%3dServizio%20Firma%20Digitale,o%3dConsiglio%20Nazionale%20del%20Notariato,c%3dIT?certificateRevocationList"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "consiglio-nazionale-del-notariato-firma-digitale.pem",
+      "sha256": "48e62dca98b5c5495bc130046b58c258cab4cc879659559235b6225c4ec51f6b",
+      "subject": "Consiglio Nazionale del Notariato-Firma Digitale",
+      "issuer": "Consiglio Nazionale del Notariato-Firma Digitale",
+      "serialNumber": "1716",
+      "validFrom": "2002-09-30T10:26:19.000Z",
+      "validTo": "2008-09-30T10:26:19.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "ldap://ldap.ca.notariato.it:389/ou=Consiglio Nazionale del Notariato-Firma Digitale,o=Consiglio Nazionale del Notariato"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "consiglio-nazionale-del-notariato-qualified-certification-authority-2019-475f5f5c.pem",
+      "sha256": "475f5f5cf6d883f923812acff09fa4d148be60c86fb1f06fe123e2983113e698",
+      "subject": "Consiglio Nazionale del Notariato Qualified Certification Authority 2019",
+      "issuer": "Consiglio Nazionale del Notariato Qualified Certification Authority 2019",
+      "serialNumber": "01",
+      "validFrom": "2019-10-22T08:12:35.000Z",
+      "validTo": "2039-10-22T08:12:35.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "ldap://ldap.ca.notariato.org/cn%3dConsiglio%20Nazionale%20del%20Notariato%20Certification%20Authority%202019,ou%3dServizio%20Firma%20Digitale,o%3dConsiglio%20Nazionale%20del%20Notariato,c%3dIT?certificateRevocationList"
+      ],
+      "ocspUrls": [
+        "https://ocsp.ca.notariato.org"
+      ]
+    },
+    {
+      "file": "consiglio-nazionale-del-notariato-qualified-certification-authority-2019.pem",
+      "sha256": "475f5f5cf6d883f923812acff09fa4d148be60c86fb1f06fe123e2983113e698",
+      "subject": "Consiglio Nazionale del Notariato Qualified Certification Authority 2019",
+      "issuer": "Consiglio Nazionale del Notariato Qualified Certification Authority 2019",
+      "serialNumber": "01",
+      "validFrom": "2019-10-22T08:12:35.000Z",
+      "validTo": "2039-10-22T08:12:35.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "ldap://ldap.ca.notariato.org/cn%3dConsiglio%20Nazionale%20del%20Notariato%20Certification%20Authority%202019,ou%3dServizio%20Firma%20Digitale,o%3dConsiglio%20Nazionale%20del%20Notariato,c%3dIT?certificateRevocationList"
+      ],
+      "ocspUrls": [
+        "https://ocsp.ca.notariato.org"
+      ]
+    },
+    {
+      "file": "consiglio-nazionale-del-notariato-qualified-certification-authority-2024-4ffa2f95.pem",
+      "sha256": "4ffa2f9564281e4037561c2d88c57cca9e5db2cfdf4d0d1d4ea956e78596aecb",
+      "subject": "Consiglio Nazionale del Notariato Qualified Certification Authority 2024",
+      "issuer": "Consiglio Nazionale del Notariato Qualified Certification Authority 2024",
+      "serialNumber": "284145153df62bc60993cc1db1ce4c76334a8e9e",
+      "validFrom": "2024-11-28T14:17:41.000Z",
+      "validTo": "2044-11-23T14:17:40.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "consiglio-nazionale-del-notariato-qualified-certification-authority-2024.pem",
+      "sha256": "4ffa2f9564281e4037561c2d88c57cca9e5db2cfdf4d0d1d4ea956e78596aecb",
+      "subject": "Consiglio Nazionale del Notariato Qualified Certification Authority 2024",
+      "issuer": "Consiglio Nazionale del Notariato Qualified Certification Authority 2024",
+      "serialNumber": "284145153df62bc60993cc1db1ce4c76334a8e9e",
+      "validFrom": "2024-11-28T14:17:41.000Z",
+      "validTo": "2044-11-23T14:17:40.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "consiglio-nazionale-del-notariato-qualified-certification-authority.pem",
+      "sha256": "3332ec404f83c0cbc4037f1863b52851eccb315486d6b4187be9c5e16f7d7c95",
+      "subject": "Consiglio Nazionale del Notariato Qualified Certification Authority",
+      "issuer": "Consiglio Nazionale del Notariato Qualified Certification Authority",
+      "serialNumber": "01",
+      "validFrom": "2017-04-06T09:58:02.000Z",
+      "validTo": "2037-04-06T09:58:02.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "ldap://ldap.ca.notariato.org/cn%3dConsiglio%20Nazionale%20del%20Notariato%20Qualified%20Certification%20Authority,ou%3dServizio%20Firma%20Digitale,o%3dConsiglio%20Nazionale%20Del%20Notariato,c%3dIT?certificateRevocationList"
+      ],
+      "ocspUrls": [
+        "https://ocsp.ca.notariato.org"
+      ]
+    },
+    {
+      "file": "consiglio-nazionale-del-notariato-servizio-firma-digitale.pem",
+      "sha256": "a9c896180f41d100b3e5be1ada270722b759870c96f1c88ee19c5ee4289104ac",
+      "subject": "Consiglio Nazionale del Notariato - Servizio Firma Digitale",
+      "issuer": "Consiglio Nazionale del Notariato - Servizio Firma Digitale",
+      "serialNumber": "01",
+      "validFrom": "2005-06-24T08:53:18.000Z",
+      "validTo": "2015-06-24T08:53:18.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "ldap://ldap.ca.notariato.it/ou%3DConsiglio%20Nazionale20del%20Notariato%20-%20Servizio%20Firma%20Digitale%2Co%3DConsiglio%20Nazionale%20del%20Notariato?certificaterevocationlist"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "consiglio-nazionale-del-notariato-time-stamping-authority-ca-qualificata-2019.pem",
+      "sha256": "5e45d961e521d72cc6936f7324721d8b566d23b7ebed4ddb6ac1d1b9c059c35b",
+      "subject": "Consiglio Nazionale del Notariato Time Stamping Authority CA Qualificata 2019",
+      "issuer": "Consiglio Nazionale del Notariato Time Stamping Authority CA Qualificata 2019",
+      "serialNumber": "01",
+      "validFrom": "2019-10-22T14:50:26.000Z",
+      "validTo": "2049-10-22T14:50:26.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "ldap://ldap.ca.notariato.org/cn%3dConsiglio%20Nazionale%20del%20Notariato%20Time%20Stamping%20Authority%20CA%20Qualificata%202019,ou%3dServizio%20Marcatura%20Temporale,o%3dConsiglio%20Nazionale%20del%20Notariato,c%3dIT?certificateRevocationList"
+      ],
+      "ocspUrls": [
+        "https://ocsp.ca.notariato.org"
+      ]
+    },
+    {
+      "file": "consiglio-nazionale-del-notariato-time-stamping-authority-ca-qualificata-2024.pem",
+      "sha256": "5f2f08f9269e5ed299e3d8a2aac10863ce0476fa2b147c95ee23b36d0d39a355",
+      "subject": "Consiglio Nazionale del Notariato Time Stamping Authority CA Qualificata 2024",
+      "issuer": "Consiglio Nazionale del Notariato Time Stamping Authority CA Qualificata 2024",
+      "serialNumber": "33a0b6d07e30bbfd6845b49d09bfeec55f284c60",
+      "validFrom": "2024-11-28T14:30:29.000Z",
+      "validTo": "2044-11-23T14:30:28.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "consiglio-nazionale-del-notariato-time-stamping-authority-ca-qualificata.pem",
+      "sha256": "09ff975e77a2bafd4c92dca6839d490a91ede197ae2a4603604b61bb822aa56f",
+      "subject": "Consiglio Nazionale del Notariato Time Stamping Authority CA Qualificata",
+      "issuer": "Consiglio Nazionale del Notariato Time Stamping Authority CA Qualificata",
+      "serialNumber": "01",
+      "validFrom": "2016-06-20T14:46:16.000Z",
+      "validTo": "2046-06-20T14:46:16.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "ldap://ldap.ca.notariato.org/cn%3dConsiglio%20Nazionale%20del%20Notariato%20Time%20Stamping%20Authority%20CA%20Qualificata,ou%3dServizio%20Marcatura%20Temporale,o%3dConsiglio%20Nazionale%20del%20Notariato,c%3dIT?certificateRevocationList"
+      ],
+      "ocspUrls": [
+        "https://ocsp.ca.notariato.org"
+      ]
+    },
+    {
+      "file": "firma-digit-aipa-cons-portale-san-ped-opbg.pem",
+      "sha256": "56f9d399aef84a484041fdcf673c27be979badc0c5b00ab8bea5fb55d4a6c2d5",
+      "subject": "- Firma Digit. AIPA Cons. Portale San. Ped. OPBG",
+      "issuer": "- Firma Digit. AIPA Cons. Portale San. Ped. OPBG",
+      "serialNumber": "01",
+      "validFrom": "2003-09-09T10:18:49.000Z",
+      "validTo": "2013-09-09T10:18:49.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "ldap://fe.csp.multicertify.com:389/ou%3D-%20Firma%20Digit.%20AIPA%20Cons.%20Portale%20San.%20Ped.%20OPBG%2Co%3DConsorzio%20Portale%20Sanitario%20Pediatrico%20-%20OPBG?certificaterevocationlist"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "firma-digitale-aipa-ascoli-piceno.pem",
+      "sha256": "57dfcf332e64e6db58017cedb326fa413b1c9312b19c84365f9f9faf0418aff1",
+      "subject": "- Firma Digitale AIPA - Ascoli Piceno",
+      "issuer": "- Firma Digitale AIPA - Ascoli Piceno",
+      "serialNumber": "01",
+      "validFrom": "2003-09-08T09:24:27.000Z",
+      "validTo": "2013-09-08T09:24:27.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "ldap://fe.csp.multicertify.com:389/ou%3D-%20Firma%20Digitale%20AIPA%20-%20Ascoli%20Piceno%2Co%3DAmministrazione%20Provinciale%20Ascoli%20Piceno?certificaterevocationlist"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "firma-digitale-aipa-provincia-di-firenze.pem",
+      "sha256": "28442815c88ce2ab445119e77b3d95e348b144a052812a06481e85afe3a33670",
+      "subject": "- Firma Digitale AIPA - Provincia di Firenze",
+      "issuer": "- Firma Digitale AIPA - Provincia di Firenze",
+      "serialNumber": "01",
+      "validFrom": "2003-09-05T08:15:51.000Z",
+      "validTo": "2013-09-05T08:15:51.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "ldap://fe.csp.multicertify.com:389/ou%3D-%20Firma%20Digitale%20AIPA%20-%20Provincia%20di%20Firenze%2Co%3DProvincia%20di%20Firenze?certificaterevocationlist"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "firma-digitale-banca-agrileasing.pem",
+      "sha256": "4105b567891958041544a5685a5fa54bdc5170b07758144aa0af1ee47d6451aa",
+      "subject": "- Firma Digitale Banca Agrileasing",
+      "issuer": "- Firma Digitale Banca Agrileasing",
+      "serialNumber": "01",
+      "validFrom": "2003-09-05T10:06:20.000Z",
+      "validTo": "2013-09-05T10:06:20.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "ldap://fe.csp.multicertify.com:389/ou%3D-%20Firma%20Digitale%20Banca%20Agrileasing%2Co%3DBanca%20Agrileasing%20S.p.A.?certificaterevocationlist"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "firma-digitale-comune-di-bologna.pem",
+      "sha256": "6159b01abdb4f26b5d18debba99fee80693a7bee96f0e3de0da4148b17d00b44",
+      "subject": "- Firma Digitale Comune di Bologna",
+      "issuer": "- Firma Digitale Comune di Bologna",
+      "serialNumber": "01",
+      "validFrom": "2003-09-09T12:42:41.000Z",
+      "validTo": "2013-09-09T12:42:41.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "ldap://fe.csp.multicertify.com:389/ou%3D-%20Firma%20Digitale%20Comune%20di%20Bologna%2Co%3DComune%20di%20Bologna?certificaterevocationlist"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "firma-digitale-comune-di-firenze.pem",
+      "sha256": "e51bd07208c4b7d79f66d0b9e7117fc6fc7785f51243d62bf6a1449ff8c46965",
+      "subject": "- Firma Digitale-Comune di Firenze",
+      "issuer": "- Firma Digitale-Comune di Firenze",
+      "serialNumber": "04f3",
+      "validFrom": "2003-09-05T10:16:20.000Z",
+      "validTo": "2014-09-30T23:59:59.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "ldap://fe.csp.multicertify.com:389/ou%3D-%20Firma%20Digitale-Comune%20di%20Firenze%2Co%3DComune%20di%20Firenze?certificaterevocationlist"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "firma-digitale-intersiel-s-p-a.pem",
+      "sha256": "a45401e3199760fd0e1684883571036a5d6df5dd1a3c491a934f27b51b495afe",
+      "subject": "- Firma Digitale Intersiel S.p.A.",
+      "issuer": "- Firma Digitale Intersiel S.p.A.",
+      "serialNumber": "01",
+      "validFrom": "2003-09-05T08:41:17.000Z",
+      "validTo": "2013-09-05T08:41:17.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "ldap://fe.csp.multicertify.com:389/ou%3D-%20Firma%20Digitale%20Intersiel%20S.p.A.%2Co%3DIntersiel%20S.p.A.?certificaterevocationlist"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "firma-digitale-molise-dati.pem",
+      "sha256": "3a15ecb2abeff1b587f08f36d98fcf38f939be073b78e207b9483c367b2afecf",
+      "subject": "- Firma digitale - Molise Dati",
+      "issuer": "- Firma digitale - Molise Dati",
+      "serialNumber": "01",
+      "validFrom": "2003-09-08T10:15:41.000Z",
+      "validTo": "2013-09-08T10:15:41.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "ldap://fe.csp.multicertify.com:389/ou%3D-%20Firma%20digitale%20-%20Molise%20Dati%2Co%3DMolise%20Dati%20S.p.A.?certificaterevocationlist"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "firma-digitale-provincia-di-campobasso.pem",
+      "sha256": "0998ab28897d7e6c4867728d404ee935ea25d0e4aff72041c18aa38b7864e6e4",
+      "subject": "- Firma Digitale Provincia di Campobasso",
+      "issuer": "- Firma Digitale Provincia di Campobasso",
+      "serialNumber": "01",
+      "validFrom": "2003-09-05T09:55:26.000Z",
+      "validTo": "2013-09-05T09:55:26.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "ldap://fe.csp.multicertify.com:389/ou%3D-%20Firma%20Digitale%20Provincia%20di%20Campobasso%2Co%3DProvincia%20di%20Campobasso?certificaterevocationlist"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "firma-digitale-provincia-di-varese.pem",
+      "sha256": "2367590cd16220c235a5264352b2fac77e14085a810461e95df788c77c25d193",
+      "subject": "- Firma digitale Provincia di Varese",
+      "issuer": "- Firma digitale Provincia di Varese",
+      "serialNumber": "01",
+      "validFrom": "2003-09-05T10:26:05.000Z",
+      "validTo": "2013-09-05T10:26:05.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "ldap://fe.csp.multicertify.com:389/ou%3D-%20Firma%20digitale%20Provincia%20di%20Varese%2Co%3DProvincia%20di%20Varese?certificaterevocationlist"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "firma-digitale-regione-campania.pem",
+      "sha256": "67deb9c22fc4acfc544434fb2448869c9e1764e6e1e67be6a97b6ee5faf3d71f",
+      "subject": "- Firma Digitale Regione Campania",
+      "issuer": "- Firma Digitale Regione Campania",
+      "serialNumber": "01",
+      "validFrom": "2003-09-08T09:36:34.000Z",
+      "validTo": "2013-09-08T09:36:34.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "ldap://fe.csp.multicertify.com:389/ou%3D-%20Firma%20Digitale%20Regione%20Campania%2Co%3DRegione%20Campania?certificaterevocationlist"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "firma-digitale-regione-liguria.pem",
+      "sha256": "50d7259757f88619fc00933750512a78bc275ff375dd6910c65e6fbdd95c8d88",
+      "subject": "- Firma Digitale Regione Liguria",
+      "issuer": "- Firma Digitale Regione Liguria",
+      "serialNumber": "01",
+      "validFrom": "2003-09-05T10:34:48.000Z",
+      "validTo": "2013-09-05T10:34:48.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "ldap://fe.csp.multicertify.com:389/ou%3D-%20Firma%20Digitale%20Regione%20Liguria%2Co%3DRegione%20Liguria?certificaterevocationlist"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "firma-digitale-regione-marche.pem",
+      "sha256": "b1b042be4d8d345c9303e0eef5296200b1b45366bd6702f4eb6e765994275435",
+      "subject": "Firma digitale Regione Marche",
+      "issuer": "Firma digitale Regione Marche",
+      "serialNumber": "01",
+      "validFrom": "2004-01-14T14:07:05.000Z",
+      "validTo": "2014-01-14T14:07:05.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "ldap://fe.csp.multicertify.com:389/ou%3DFirma%20digitale%20Regione%20Marche%2Co%3DRegione%20Marche?certificaterevocationlist"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "firma-digitale-rtrt.pem",
+      "sha256": "8bc40a21ab7e3a3ffbbdbb826bf347aa3fcb4c7087022268bd09e280c7fc8ed2",
+      "subject": "- Firma Digitale RTRT",
+      "issuer": "- Firma Digitale RTRT",
+      "serialNumber": "01",
+      "validFrom": "2003-09-09T13:34:00.000Z",
+      "validTo": "2013-09-09T13:34:00.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "ldap://fe.csp.multicertify.com:389/ou%3D-%20Firma%20Digitale%20RTRT%2Co%3DRete%20Telematica%20Regionale%20Toscana?certificaterevocationlist"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "firma-digitale-telcal.pem",
+      "sha256": "7581229e2a546ce21a1b56e95e297bc7cbab69b4c7c17254f78ecb4855dbb3b1",
+      "subject": "- Firma Digitale TELCAL",
+      "issuer": "- Firma Digitale TELCAL",
+      "serialNumber": "01",
+      "validFrom": "2003-09-05T09:03:50.000Z",
+      "validTo": "2013-09-05T09:03:50.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "ldap://fe.csp.multicertify.com:389/ou%3D-%20Firma%20Digitale%20TELCAL%2Co%3DIntersiel%20S.p.A.?certificaterevocationlist"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "i-t-telecom-ca.pem",
+      "sha256": "a61399484896d85dfe6c4ceaa26b36ff12d9508d457446ce762d7dbdb78d73c1",
+      "subject": "I.T. Telecom CA",
+      "issuer": "I.T. Telecom CA",
+      "serialNumber": "24",
+      "validFrom": "2003-01-17T12:58:00.000Z",
+      "validTo": "2008-01-17T23:59:00.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://www.firmasicura.it/Certificatore/CRL2"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "i-t-telecom-firma-qualificata-ca.pem",
+      "sha256": "a55a6e1792c06a8314ebc5d63fc63eb5469b92945520e8db55c1c24705ff2a38",
+      "subject": "I.T. Telecom Firma Qualificata CA",
+      "issuer": "I.T. Telecom Firma Qualificata CA",
+      "serialNumber": "01",
+      "validFrom": "2008-12-02T15:14:55.000Z",
+      "validTo": "2020-12-02T15:14:55.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://ca.ittelecom.it/ITTelecomCA/CRL"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "i-t-telecom-firmasicura-ca-ec40f03b.pem",
+      "sha256": "ec40f03b142b432384a67bd36132593ca8b163e00918a612f3a6fcddcfb29ebc",
+      "subject": "I.T. Telecom FirmaSicura CA",
+      "issuer": "I.T. Telecom FirmaSicura CA",
+      "serialNumber": "01",
+      "validFrom": "2003-09-09T14:17:47.000Z",
+      "validTo": "2013-09-09T14:15:46.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "https://www.firmasicura.it/Certificatore/CRL3"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "i-t-telecom-firmasicura-ca.pem",
+      "sha256": "8845e1f2663dd61c4573bdab76403c2131ae21ec09aaa3e073f4b303fe903e3a",
+      "subject": "I.T. Telecom FirmaSicura CA",
+      "issuer": "I.T. Telecom FirmaSicura CA",
+      "serialNumber": "01",
+      "validFrom": "2004-12-14T16:44:57.000Z",
+      "validTo": "2014-12-14T16:43:07.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://crl.firmasicura.it/Certificatore/CRL"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "i-t-telecom-per-golem-software-s-r-l-0f869527.pem",
+      "sha256": "0f869527a77df1175e21d2e468efd63239f0ad3a4b581090a506e8f649919272",
+      "subject": "I.T. Telecom per GOLEM Software s.r.l.",
+      "issuer": "I.T. Telecom per GOLEM Software s.r.l.",
+      "serialNumber": "01",
+      "validFrom": "2003-09-09T13:14:22.000Z",
+      "validTo": "2013-09-09T13:13:22.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "https://www.firmasicura.it/Golem/CRL"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "i-t-telecom-per-golem-software-s-r-l.pem",
+      "sha256": "0ab867bfc68d88ebf1284f4da7e34875d460220567a794e54f5db6b0323ec4c2",
+      "subject": "I.T. Telecom per GOLEM Software s.r.l.",
+      "issuer": "I.T. Telecom per GOLEM Software s.r.l.",
+      "serialNumber": "01",
+      "validFrom": "2004-12-14T16:59:40.000Z",
+      "validTo": "2014-12-14T16:58:50.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://crl.firmasicura.it/Golem/CRL"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "i-t-telecom-per-il-ministero-dell-interno-ca-1.pem",
+      "sha256": "c6622906a2985f0c28b71d40127d60916509b71c3ecbda82e6db2446df357e22",
+      "subject": "I.T. Telecom per il Ministero dell'Interno CA 1",
+      "issuer": "I.T. Telecom per il Ministero dell'Interno CA 1",
+      "serialNumber": "01",
+      "validFrom": "2012-04-17T16:23:37.000Z",
+      "validTo": "2032-04-17T16:23:37.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://ca.ittelecom.it/MDICA1/CRL"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "i-t-telecom-per-il-ministero-dell-interno-ca-eb9f7cea.pem",
+      "sha256": "eb9f7ceaf35d9daf0b8fb16dc7fb7c2c2ba49481075ce7eff27e464c62093511",
+      "subject": "I.T. Telecom per il Ministero dell'Interno CA",
+      "issuer": "I.T. Telecom per il Ministero dell'Interno CA",
+      "serialNumber": "01",
+      "validFrom": "2003-09-09T14:48:25.000Z",
+      "validTo": "2013-09-09T14:46:17.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "https://www.firmasicura.it/MDI/CRL"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "i-t-telecom-per-il-ministero-dell-interno-ca.pem",
+      "sha256": "aa524a7024c36ee1dd82d47abe02860cdfebb3d6149b389cdd79d19f5401703a",
+      "subject": "I.T. Telecom per il Ministero dell'Interno CA",
+      "issuer": "I.T. Telecom per il Ministero dell'Interno CA",
+      "serialNumber": "01",
+      "validFrom": "2004-12-14T17:06:34.000Z",
+      "validTo": "2014-12-14T17:05:40.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://crl.firmasicura.it/MDI/CRL"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "icbpi-eu-qualified-certificates-ca.pem",
+      "sha256": "5da70f12613e8f76f9ddcd67c05d78999a38c62441ec1088de0bba92f4f3a694",
+      "subject": "ICBPI EU Qualified Certificates CA",
+      "issuer": "ICBPI EU Qualified Certificates CA",
+      "serialNumber": "5d84e3a7bb24e95a",
+      "validFrom": "2017-05-29T13:49:28.000Z",
+      "validTo": "2037-05-24T13:49:28.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "in-te-s-a-ca-certification-authority-16820bb0.pem",
+      "sha256": "16820bb0b35c4525acb9524cdcbce1918a25cd65102bc02a4f15a4ecd677809a",
+      "subject": "IN.TE.S.A. CA - Certification Authority",
+      "issuer": "IN.TE.S.A. CA - Certification Authority",
+      "serialNumber": "277d09de552f8807",
+      "validFrom": "2015-01-09T12:48:32.000Z",
+      "validTo": "2030-01-09T12:48:32.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://e-trustcom.intesa.it/CRL/INTESA_eCA.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "in-te-s-a-ca-certification-authority-16820bb0b.pem",
+      "sha256": "16820bb0b35c4525acb9524cdcbce1918a25cd65102bc02a4f15a4ecd677809a",
+      "subject": "IN.TE.S.A. CA - Certification Authority",
+      "issuer": "IN.TE.S.A. CA - Certification Authority",
+      "serialNumber": "277d09de552f8807",
+      "validFrom": "2015-01-09T12:48:32.000Z",
+      "validTo": "2030-01-09T12:48:32.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://e-trustcom.intesa.it/CRL/INTESA_eCA.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "in-te-s-a-ca-certification-authority.pem",
+      "sha256": "16820bb0b35c4525acb9524cdcbce1918a25cd65102bc02a4f15a4ecd677809a",
+      "subject": "IN.TE.S.A. CA - Certification Authority",
+      "issuer": "IN.TE.S.A. CA - Certification Authority",
+      "serialNumber": "277d09de552f8807",
+      "validFrom": "2015-01-09T12:48:32.000Z",
+      "validTo": "2030-01-09T12:48:32.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://e-trustcom.intesa.it/CRL/INTESA_eCA.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "in-te-s-a-certification-authority-f9bdfd2b.pem",
+      "sha256": "f9bdfd2b1f311ee21f78c8adcc37975e77e4d88a1fe4ef588ae835668f1ab00b",
+      "subject": "IN.TE.S.A. Certification Authority",
+      "issuer": "IN.TE.S.A. Certification Authority",
+      "serialNumber": "4c393ad0",
+      "validFrom": "2020-06-16T13:16:05.000Z",
+      "validTo": "2035-06-16T13:46:05.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://e-trustcom.intesa.it/CRL/INTESA_CA1.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "in-te-s-a-certification-authority-ffaeceb7.pem",
+      "sha256": "ffaeceb739e13b3fca24a635331b8cb8901fdf4d853ef08be422476bf39eeac5",
+      "subject": "IN.TE.S.A. Certification Authority",
+      "issuer": "IN.TE.S.A. Certification Authority",
+      "serialNumber": "4bb1eb5b",
+      "validFrom": "2010-03-30T11:45:24.000Z",
+      "validTo": "2025-03-30T12:15:24.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://e-trustcom.intesa.it/CRL/INTESA_CA.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "in-te-s-a-certification-authority.pem",
+      "sha256": "9bcf0db14d58aab0097a1974c188248adf446bf8952c76d60e965872a98d5aca",
+      "subject": "In.Te.S.A. - Certification Authority",
+      "issuer": "In.Te.S.A. - Certification Authority",
+      "serialNumber": "3cd10113",
+      "validFrom": "2002-05-02T09:04:35.000Z",
+      "validTo": "2012-04-29T08:04:35.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "https://e-trustcom.intesa.it/CRL/INTESA.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "in-te-s-a-qualified-tsa.pem",
+      "sha256": "78e7c70d2fad2c3e3f0d45b35e4b8592faf91be475ed842abe4caa37b72c0ee2",
+      "subject": "IN.TE.S.A. QUALIFIED TSA",
+      "issuer": "IN.TE.S.A. QUALIFIED TSA",
+      "serialNumber": "4a4c0a7c22019861",
+      "validFrom": "2017-01-13T12:55:45.000Z",
+      "validTo": "2037-01-13T12:55:45.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://e-trustcom.intesa.it/CRL/INTESA_QTSA.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "infocamere-firma-digitale-2.pem",
+      "sha256": "645282bb50f826ab03da159954862dc8ab28025236673ab435c90bc07f4a6a76",
+      "subject": "InfoCamere Firma Digitale 2",
+      "issuer": "InfoCamere Firma Digitale 2",
+      "serialNumber": "27",
+      "validFrom": "2003-05-29T16:52:00.000Z",
+      "validTo": "2009-05-29T23:59:00.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "ldap://ldap.infocamere.it/cn%3DInfoCamere%20Firma%20Digitale%202%2Cou%3DCertificati%20di%20Firma%2Co%3DInfoCamere%20SCpA%2Cc%3DIT?certificaterevocationlist"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "infocamere-firma-digitale.pem",
+      "sha256": "845c0bb5384f873972a62bea7b5123c68ee9fce3a3d572a8c8e68603dbd0a644",
+      "subject": "InfoCamere Firma Digitale",
+      "issuer": "InfoCamere Firma Digitale",
+      "serialNumber": "0c",
+      "validFrom": "2000-07-07T18:24:00.000Z",
+      "validTo": "2006-07-07T23:59:00.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "ldap://ldap.infocamere.it/cn%3DInfoCamere%20Firma%20Digitale%2Cou%3DCertificati%20di%20Firma%2Co%3DInfoCamere%20SCpA%2Cc%3DIT?certificaterevocationlist"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "infocamere-firma-qualificata.pem",
+      "sha256": "5e8517c2b2abb6be1bb3d3924a7ef2b2ce8d7c4dd6bbb19861ed7273c9a51324",
+      "subject": "InfoCamere Firma Qualificata",
+      "issuer": "InfoCamere Firma Qualificata",
+      "serialNumber": "01",
+      "validFrom": "2004-03-24T15:48:50.000Z",
+      "validTo": "2016-03-24T15:47:52.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "ldap://ldap2.infocamere.it/cn%3dInfoCamere%20Firma%20Qualificata,ou%3dCertificatore%20Accreditato%20del%20Sistema%20Camerale,o%3dInfoCamere%20SCpA,c%3dIT?certificateRevocationList"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "infocamere-qualified-electronic-signature-ca-75e91d5f.pem",
+      "sha256": "75e91d5f080c6e4b1a01fef7ef94168b4beb7e9017eaedec8371cdc4a72f9820",
+      "subject": "InfoCamere Qualified Electronic Signature CA",
+      "issuer": "InfoCamere Qualified Electronic Signature CA",
+      "serialNumber": "01",
+      "validFrom": "2019-12-04T09:49:37.000Z",
+      "validTo": "2035-12-04T10:49:37.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.ca.infocamere.it/ca/qc/ARL.crl",
+        "ldap://ldap.ca.infocamere.it/cn%3DInfoCamere%20Qualified%20Electronic%20Signature%20CA,ou%3DQualified%20Trust%20Service%20Provider,o%3DInfoCamere%20S.C.p.A.,c%3DIT?authorityRevocationList"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "infocamere-qualified-electronic-signature-ca-75e91d5f0.pem",
+      "sha256": "75e91d5f080c6e4b1a01fef7ef94168b4beb7e9017eaedec8371cdc4a72f9820",
+      "subject": "InfoCamere Qualified Electronic Signature CA",
+      "issuer": "InfoCamere Qualified Electronic Signature CA",
+      "serialNumber": "01",
+      "validFrom": "2019-12-04T09:49:37.000Z",
+      "validTo": "2035-12-04T10:49:37.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.ca.infocamere.it/ca/qc/ARL.crl",
+        "ldap://ldap.ca.infocamere.it/cn%3DInfoCamere%20Qualified%20Electronic%20Signature%20CA,ou%3DQualified%20Trust%20Service%20Provider,o%3DInfoCamere%20S.C.p.A.,c%3DIT?authorityRevocationList"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "infocamere-qualified-electronic-signature-ca.pem",
+      "sha256": "75e91d5f080c6e4b1a01fef7ef94168b4beb7e9017eaedec8371cdc4a72f9820",
+      "subject": "InfoCamere Qualified Electronic Signature CA",
+      "issuer": "InfoCamere Qualified Electronic Signature CA",
+      "serialNumber": "01",
+      "validFrom": "2019-12-04T09:49:37.000Z",
+      "validTo": "2035-12-04T10:49:37.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.ca.infocamere.it/ca/qc/ARL.crl",
+        "ldap://ldap.ca.infocamere.it/cn%3DInfoCamere%20Qualified%20Electronic%20Signature%20CA,ou%3DQualified%20Trust%20Service%20Provider,o%3DInfoCamere%20S.C.p.A.,c%3DIT?authorityRevocationList"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "infocamere-qualified-time-stamping-authority.pem",
+      "sha256": "6d052cea4fa12dbd9648d7a5d3b20cb2c6c04de52951a2be8f1f5de58a7bd9c0",
+      "subject": "InfoCamere Qualified Time Stamping Authority",
+      "issuer": "InfoCamere Qualified Time Stamping Authority",
+      "serialNumber": "01",
+      "validFrom": "2019-12-04T10:07:32.000Z",
+      "validTo": "2035-12-04T11:07:32.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.ca.infocamere.it/ca/qt/ARL.crl",
+        "ldap://ldap.ca.infocamere.it/cn%3DInfoCamere%20Qualified%20Time%20Stamping%20Authority,ou%3DTSA,o%3DInfoCamere%20S.C.p.A.,c%3DIT?authorityRevocationList"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "infocert-domain-validation-sha256-ca-3.pem",
+      "sha256": "847161fbbad4c303424cb1ceb860a93c9dee139b671c5764adcdc3f3e4f9bb18",
+      "subject": "InfoCert Domain Validation SHA256 - CA 3",
+      "issuer": "InfoCert Root CA 3",
+      "serialNumber": "00c4b372d485a76e35cac584005b751a4923d526f6",
+      "validFrom": "2016-12-12T17:41:26.000Z",
+      "validTo": "2028-12-12T18:41:26.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.infocert.it/ca3/root/ARL.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.root.ca3.infocert.it"
+      ]
+    },
+    {
+      "file": "infocert-extended-validation-sha256-ca-3.pem",
+      "sha256": "fe5e29a8bc39e99b1a1e77d29590ac1948a337a387c63e83f0c4b18bfc8be1b2",
+      "subject": "InfoCert Extended Validation SHA256 - CA 3",
+      "issuer": "InfoCert Root CA 3",
+      "serialNumber": "6b445ba522e87824cff71ce8444f9bb887f5e4b1",
+      "validFrom": "2017-11-17T14:53:48.000Z",
+      "validTo": "2029-11-17T15:53:48.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.infocert.it/ca3/root/ARL.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.root.ca3.infocert.it"
+      ]
+    },
+    {
+      "file": "infocert-firma-qualificata-2.pem",
+      "sha256": "b689bfcfdaee078405383971e848c3d077457cd0ec6b685550f10ed250f8fdc5",
+      "subject": "InfoCert Firma Qualificata 2",
+      "issuer": "InfoCert Firma Qualificata 2",
+      "serialNumber": "01",
+      "validFrom": "2013-04-19T14:26:15.000Z",
+      "validTo": "2029-04-19T15:26:15.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://crl.infocert.it/crls/firma2/ARL.crl",
+        "ldap://ldap.infocert.it/cn%3DInfoCert%20Firma%20Qualificata%202,ou%3DCertificatore%20Accreditato,o%3DINFOCERT%20SPA,c%3DIT?authorityRevocationList"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "infocert-organization-validation-ec-ca-4.pem",
+      "sha256": "ccfe2dd1da87733e54394e9e378d4e1d7f4ba1fff48fa6485295ba57352516ee",
+      "subject": "InfoCert Organization Validation EC CA 4",
+      "issuer": "InfoCert Root EC CA 4",
+      "serialNumber": "7caf82976bfb9b07c991bea9044d9ee60d19dbb8",
+      "validFrom": "2024-05-15T14:40:24.000Z",
+      "validTo": "2036-05-15T14:40:24.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-384",
+      "crlUrls": [
+        "http://crl.ca4.infocert.it/rootec/ARL.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.rootec.ca4.infocert.it"
+      ]
+    },
+    {
+      "file": "infocert-organization-validation-sha256-ca-3.pem",
+      "sha256": "90f70db89e1f300aa162ad351e44d5d19a64be441d59fd8c57fc7af71bd5352a",
+      "subject": "InfoCert Organization Validation SHA256 - CA 3",
+      "issuer": "InfoCert Root CA 3",
+      "serialNumber": "7d04f008647c18b07ee55a1f5a45874c7b45855b",
+      "validFrom": "2017-11-17T14:36:24.000Z",
+      "validTo": "2029-11-17T15:36:24.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.infocert.it/ca3/root/ARL.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.root.ca3.infocert.it"
+      ]
+    },
+    {
+      "file": "infocert-qualified-electronic-signature-ca-3-d0557b66.pem",
+      "sha256": "d0557b66d35b342a186edf9465363ef62020faad8247f4be845ceedb297094bf",
+      "subject": "InfoCert Qualified Electronic Signature CA 3",
+      "issuer": "InfoCert Qualified Electronic Signature CA 3",
+      "serialNumber": "01",
+      "validFrom": "2016-12-12T16:34:43.000Z",
+      "validTo": "2032-12-12T17:34:43.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.infocert.it/ca3/qc/ARL.crl",
+        "ldap://ldap.infocert.it/cn%3DInfoCert%20Qualified%20Electronic%20Signature%20CA%203,ou%3DQualified%20Trust%20Service%20Provider,o%3DINFOCERT%20SPA,c%3DIT?authorityRevocationList"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "infocert-qualified-electronic-signature-ca-3-d0557b66d.pem",
+      "sha256": "d0557b66d35b342a186edf9465363ef62020faad8247f4be845ceedb297094bf",
+      "subject": "InfoCert Qualified Electronic Signature CA 3",
+      "issuer": "InfoCert Qualified Electronic Signature CA 3",
+      "serialNumber": "01",
+      "validFrom": "2016-12-12T16:34:43.000Z",
+      "validTo": "2032-12-12T17:34:43.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.infocert.it/ca3/qc/ARL.crl",
+        "ldap://ldap.infocert.it/cn%3DInfoCert%20Qualified%20Electronic%20Signature%20CA%203,ou%3DQualified%20Trust%20Service%20Provider,o%3DINFOCERT%20SPA,c%3DIT?authorityRevocationList"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "infocert-qualified-electronic-signature-ca-3.pem",
+      "sha256": "d0557b66d35b342a186edf9465363ef62020faad8247f4be845ceedb297094bf",
+      "subject": "InfoCert Qualified Electronic Signature CA 3",
+      "issuer": "InfoCert Qualified Electronic Signature CA 3",
+      "serialNumber": "01",
+      "validFrom": "2016-12-12T16:34:43.000Z",
+      "validTo": "2032-12-12T17:34:43.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.infocert.it/ca3/qc/ARL.crl",
+        "ldap://ldap.infocert.it/cn%3DInfoCert%20Qualified%20Electronic%20Signature%20CA%203,ou%3DQualified%20Trust%20Service%20Provider,o%3DINFOCERT%20SPA,c%3DIT?authorityRevocationList"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "infocert-qualified-electronic-signature-ca-4-07056194.pem",
+      "sha256": "070561940cd5fb139fa6e0c2bea81d7fc0a105597d06cb9960d249fa759b702b",
+      "subject": "InfoCert Qualified Electronic Signature CA 4",
+      "issuer": "InfoCert Qualified Electronic Signature CA 4",
+      "serialNumber": "01",
+      "validFrom": "2020-03-23T09:21:16.000Z",
+      "validTo": "2036-03-23T10:21:16.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.ca4.infocert.it/qc/ARL.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "infocert-qualified-electronic-signature-ca-4-070561940.pem",
+      "sha256": "070561940cd5fb139fa6e0c2bea81d7fc0a105597d06cb9960d249fa759b702b",
+      "subject": "InfoCert Qualified Electronic Signature CA 4",
+      "issuer": "InfoCert Qualified Electronic Signature CA 4",
+      "serialNumber": "01",
+      "validFrom": "2020-03-23T09:21:16.000Z",
+      "validTo": "2036-03-23T10:21:16.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.ca4.infocert.it/qc/ARL.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "infocert-qualified-electronic-signature-ca-4.pem",
+      "sha256": "070561940cd5fb139fa6e0c2bea81d7fc0a105597d06cb9960d249fa759b702b",
+      "subject": "InfoCert Qualified Electronic Signature CA 4",
+      "issuer": "InfoCert Qualified Electronic Signature CA 4",
+      "serialNumber": "01",
+      "validFrom": "2020-03-23T09:21:16.000Z",
+      "validTo": "2036-03-23T10:21:16.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.ca4.infocert.it/qc/ARL.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "infocert-qualified-electronic-signature-ec-ca-4-07c10f34.pem",
+      "sha256": "07c10f3416d9cb77b339eaf8078e487196527a2223ef31fcf22a9a7fd18b1e70",
+      "subject": "InfoCert Qualified Electronic Signature EC CA 4",
+      "issuer": "InfoCert Qualified Electronic Signature EC CA 4",
+      "serialNumber": "0d32e7f461633c34de1256268e51919708f291ef",
+      "validFrom": "2021-06-07T08:43:18.000Z",
+      "validTo": "2036-06-07T09:43:18.000Z",
+      "role": "root",
+      "keyAlgorithm": "EC P-384",
+      "crlUrls": [
+        "http://crl.ca4.infocert.it/qcec/ARL.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "infocert-qualified-electronic-signature-ec-ca-4-07c10f341.pem",
+      "sha256": "07c10f3416d9cb77b339eaf8078e487196527a2223ef31fcf22a9a7fd18b1e70",
+      "subject": "InfoCert Qualified Electronic Signature EC CA 4",
+      "issuer": "InfoCert Qualified Electronic Signature EC CA 4",
+      "serialNumber": "0d32e7f461633c34de1256268e51919708f291ef",
+      "validFrom": "2021-06-07T08:43:18.000Z",
+      "validTo": "2036-06-07T09:43:18.000Z",
+      "role": "root",
+      "keyAlgorithm": "EC P-384",
+      "crlUrls": [
+        "http://crl.ca4.infocert.it/qcec/ARL.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "infocert-qualified-electronic-signature-ec-ca-4.pem",
+      "sha256": "07c10f3416d9cb77b339eaf8078e487196527a2223ef31fcf22a9a7fd18b1e70",
+      "subject": "InfoCert Qualified Electronic Signature EC CA 4",
+      "issuer": "InfoCert Qualified Electronic Signature EC CA 4",
+      "serialNumber": "0d32e7f461633c34de1256268e51919708f291ef",
+      "validFrom": "2021-06-07T08:43:18.000Z",
+      "validTo": "2036-06-07T09:43:18.000Z",
+      "role": "root",
+      "keyAlgorithm": "EC P-384",
+      "crlUrls": [
+        "http://crl.ca4.infocert.it/qcec/ARL.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "infocert-qualified-time-stamping-authority-2.pem",
+      "sha256": "44916c1ddc66df66c28635291e48672ceb9b431c354692ab5e2c0a1251387594",
+      "subject": "InfoCert Qualified Time Stamping Authority 2",
+      "issuer": "InfoCert Qualified Time Stamping Authority 2",
+      "serialNumber": "01",
+      "validFrom": "2016-06-28T14:18:40.000Z",
+      "validTo": "2026-06-28T15:18:40.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.infocert.it/crls/qtss/ARL.crl",
+        "ldap://ldap.infocert.it/cn%3DInfoCert%20Qualified%20Time%20Stamping%20Authority%202,ou%3DTSA,o%3DINFOCERT%20SPA,c%3DIT?authorityRevocationList"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "infocert-time-stamping-authority-3.pem",
+      "sha256": "e6739dab09e5826cd1b85e52847fc87de343c424aea7d362c0d9f71294077276",
+      "subject": "InfoCert Time Stamping Authority 3",
+      "issuer": "InfoCert Time Stamping Authority 3",
+      "serialNumber": "01",
+      "validFrom": "2021-06-07T08:19:06.000Z",
+      "validTo": "2033-06-07T09:19:06.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.infocert.it/ca3/tsa/ARL.crl",
+        "ldap://ldap.infocert.it/cn%3DInfoCert%20Time%20Stamping%20Authority%203,ou%3DTSA,o%3DINFOCERT%20SPA,c%3DIT?authorityRevocationList"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "infocert-time-stamping-authority-ec-4.pem",
+      "sha256": "7c4288c92c339f05da59f927448bab9d7cd4592599a8e057cd09064474bfc41e",
+      "subject": "InfoCert Time Stamping Authority EC 4",
+      "issuer": "InfoCert Time Stamping Authority EC 4",
+      "serialNumber": "2282477ca21f60f2a519d737a55bc7112134fa17",
+      "validFrom": "2021-06-07T09:07:41.000Z",
+      "validTo": "2036-06-07T10:07:41.000Z",
+      "role": "root",
+      "keyAlgorithm": "EC P-384",
+      "crlUrls": [
+        "http://crl.ca4.infocert.it/tsaec/ARL.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "intesa-sanpaolo-production-identrust-certification-authority.pem",
+      "sha256": "b59de5ba6936f637b38ec8965da4a747662d08c65acdf51506cb2fac9a7eb857",
+      "subject": "Intesa Sanpaolo Production Identrust Certification Authority",
+      "issuer": "Intesa Sanpaolo Production Identrust Certification Authority",
+      "serialNumber": "010059",
+      "validFrom": "2007-09-14T14:33:57.000Z",
+      "validTo": "2015-03-30T20:36:18.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "ldap://ldap.ca.intesasanpaolo.com/cn%3dIntesa%20Sanpaolo%20Production%20Identrust%20Certification%20Authority,ou%3dIntesa%20Sanpaolo%20Identrust%20Infrastructure,o%3dIntesa%20Sanpaolo%20S.p.A.,c%3dIT?certificateRevocationList",
+        "http://crl.ca.intesasanpaolo.com/Repository/b1/getCRL"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "intesa-sanpaolo-qualified-electronic-signature-ca-2-a1ec6efe.pem",
+      "sha256": "a1ec6efe189d18990d883ad740cf885ded5f04c6f9cb166470b6b33605da5797",
+      "subject": "Intesa Sanpaolo Qualified Electronic Signature CA 2",
+      "issuer": "Intesa Sanpaolo Qualified Electronic Signature CA 2",
+      "serialNumber": "3809728d876306953fbaa6f8fc65d766f9293ebe",
+      "validFrom": "2020-05-19T07:33:34.000Z",
+      "validTo": "2036-05-19T08:33:34.000Z",
+      "role": "root",
+      "keyAlgorithm": "EC P-384",
+      "crlUrls": [
+        "http://crl.ca2.intesasanpaolo.com/qc/ARL.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "intesa-sanpaolo-qualified-electronic-signature-ca-2.pem",
+      "sha256": "a1ec6efe189d18990d883ad740cf885ded5f04c6f9cb166470b6b33605da5797",
+      "subject": "Intesa Sanpaolo Qualified Electronic Signature CA 2",
+      "issuer": "Intesa Sanpaolo Qualified Electronic Signature CA 2",
+      "serialNumber": "3809728d876306953fbaa6f8fc65d766f9293ebe",
+      "validFrom": "2020-05-19T07:33:34.000Z",
+      "validTo": "2036-05-19T08:33:34.000Z",
+      "role": "root",
+      "keyAlgorithm": "EC P-384",
+      "crlUrls": [
+        "http://crl.ca2.intesasanpaolo.com/qc/ARL.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "intesa-sanpaolo-qualified-electronic-signature-ca-b1-5ea7d5d3.pem",
+      "sha256": "5ea7d5d3f83e40e74840f077b698c232cf0e22296dcda5cab153dbba6459f53e",
+      "subject": "Intesa Sanpaolo Qualified Electronic Signature CA B1",
+      "issuer": "Intesa Sanpaolo Qualified Electronic Signature CA B1",
+      "serialNumber": "46552b5f6d0a61097e7223f90e65fb94658ecd69",
+      "validFrom": "2025-03-07T10:44:34.000Z",
+      "validTo": "2041-03-07T10:44:33.000Z",
+      "role": "root",
+      "keyAlgorithm": "EC P-384",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "intesa-sanpaolo-qualified-electronic-signature-ca-b1.pem",
+      "sha256": "5ea7d5d3f83e40e74840f077b698c232cf0e22296dcda5cab153dbba6459f53e",
+      "subject": "Intesa Sanpaolo Qualified Electronic Signature CA B1",
+      "issuer": "Intesa Sanpaolo Qualified Electronic Signature CA B1",
+      "serialNumber": "46552b5f6d0a61097e7223f90e65fb94658ecd69",
+      "validFrom": "2025-03-07T10:44:34.000Z",
+      "validTo": "2041-03-07T10:44:33.000Z",
+      "role": "root",
+      "keyAlgorithm": "EC P-384",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "intesa-sanpaolo-s-p-a-identrust-certification-authority-b1-645e76b1.pem",
+      "sha256": "645e76b1e3592373565d36ca78c2f166683e211111faaeb2cc2bcd095c46260a",
+      "subject": "Intesa Sanpaolo S.p.A. IdenTrust Certification Authority B1",
+      "issuer": "IdenTrust Root Certificate Authority",
+      "serialNumber": "400195ba8a67268288051f5226a6e1c1",
+      "validFrom": "2025-03-21T21:09:47.000Z",
+      "validTo": "2035-03-21T21:09:46.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": [
+        "https://identrustroot2035.ocsptn.identrust.com"
+      ]
+    },
+    {
+      "file": "intesa-sanpaolo-s-p-a-identrust-certification-authority-b1.pem",
+      "sha256": "645e76b1e3592373565d36ca78c2f166683e211111faaeb2cc2bcd095c46260a",
+      "subject": "Intesa Sanpaolo S.p.A. IdenTrust Certification Authority B1",
+      "issuer": "IdenTrust Root Certificate Authority",
+      "serialNumber": "400195ba8a67268288051f5226a6e1c1",
+      "validFrom": "2025-03-21T21:09:47.000Z",
+      "validTo": "2035-03-21T21:09:46.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": [
+        "https://identrustroot2035.ocsptn.identrust.com"
+      ]
+    },
+    {
+      "file": "intesa-sanpaolo-s-p-a-identrust-certification-authority-iii-6c79ab93.pem",
+      "sha256": "6c79ab93a2374f173f9173b235d3f45eaa6c394ea489b0c013ef7e8e06c0f233",
+      "subject": "Intesa Sanpaolo S.p.A. IdenTrust Certification Authority III",
+      "issuer": "Intesa Sanpaolo S.p.A. IdenTrust Certification Authority III",
+      "serialNumber": "2b068a6d239aa70ba5c786a8be35b663bf67c23d",
+      "validFrom": "2023-02-02T13:44:05.000Z",
+      "validTo": "2033-02-02T14:44:05.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.ca2.intesasanpaolo.com/ii3/ARL.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "intesa-sanpaolo-s-p-a-identrust-certification-authority-iii.pem",
+      "sha256": "6c79ab93a2374f173f9173b235d3f45eaa6c394ea489b0c013ef7e8e06c0f233",
+      "subject": "Intesa Sanpaolo S.p.A. IdenTrust Certification Authority III",
+      "issuer": "Intesa Sanpaolo S.p.A. IdenTrust Certification Authority III",
+      "serialNumber": "2b068a6d239aa70ba5c786a8be35b663bf67c23d",
+      "validFrom": "2023-02-02T13:44:05.000Z",
+      "validTo": "2033-02-02T14:44:05.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.ca2.intesasanpaolo.com/ii3/ARL.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "intesa-spa-eidas-qualified-trust-services-0573232e.pem",
+      "sha256": "0573232e057703aaea03141d12e20eae99b56f984d621b4e360dc08353c4c95c",
+      "subject": "Intesa SpA - eIDAS Qualified Trust Services",
+      "issuer": "Intesa SpA - eIDAS Qualified Trust Services",
+      "serialNumber": "59cb51ed07465cc3",
+      "validFrom": "2020-03-18T15:52:05.000Z",
+      "validTo": "2040-03-18T15:52:05.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "intesa-spa-eidas-qualified-trust-services-0573232e0.pem",
+      "sha256": "0573232e057703aaea03141d12e20eae99b56f984d621b4e360dc08353c4c95c",
+      "subject": "Intesa SpA - eIDAS Qualified Trust Services",
+      "issuer": "Intesa SpA - eIDAS Qualified Trust Services",
+      "serialNumber": "59cb51ed07465cc3",
+      "validFrom": "2020-03-18T15:52:05.000Z",
+      "validTo": "2040-03-18T15:52:05.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "intesa-spa-eidas-qualified-trust-services.pem",
+      "sha256": "0573232e057703aaea03141d12e20eae99b56f984d621b4e360dc08353c4c95c",
+      "subject": "Intesa SpA - eIDAS Qualified Trust Services",
+      "issuer": "Intesa SpA - eIDAS Qualified Trust Services",
+      "serialNumber": "59cb51ed07465cc3",
+      "validFrom": "2020-03-18T15:52:05.000Z",
+      "validTo": "2040-03-18T15:52:05.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "intesi-group-eu-qualified-electronic-seal-ca-g2-fada5411.pem",
+      "sha256": "fada5411c967c4f9c05df02bf287eaee22db1827109c827d4c94b3f71cb61f2d",
+      "subject": "Intesi Group EU Qualified Electronic Seal CA G2",
+      "issuer": "Intesi Group EU Qualified Electronic Seal CA G2",
+      "serialNumber": "00eed1245d3427d9",
+      "validFrom": "2017-11-23T10:00:36.000Z",
+      "validTo": "2037-11-18T10:00:36.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "intesi-group-eu-qualified-electronic-seal-ca-g2.pem",
+      "sha256": "fada5411c967c4f9c05df02bf287eaee22db1827109c827d4c94b3f71cb61f2d",
+      "subject": "Intesi Group EU Qualified Electronic Seal CA G2",
+      "issuer": "Intesi Group EU Qualified Electronic Seal CA G2",
+      "serialNumber": "00eed1245d3427d9",
+      "validFrom": "2017-11-23T10:00:36.000Z",
+      "validTo": "2037-11-18T10:00:36.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "intesi-group-eu-qualified-electronic-seal-ca-g3-ecc-323a6d1d.pem",
+      "sha256": "323a6d1d3cb19ff9de1e9283fe5ad3a70a4d7bffde6e1eac5f82bbe1eff20649",
+      "subject": "Intesi Group EU Qualified Electronic Seal CA G3 ECC",
+      "issuer": "Intesi Group EU Qualified Electronic Seal CA G3 ECC",
+      "serialNumber": "5eb7c0e6b336bf6c",
+      "validFrom": "2025-11-13T14:31:17.000Z",
+      "validTo": "2045-11-08T14:31:17.000Z",
+      "role": "root",
+      "keyAlgorithm": "EC P-521",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "intesi-group-eu-qualified-electronic-seal-ca-g3-ecc.pem",
+      "sha256": "323a6d1d3cb19ff9de1e9283fe5ad3a70a4d7bffde6e1eac5f82bbe1eff20649",
+      "subject": "Intesi Group EU Qualified Electronic Seal CA G3 ECC",
+      "issuer": "Intesi Group EU Qualified Electronic Seal CA G3 ECC",
+      "serialNumber": "5eb7c0e6b336bf6c",
+      "validFrom": "2025-11-13T14:31:17.000Z",
+      "validTo": "2045-11-08T14:31:17.000Z",
+      "role": "root",
+      "keyAlgorithm": "EC P-521",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "intesi-group-eu-qualified-electronic-signature-ca-g2-6cf9edca.pem",
+      "sha256": "6cf9edcaeceb9b72506fb59d08d8706d62fb9fddfb13af1c0a7f729699c17c4c",
+      "subject": "Intesi Group EU Qualified Electronic Signature CA G2",
+      "issuer": "Intesi Group EU Qualified Electronic Signature CA G2",
+      "serialNumber": "0f7b4264f1cc759c",
+      "validFrom": "2017-11-23T10:10:33.000Z",
+      "validTo": "2037-11-18T10:10:33.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "intesi-group-eu-qualified-electronic-signature-ca-g2.pem",
+      "sha256": "6cf9edcaeceb9b72506fb59d08d8706d62fb9fddfb13af1c0a7f729699c17c4c",
+      "subject": "Intesi Group EU Qualified Electronic Signature CA G2",
+      "issuer": "Intesi Group EU Qualified Electronic Signature CA G2",
+      "serialNumber": "0f7b4264f1cc759c",
+      "validFrom": "2017-11-23T10:10:33.000Z",
+      "validTo": "2037-11-18T10:10:33.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "intesi-group-eu-qualified-electronic-signature-ca-g3-ecc-15183e0d.pem",
+      "sha256": "15183e0dd0e8eb7a58963a0c2a6866c6d72086ba8c27839134b7f8b8875f1658",
+      "subject": "Intesi Group EU Qualified Electronic Signature CA G3 ECC",
+      "issuer": "Intesi Group EU Qualified Electronic Signature CA G3 ECC",
+      "serialNumber": "7c232de753a0bbd0",
+      "validFrom": "2025-11-13T14:41:10.000Z",
+      "validTo": "2045-11-13T14:41:10.000Z",
+      "role": "root",
+      "keyAlgorithm": "EC P-521",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "intesi-group-eu-qualified-electronic-signature-ca-g3-ecc.pem",
+      "sha256": "15183e0dd0e8eb7a58963a0c2a6866c6d72086ba8c27839134b7f8b8875f1658",
+      "subject": "Intesi Group EU Qualified Electronic Signature CA G3 ECC",
+      "issuer": "Intesi Group EU Qualified Electronic Signature CA G3 ECC",
+      "serialNumber": "7c232de753a0bbd0",
+      "validFrom": "2025-11-13T14:41:10.000Z",
+      "validTo": "2045-11-13T14:41:10.000Z",
+      "role": "root",
+      "keyAlgorithm": "EC P-521",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "intesi-group-eu-qualified-time-stamp-ca-g2.pem",
+      "sha256": "479b656f13ecf8ff263ef31734fc40b602cda8143b92d5eb86d7349acddbde53",
+      "subject": "Intesi Group EU Qualified Time-Stamp CA G2",
+      "issuer": "Intesi Group EU Qualified Time-Stamp CA G2",
+      "serialNumber": "57169e224120bba6",
+      "validFrom": "2017-11-23T10:22:40.000Z",
+      "validTo": "2037-11-18T10:22:40.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "intesi-group-eu-qualified-time-stamp-ca-g3-ecc.pem",
+      "sha256": "590253d63c3c25fb0270f622c2641a6e7a6f416d4627d400d6e442a3f4e852ca",
+      "subject": "Intesi Group EU Qualified Time-Stamp CA G3 ECC",
+      "issuer": "Intesi Group EU Qualified Time-Stamp CA G3 ECC",
+      "serialNumber": "5a7dda89f1c3dfcb",
+      "validFrom": "2025-11-13T14:45:12.000Z",
+      "validTo": "2045-11-13T14:45:12.000Z",
+      "role": "root",
+      "keyAlgorithm": "EC P-521",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "izsam-firma-digitale.pem",
+      "sha256": "a30ce34053be0320f752144d39a221baac9713136db27913d3e0bf379b310684",
+      "subject": "- IZSAM - FIRMA DIGITALE",
+      "issuer": "- IZSAM - FIRMA DIGITALE",
+      "serialNumber": "01",
+      "validFrom": "2003-09-09T13:01:45.000Z",
+      "validTo": "2013-09-09T13:01:45.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "ldap://fe.csp.multicertify.com:389/ou%3D-%20IZSAM%20-%20FIRMA%20DIGITALE%2Co%3DIst.%20Zooprofilattico%20Sperimentale%20-G.%20Caporale-?certificaterevocationlist"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "lisit-servizio-di-certificazione-per-la-firma-digitale.pem",
+      "sha256": "3c5b8cf7aa73f16c3709ec0f52662745787120a65b08ab72a530a8157d2ea7c8",
+      "subject": "LISIT Servizio di certificazione per la Firma Digitale",
+      "issuer": "LISIT Servizio di certificazione per la Firma Digitale",
+      "serialNumber": "01",
+      "validFrom": "2004-09-02T14:20:32.000Z",
+      "validTo": "2016-09-02T14:14:44.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "ldap://ldap.crs.lombardia.it/cn%3dLISIT%20Servizio%20di%20certificazione%20per%20la%20Firma%20Digitale,ou%3dServizio%20di%20certificazione,o%3dLISIT%20S.p.A.,c%3dIT?certificateRevocationList?base"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "ministero-della-difesa-ca-di-firma-digitale-053aa9ae.pem",
+      "sha256": "053aa9ae51a7b609cc961e58bdfd9e85b60e973adf44aec3f02358587c3031b7",
+      "subject": "Ministero della Difesa - CA di Firma Digitale",
+      "issuer": "Ministero della Difesa - CA di Firma Digitale",
+      "serialNumber": "6044e5a56a5e1fab",
+      "validFrom": "2014-07-15T08:11:41.000Z",
+      "validTo": "2044-07-15T08:11:41.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://www.pki.difesa.it/cafirmadigitale.crl",
+        "ldap://ldappkiff.difesa.it:389/CN=Ministero%20della%20Difesa%20-%20CA%20di%20Firma%20Digitale,OU=S.M.D.%20-%20C.do%20C4%20Difesa,O=Ministero%20della%20Difesa,C=IT"
+      ],
+      "ocspUrls": [
+        "http://ocsppkiff.difesa.it/"
+      ]
+    },
+    {
+      "file": "ministero-della-difesa-ca-di-firma-digitale-053aa9ae5.pem",
+      "sha256": "053aa9ae51a7b609cc961e58bdfd9e85b60e973adf44aec3f02358587c3031b7",
+      "subject": "Ministero della Difesa - CA di Firma Digitale",
+      "issuer": "Ministero della Difesa - CA di Firma Digitale",
+      "serialNumber": "6044e5a56a5e1fab",
+      "validFrom": "2014-07-15T08:11:41.000Z",
+      "validTo": "2044-07-15T08:11:41.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://www.pki.difesa.it/cafirmadigitale.crl",
+        "ldap://ldappkiff.difesa.it:389/CN=Ministero%20della%20Difesa%20-%20CA%20di%20Firma%20Digitale,OU=S.M.D.%20-%20C.do%20C4%20Difesa,O=Ministero%20della%20Difesa,C=IT"
+      ],
+      "ocspUrls": [
+        "http://ocsppkiff.difesa.it/"
+      ]
+    },
+    {
+      "file": "ministero-della-difesa-ca-di-firma-digitale.pem",
+      "sha256": "053aa9ae51a7b609cc961e58bdfd9e85b60e973adf44aec3f02358587c3031b7",
+      "subject": "Ministero della Difesa - CA di Firma Digitale",
+      "issuer": "Ministero della Difesa - CA di Firma Digitale",
+      "serialNumber": "6044e5a56a5e1fab",
+      "validFrom": "2014-07-15T08:11:41.000Z",
+      "validTo": "2044-07-15T08:11:41.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://www.pki.difesa.it/cafirmadigitale.crl",
+        "ldap://ldappkiff.difesa.it:389/CN=Ministero%20della%20Difesa%20-%20CA%20di%20Firma%20Digitale,OU=S.M.D.%20-%20C.do%20C4%20Difesa,O=Ministero%20della%20Difesa,C=IT"
+      ],
+      "ocspUrls": [
+        "http://ocsppkiff.difesa.it/"
+      ]
+    },
+    {
+      "file": "ministero-della-difesa-pki-di-firma-qualificata.pem",
+      "sha256": "201ec6b0f8a6e5bd78ac101e37e9392a3540e346b6ad3761a209c88b102f909e",
+      "subject": "Ministero della Difesa - PKI di Firma Qualificata",
+      "issuer": "Ministero della Difesa - PKI di Firma Qualificata",
+      "serialNumber": "00e82e3da6c22bf13c",
+      "validFrom": "2006-11-09T10:48:40.000Z",
+      "validTo": "2021-11-08T10:48:40.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "LDAP://ldappkiff.difesa.it:389/cn=crl-firmadigitale,o=Ministero della Difesa,c=IT",
+        "http://www.pki.difesa.it/firmadigitale.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "ministero-della-difesa-time-stamp-authority-eidas.pem",
+      "sha256": "16db130492b230b2092e40dd7f577e3cb3053d6a10bfbe302f45f2957675b5e8",
+      "subject": "Ministero della Difesa - Time Stamp Authority eIDAS",
+      "issuer": "Ministero della Difesa - Time Stamp Authority eIDAS",
+      "serialNumber": "4057a02d13123631",
+      "validFrom": "2017-04-14T07:47:26.000Z",
+      "validTo": "2047-04-14T07:47:26.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://www.pki.difesa.it/timestampauthorityeidas.crl",
+        "ldap://ldappkiff.difesa.it:389/CN=Ministero%20della%20Difesa%20-%20Time%20Stamp%20Authority%20eIDAS,OU=S.M.D.%20-%20C.do%20C4%20Difesa,O=Ministero%20della%20Difesa,C=IT"
+      ],
+      "ocspUrls": [
+        "http://ocsppkiff.difesa.it/"
+      ]
+    },
+    {
+      "file": "namirial-ca-firma-qualificata-c02f95f7.pem",
+      "sha256": "c02f95f78af80b249a3481ca41924ae60d7663867c5f22ff8437a0e8cc344137",
+      "subject": "Namirial CA Firma Qualificata",
+      "issuer": "Namirial CA Firma Qualificata",
+      "serialNumber": "4158c13a49d29819",
+      "validFrom": "2010-11-24T15:01:29.000Z",
+      "validTo": "2030-11-24T15:01:29.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://crl.firmacerta.it/FirmaCertaQualificata1.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.firmacerta.it/ocsp/certstatus"
+      ]
+    },
+    {
+      "file": "namirial-ca-firma-qualificata.pem",
+      "sha256": "c02f95f78af80b249a3481ca41924ae60d7663867c5f22ff8437a0e8cc344137",
+      "subject": "Namirial CA Firma Qualificata",
+      "issuer": "Namirial CA Firma Qualificata",
+      "serialNumber": "4158c13a49d29819",
+      "validFrom": "2010-11-24T15:01:29.000Z",
+      "validTo": "2030-11-24T15:01:29.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://crl.firmacerta.it/FirmaCertaQualificata1.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.firmacerta.it/ocsp/certstatus"
+      ]
+    },
+    {
+      "file": "namirial-ca-tsa.pem",
+      "sha256": "f95682a8256c60a8904271ae408c862353e23621d27f4cd858816bfb13309ca5",
+      "subject": "Namirial CA TSA",
+      "issuer": "Namirial CA TSA",
+      "serialNumber": "20cafeafca99fa96",
+      "validFrom": "2010-11-24T15:01:35.000Z",
+      "validTo": "2030-11-24T15:01:35.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://crl.firmacerta.it/FirmaCertaTSA.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.firmacerta.it/ocsp/certstatus"
+      ]
+    },
+    {
+      "file": "namirial-eu-qualified-ca-1b16d5e8.pem",
+      "sha256": "1b16d5e86723821ed2d4c61a0f5e583f3970787e522f3ff9a5ac5d581673624a",
+      "subject": "Namirial EU Qualified CA",
+      "issuer": "Namirial EU Qualified CA",
+      "serialNumber": "396162d9e50483a3",
+      "validFrom": "2017-06-29T07:37:22.000Z",
+      "validTo": "2037-06-29T07:37:22.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.namirialtsp.com/CA4K.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "namirial-eu-qualified-ca-1b16d5e86.pem",
+      "sha256": "1b16d5e86723821ed2d4c61a0f5e583f3970787e522f3ff9a5ac5d581673624a",
+      "subject": "Namirial EU Qualified CA",
+      "issuer": "Namirial EU Qualified CA",
+      "serialNumber": "396162d9e50483a3",
+      "validFrom": "2017-06-29T07:37:22.000Z",
+      "validTo": "2037-06-29T07:37:22.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.namirialtsp.com/CA4K.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "namirial-eu-qualified-ca.pem",
+      "sha256": "1b16d5e86723821ed2d4c61a0f5e583f3970787e522f3ff9a5ac5d581673624a",
+      "subject": "Namirial EU Qualified CA",
+      "issuer": "Namirial EU Qualified CA",
+      "serialNumber": "396162d9e50483a3",
+      "validFrom": "2017-06-29T07:37:22.000Z",
+      "validTo": "2037-06-29T07:37:22.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.namirialtsp.com/CA4K.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "namirial-eu-qualified-esignature.pem",
+      "sha256": "171c70cf85ac94d8627504e63d34f5edf887f1a0e4510224b816821190ad63a4",
+      "subject": "Namirial EU Qualified eSignature",
+      "issuer": "Namirial EU Qualified eSignature",
+      "serialNumber": "210d6cb17c110b9b",
+      "validFrom": "2017-05-31T10:54:35.000Z",
+      "validTo": "2037-05-31T10:54:35.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.namirialtsp.com/QES4K.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "namirial-qualified-e-signature-45d28361.pem",
+      "sha256": "45d28361d617b780f7e939761d77ded2a66bbf03b173ad1ab4a43c2d86611613",
+      "subject": "Namirial Qualified e-Signature",
+      "issuer": "Namirial Qualified e-Signature",
+      "serialNumber": "6ee82fb2ff762f06",
+      "validFrom": "2016-07-19T10:32:52.000Z",
+      "validTo": "2036-07-19T10:32:52.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://crl.namirialtsp.com/QES.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.namirialtsp.com/ocsp/certstatus"
+      ]
+    },
+    {
+      "file": "namirial-qualified-e-signature.pem",
+      "sha256": "45d28361d617b780f7e939761d77ded2a66bbf03b173ad1ab4a43c2d86611613",
+      "subject": "Namirial Qualified e-Signature",
+      "issuer": "Namirial Qualified e-Signature",
+      "serialNumber": "6ee82fb2ff762f06",
+      "validFrom": "2016-07-19T10:32:52.000Z",
+      "validTo": "2036-07-19T10:32:52.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://crl.namirialtsp.com/QES.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.namirialtsp.com/ocsp/certstatus"
+      ]
+    },
+    {
+      "file": "namirial-qualified-electronic-signature-ca-2023-f898c445.pem",
+      "sha256": "f898c445bc28deb45af50668be3da1ee45cec1f12d8dc930c9ad8e388aeaf9ec",
+      "subject": "Namirial Qualified Electronic Signature CA 2023",
+      "issuer": "Namirial Qualified Electronic Signature CA 2023",
+      "serialNumber": "44a4322c8b6de521",
+      "validFrom": "2023-05-18T13:59:01.000Z",
+      "validTo": "2043-05-18T13:59:01.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "namirial-qualified-electronic-signature-ca-2023.pem",
+      "sha256": "f898c445bc28deb45af50668be3da1ee45cec1f12d8dc930c9ad8e388aeaf9ec",
+      "subject": "Namirial Qualified Electronic Signature CA 2023",
+      "issuer": "Namirial Qualified Electronic Signature CA 2023",
+      "serialNumber": "44a4322c8b6de521",
+      "validFrom": "2023-05-18T13:59:01.000Z",
+      "validTo": "2043-05-18T13:59:01.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "namirial-time-stamping-authority-2025.pem",
+      "sha256": "c9808aefdb0502485a26b00cfb4ba401dad7994f37678d63ed2d51b4df286a19",
+      "subject": "Namirial Time Stamping Authority 2025",
+      "issuer": "Namirial Time Stamping Authority 2025",
+      "serialNumber": "0a87b1b8895eb0fa",
+      "validFrom": "2025-08-06T07:32:49.000Z",
+      "validTo": "2045-08-06T07:32:49.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.namirialtsp.com/TSA2025.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "namirial-time-stamping-authority.pem",
+      "sha256": "4208362a619c36ee7b06b5fe3ecdbd3ec1bc1bced78c7e742616b84945bab024",
+      "subject": "Namirial Time Stamping Authority",
+      "issuer": "Namirial Time Stamping Authority",
+      "serialNumber": "71aa6d05cfb20852",
+      "validFrom": "2016-06-27T08:15:44.000Z",
+      "validTo": "2036-06-27T08:15:44.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://crl.namirialtsp.com/TSA.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "notartel-qualified-electronic-signature-ca-2021-117d766d.pem",
+      "sha256": "117d766d5584f81e34ff14909c5d00125ea6555abff6f920f105558e0e8390c5",
+      "subject": "Notartel Qualified Electronic Signature CA 2021",
+      "issuer": "Notartel Qualified Electronic Signature CA 2021",
+      "serialNumber": "034756a9cab2ba6ba6ef",
+      "validFrom": "2021-12-07T17:08:42.000Z",
+      "validTo": "2041-12-07T17:08:41.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "notartel-qualified-electronic-signature-ca-2021.pem",
+      "sha256": "117d766d5584f81e34ff14909c5d00125ea6555abff6f920f105558e0e8390c5",
+      "subject": "Notartel Qualified Electronic Signature CA 2021",
+      "issuer": "Notartel Qualified Electronic Signature CA 2021",
+      "serialNumber": "034756a9cab2ba6ba6ef",
+      "validFrom": "2021-12-07T17:08:42.000Z",
+      "validTo": "2041-12-07T17:08:41.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "notartel-qualified-timestamp-ca-2021.pem",
+      "sha256": "7ebb5a5155a81ced82f615cd146d5fbcec162f4206948d9a47d2521b81e6149d",
+      "subject": "Notartel Qualified TimeStamp CA 2021",
+      "issuer": "Notartel Qualified TimeStamp CA 2021",
+      "serialNumber": "6e00a6e3e083b85d1922",
+      "validFrom": "2022-02-17T17:18:00.000Z",
+      "validTo": "2042-02-17T17:17:59.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "poste-italiane-eu-qualified-certificates-ca-c82378be.pem",
+      "sha256": "c82378be2dc088471a4945f19a6afc403e5a1726fb25f3486c2f45646fa4d6ee",
+      "subject": "Poste Italiane EU Qualified Certificates CA",
+      "issuer": "Poste Italiane EU Qualified Certificates CA",
+      "serialNumber": "7596232f8978254d",
+      "validFrom": "2017-03-07T09:22:49.000Z",
+      "validTo": "2037-03-07T09:22:49.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://postecert.poste.it/pi-TSPQUCA/crl.crl"
+      ],
+      "ocspUrls": [
+        "http://postecert.poste.it/pi-ocspTSPQUCA"
+      ]
+    },
+    {
+      "file": "poste-italiane-eu-qualified-certificates-ca-c82378be2.pem",
+      "sha256": "c82378be2dc088471a4945f19a6afc403e5a1726fb25f3486c2f45646fa4d6ee",
+      "subject": "Poste Italiane EU Qualified Certificates CA",
+      "issuer": "Poste Italiane EU Qualified Certificates CA",
+      "serialNumber": "7596232f8978254d",
+      "validFrom": "2017-03-07T09:22:49.000Z",
+      "validTo": "2037-03-07T09:22:49.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://postecert.poste.it/pi-TSPQUCA/crl.crl"
+      ],
+      "ocspUrls": [
+        "http://postecert.poste.it/pi-ocspTSPQUCA"
+      ]
+    },
+    {
+      "file": "poste-italiane-eu-qualified-certificates-ca.pem",
+      "sha256": "c82378be2dc088471a4945f19a6afc403e5a1726fb25f3486c2f45646fa4d6ee",
+      "subject": "Poste Italiane EU Qualified Certificates CA",
+      "issuer": "Poste Italiane EU Qualified Certificates CA",
+      "serialNumber": "7596232f8978254d",
+      "validFrom": "2017-03-07T09:22:49.000Z",
+      "validTo": "2037-03-07T09:22:49.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://postecert.poste.it/pi-TSPQUCA/crl.crl"
+      ],
+      "ocspUrls": [
+        "http://postecert.poste.it/pi-ocspTSPQUCA"
+      ]
+    },
+    {
+      "file": "poste-italiane-time-stamping-authority.pem",
+      "sha256": "68b7f3bca7a8e8765a3e98b562b9103235c4da13cb10197ab86adc081ffdb576",
+      "subject": "Poste Italiane Time Stamping Authority",
+      "issuer": "Poste Italiane Time Stamping Authority",
+      "serialNumber": "512007cf3399fb54",
+      "validFrom": "2017-02-28T12:06:16.000Z",
+      "validTo": "2037-02-28T12:06:16.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://postecert.poste.it/piTSP/CATSA.crl"
+      ],
+      "ocspUrls": [
+        "http://postecert.poste.it/pi-TS-ocsp"
+      ]
+    },
+    {
+      "file": "postecert-per-camera-dei-deputati.pem",
+      "sha256": "255b15acfe0ee96ee452353c2c92c5bfe13fb699783e350eb6cb7731a3607e29",
+      "subject": "Postecert per Camera dei Deputati",
+      "issuer": "Postecert per Camera dei Deputati",
+      "serialNumber": "01",
+      "validFrom": "2004-03-10T11:23:08.000Z",
+      "validTo": "2014-03-10T11:20:53.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "ldap://camera.postecert.it/cn%3dPostecert%20per%20Camera%20dei%20Deputati,ou%3dCA%20e%20Sicurezza,o%3dPostecom%20S.p.A.,c%3dIT?certificateRevocationList?base"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "postecert-per-regione-emilia-romagna.pem",
+      "sha256": "69fa3b211571427235fe64e54286a8b878cc74ad765d75c05869e59454701ee9",
+      "subject": "Postecert per Regione Emilia-Romagna",
+      "issuer": "Postecert per Regione Emilia-Romagna",
+      "serialNumber": "3fa13ae1",
+      "validFrom": "2003-10-30T16:23:24.000Z",
+      "validTo": "2013-10-27T16:23:24.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "ldap://certificati.postecert.it:389/CN=Postecert%20per%20Regione%20Emilia-Romagna,OU%3dCA%20e%20Sicurezza,O%3dPostecom%20s.p.a.,C%3dIT?CertificateRevocationList;binary"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "postecom-ca1.pem",
+      "sha256": "f8065add2e618ae5f53dd5975d99160175d43f732e37d95fa03e9b142ebdc902",
+      "subject": "Postecom CA1",
+      "issuer": "Postecom CA1",
+      "serialNumber": "48dd07e6",
+      "validFrom": "2000-10-03T13:00:28.000Z",
+      "validTo": "2020-09-28T12:00:28.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://postecert.poste.it/postecomca1/crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "postecom-ca2.pem",
+      "sha256": "61579af4e6447ad67ee8199048379bff5c84580257383e0fa0afe874bdd23cbd",
+      "subject": "Postecom CA2",
+      "issuer": "Postecom CA2",
+      "serialNumber": "01",
+      "validFrom": "2006-05-10T10:45:04.000Z",
+      "validTo": "2016-05-10T09:45:04.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://postecert.poste.it/postecomca2/crl.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "postecom-eu-qualified-certificates-ca.pem",
+      "sha256": "31894689de777f8ebafa377ee518858b18d74ef46e6cd00bda2246be5a0fe2fa",
+      "subject": "Postecom EU Qualified Certificates CA",
+      "issuer": "Postecom EU Qualified Certificates CA",
+      "serialNumber": "67d981ca0bd5e570",
+      "validFrom": "2017-02-02T17:09:46.000Z",
+      "validTo": "2037-02-02T17:09:46.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://postecert.poste.it/postecomTSPQUCA/crl.crl"
+      ],
+      "ocspUrls": [
+        "http://postecert.poste.it/ocspTSPQUCA"
+      ]
+    },
+    {
+      "file": "postecom-time-stamping-authority.pem",
+      "sha256": "9e0aa780f1f323a12382fac96499166fadbdf5e23d2d8f53c561290070b273ba",
+      "subject": "Postecom Time Stamping Authority",
+      "issuer": "Postecom Time Stamping Authority",
+      "serialNumber": "425f66d50c89da01",
+      "validFrom": "2017-02-03T15:07:29.000Z",
+      "validTo": "2037-02-03T15:07:29.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://postecert.poste.it/postecomTSP/CATSA.crl"
+      ],
+      "ocspUrls": [
+        "http://postecert.poste.it/TSP-TS-ocsp"
+      ]
+    },
+    {
+      "file": "provincia-di-roma-firma-digitale.pem",
+      "sha256": "0a25116fd6f76b25039a72048762334d503e2f4c06b8c47ead0ba618027f8b37",
+      "subject": "Provincia di Roma Firma digitale",
+      "issuer": "Provincia di Roma Firma digitale",
+      "serialNumber": "01",
+      "validFrom": "2004-04-21T08:39:46.000Z",
+      "validTo": "2014-04-22T08:39:46.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "ldap://fe.csp.multicertify.com:389/ou%3DProvincia%20di%20Roma%20Firma%20digitale%2Co%3DProvincia%20di%20Roma?certificaterevocationlist"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "regione-emilia-romagna-formazione-firma-digit.pem",
+      "sha256": "6718ac3bc116857176d70624079a84f54f4df375dcebe15714f7ecd2a9a5ea13",
+      "subject": "- REGIONE EMILIA-ROMAGNA FORMAZIONE FIRMA DIGIT.",
+      "issuer": "- REGIONE EMILIA-ROMAGNA FORMAZIONE FIRMA DIGIT.",
+      "serialNumber": "01",
+      "validFrom": "2003-09-08T09:48:58.000Z",
+      "validTo": "2013-09-08T09:48:58.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "ldap://fe.csp.multicertify.com:389/ou%3D-%20REGIONE%20EMILIA-ROMAGNA%20FORMAZIONE%20FIRMA%20DIGIT.%2Co%3DREGIONE%20EMILIA-ROMAGNA%20FORMAZIONE?certificaterevocationlist"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "register-time-stamping-authority.pem",
+      "sha256": "fd640491efd51257bdb9e1f420bd98c5d5db6a65d0f0f54390b3e30913a07c54",
+      "subject": "Register Time Stamping Authority",
+      "issuer": "Register Time Stamping Authority",
+      "serialNumber": "00af464568f185b0eca0b274f6f5717df78e69f13a",
+      "validFrom": "2019-10-21T00:00:00.000Z",
+      "validTo": "2039-10-16T00:00:00.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "sanpaoloimi-production-identrus-certification-authority-1d93790e.pem",
+      "sha256": "1d93790e7d46ce7097db1526fa88d837f7fca7a37101cb8b85d152f7d6b5fbb4",
+      "subject": "sanpaoloimi Production Identrus Certification Authority",
+      "issuer": "sanpaoloimi Production Identrus Certification Authority",
+      "serialNumber": "0415",
+      "validFrom": "2004-11-10T13:59:34.000Z",
+      "validTo": "2011-01-26T03:17:35.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "ldap://ldap.sanpaoloimi.com/cn%3dsanpaoloimi%20Production%20Identrus%20Certification%20Authority,ou%3dsanpaoloimi%20Identrus%20Infrastructure,o%3dSanpaolo%20IMI%20S.p.A.?certificateRevocationList"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "sanpaoloimi-production-identrus-certification-authority.pem",
+      "sha256": "929a399f4dad0d57a5db22fdc52699053bd8ec656fd31f044714b8518023c0c6",
+      "subject": "sanpaoloimi Production Identrus Certification Authority",
+      "issuer": "sanpaoloimi Production Identrus Certification Authority",
+      "serialNumber": "04963a",
+      "validFrom": "2007-03-26T08:08:07.000Z",
+      "validTo": "2013-12-11T22:26:14.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://crl.sanpaoloimi.com/Repository/IdenTrust/SPIMI/getCRL",
+        "ldap://ldap.sanpaoloimi.com/cn%3dsanpaoloimi%20Production%20Identrus%20Certification%20Authority,ou%3dsanpaoloimi%20Identrus%20Infrastructure,o%3dSanpaolo%20IMI%20S.p.A.,c%3dIT?certificateRevocationList"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "seceti-certificatore-per-la-firma-digitale.pem",
+      "sha256": "ff3e6067b6fc567ccf9eb711321e1bc3af392dda12829aae3e97d3a909b1ee02",
+      "subject": "SECETI Certificatore per la firma digitale",
+      "issuer": "SECETI Certificatore per la firma digitale",
+      "serialNumber": "3b9aca01",
+      "validFrom": "2000-09-14T16:07:00.000Z",
+      "validTo": "2010-09-14T23:59:00.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "ldap://dir.firmadigitale.seceti.it/cn%3DSECETI%20Certificatore%20per%20la%20firma%20digitale%2Co%3DSECETI%20S%2Ep%2EA%2E%2Cc%3DIT?certificateRevocationList;binary"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "servizio-di-certificazione-per-la-firma-digitale-ca1.pem",
+      "sha256": "de52b898e68950061f4a4ff90b093b64b4505f74b2842c39f910a5d96a6c4a7b",
+      "subject": "Servizio di Certificazione per la Firma Digitale - CA1",
+      "issuer": "Servizio di Certificazione per la Firma Digitale - CA1",
+      "serialNumber": "01",
+      "validFrom": "2010-10-20T08:47:43.000Z",
+      "validTo": "2016-09-02T13:45:01.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "ldap://ldap.crs.lombardia.it/cn%3dServizio%20di%20Certificazione%20per%20la%20Firma%20Digitale%20-%20CA1,ou%3dServizio%20di%20certificazione,o%3dLombardia%20Informatica%20S.p.A.,c%3dIT?certificateRevocationList",
+        "http://ca.lispa.it/CAFD1/CRL"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "servizio-di-certificazione-per-la-firma-digitale-ca2.pem",
+      "sha256": "c291c83e354a8ab9ca0371448c442d41ee5d705ecc697e8c8f876a3f813b1056",
+      "subject": "Servizio di Certificazione per la Firma Digitale - CA2",
+      "issuer": "Servizio di Certificazione per la Firma Digitale - CA2",
+      "serialNumber": "01",
+      "validFrom": "2010-10-11T10:54:49.000Z",
+      "validTo": "2022-10-11T10:54:49.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "ldap://ldap.crs.lombardia.it/cn%3DServizio%20di%20certificazione%20per%20la%20Firma%20Digitale%20-%20CA2%2Cou%3DServizio%20di%20certificazione%2Co%3DLombardia%20Informatica%20S.p.A.%2Cc%3DIT?certificateRevocationList",
+        "http://ca.lispa.it/CAFD2/CRL"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "sia-servizio-di-certificazione-per-la-firma-digitale.pem",
+      "sha256": "b5c24b769bd7ff7b60e6fe9e707db31a0a81f36b9f97e4ed3b401881cef47c37",
+      "subject": "SIA - Servizio di Certificazione per la Firma Digitale",
+      "issuer": "SIA - Servizio di Certificazione per la Firma Digitale",
+      "serialNumber": "3c",
+      "validFrom": "2001-01-01T07:02:00.000Z",
+      "validTo": "2010-12-31T23:59:00.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "https://ca.sia.it/cgi-bin/aipads/getCRL",
+        "ldap://ldap.sia.it/cn=SIA - Servizio di Certificazione per la Firma Digitale,o=SIA S.p.A.,c=IT?certificateRevocationList;binary"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "siemens-medical-solutions.pem",
+      "sha256": "4cf392d513b07c1f6ae7a98e7cc9266cc100b074774f5c8efa4d3b16f9f0250d",
+      "subject": "- SIEMENS MEDICAL SOLUTIONS",
+      "issuer": "- SIEMENS MEDICAL SOLUTIONS",
+      "serialNumber": "01",
+      "validFrom": "2003-09-05T08:31:50.000Z",
+      "validTo": "2013-09-05T08:31:50.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "ldap://fe.csp.multicertify.com:389/ou%3D-%20SIEMENS%20MEDICAL%20SOLUTIONS%2Co%3DSIEMENS%20S.p.A.?certificaterevocationlist"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "ssb-firma-qualificata.pem",
+      "sha256": "5421b3be8fbb4250285500dc6360554682a00022581663d3610f37850fc9b043",
+      "subject": "SSB Firma Qualificata",
+      "issuer": "SSB Firma Qualificata",
+      "serialNumber": "0097",
+      "validFrom": "2001-02-23T14:40:00.000Z",
+      "validTo": "2010-02-23T23:59:00.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "ldap://ldap-pki.ssb.net/cn=SSB%20Firma%20Qualificata,ou=Servizi%20di%20PKI,ou=Certification%20Authority,o=SSB%20S.p.A.,c=IT?certificateRevocationList"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "teamsystem-qualified-electronic-signature-ca-2023.pem",
+      "sha256": "20bccf103d2f447fd972687d1b7b9addb70482aab3821762f6c3688f1680d900",
+      "subject": "TeamSystem Qualified Electronic Signature CA 2023",
+      "issuer": "TeamSystem Qualified Electronic Signature CA 2023",
+      "serialNumber": "34ebdc6d72c774a8",
+      "validFrom": "2023-05-16T08:26:10.000Z",
+      "validTo": "2043-05-16T08:26:10.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "teamsystem-qualified-time-stamping-authority-2023.pem",
+      "sha256": "5b603f35ba690e7a0e6fc0b8a1119db8230456d8ca99f47962237916ee4aec21",
+      "subject": "TeamSystem Qualified Time Stamping Authority 2023",
+      "issuer": "TeamSystem Qualified Time Stamping Authority 2023",
+      "serialNumber": "17acb141bbf0821c",
+      "validFrom": "2023-05-16T08:38:26.000Z",
+      "validTo": "2043-05-16T08:38:26.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "teleskill-italia-s-p-a-firma-digit-aipa-cr-24.pem",
+      "sha256": "b2eab2bc0a4a91f526b95dbdf43604be59a38dcbeea96e88a6edc8e1f9406b59",
+      "subject": "- Teleskill Italia S.p.A-Firma Digit. AIPA CR 24",
+      "issuer": "- Teleskill Italia S.p.A-Firma Digit. AIPA CR 24",
+      "serialNumber": "01",
+      "validFrom": "2003-09-08T10:01:00.000Z",
+      "validTo": "2013-09-08T10:01:00.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "ldap://fe.csp.multicertify.com:389/ou%3D-%20Teleskill%20Italia%20S.p.A-Firma%20Digit.%20AIPA%20CR%2024%2Co%3DTeleskill%20Italia%20S.p.A.%20-%20CA?certificaterevocationlist"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "ti-firma-digitale-ca-g2.pem",
+      "sha256": "6a38f907a0b9ebb55bc7b2250af8ddf5faa9749b77983f38571027c3ce398fb7",
+      "subject": "TI Firma Digitale CA - G2",
+      "issuer": "TI Firma Digitale CA - G2",
+      "serialNumber": "1b01b351210fb9ea44fcb3241c9a0241",
+      "validFrom": "2003-05-26T00:00:00.000Z",
+      "validTo": "2011-05-25T23:59:59.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-1024",
+      "crlUrls": [
+        "http://onsitecrl.trustitalia.it/TrustItaliaSpATrustItaliaFD/LatestCRL.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.trustitalia.it"
+      ]
+    },
+    {
+      "file": "ti-firma-digitale-ca-g3.pem",
+      "sha256": "a3f0ae891c9e724adea169dcbb0fadfe11a2037a5ea970ed0263938ef24503e8",
+      "subject": "TI Firma Digitale CA - G3",
+      "issuer": "TI Firma Digitale CA - G3",
+      "serialNumber": "01a2e07ff52412f112e09d043fff8f53",
+      "validFrom": "2004-06-28T00:00:00.000Z",
+      "validTo": "2009-06-27T23:59:59.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-1024",
+      "crlUrls": [
+        "http://onsitecrl.trustitalia.it/TrustItaliaSpAServizidiCertificazioneFD/LatestCRL.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.trustitalia.it"
+      ]
+    },
+    {
+      "file": "ti-firma-digitale-ca.pem",
+      "sha256": "1029722ddf44b0a78e4550fd78af4f4c528e2594fbc49bb75a1c1582b3b50058",
+      "subject": "TI Firma Digitale CA",
+      "issuer": "TI Firma Digitale CA",
+      "serialNumber": "67da24cb5fe88c1eae5f6cfb5a32d0bf",
+      "validFrom": "2001-06-16T00:00:00.000Z",
+      "validTo": "2004-06-15T23:59:59.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-1024",
+      "crlUrls": [
+        "http://onsitecrl.trustitalia.it"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "ti-trust-technologies-ca-1-737fbaf1.pem",
+      "sha256": "737fbaf12d783e7199d3b27b3ee67ca018f88f1f973abdba70683a1ae323b598",
+      "subject": "TI Trust Technologies CA 1",
+      "issuer": "TI Trust Technologies CA 1",
+      "serialNumber": "01",
+      "validFrom": "2015-05-12T13:46:20.000Z",
+      "validTo": "2035-05-12T13:46:20.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://ca.tipki.it/TTCA1/CRL"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "ti-trust-technologies-ca-1.pem",
+      "sha256": "737fbaf12d783e7199d3b27b3ee67ca018f88f1f973abdba70683a1ae323b598",
+      "subject": "TI Trust Technologies CA 1",
+      "issuer": "TI Trust Technologies CA 1",
+      "serialNumber": "01",
+      "validFrom": "2015-05-12T13:46:20.000Z",
+      "validTo": "2035-05-12T13:46:20.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://ca.tipki.it/TTCA1/CRL"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "ti-trust-technologies-ca-2-6f21f21b.pem",
+      "sha256": "6f21f21bb31e5ec5498567800b06c551a3a5511c6ef7383042570895ac14eaeb",
+      "subject": "TI Trust Technologies CA 2",
+      "issuer": "TI Trust Technologies CA 2",
+      "serialNumber": "01",
+      "validFrom": "2015-05-12T13:54:48.000Z",
+      "validTo": "2035-05-12T13:54:48.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://ca.tipki.it/TTCA2/CRL"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "ti-trust-technologies-ca-2-6f21f21bb.pem",
+      "sha256": "6f21f21bb31e5ec5498567800b06c551a3a5511c6ef7383042570895ac14eaeb",
+      "subject": "TI Trust Technologies CA 2",
+      "issuer": "TI Trust Technologies CA 2",
+      "serialNumber": "01",
+      "validFrom": "2015-05-12T13:54:48.000Z",
+      "validTo": "2035-05-12T13:54:48.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://ca.tipki.it/TTCA2/CRL"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "ti-trust-technologies-ca-2.pem",
+      "sha256": "6f21f21bb31e5ec5498567800b06c551a3a5511c6ef7383042570895ac14eaeb",
+      "subject": "TI Trust Technologies CA 2",
+      "issuer": "TI Trust Technologies CA 2",
+      "serialNumber": "01",
+      "validFrom": "2015-05-12T13:54:48.000Z",
+      "validTo": "2035-05-12T13:54:48.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://ca.tipki.it/TTCA2/CRL"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "ti-trust-technologies-ca-37ed6207.pem",
+      "sha256": "37ed6207fdf94317d039bfab21cdcded554da3961604f631e009afc0fb901f38",
+      "subject": "TI Trust Technologies CA",
+      "issuer": "TI Trust Technologies CA",
+      "serialNumber": "01",
+      "validFrom": "2013-12-02T16:04:01.000Z",
+      "validTo": "2033-11-27T16:04:01.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://ca.tipki.it/TTCA/CRL"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "ti-trust-technologies-ca.pem",
+      "sha256": "37ed6207fdf94317d039bfab21cdcded554da3961604f631e009afc0fb901f38",
+      "subject": "TI Trust Technologies CA",
+      "issuer": "TI Trust Technologies CA",
+      "serialNumber": "01",
+      "validFrom": "2013-12-02T16:04:01.000Z",
+      "validTo": "2033-11-27T16:04:01.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://ca.tipki.it/TTCA/CRL"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "ti-trust-technologies-eidas-ca-65625b87.pem",
+      "sha256": "65625b8766b6a35f94b294f7a0678e233cf4b756278dd941631c82d371a2ab0b",
+      "subject": "TI Trust Technologies eIDAS CA",
+      "issuer": "TI Trust Technologies eIDAS CA",
+      "serialNumber": "01",
+      "validFrom": "2018-08-01T12:04:00.000Z",
+      "validTo": "2038-08-01T12:04:00.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "ti-trust-technologies-eidas-ca-65625b876.pem",
+      "sha256": "65625b8766b6a35f94b294f7a0678e233cf4b756278dd941631c82d371a2ab0b",
+      "subject": "TI Trust Technologies eIDAS CA",
+      "issuer": "TI Trust Technologies eIDAS CA",
+      "serialNumber": "01",
+      "validFrom": "2018-08-01T12:04:00.000Z",
+      "validTo": "2038-08-01T12:04:00.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "ti-trust-technologies-eidas-ca.pem",
+      "sha256": "65625b8766b6a35f94b294f7a0678e233cf4b756278dd941631c82d371a2ab0b",
+      "subject": "TI Trust Technologies eIDAS CA",
+      "issuer": "TI Trust Technologies eIDAS CA",
+      "serialNumber": "01",
+      "validFrom": "2018-08-01T12:04:00.000Z",
+      "validTo": "2038-08-01T12:04:00.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "ti-trust-technologies-eidas-tsa.pem",
+      "sha256": "b8a06ecfd8408c6d24531d3cb5c7767a379298a1bac74f5bfc89743ae5bfbcf6",
+      "subject": "TI Trust Technologies eIDAS TSA",
+      "issuer": "TI Trust Technologies eIDAS TSA",
+      "serialNumber": "01",
+      "validFrom": "2016-08-02T08:53:38.000Z",
+      "validTo": "2036-08-02T08:53:38.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://ca.tipki.it/ETSA/CRL"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "ti-trust-technologies-per-il-ministero-dell-interno-ca-a406b7bf.pem",
+      "sha256": "a406b7bfb6776fe503be18c0e6e709f8a5bea29d088a4e7abd483d4661b3ac60",
+      "subject": "TI Trust Technologies per il Ministero dell'Interno CA",
+      "issuer": "TI Trust Technologies per il Ministero dell'Interno CA",
+      "serialNumber": "01",
+      "validFrom": "2013-12-02T16:46:41.000Z",
+      "validTo": "2033-11-27T16:46:41.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://ca.tipki.it/MDITTCA/CRL"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "ti-trust-technologies-per-il-ministero-dell-interno-ca.pem",
+      "sha256": "a406b7bfb6776fe503be18c0e6e709f8a5bea29d088a4e7abd483d4661b3ac60",
+      "subject": "TI Trust Technologies per il Ministero dell'Interno CA",
+      "issuer": "TI Trust Technologies per il Ministero dell'Interno CA",
+      "serialNumber": "01",
+      "validFrom": "2013-12-02T16:46:41.000Z",
+      "validTo": "2033-11-27T16:46:41.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://ca.tipki.it/MDITTCA/CRL"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "ti-trust-technologies-per-il-ministero-dell-interno-qtsp-ca-7b7caefe.pem",
+      "sha256": "7b7caefee61e601179b2cce85309b0c57c57ba12ff40abe46ace1bb6ae4892d6",
+      "subject": "TI Trust Technologies per il Ministero dell'Interno QTSP CA",
+      "issuer": "TI Trust Technologies per il Ministero dell'Interno QTSP CA",
+      "serialNumber": "01",
+      "validFrom": "2021-04-20T08:55:48.000Z",
+      "validTo": "2041-04-20T08:55:48.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "ti-trust-technologies-per-il-ministero-dell-interno-qtsp-ca-7b7caefee.pem",
+      "sha256": "7b7caefee61e601179b2cce85309b0c57c57ba12ff40abe46ace1bb6ae4892d6",
+      "subject": "TI Trust Technologies per il Ministero dell'Interno QTSP CA",
+      "issuer": "TI Trust Technologies per il Ministero dell'Interno QTSP CA",
+      "serialNumber": "01",
+      "validFrom": "2021-04-20T08:55:48.000Z",
+      "validTo": "2041-04-20T08:55:48.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "ti-trust-technologies-per-il-ministero-dell-interno-qtsp-ca.pem",
+      "sha256": "7b7caefee61e601179b2cce85309b0c57c57ba12ff40abe46ace1bb6ae4892d6",
+      "subject": "TI Trust Technologies per il Ministero dell'Interno QTSP CA",
+      "issuer": "TI Trust Technologies per il Ministero dell'Interno QTSP CA",
+      "serialNumber": "01",
+      "validFrom": "2021-04-20T08:55:48.000Z",
+      "validTo": "2041-04-20T08:55:48.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "ti-trust-technologies-qtsp-ca-1-fa286ad2.pem",
+      "sha256": "fa286ad2e519466fa500bae39b25f340fd6109d7da116d4f63669a3630e3629a",
+      "subject": "TI Trust Technologies QTSP CA 1",
+      "issuer": "TI Trust Technologies QTSP CA 1",
+      "serialNumber": "01",
+      "validFrom": "2021-04-20T08:40:01.000Z",
+      "validTo": "2041-04-20T08:40:01.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "ti-trust-technologies-qtsp-ca-1-fa286ad2e.pem",
+      "sha256": "fa286ad2e519466fa500bae39b25f340fd6109d7da116d4f63669a3630e3629a",
+      "subject": "TI Trust Technologies QTSP CA 1",
+      "issuer": "TI Trust Technologies QTSP CA 1",
+      "serialNumber": "01",
+      "validFrom": "2021-04-20T08:40:01.000Z",
+      "validTo": "2041-04-20T08:40:01.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "ti-trust-technologies-qtsp-ca-1.pem",
+      "sha256": "fa286ad2e519466fa500bae39b25f340fd6109d7da116d4f63669a3630e3629a",
+      "subject": "TI Trust Technologies QTSP CA 1",
+      "issuer": "TI Trust Technologies QTSP CA 1",
+      "serialNumber": "01",
+      "validFrom": "2021-04-20T08:40:01.000Z",
+      "validTo": "2041-04-20T08:40:01.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "ti-trust-technologies-qtsp-ca-2-f37ce107.pem",
+      "sha256": "f37ce1076987abd26283df96128207e6bdb6b519c177d64a040f3fa04e7a2c83",
+      "subject": "TI Trust Technologies QTSP CA 2",
+      "issuer": "TI Trust Technologies QTSP CA 2",
+      "serialNumber": "01",
+      "validFrom": "2021-04-20T08:42:46.000Z",
+      "validTo": "2041-04-20T08:42:46.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "ti-trust-technologies-qtsp-ca-2.pem",
+      "sha256": "f37ce1076987abd26283df96128207e6bdb6b519c177d64a040f3fa04e7a2c83",
+      "subject": "TI Trust Technologies QTSP CA 2",
+      "issuer": "TI Trust Technologies QTSP CA 2",
+      "serialNumber": "01",
+      "validFrom": "2021-04-20T08:42:46.000Z",
+      "validTo": "2041-04-20T08:42:46.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "ti-trust-technologies-qtsp-ca-48bc09d1.pem",
+      "sha256": "48bc09d10781fe44bb4b947ddc7a37572e8b9930d6c02d886484a603afcd0a1f",
+      "subject": "TI Trust Technologies QTSP CA",
+      "issuer": "TI Trust Technologies QTSP CA",
+      "serialNumber": "01",
+      "validFrom": "2021-04-20T08:31:40.000Z",
+      "validTo": "2041-04-20T08:31:40.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "ti-trust-technologies-qtsp-ca-48bc09d10.pem",
+      "sha256": "48bc09d10781fe44bb4b947ddc7a37572e8b9930d6c02d886484a603afcd0a1f",
+      "subject": "TI Trust Technologies QTSP CA",
+      "issuer": "TI Trust Technologies QTSP CA",
+      "serialNumber": "01",
+      "validFrom": "2021-04-20T08:31:40.000Z",
+      "validTo": "2041-04-20T08:31:40.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "ti-trust-technologies-qtsp-ca.pem",
+      "sha256": "48bc09d10781fe44bb4b947ddc7a37572e8b9930d6c02d886484a603afcd0a1f",
+      "subject": "TI Trust Technologies QTSP CA",
+      "issuer": "TI Trust Technologies QTSP CA",
+      "serialNumber": "01",
+      "validFrom": "2021-04-20T08:31:40.000Z",
+      "validTo": "2041-04-20T08:31:40.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "ti-trust-technologies-qtsp-tsa-ca.pem",
+      "sha256": "2038543e3f056a25153e9202b9408d80aac1032aa0258a04d458734272c6d015",
+      "subject": "TI Trust Technologies QTSP TSA CA",
+      "issuer": "TI Trust Technologies QTSP TSA CA",
+      "serialNumber": "01",
+      "validFrom": "2021-04-20T08:51:07.000Z",
+      "validTo": "2041-04-20T08:51:07.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "uanataca-qualified-eidas-ca-2020-e03d7045.pem",
+      "sha256": "e03d704511390497b51183da532f1b1ac0f596d444903bd571b78a7c03f814ae",
+      "subject": "UANATACA Qualified eIDAS CA 2020",
+      "issuer": "UANATACA Qualified eIDAS CA 2020",
+      "serialNumber": "57d760edbe451881",
+      "validFrom": "2020-04-07T07:59:40.000Z",
+      "validTo": "2040-04-02T07:59:40.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "uanataca-qualified-eidas-ca-2020-e03d70451.pem",
+      "sha256": "e03d704511390497b51183da532f1b1ac0f596d444903bd571b78a7c03f814ae",
+      "subject": "UANATACA Qualified eIDAS CA 2020",
+      "issuer": "UANATACA Qualified eIDAS CA 2020",
+      "serialNumber": "57d760edbe451881",
+      "validFrom": "2020-04-07T07:59:40.000Z",
+      "validTo": "2040-04-02T07:59:40.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "uanataca-qualified-eidas-ca-2020.pem",
+      "sha256": "e03d704511390497b51183da532f1b1ac0f596d444903bd571b78a7c03f814ae",
+      "subject": "UANATACA Qualified eIDAS CA 2020",
+      "issuer": "UANATACA Qualified eIDAS CA 2020",
+      "serialNumber": "57d760edbe451881",
+      "validFrom": "2020-04-07T07:59:40.000Z",
+      "validTo": "2040-04-02T07:59:40.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "uanataca-qualified-tsa-2020.pem",
+      "sha256": "3f6ade3dfc7196fd27490b5a4e9fb610415cbddd0b998a5b61255929f0bab14a",
+      "subject": "UANATACA Qualified TSA 2020",
+      "issuer": "UANATACA Qualified TSA 2020",
+      "serialNumber": "7c62b6088b49678d",
+      "validFrom": "2020-04-07T08:27:45.000Z",
+      "validTo": "2040-04-02T08:27:45.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "zucchetti-firma-qualificata.pem",
+      "sha256": "9568c702a2d18564eaeee8937b7958b2787e5bc71f0d6fdb6392f2d95d93b575",
+      "subject": "Zucchetti Firma Qualificata",
+      "issuer": "Zucchetti Firma Qualificata",
+      "serialNumber": "05",
+      "validFrom": "2015-11-05T10:51:34.000Z",
+      "validTo": "2027-11-05T11:51:34.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://crl.ca.zucchetti.it/FirmaQualificata/CACRL.crl",
+        "ldap://ldap.ca.zucchetti.it/cn%3DZucchetti%20Firma%20Qualificata,o%3DZucchetti%20SpA,c%3DIT?authorityRevocationList"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "zucchetti-qualified-electronic-signature-ca-2-02d98a39.pem",
+      "sha256": "02d98a398506c6fd7d8b10ea8b9041fb2e4e7f850c78eeeebd8149926e9fefd0",
+      "subject": "Zucchetti Qualified Electronic Signature CA 2",
+      "issuer": "Zucchetti Qualified Electronic Signature CA 2",
+      "serialNumber": "01",
+      "validFrom": "2021-12-14T10:27:37.000Z",
+      "validTo": "2037-12-14T11:27:37.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.ca2.zucchetticertifica.it/qc/ARL.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "zucchetti-qualified-electronic-signature-ca-2.pem",
+      "sha256": "02d98a398506c6fd7d8b10ea8b9041fb2e4e7f850c78eeeebd8149926e9fefd0",
+      "subject": "Zucchetti Qualified Electronic Signature CA 2",
+      "issuer": "Zucchetti Qualified Electronic Signature CA 2",
+      "serialNumber": "01",
+      "validFrom": "2021-12-14T10:27:37.000Z",
+      "validTo": "2037-12-14T11:27:37.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.ca2.zucchetticertifica.it/qc/ARL.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "zucchetti-qualified-electronic-signature-ec-ca-2-9e27c472.pem",
+      "sha256": "9e27c472b49869a0d9a5205e14f2198cebf127b2cf4ac5f688a154033522194d",
+      "subject": "Zucchetti Qualified Electronic Signature EC CA 2",
+      "issuer": "Zucchetti Qualified Electronic Signature EC CA 2",
+      "serialNumber": "116342a18db7b9cb8f441552ee3f28ca8f5b3d76",
+      "validFrom": "2024-05-20T09:14:59.000Z",
+      "validTo": "2037-05-20T09:14:59.000Z",
+      "role": "root",
+      "keyAlgorithm": "EC P-384",
+      "crlUrls": [
+        "http://crl.ca2.zucchetticertifica.it/qcec/ARL.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "zucchetti-qualified-electronic-signature-ec-ca-2.pem",
+      "sha256": "9e27c472b49869a0d9a5205e14f2198cebf127b2cf4ac5f688a154033522194d",
+      "subject": "Zucchetti Qualified Electronic Signature EC CA 2",
+      "issuer": "Zucchetti Qualified Electronic Signature EC CA 2",
+      "serialNumber": "116342a18db7b9cb8f441552ee3f28ca8f5b3d76",
+      "validFrom": "2024-05-20T09:14:59.000Z",
+      "validTo": "2037-05-20T09:14:59.000Z",
+      "role": "root",
+      "keyAlgorithm": "EC P-384",
+      "crlUrls": [
+        "http://crl.ca2.zucchetticertifica.it/qcec/ARL.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "zucchetti-qualified-time-stamping-authority-ec-2.pem",
+      "sha256": "c5ee1923e828b7cb88758a6fccb373eac7d6101af42c3a5c7d225a8b8005cc45",
+      "subject": "Zucchetti Qualified Time Stamping Authority EC 2",
+      "issuer": "Zucchetti Qualified Time Stamping Authority EC 2",
+      "serialNumber": "6ac1a9d2f24f8543cfe861edd2c5f0b2801402e4",
+      "validFrom": "2024-05-20T09:25:59.000Z",
+      "validTo": "2037-05-20T09:25:59.000Z",
+      "role": "root",
+      "keyAlgorithm": "EC P-384",
+      "crlUrls": [
+        "http://crl.ca2.zucchetticertifica.it/qtsaec/ARL.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "zucchetti-qualified-time-stamping-authority.pem",
+      "sha256": "87eb96ebdcfff4325eba52f2c40800291c14b2a117b3a3dd0f1bf3a9608f5669",
+      "subject": "Zucchetti Qualified Time Stamping Authority",
+      "issuer": "Zucchetti Qualified Time Stamping Authority",
+      "serialNumber": "01",
+      "validFrom": "2016-06-28T14:41:42.000Z",
+      "validTo": "2026-06-28T15:41:42.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.ca.zucchetti.it/QualifiedTimeStampingAuthority/CACRL.crl",
+        "ldap://ldap.ca.zucchetti.it/cn%3DZucchetti%20Qualified%20Time%20Stamping%20Authority,o%3DZucchetti%20SpA,c%3DIT?authorityRevocationList"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "zucchetti-time-stamping-authority-2.pem",
+      "sha256": "49d24651e7dfffae76339696e466792edecb3ac85c8167d07b4063b099ca99c3",
+      "subject": "Zucchetti Time Stamping Authority 2",
+      "issuer": "Zucchetti Time Stamping Authority 2",
+      "serialNumber": "01",
+      "validFrom": "2021-12-14T10:35:43.000Z",
+      "validTo": "2037-12-14T11:35:43.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.ca2.zucchetticertifica.it/tsa/ARL.crl"
       ],
       "ocspUrls": []
     }

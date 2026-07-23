@@ -249,14 +249,23 @@ describe('Estonia (ee)', () => {
 // ── Country: Italy ─────────────────────────────────────────────────
 
 describe('Italy (it)', () => {
-  it('exports 2 CIE national eID root certificates', () => {
-    assert.equal(italy.ALL_CERTS.length, 2, `Expected 2, got ${italy.ALL_CERTS.length}`)
+  it('exports the full AgID TSL set plus the CIE eID roots (>200 certs)', () => {
+    // 229 QTSP CAs verified via the LOTL/XAdES chain + 2 CIE national eID roots.
+    assert.ok(italy.ALL_CERTS.length >= 200, `Expected >=200, got ${italy.ALL_CERTS.length}`)
   })
 
-  it('includes both CIE national root CAs (2016 and 2024)', () => {
-    const names = italy.ALL_CERTS.map(c => c.exportName)
-    assert.ok(names.includes('CIE_NATIONAL_ROOT_CA_2016'), 'Missing CIE 2016 root')
-    assert.ok(names.includes('CIE_NATIONAL_ROOT_CA_2024'), 'Missing CIE 2024 root')
+  it('is a high-volume country: getBySha256 helper, no per-cert named consts', () => {
+    assert.equal(typeof italy.getBySha256, 'function', 'getBySha256 helper missing')
+    assert.equal(italy.CIE_NATIONAL_ROOT_CA_2016, undefined, 'should not emit per-cert named consts at this volume')
+  })
+
+  it('retains both CIE national eID roots (by SHA-256) alongside the QTSP set', () => {
+    // These come from the CIE portal (separate eIDAS eID mechanism), not the QTSP TSL,
+    // so they are preserved across the TSL reconcile rather than dropped.
+    const cie2016 = '87364fb476e74962e7c495b9bbaf727813ee007cb56a0ada6ab9868123db267e'
+    const cie2024 = '40f425927e8a1e6a297a15c2a9d79e2221bf4fe25b2f21e3bfad53a1ba58b0d7'
+    assert.ok(italy.getBySha256(cie2016), 'CIE 2016 root missing from Italy set')
+    assert.ok(italy.getBySha256(cie2024), 'CIE 2024 root missing from Italy set')
   })
 
   it('all PEM strings are valid format', () => {
@@ -319,16 +328,20 @@ describe('Peru (pe)', () => {
 // ── Cross-country checks ───────────────────────────────────────────
 
 describe('cross-country integrity', () => {
-  it('total trust store has 44 certificates (CR 10 + BR 4 + AR 2 + ES 2 + EE 16 + IT 2 + PE 8)', () => {
-    const total =
+  it('total trust store carries the small-country anchors plus Italy full TSL set (>= 260)', () => {
+    // CR 10 + BR 4 + AR 2 + ES 2 + EE 16 + PE 8 = 42 fixed, plus Italy's
+    // TSL-driven set (~231). Italy is dynamic (AgID TSL), so this is a floor
+    // tripwire rather than an exact count.
+    const fixed =
       cr.ALL_CERTS.length +
       br.ALL_CERTS.length +
       ar.ALL_CERTS.length +
       es.ALL_CERTS.length +
       ee.ALL_CERTS.length +
-      italy.ALL_CERTS.length +
       pe.ALL_CERTS.length
-    assert.equal(total, 44, `Expected 44 total, got ${total}`)
+    assert.equal(fixed, 42, `small-country anchors changed: expected 42, got ${fixed}`)
+    const total = fixed + italy.ALL_CERTS.length
+    assert.ok(total >= 260, `Expected >= 260 total, got ${total}`)
   })
 
   it('no duplicate export names across countries', () => {

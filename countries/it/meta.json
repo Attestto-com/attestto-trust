@@ -2,25 +2,25 @@
   "code": "it",
   "name": "Italy",
   "flag": "🇮🇹",
-  "model": "national-hierarchy",
+  "model": "accredited-tsl",
   "authority": {
-    "name": "Ministero dell'Interno — CNSD (Carta d'Identità Elettronica)",
-    "operator": "Direzione Centrale per i Servizi Demografici (CNSD) / IPZS",
-    "url": "https://www.cartaidentita.interno.gov.it/en/public-and-business-administration/certification-autority/"
+    "name": "AgID — Agenzia per l'Italia Digitale (eIDAS supervisory body)",
+    "operator": "~25 accredited QTSPs + Ministero dell'Interno (CIE national eID)",
+    "url": "https://eidas.agid.gov.it/TL/TSL-IT.xml"
   },
   "governingLaw": "Reglamento eIDAS (UE) 910/2014 · CAD (D.Lgs. 82/2005)",
   "technology": {
-    "keyAlgorithms": ["RSA-4096"],
-    "signatureStandards": ["CAdES", "PAdES", "XAdES"],
+    "keyAlgorithms": ["RSA-2048", "RSA-4096", "EC P-256", "EC P-384"],
+    "signatureStandards": ["CAdES", "PAdES", "XAdES", "ASiC"],
     "trustList": "ETSI TS 119 612 — TSL-IT.xml (AgID)"
   },
-  "capabilities": ["Carta d'Identità Elettronica (CIE national eID)", "Advanced e-signature (FEA)"],
+  "capabilities": ["Qualified e-signature & e-seal (eIDAS)", "Qualified timestamping", "Carta d'Identità Elettronica (CIE national eID)"],
   "relatedLinks": [
-    { "label": "CIE — Certification Authority", "url": "https://www.cartaidentita.interno.gov.it/en/public-and-business-administration/certification-autority/" },
-    { "label": "CIE — official portal", "url": "https://www.cartaidentita.interno.gov.it/en/" },
     { "label": "AgID — Italian Trusted List (TSL-IT.xml)", "url": "https://eidas.agid.gov.it/TL/TSL-IT.xml" },
+    { "label": "AgID — Trust service providers", "url": "https://www.agid.gov.it/it/piattaforme/firma-elettronica-qualificata/prestatori-servizi-fiduciari-qualificati-attivi" },
+    { "label": "CIE — Certification Authority", "url": "https://www.cartaidentita.interno.gov.it/en/public-and-business-administration/certification-autority/" },
     { "label": "Independent verifier (Attestto)", "url": "https://verify.attestto.com" }
   ],
-  "source": { "type": "manual", "note": "CIE national root CAs (2016→2036 and 2024→2044) downloaded from the Ministero dell'Interno CIE Certification Authority portal and cross-checked against the AgID eIDAS Trusted List (TSL-IT.xml). Roots only; the two CIE issuing sub-CAs validate by chaining." },
-  "notes": "Phase 1 covers the national eID (Carta d'Identità Elettronica) trust anchors only: the two self-signed Ministero dell'Interno / CNSD root CAs. Both were cross-checked against two independent sources (the CIE CA portal and the AgID national Trusted List). Italy's wider qualified-signature ecosystem is a federation of ~25 accredited QTSPs (Actalis, ArubaPEC, InfoCert, Namirial, Poste Italiane, Intesa, TI Trust Technologies, Uanataca, and others) published as ~222 active anchors in the AgID TSL; those are staged and deferred to a later phase pending TSL XAdES-signature verification (see scripts/monitors/PROMOTION.md, Strategy B), which is the correct control at that scale rather than per-certificate cross-checking."
+  "source": { "type": "tsl", "url": "https://eidas.agid.gov.it/TL/TSL-IT.xml" },
+  "notes": "Italy's qualified-signature trust is a federation of ~25 accredited QTSPs (Actalis, ArubaPEC, InfoCert, Namirial, Poste Italiane, Intesa, Intesi Group, TI Trust Technologies, Uanataca, and others) published in AgID's national eIDAS Trusted List. The 229 currently-granted CA certificates were promoted wholesale after verifying the Trusted List's XAdES signature through the EU LOTL chain of trust: the LOTL signature was checked against the pinned European Commission signing anchor, and the Italian TSL's signature (signer: AgID) against the identity the LOTL declares for Italy — so the list's single seal vouches for every certificate it contains (eIDAS Art. 22). Verification evidence is in VERIFICATION.md. In addition, the two Ministero dell'Interno / CNSD national eID roots behind the Carta d'Identità Elettronica (2016→2036, 2024→2044) are retained: they belong to the eID-notification mechanism rather than the QTSP list, and were cross-checked against the CIE portal and the AgID list independently."
 }

@@ -105,11 +105,17 @@ function refreshCountry(iso2) {
 
   const entries = pems.map((file) => {
     const pem = readFileSync(join(currentDir, file), 'utf8')
+    // SHA-256 over the certificate's ACTUAL DER (the base64 body of the PEM),
+    // never a parser re-encode. node-forge's certificateToAsn1 -> toDer can
+    // produce bytes that differ from the original DER for some certs, which
+    // would publish a fingerprint that does not match the .pem a verifier
+    // downloads and rehashes. This is the tamper-evidence contract, so it must
+    // match the file byte-for-byte.
+    const der = Buffer.from(pem.replace(/-----[^-]+-----/g, '').replace(/\s+/g, ''), 'base64')
+    const sha256 = createHash('sha256').update(der).digest('hex')
     let base
     try {
       const cert = forge.pki.certificateFromPem(pem)
-      const der = forge.asn1.toDer(forge.pki.certificateToAsn1(cert)).getBytes()
-      const sha256 = createHash('sha256').update(Buffer.from(der, 'binary')).digest('hex')
       const subjectCN = cn(cert.subject)
       const issuerCN = cn(cert.issuer)
       base = {
@@ -126,7 +132,8 @@ function refreshCountry(iso2) {
       // Non-RSA key (e.g. EC): node-forge can't read it. Use the platform parser.
       base = parseCertNative(pem, file)
     }
-    return { ...base, ...extractExtras(pem) }
+    // Guarantee the file-derived fingerprint wins regardless of parser path.
+    return { ...base, sha256, ...extractExtras(pem) }
   })
 
   // Content-bearing fields only. generatedAt is intentionally excluded so we
