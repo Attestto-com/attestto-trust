@@ -77,9 +77,9 @@ More countries are staged and land after a per-country promotion review: Mexico,
 ## Global / organizational anchors
 
 Beyond national PKI, the directory mirrors global organizational-identity roots under `anchors/`.
-The first is **GLEIF vLEI** (`anchors/gleif-vlei/`) — the GLEIF root of trust and its authorized
-Qualified vLEI Issuers, hash-pinned and version-controlled. vLEI is KERI/ACDC (not X.509), so it is
-pinned as an AID key-state rather than a CA certificate. We mirror what GLEIF publishes and do not
+The first is **GLEIF vLEI** (`anchors/gleif-vlei/`), the GLEIF root of trust and its authorized
+Qualified vLEI Issuers, hash-pinned and version-controlled. vLEI is KERI/ACDC (not X.509), pinned
+as an AID key-state rather than a CA certificate. We mirror what GLEIF publishes and do not
 issue or vouch for any credential. See [trust.attestto.org/gleif](https://trust.attestto.org/gleif).
 
 ## Key concepts

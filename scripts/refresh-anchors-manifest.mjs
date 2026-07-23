@@ -20,9 +20,25 @@ export function computeAnchorManifest(anchorDir) {
 
 export function refreshAnchor(anchorDir) {
   const { artifacts } = computeAnchorManifest(anchorDir)
-  // generatedAt is intentionally stable-per-run; callers may override.
-  const manifest = { generatedAt: new Date().toISOString().slice(0, 10), artifacts }
-  writeFileSync(join(anchorDir, 'manifest.json'), JSON.stringify(manifest, null, 2) + '\n')
+
+  // Preserve generatedAt when the artifacts are unchanged; bump it only when
+  // content actually changes. Without this, new Date() drifts on every run and
+  // the CI drift check can never pass (SOC-90 SEV-1, same fix as country manifests).
+  const manifestPath = join(anchorDir, 'manifest.json')
+  let generatedAt = new Date().toISOString().slice(0, 10)
+  if (existsSync(manifestPath)) {
+    try {
+      const prev = JSON.parse(readFileSync(manifestPath, 'utf8'))
+      if (prev.generatedAt && JSON.stringify(prev.artifacts) === JSON.stringify(artifacts)) {
+        generatedAt = prev.generatedAt
+      }
+    } catch {
+      // Unparseable prior manifest: fall through to a fresh timestamp.
+    }
+  }
+
+  const manifest = { generatedAt, artifacts }
+  writeFileSync(manifestPath, JSON.stringify(manifest, null, 2) + '\n')
   return manifest
 }
 
