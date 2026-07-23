@@ -43,7 +43,9 @@ const devsHref = lang === 'es' ? `${base}/es#developers` : `${base}/#developers`
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{pageTitle}</title>
     <meta name="description" content={desc} />
-    <meta name="color-scheme" content="light" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#0a0a14" />
+    <link rel="icon" type="image/svg+xml" href={`${base}/favicon.svg`} />
     <link rel="canonical" href={new URL(Astro.url.pathname, Astro.site).href} />
   </head>
   <body>
@@ -51,14 +53,20 @@ const devsHref = lang === 'es' ? `${base}/es#developers` : `${base}/#developers`
 
     <header class="site-header">
       <div class="container site-header__inner">
-        <a class="brand" href={baseHref}>
+        <a class="brand" href={baseHref} title={t.siteTitle} aria-label={`${t.siteTitle} — ${lang === 'es' ? 'inicio' : 'home'}`}>
           <span class="brand__mark">Attestto</span>
           <span class="brand__sub">Trust Directory</span>
         </a>
         <nav class="site-nav" aria-label={lang === 'es' ? 'Principal' : 'Primary'}>
-          <a href={countriesHref}>{t.navCountries}</a>
-          <a href={devsHref}>{t.navDevs}</a>
-          <a href={altLangHref} class="lang-switch">
+          <a href={countriesHref} title={t.navCountries}>{t.navCountries}</a>
+          <a href={devsHref} title={t.navDevs}>{t.navDevs}</a>
+          <a
+            href={altLangHref}
+            class="lang-switch"
+            hreflang={lang === 'es' ? 'en' : 'es'}
+            title={lang === 'es' ? 'View in English' : 'Ver en español'}
+            aria-label={lang === 'es' ? 'Switch language to English' : 'Cambiar idioma a español'}
+          >
             {lang === 'es' ? '🇺🇸 EN' : '🇪🇸 ES'}
           </a>
         </nav>

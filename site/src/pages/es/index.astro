@@ -26,7 +26,7 @@ const fmtDate = (iso) =>
     <ul class="country-grid">
       {countries.map((c) => (
         <li>
-          <a class="country-card" href={`${base}/es/${c.code}`}>
+          <a class="country-card" href={`${base}/es/${c.code}`} title={`${getCountryName(c.code, lang)} — ${c.count} ${c.count === 1 ? t.homeCertSuffix : t.homeCertsSuffix}`} aria-label={`${getCountryName(c.code, lang)}: ${c.count} ${c.count === 1 ? t.homeCertSuffix : t.homeCertsSuffix}`}>
             <span class="country-card__flag" aria-hidden="true">{c.flag}</span>
             <span class="country-card__body">
               <span class="country-card__name">{getCountryName(c.code, lang)}</span>
@@ -46,18 +46,18 @@ const fmtDate = (iso) =>
 
   <section id="developers" class="developers" aria-labelledby="dev-h">
     <h2 id="dev-h">{t.homeDevsH2}</h2>
-    <p>{t.homeDevsIntro}</p>
+    <p set:html={t.homeDevsIntro} />
     <div class="dev-grid">
       <div class="dev-card">
         <h3>{t.homeNpmH3}</h3>
         <p class="dev-card__desc">{t.homeNpmDesc}</p>
         <pre class="mono"><code>npm install @attestto/trust</code></pre>
-        <a class="btn" href="https://www.npmjs.com/package/@attestto/trust">{t.homeNpmBtn}</a>
+        <a class="btn" href="https://www.npmjs.com/package/@attestto/trust" rel="noopener noreferrer" target="_blank" title="@attestto/trust en npm (abre en una pestaña nueva)">{t.homeNpmBtn}</a>
       </div>
       <div class="dev-card">
         <h3>{t.homeResolverH3}</h3>
         <p class="dev-card__desc">{t.homeResolverDesc}</p>
-        <a class="btn" href="https://attestto.org">{t.homeResolverBtn}</a>
+        <a class="btn" href="https://attestto.org" rel="noopener noreferrer" target="_blank" title="attestto.org (abre en una pestaña nueva)">{t.homeResolverBtn}</a>
       </div>
     </div>
   </section>

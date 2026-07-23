@@ -21,7 +21,7 @@ const fmt = (iso) =>
 >
   <header class="cert-card__head">
     <h3 class="cert-card__title">
-      <a href={detailHref}>{cert.subjectDisplay}</a>
+      <a href={detailHref} title={`${t.cardDetails}: ${cert.subjectDisplay}`}>{cert.subjectDisplay}</a>
     </h3>
     <div class="cert-card__badges">
       <RoleBadge role={cert.role} />
@@ -56,8 +56,8 @@ const fmt = (iso) =>
   )}
 
   <footer class="cert-card__actions">
-    <a class="btn" href={detailHref}>{t.cardDetails}</a>
-    <a class="btn" href={pemHref(code, cert.file)} download>{t.cardDownloadPem}</a>
+    <a class="btn" href={detailHref} title={`${t.cardDetails}: ${cert.subjectDisplay}`} aria-label={`${t.cardDetails}: ${cert.subjectDisplay}`}>{t.cardDetails}</a>
+    <a class="btn" href={pemHref(code, cert.file)} download title={`${t.cardDownloadPem} (${cert.file})`} aria-label={`${t.cardDownloadPem}: ${cert.subjectDisplay}`}>{t.cardDownloadPem}</a>
   </footer>
 </article>
 

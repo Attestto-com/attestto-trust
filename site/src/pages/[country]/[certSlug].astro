@@ -125,12 +125,12 @@ const selfSigned = cert.issuer === cert.subject;
 
       {cert.crlUrls?.length > 0 && (<Fragment>
       <dt>CRL</dt>
-      <dd>{cert.crlUrls.map((u) => <div><a href={u} rel="noopener" class="mono endpoint">{u}</a></div>)}</dd>
+      <dd>{cert.crlUrls.map((u) => <div><a href={u} rel="noopener noreferrer" target="_blank" class="mono endpoint" title="Certificate Revocation List (opens in a new tab)">{u}</a></div>)}</dd>
       </Fragment>)}
 
       {cert.ocspUrls?.length > 0 && (<Fragment>
       <dt>OCSP</dt>
-      <dd>{cert.ocspUrls.map((u) => <div><a href={u} rel="noopener" class="mono endpoint">{u}</a></div>)}</dd>
+      <dd>{cert.ocspUrls.map((u) => <div><a href={u} rel="noopener noreferrer" target="_blank" class="mono endpoint" title="OCSP responder endpoint (opens in a new tab)">{u}</a></div>)}</dd>
       </Fragment>)}
 
       <dt>{t.certFieldFile}</dt>
