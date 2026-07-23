@@ -1,0 +1,26 @@
+{
+  "code": "at",
+  "name": "Austria",
+  "flag": "🇦🇹",
+  "model": "accredited-tsl",
+  "authority": {
+    "name": "Rundfunk und Telekom Regulierungs-GmbH (RTR) — supervisory authority for the Telekom-Control-Kommission (TKK), Austrian eIDAS supervisory body and national Trusted List operator",
+    "operator": "Accredited QTSPs under eIDAS (A-Trust GmbH, A-Trust Ges. f. Sicherheitssysteme im elektr. Datenverkehr GmbH, e-commerce monitoring GmbH / GlobalTrust, PrimeSign GmbH, Swisscom IT Services Finance S.E., SwissSign GmbH, and others)",
+    "url": "https://www.signatur.rtr.at/vertrauensliste.xml"
+  },
+  "governingLaw": "Reglamento eIDAS (UE) 910/2014 · Signatur- und Vertrauensdienstegesetz (SVG) · Telekommunikationsgesetz 2021 (TKG 2021)",
+  "technology": {
+    "keyAlgorithms": ["RSA-4096", "RSA-2048"],
+    "signatureStandards": ["CAdES", "PAdES", "XAdES", "ASiC"],
+    "trustList": "ETSI TS 119 612 — the Austrian Trusted List (vertrauensliste.xml, RTR / TKK)"
+  },
+  "capabilities": ["Qualified e-signature & e-seal (eIDAS)", "Qualified timestamping", "Qualified website authentication (QWAC / PSD2)"],
+  "relatedLinks": [
+    { "label": "RTR — Austrian Trusted List (vertrauensliste.xml)", "url": "https://www.signatur.rtr.at/vertrauensliste.xml" },
+    { "label": "RTR — Electronic signatures & trust services (eIDAS)", "url": "https://www.rtr.at/TKP/was_wir_tun/vertrauensdienste/Start.en.html" },
+    { "label": "EU LOTL — List of the Lists (European Commission)", "url": "https://ec.europa.eu/tools/lotl/eu-lotl.xml" },
+    { "label": "Independent verifier (Attestto)", "url": "https://verify.attestto.com" }
+  ],
+  "source": { "type": "tsl", "url": "https://www.signatur.rtr.at/vertrauensliste.xml" },
+  "notes": "Austria's qualified-signature trust is a federation of accredited QTSPs (A-Trust GmbH and A-Trust Ges. f. Sicherheitssysteme im elektr. Datenverkehr GmbH, e-commerce monitoring GmbH / GlobalTrust, PrimeSign GmbH, Swisscom IT Services Finance S.E., and SwissSign GmbH, among others) supervised by Rundfunk und Telekom Regulierungs-GmbH (RTR), the supervisory authority acting for the Telekom-Control-Kommission (TKK), and published in the Austrian national eIDAS Trusted List (vertrauensliste.xml). The 39 currently-granted CA certificates were promoted wholesale after verifying the Trusted List's XAdES signature through the EU LOTL chain of trust: the LOTL signature was checked against the pinned European Commission signing anchor, and the Austrian TSL's signature (signer: C=AT, O=Rundfunk und Telekom Regulierungs-GmbH, OU=Fachbereich Telekommunikation und Post, CN=Trusted List 9; cert SHA-256 5a05d58ab2bcede1affb73024de8796c8c299fb37f2e79036c7e09f45712abe6) against the identity the LOTL declares for Austria, so the list's single seal vouches for every certificate it contains (eIDAS Art. 22). Only services with a currently-granted status and a CA / qualified-certificate service type were selected; withdrawn, deprecated, and non-CA services were dropped. Verification evidence is in VERIFICATION.md. Key algorithms across the set are mixed: 38 CAs use RSA-4096 and 1 uses RSA-2048. Three certificates in the set (a-sign-premium-mobile-05, a-sign-Premium-Sig-05, and EU-Identity-mobile-05) have passed their notAfter and are retained as archived-but-granted entries; they surface under the Expired status filter."
+}

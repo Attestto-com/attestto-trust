@@ -61,6 +61,7 @@ sha256sum attestto-trust/countries/cr/current/root-ca.pem
 | Brazil | [`br/`](countries/br) | [/br](https://trust.attestto.org/br) | ITI — ICP-Brasil |
 | Argentina | [`ar/`](countries/ar) | [/ar](https://trust.attestto.org/ar) | AC Raíz de la República Argentina |
 | Spain | [`es/`](countries/es) | [/es](https://trust.attestto.org/es) | FNMT-RCM (Ceres) |
+| Austria | [`at/`](countries/at) | [/at](https://trust.attestto.org/at) | RTR / Telekom-Control-Kommission (TKK) eIDAS Trusted List |
 | Belgium | [`be/`](countries/be) | [/be](https://trust.attestto.org/be) | FPS Economy (Federal Public Service Economy) eIDAS Trusted List |
 | Estonia | [`ee/`](countries/ee) | [/ee](https://trust.attestto.org/ee) | RIA — SK ID Solutions / Zetes (eIDAS) |
 | France | [`fr/`](countries/fr) | [/fr](https://trust.attestto.org/fr) | ANSSI eIDAS Trusted List (~20 QTSPs) |
@@ -70,7 +71,7 @@ sha256sum attestto-trust/countries/cr/current/root-ca.pem
 | Netherlands | [`nl/`](countries/nl) | [/nl](https://trust.attestto.org/nl) | RDI (Rijksinspectie Digitale Infrastructuur) eIDAS Trusted List |
 | Peru | [`pe/`](countries/pe) | [/pe](https://trust.attestto.org/pe) | INDECOPI — IOFE (RENIEC, ONPE, ECERNEP) |
 
-More countries are staged and land after a per-country promotion review: Mexico, Colombia, Chile, Ecuador, Uruguay, Panama, and other European trusted lists. Italy's full qualified-signature list (229 accredited-QTSP CAs), Germany's (101 accredited-QTSP CAs), Greece's (105 accredited-QTSP CAs), France's (79 accredited-QTSP CAs), the Netherlands' (30 accredited-QTSP CAs), and Belgium's (52 accredited-QTSP CAs) are now live, promoted wholesale after verifying each national Trusted List's XAdES signature through the EU LOTL chain of trust (see `scripts/monitors/verify-eu-tsl.mjs`).
+More countries are staged and land after a per-country promotion review: Mexico, Colombia, Chile, Ecuador, Uruguay, Panama, and other European trusted lists. Italy's full qualified-signature list (229 accredited-QTSP CAs), Germany's (101 accredited-QTSP CAs), Greece's (105 accredited-QTSP CAs), France's (79 accredited-QTSP CAs), the Netherlands' (30 accredited-QTSP CAs), Belgium's (52 accredited-QTSP CAs), and Austria's (39 accredited-QTSP CAs) are now live, promoted wholesale after verifying each national Trusted List's XAdES signature through the EU LOTL chain of trust (see `scripts/monitors/verify-eu-tsl.mjs`).
 
 ## Key concepts
 
