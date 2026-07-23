@@ -1,8 +1,8 @@
 {
   "method": "did:pki",
-  "generatedAt": "2026-07-23T12:39:49.899Z",
+  "generatedAt": "2026-07-23T15:20:53.536Z",
   "dids": {
-    "AC-FNMT-Usuarios.pem": "did:pki:es:fnmt:usuarios",
-    "AC-RAIZ-FNMT-RCM.pem": "did:pki:es:fnmt:raiz"
+    "AC-RAIZ-FNMT-RCM.pem": "did:pki:es:fnmt:raiz",
+    "ac-fnmt-usuarios.pem": "did:pki:es:fnmt:usuarios"
   }
 }
