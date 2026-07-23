@@ -175,6 +175,26 @@ git commit -m "<iso2>: initial trust mirror — N certs"
 
 Update the country table in this README and open a pull request. CI will verify all hashes.
 
+## Publishing a release
+
+The package is published to npm as [`@attestto/trust`](https://www.npmjs.com/package/@attestto/trust). Publish whenever the certificate set changes (a country added, or a cert rotated).
+
+1. Land the cert changes on `main` and confirm CI is green.
+2. Bump the version so the registry and git stay in lockstep — patch for a cert rotation, minor for a new country:
+   ```bash
+   npm version patch   # or: npm version minor
+   ```
+3. Publish (the scoped package requires public access; `prepublishOnly` runs the test suite first):
+   ```bash
+   npm publish --access public
+   ```
+4. Push the version commit and tag:
+   ```bash
+   git push --follow-tags
+   ```
+
+Never republish an existing version — bump first. The `files` allow-list in `package.json` ships only the JS exports, PEMs, and manifests (no scripts, samples, or archive).
+
 ## Limitations
 
 We are **not** a Certificate Authority — we don't issue, reissue, sign, or vouch for any certificate. We are **not** an OCSP/CRL responder — revocation is time-sensitive, get it from the issuing authority directly. We deliberately don't mirror CRLs because a stale CRL is worse than none. If our mirror disagrees with the issuing authority's published repository, the authoritative source wins — open an issue and we'll fix it.
