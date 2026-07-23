@@ -1,0 +1,172 @@
+---
+import { REGIONS, getRegion, getRegionName } from '../lib/regions.js';
+import { getCountryName } from '../lib/i18n.js';
+
+const { countries, lang, base, t } = Astro.props;
+
+const prefix = lang === 'es' ? `${base}/es` : (base || '');
+const fmtDate = (iso) =>
+  new Date(iso).toLocaleDateString(lang === 'es' ? 'es-ES' : 'en-CA', {
+    year: 'numeric',
+    month: 'short',
+    day: '2-digit',
+  });
+
+// Group countries by region, in REGIONS order, dropping empty regions.
+const byRegion = {};
+for (const c of countries) {
+  const key = getRegion(c.code);
+  (byRegion[key] ||= []).push(c);
+}
+const groups = REGIONS
+  .map((r) => ({
+    key: r.key,
+    name: getRegionName(r.key, lang),
+    items: (byRegion[r.key] || []).sort((a, b) =>
+      getCountryName(a.code, lang).localeCompare(getCountryName(b.code, lang), lang),
+    ),
+  }))
+  .filter((g) => g.items.length > 0);
+---
+<div class="country-tables" data-filter-scope>
+  <div class="filter">
+    <label class="visually-hidden" for="country-search">{t.homeFilterLabel}</label>
+    <input
+      id="country-search"
+      type="search"
+      class="filter__input"
+      data-filter-input
+      data-filter-status-template={t.homeFilterStatus}
+      placeholder={t.homeFilterPlaceholder}
+      autocomplete="off"
+      aria-controls="country-region-list"
+    />
+    <p class="filter__status" data-filter-status role="status" aria-live="polite"></p>
+  </div>
+
+  <div id="country-region-list">
+    {groups.map((g) => (
+      <section class="region" data-filter-group aria-label={g.name}>
+        <table class="ctable">
+          <caption class="region__cap">{g.name}</caption>
+          <colgroup>
+            <col class="ctable__col-country" />
+            <col class="ctable__col-auth" />
+            <col class="ctable__col-num" />
+            <col class="ctable__col-upd" />
+          </colgroup>
+          <thead>
+            <tr>
+              <th scope="col">{t.homeColCountry}</th>
+              <th scope="col">{t.homeColAuthority}</th>
+              <th scope="col" class="ctable__num">{t.homeColCerts}</th>
+              <th scope="col">{t.homeColUpdated}</th>
+            </tr>
+          </thead>
+          <tbody>
+            {g.items.map((c) => {
+              const name = getCountryName(c.code, lang);
+              const label = `${name}: ${c.count} ${c.count === 1 ? t.homeCertSuffix : t.homeCertsSuffix}`;
+              return (
+                <tr
+                  data-filter-item
+                  data-search={`${name} ${c.authority?.name ?? ''} ${g.name} ${c.code}`.toLowerCase()}
+                >
+                  <td class="ctable__country">
+                    <a href={`${prefix}/${c.code}`} title={label} aria-label={label}>
+                      <span class="ctable__flag" aria-hidden="true">{c.flag}</span>
+                      <span class="ctable__name">{name}</span>
+                      <span class="ctable__go" aria-hidden="true">→</span>
+                    </a>
+                  </td>
+                  <td class="ctable__auth">{c.authority?.name}</td>
+                  <td class="ctable__num"><strong>{c.count}</strong></td>
+                  <td class="ctable__upd"><time datetime={c.generatedAt}>{fmtDate(c.generatedAt)}</time></td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </section>
+    ))}
+    <p class="no-results" data-filter-empty hidden>{t.homeNoResults}</p>
+  </div>
+</div>
+
+<style>
+  .country-tables { margin-top: var(--space-5); }
+  .filter { margin-bottom: var(--space-6); }
+  .filter__input {
+    width: 100%;
+    max-width: 34rem;
+    font-size: var(--text-base);
+    font-family: var(--font-sans);
+    padding: var(--space-3) var(--space-4);
+    border: 1px solid var(--color-border-strong);
+    border-radius: var(--radius-md);
+    background: var(--color-surface);
+    color: var(--color-text);
+  }
+  .filter__input:focus-visible { box-shadow: var(--focus-ring); border-color: var(--color-accent); }
+  .filter__status { margin: var(--space-2) 0 0; font-size: var(--text-sm); color: var(--color-text-muted); }
+
+  .region { margin-bottom: var(--space-6); }
+  .ctable { width: 100%; border-collapse: collapse; table-layout: fixed; }
+  .ctable__col-country { width: 22%; }
+  .ctable__col-auth { width: 46%; }
+  .ctable__col-num { width: 14%; }
+  .ctable__col-upd { width: 18%; }
+  .region__cap {
+    caption-side: top;
+    text-align: left;
+    font-size: var(--text-sm);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--color-highlight);
+    padding: 0 0 var(--space-2);
+  }
+  .ctable thead th {
+    text-align: left;
+    font-size: var(--text-xs);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--color-text-subtle);
+    font-weight: 600;
+    padding: var(--space-2) var(--space-4);
+    border-bottom: 1px solid var(--color-border);
+  }
+  .ctable__num { text-align: right; }
+  .ctable tbody tr {
+    border-bottom: 1px solid var(--color-border);
+    transition: background 0.12s;
+  }
+  .ctable tbody tr:hover { background: var(--color-surface); }
+  .ctable td {
+    padding: var(--space-3) var(--space-4);
+    font-size: var(--text-sm);
+    vertical-align: middle;
+  }
+  .ctable__country a {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-3);
+    font-weight: 650;
+    color: var(--color-text);
+  }
+  .ctable__country a:hover { color: var(--color-accent); text-decoration: none; }
+  .ctable__flag { font-size: 1.5rem; line-height: 1; }
+  .ctable__go { color: var(--color-accent); font-size: var(--text-lg); }
+  .ctable__auth { color: var(--color-text-muted); max-width: 34rem; }
+  .ctable__num strong { font-size: var(--text-base); }
+  .ctable__upd { color: var(--color-text-muted); white-space: nowrap; }
+  .no-results { color: var(--color-text-muted); }
+
+  @media (max-width: 720px) {
+    .ctable thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+    .ctable, .ctable tbody, .ctable tr, .ctable td { display: block; width: 100%; }
+    .ctable tbody tr { padding: var(--space-3) 0; }
+    .ctable td { padding: var(--space-1) var(--space-4); }
+    .ctable__num { text-align: left; }
+  }
+</style>

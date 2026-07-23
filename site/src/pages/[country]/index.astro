@@ -24,8 +24,6 @@ const fmtDate = (iso) =>
 
 const rootCount = data.roots.filter((c) => c.role === 'root' || c.issuer === c.subject).length;
 const intermediateCount = data.certs.filter((c) => c.role === 'intermediate').length;
-const filterStatusTemplate = t.countryFilterStatus;
-const totalCertsCount = data.certs.length;
 ---
 <BaseLayout
   title={`${getCountryName(data.code, lang)} ${t.cardIssuer}s`}
@@ -88,53 +86,31 @@ const totalCertsCount = data.certs.length;
     )}
   </section>
 
-  <div class="filter">
-    <label class="visually-hidden" for="cert-search">{t.countrySearchLabel}</label>
-    <input
-      id="cert-search"
-      type="search"
-      class="filter__input"
-      placeholder={t.countrySearchPlaceholder}
-      autocomplete="off"
-      aria-controls="ca-tree"
-    />
-    <p class="filter__status" id="filter-status" role="status" aria-live="polite"></p>
+  <div data-filter-scope>
+    <div class="filter">
+      <label class="visually-hidden" for="cert-search">{t.countrySearchLabel}</label>
+      <input
+        id="cert-search"
+        type="search"
+        class="filter__input"
+        placeholder={t.countrySearchPlaceholder}
+        autocomplete="off"
+        aria-controls="ca-tree"
+        data-filter-input
+        data-filter-hide-closest=".tree-node"
+        data-filter-status-template={t.countryFilterStatus}
+      />
+      <p class="filter__status" data-filter-status role="status" aria-live="polite"></p>
+    </div>
+
+    <section aria-label={t.countryHierarchyAria.replace('{0}', getCountryName(data.code, lang))}>
+      <ul class="tree" id="ca-tree" role="tree">
+        {data.roots.map((root) => <TreeNode cert={root} code={data.code} depth={0} />)}
+      </ul>
+      <p class="no-results" data-filter-empty hidden>{t.countryNoResults}</p>
+    </section>
   </div>
-
-  <section aria-label={t.countryHierarchyAria.replace('{0}', getCountryName(data.code, lang))}>
-    <ul class="tree" id="ca-tree" role="tree">
-      {data.roots.map((root) => <TreeNode cert={root} code={data.code} depth={0} />)}
-    </ul>
-    <p class="no-results" id="no-results" hidden>{t.countryNoResults}</p>
-  </section>
 </BaseLayout>
-
-<script define:vars={{ filterStatusTemplate, totalCertsCount }}>
-  // Client-side filter over the rendered tree. Cards carry a data-search string.
-  const input = document.getElementById('cert-search');
-  const cards = Array.from(document.querySelectorAll('.cert-card'));
-  const status = document.getElementById('filter-status');
-  const noResults = document.getElementById('no-results');
-
-  function apply(query) {
-    const q = query.trim().toLowerCase();
-    let visible = 0;
-    for (const card of cards) {
-      const hay = card.getAttribute('data-search') || '';
-      const match = q === '' || hay.includes(q);
-      // Hide the whole tree node (card + its subtree wrapper) when filtered out.
-      const node = card.closest('.tree-node');
-      if (node) node.style.display = match ? '' : 'none';
-      if (match) visible++;
-    }
-    if (status) {
-      status.textContent = q === '' ? '' : filterStatusTemplate.replace('{0}', String(visible)).replace('{1}', String(totalCertsCount));
-    }
-    if (noResults) noResults.hidden = visible !== 0;
-  }
-
-  input?.addEventListener('input', (e) => apply(e.target.value));
-</script>
 
 <style>
   .country-head {

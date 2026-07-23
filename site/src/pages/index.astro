@@ -1,16 +1,14 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import CountryTable from '../components/CountryTable.astro';
 import { loadAllCountries } from '../lib/trust.js';
-import { TRANSLATIONS, getCountryName } from '../lib/i18n.js';
+import { TRANSLATIONS } from '../lib/i18n.js';
 
 const countries = loadAllCountries();
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 const lang = 'en';
 const t = TRANSLATIONS[lang];
-
-const fmtDate = (iso) =>
-  new Date(iso).toLocaleDateString('en-CA', { year: 'numeric', month: 'short', day: '2-digit' });
 ---
 <BaseLayout
   title={t.homeTitle}
@@ -23,25 +21,7 @@ const fmtDate = (iso) =>
 
   <section id="countries" aria-labelledby="countries-h">
     <h2 id="countries-h">{t.homeCountriesH2}</h2>
-    <ul class="country-grid">
-      {countries.map((c) => (
-        <li>
-          <a class="country-card" href={`${base}/${c.code}`} title={`${getCountryName(c.code, lang)} — ${c.count} ${c.count === 1 ? t.homeCertSuffix : t.homeCertsSuffix}`} aria-label={`${getCountryName(c.code, lang)}: ${c.count} ${c.count === 1 ? t.homeCertSuffix : t.homeCertsSuffix}`}>
-            <span class="country-card__flag" aria-hidden="true">{c.flag}</span>
-            <span class="country-card__body">
-              <span class="country-card__name">{getCountryName(c.code, lang)}</span>
-              <span class="country-card__authority">{c.authority?.name}</span>
-              <span class="country-card__stats">
-                <strong>{c.count}</strong> {c.count === 1 ? t.homeCertSuffix : t.homeCertsSuffix}
-                <span class="country-card__sep" aria-hidden="true">•</span>
-                {t.homeUpdated} <time datetime={c.generatedAt}>{fmtDate(c.generatedAt)}</time>
-              </span>
-            </span>
-            <span class="country-card__go" aria-hidden="true">→</span>
-          </a>
-        </li>
-      ))}
-    </ul>
+    <CountryTable countries={countries} lang={lang} base={base} t={t} />
   </section>
 
   <section id="developers" class="developers" aria-labelledby="dev-h">
@@ -57,7 +37,7 @@ const fmtDate = (iso) =>
       <div class="dev-card">
         <h3>{t.homeResolverH3}</h3>
         <p class="dev-card__desc">{t.homeResolverDesc}</p>
-        <a class="btn" href="https://attestto.org" rel="noopener noreferrer" target="_blank" title="attestto.org (opens in a new tab)">{t.homeResolverBtn}</a>
+        <a class="btn" href="https://github.com/Attestto-com/attestto-did-resolver" rel="noopener noreferrer" target="_blank" title="did:pki resolver repository on GitHub (opens in a new tab)">{t.homeResolverBtn}</a>
       </div>
     </div>
   </section>
@@ -66,41 +46,6 @@ const fmtDate = (iso) =>
 <style>
   .intro { max-width: 46rem; margin-bottom: var(--space-8); }
   .lede { font-size: var(--text-lg); color: var(--color-text-muted); }
-
-  .country-grid {
-    list-style: none;
-    padding: 0;
-    margin: var(--space-4) 0 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
-    gap: var(--space-4);
-  }
-  .country-card {
-    display: flex;
-    align-items: center;
-    gap: var(--space-4);
-    background: var(--color-surface);
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius-lg);
-    padding: var(--space-5);
-    box-shadow: var(--shadow-sm);
-    height: 100%;
-    color: var(--color-text);
-    transition: box-shadow 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
-  }
-  .country-card:hover {
-    text-decoration: none;
-    border-color: var(--color-border-strong);
-    box-shadow: var(--shadow-md);
-    transform: translateY(-1px);
-  }
-  .country-card__flag { font-size: 2.25rem; line-height: 1; }
-  .country-card__body { display: flex; flex-direction: column; gap: var(--space-1); flex: 1; }
-  .country-card__name { font-weight: 700; font-size: var(--text-lg); }
-  .country-card__authority { font-size: var(--text-xs); color: var(--color-text-subtle); }
-  .country-card__stats { font-size: var(--text-sm); color: var(--color-text-muted); margin-top: var(--space-1); }
-  .country-card__sep { margin: 0 var(--space-2); color: var(--color-text-subtle); }
-  .country-card__go { color: var(--color-accent); font-size: var(--text-xl); }
 
   .developers { margin-top: var(--space-10); }
   .dev-grid {

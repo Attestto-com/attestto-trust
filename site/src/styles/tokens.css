@@ -85,6 +85,6 @@
   --shadow-md: 0 6px 20px rgba(0, 0, 0, 0.45);
 
   /* Layout */
-  --content-width: 68rem;
+  --content-width: 1366px;
   --focus-ring: 0 0 0 3px rgba(123, 114, 237, 0.4);
 }
