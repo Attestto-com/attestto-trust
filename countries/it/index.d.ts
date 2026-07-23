@@ -1,12 +1,13 @@
-/** PEM-encoded X.509 certificate strings for Italy's national eID PKI (CIE — Ministero dell'Interno). */
-
-export declare const CIE_NATIONAL_ROOT_CA_2016: string
-export declare const CIE_NATIONAL_ROOT_CA_2024: string
+/** PEM-encoded X.509 certificate strings for Italy's eIDAS qualified-trust PKI (AgID Trusted List + CIE national eID). */
 
 export interface CertEntry {
   name: string
   exportName: string
   pem: string
+  sha256: string
 }
 
 export declare const ALL_CERTS: CertEntry[]
+
+/** Look up a certificate by its SHA-256 fingerprint (hex). */
+export declare function getBySha256(hex: string): CertEntry | null
