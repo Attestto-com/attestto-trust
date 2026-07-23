@@ -1,0 +1,26 @@
+{
+  "code": "be",
+  "name": "Belgium",
+  "flag": "🇧🇪",
+  "model": "accredited-tsl",
+  "authority": {
+    "name": "FPS Economy — Federal Public Service Economy, S.M.E.s, Self-employed and Energy (Federale Overheidsdienst Economie, K.M.O., Middenstand en Energie / SPF Économie, P.M.E., Classes moyennes et Énergie), Belgian eIDAS supervisory body and national Trusted List operator",
+    "operator": "Accredited QTSPs under eIDAS (Belgian Mobile ID / itsme, Zetes / ZetesConfidens, GMO GlobalSign nv/sa, DigiCert QuoVadis Belgium, Certipost / Belgium Root CA (eID), Banqup, Docbyte, and others)",
+    "url": "https://tsl.belgium.be/tsl-be-v6.xml"
+  },
+  "governingLaw": "Reglamento eIDAS (UE) 910/2014 · Livre XII du Code de droit économique (Digital Economy) · Loi du 21 juillet 2016 (mise en œuvre eIDAS)",
+  "technology": {
+    "keyAlgorithms": ["RSA-4096", "EC P-384", "EC P-521", "EC P-256"],
+    "signatureStandards": ["CAdES", "PAdES", "XAdES", "ASiC"],
+    "trustList": "ETSI TS 119 612 — the Belgian Trusted List (tsl-be-v6.xml, FPS Economy)"
+  },
+  "capabilities": ["Qualified e-signature & e-seal (eIDAS)", "Qualified timestamping", "Qualified website authentication (QWAC / PSD2)"],
+  "relatedLinks": [
+    { "label": "FPS Economy — Belgian Trusted List (tsl-be-v6.xml)", "url": "https://tsl.belgium.be/tsl-be-v6.xml" },
+    { "label": "FPS Economy — Trust services (eIDAS)", "url": "https://economie.fgov.be/en/themes/online/electronic-signatures-time" },
+    { "label": "EU LOTL — List of the Lists (European Commission)", "url": "https://ec.europa.eu/tools/lotl/eu-lotl.xml" },
+    { "label": "Independent verifier (Attestto)", "url": "https://verify.attestto.com" }
+  ],
+  "source": { "type": "tsl", "url": "https://tsl.belgium.be/tsl-be-v6.xml" },
+  "notes": "Belgium's qualified-signature trust is a federation of accredited QTSPs (Belgian Mobile ID / itsme, Zetes and ZetesConfidens, GMO GlobalSign nv/sa, DigiCert QuoVadis Belgium, Certipost's Belgium Root CA hierarchy behind the Belgian eID, Banqup, and Docbyte, among others) supervised by the FPS Economy — the Federal Public Service Economy, S.M.E.s, Self-employed and Energy — and published in the Belgian national eIDAS Trusted List (tsl-be-v6.xml, ETSI TS 119 612). The 52 currently-granted CA certificates were promoted wholesale after verifying the Trusted List's XAdES signature through the EU LOTL chain of trust: the LOTL signature was checked against the pinned European Commission signing anchor, and the Belgian TSL's signature (signer: C=BE, ST=Brussels Hoofdstedelijk Gewest, L=Sint-Joost-ten-Node, O=Federale Overheidsdienst Economie\\, K.M.O\\, Middenstand en Energie, CN=Federale Overheidsdienst Economie\\, K.M.O\\, Middenstand en Energie, 2.5.4.97=NTRBE-0314.595.348; cert SHA-256 fbec3a3b1bb26cd02e7737b9e3ea289caa7d45adf608265122ea0db3d1de66ce) against the identity the LOTL declares for Belgium, so the list's single seal vouches for every certificate it contains (eIDAS Art. 22). Only services with a currently-granted status and a CA / qualified-certificate service type were selected; withdrawn, deprecated, and non-CA services were dropped. Verification evidence is in VERIFICATION.md. Key algorithms across the set are mixed: 31 CAs use RSA-4096, 17 use EC P-384, 3 use EC P-521, and 1 uses EC P-256. Two certificates in the set (QuoVadis Belgium Issuing CA G2 and ZETES TSP QUALIFIED CA 001) have passed their notAfter and are retained as archived-but-granted entries; they surface under the Expired status filter."
+}
