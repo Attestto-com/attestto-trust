@@ -52,6 +52,11 @@ import * as lt from '../countries/lt/index.js'
 import * as lv from '../countries/lv/index.js'
 import * as se from '../countries/se/index.js'
 import * as dk from '../countries/dk/index.js'
+import * as cl from '../countries/cl/index.js'
+import * as clEstado from '../countries/cl-estado/index.js'
+import * as pa from '../countries/pa/index.js'
+import * as uy from '../countries/uy/index.js'
+import * as us from '../countries/us/index.js'
 
 // ── Root exports ───────────────────────────────────────────────────
 
@@ -926,29 +931,200 @@ describe('Latvia (lv)', () => {
   })
 })
 
+// ── Country: Chile (accredited-provider PKI) ───────────────────────
+
+describe('Chile (cl)', () => {
+  it('exports the accredited-provider CA set (roots + intermediates)', () => {
+    assert.equal(cl.ALL_CERTS.length, 51, `Expected 51, got ${cl.ALL_CERTS.length}`)
+  })
+
+  it('is a high-volume country: getBySha256 helper, no per-cert named consts', () => {
+    assert.equal(typeof cl.getBySha256, 'function', 'getBySha256 helper missing')
+    assert.equal(cl.ABANCERT_CA_ROOT_G2, undefined, 'should not emit per-cert named consts at this volume')
+  })
+
+  it('all PEM strings are valid format', () => {
+    for (const cert of cl.ALL_CERTS) {
+      assert.ok(cert.pem.startsWith('-----BEGIN CERTIFICATE-----'), `${cert.name}: bad PEM header`)
+      assert.ok(cert.pem.trimEnd().endsWith('-----END CERTIFICATE-----'), `${cert.name}: bad PEM footer`)
+    }
+  })
+
+  it('manifest SHA-256 hashes match DER content of PEM files', () => {
+    const manifestPath = join(ROOT, 'countries/cl/current/manifest.json')
+    assert.ok(existsSync(manifestPath), 'manifest.json missing')
+    const manifest = JSON.parse(readFileSync(manifestPath, 'utf-8'))
+    assert.equal(manifest.country, 'CL')
+    for (const entry of manifest.certificates) {
+      const pemPath = join(ROOT, 'countries/cl/current', entry.file)
+      assert.ok(existsSync(pemPath), `PEM file missing: ${entry.file}`)
+      const der = pemToDer(readFileSync(pemPath, 'utf-8'))
+      const sha256 = createHash('sha256').update(der).digest('hex')
+      assert.equal(sha256, entry.sha256, `SHA-256 mismatch for ${entry.file}`)
+    }
+  })
+})
+
+// ── Country: Chile State PKI (cl-estado) ───────────────────────────
+
+describe('Chile State PKI (cl-estado)', () => {
+  it('exports the state per-organismo CA set (2 roots + intermediates)', () => {
+    assert.equal(clEstado.ALL_CERTS.length, 712, `Expected 712, got ${clEstado.ALL_CERTS.length}`)
+  })
+
+  it('is a high-volume country: getBySha256 helper, no per-cert named consts', () => {
+    assert.equal(typeof clEstado.getBySha256, 'function', 'getBySha256 helper missing')
+  })
+
+  it('all PEM strings are valid format', () => {
+    for (const cert of clEstado.ALL_CERTS) {
+      assert.ok(cert.pem.startsWith('-----BEGIN CERTIFICATE-----'), `${cert.name}: bad PEM header`)
+      assert.ok(cert.pem.trimEnd().endsWith('-----END CERTIFICATE-----'), `${cert.name}: bad PEM footer`)
+    }
+  })
+
+  it('manifest SHA-256 hashes match DER content of PEM files', () => {
+    const manifestPath = join(ROOT, 'countries/cl-estado/current/manifest.json')
+    assert.ok(existsSync(manifestPath), 'manifest.json missing')
+    const manifest = JSON.parse(readFileSync(manifestPath, 'utf-8'))
+    assert.equal(manifest.country, 'CL-ESTADO')
+    for (const entry of manifest.certificates) {
+      const pemPath = join(ROOT, 'countries/cl-estado/current', entry.file)
+      assert.ok(existsSync(pemPath), `PEM file missing: ${entry.file}`)
+      const der = pemToDer(readFileSync(pemPath, 'utf-8'))
+      const sha256 = createHash('sha256').update(der).digest('hex')
+      assert.equal(sha256, entry.sha256, `SHA-256 mismatch for ${entry.file}`)
+    }
+  })
+})
+
+// ── Country: Panama ────────────────────────────────────────────────
+
+describe('Panama (pa)', () => {
+  it('exports the DNFE national hierarchy (root + 2 subordinate CAs)', () => {
+    assert.equal(pa.ALL_CERTS.length, 3, `Expected 3, got ${pa.ALL_CERTS.length}`)
+    const names = pa.ALL_CERTS.map(c => c.exportName)
+    assert.ok(names.includes('AUTORIDAD_CERTIFICADORA_DE_PANAMA'), 'Missing Panama root')
+  })
+
+  it('all PEM strings are valid format', () => {
+    for (const cert of pa.ALL_CERTS) {
+      assert.ok(cert.pem.startsWith('-----BEGIN CERTIFICATE-----'), `${cert.name}: bad PEM header`)
+      assert.ok(cert.pem.trimEnd().endsWith('-----END CERTIFICATE-----'), `${cert.name}: bad PEM footer`)
+    }
+  })
+
+  it('manifest SHA-256 hashes match DER content of PEM files', () => {
+    const manifestPath = join(ROOT, 'countries/pa/current/manifest.json')
+    assert.ok(existsSync(manifestPath), 'manifest.json missing')
+    const manifest = JSON.parse(readFileSync(manifestPath, 'utf-8'))
+    assert.equal(manifest.country, 'PA')
+    for (const entry of manifest.certificates) {
+      const pemPath = join(ROOT, 'countries/pa/current', entry.file)
+      assert.ok(existsSync(pemPath), `PEM file missing: ${entry.file}`)
+      const der = pemToDer(readFileSync(pemPath, 'utf-8'))
+      const sha256 = createHash('sha256').update(der).digest('hex')
+      assert.equal(sha256, entry.sha256, `SHA-256 mismatch for ${entry.file}`)
+    }
+  })
+})
+
+// ── Country: Uruguay ───────────────────────────────────────────────
+
+describe('Uruguay (uy)', () => {
+  it('exports the AGESIC national root', () => {
+    assert.equal(uy.ALL_CERTS.length, 1, `Expected 1, got ${uy.ALL_CERTS.length}`)
+    const names = uy.ALL_CERTS.map(c => c.exportName)
+    assert.ok(names.includes('AUTORIDAD_CERTIFICADORA_RAIZ_NACIONAL_DE_URUGUAY'), 'Missing Uruguay root')
+  })
+
+  it('all PEM strings are valid format', () => {
+    for (const cert of uy.ALL_CERTS) {
+      assert.ok(cert.pem.startsWith('-----BEGIN CERTIFICATE-----'), `${cert.name}: bad PEM header`)
+      assert.ok(cert.pem.trimEnd().endsWith('-----END CERTIFICATE-----'), `${cert.name}: bad PEM footer`)
+    }
+  })
+
+  it('manifest SHA-256 hashes match DER content of PEM files', () => {
+    const manifestPath = join(ROOT, 'countries/uy/current/manifest.json')
+    assert.ok(existsSync(manifestPath), 'manifest.json missing')
+    const manifest = JSON.parse(readFileSync(manifestPath, 'utf-8'))
+    assert.equal(manifest.country, 'UY')
+    for (const entry of manifest.certificates) {
+      const pemPath = join(ROOT, 'countries/uy/current', entry.file)
+      assert.ok(existsSync(pemPath), `PEM file missing: ${entry.file}`)
+      const der = pemToDer(readFileSync(pemPath, 'utf-8'))
+      const sha256 = createHash('sha256').update(der).digest('hex')
+      assert.equal(sha256, entry.sha256, `SHA-256 mismatch for ${entry.file}`)
+    }
+  })
+})
+
+// ── Country: United States (Federal PKI) ───────────────────────────
+
+describe('United States (us)', () => {
+  it('exports FCPCA G2 plus the federal-bridge / SSP set', () => {
+    assert.equal(us.ALL_CERTS.length, 13, `Expected 13, got ${us.ALL_CERTS.length}`)
+    const names = us.ALL_CERTS.map(c => c.exportName)
+    assert.ok(names.includes('FEDERAL_COMMON_POLICY_CA_G2'), 'Missing FCPCA G2 root')
+    assert.ok(names.includes('FEDERAL_BRIDGE_CA_G4'), 'Missing Federal Bridge CA G4')
+  })
+
+  it('all PEM strings are valid format', () => {
+    for (const cert of us.ALL_CERTS) {
+      assert.ok(cert.pem.startsWith('-----BEGIN CERTIFICATE-----'), `${cert.name}: bad PEM header`)
+      assert.ok(cert.pem.trimEnd().endsWith('-----END CERTIFICATE-----'), `${cert.name}: bad PEM footer`)
+    }
+  })
+
+  it('manifest SHA-256 hashes match DER content of PEM files', () => {
+    const manifestPath = join(ROOT, 'countries/us/current/manifest.json')
+    assert.ok(existsSync(manifestPath), 'manifest.json missing')
+    const manifest = JSON.parse(readFileSync(manifestPath, 'utf-8'))
+    assert.equal(manifest.country, 'US')
+    for (const entry of manifest.certificates) {
+      const pemPath = join(ROOT, 'countries/us/current', entry.file)
+      assert.ok(existsSync(pemPath), `PEM file missing: ${entry.file}`)
+      const der = pemToDer(readFileSync(pemPath, 'utf-8'))
+      const sha256 = createHash('sha256').update(der).digest('hex')
+      assert.equal(sha256, entry.sha256, `SHA-256 mismatch for ${entry.file}`)
+    }
+  })
+})
+
 // ── Cross-country checks ───────────────────────────────────────────
 
 describe('cross-country integrity', () => {
   it('total trust store carries the small-country anchors plus the TSL sets (>= 1000)', () => {
-    // CR 10 + BR 4 + AR 2 + EE 16 + PE 8 = 40 fixed, plus the TSL-driven
-    // sets: Spain (~139), Italy (~231), Germany (~101), Greece (~105),
-    // France (~79), the Netherlands (~30), Belgium (~52), Austria (~39),
-    // Portugal (~30), Poland (~29), Hungary (~62), the Czech Republic
-    // (~34), Norway (~26), Finland (~12), Lithuania (~11), Sweden (~8),
-    // Denmark (~5), and Latvia (~5). The TSL sets are dynamic (RDI / AgID /
-    // BNetzA / EETT / ANSSI / FPS Economy / RTR / GNS / NCCert / NMHH /
-    // DIA / Nkom / Traficom / RRT / PTS / Digitaliseringsstyrelsen / DDUK
-    // lists), so this is a floor tripwire rather than an exact count.
+    // Direct-cert anchor sets (fixed exact counts — they change only on an
+    // explicit re-promotion, not from an upstream list refresh):
+    //   CR 10 + BR 4 + AR 2 + EE 16 + PE 8 = 40 (small national anchors)
+    //   + CL 51 (accredited providers) + CL-ESTADO 712 (state per-organismo)
+    //   + PA 3 + UY 1 + US 13 = 780
+    // → 820 fixed total.
+    // Plus the TSL-driven EU/EEA sets: Spain (~139), Italy (~231), Germany
+    // (~101), Greece (~105), France (~79), the Netherlands (~30), Belgium
+    // (~52), Austria (~39), Portugal (~30), Poland (~29), Hungary (~62), the
+    // Czech Republic (~34), Norway (~26), Finland (~12), Lithuania (~11),
+    // Sweden (~8), Denmark (~5), and Latvia (~5). The TSL sets are dynamic
+    // (RDI / AgID / BNetzA / EETT / ANSSI / FPS Economy / RTR / GNS / NCCert /
+    // NMHH / DIA / Nkom / Traficom / RRT / PTS / Digitaliseringsstyrelsen /
+    // DDUK lists), so the grand total is a floor tripwire, not an exact count.
     const fixed =
       cr.ALL_CERTS.length +
       br.ALL_CERTS.length +
       ar.ALL_CERTS.length +
       ee.ALL_CERTS.length +
-      pe.ALL_CERTS.length
-    assert.equal(fixed, 40, `small-country anchors changed: expected 40, got ${fixed}`)
+      pe.ALL_CERTS.length +
+      cl.ALL_CERTS.length +
+      clEstado.ALL_CERTS.length +
+      pa.ALL_CERTS.length +
+      uy.ALL_CERTS.length +
+      us.ALL_CERTS.length
+    assert.equal(fixed, 820, `direct-cert anchors changed: expected 820, got ${fixed}`)
     const total =
       fixed + es.ALL_CERTS.length + italy.ALL_CERTS.length + de.ALL_CERTS.length + gr.ALL_CERTS.length + fr.ALL_CERTS.length + nl.ALL_CERTS.length + no.ALL_CERTS.length + be.ALL_CERTS.length + at.ALL_CERTS.length + pt.ALL_CERTS.length + pl.ALL_CERTS.length + hu.ALL_CERTS.length + cz.ALL_CERTS.length + fi.ALL_CERTS.length + lt.ALL_CERTS.length + se.ALL_CERTS.length + dk.ALL_CERTS.length + lv.ALL_CERTS.length
-    assert.ok(total >= 1000, `Expected >= 1000 total, got ${total}`)
+    assert.ok(total >= 1800, `Expected >= 1800 total, got ${total}`)
   })
 
   it('no duplicate export names across countries', () => {
