@@ -11,6 +11,9 @@
 
 `@attestto/trust` is a critical trust infrastructure piece for the [Attestto Open](https://attestto.org) ecosystem. Most national PKI repositories are partially broken — wrong content-types, half-deployed HTTPS, mixed-case URL quirks, missing branches, dead links. Every developer integrating a country's digital signature stack hits the same wall. This repo mirrors the binary bytes published by each country's issuing authority as-is, hash-pinned, and version-controlled. The legal source of truth remains the issuing authority in each country. We are not a Certificate Authority — we do not issue, reissue, sign, or vouch for any certificate. **Always verify the SHA-256 against the issuing authority's repository when you can reach it.**
 
+<img width="1446" height="1031" alt="image" src="https://github.com/user-attachments/assets/f8e552c4-480e-4855-892f-f38648ef0c4a" />
+
+
 ## Architecture
 
 ```mermaid
