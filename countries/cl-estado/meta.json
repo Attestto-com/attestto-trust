@@ -1,0 +1,23 @@
+{
+  "code": "cl-estado",
+  "name": "Chile (State PKI)",
+  "flag": "🇨🇱",
+  "model": "national-hierarchy",
+  "authority": {
+    "name": "Autoridad Certificadora del Estado de Chile — Ministerio Secretaría General de la Presidencia (SEGPRES)",
+    "operator": "Estado de Chile — organismos públicos (ministerios, universidades estatales, servicios, gobiernos regionales)",
+    "url": "https://www.gob.cl/"
+  },
+  "governingLaw": "Ley 19.799 (2002) · DFL / normativa de firma electrónica del Estado",
+  "technology": {
+    "keyAlgorithms": ["RSA-2048", "RSA-4096"],
+    "signatureStandards": ["CAdES", "PAdES", "XAdES"]
+  },
+  "capabilities": ["Firma Electrónica Avanzada del Estado (FEA)", "CAs por organismo público"],
+  "relatedLinks": [
+    { "label": "Entidad Acreditadora — Chile", "url": "https://www.entidadacreditadora.gob.cl/" },
+    { "label": "Independent verifier (Attestto)", "url": "https://verify.attestto.com" }
+  ],
+  "source": { "type": "direct-cert" },
+  "notes": "Chile's STATE PKI (distinct from the accredited-provider model tracked under cl). A single national hierarchy: two self-signed roots — 'Autoridad Certificadora del Estado de Chile' (G1) and its G2 successor — anchor 710 per-organismo intermediate CAs (one or more FEA CAs per ministry, state university, regional government and public service). 712 distinct certificates (2 roots + 710 intermediates) promoted from the 2026-07-21 staging snapshot, downloaded and extracted over HTTPS by the cl-estado monitor (scripts/monitors/sources/cl-estado.mjs, human-gated). Use ALL_CERTS + getBySha256 to look certificates up. NOTE: no did.json is published for this directory — did:pki requires a two-letter country segment (did:pki:cc:...), which the 'cl-estado' pseudo-code does not satisfy; the underlying certificates remain fully usable via ALL_CERTS. RSA throughout."
+}
