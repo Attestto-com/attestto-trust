@@ -108,7 +108,14 @@ if (isMain) {
     writeFileSync(outPath, content)
     console.log(`  wrote ${outPath} (${certs.length} certs)`)
 
-    reExports.push(`export * as ${cc} from './countries/${cc}/index.js'`)
+    // The root barrel aliases each country under a JS-identifier-safe name.
+    // Most codes are already valid (two-letter ISO), but special pseudo-codes
+    // like "cl-estado" contain a hyphen, which is illegal in an ESM binding
+    // name (`export * as cl-estado` is a syntax error). Underscore them for the
+    // barrel; consumers reach these via the subpath export (@attestto/trust/cl-estado)
+    // or by importing countries/<cc>/index.js directly.
+    const alias = cc.replace(/[^A-Za-z0-9$_]/g, '_')
+    reExports.push(`export * as ${alias} from './countries/${cc}/index.js'`)
   }
 
   // Root index.js
