@@ -1,0 +1,25 @@
+{
+  "code": "us",
+  "name": "United States",
+  "flag": "🇺🇸",
+  "model": "federal-bridge",
+  "authority": {
+    "name": "US Federal PKI — Federal PKI Management Authority (FPKIMA), GSA",
+    "operator": "GSA / FPKI Policy Authority",
+    "url": "https://www.idmanagement.gov/fpki/"
+  },
+  "governingLaw": "OMB M-19-17 · FPKI Common Policy Framework (X.509 Certificate Policy)",
+  "technology": {
+    "keyAlgorithms": ["RSA-2048", "RSA-3072", "RSA-4096"],
+    "signatureStandards": ["CMS/PKCS#7", "CAdES", "PAdES"]
+  },
+  "capabilities": ["Federal Common Policy (trust root)", "Federal Bridge CA", "PIV / PIV-I credentialing", "SSP intermediate CAs"],
+  "relatedLinks": [
+    { "label": "IDManagement.gov — Federal PKI", "url": "https://www.idmanagement.gov/fpki/" },
+    { "label": "FPKI repository (repo.fpki.gov)", "url": "https://repo.fpki.gov/" },
+    { "label": "Federal Common Policy CA G2 (fcpcag2.crt)", "url": "https://repo.fpki.gov/fcpca/fcpcag2.crt" },
+    { "label": "Independent verifier (Attestto)", "url": "https://verify.attestto.com" }
+  ],
+  "source": { "type": "direct-cert", "url": "https://repo.fpki.gov/fcpca/" },
+  "notes": "US Federal PKI. The trust anchor is Federal Common Policy CA G2 (FCPCA G2, RSA-4096, valid to 2040), fetched directly over HTTPS from the official FPKI repository (repo.fpki.gov). The subordinate/cross set (Federal Bridge CA G4, Entrust Managed PKI Federal Root CA G2, DigiCert Federal SSP G5/G6, WidePoint/ORC SSP, Department of the Treasury, U.S. Department of State AD Root) is extracted from the caCertsIssuedByfcpcag2.p7c bundle published alongside FCPCA G2. All certificates chain up to FCPCA G2 and validate themselves at verification time. Sourced by the us monitor (scripts/monitors/sources/us.mjs)."
+}

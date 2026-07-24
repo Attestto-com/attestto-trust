@@ -1,0 +1,200 @@
+{
+  "country": "US",
+  "generatedAt": "2026-07-24T03:25:18.124Z",
+  "count": 13,
+  "certificates": [
+    {
+      "file": "certification-authorities-34e433cd.pem",
+      "sha256": "34e433cdd7c647820e607d695a564bc8559ca01866633fc65b2762427a496eb3",
+      "subject": "Certification Authorities",
+      "issuer": "Federal Common Policy CA G2",
+      "serialNumber": "25da3ccaaa1e16c5050feaad9e712f1b8ca90c3a",
+      "validFrom": "2023-07-14T14:51:15.000Z",
+      "validTo": "2030-12-28T18:00:00.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://repo.fpki.gov/fcpca/fcpcag2.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "certification-authorities-91272da1.pem",
+      "sha256": "91272da1cf906991388e068832f5faf236f3f7add94ed863dea831e967635cb1",
+      "subject": "Certification Authorities",
+      "issuer": "Federal Common Policy CA G2",
+      "serialNumber": "00ba204be03a22075e56051a97c24ae6f4",
+      "validFrom": "2026-07-13T13:47:51.000Z",
+      "validTo": "2035-12-31T14:47:51.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-3072",
+      "crlUrls": [
+        "http://repo.fpki.gov/fcpca/fcpcag2.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "certification-authorities.pem",
+      "sha256": "e3d6b1b33d0a5df0630b32bf17f9fb632b0471a6cac561f164aa6429ef0699a1",
+      "subject": "Certification Authorities",
+      "issuer": "Federal Common Policy CA G2",
+      "serialNumber": "215e78d99648b021c6394a6566d8e00f46a1e595",
+      "validFrom": "2020-11-18T14:30:34.000Z",
+      "validTo": "2029-08-14T13:30:34.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://repo.fpki.gov/fcpca/fcpcag2.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "configuration.pem",
+      "sha256": "04aae03b527b1d3de0f3c7b53e73f196984172a33abacc7668b3c2bfb83792cf",
+      "subject": "Configuration",
+      "issuer": "Federal Common Policy CA G2",
+      "serialNumber": "23d03cb4df4c43d5ab11ce630f41ef9d38da7fa1",
+      "validFrom": "2023-11-08T14:37:09.000Z",
+      "validTo": "2026-11-08T14:37:09.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://repo.fpki.gov/fcpca/fcpcag2.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "department-of-the-treasury.pem",
+      "sha256": "3927ed6e8e16f782d8106ed877d0d14fd1173f01938369b0052d036d992c177b",
+      "subject": "Department of the Treasury",
+      "issuer": "Federal Common Policy CA G2",
+      "serialNumber": "26dfcc2930c52fd5d909c228dbeab3ea057b4ad7",
+      "validFrom": "2025-01-07T14:47:19.000Z",
+      "validTo": "2028-01-07T14:47:19.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://repo.fpki.gov/fcpca/fcpcag2.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "digicert-federal-ssp-intermediate-ca-g5.pem",
+      "sha256": "ea86e0baf55eef020ed58196af865f2fa72a77d1be70a779b65a9cbf0b5ee3f2",
+      "subject": "DigiCert Federal SSP Intermediate CA - G5",
+      "issuer": "Federal Common Policy CA G2",
+      "serialNumber": "24bc168f9ccb30cfcef8f0a58f26f10181869266",
+      "validFrom": "2020-11-18T16:34:38.000Z",
+      "validTo": "2028-12-13T16:34:38.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://repo.fpki.gov/fcpca/fcpcag2.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "digicert-federal-ssp-intermediate-ca-g6.pem",
+      "sha256": "72653e7e6aa246b778a07592b4cf09e2b4f629e45994e289090f84d5c054686e",
+      "subject": "DigiCert Federal SSP Intermediate CA - G6",
+      "issuer": "Federal Common Policy CA G2",
+      "serialNumber": "231eb3199085ee8187df5c7a598ef336b356092f",
+      "validFrom": "2022-03-16T13:48:15.000Z",
+      "validTo": "2032-03-16T13:48:15.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://repo.fpki.gov/fcpca/fcpcag2.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "entrust-managed-pki-federal-root-ca-g2.pem",
+      "sha256": "cf42c4b69d203dee12386f9fb7ffa12382f4313bd88e4debcb12852e2c78c287",
+      "subject": "Entrust Managed PKI Federal Root CA G2",
+      "issuer": "Federal Common Policy CA G2",
+      "serialNumber": "29237f41950465269051730e2ac3757add090883",
+      "validFrom": "2024-07-09T13:55:52.000Z",
+      "validTo": "2034-07-09T13:55:52.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://repo.fpki.gov/fcpca/fcpcag2.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "federal-bridge-ca-g4.pem",
+      "sha256": "74383ca1bb648f96efe9e6ecadb5a8a359e7df9ba262ef7c02bd004eab3895f4",
+      "subject": "Federal Bridge CA G4",
+      "issuer": "Federal Common Policy CA G2",
+      "serialNumber": "234200beaa6dada658f53b403f418295290cae82",
+      "validFrom": "2020-10-15T15:52:46.000Z",
+      "validTo": "2029-12-06T16:52:46.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://repo.fpki.gov/fcpca/fcpcag2.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "federal-common-policy-ca-g2.pem",
+      "sha256": "5f9aecc24616b2191372600dd80f6dd320c8ca5a0ceb7f09c985ebf0696934fc",
+      "subject": "Federal Common Policy CA G2",
+      "issuer": "Federal Common Policy CA G2",
+      "serialNumber": "21e5b9a0cc956de278ca012ba8fdc58a98b3fbea",
+      "validFrom": "2020-10-14T13:35:12.000Z",
+      "validTo": "2040-10-14T13:35:12.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "widepoint-orc-ssp-5.pem",
+      "sha256": "222f8115d0c91fdc6342276961bd81092f71b3a99ae30915cb5cea8576dd7f5a",
+      "subject": "WidePoint ORC SSP 5",
+      "issuer": "Federal Common Policy CA G2",
+      "serialNumber": "2119cb5014c8049bcdb3d901c105182afdaf9e08",
+      "validFrom": "2024-02-01T15:41:50.000Z",
+      "validTo": "2030-11-05T14:16:00.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://repo.fpki.gov/fcpca/fcpcag2.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "widepoint-ssp-intermediate-ca-2.pem",
+      "sha256": "8b501cc59de687dee540b809d5ddbc9e81719d8aecf7139b21d3f4271ea82447",
+      "subject": "WidePoint SSP Intermediate CA 2",
+      "issuer": "Federal Common Policy CA G2",
+      "serialNumber": "270f14477815afa0483a3fe93e7f684082b607d9",
+      "validFrom": "2025-03-31T14:13:26.000Z",
+      "validTo": "2035-02-13T15:13:26.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://repo.fpki.gov/fcpca/fcpcag2.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "widepoint-ssp-intermediate-ca.pem",
+      "sha256": "edf21e73d9114477a4a4824c93414b4ec67825604575041a33ce24f0df01f66f",
+      "subject": "WidePoint SSP Intermediate CA",
+      "issuer": "Federal Common Policy CA G2",
+      "serialNumber": "28f49a629440b3fdf097ac0fd46dbd9735379187",
+      "validFrom": "2023-04-03T13:51:38.000Z",
+      "validTo": "2033-03-15T13:51:38.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://repo.fpki.gov/fcpca/fcpcag2.crl"
+      ],
+      "ocspUrls": []
+    }
+  ]
+}

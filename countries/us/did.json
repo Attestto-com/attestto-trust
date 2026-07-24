@@ -1,0 +1,19 @@
+{
+  "method": "did:pki",
+  "generatedAt": "2026-07-24T03:25:24.050Z",
+  "dids": {
+    "certification-authorities-34e433cd.pem": "did:pki:us:entrust:certification-authorities",
+    "certification-authorities-91272da1.pem": "did:pki:us:entrust:certification-authorities",
+    "certification-authorities.pem": "did:pki:us:entrust:certification-authorities",
+    "configuration.pem": "did:pki:us:configuration",
+    "department-of-the-treasury.pem": "did:pki:us:department-of-the-treasury",
+    "digicert-federal-ssp-intermediate-ca-g5.pem": "did:pki:us:digicert:digicert-federal-ssp-intermediate-ca",
+    "digicert-federal-ssp-intermediate-ca-g6.pem": "did:pki:us:digicert:digicert-federal-ssp-intermediate-ca",
+    "entrust-managed-pki-federal-root-ca-g2.pem": "did:pki:us:entrust:managed-pki-federal-root-ca",
+    "federal-bridge-ca-g4.pem": "did:pki:us:federal-bridge-ca",
+    "federal-common-policy-ca-g2.pem": "did:pki:us:federal-common-policy-ca",
+    "widepoint-orc-ssp-5.pem": "did:pki:us:orc-pki:widepoint-ssp-5",
+    "widepoint-ssp-intermediate-ca-2.pem": "did:pki:us:orc-pki:widepoint-ssp-intermediate-ca-2",
+    "widepoint-ssp-intermediate-ca.pem": "did:pki:us:orc-pki:widepoint-ssp-intermediate-ca"
+  }
+}
