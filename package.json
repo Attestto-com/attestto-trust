@@ -1,7 +1,7 @@
 {
   "name": "@attestto/trust",
-  "version": "1.1.0",
-  "description": "Independent public mirror of X.509 trust anchors for national digital signature infrastructures (22 countries across Latin America and the EU/EEA), plus GLEIF vLEI organizational-identity root of trust. Live directory at trust.attestto.org.",
+  "version": "1.2.0",
+  "description": "Independent public mirror of X.509 trust anchors for national digital signature infrastructures (23 countries across Latin America and the EU/EEA), plus GLEIF vLEI organizational-identity root of trust. Live directory at trust.attestto.org.",
   "homepage": "https://trust.attestto.org",
   "funding": "https://github.com/sponsors/Attestto-com",
   "type": "module",

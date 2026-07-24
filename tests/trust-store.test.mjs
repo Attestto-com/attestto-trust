@@ -202,14 +202,22 @@ describe('Argentina (ar)', () => {
 // ── Country: Spain ──────────────────────────────────────────────────
 
 describe('Spain (es)', () => {
-  it('exports 2 certificates (root + users)', () => {
-    assert.equal(es.ALL_CERTS.length, 2, `Expected 2, got ${es.ALL_CERTS.length}`)
+  it('exports the full Spanish Trusted List (>= 130 CAs)', () => {
+    // Spanish TSL promoted via the LOTL/XAdES chain (meta source.type=tsl).
+    assert.ok(es.ALL_CERTS.length >= 130, `Expected >=130, got ${es.ALL_CERTS.length}`)
   })
 
-  it('includes AC Raiz and AC Usuarios', () => {
+  it('is a high-volume country: getBySha256 helper, no per-cert named consts', () => {
+    assert.equal(typeof es.getBySha256, 'function', 'getBySha256 helper missing')
+    assert.equal(es.AC_FNMT_USUARIOS, undefined, 'should not emit per-cert named consts at this volume')
+  })
+
+  it('retains FNMT Usuarios (on the TSL); the self-signed FNMT root is archived', () => {
+    // The Spanish TSL lists accredited issuing CAs, not the self-signed root,
+    // so AC RAIZ FNMT-RCM is archived on promotion while AC FNMT Usuarios stays.
     const names = es.ALL_CERTS.map(c => c.exportName)
-    assert.ok(names.includes('AC_RAIZ_FNMT_RCM'), 'Missing AC Raíz')
-    assert.ok(names.includes('AC_FNMT_USUARIOS'), 'Missing AC Usuarios')
+    assert.ok(names.includes('AC_FNMT_USUARIOS'), 'Missing AC FNMT Usuarios (listed on the TSL)')
+    assert.ok(!names.includes('AC_RAIZ_FNMT_RCM'), 'Self-signed FNMT root should be archived, not in current')
   })
 
   it('all PEM strings are valid format', () => {
@@ -921,27 +929,26 @@ describe('Latvia (lv)', () => {
 // ── Cross-country checks ───────────────────────────────────────────
 
 describe('cross-country integrity', () => {
-  it('total trust store carries the small-country anchors plus the TSL sets (>= 470)', () => {
-    // CR 10 + BR 4 + AR 2 + ES 2 + EE 16 + PE 8 = 42 fixed, plus the
-    // TSL-driven sets: Italy (~231), Germany (~101), Greece (~105),
+  it('total trust store carries the small-country anchors plus the TSL sets (>= 1000)', () => {
+    // CR 10 + BR 4 + AR 2 + EE 16 + PE 8 = 40 fixed, plus the TSL-driven
+    // sets: Spain (~139), Italy (~231), Germany (~101), Greece (~105),
     // France (~79), the Netherlands (~30), Belgium (~52), Austria (~39),
     // Portugal (~30), Poland (~29), Hungary (~62), the Czech Republic
     // (~34), Norway (~26), Finland (~12), Lithuania (~11), Sweden (~8),
-    // Denmark (~5), and Latvia (~5). The TSL sets are dynamic (AgID /
-    // BNetzA / EETT / ANSSI / RDI / FPS Economy / RTR / GNS / NCCert /
-    // NMHH / DIA / Nkom / Traficom / RRT / PTS / Digitaliseringsstyrelsen /
-    // DDUK lists), so this is a floor tripwire rather than an exact count.
+    // Denmark (~5), and Latvia (~5). The TSL sets are dynamic (RDI / AgID /
+    // BNetzA / EETT / ANSSI / FPS Economy / RTR / GNS / NCCert / NMHH /
+    // DIA / Nkom / Traficom / RRT / PTS / Digitaliseringsstyrelsen / DDUK
+    // lists), so this is a floor tripwire rather than an exact count.
     const fixed =
       cr.ALL_CERTS.length +
       br.ALL_CERTS.length +
       ar.ALL_CERTS.length +
-      es.ALL_CERTS.length +
       ee.ALL_CERTS.length +
       pe.ALL_CERTS.length
-    assert.equal(fixed, 42, `small-country anchors changed: expected 42, got ${fixed}`)
+    assert.equal(fixed, 40, `small-country anchors changed: expected 40, got ${fixed}`)
     const total =
-      fixed + italy.ALL_CERTS.length + de.ALL_CERTS.length + gr.ALL_CERTS.length + fr.ALL_CERTS.length + nl.ALL_CERTS.length + no.ALL_CERTS.length + be.ALL_CERTS.length + at.ALL_CERTS.length + pt.ALL_CERTS.length + pl.ALL_CERTS.length + hu.ALL_CERTS.length + cz.ALL_CERTS.length + fi.ALL_CERTS.length + lt.ALL_CERTS.length + se.ALL_CERTS.length + dk.ALL_CERTS.length + lv.ALL_CERTS.length
-    assert.ok(total >= 882, `Expected >= 882 total, got ${total}`)
+      fixed + es.ALL_CERTS.length + italy.ALL_CERTS.length + de.ALL_CERTS.length + gr.ALL_CERTS.length + fr.ALL_CERTS.length + nl.ALL_CERTS.length + no.ALL_CERTS.length + be.ALL_CERTS.length + at.ALL_CERTS.length + pt.ALL_CERTS.length + pl.ALL_CERTS.length + hu.ALL_CERTS.length + cz.ALL_CERTS.length + fi.ALL_CERTS.length + lt.ALL_CERTS.length + se.ALL_CERTS.length + dk.ALL_CERTS.length + lv.ALL_CERTS.length
+    assert.ok(total >= 1000, `Expected >= 1000 total, got ${total}`)
   })
 
   it('no duplicate export names across countries', () => {
