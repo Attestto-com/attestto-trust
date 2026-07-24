@@ -53,7 +53,6 @@ import * as lv from '../countries/lv/index.js'
 import * as se from '../countries/se/index.js'
 import * as dk from '../countries/dk/index.js'
 import * as cl from '../countries/cl/index.js'
-import * as clEstado from '../countries/cl-estado/index.js'
 import * as pa from '../countries/pa/index.js'
 import * as uy from '../countries/uy/index.js'
 import * as us from '../countries/us/index.js'
@@ -965,39 +964,6 @@ describe('Chile (cl)', () => {
   })
 })
 
-// ── Country: Chile State PKI (cl-estado) ───────────────────────────
-
-describe('Chile State PKI (cl-estado)', () => {
-  it('exports the state per-organismo CA set (2 roots + intermediates)', () => {
-    assert.equal(clEstado.ALL_CERTS.length, 712, `Expected 712, got ${clEstado.ALL_CERTS.length}`)
-  })
-
-  it('is a high-volume country: getBySha256 helper, no per-cert named consts', () => {
-    assert.equal(typeof clEstado.getBySha256, 'function', 'getBySha256 helper missing')
-  })
-
-  it('all PEM strings are valid format', () => {
-    for (const cert of clEstado.ALL_CERTS) {
-      assert.ok(cert.pem.startsWith('-----BEGIN CERTIFICATE-----'), `${cert.name}: bad PEM header`)
-      assert.ok(cert.pem.trimEnd().endsWith('-----END CERTIFICATE-----'), `${cert.name}: bad PEM footer`)
-    }
-  })
-
-  it('manifest SHA-256 hashes match DER content of PEM files', () => {
-    const manifestPath = join(ROOT, 'countries/cl-estado/current/manifest.json')
-    assert.ok(existsSync(manifestPath), 'manifest.json missing')
-    const manifest = JSON.parse(readFileSync(manifestPath, 'utf-8'))
-    assert.equal(manifest.country, 'CL-ESTADO')
-    for (const entry of manifest.certificates) {
-      const pemPath = join(ROOT, 'countries/cl-estado/current', entry.file)
-      assert.ok(existsSync(pemPath), `PEM file missing: ${entry.file}`)
-      const der = pemToDer(readFileSync(pemPath, 'utf-8'))
-      const sha256 = createHash('sha256').update(der).digest('hex')
-      assert.equal(sha256, entry.sha256, `SHA-256 mismatch for ${entry.file}`)
-    }
-  })
-})
-
 // ── Country: Panama ────────────────────────────────────────────────
 
 describe('Panama (pa)', () => {
@@ -1096,12 +1062,12 @@ describe('United States (us)', () => {
 
 describe('cross-country integrity', () => {
   it('total trust store carries the small-country anchors plus the TSL sets (>= 1000)', () => {
+    // Grand total floor tripwire (TSL sets are dynamic; ~1106 at last promotion).
     // Direct-cert anchor sets (fixed exact counts — they change only on an
     // explicit re-promotion, not from an upstream list refresh):
     //   CR 10 + BR 4 + AR 2 + EE 16 + PE 8 = 40 (small national anchors)
-    //   + CL 51 (accredited providers) + CL-ESTADO 712 (state per-organismo)
-    //   + PA 3 + UY 1 + US 13 = 780
-    // → 820 fixed total.
+    //   + CL 51 (accredited providers) + PA 3 + UY 1 + US 13 = 68
+    // → 108 fixed total.
     // Plus the TSL-driven EU/EEA sets: Spain (~139), Italy (~231), Germany
     // (~101), Greece (~105), France (~79), the Netherlands (~30), Belgium
     // (~52), Austria (~39), Portugal (~30), Poland (~29), Hungary (~62), the
@@ -1117,14 +1083,13 @@ describe('cross-country integrity', () => {
       ee.ALL_CERTS.length +
       pe.ALL_CERTS.length +
       cl.ALL_CERTS.length +
-      clEstado.ALL_CERTS.length +
       pa.ALL_CERTS.length +
       uy.ALL_CERTS.length +
       us.ALL_CERTS.length
-    assert.equal(fixed, 820, `direct-cert anchors changed: expected 820, got ${fixed}`)
+    assert.equal(fixed, 108, `direct-cert anchors changed: expected 108, got ${fixed}`)
     const total =
       fixed + es.ALL_CERTS.length + italy.ALL_CERTS.length + de.ALL_CERTS.length + gr.ALL_CERTS.length + fr.ALL_CERTS.length + nl.ALL_CERTS.length + no.ALL_CERTS.length + be.ALL_CERTS.length + at.ALL_CERTS.length + pt.ALL_CERTS.length + pl.ALL_CERTS.length + hu.ALL_CERTS.length + cz.ALL_CERTS.length + fi.ALL_CERTS.length + lt.ALL_CERTS.length + se.ALL_CERTS.length + dk.ALL_CERTS.length + lv.ALL_CERTS.length
-    assert.ok(total >= 1800, `Expected >= 1800 total, got ${total}`)
+    assert.ok(total >= 1080, `Expected >= 1080 total, got ${total}`)
   })
 
   it('no duplicate export names across countries', () => {

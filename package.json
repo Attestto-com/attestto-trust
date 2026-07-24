@@ -18,8 +18,6 @@
     "./br/pems/*": "./countries/br/current/*.pem",
     "./cl": "./countries/cl/index.js",
     "./cl/pems/*": "./countries/cl/current/*.pem",
-    "./cl-estado": "./countries/cl-estado/index.js",
-    "./cl-estado/pems/*": "./countries/cl-estado/current/*.pem",
     "./cr": "./countries/cr/index.js",
     "./cr/pems/*": "./countries/cr/current/*.pem",
     "./cz": "./countries/cz/index.js",
