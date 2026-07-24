@@ -1,0 +1,9 @@
+{
+  "method": "did:pki",
+  "generatedAt": "2026-07-24T03:25:24.032Z",
+  "dids": {
+    "autoridad-certificadora-de-panama.pem": "did:pki:pa:firma-electronica:autoridad-certificadora",
+    "ca-de-gobierno-de-panama.pem": "did:pki:pa:firma-electronica:de-gobierno",
+    "ca-panama-clase-2.pem": "did:pki:pa:firma-electronica:panama-clase-2"
+  }
+}
