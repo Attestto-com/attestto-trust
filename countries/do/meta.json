@@ -1,0 +1,24 @@
+{
+  "code": "do",
+  "name": "Dominican Republic",
+  "flag": "🇩🇴",
+  "model": "accredited-tsl",
+  "authority": {
+    "name": "INDOTEL — Instituto Dominicano de las Telecomunicaciones",
+    "operator": "8 accredited TSPs: NOVOSIT, digifirma (Cámara de Comercio y Producción de Santo Domingo), OGTIC, AVANSI/Viafirma, Thomas Signe, Lleidanet Dominicana, ABA, Digito",
+    "url": "https://indotel.gob.do/firma-digital/entidades-de-certificacion/"
+  },
+  "governingLaw": "Ley No. 126-02 (2002) + Decreto No. 335-03",
+  "technology": {
+    "signatureStandards": ["CAdES", "PAdES", "XAdES"],
+    "trustList": "ETSI TS 119 612 — LISTA ELECTRONICA DE CONFIANZA REP. DOMINICANA"
+  },
+  "capabilities": ["Firma digital cualificada", "Sellado de tiempo (TSU)", "Sello electrónico"],
+  "relatedLinks": [
+    { "label": "INDOTEL — Entidades de Certificación", "url": "https://indotel.gob.do/firma-digital/entidades-de-certificacion/" },
+    { "label": "TSL Browser (visor oficial)", "url": "https://tsl.indotel.gob.do/" },
+    { "label": "Trusted List (tsl.xml)", "url": "https://applin.indotel.gob.do/tsl/tsl.xml" }
+  ],
+  "source": { "type": "tsl", "url": "https://applin.indotel.gob.do/tsl/tsl.xml" },
+  "notes": "Federated accredited-TSL model like Peru: INDOTEL accredits independent TSPs, each with its own root, published via an ETSI TS 119 612 Trusted List (XAdES-signed, SchemeTerritory DO). The DR list is non-standard — it emits bare-word service statuses (\"Granted\"/\"Withdrawn\") instead of the ETSI status URIs (handled in extract-tsl.mjs). Some anchors are Spanish roots (Signe, Lleidanet, Evicertia) backing DO-accredited services. Phase 1 stages the granted-status anchors; 2 withdrawn services excluded. Nothing is promoted to current/ until each fingerprint is cross-checked against the XAdES-signed list."
+}
