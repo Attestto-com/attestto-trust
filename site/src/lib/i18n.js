@@ -236,35 +236,113 @@ export const TRANSLATIONS = {
   }
 };
 
-// Localized country names
+// Canonical ISO 3166-1 alpha-2 -> localized display name.
+//
+// This is the SINGLE source of country display names for the whole site
+// (home table, country pages, cert pages, <title>/meta descriptions).
+// It must cover every code that can appear in the directory, which means:
+//   - every countries/<cc>/ directory in this repo (live AND staged), and
+//   - every code listed in site/src/lib/regions.js REGION_OF.
+// tests/site-country-names.test.mjs enforces exactly that, so promoting a
+// staged country can never regress into a bare ISO code on the page.
+export const COUNTRY_NAMES = {
+  // North America
+  us: { en: 'United States', es: 'Estados Unidos' },
+  ca: { en: 'Canada', es: 'Canadá' },
+  // Central America
+  cr: { en: 'Costa Rica', es: 'Costa Rica' },
+  gt: { en: 'Guatemala', es: 'Guatemala' },
+  sv: { en: 'El Salvador', es: 'El Salvador' },
+  hn: { en: 'Honduras', es: 'Honduras' },
+  ni: { en: 'Nicaragua', es: 'Nicaragua' },
+  pa: { en: 'Panama', es: 'Panamá' },
+  bz: { en: 'Belize', es: 'Belice' },
+  mx: { en: 'Mexico', es: 'México' },
+  // Caribbean
+  do: { en: 'Dominican Republic', es: 'República Dominicana' },
+  cu: { en: 'Cuba', es: 'Cuba' },
+  ht: { en: 'Haiti', es: 'Haití' },
+  jm: { en: 'Jamaica', es: 'Jamaica' },
+  tt: { en: 'Trinidad and Tobago', es: 'Trinidad y Tobago' },
+  // South America
+  br: { en: 'Brazil', es: 'Brasil' },
+  ar: { en: 'Argentina', es: 'Argentina' },
+  pe: { en: 'Peru', es: 'Perú' },
+  cl: { en: 'Chile', es: 'Chile' },
+  co: { en: 'Colombia', es: 'Colombia' },
+  uy: { en: 'Uruguay', es: 'Uruguay' },
+  py: { en: 'Paraguay', es: 'Paraguay' },
+  bo: { en: 'Bolivia', es: 'Bolivia' },
+  ec: { en: 'Ecuador', es: 'Ecuador' },
+  ve: { en: 'Venezuela', es: 'Venezuela' },
+  // Northern Europe
+  gb: { en: 'United Kingdom', es: 'Reino Unido' },
+  ie: { en: 'Ireland', es: 'Irlanda' },
+  se: { en: 'Sweden', es: 'Suecia' },
+  no: { en: 'Norway', es: 'Noruega' },
+  dk: { en: 'Denmark', es: 'Dinamarca' },
+  fi: { en: 'Finland', es: 'Finlandia' },
+  is: { en: 'Iceland', es: 'Islandia' },
+  ee: { en: 'Estonia', es: 'Estonia' },
+  lv: { en: 'Latvia', es: 'Letonia' },
+  lt: { en: 'Lithuania', es: 'Lituania' },
+  // Western Europe
+  fr: { en: 'France', es: 'Francia' },
+  de: { en: 'Germany', es: 'Alemania' },
+  nl: { en: 'Netherlands', es: 'Países Bajos' },
+  be: { en: 'Belgium', es: 'Bélgica' },
+  at: { en: 'Austria', es: 'Austria' },
+  ch: { en: 'Switzerland', es: 'Suiza' },
+  lu: { en: 'Luxembourg', es: 'Luxemburgo' },
+  li: { en: 'Liechtenstein', es: 'Liechtenstein' },
+  // Southern Europe
+  es: { en: 'Spain', es: 'España' },
+  it: { en: 'Italy', es: 'Italia' },
+  pt: { en: 'Portugal', es: 'Portugal' },
+  gr: { en: 'Greece', es: 'Grecia' },
+  hr: { en: 'Croatia', es: 'Croacia' },
+  si: { en: 'Slovenia', es: 'Eslovenia' },
+  mt: { en: 'Malta', es: 'Malta' },
+  cy: { en: 'Cyprus', es: 'Chipre' },
+  rs: { en: 'Serbia', es: 'Serbia' },
+  // Eastern Europe
+  hu: { en: 'Hungary', es: 'Hungría' },
+  pl: { en: 'Poland', es: 'Polonia' },
+  cz: { en: 'Czech Republic', es: 'Chequia' },
+  sk: { en: 'Slovakia', es: 'Eslovaquia' },
+  ro: { en: 'Romania', es: 'Rumanía' },
+  bg: { en: 'Bulgaria', es: 'Bulgaria' },
+  ua: { en: 'Ukraine', es: 'Ucrania' },
+  md: { en: 'Moldova', es: 'Moldavia' },
+  // Asia
+  jp: { en: 'Japan', es: 'Japón' },
+  kr: { en: 'South Korea', es: 'Corea del Sur' },
+  cn: { en: 'China', es: 'China' },
+  in: { en: 'India', es: 'India' },
+  sg: { en: 'Singapore', es: 'Singapur' },
+  tr: { en: 'Turkey', es: 'Turquía' },
+  il: { en: 'Israel', es: 'Israel' },
+  // Oceania
+  au: { en: 'Australia', es: 'Australia' },
+  nz: { en: 'New Zealand', es: 'Nueva Zelanda' },
+};
+
+// Localized country names.
+// Never returns a bare lowercase ISO code as a user-facing label: an unmapped
+// code degrades to its uppercase form (e.g. "ZZ"), which reads as a defect
+// rather than as a country name, and is loudly warned about in dev.
 export const getCountryName = (code, lang) => {
-  const names = {
-    cr: { en: 'Costa Rica', es: 'Costa Rica' },
-    br: { en: 'Brazil', es: 'Brasil' },
-    ar: { en: 'Argentina', es: 'Argentina' },
-    es: { en: 'Spain', es: 'España' },
-    be: { en: 'Belgium', es: 'Bélgica' },
-    ee: { en: 'Estonia', es: 'Estonia' },
-    fi: { en: 'Finland', es: 'Finlandia' },
-    fr: { en: 'France', es: 'Francia' },
-    gr: { en: 'Greece', es: 'Grecia' },
-    hu: { en: 'Hungary', es: 'Hungría' },
-    de: { en: 'Germany', es: 'Alemania' },
-    it: { en: 'Italy', es: 'Italia' },
-    lt: { en: 'Lithuania', es: 'Lituania' },
-    lv: { en: 'Latvia', es: 'Letonia' },
-    at: { en: 'Austria', es: 'Austria' },
-    cz: { en: 'Czech Republic', es: 'Chequia' },
-    dk: { en: 'Denmark', es: 'Dinamarca' },
-    nl: { en: 'Netherlands', es: 'Países Bajos' },
-    no: { en: 'Norway', es: 'Noruega' },
-    pe: { en: 'Peru', es: 'Perú' },
-    pl: { en: 'Poland', es: 'Polonia' },
-    pt: { en: 'Portugal', es: 'Portugal' },
-    se: { en: 'Sweden', es: 'Suecia' }
-  };
-  const l = lang === 'es' ? 'es' : 'en';
-  return names[code]?.[l] || names[code]?.en || code;
+  const key = String(code || '').toLowerCase();
+  const entry = COUNTRY_NAMES[key];
+  if (!entry) {
+    if (import.meta.env?.DEV) {
+      console.warn(
+        `[i18n] Missing COUNTRY_NAMES entry for "${key}" — add it to site/src/lib/i18n.js.`,
+      );
+    }
+    return key.toUpperCase();
+  }
+  return (lang === 'es' ? entry.es : entry.en) || entry.en;
 };
 
 // Localized authority names
