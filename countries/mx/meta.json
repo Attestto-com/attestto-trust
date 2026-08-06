@@ -1,0 +1,25 @@
+{
+  "code": "mx",
+  "name": "Mexico",
+  "flag": "🇲🇽",
+  "model": "national-hierarchy",
+  "authority": {
+    "name": "Banco de México — Infraestructura Extendida de Seguridad (IES) · Agencia Registradora Central (ARC)",
+    "operator": "SAT — Servicio de Administración Tributaria (subordinate AC for e.firma / CSD)",
+    "url": "https://www.banxico.org.mx/servicios/infraestructura-extendida-seguri.html"
+  },
+  "governingLaw": "Código de Comercio, Título Segundo «Del Comercio Electrónico» · Código Fiscal de la Federación art. 17-D (e.firma)",
+  "technology": {
+    "keyAlgorithms": ["RSA-4096"],
+    "signatureStandards": ["CAdES", "PAdES", "XAdES"]
+  },
+  "capabilities": ["e.firma (FIEL)", "Certificado de Sello Digital (CSD)", "Firma electrónica avanzada"],
+  "relatedLinks": [
+    { "label": "SAT — Certificados de las autoridades certificadoras (Cert_Prod.zip)", "url": "http://omawww.sat.gob.mx/tramitesyservicios/Paginas/certificado_sello_digital.htm" },
+    { "label": "Banco de México — Infraestructura Extendida de Seguridad (IES)", "url": "https://www.banxico.org.mx/servicios/infraestructura-extendida-seguri.html" },
+    { "label": "SAT — e.firma", "url": "https://www.sat.gob.mx/tramites/16703/obten-tu-certificado-de-e.firma" },
+    { "label": "Independent verifier (Attestto)", "url": "https://verify.attestto.com" }
+  ],
+  "source": { "type": "direct-cert", "url": "http://omawww.sat.gob.mx/tramitesyservicios/Paginas/documentos/Cert_Prod.zip" },
+  "notes": "National hierarchy for the e.firma (FIEL) / CSD infrastructure. The root — AGENCIA REGISTRADORA CENTRAL (ARC), O=BANCO DE MEXICO — is operated by Banco de México's Infraestructura Extendida de Seguridad (IES); two currently-valid self-signed root generations are mirrored (ARC5, RSA-4096, valid to 2034; ARC6, RSA-4096, valid to 2039). The SAT operates the subordinate issuing CAs that grant e.firma and Certificados de Sello Digital to taxpayers: AC5 (valid to 2027, chains to ARC5) and AC6 / AC7 (valid to 2031, chain to ARC6). Certificates were promoted from the SAT's official production bundle (Cert_Prod.zip). Chains cross-verified with openssl (AC5→ARC5; AC6,AC7→ARC6). Expired generations (ARC0–ARC4 / AC0–AC4) and OCSP-responder certs are archived out of current/. RSA-4096 throughout. Note: the AC6 certificate carries a mis-encoded (double-UTF-8) common name in its issued bytes — the manifest reproduces those exact bytes faithfully; see VERIFICATION.md."
+}
