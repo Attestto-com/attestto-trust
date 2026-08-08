@@ -13,6 +13,10 @@ This project adheres to [Keep a Changelog](https://keepachangelog.com/en/1.1.0/)
 
 ### Fixed
 - Country pages rendered the raw ISO code instead of the display name for countries added without a display-name entry.
+- README described Mexico, Chile, Uruguay and Panama as "staged" when all four are promoted and live, and listed Ecuador as staged when it has never been sourced. A directory's own statement of which national roots it carries has to be accurate.
+
+### Notes
+- **Mexico**: the SAT subordinate CAs (`ac-sat-ac6`, `ac-sat-ac7`) carry double-encoded UTF-8 in their own subject fields (`AdministraciÃ³n`, `Ciudad de MÃ©xico`, `CuauhtÃ©moc`), placed there by the issuer and confirmed in the DER with `openssl asn1parse`. `manifest.json` reports it verbatim and that is correct: this directory states what a certificate contains. Normalising it would publish a subject that does not match the DER. Documented in `countries/mx/README.md` so it is not "fixed" later. The `sha256` is authoritative and unaffected.
 
 ### Notes
 - Not published. `package.json` is still at 1.3.0. These entries move under a version heading when the next release is cut.
