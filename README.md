@@ -51,10 +51,21 @@ openssl verify -CAfile attestto-trust/countries/cr/current/chain.pem your-signed
 
 **Verify a cert's hash:**
 
+The `sha256` in `manifest.json` is taken over the certificate's **DER** bytes — the
+standard certificate fingerprint — not over the `.pem` text file. Hashing the `.pem`
+file directly will *not* match, because the PEM wrapper, line breaks and any trailing
+newline are part of the file but not part of the certificate.
+
 ```bash
-sha256sum attestto-trust/countries/cr/current/root-ca.pem
-# compare against attestto-trust/countries/cr/current/manifest.json
+# correct: hash the DER
+openssl x509 -in attestto-trust/countries/cr/current/root-ca.pem -outform DER \
+  | sha256sum
+# compare against the sha256 field for that filename in
+# attestto-trust/countries/cr/current/manifest.json
 ```
+
+On macOS use `shasum -a 256` in place of `sha256sum`. The same value is what
+`openssl x509 -noout -fingerprint -sha256` prints (colon-separated, uppercase).
 
 ## Countries
 
@@ -163,9 +174,15 @@ openssl verify -CAfile attestto-trust/countries/cr/current/chain.pem some-signer
 
 ### Verify a cert's hash before using it
 
+`manifest.json` records the SHA-256 of the certificate's **DER** bytes, so decode the
+PEM before hashing. Hashing the `.pem` file itself gives a different digest and will
+never match.
+
 ```bash
-sha256sum attestto-trust/countries/cr/current/root-ca.pem
-# compare against attestto-trust/countries/cr/current/manifest.json sha256 field
+openssl x509 -in attestto-trust/countries/cr/current/root-ca.pem -outform DER \
+  | sha256sum
+# compare against the sha256 field for that filename in manifest.json
+# (macOS: shasum -a 256)
 ```
 
 ## Updating an existing country
