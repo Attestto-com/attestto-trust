@@ -7,9 +7,9 @@
 # Without required review on `main`, an author edits the cert and its pin in one
 # commit and nothing has changed. They are one control, not two.
 
-/countries/           @chongkan
-/anchors/             @chongkan
-/trust-pins.json      @chongkan
-/scripts/verify-pins.mjs   @chongkan
-/scripts/generate-pins.mjs @chongkan
-/.github/workflows/   @chongkan
+/countries/           @chongkan @echongkan
+/anchors/             @chongkan @echongkan
+/trust-pins.json      @chongkan @echongkan
+/scripts/verify-pins.mjs   @chongkan @echongkan
+/scripts/generate-pins.mjs @chongkan @echongkan
+/.github/workflows/   @chongkan @echongkan
