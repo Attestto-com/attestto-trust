@@ -44,6 +44,14 @@ jobs:
             exit 1
           fi
           echo "Stub guard passed"
+      - name: Verify certificates against reviewed pins (SOC-7)
+        # Must run BEFORE the manifest steps. Those regenerate manifest.json FROM the
+        # .pem files, so they can only prove internal consistency — a swapped cert
+        # committed alongside its regenerated manifest produces no drift and passes.
+        # Demonstrated 2026-08-07 with a self-signed impostor for the BCCR
+        # intermediate: green pipeline, 271 tests passing.
+        run: node scripts/verify-pins.mjs
+
       - name: Regenerate manifest
         run: node scripts/refresh-manifest.mjs
       - name: Fail if manifest drifted
