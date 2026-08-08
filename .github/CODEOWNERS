@@ -1,0 +1,15 @@
+# Trust-anchor material. Changing any of these changes who the ecosystem trusts,
+# so it must be a reviewed decision rather than a side effect of a script.
+#
+# This file is half of the SOC-7 control. scripts/verify-pins.mjs makes a
+# certificate swap VISIBLE (it can no longer be auto-derived into manifest.json);
+# CODEOWNERS plus branch protection is what makes that visibility mean something.
+# Without required review on `main`, an author edits the cert and its pin in one
+# commit and nothing has changed. They are one control, not two.
+
+/countries/           @chongkan @echongkan
+/anchors/             @chongkan @echongkan
+/trust-pins.json      @chongkan @echongkan
+/scripts/verify-pins.mjs   @chongkan @echongkan
+/scripts/generate-pins.mjs @chongkan @echongkan
+/.github/workflows/   @chongkan @echongkan
