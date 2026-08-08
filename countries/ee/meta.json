@@ -1,0 +1,28 @@
+{
+  "code": "ee",
+  "name": "Estonia",
+  "flag": "🇪🇪",
+  "model": "accredited-tsl",
+  "authority": {
+    "name": "RIA — Riigi Infosüsteemi Amet (Information System Authority)",
+    "operator": "SK ID Solutions AS + Zetes Estonia OÜ (state-contracted trust service providers)",
+    "url": "https://www.ria.ee/en"
+  },
+  "governingLaw": "Reglamento eIDAS (UE) 910/2014 · Electronic Identification and Trust Services for Electronic Transactions Act (EUTS)",
+  "technology": {
+    "keyAlgorithms": ["RSA-2048", "RSA-4096", "EC P-384", "EC P-521"],
+    "signatureStandards": ["CAdES", "PAdES", "XAdES", "ASiC-E"],
+    "trustList": "ETSI TS 119 612 — estonian-tsl.xml"
+  },
+  "capabilities": ["ID-card (ESTEID)", "Mobiil-ID / Smart-ID (EID-Q)", "e-Seal (KLASS3, ORG)", "Qualified e-signature (eIDAS)"],
+  "relatedLinks": [
+    { "label": "RIA — Information System Authority", "url": "https://www.ria.ee/en" },
+    { "label": "id.ee — Estonian eID portal", "url": "https://www.id.ee/en/" },
+    { "label": "SK ID Solutions — certificate repository", "url": "https://www.skidsolutions.eu/resources/certificates/" },
+    { "label": "eID PKI repository (crt.eidpki.ee)", "url": "https://repository.eidpki.ee/crt/" },
+    { "label": "Estonian Trusted List (estonian-tsl.xml)", "url": "https://sr.riik.ee/tsl/estonian-tsl.xml" },
+    { "label": "Independent verifier (Attestto)", "url": "https://verify.attestto.com" }
+  ],
+  "source": { "type": "tsl", "url": "https://sr.riik.ee/tsl/estonian-tsl.xml" },
+  "notes": "Estonia runs one of the world's most mature national eID systems. The state authority (RIA) contracts trust service providers to operate the PKI under eIDAS: SK ID Solutions AS historically, with the 2025 government root (EEGovCA2025 / ESTEID2025) now operated by Zetes Estonia OÜ. There are several roots rather than a single hierarchy, published via the Estonian ETSI Trusted List. The legacy EE Certification Centre Root CA (RSA-2048) is being retired and no longer issues new CAs, but remains a valid anchor for certificates already issued under it. First directory entry mixing RSA and EC (P-384 and P-521) roots. Phase 1 covers the national qualified anchors; roots were sourced from the SK ID Solutions repository and crt.eidpki.ee and cross-checked against SK's published SHA-1 fingerprints."
+}

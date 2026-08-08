@@ -1,0 +1,20 @@
+{
+  "country": "ES",
+  "generatedAt": "2026-07-23T10:04:16.610Z",
+  "snapshotExpiresAt": "2026-11-25T12:13:41.000Z",
+  "note": "snapshotExpiresAt is the earliest CRL nextUpdate across the promoted CAs; refresh revocation data by this date. Roots carry no CRL (trust anchors are not CRL-revocable).",
+  "crls": [
+    {
+      "url": "http://www.cert.fnmt.es/crls/ARLFNMTRCM.crl",
+      "status": "ok",
+      "thisUpdate": "2026-05-25T11:13:41.000Z",
+      "nextUpdate": "2026-11-25T12:13:41.000Z",
+      "revokedCount": 6
+    },
+    {
+      "url": "ldap://ldapfnmt.cert.fnmt.es/CN=CRL,OU=AC%20RAIZ%20FNMT-RCM,O=FNMT-RCM,C=ES?authorityRevocationList;binary?base?objectclass=cRLDistributionPoint",
+      "status": "unreachable",
+      "error": "fetch failed"
+    }
+  ]
+}

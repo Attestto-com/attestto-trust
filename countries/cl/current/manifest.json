@@ -1,0 +1,742 @@
+{
+  "country": "CL",
+  "generatedAt": "2026-07-24T03:25:18.220Z",
+  "count": 51,
+  "certificates": [
+    {
+      "file": "abancert-ca-root-g2.pem",
+      "sha256": "2e5be0412fbe2f8f448b2d17da2f3d14eda0a1abd2bd9b3b26889e66cd203f49",
+      "subject": "ABANCERT CA ROOT - G2",
+      "issuer": "ABANCERT CA ROOT - G2",
+      "serialNumber": "55449ef227bce49d4d91ae115e177479",
+      "validFrom": "2021-09-09T13:36:26.000Z",
+      "validTo": "2041-09-09T13:46:25.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "abancert-firma-electronica-avanzada-g2.pem",
+      "sha256": "a5411fdcb10f0e9106743cb0604cb84069204c15afb6c4bdbc51f9841178a214",
+      "subject": "ABANCERT FIRMA ELECTRONICA AVANZADA - G2",
+      "issuer": "ABANCERT CA ROOT - G2",
+      "serialNumber": "6c00000002a736fd4a8f64647d000000000002",
+      "validFrom": "2021-09-09T13:48:04.000Z",
+      "validTo": "2040-09-09T13:58:04.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.abancert.cl/abancertcaroot-g2.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "acepta-com-autoridad-certificadora-de-firma-electronica-avanzada-g3.pem",
+      "sha256": "cac7fe391143a15f0182086677c8ea898d5eb2e1812b278ce325d705b11a964f",
+      "subject": "Acepta.com Autoridad Certificadora de Firma Electronica Avanzada - G3",
+      "issuer": "Acepta.com Autoridad Certificadora Raiz - G3",
+      "serialNumber": "03",
+      "validFrom": "2014-06-19T14:36:05.000Z",
+      "validTo": "2034-06-19T14:36:05.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "acepta-com-autoridad-certificadora-de-firma-electronica-avanzada-g4.pem",
+      "sha256": "f5ba1e39b09beb673b0fb286216030dbfeb66757b9618dd2e6dea88a79a7413e",
+      "subject": "Acepta.com Autoridad Certificadora de Firma Electronica Avanzada - G4",
+      "issuer": "Acepta.com Autoridad Certificadora Raiz - G4",
+      "serialNumber": "03",
+      "validFrom": "2016-06-21T14:14:59.000Z",
+      "validTo": "2036-06-21T14:14:59.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "acepta-com-autoridad-certificadora-de-firma-electronica-avanzada-v2.pem",
+      "sha256": "328bfc31c622501818f03a885f125fe7b30ec52dd7d72d0de9b542a3bbfa4dd9",
+      "subject": "Acepta.com Autoridad Certificadora de Firma Electronica Avanzada - V2",
+      "issuer": "Acepta.com Autoridad Certificadora Raiz - V2",
+      "serialNumber": "03",
+      "validFrom": "2010-08-09T20:45:29.000Z",
+      "validTo": "2030-08-09T20:45:29.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "acepta-com-autoridad-certificadora-raiz-g3.pem",
+      "sha256": "f5be1abaf8a220b91acbeec029ebd5bb682bf39320283ceea7f6405fd1a4c30d",
+      "subject": "Acepta.com Autoridad Certificadora Raiz - G3",
+      "issuer": "Acepta.com Autoridad Certificadora Raiz - G3",
+      "serialNumber": "01",
+      "validFrom": "2014-06-19T14:36:05.000Z",
+      "validTo": "2034-06-19T14:36:05.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "acepta-com-autoridad-certificadora-raiz-g4.pem",
+      "sha256": "17712bcdb91d85581cb9df15bbb33dd08b4144de35ddc8b24bb0fc1920ab1720",
+      "subject": "Acepta.com Autoridad Certificadora Raiz - G4",
+      "issuer": "Acepta.com Autoridad Certificadora Raiz - G4",
+      "serialNumber": "01",
+      "validFrom": "2016-06-21T14:14:59.000Z",
+      "validTo": "2036-06-21T14:14:59.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "acepta-com-autoridad-certificadora-raiz-v2.pem",
+      "sha256": "2125b4e5eace9b6d0c599e1bf798a5bb78dc3509eb0999ca089d201967f1deaa",
+      "subject": "Acepta.com Autoridad Certificadora Raiz - V2",
+      "issuer": "Acepta.com Autoridad Certificadora Raiz - V2",
+      "serialNumber": "01",
+      "validFrom": "2010-08-09T20:45:29.000Z",
+      "validTo": "2030-08-09T20:45:29.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "acepta-com-autoridad-de-sellado-de-tiempo-g4.pem",
+      "sha256": "0e7ef14695b63afe959f9a102ea98ae83daf2c26a3121a9f269fb92128742088",
+      "subject": "Acepta.com Autoridad de Sellado de Tiempo - G4",
+      "issuer": "Acepta.com Autoridad Certificadora Raiz - G4",
+      "serialNumber": "00c8",
+      "validFrom": "2017-09-05T11:34:06.000Z",
+      "validTo": "2036-06-21T14:14:59.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "acepta-com-emisor-sello-de-tiempo-g4.pem",
+      "sha256": "0063eeb0df1db14b78140584f8d5ec9a563d64a3536d4955e13585f00a7569f5",
+      "subject": "Acepta.com Emisor Sello de Tiempo - G4",
+      "issuer": "Acepta.com Autoridad de Sellado de Tiempo - G4",
+      "serialNumber": "00c9",
+      "validFrom": "2017-09-05T11:34:09.000Z",
+      "validTo": "2036-06-21T14:14:59.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "https://acg4.acepta.com/acg4/crl/SelloTiempo-G4.crl"
+      ],
+      "ocspUrls": [
+        "https://acg4.acepta.com/acg4/ocsp/SelloTiempo-G4"
+      ]
+    },
+    {
+      "file": "autoridad-certificadora-firma-electronica-avanzada-signapis.pem",
+      "sha256": "4dea8a80ed58f83dff7decad3e58887d73a31fd14d825b610f497dea83d54a0d",
+      "subject": "Autoridad Certificadora Firma Electronica Avanzada Signapis",
+      "issuer": "Autoridad Certificadora Raiz Signapis",
+      "serialNumber": "44537f4a8894d9d0da78b183504670a171b62592",
+      "validFrom": "2022-06-23T15:20:39.000Z",
+      "validTo": "2032-06-20T15:03:22.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "autoridad-certificadora-raiz-signapis.pem",
+      "sha256": "d4a1b2d80fc9446e38e0888a0c0cd999b2fbb8e2dba29621d3e795fe64ebc0a7",
+      "subject": "Autoridad Certificadora Raiz Signapis",
+      "issuer": "Autoridad Certificadora Raiz Signapis",
+      "serialNumber": "25bcaf89daaa03812188833b98cbcaa7159a8d2e",
+      "validFrom": "2022-06-23T15:03:23.000Z",
+      "validTo": "2032-06-20T15:03:22.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "bpo-idok-root-ca.pem",
+      "sha256": "80de81e6e592f8bf2d864703b1c1c09f009ae0c9d47599ee18920b796a38e73a",
+      "subject": "BPO IDOK ROOT CA",
+      "issuer": "BPO IDOK ROOT CA",
+      "serialNumber": "1d93771d1bfc1683",
+      "validFrom": "2017-08-16T11:54:29.000Z",
+      "validTo": "2037-08-16T11:54:29.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://pki.idok.cl:8080/ejbca/publicweb/webdist/certdist?cmd=crl&issuer=CN=BPO%20IDOK%20ROOT%20CA,E=soporte@idok.cl,O=BPO%20Advisors%20SpA,OU=RUT-76610718-4,OU=Autoridad%20Certificadora,L=Santiago,S=Region%20Metropolitana,C=CL"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "ca-firma-electronica-avanzada-idok.pem",
+      "sha256": "54a71e47bbc9a1b2c60fe99c0c80fff98e852b5cdfd6042e7d5bc240c9bbb5fe",
+      "subject": "CA FIRMA ELECTRONICA AVANZADA IDOK",
+      "issuer": "BPO IDOK ROOT CA",
+      "serialNumber": "57cb85293062afc8",
+      "validFrom": "2017-08-17T02:57:13.000Z",
+      "validTo": "2027-08-17T02:57:13.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://pki.idok.cl:8080/ejbca/publicweb/webdist/certdist?cmd=crl&issuer=CN=CA%20FIRMA%20ELECTRONICA%20AVANZADA%20IDOK,E=soporte@idok.cl,O=BPO%20Advisors%20SpA,OU=RUT-76610718-4,OU=Autoridad%20Certificadora,L=Santiago,S=Region%20Metropolitana,C=CL"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "certificadora-del-sur-root-ca-c3.pem",
+      "sha256": "0de5188f6c02be6834075cc907be9e0cbc918d6f7889bb4a0955a6476b3e987e",
+      "subject": "Certificadora del Sur Root CA-C3",
+      "issuer": "Certificadora del Sur Root CA-C3",
+      "serialNumber": "43c2e62690b55386",
+      "validFrom": "2023-10-25T19:07:54.000Z",
+      "validTo": "2043-10-25T19:07:54.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "certinet-s-a-firma-electronica-avanzada-g2.pem",
+      "sha256": "75f7a403d99d49883d41acaeafdc551361fc4b1692706abc27f82b36db5a5575",
+      "subject": "CertiNet S.A. Firma Electronica Avanzada - G2",
+      "issuer": "CertiSur Class 2 CA - G3",
+      "serialNumber": "02a6946f5a61cce0261d88caab7b34a1",
+      "validFrom": "2015-08-18T00:00:00.000Z",
+      "validTo": "2019-09-15T23:59:59.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://pki-crl.symauth.com/offlineca/CertiSurSACertiSurClass2CAG3.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "certisur-class-2-ca-g3.pem",
+      "sha256": "041e70b7dddd0f2f90f285c4c71e0e20533312a10773794a21b5791ec8755958",
+      "subject": "CertiSur Class 2 CA - G3",
+      "issuer": "VeriSign Class 2 Public Primary Certification Authority - G3",
+      "serialNumber": "02c1aec63d80c5c5a4b821eb34cd2dff",
+      "validFrom": "2015-08-18T00:00:00.000Z",
+      "validTo": "2025-08-17T23:59:59.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://s.symcb.com/pca2-g3.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "e-certchile-ca-fea-02.pem",
+      "sha256": "66b3bedc9605afb5a079ecb01e634f2c361a2bc060138d32611c456fa0e911a6",
+      "subject": "E-CERTCHILE CA FEA 02",
+      "issuer": "E-CERTCHILE CA ROOT 02",
+      "serialNumber": "3200000018137a5a9b66e62463000000000018",
+      "validFrom": "2019-02-08T14:20:39.000Z",
+      "validTo": "2030-11-15T12:23:07.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.ecertchile.cl/root.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "e-certchile-ca-firma-electronica-avanzada.pem",
+      "sha256": "861068c4be3e9469eb546355a285459608edad8554c4f40a14fa5931c9e2a1a3",
+      "subject": "E-CERTCHILE CA FIRMA ELECTRONICA AVANZADA",
+      "issuer": "E-CERTCHILE ROOT CA",
+      "serialNumber": "1137aa58000000000002",
+      "validFrom": "2011-05-27T19:02:13.000Z",
+      "validTo": "2029-05-27T19:12:13.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://crl.e-certchile.cl/ecertchilerootca.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "e-certchile-ca-root-02.pem",
+      "sha256": "6a7eae4df235e3260f9b6ac1fa42dbcacfd29f08522a2d3aac552f1fd0be8120",
+      "subject": "E-CERTCHILE CA ROOT 02",
+      "issuer": "E-CERTCHILE CA ROOT 02",
+      "serialNumber": "2db191192494cb9c49d9e3a6dcc74753",
+      "validFrom": "2018-11-15T12:13:09.000Z",
+      "validTo": "2030-11-15T12:23:07.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "e-certchile-ca-servicio-firma-avanzada-online.pem",
+      "sha256": "0fa009e0861f19e608827f53d971ec9949994b4a2bcc78c48a9b39b5fecc8ff2",
+      "subject": "E-CERTCHILE CA SERVICIO FIRMA AVANZADA ONLINE",
+      "issuer": "E-CERTCHILE CA ROOT 02",
+      "serialNumber": "320000002357b2a9a4e8b8a3e9000000000023",
+      "validFrom": "2020-05-06T12:29:55.000Z",
+      "validTo": "2030-11-15T12:23:07.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.ecertchile.cl/root.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "e-certchile-root-ca.pem",
+      "sha256": "d37f97b91297afc92213963aed3976aa1f7a56229187ddd28d1d824dadc24c2f",
+      "subject": "E-CERTCHILE ROOT CA",
+      "issuer": "E-CERTCHILE ROOT CA",
+      "serialNumber": "640701587f68189d45ebba7bec29b532",
+      "validFrom": "2011-05-27T18:49:18.000Z",
+      "validTo": "2030-05-27T18:59:12.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "e-certchile-tsa-02.pem",
+      "sha256": "e5bfc19ebdece662e34d6cd5cb0933060c6553fbef1a04a53f3b462ba4494832",
+      "subject": "E-CERTCHILE TSA 02",
+      "issuer": "E-CERTCHILE CA ROOT 02",
+      "serialNumber": "3200000039772a354195c3cf74000000000039",
+      "validFrom": "2023-09-01T14:42:11.000Z",
+      "validTo": "2030-11-15T12:23:07.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://crl.ecertchile.cl/root.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "e-sign-c2-firma-electronica-avanzada-consumer-individual-ca-g2.pem",
+      "sha256": "52a5e31287a0f89159f7bb4bd3a6a270dee583a77261f6d00dd92d8c9424e800",
+      "subject": "E-Sign C2 Firma Electronica Avanzada Consumer Individual CA G2",
+      "issuer": "VeriSign Class 2 Public Primary Certification Authority - G3",
+      "serialNumber": "5e1e97bbae21c18291935f12cf69e86d",
+      "validFrom": "2012-11-15T00:00:00.000Z",
+      "validTo": "2022-11-14T23:59:59.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://s.symcb.com/pca2-g3.crl"
+      ],
+      "ocspUrls": [
+        "http://pki-ocsp.symauth.com"
+      ]
+    },
+    {
+      "file": "e-sign-class-3-firma-electronica-avanzada-biometrica-ca-g2.pem",
+      "sha256": "f9199fd84da22cc60950a5ef69e67ddaf2012ad6821cf2d7535efec9c0821ce8",
+      "subject": "E-Sign Class 3 Firma Electronica Avanzada Biometrica CA - G2",
+      "issuer": "Esign CA Class 3 Root CA",
+      "serialNumber": "262a2e97373390de",
+      "validFrom": "2025-05-14T15:31:34.000Z",
+      "validTo": "2033-09-12T23:30:19.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://pki.esign-la.com/crl/rca3.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.esign-la.com"
+      ]
+    },
+    {
+      "file": "e-sign-class-3-firma-electronica-avanzada-biometrica-ca.pem",
+      "sha256": "01f10158dbd656b638d66b64ef2c475a553fb4fe4d0880bbb056c5770c2c418f",
+      "subject": "E-Sign Class 3 Firma Electronica Avanzada Biometrica CA",
+      "issuer": "Esign CA Class 3 Root CA",
+      "serialNumber": "146ae1df4f9d3a03",
+      "validFrom": "2021-01-27T14:58:43.000Z",
+      "validTo": "2028-01-28T14:58:43.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://pki.esign-la.com/crl/rca3.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.esign-la.com"
+      ]
+    },
+    {
+      "file": "e-sign-class-3-firma-electronica-avanzada-ca-g2.pem",
+      "sha256": "fec674cb631f509e2a56e588462e45e89c3444dab0d78f22b4407a08cd172c1b",
+      "subject": "E-Sign Class 3 Firma Electronica Avanzada CA - G2",
+      "issuer": "Esign CA Class 3 Root CA",
+      "serialNumber": "4e5dee40e98a1148",
+      "validFrom": "2025-05-14T15:28:39.000Z",
+      "validTo": "2033-09-12T23:30:19.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://pki.esign-la.com/crl/rca3.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.esign-la.com"
+      ]
+    },
+    {
+      "file": "e-sign-class-3-firma-electronica-avanzada-ca.pem",
+      "sha256": "28b2021e92aad60c90363b3a6235a53d6e82271cc63d7ccde1e53868faa19e12",
+      "subject": "E-Sign Class 3 Firma Electronica Avanzada CA",
+      "issuer": "Esign CA Class 3 Root CA",
+      "serialNumber": "33489c190c776ea7",
+      "validFrom": "2018-03-28T19:00:37.000Z",
+      "validTo": "2028-04-10T19:00:37.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://pki.esign-la.com/crl/rca3.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.esign-la.com"
+      ]
+    },
+    {
+      "file": "e-sign-class-3-firma-electronica-avanzada-movil-ca.pem",
+      "sha256": "5e0ae5c2a4309bd379f63a8d17fe52c523219f71353e1fd5831176390bf816eb",
+      "subject": "E-Sign Class 3 Firma Electronica Avanzada Movil CA",
+      "issuer": "Esign CA Class 3 Root CA",
+      "serialNumber": "3cd18e7a52134483",
+      "validFrom": "2021-01-27T15:30:18.000Z",
+      "validTo": "2031-02-10T15:30:18.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://pki.esign-la.com/crl/rca3.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.esign-la.com"
+      ]
+    },
+    {
+      "file": "e-sign-class-3-time-stamping-authority-ca.pem",
+      "sha256": "44e2ea2ab78b7a1aff28a739a619c2fd2a20f933ce43f49a3f02e7677a718d82",
+      "subject": "E-Sign Class 3 Time Stamping Authority CA",
+      "issuer": "Esign CA Class 3 Root CA",
+      "serialNumber": "4662697e11590bae",
+      "validFrom": "2018-03-28T19:04:02.000Z",
+      "validTo": "2028-04-10T19:04:02.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://pki.esign-la.com/crl/rca3.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.esign-la.com"
+      ]
+    },
+    {
+      "file": "e-sign-firma-electronica-avanzada-para-estado-de-chile-ca.pem",
+      "sha256": "5dedd29f82c4bb95f2ee6cb7247e7e6c5ddf6f8a342c40a98ef14f7de077a5cf",
+      "subject": "E-Sign Firma Electronica Avanzada para Estado de Chile CA",
+      "issuer": "E-Sign S.A. Class 2 CA - G2",
+      "serialNumber": "1aa36a62f96d7c9dda98344621e8f143",
+      "validFrom": "2012-05-01T00:00:00.000Z",
+      "validTo": "2019-12-19T23:59:59.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://onsitecrl.verisign.com/offlineca/ESignSAESignSAClass2CAG2.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "e-sign-s-a-class-2-ca-g2.pem",
+      "sha256": "f1980f99b8260267f4b7295ceaf9289aec528999768b587a2c4b049ad1625b7d",
+      "subject": "E-Sign S.A. Class 2 CA - G2",
+      "issuer": "VeriSign Class 2 Public Primary Certification Authority - G3",
+      "serialNumber": "2ce89700bd9947afb02739af8eb27920",
+      "validFrom": "2009-12-21T00:00:00.000Z",
+      "validTo": "2019-12-20T23:59:59.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://crl.verisign.com/pca2-g3.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "esign-ca-class-3-root-ca.pem",
+      "sha256": "9f8966470cf4e26796a0e309963fcf937d3660155f2239c18d8e1e737d49ba22",
+      "subject": "Esign CA Class 3 Root CA",
+      "issuer": "Esign CA Class 3 Root CA",
+      "serialNumber": "088289c4ad95645b",
+      "validFrom": "2013-09-12T23:30:19.000Z",
+      "validTo": "2033-09-12T23:30:19.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "esign-class-3-firma-electronica-avanzada-para-estado-de-chile-ca.pem",
+      "sha256": "5a52b67732f55bce7668ebc6af156f9baaebb35a40f9105e066c60450e374cbe",
+      "subject": "ESign Class 3 Firma Electronica Avanzada para Estado de Chile CA",
+      "issuer": "Esign CA Class 3 Root CA",
+      "serialNumber": "568220bdc49a375c",
+      "validFrom": "2021-01-27T15:46:05.000Z",
+      "validTo": "2028-01-28T15:46:05.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://pki.esign-la.com/crl/rca3.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp.esign-la.com"
+      ]
+    },
+    {
+      "file": "firma-digital-autoridad-certificadora-clase-2-fea-persona-natural-g2.pem",
+      "sha256": "0d81eeded83fe962cd563a80d9cabf76d693ce0c102bcd14078749c4612cf6eb",
+      "subject": "Firma.Digital Autoridad Certificadora Clase 2 FEA - Persona Natural - G2",
+      "issuer": "Firma.Digital Autoridad Certificadora Raiz - G2",
+      "serialNumber": "2be2321fd1846e0b5da35b4fe60acbdc10eaeee2",
+      "validFrom": "2026-03-17T14:24:20.000Z",
+      "validTo": "2051-03-11T14:13:47.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "firma-digital-autoridad-certificadora-raiz-g2.pem",
+      "sha256": "8b619c1bf220ddd009b8a869cebf42d9fa2b8a9666637a5a4f70cd66f902273c",
+      "subject": "Firma.Digital Autoridad Certificadora Raiz - G2",
+      "issuer": "Firma.Digital Autoridad Certificadora Raiz - G2",
+      "serialNumber": "4d9410595ad33e2f9b9750e200abe3e23d24d67e",
+      "validFrom": "2026-03-17T14:13:48.000Z",
+      "validTo": "2051-03-11T14:13:47.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "firma-electronica-avanzada-certificadora-del-sur.pem",
+      "sha256": "98e13dbdd929c81a2a80b16f3ae48ff780a7129f2828f46377dac3c2ed4ff026",
+      "subject": "Firma Electronica Avanzada Certificadora del Sur",
+      "issuer": "Certificadora del Sur Root CA-C3",
+      "serialNumber": "48c57b9554976cef",
+      "validFrom": "2023-10-25T19:06:18.000Z",
+      "validTo": "2043-01-21T19:06:18.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "firma-electronica-avanzada-firmadox.pem",
+      "sha256": "516f96367837b851fc6756446afeec238b2eaf01d526d8c000f728bc0290d1a0",
+      "subject": "FIRMA ELECTRONICA AVANZADA - FIRMADOX",
+      "issuer": "FIRMA ELECTRONICA AVANZADA - ROOT",
+      "serialNumber": "5f00000002df13d991731f9b62000000000002",
+      "validFrom": "2021-12-15T19:41:45.000Z",
+      "validTo": "2037-12-15T18:41:59.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "ldap:///CN=FIRMA%20ELECTRONICA%20AVANZADA%20-%20ROOT,CN=ROOT-PROD,CN=CDP,CN=Public%20Key%20Services,CN=Services,CN=Configuration,DC=Firmadox,DC=local?certificateRevocationList?base?objectClass=cRLDistributionPoint"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "firma-electronica-avanzada-root.pem",
+      "sha256": "cef5633b43651e2a52aa5fd7792c545250d1d748dff3922bb003e3b69b2fc82a",
+      "subject": "FIRMA ELECTRONICA AVANZADA - ROOT",
+      "issuer": "FIRMA ELECTRONICA AVANZADA - ROOT",
+      "serialNumber": "5da38a440082818e4df28ba4ae6491be",
+      "validFrom": "2021-12-15T18:31:59.000Z",
+      "validTo": "2037-12-15T18:41:59.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "idok-firma-electronica-avanzada-ca-ocsp.pem",
+      "sha256": "52237b6c469716a648244487569bcaaac328ac913942b1bc4b8cfb140a6bfda1",
+      "subject": "IDOK FIRMA ELECTRONICA AVANZADA CA OCSP",
+      "issuer": "CA FIRMA ELECTRONICA AVANZADA IDOK",
+      "serialNumber": "2752996d92df9441",
+      "validFrom": "2017-09-27T01:46:46.000Z",
+      "validTo": "2019-09-27T01:46:46.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "microsystem-firma-electronica-avanzada-en-linea-p1.pem",
+      "sha256": "e0861c7f6a5b4d38c5dc685ffe8d682194613b243c4263b3a5c220d058df6ba5",
+      "subject": "Microsystem Firma Electronica Avanzada en Linea - P1",
+      "issuer": "Microsystem Root CA - P1",
+      "serialNumber": "65d1c3855abca6ab74914adfc0460ec3ae1c9995",
+      "validFrom": "2024-10-09T17:37:56.000Z",
+      "validTo": "2042-10-05T17:37:56.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://crl.ca.msys.cl/Microsystem_Root_CA_-_P1.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "microsystem-firma-electronica-avanzada-p1.pem",
+      "sha256": "37113414ccd1035c06bdb4cb588f8d71abb43147b482cd92b08c6d133b2514c3",
+      "subject": "Microsystem Firma Electronica Avanzada - P1",
+      "issuer": "Microsystem Root CA - P1",
+      "serialNumber": "3cdde3521a13729662fc181a0263219e10f06911",
+      "validFrom": "2023-01-05T15:31:25.000Z",
+      "validTo": "2042-12-31T15:22:34.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://crl.ca.msys.cl/Microsystem_Root_CA_-_P1.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "microsystem-root-ca-p1.pem",
+      "sha256": "34d9aaeb29f7ac428da39aebb21fc30dcbb550d7cf305cec123aa5a050aa369c",
+      "subject": "Microsystem Root CA - P1",
+      "issuer": "Microsystem Root CA - P1",
+      "serialNumber": "3d43d0ad2c12d1ce81c2b3fede5bca0932346186",
+      "validFrom": "2023-01-05T15:22:34.000Z",
+      "validTo": "2042-12-31T15:22:34.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "paperless-ca-firma-electronica-avanzada.pem",
+      "sha256": "645af644e8107736c1bf2dea64f6866f1ec16e0541a7f6ede86547f17bea61e9",
+      "subject": "PAPERLESS CA FIRMA ELECTRONICA AVANZADA",
+      "issuer": "PAPERLESS ROOT CA",
+      "serialNumber": "15438f2400010000000e",
+      "validFrom": "2017-04-12T22:59:39.000Z",
+      "validTo": "2042-04-12T23:09:39.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "paperless-root-ca.pem",
+      "sha256": "33a0be2b3f6aabc8c107f5f0d4eb9ae8d33dff13fedefff53a1166e04bd0f3f2",
+      "subject": "PAPERLESS ROOT CA",
+      "issuer": "PAPERLESS ROOT CA",
+      "serialNumber": "40504ce7feb82a9b4cb85b5dc75bdde7",
+      "validFrom": "2013-02-22T15:01:35.000Z",
+      "validTo": "2047-04-12T22:56:56.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "thomas-signe-chile-ac-firma-electronica-avanzada.pem",
+      "sha256": "262807549e26249cbafc153f9c12a7c6234eca4afd884405bc63c3a368603b55",
+      "subject": "Thomas Signe Chile AC Firma Electrónica Avanzada",
+      "issuer": "Thomas Signe Chile Root",
+      "serialNumber": "12d1754ef26e780dce7a6a0de0a5405154192120",
+      "validFrom": "2024-10-17T13:53:00.000Z",
+      "validTo": "2044-10-12T13:05:33.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl-cl.thsigne.com/thomas_signe_chile_rootca.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "thomas-signe-chile-ac-tsa.pem",
+      "sha256": "4f60e3e3b0c8c3bd164c58a3e62426ccd936362b92b1858a05bfc8699e58c54e",
+      "subject": "Thomas Signe Chile AC TSA",
+      "issuer": "Thomas Signe Chile Root",
+      "serialNumber": "650072a2b753c6065b20d96fe7054c8f4b6a2e5a",
+      "validFrom": "2024-10-17T14:04:13.000Z",
+      "validTo": "2044-10-12T13:05:33.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl-cl.thsigne.com/thomas_signe_chile_rootca.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "thomas-signe-chile-autoridad-de-sello-de-tiempo-tsu-01.pem",
+      "sha256": "7429bfb8417375c5e75f36577bdd2517d3e68a68918579b1ea180b88d9c8f775",
+      "subject": "Thomas Signe Chile Autoridad de Sello de Tiempo – TSU 01",
+      "issuer": "Thomas Signe Chile AC TSA",
+      "serialNumber": "2cfb4de4c9cfed1a6d4b552f9df38ee47250e0e5",
+      "validFrom": "2024-10-17T14:17:12.000Z",
+      "validTo": "2044-10-12T13:05:33.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://crl-cl.thsigne.com/thomas_signe_chile_tsa.crl"
+      ],
+      "ocspUrls": [
+        "http://ocsp-tsa-cl.thsigne.com"
+      ]
+    },
+    {
+      "file": "thomas-signe-chile-root.pem",
+      "sha256": "e32607c478f9a4e53bc30a876394363040491a29d9bdf74b47b363fb0c322b5e",
+      "subject": "Thomas Signe Chile Root",
+      "issuer": "Thomas Signe Chile Root",
+      "serialNumber": "119575ceb4764616c6b66244191798954dfe937c",
+      "validFrom": "2024-10-17T13:05:34.000Z",
+      "validTo": "2044-10-12T13:05:33.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "thomas-signe-root.pem",
+      "sha256": "2afd2192f866377330985c52aaa7eba4817a73a13782b2ac4188a65e311158bc",
+      "subject": "Thomas Signe Root",
+      "issuer": "Thomas Signe Root",
+      "serialNumber": "5fec6a2f5f26698813fd1cb61e443949423bab61",
+      "validFrom": "2018-03-14T13:50:35.000Z",
+      "validTo": "2038-03-14T13:50:35.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "verisign-class-2-public-primary-certification-authority-g3.pem",
+      "sha256": "92a9d9833fe1944db366e8bfae7a95b6480c2d6c6c2a1be65d4236b608fca1bb",
+      "subject": "VeriSign Class 2 Public Primary Certification Authority - G3",
+      "issuer": "VeriSign Class 2 Public Primary Certification Authority - G3",
+      "serialNumber": "6170cb498c5f984529e7b0a6d9505b7a",
+      "validFrom": "1999-10-01T00:00:00.000Z",
+      "validTo": "2036-07-16T23:59:59.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [],
+      "ocspUrls": []
+    }
+  ]
+}

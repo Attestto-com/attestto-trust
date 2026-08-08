@@ -1,0 +1,36 @@
+{
+  "country": "BR",
+  "generatedAt": "2026-07-23T10:03:55.864Z",
+  "snapshotExpiresAt": "2026-08-18T18:21:27.000Z",
+  "note": "snapshotExpiresAt is the earliest CRL nextUpdate across the promoted CAs; refresh revocation data by this date. Roots carry no CRL (trust anchors are not CRL-revocable).",
+  "crls": [
+    {
+      "url": "http://acraiz.icpbrasil.gov.br/LCRacraizv10.crl",
+      "status": "ok",
+      "thisUpdate": "2026-05-20T18:25:26.000Z",
+      "nextUpdate": "2026-08-18T18:25:26.000Z",
+      "revokedCount": 9
+    },
+    {
+      "url": "http://acraiz.icpbrasil.gov.br/LCRacraizv11.crl",
+      "status": "ok",
+      "thisUpdate": "2026-05-20T18:26:16.000Z",
+      "nextUpdate": "2026-08-18T18:26:16.000Z",
+      "revokedCount": 4
+    },
+    {
+      "url": "http://acraiz.icpbrasil.gov.br/LCRacraizv12.crl",
+      "status": "ok",
+      "thisUpdate": "2026-05-20T18:27:33.000Z",
+      "nextUpdate": "2026-08-18T18:27:33.000Z",
+      "revokedCount": 0
+    },
+    {
+      "url": "http://acraiz.icpbrasil.gov.br/LCRacraizv5.crl",
+      "status": "ok",
+      "thisUpdate": "2026-05-20T18:21:27.000Z",
+      "nextUpdate": "2026-08-18T18:21:27.000Z",
+      "revokedCount": 1
+    }
+  ]
+}

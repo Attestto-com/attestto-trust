@@ -1,0 +1,118 @@
+{
+  "country": "PE",
+  "generatedAt": "2026-07-23T10:02:16.000Z",
+  "count": 8,
+  "certificates": [
+    {
+      "file": "ECEP-ONPE-CA-ROOT-5.pem",
+      "sha256": "402d0b16134686d8ff80b90d6a764f8bd2338451d54738c9b3fc81716654b5e0",
+      "subject": "ECEP-ONPE CA ROOT 5",
+      "issuer": "ECERNEP PERU CA ROOT 5",
+      "serialNumber": "6edcf0f960afa72486506b16869fcd4cc60db53a",
+      "validFrom": "2022-08-10T16:30:58.000Z",
+      "validTo": "2038-08-06T16:30:57.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://cdn.www.gob.pe/ecernep/root5/arl/ecernep5.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "ECEP-ONPE-ELECTORAL-CA-ROOT-5.pem",
+      "sha256": "6850f727cd478df5bc982b2609ec4a518b13a12285d9dc8c1c3ac29efb72474e",
+      "subject": "ECEP-ONPE-ELECTORAL CA ROOT 5",
+      "issuer": "ECERNEP PERU CA ROOT 5",
+      "serialNumber": "5d48ed160e3183de4551d33e7228c37858cc8cf5",
+      "validFrom": "2022-08-10T16:38:11.000Z",
+      "validTo": "2038-08-06T16:38:10.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://cdn.www.gob.pe/ecernep/root5/arl/ecernep5.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "ECEP-RENIEC.pem",
+      "sha256": "91520e1f381a46402b9490c06749b2d81ddad4b53e7f252a1dd79b55dfcb340b",
+      "subject": "ECEP-RENIEC",
+      "issuer": "ECERNEP PERU CA ROOT 3",
+      "serialNumber": "06e5448bffd0ed3d",
+      "validFrom": "2017-08-10T20:31:59.000Z",
+      "validTo": "2033-08-10T20:31:59.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.reniec.gob.pe/arl/sha2/ecernep.crl",
+        "http://crl2.reniec.gob.pe/arl/sha2/ecernep.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "ECERNEP-PERU-CA-ROOT-3.pem",
+      "sha256": "96508217c36f3bbc556e2e07d7ab50c40da8027c388235813322e41b87a568be",
+      "subject": "ECERNEP PERU CA ROOT 3",
+      "issuer": "ECERNEP PERU CA ROOT 3",
+      "serialNumber": "5e7ff235835b2a4f",
+      "validFrom": "2017-08-10T17:31:52.000Z",
+      "validTo": "2042-08-10T17:31:52.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "ECERNEP-PERU-CA-ROOT-5.pem",
+      "sha256": "e33d6a09352f98ba5cc9e358d44f3ed737e8c73f29e56656f96aa05a9d34da60",
+      "subject": "ECERNEP PERU CA ROOT 5",
+      "issuer": "ECERNEP PERU CA ROOT 5",
+      "serialNumber": "39cbefaa8501941c15f4def011d13cad86a3466c",
+      "validFrom": "2022-07-07T19:47:47.000Z",
+      "validTo": "2047-07-01T19:47:46.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "ECERNEP-PERU-CA-ROOT-6.pem",
+      "sha256": "4673ed66d70a2e823c02588ad16980ad259e3b4cc915fad99a12afb0046487b9",
+      "subject": "ECERNEP PERU CA ROOT 6",
+      "issuer": "ECERNEP PERU CA ROOT 6",
+      "serialNumber": "40e0bd14e956d9b593163c412655122a2be5cc0c",
+      "validFrom": "2022-09-09T05:32:55.000Z",
+      "validTo": "2047-09-03T05:32:54.000Z",
+      "role": "root",
+      "keyAlgorithm": "EC P-521",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "RENIEC-Certification-Authority.pem",
+      "sha256": "2d1c3a9c02a7ebf3db40e7044fe6ad4909564b9ec4a89939fd1611550faa9159",
+      "subject": "RENIEC Certification Authority",
+      "issuer": "RENIEC Certification Authority",
+      "serialNumber": "4b13c445a3676f89cc037a456723456712376557",
+      "validFrom": "2010-07-21T21:03:38.000Z",
+      "validTo": "2030-07-16T21:03:38.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "RENIEC-High-Grade-Certification-Authority.pem",
+      "sha256": "99362ee3ee8e59ffdb6fc26c24b231fb80dcb5f6f98cb7fa9369ab1a68fcdc45",
+      "subject": "RENIEC High Grade Certification Authority",
+      "issuer": "RENIEC High Grade Certification Authority",
+      "serialNumber": "4b13c445a3676f89cc037a456723456712376558",
+      "validFrom": "2010-07-21T21:22:01.000Z",
+      "validTo": "2030-07-16T21:22:01.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    }
+  ]
+}

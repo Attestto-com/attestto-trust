@@ -1,0 +1,24 @@
+{
+  "code": "pa",
+  "name": "Panama",
+  "flag": "🇵🇦",
+  "model": "national-hierarchy",
+  "authority": {
+    "name": "DNFE — Dirección Nacional de Firma Electrónica (Registro Público de Panamá)",
+    "operator": "Registro Público de Panamá",
+    "url": "https://www.firmaelectronica.gob.pa/"
+  },
+  "governingLaw": "Ley 51 de 2008 · Decreto Ejecutivo 40 de 2009",
+  "technology": {
+    "keyAlgorithms": ["RSA-2048", "RSA-4096"],
+    "signatureStandards": ["CAdES", "PAdES", "XAdES"]
+  },
+  "capabilities": ["Firma electrónica calificada", "CA de Gobierno", "Cédula / tarjeta con chip"],
+  "relatedLinks": [
+    { "label": "DNFE — Firma Electrónica de Panamá", "url": "https://www.firmaelectronica.gob.pa/" },
+    { "label": "DNFE — Certificados de las AC", "url": "https://www.firmaelectronica.gob.pa/cacerts/" },
+    { "label": "Independent verifier (Attestto)", "url": "https://verify.attestto.com" }
+  ],
+  "source": { "type": "direct-cert", "url": "https://www.firmaelectronica.gob.pa/cacerts/" },
+  "notes": "Single national hierarchy: one self-signed root (AUTORIDAD CERTIFICADORA DE PANAMA, RSA-4096, valid to 2053) operated by the DNFE at the Registro Público de Panamá, with two subordinate CAs (CA DE GOBIERNO DE PANAMA and CA PANAMA CLASE 2). Certificates fetched directly over HTTPS from the DNFE's official cacerts repository by the pa monitor (scripts/monitors/sources/pa.mjs). RSA throughout."
+}

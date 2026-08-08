@@ -1,0 +1,43 @@
+{
+  "country": "EE",
+  "generatedAt": "2026-07-23T12:05:28.113Z",
+  "snapshotExpiresAt": "2027-01-28T11:52:54.000Z",
+  "note": "snapshotExpiresAt is the earliest CRL nextUpdate across the promoted CAs; refresh revocation data by this date. Roots carry no CRL (trust anchors are not CRL-revocable).",
+  "crls": [
+    {
+      "url": "http://c.sk.ee/EE-GovCA2018.crl",
+      "status": "ok",
+      "thisUpdate": "2026-02-03T09:25:50.000Z",
+      "nextUpdate": "2027-02-03T09:25:49.000Z",
+      "revokedCount": 1
+    },
+    {
+      "url": "http://c.sk.ee/SK_ROOT_G1E.crl",
+      "status": "ok",
+      "thisUpdate": "2026-01-28T11:52:55.000Z",
+      "nextUpdate": "2027-01-28T11:52:54.000Z",
+      "revokedCount": 0
+    },
+    {
+      "url": "http://c.sk.ee/SK_ROOT_G1R.crl",
+      "status": "ok",
+      "thisUpdate": "2026-01-28T11:52:59.000Z",
+      "nextUpdate": "2027-01-28T11:52:58.000Z",
+      "revokedCount": 0
+    },
+    {
+      "url": "http://crl.eidpki.ee/EEGovCA2025.crl",
+      "status": "ok",
+      "thisUpdate": "2026-04-13T11:23:10.000Z",
+      "nextUpdate": "2027-04-13T11:23:09.000Z",
+      "revokedCount": 0
+    },
+    {
+      "url": "http://www.sk.ee/repository/crls/eeccrca.crl",
+      "status": "ok",
+      "thisUpdate": "2026-01-28T12:01:36.000Z",
+      "nextUpdate": "2027-01-28T12:01:35.000Z",
+      "revokedCount": 2
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "code": "pe",
+  "name": "Peru",
+  "flag": "🇵🇪",
+  "model": "accredited-tsl",
+  "authority": {
+    "name": "INDECOPI — Autoridad Administrativa Competente (IOFE)",
+    "operator": "RENIEC, ONPE, PCM/ECERNEP + accredited CAs",
+    "url": "https://www.gob.pe/12453"
+  },
+  "governingLaw": "Ley 27269 (2000)",
+  "technology": {
+    "keyAlgorithms": ["RSA-4096", "EC P-521"],
+    "signatureStandards": ["CAdES", "PAdES", "XAdES"],
+    "trustList": "ETSI TS 119 612 — tsl-pe.xml"
+  },
+  "capabilities": ["DNI Electrónico (RENIEC)", "Electoral (ONPE)", "State PKI (ECERNEP / PCM)"],
+  "relatedLinks": [
+    { "label": "RENIEC — PKI / ECEP", "url": "https://pki.reniec.gob.pe/" },
+    { "label": "INDECOPI — IOFE (autoridad competente)", "url": "https://www.gob.pe/12453" },
+    { "label": "IOFE Trusted List (tsl-pe.xml)", "url": "https://iofe.indecopi.gob.pe/TSL/tsl-pe.xml" }
+  ],
+  "source": { "type": "tsl", "url": "https://iofe.indecopi.gob.pe/TSL/tsl-pe.xml" },
+  "notes": "Federated accredited model — different from the single-hierarchy PKIs in this directory. INDECOPI regulates and accredits many independent CAs (RENIEC, ONPE, PCM, plus ~25 commercial), each with its own root, published via an ETSI Trusted List. So Peru has many roots, not one hierarchy. First EC anchor in this directory (ECERNEP PERU CA ROOT 6, P-521). Phase 1 covers the national anchors only; the accredited commercial CAs are pending a phase-2 review."
+}

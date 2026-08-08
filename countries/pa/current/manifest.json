@@ -1,0 +1,50 @@
+{
+  "country": "PA",
+  "generatedAt": "2026-07-24T03:25:18.083Z",
+  "count": 3,
+  "certificates": [
+    {
+      "file": "autoridad-certificadora-de-panama.pem",
+      "sha256": "4fa727e3ce87f28f05ae388c4ebe21d4a31136efd4983f6ac49a36b4882703d1",
+      "subject": "AUTORIDAD CERTIFICADORA DE PANAMA",
+      "issuer": "AUTORIDAD CERTIFICADORA DE PANAMA",
+      "serialNumber": "403db5e6c91573d4518a85156fe9e7ec",
+      "validFrom": "2013-05-08T17:02:13.000Z",
+      "validTo": "2053-05-08T17:02:13.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "ca-de-gobierno-de-panama.pem",
+      "sha256": "d32fd3dc66775273a4b6f403a85df446c56590ef4b133e51f1905eb81ce2e82e",
+      "subject": "CA DE GOBIERNO DE PANAMA",
+      "issuer": "AUTORIDAD CERTIFICADORA DE PANAMA",
+      "serialNumber": "206826579fe088f9518c0a676835d6b7",
+      "validFrom": "2013-05-09T20:43:19.000Z",
+      "validTo": "2033-05-09T20:43:19.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://www.pki.gob.pa/crls/caraiz.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "ca-panama-clase-2.pem",
+      "sha256": "f68ac5958dd998e83c5e8b6337bf2f7a91fe956e13d340eaa1190c410c0975bb",
+      "subject": "CA PANAMA CLASE 2",
+      "issuer": "AUTORIDAD CERTIFICADORA DE PANAMA",
+      "serialNumber": "7184c55be940a833518c0a9eff291597",
+      "validFrom": "2013-05-09T20:44:14.000Z",
+      "validTo": "2033-05-09T20:44:14.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [
+        "http://www.pki.gob.pa/crls/caraiz.crl"
+      ],
+      "ocspUrls": []
+    }
+  ]
+}

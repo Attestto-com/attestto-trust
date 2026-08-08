@@ -1,0 +1,24 @@
+{
+  "code": "uy",
+  "name": "Uruguay",
+  "flag": "🇺🇾",
+  "model": "national-hierarchy",
+  "authority": {
+    "name": "AGESIC — Unidad de Certificación Electrónica (Autoridad Certificadora Raíz Nacional)",
+    "operator": "AGESIC",
+    "url": "https://www.agesic.gub.uy/"
+  },
+  "governingLaw": "Ley 18.600 (2009)",
+  "technology": {
+    "keyAlgorithms": ["RSA-4096"],
+    "signatureStandards": ["CAdES", "PAdES", "XAdES"]
+  },
+  "capabilities": ["Firma electrónica avanzada", "Cédula de Identidad Electrónica"],
+  "relatedLinks": [
+    { "label": "AGESIC — Certificación Electrónica", "url": "https://www.agesic.gub.uy/innovaportal/v/1443/9/agesic/unidad-de-certificacion-electronica.html" },
+    { "label": "AGESIC — Autoridad Certificadora Raíz Nacional (ACRN)", "url": "https://www.agesic.gub.uy/acrn/acrn.cer" },
+    { "label": "Independent verifier (Attestto)", "url": "https://verify.attestto.com" }
+  ],
+  "source": { "type": "direct-cert", "url": "https://www.agesic.gub.uy/acrn/acrn.cer" },
+  "notes": "Single national root: Autoridad Certificadora Raíz Nacional de Uruguay (RSA-4096, valid to 2031), operated by AGESIC's Unidad de Certificación Electrónica. Fetched directly over HTTPS from AGESIC's official ACRN endpoint by the uy monitor (scripts/monitors/sources/uy.mjs). Accredited subordinate CAs chain to this root and validate themselves at verification time; only the national root is promoted here."
+}

@@ -1,21 +1,26 @@
-# Spain — FNMT trust mirror
+# Spain — TSL trust mirror
 
-Independent mirror of the X.509 hierarchy that anchors Spain's national PKI, operated by **FNMT-RCM** (Fábrica Nacional de Moneda y Timbre - Real Casa de la Moneda).
+Independent mirror of Spain's eIDAS qualified-trust PKI, sourced from the Spanish national Trusted List (Lista de Servicios de Confianza), verified via XAdES signature chain from the EU List of Trusted Lists (LOTL).
 
-Official source: <https://www.cert.fnmt.es/descargas/certificados-de-raiz>
+Official source: <https://tsl.digital.gob.es/TSL.xml>  
+LOTL entry: <https://ec.europa.eu/tools/lotl/eu-lotl.xml>
 
-## Hierarchy (2026-07)
+## Coverage (2026-07)
 
-```
-AC RAIZ FNMT-RCM                                    ← root (FNMT-RCM)
-└── AC FNMT Usuarios                                ← issuing CA (Ceres / User Certificates)
-    └── (NIF-bound natural/legal person certs)
-```
+139 production eIDAS qualified-trust CA certificates from Spain's national Trusted List, spanning multiple qualified trust service providers including FNMT-RCM, Camerfirma, AC Notariado, and others.
 
 See [`current/manifest.json`](current/manifest.json) for SHA-256, subject, issuer, and validity for each file.
 
+## Verification
+
+TSL XAdES signature verified against LOTL-declared signer identity:
+- **Signer:** C=ES, O=MINISTRY OF ECONOMIC AFFAIRS AND DIGITAL TRANSFORMATION, CN=SPANISH TRUST SCHEME OPERATOR
+- **SHA-256:** `180cd536dad2b5ac933236d9dcd55d17afcd9949fed08189b8ae86fe7c2bc3a7`
+
+See [`VERIFICATION.md`](VERIFICATION.md) for the full verification report.
+
 ## Notes
 
-- Certificates here are the official test CA roots and intermediates used for validating development, test, and compliance environments.
-- Spain's national infrastructure supports electronic signatures through the Fábrica Nacional de Moneda y Timbre (FNMT), which acts as one of the main qualified trust service providers.
-- The root certificate `AC RAIZ FNMT-RCM` expires **2030-01-01**, and the intermediate `AC FNMT Usuarios` expires **2029-10-28**.
+- Certificates here are **production** eIDAS qualified-signature trust anchors, not test certificates. They are the authoritative CAs used to validate real legally-binding electronic signatures in Spain.
+- Spain's national infrastructure supports qualified electronic signatures through multiple trust service providers regulated under eIDAS (EU 910/2014) and Ley 6/2020. FNMT-RCM (Fábrica Nacional de Moneda y Timbre) is the primary public-sector provider.
+- Being listed on the signed Trusted List carries constitutive legal effect under eIDAS Art. 22 — inclusion on the list IS the legal trust decision.

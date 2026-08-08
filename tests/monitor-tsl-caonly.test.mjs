@@ -21,6 +21,17 @@ describe('extract-tsl caOnly filter', () => {
   const all = extractCertsFromTsl(TSL)
   const caOnly = extractCertsFromTsl(TSL, { caOnly: true })
 
+  it('granted/undersupervision services produce certs; withdrawn/non-standard are skipped', () => {
+    // The Peru fixture has "undersupervision" (active) and "No acredited" (inactive).
+    // Active services must appear in certs; inactive ones must appear in skipped.
+    assert.ok(all.certs.length > 0, 'at least one cert from an active service')
+    const noAcreditedSkip = all.skipped.find((s) => s.status === 'No acredited')
+    assert.ok(noAcreditedSkip, '"No acredited" services must be in skipped, not in certs')
+    // None of the certs should carry a "No acredited" status
+    const badCert = all.certs.find((c) => c.status === 'No acredited')
+    assert.equal(badCert, undefined, '"No acredited" cert must not appear in active certs')
+  })
+
   it('every parsed cert carries an isCA boolean', () => {
     assert.ok(all.certs.length > 0)
     for (const c of all.certs) assert.equal(typeof c.isCA, 'boolean')

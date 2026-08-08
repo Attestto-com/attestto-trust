@@ -1,0 +1,29 @@
+{
+  "country": "PE",
+  "generatedAt": "2026-07-23T10:04:18.978Z",
+  "snapshotExpiresAt": "2026-11-07T20:01:54.000Z",
+  "note": "snapshotExpiresAt is the earliest CRL nextUpdate across the promoted CAs; refresh revocation data by this date. Roots carry no CRL (trust anchors are not CRL-revocable).",
+  "crls": [
+    {
+      "url": "http://cdn.www.gob.pe/ecernep/root5/arl/ecernep5.crl",
+      "status": "ok",
+      "thisUpdate": "2025-11-07T20:01:54.000Z",
+      "nextUpdate": "2026-11-07T20:01:54.000Z",
+      "revokedCount": 0
+    },
+    {
+      "url": "http://crl.reniec.gob.pe/arl/sha2/ecernep.crl",
+      "status": "ok",
+      "thisUpdate": "2026-06-01T20:34:26.000Z",
+      "nextUpdate": "2027-06-01T20:34:26.000Z",
+      "revokedCount": 0
+    },
+    {
+      "url": "http://crl2.reniec.gob.pe/arl/sha2/ecernep.crl",
+      "status": "ok",
+      "thisUpdate": "2026-06-01T20:34:26.000Z",
+      "nextUpdate": "2027-06-01T20:34:26.000Z",
+      "revokedCount": 0
+    }
+  ]
+}

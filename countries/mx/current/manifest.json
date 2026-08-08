@@ -1,0 +1,72 @@
+{
+  "country": "MX",
+  "generatedAt": "2026-07-24T22:03:02.654Z",
+  "count": 5,
+  "certificates": [
+    {
+      "file": "ac-sat-ac5.pem",
+      "sha256": "1ac6325143920fc047b6506e42540944fa6590b44560807b564c5603d15add8e",
+      "subject": "AUTORIDAD CERTIFICADORA",
+      "issuer": "AGENCIA REGISTRADORA CENTRAL",
+      "serialNumber": "3030303030303030303030303030303031313036",
+      "validFrom": "2019-05-03T16:19:09.000Z",
+      "validTo": "2027-05-03T16:19:09.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "ac-sat-ac6.pem",
+      "sha256": "054e8f213ff2228254d8f87ec43d2e7c2eda628d927c270b9a77d1d09eef9418",
+      "subject": "A.C. del Servicio de AdministraciÃ³n Tributaria",
+      "issuer": "AGENCIA REGISTRADORA CENTRAL",
+      "serialNumber": "3030303030303030303030303030303031313839",
+      "validFrom": "2023-03-24T03:31:40.000Z",
+      "validTo": "2031-03-24T03:31:40.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "ac-sat-ac7.pem",
+      "sha256": "6d1d1f871f0d69233fc94526fecf826bee67181782d6b7e5320b279c97e8dac7",
+      "subject": "AC DEL SERVICIO DE ADMINISTRACION TRIBUTARIA",
+      "issuer": "AGENCIA REGISTRADORA CENTRAL",
+      "serialNumber": "3030303030303030303030303030303031313930",
+      "validFrom": "2023-05-23T22:24:10.000Z",
+      "validTo": "2031-05-23T22:24:10.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "agencia-registradora-central-arc5.pem",
+      "sha256": "cbf3e084a86cac5ef1060b9242196eec15e8786931ffff05466ba7becd43b15e",
+      "subject": "AGENCIA REGISTRADORA CENTRAL",
+      "issuer": "AGENCIA REGISTRADORA CENTRAL",
+      "serialNumber": "3030303030303030303030303030303030303034",
+      "validFrom": "2018-12-07T19:30:51.000Z",
+      "validTo": "2034-12-03T19:30:51.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "agencia-registradora-central-arc6.pem",
+      "sha256": "a86baf49b2e91d0141722c4e7026ab246183a8072926e9983edbd4e5ba72515d",
+      "subject": "AGENCIA REGISTRADORA CENTRAL",
+      "issuer": "AGENCIA REGISTRADORA CENTRAL",
+      "serialNumber": "3030303030303030303030303030303030303035",
+      "validFrom": "2023-03-17T23:31:34.000Z",
+      "validTo": "2039-03-17T23:31:34.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    }
+  ]
+}

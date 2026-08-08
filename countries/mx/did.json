@@ -1,0 +1,11 @@
+{
+  "method": "did:pki",
+  "generatedAt": "2026-07-24T22:03:03.099Z",
+  "dids": {
+    "ac-sat-ac5.pem": "did:pki:mx:servicio-de-administracion-tributaria:autoridad-certificadora",
+    "ac-sat-ac6.pem": "did:pki:mx:servicio-de-administracian-tributaria:ac-del-de-administracian-tributaria",
+    "ac-sat-ac7.pem": "did:pki:mx:servicio-de-administracion-tributaria:del",
+    "agencia-registradora-central-arc5.pem": "did:pki:mx:banco-de-mexico:agencia-registradora-central",
+    "agencia-registradora-central-arc6.pem": "did:pki:mx:banco-de-mexico:agencia-registradora-central"
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "country": "SE",
+  "generatedAt": "2026-07-23T19:22:48.447Z",
+  "count": 8,
+  "certificates": [
+    {
+      "file": "idnow-ts-ocsp-ca-01.pem",
+      "sha256": "bc6191b23afc16d35f9abfe44edf37ebcb073ada83877f1c4ac938ae92ecf495",
+      "subject": "IDnow TS OCSP CA 01",
+      "issuer": "IDnow TS Root CA 01",
+      "serialNumber": "26cf36632e571c425eb055a06853e8bbabd100fa",
+      "validFrom": "2024-07-30T14:46:48.000Z",
+      "validTo": "2040-07-26T14:46:47.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.trust-services.io/rootca01.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "idnow-ts-qualified-electronic-seal-ca-01.pem",
+      "sha256": "2b6bc3bf95e352753894162f45773605c5a9e63ab19997fb9edd6625657ba1b2",
+      "subject": "IDnow TS Qualified Electronic Seal CA 01",
+      "issuer": "IDnow TS Root CA 01",
+      "serialNumber": "1f2cef800d5a4629ef869f948c334ea2db91fbf3",
+      "validFrom": "2024-07-30T14:45:52.000Z",
+      "validTo": "2040-07-26T14:45:51.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.trust-services.io/rootca01.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "idnow-ts-qualified-electronic-signature-ca-01.pem",
+      "sha256": "679bcc7e7cc84947035f4c0bf3d28f191c9d212fc179e2ace872aa024c6cac31",
+      "subject": "IDnow TS Qualified Electronic Signature CA 01",
+      "issuer": "IDnow TS Root CA 01",
+      "serialNumber": "3e995340f4039c9f190a00078ee1d0762f0f4883",
+      "validFrom": "2024-07-30T14:44:40.000Z",
+      "validTo": "2040-07-26T14:44:39.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.trust-services.io/rootca01.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "idnow-ts-root-ca-01.pem",
+      "sha256": "bde897066a2b0f8bd2b2047aa5f7eac5ca113d42a2938714845d6d23b0cc9802",
+      "subject": "IDnow TS Root CA 01",
+      "issuer": "IDnow TS Root CA 01",
+      "serialNumber": "7a0d78437525d46a003dc383e495ea6797628f34",
+      "validFrom": "2024-07-30T10:53:32.000Z",
+      "validTo": "2054-07-23T10:53:31.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "idnow-ts-tsa-ca-01.pem",
+      "sha256": "c3e912768b782e226c44fc0eb9f9bd9d9bd4bc19393cbd0adff47ed1dc8fcd46",
+      "subject": "IDnow TS TSA CA 01",
+      "issuer": "IDnow TS Root CA 01",
+      "serialNumber": "10a7113f6b9698d430dd51bd7b0c028377a46b8b",
+      "validFrom": "2024-07-30T14:47:42.000Z",
+      "validTo": "2040-07-26T14:47:41.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://crl.trust-services.io/rootca01.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "trustweaver-ca.pem",
+      "sha256": "943d0ebfec5a8d223581407f19363475b7c8b91bfadf6c6b04a864089fe1db5d",
+      "subject": "TrustWeaver CA",
+      "issuer": "TrustWeaver CA",
+      "serialNumber": "7d718b02febc7140905809812e1974fe",
+      "validFrom": "2015-10-06T10:38:32.000Z",
+      "validTo": "2030-10-06T10:58:32.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "zealid-issuing-ca-2020.pem",
+      "sha256": "b58b4855be55862c41cefe5a415770139b72c06bbed2c4335f6dff70cb29518c",
+      "subject": "ZealiD Issuing CA 2020",
+      "issuer": "ZealiD Root CA 2020",
+      "serialNumber": "631a20cd22b39380358f79ce8dd6cc0312c162f4",
+      "validFrom": "2020-05-20T13:55:32.000Z",
+      "validTo": "2035-05-20T13:55:32.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": [
+        "https://ocsp.zealid.com/"
+      ]
+    },
+    {
+      "file": "zealid-tsa-ca-2022.pem",
+      "sha256": "b12132328ec2d7c66f76bcc04fccf1bdffeca46114a0b6b960cb559de5e297ed",
+      "subject": "ZealiD TSA CA 2022",
+      "issuer": "ZealiD Root CA 2020",
+      "serialNumber": "486e2ff3061e19da0b5b226370c382268ac677da",
+      "validFrom": "2022-07-12T12:26:11.000Z",
+      "validTo": "2037-07-12T12:26:11.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": [
+        "https://ocsp.zealid.com/"
+      ]
+    }
+  ]
+}

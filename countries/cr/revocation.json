@@ -1,0 +1,75 @@
+{
+  "country": "CR",
+  "generatedAt": "2026-07-23T10:04:15.869Z",
+  "snapshotExpiresAt": "2026-07-30T00:20:20.000Z",
+  "note": "snapshotExpiresAt is the earliest CRL nextUpdate across the promoted CAs; refresh revocation data by this date. Roots carry no CRL (trust anchors are not CRL-revocable).",
+  "crls": [
+    {
+      "url": "http://fdi.sinpe.fi.cr/repositorio/CA%20SINPE%20-%20PERSONA%20JURIDICA%20v2(2).crl",
+      "status": "ok",
+      "thisUpdate": "2026-07-22T12:00:20.000Z",
+      "nextUpdate": "2026-07-30T00:20:20.000Z",
+      "revokedCount": 17
+    },
+    {
+      "url": "http://www.firmadigital.go.cr/repositorio/CA%20POLITICA%20PERSONA%20FISICA%20-%20COSTA%20RICA%20v2(1).crl",
+      "status": "ok",
+      "thisUpdate": "2026-06-23T16:29:27.000Z",
+      "nextUpdate": "2026-08-24T04:49:27.000Z",
+      "revokedCount": 0
+    },
+    {
+      "url": "http://www.firmadigital.go.cr/repositorio/CA%20POLITICA%20PERSONA%20FISICA%20-%20COSTA%20RICA%20v2.crl",
+      "status": "ok",
+      "thisUpdate": "2026-06-23T16:29:27.000Z",
+      "nextUpdate": "2026-08-24T04:49:27.000Z",
+      "revokedCount": 0
+    },
+    {
+      "url": "http://www.firmadigital.go.cr/repositorio/CA%20POLITICA%20PERSONA%20JURIDICA%20-%20COSTA%20RICA%20v2(1).crl",
+      "status": "ok",
+      "thisUpdate": "2026-06-23T16:34:46.000Z",
+      "nextUpdate": "2026-08-24T04:54:46.000Z",
+      "revokedCount": 0
+    },
+    {
+      "url": "http://www.firmadigital.go.cr/repositorio/CA%20POLITICA%20PERSONA%20JURIDICA%20-%20COSTA%20RICA%20v2.crl",
+      "status": "ok",
+      "thisUpdate": "2026-06-23T16:34:46.000Z",
+      "nextUpdate": "2026-08-24T04:54:46.000Z",
+      "revokedCount": 0
+    },
+    {
+      "url": "http://www.firmadigital.go.cr/repositorio/CA%20RAIZ%20NACIONAL%20-%20COSTA%20RICA%20v2.crl",
+      "status": "ok",
+      "thisUpdate": "2026-06-23T17:17:40.000Z",
+      "nextUpdate": "2026-10-24T05:37:40.000Z",
+      "revokedCount": 0
+    },
+    {
+      "url": "http://www.micit.go.cr/firmadigital/repositorio/CA%20POLITICA%20PERSONA%20FISICA%20-%20COSTA%20RICA%20v2(1).crl",
+      "status": "unreachable",
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "url": "http://www.micit.go.cr/firmadigital/repositorio/CA%20POLITICA%20PERSONA%20FISICA%20-%20COSTA%20RICA%20v2.crl",
+      "status": "unreachable",
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "url": "http://www.micit.go.cr/firmadigital/repositorio/CA%20POLITICA%20PERSONA%20JURIDICA%20-%20COSTA%20RICA%20v2(1).crl",
+      "status": "unreachable",
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "url": "http://www.micit.go.cr/firmadigital/repositorio/CA%20POLITICA%20PERSONA%20JURIDICA%20-%20COSTA%20RICA%20v2.crl",
+      "status": "unreachable",
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "url": "http://www.micit.go.cr/firmadigital/repositorio/CA%20RAIZ%20NACIONAL%20-%20COSTA%20RICA%20v2.crl",
+      "status": "unreachable",
+      "error": "The operation was aborted due to timeout"
+    }
+  ]
+}

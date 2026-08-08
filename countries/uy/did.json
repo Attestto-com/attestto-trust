@@ -1,0 +1,7 @@
+{
+  "method": "did:pki",
+  "generatedAt": "2026-07-24T03:25:24.037Z",
+  "dids": {
+    "autoridad-certificadora-raiz-nacional-de-uruguay.pem": "did:pki:uy:agesic:autoridad-certificadora-raiz-nacional"
+  }
+}

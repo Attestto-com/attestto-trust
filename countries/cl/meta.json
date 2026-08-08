@@ -1,0 +1,24 @@
+{
+  "code": "cl",
+  "name": "Chile",
+  "flag": "🇨🇱",
+  "model": "accredited-hierarchy",
+  "authority": {
+    "name": "Entidad Acreditadora — Ministerio de Economía, Fomento y Turismo",
+    "operator": "~13 accredited Prestadores de Servicios de Certificación (E-CertChile, Acepta, E-Sign, CertiNet, E-Partners, IDok, Thomas Signe, Abancert, firmaDOX, e-Digital, Microsystem, Certificadora del Sur, Trust Service Provider SpA)",
+    "url": "https://www.entidadacreditadora.gob.cl/"
+  },
+  "governingLaw": "Ley 19.799 (2002) — Documentos Electrónicos y Firma Electrónica",
+  "technology": {
+    "keyAlgorithms": ["RSA-2048", "RSA-4096"],
+    "signatureStandards": ["CAdES", "PAdES", "XAdES"]
+  },
+  "capabilities": ["Firma Electrónica Avanzada (FEA)", "Sellado de tiempo (TSA)"],
+  "relatedLinks": [
+    { "label": "Entidad Acreditadora — Chile", "url": "https://www.entidadacreditadora.gob.cl/" },
+    { "label": "Entidad Acreditadora — Certificados raíz e intermedios", "url": "https://www.entidadacreditadora.gob.cl/certificados-raiz/" },
+    { "label": "Independent verifier (Attestto)", "url": "https://verify.attestto.com" }
+  ],
+  "source": { "type": "direct-cert", "url": "https://www.entidadacreditadora.gob.cl/certificados-raiz/" },
+  "notes": "Accredited-provider model (distinct from Chile's state PKI, tracked separately under cl-estado). The Entidad Acreditadora (Ministerio de Economía) accredits ~13 independent Prestadores de Servicios de Certificación, each with its own root and intermediate CAs, and publishes their certificate bundles on a single page. The cl monitor (scripts/monitors/sources/cl.mjs, human-gated per docs/specs/2026-07-20-cl-root-cert-monitor-design.md) downloads and extracts those bundles over HTTPS. 51 distinct certificates (17 self-signed roots + 34 intermediates) promoted from the 2026-07-20 staging snapshot. Known gaps: two providers publish .rar bundles the monitor cannot extract (E-Cert 2010, Paperless) — tracked in the monitor's known-gaps block. RSA throughout."
+}

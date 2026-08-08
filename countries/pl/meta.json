@@ -1,0 +1,26 @@
+{
+  "code": "pl",
+  "name": "Poland",
+  "flag": "🇵🇱",
+  "model": "accredited-tsl",
+  "authority": {
+    "name": "Minister właściwy do spraw informatyzacji — Polish eIDAS supervisory body; national Trusted List operated by Narodowe Centrum Certyfikacji (NCCert), run by Narodowy Bank Polski (NBP)",
+    "operator": "Accredited QTSPs under eIDAS (Asseco Data Systems / CERTUM, Krajowa Izba Rozliczeniowa (KIR) / COPE SZAFIR, EuroCert, CenCert / Enigma Systemy Ochrony Informacji, Polska Wytwórnia Papierów Wartościowych (PWPW) / Sigillum, among others)",
+    "url": "https://www.nccert.pl/tsl/PL_TSL.xml"
+  },
+  "governingLaw": "Reglamento eIDAS (UE) 910/2014 · Ustawa o usługach zaufania oraz identyfikacji elektronicznej (z dnia 5 września 2016 r.)",
+  "technology": {
+    "keyAlgorithms": ["RSA-4096", "RSA-2048", "EC P-384"],
+    "signatureStandards": ["CAdES", "PAdES", "XAdES", "ASiC"],
+    "trustList": "ETSI TS 119 612 — the Polish Trusted List (PL_TSL.xml, NCCert)"
+  },
+  "capabilities": ["Qualified e-signature & e-seal (eIDAS)", "Qualified timestamping", "Qualified website authentication (QWAC / PSD2)"],
+  "relatedLinks": [
+    { "label": "NCCert — Polish Trusted List (PL_TSL.xml)", "url": "https://www.nccert.pl/tsl/PL_TSL.xml" },
+    { "label": "NCCert — Narodowe Centrum Certyfikacji", "url": "https://www.nccert.pl/" },
+    { "label": "EU LOTL — List of the Lists (European Commission)", "url": "https://ec.europa.eu/tools/lotl/eu-lotl.xml" },
+    { "label": "Independent verifier (Attestto)", "url": "https://verify.attestto.com" }
+  ],
+  "source": { "type": "tsl", "url": "https://www.nccert.pl/tsl/PL_TSL.xml" },
+  "notes": "Poland's qualified-signature trust is a federation of accredited QTSPs (Asseco Data Systems / CERTUM, Krajowa Izba Rozliczeniowa (KIR) / COPE SZAFIR, EuroCert, CenCert / Enigma Systemy Ochrony Informacji, and Polska Wytwórnia Papierów Wartościowych (PWPW) / Sigillum, among others) supervised by the minister właściwy do spraw informatyzacji — the minister competent for computerisation acting as Poland's eIDAS supervisory body — and published in the Polish national eIDAS Trusted List (PL_TSL.xml, ETSI TS 119 612), operated by Narodowe Centrum Certyfikacji (NCCert), the national root run by Narodowy Bank Polski (NBP). The 29 currently-granted CA certificates were promoted wholesale after verifying the Trusted List's XAdES signature through the EU LOTL chain of trust: the LOTL signature was checked against the pinned European Commission signing anchor, and the Polish TSL's signature (signer: C=PL, O=Narodowy Bank Polski, CN=Polish TSL Operator 2024; cert SHA-256 446a041a550bc51b92525ef7e540090b2df67f0852e5c7addb96661cce330596) against the identity the LOTL declares for Poland, so the list's single seal vouches for every certificate it contains (eIDAS Art. 22). Only services with a currently-granted status and a CA / qualified-certificate service type were selected; withdrawn, deprecated, and non-CA services were dropped. Verification evidence is in VERIFICATION.md. Key algorithms across the set are mixed: 21 CAs use RSA-4096, 7 use RSA-2048, and 1 uses EC P-384. Eight certificates in the set have passed their notAfter and are retained as archived-but-granted entries; they surface under the Expired status filter."
+}

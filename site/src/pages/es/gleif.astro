@@ -1,0 +1,96 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import AboutPanel from '../../components/AboutPanel.astro';
+import { loadGlobalAnchors } from '../../lib/anchors.js';
+import { TRANSLATIONS } from '../../lib/i18n.js';
+
+const lang = 'es';
+const t = TRANSLATIONS[lang];
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const anchor = loadGlobalAnchors().find((a) => a.id === 'gleif-vlei');
+
+const aboutFacts = [
+  { label: t.globalAnchorRootAid, value: anchor.rootAid.rootAid ?? anchor.rootAid.aid, mono: true },
+  anchor.rootAid.geda && { label: t.globalAnchorGeda, value: anchor.rootAid.geda, mono: true },
+  anchor.rootAid.keyStateDigest && { label: 'Estado de clave', value: anchor.rootAid.keyStateDigest, mono: true },
+  { label: t.globalAnchorQvis, value: anchor.qviCount },
+  { label: 'Modelo', value: anchor.technology.keyModel },
+  { label: 'Credencial', value: anchor.technology.credentialFormat },
+  { label: 'Cadena', value: anchor.technology.chain },
+].filter(Boolean);
+
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: t.countryNavHome, item: 'https://trust.attestto.org/es/' },
+      { '@type': 'ListItem', position: 2, name: anchor.name, item: 'https://trust.attestto.org/es/gleif' },
+    ],
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Dataset',
+    name: anchor.name,
+    description: anchor.notes,
+    url: 'https://trust.attestto.org/es/gleif',
+    license: 'https://www.apache.org/licenses/LICENSE-2.0',
+    isAccessibleForFree: true,
+    creator: { '@type': 'Organization', name: 'Attestto', url: 'https://attestto.org' },
+    keywords: ['vLEI', 'LEI', 'GLEIF', 'KERI', 'ACDC', 'digital signature'],
+    distribution: [
+      {
+        '@type': 'DataDownload',
+        encodingFormat: 'application/json',
+        contentUrl: 'https://github.com/Attestto-com/attestto-trust',
+      },
+    ],
+  },
+];
+---
+<BaseLayout title={`${anchor.name} — ${t.homeGlobalH2}`} description={anchor.notes} jsonLd={jsonLd}>
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+      <li><a href={`${base}/es/`}>{t.countryNavHome}</a></li>
+      <li aria-current="page">{anchor.name}</li>
+    </ol>
+  </nav>
+  <header class="anchor-head">
+    <img src="/gleif-logo.svg" alt="GLEIF logo" width="40" height="40" style="object-fit:contain;flex-shrink:0" />
+    <div>
+      <h1>{anchor.name}</h1>
+      <p class="anchor-head__authority">{t.countryPublishedBy} <a href={anchor.authority.url} rel="noopener noreferrer" target="_blank">{anchor.authority.name}</a></p>
+    </div>
+  </header>
+
+  <AboutPanel
+    ariaLabel="Acerca de esta ancla"
+    notes={anchor.notes}
+    notesPosition="top"
+    facts={aboutFacts}
+    links={anchor.relatedLinks}
+    linksLabel="Recursos oficiales relacionados"
+    newTabHint="abre en una pestaña nueva"
+  />
+
+  <section aria-label="Emisores vLEI cualificados">
+    <h2>{t.globalAnchorQvis} ({anchor.qviCount})</h2>
+    <table class="qvi-table">
+      <thead><tr><th>Nombre</th><th>LEI</th><th>AID</th><th>Estado</th></tr></thead>
+      <tbody>
+        {anchor.qvis.map((q) => (
+          <tr><td>{q.url ? <a href={q.url} target="_blank" rel="noopener noreferrer">{q.name}</a> : q.name}</td><td><code>{q.lei}</code></td><td>{q.aid ? <code>{q.aid}</code> : '—'}</td><td>{q.status}</td></tr>
+        ))}
+      </tbody>
+    </table>
+  </section>
+</BaseLayout>
+
+<style>
+  .anchor-head { display: flex; gap: var(--space-4); align-items: center; margin-bottom: var(--space-6); padding-bottom: var(--space-5); border-bottom: 1px solid var(--color-border); }
+  .anchor-head h1 { margin: 0; }
+  .anchor-head__authority { margin: var(--space-1) 0 0; color: var(--color-text-muted); font-size: var(--text-sm); }
+  .qvi-table { width: 100%; border-collapse: collapse; font-size: var(--text-sm); }
+  .qvi-table th, .qvi-table td { text-align: left; padding: var(--space-2) var(--space-3); border-bottom: 1px solid var(--color-border); }
+  .qvi-table code { font-size: var(--text-xs); word-break: break-all; }
+</style>

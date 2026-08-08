@@ -1,5 +1,6 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
+import sitemap from '@astrojs/sitemap';
 
 // Public human-readable mirror of national PKI trust anchors.
 // Static output, deployed to GitHub Pages at trust.attestto.org.
@@ -8,6 +9,7 @@ export default defineConfig({
   base: '/',
   output: 'static',
   trailingSlash: 'ignore',
+  integrations: [sitemap()],
   i18n: {
     defaultLocale: 'en',
     locales: ['en', 'es'],

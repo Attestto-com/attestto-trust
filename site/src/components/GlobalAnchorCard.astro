@@ -1,0 +1,73 @@
+---
+const { anchor, lang, base, t } = Astro.props;
+const detailHref = `${base}${lang === 'es' ? '/es' : ''}/gleif`;
+const colAnchor = lang === 'es' ? 'Ancla' : 'Anchor';
+const colIds = lang === 'es' ? 'Identificadores' : 'Identifiers';
+---
+<table class="ga-table">
+  <colgroup>
+    <col class="ga-table__col-name" />
+    <col class="ga-table__col-auth" />
+    <col class="ga-table__col-num" />
+    <col class="ga-table__col-id" />
+  </colgroup>
+  <thead>
+    <tr>
+      <th scope="col">{colAnchor}</th>
+      <th scope="col">{t.homeColAuthority}</th>
+      <th scope="col" class="ga-table__num">{t.globalAnchorQvis}</th>
+      <th scope="col">{colIds}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="ga-table__name">
+        <a href={detailHref} aria-label={anchor.name}>
+          <img class="ga-table__logo" src="/gleif-logo.svg" alt="" width="24" height="24" />
+          <span class="ga-table__nm">{anchor.name}</span>
+          <span class="ga-table__go" aria-hidden="true">→</span>
+        </a>
+      </td>
+      <td class="ga-table__auth">{anchor.authority?.name}</td>
+      <td class="ga-table__num"><strong>{anchor.qviCount}</strong></td>
+      <td class="ga-table__id">{anchor.identifierSpace?.join(' · ')}</td>
+    </tr>
+  </tbody>
+</table>
+
+<style>
+  .ga-table { width: 100%; border-collapse: collapse; table-layout: fixed; }
+  .ga-table__col-name { width: 22%; }
+  .ga-table__col-auth { width: 46%; }
+  .ga-table__col-num { width: 14%; }
+  .ga-table__col-id { width: 18%; }
+  .ga-table thead th {
+    text-align: left;
+    font-size: var(--text-xs);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--color-text-subtle);
+    font-weight: 600;
+    padding: var(--space-2) var(--space-4);
+    border-bottom: 1px solid var(--color-border);
+  }
+  .ga-table thead th.ga-table__num { text-align: right; }
+  .ga-table tbody tr { border-bottom: 1px solid var(--color-border); transition: background 0.12s; }
+  .ga-table tbody tr:hover { background: var(--color-surface); }
+  .ga-table td { padding: var(--space-3) var(--space-4); font-size: var(--text-sm); vertical-align: middle; }
+  .ga-table__name a { display: inline-flex; align-items: center; gap: var(--space-3); font-weight: 650; color: var(--color-text); }
+  .ga-table__name a:hover { color: var(--color-accent); text-decoration: none; }
+  .ga-table__logo { width: 1.5rem; height: 1.5rem; object-fit: contain; flex-shrink: 0; }
+  .ga-table__go { color: var(--color-accent); font-size: var(--text-lg); }
+  .ga-table__auth { color: var(--color-text-muted); }
+  .ga-table__num { text-align: right; }
+  .ga-table__num strong { font-size: var(--text-base); }
+  .ga-table__id { color: var(--color-text-muted); white-space: nowrap; }
+  @media (max-width: 720px) {
+    .ga-table thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+    .ga-table, .ga-table tbody, .ga-table tr, .ga-table td { display: block; width: 100%; }
+    .ga-table tbody tr { padding: var(--space-3) 0; }
+    .ga-table td { padding: var(--space-1) var(--space-4); }
+    .ga-table__num { text-align: left; }
+  }
+</style>

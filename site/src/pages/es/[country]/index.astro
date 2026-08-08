@@ -1,8 +1,9 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import TreeNode from '../../../components/TreeNode.astro';
+import AboutPanel from '../../../components/AboutPanel.astro';
 import { COUNTRIES, loadCountry } from '../../../lib/trust.js';
-import { TRANSLATIONS, getCountryName, getCountryAuthority } from '../../../lib/i18n.js';
+import { TRANSLATIONS, getCountryName } from '../../../lib/i18n.js';
 
 export function getStaticPaths() {
   return COUNTRIES.map((c) => ({ params: { country: c.code } }));
@@ -24,12 +25,69 @@ const fmtDate = (iso) =>
 
 const rootCount = data.roots.filter((c) => c.role === 'root' || c.issuer === c.subject).length;
 const intermediateCount = data.certs.filter((c) => c.role === 'intermediate').length;
-const filterStatusTemplate = t.countryFilterStatus;
-const totalCertsCount = data.certs.length;
+const expiredCount = data.certs.filter((c) => c.validity.state === 'expired').length;
+const orphanCount = data.certs.filter((c) => c.orphan).length;
+// Status chips only earn their space when there is something to filter out.
+const showStatusChips = expiredCount > 0 || orphanCount > 0;
+
+// About-panel facts. Only rows whose data exists are included (filtered here
+// and again defensively by the shared component).
+const aboutFacts = [
+  data.model && {
+    label: 'Modelo',
+    value: data.model === 'accredited-tsl' ? 'CAs acreditadas (Lista de confianza ETSI)' : 'Jerarquía nacional',
+  },
+  data.governingLaw && { label: 'Marco legal', value: data.governingLaw },
+  data.technology?.keyAlgorithms?.length > 0 && {
+    label: 'Algoritmos de clave',
+    value: data.technology.keyAlgorithms.join(', '),
+  },
+  data.technology?.signatureStandards?.length > 0 && {
+    label: 'Estándares de firma',
+    value: data.technology.signatureStandards.join(', '),
+    linkStandards: true,
+  },
+  data.revocation?.snapshotExpiresAt && {
+    label: 'Instantánea de revocación',
+    value: `vigente, actualizar antes de ${fmtDate(data.revocation.snapshotExpiresAt)}`,
+  },
+].filter(Boolean);
+
+const countryName = getCountryName(data.code, lang);
+const countryUrl = `https://trust.attestto.org/es/${data.code}`;
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: t.countryNavHome, item: 'https://trust.attestto.org/es/' },
+      { '@type': 'ListItem', position: 2, name: countryName, item: countryUrl },
+    ],
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Dataset',
+    name: `Anclas de confianza PKI nacionales de ${countryName}`,
+    description: `${data.count} anclas de confianza publicadas por ${data.authority?.name}, estructuradas como una jerarquía verificable de certificados raíz e intermedios con huellas SHA-256 y descargas del .pem original.`,
+    url: countryUrl,
+    license: 'https://www.apache.org/licenses/LICENSE-2.0',
+    isAccessibleForFree: true,
+    creator: { '@type': 'Organization', name: 'Attestto', url: 'https://attestto.org' },
+    keywords: ['PKI', 'X.509', 'eIDAS', 'trusted list', 'digital signature', 'did:pki'],
+    distribution: [
+      {
+        '@type': 'DataDownload',
+        encodingFormat: 'application/x-pem-file',
+        contentUrl: `https://github.com/Attestto-com/attestto-trust/tree/main/countries/${data.code}`,
+      },
+    ],
+  },
+];
 ---
 <BaseLayout
   title={`${getCountryName(data.code, lang)} - ${t.cardIssuer}s`}
-  description={t.countryHierarchyAria.replace('{0}', getCountryName(data.code, lang)) + `: ${data.count} anclas de confianza publicadas por ${getCountryAuthority(data.code, lang)}.`}
+  description={t.countryHierarchyAria.replace('{0}', getCountryName(data.code, lang)) + `: ${data.count} anclas de confianza publicadas por ${data.authority?.name}.`}
+  jsonLd={jsonLd}
 >
   <nav class="breadcrumbs" aria-label="Breadcrumb">
     <ol>
@@ -44,9 +102,9 @@ const totalCertsCount = data.certs.length;
       <div>
         <h1>{getCountryName(data.code, lang)}</h1>
         <p class="country-head__authority">
-          {t.countryPublishedBy} {data.authorityUrl
-            ? <a href={data.authorityUrl} rel="noopener">{getCountryAuthority(data.code, lang)}</a>
-            : getCountryAuthority(data.code, lang)}
+          {t.countryPublishedBy} {data.authority?.url
+            ? <a href={data.authority?.url} rel="noopener noreferrer" target="_blank" title={`${data.authority?.name} (sitio oficial, abre en una pestaña nueva)`}>{data.authority?.name}</a>
+            : data.authority?.name}
         </p>
       </div>
     </div>
@@ -54,57 +112,64 @@ const totalCertsCount = data.certs.length;
       <div><dt>{t.countryCertsStat}</dt><dd>{data.count}</dd></div>
       <div><dt>{t.countryRootsStat}</dt><dd>{rootCount}</dd></div>
       <div><dt>{t.countryIntermediatesStat}</dt><dd>{intermediateCount}</dd></div>
+      <div><dt>{t.countryDidStat}</dt><dd>{data.didCount}</dd></div>
       <div><dt>{t.countryUpdatedStat}</dt><dd><time datetime={data.generatedAt}>{fmtDate(data.generatedAt)}</time></dd></div>
     </dl>
   </header>
 
-  <div class="filter">
-    <label class="visually-hidden" for="cert-search">{t.countrySearchLabel}</label>
-    <input
-      id="cert-search"
-      type="search"
-      class="filter__input"
-      placeholder={t.countrySearchPlaceholder}
-      autocomplete="off"
-      aria-controls="ca-tree"
-    />
-    <p class="filter__status" id="filter-status" role="status" aria-live="polite"></p>
+  <AboutPanel
+    ariaLabel="Sobre esta PKI"
+    notes={data.notes}
+    notesPosition="bottom"
+    facts={aboutFacts}
+    capabilities={data.capabilities}
+    capabilitiesLabel="Capacidades"
+    links={data.relatedLinks}
+    linksLabel="Recursos oficiales relacionados"
+    newTabHint="abre en una pestaña nueva"
+  />
+
+  <div data-filter-scope>
+    <div class="filter">
+      <label class="visually-hidden" for="cert-search">{t.countrySearchLabel}</label>
+      <input
+        id="cert-search"
+        type="search"
+        class="filter__input"
+        placeholder={t.countrySearchPlaceholder}
+        autocomplete="off"
+        aria-controls="ca-tree"
+        data-filter-input
+        data-filter-hide-closest=".tree-node"
+        data-filter-status-template={t.countryFilterStatus}
+      />
+      <p class="filter__status" data-filter-status role="status" aria-live="polite"></p>
+    </div>
+
+    {showStatusChips && (
+      <div class="cert-filters">
+        <div class="cert-filters__chips" role="group" aria-label={t.filterChipsAria}>
+          <button type="button" class="cert-chip" data-filter-chip data-chip-value="current" data-chip-default={expiredCount > 0 ? true : undefined}>{t.filterChipCurrent}</button>
+          {expiredCount > 0 && (
+            <button type="button" class="cert-chip" data-filter-chip data-chip-value="expired">{t.filterChipExpired} <span class="cert-chip__n">{expiredCount}</span></button>
+          )}
+          {orphanCount > 0 && (
+            <button type="button" class="cert-chip" data-filter-chip data-chip-value="unchained">{t.filterChipUnchained} <span class="cert-chip__n">{orphanCount}</span></button>
+          )}
+          <button type="button" class="cert-chip" data-filter-chip data-chip-value="all" data-chip-default={expiredCount === 0 ? true : undefined}>{t.filterChipAll}</button>
+        </div>
+        {expiredCount > 0 && <p class="cert-filters__hint">{t.filterChipsHint}</p>}
+      </div>
+    )}
+
+    <section aria-label={t.countryHierarchyAria.replace('{0}', getCountryName(data.code, lang))}>
+      <ul class="tree" id="ca-tree" role="tree">
+        {data.roots.map((root) => <TreeNode cert={root} code={data.code} depth={0} />)}
+      </ul>
+      <p class="no-results" data-filter-empty hidden>{t.countryNoResults}</p>
+    </section>
   </div>
-
-  <section aria-label={t.countryHierarchyAria.replace('{0}', getCountryName(data.code, lang))}>
-    <ul class="tree" id="ca-tree" role="tree">
-      {data.roots.map((root) => <TreeNode cert={root} code={data.code} depth={0} />)}
-    </ul>
-    <p class="no-results" id="no-results" hidden>{t.countryNoResults}</p>
-  </section>
 </BaseLayout>
-
-<script define:vars={{ filterStatusTemplate, totalCertsCount }}>
-  // Client-side filter over the rendered tree. Cards carry a data-search string.
-  const input = document.getElementById('cert-search');
-  const cards = Array.from(document.querySelectorAll('.cert-card'));
-  const status = document.getElementById('filter-status');
-  const noResults = document.getElementById('no-results');
-
-  function apply(query) {
-    const q = query.trim().toLowerCase();
-    let visible = 0;
-    for (const card of cards) {
-      const hay = card.getAttribute('data-search') || '';
-      const match = q === '' || hay.includes(q);
-      // Hide the whole tree node (card + its subtree wrapper) when filtered out.
-      const node = card.closest('.tree-node');
-      if (node) node.style.display = match ? '' : 'none';
-      if (match) visible++;
-    }
-    if (status) {
-      status.textContent = q === '' ? '' : filterStatusTemplate.replace('{0}', String(visible)).replace('{1}', String(totalCertsCount));
-    }
-    if (noResults) noResults.hidden = visible !== 0;
-  }
-
-  input?.addEventListener('input', (e) => apply(e.target.value));
-</script>
 
 <style>
   .country-head {
@@ -120,7 +185,7 @@ const totalCertsCount = data.certs.length;
   .country-head__title { display: flex; gap: var(--space-4); align-items: center; }
   .country-head__flag { font-size: 2.75rem; line-height: 1; }
   .country-head h1 { margin: 0; }
-  .country-head__authority { margin: var(--space-1) 0 0; color: var(--color-text-muted); font-size: var(--text-sm); }
+  .country-head__authority { margin: var(--space-1) 0 0; color: var(--color-text-muted); font-size: var(--text-sm); max-width: 62ch; line-height: 1.45; overflow-wrap: anywhere; }
   .country-head__stats {
     display: flex;
     gap: var(--space-5);
@@ -145,6 +210,35 @@ const totalCertsCount = data.certs.length;
   }
   .filter__input:focus-visible { box-shadow: var(--focus-ring); border-color: var(--color-accent); }
   .filter__status { margin: var(--space-2) 0 0; font-size: var(--text-sm); color: var(--color-text-muted); }
+
+  .cert-filters { margin: 0 0 var(--space-6); }
+  .cert-filters__chips { display: flex; flex-wrap: wrap; gap: var(--space-2); }
+  .cert-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-1);
+    font-size: var(--text-sm);
+    font-weight: 600;
+    padding: var(--space-1) var(--space-3);
+    border-radius: var(--radius-pill);
+    border: 1px solid var(--color-border-strong);
+    background: var(--color-surface);
+    color: var(--color-text-muted);
+    cursor: pointer;
+  }
+  .cert-chip:hover { color: var(--color-text); border-color: var(--color-text-subtle); }
+  .cert-chip[aria-pressed='true'] {
+    background: var(--color-accent-soft);
+    border-color: var(--color-accent);
+    color: var(--color-accent-light);
+  }
+  .cert-chip__n {
+    font-variant-numeric: tabular-nums;
+    font-size: var(--text-xs);
+    color: var(--color-text-subtle);
+  }
+  .cert-chip[aria-pressed='true'] .cert-chip__n { color: var(--color-accent-light); }
+  .cert-filters__hint { margin: var(--space-2) 0 0; font-size: var(--text-xs); color: var(--color-text-subtle); }
 
   .tree { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-4); }
   .no-results { color: var(--color-text-muted); }
