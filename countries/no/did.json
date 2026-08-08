@@ -1,0 +1,32 @@
+{
+  "method": "did:pki",
+  "generatedAt": "2026-07-23T19:04:14.508Z",
+  "dids": {
+    "bankid-bankaxept-ca-1a.pem": "did:pki:no:bankid-bankaxept:bankaxept-ca-1a",
+    "bankid-bankaxept-qtsa-ca-1a.pem": "did:pki:no:bankid-bankaxept:bankaxept-qtsa:ca-1a",
+    "bankid-bankenes-id-tjeneste-as-bank-ca-3.pem": "did:pki:no:bankenes-id-tjeneste:bankid:bank-ca-3",
+    "bankid-bankenes-id-tjeneste-bank-ca-2.pem": "did:pki:no:bankenes-id-tjeneste:bankid-id-tjeneste-bank-ca-2",
+    "bankid-danske-bank-bank-ca-3.pem": "did:pki:no:danske-bank-as:bankid:bank:bank-ca-3",
+    "bankid-dnb-bank-ca-3.pem": "did:pki:no:dnb-bank-asa:bankid:bank-ca-3",
+    "bankid-dnb-nor-bank-ca-2.pem": "did:pki:no:dnb-nor-bank-asa:bankid-nor-bank-ca-2",
+    "bankid-eika-gruppen-as-bank-ca-3.pem": "did:pki:no:eika-gruppen:bankid:bank-ca-3",
+    "bankid-fokus-bank-bank-ca-2.pem": "did:pki:no:fokus-bank:bankid-bank-ca-2",
+    "bankid-nordea-bank-ca-2.pem": "did:pki:no:nordea-bank-norge-asa:bankid-bank-ca-2",
+    "bankid-nordea-bank-ca-3.pem": "did:pki:no:nordea-bank-abp-filial-i-norge:bankid:bank-ca-3",
+    "bankid-sparebank-1-bank-ca-2.pem": "did:pki:no:alliansesamarbeidet-sparebank-1-da:bankid-sparebank-1-bank-ca-2",
+    "bankid-sparebank-1-bank-ca-3.pem": "did:pki:no:sparebank-1-utvikling-da:bankid:1:bank-ca-3",
+    "bankid-terra-gruppen-bank-ca-2.pem": "did:pki:no:terra-gruppen:bankid-gruppen-bank-ca-2",
+    "buypass-class-3-ca-2.pem": "did:pki:no:buypass-as-983163327:class-3-ca-2",
+    "buypass-class-3-ca-3.pem": "did:pki:no:buypass-as-983163327:class-3-ca-3",
+    "buypass-class-3-ca-g2-ht-business.pem": "did:pki:no:buypass:class-3-ca-g2-ht-business",
+    "buypass-class-3-ca-g2-ht-person-bcss.pem": "did:pki:no:buypass:class-3-ca-g2-ht-person-bcss",
+    "buypass-class-3-ca-g2-ht-person.pem": "did:pki:no:buypass:class-3-ca-g2-ht-person",
+    "buypass-class-3-ca-g2-qc-wa.pem": "did:pki:no:buypass:class-3-ca-g2-qc-wa",
+    "buypass-class-3-ca-g2-st-business.pem": "did:pki:no:buypass:class-3-ca-g2-st-business",
+    "commfides-legal-person-g3.pem": "did:pki:no:commfides-norge:legal-person",
+    "commfides-natural-person-g3.pem": "did:pki:no:commfides-norge:natural-person",
+    "cpn-enterprise-sha256-class-3.pem": "did:pki:no:commfides-norge-as-988-312-495:cpn-enterprise-sha256-class-3",
+    "cpn-person-high-sha256-class-3.pem": "did:pki:no:commfides-norge-as-988-312-495:cpn-person-high-sha256-class-3",
+    "scrive-as-esign-ca-aceymac.pem": "did:pki:no:scrive:esign-ca-aceymac"
+  }
+}

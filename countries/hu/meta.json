@@ -1,0 +1,26 @@
+{
+  "code": "hu",
+  "name": "Hungary",
+  "flag": "🇭🇺",
+  "model": "accredited-tsl",
+  "authority": {
+    "name": "Nemzeti Média- és Hírközlési Hatóság (NMHH) — National Media and Infocommunications Authority, Hungarian eIDAS supervisory body and national Trusted List scheme operator",
+    "operator": "Accredited QTSPs under eIDAS (Microsec zrt. / e-Szignó, NETLOCK Kft., and the Government CA / Kormányzati Hitelesítés Szolgáltató operated by NISZ Nemzeti Infokommunikációs Szolgáltató Zrt., among others)",
+    "url": "https://www.nmhh.hu/tl/pub/HU_TL.xml"
+  },
+  "governingLaw": "Reglamento eIDAS (UE) 910/2014 · 2015. évi CCXXII. törvény az elektronikus ügyintézés és a bizalmi szolgáltatások általános szabályairól (E-ügyintézési tv.)",
+  "technology": {
+    "keyAlgorithms": ["RSA-4096", "RSA-3072", "RSA-2048", "EC P-384", "EC P-256"],
+    "signatureStandards": ["CAdES", "PAdES", "XAdES", "ASiC"],
+    "trustList": "ETSI TS 119 612 — the Hungarian Trusted List (HU_TL.xml, NMHH)"
+  },
+  "capabilities": ["Qualified e-signature & e-seal (eIDAS)", "Qualified timestamping", "Qualified website authentication (QWAC / PSD2)"],
+  "relatedLinks": [
+    { "label": "NMHH — Hungarian Trusted List (HU_TL.xml)", "url": "https://www.nmhh.hu/tl/pub/HU_TL.xml" },
+    { "label": "NMHH — National Media and Infocommunications Authority", "url": "https://english.nmhh.hu/" },
+    { "label": "EU LOTL — List of the Lists (European Commission)", "url": "https://ec.europa.eu/tools/lotl/eu-lotl.xml" },
+    { "label": "Independent verifier (Attestto)", "url": "https://verify.attestto.com" }
+  ],
+  "source": { "type": "tsl", "url": "https://www.nmhh.hu/tl/pub/HU_TL.xml" },
+  "notes": "Hungary's qualified-signature trust is a federation of accredited QTSPs (Microsec zrt. / e-Szignó, NETLOCK Kft., and the Government CA / Kormányzati Hitelesítés Szolgáltató operated by NISZ Nemzeti Infokommunikációs Szolgáltató Zrt., among others) supervised by the Nemzeti Média- és Hírközlési Hatóság (NMHH), the National Media and Infocommunications Authority acting as Hungary's eIDAS supervisory body, and published in the Hungarian national eIDAS Trusted List (HU_TL.xml, ETSI TS 119 612). The 62 currently-granted CA certificates were promoted wholesale after verifying the Trusted List's XAdES signature through the EU LOTL chain of trust: the LOTL signature was checked against the pinned European Commission signing anchor, and the Hungarian TSL's signature (signer: C=HU, L=Budapest, O=National Media and Infocommunications Authority, Hungary, CN=Hungarian Trusted List Scheme Operator; cert SHA-256 264c843f8ef85a822cf9612c680609a0fce3171a7496ec4ca6b810411274f34d) against the identity the LOTL declares for Hungary, so the list's single seal vouches for every certificate it contains (eIDAS Art. 22). Only services with a currently-granted status and a CA / qualified-certificate service type were selected; withdrawn, deprecated, and non-CA services were dropped. Verification evidence is in VERIFICATION.md. Key algorithms across the set are mixed: 23 CAs use RSA-2048, 16 use EC P-384, 11 use RSA-4096, 11 use EC P-256, and 1 uses RSA-3072. Six certificates in the set have passed their notAfter and are retained as archived-but-granted entries; they surface under the Expired status filter."
+}

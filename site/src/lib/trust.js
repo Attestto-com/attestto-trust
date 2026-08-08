@@ -2,7 +2,7 @@
 // Reads ../../../countries/<cc>/current/manifest.json, builds the CA hierarchy
 // from issuer -> subject links, assigns URL-safe slugs, and computes a validity
 // state for each certificate relative to the build date.
-import { readFileSync, existsSync } from 'node:fs';
+import { readFileSync, existsSync, readdirSync, statSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 
@@ -26,37 +26,51 @@ function findCountriesDir(start) {
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const countriesDir = findCountriesDir(__dirname);
 
-// Static per-country presentation metadata. Authoritative sources noted where known.
-export const COUNTRIES = [
-  {
-    code: 'cr',
-    name: 'Costa Rica',
-    flag: '\u{1F1E8}\u{1F1F7}',
-    authority: 'BCCR (Banco Central de Costa Rica) / SINPE / MICITT Firma Digital',
-    authorityUrl: 'https://www.firmadigital.go.cr/',
-  },
-  {
-    code: 'br',
-    name: 'Brazil',
-    flag: '\u{1F1E7}\u{1F1F7}',
-    authority: 'ITI (Instituto Nacional de Tecnologia da Informacao) / ICP-Brasil',
-    authorityUrl: 'https://www.gov.br/iti/',
-  },
-  {
-    code: 'ar',
-    name: 'Argentina',
-    flag: '\u{1F1E6}\u{1F1F7}',
-    authority: 'Autoridad Certificante Raiz de la Republica Argentina',
-    authorityUrl: 'https://www.argentina.gob.ar/jefatura/innovacion-publica/firma-digital',
-  },
-  {
-    code: 'es',
-    name: 'Spain',
-    flag: '\u{1F1EA}\u{1F1F8}',
-    authority: 'FNMT-RCM (Fábrica Nacional de Moneda y Timbre)',
-    authorityUrl: 'https://www.sede.fnmt.gob.es/',
-  },
-];
+// Per-country presentation + authority metadata now lives in hand-maintained
+// countries/<cc>/meta.json (authority, related links, capabilities, technology,
+// notes). This loader discovers every country that has BOTH a meta.json and a
+// promoted current/manifest.json, so adding a country is data-only.
+const COUNTRY_ORDER = ['cr', 'br', 'ar', 'es', 'ee', 'it', 'pe'];
+
+function readMeta(code) {
+  return JSON.parse(readFileSync(join(countriesDir, code, 'meta.json'), 'utf-8'));
+}
+
+// CRL freshness snapshot (thisUpdate/nextUpdate + derived snapshotExpiresAt).
+// Time-varying, kept out of the manifest; may be absent.
+function readRevocation(code) {
+  const p = join(countriesDir, code, 'revocation.json');
+  return existsSync(p) ? JSON.parse(readFileSync(p, 'utf-8')) : null;
+}
+
+// did:pki identifier per PEM file (map file -> did string), precomputed by the
+// workspace tool scripts/refresh-did-pki.mjs from the resolver's canonical
+// derivation. May be absent, and may omit certs whose DID isn't valid yet.
+function readDidPki(code) {
+  const p = join(countriesDir, code, 'did.json');
+  if (!existsSync(p)) return {};
+  try {
+    return JSON.parse(readFileSync(p, 'utf-8')).dids || {};
+  } catch {
+    return {};
+  }
+}
+
+export const COUNTRIES = readdirSync(countriesDir)
+  .filter((code) => {
+    const dir = join(countriesDir, code);
+    return (
+      statSync(dir).isDirectory() &&
+      existsSync(join(dir, 'meta.json')) &&
+      existsSync(join(dir, 'current', 'manifest.json'))
+    );
+  })
+  .map(readMeta)
+  .sort((a, b) => {
+    const ai = COUNTRY_ORDER.indexOf(a.code);
+    const bi = COUNTRY_ORDER.indexOf(b.code);
+    return (ai === -1 ? 999 : ai) - (bi === -1 ? 999 : bi) || a.name.localeCompare(b.name);
+  });
 
 // The build "now". Validity chips are computed against this instant.
 export const BUILD_DATE = new Date();
@@ -133,6 +147,7 @@ export function loadCountry(code) {
   const meta = COUNTRIES.find((c) => c.code === code);
   if (!meta) throw new Error(`Unknown country: ${code}`);
   const manifest = readManifest(code);
+  const didByFile = readDidPki(code);
 
   const usedSlugs = new Set();
   const certs = manifest.certificates.map((c) => {
@@ -151,6 +166,7 @@ export function loadCountry(code) {
       issuerDisplay: fixMojibake(c.issuer),
       slug,
       validity,
+      didPki: didByFile[c.file] || null,
       children: [],
       parent: null,
     };
@@ -189,6 +205,8 @@ export function loadCountry(code) {
     ...meta,
     generatedAt: manifest.generatedAt,
     count: manifest.count ?? certs.length,
+    didCount: Object.keys(didByFile).length,
+    revocation: readRevocation(code),
     certs,
     roots,
   };

@@ -1,0 +1,408 @@
+{
+  "country": "PL",
+  "generatedAt": "2026-07-23T18:23:32.001Z",
+  "count": 29,
+  "certificates": [
+    {
+      "file": "cencert-centrum-certyfikatow-kwalifikowanych-3035777a.pem",
+      "sha256": "3035777a2ab75df507e37563960e2fe75344330d8f15381f25e7a18a2ac391f5",
+      "subject": "CenCert Centrum Certyfikatów Kwalifikowanych",
+      "issuer": "Narodowe Centrum Certyfikacji (NCCert)",
+      "serialNumber": "0fee286cea9952912b6649d066dc2c0533bbde05",
+      "validFrom": "2017-02-13T10:38:44.000Z",
+      "validTo": "2020-10-26T23:59:59.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "cencert-centrum-certyfikatow-kwalifikowanych.pem",
+      "sha256": "cd355c72a7d83cdc4941fe719fb493ad9aa29e7103b61b2f66c13bbd50515843",
+      "subject": "CenCert Centrum Certyfikatów Kwalifikowanych",
+      "issuer": "Narodowe Centrum Certyfikacji (NCCert)",
+      "serialNumber": "543e1c5443eedde99423ec72d0e9cf96225d9c6e",
+      "validFrom": "2014-03-06T08:53:53.000Z",
+      "validTo": "2019-03-06T23:59:59.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "cencert-qtsp-ca-6c982640.pem",
+      "sha256": "6c98264040cef300d56572cc523e5af1ee27b8dde5abd90389ded74436af9636",
+      "subject": "CenCert QTSP CA",
+      "issuer": "Narodowe Centrum Certyfikacji",
+      "serialNumber": "07289fef2f30882f",
+      "validFrom": "2023-09-15T10:56:54.000Z",
+      "validTo": "2034-09-15T23:59:59.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://www.nccert.pl/arl/nccert2016.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "cencert-qtsp-ca-6c9826404.pem",
+      "sha256": "6c98264040cef300d56572cc523e5af1ee27b8dde5abd90389ded74436af9636",
+      "subject": "CenCert QTSP CA",
+      "issuer": "Narodowe Centrum Certyfikacji",
+      "serialNumber": "07289fef2f30882f",
+      "validFrom": "2023-09-15T10:56:54.000Z",
+      "validTo": "2034-09-15T23:59:59.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://www.nccert.pl/arl/nccert2016.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "cencert-qtsp-ca-6c98264040.pem",
+      "sha256": "6c98264040cef300d56572cc523e5af1ee27b8dde5abd90389ded74436af9636",
+      "subject": "CenCert QTSP CA",
+      "issuer": "Narodowe Centrum Certyfikacji",
+      "serialNumber": "07289fef2f30882f",
+      "validFrom": "2023-09-15T10:56:54.000Z",
+      "validTo": "2034-09-15T23:59:59.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://www.nccert.pl/arl/nccert2016.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "cencert-qtsp-ca.pem",
+      "sha256": "c3046bc4e35d13155f09fed9deb605b58fdb93623be5c34ce68f4b73dc3cf68f",
+      "subject": "CenCert QTSP CA",
+      "issuer": "Narodowe Centrum Certyfikacji",
+      "serialNumber": "167d4d1456bde2721e49059947c8b64259b79f21",
+      "validFrom": "2017-05-18T13:52:04.000Z",
+      "validTo": "2028-05-18T23:59:59.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "cencert-qtsp-web-ca.pem",
+      "sha256": "f3e3735389398e369a60f89dcc8fa056a7967968d14b37bc656ec51a1864a7bb",
+      "subject": "CenCert QTSP WEB CA",
+      "issuer": "Narodowe Centrum Certyfikacji",
+      "serialNumber": "0082846cb7d52f34",
+      "validFrom": "2021-02-25T10:33:32.000Z",
+      "validTo": "2032-02-25T23:59:59.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://www.nccert.pl/arl/nccert2016.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "centrum-kwalifikowane-eurocert-8e886cfa.pem",
+      "sha256": "8e886cfa83280e34a28f9fc1e136049925fce51d15d920ec206b163fa6f1672d",
+      "subject": "Centrum Kwalifikowane EuroCert",
+      "issuer": "Narodowe Centrum Certyfikacji",
+      "serialNumber": "00f5e36b814fbbe8",
+      "validFrom": "2025-05-08T07:48:45.000Z",
+      "validTo": "2036-05-08T23:59:59.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://www.nccert.pl/arl/nccert2016.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "centrum-kwalifikowane-eurocert-a8339c7b.pem",
+      "sha256": "a8339c7bf6003aea6b343df9e5792663c1a5fb9ff4966433b0923e0bf64256c1",
+      "subject": "Centrum Kwalifikowane EuroCert",
+      "issuer": "Narodowe Centrum Certyfikacji (NCCert)",
+      "serialNumber": "6b67e2c779ee434fc2beb7566d323f22323b562c",
+      "validFrom": "2017-02-14T12:07:24.000Z",
+      "validTo": "2020-10-26T23:59:59.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "centrum-kwalifikowane-eurocert-ad73b87a.pem",
+      "sha256": "ad73b87ab9b9e4e28b99ea56e6c8c886759c77bc9da65a3f98c94ccbffafc272",
+      "subject": "Centrum Kwalifikowane EuroCert",
+      "issuer": "Narodowe Centrum Certyfikacji",
+      "serialNumber": "47003d109e95cc295eb63ab782430c55e7e4b763",
+      "validFrom": "2017-03-14T11:39:23.000Z",
+      "validTo": "2028-03-14T23:59:59.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "EC P-384",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "centrum-kwalifikowane-eurocert-b043295f.pem",
+      "sha256": "b043295f0124d40f8677fdf2edad0b34812a469d4286c9239730649530100de2",
+      "subject": "Centrum Kwalifikowane EuroCert",
+      "issuer": "Narodowe Centrum Certyfikacji",
+      "serialNumber": "040343e8990324e2",
+      "validFrom": "2022-02-14T10:09:26.000Z",
+      "validTo": "2033-02-14T23:59:59.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://www.nccert.pl/arl/nccert2016.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "centrum-kwalifikowane-eurocert-d142fae2.pem",
+      "sha256": "d142fae2e28a3d82503bde59c93b1e00c677c6196e63264f5d26a1d801fc6317",
+      "subject": "Centrum Kwalifikowane EuroCert",
+      "issuer": "Narodowe Centrum Certyfikacji",
+      "serialNumber": "1a5734b0d472d251e1d37cfe3d796ac117102490",
+      "validFrom": "2017-02-14T12:26:19.000Z",
+      "validTo": "2028-02-14T23:59:59.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "centrum-kwalifikowane-eurocert.pem",
+      "sha256": "dba14815c01f2457932fd2e33c35db8b2360422e33e5a121369b249592012076",
+      "subject": "Centrum Kwalifikowane EuroCert",
+      "issuer": "Narodowe Centrum Certyfikacji (NCCert)",
+      "serialNumber": "7f43fef99202f157147c62223f142c91ce176eda",
+      "validFrom": "2014-01-14T11:53:24.000Z",
+      "validTo": "2019-01-14T23:59:59.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "certum-qca-2017.pem",
+      "sha256": "ed380189eb280f5d86c914bfdd28d89795e5676ae893f3c3d75b12f3e42cc914",
+      "subject": "Certum QCA 2017",
+      "issuer": "Narodowe Centrum Certyfikacji",
+      "serialNumber": "7c8490c833d798a784dbfb588768233f6ebbf47f",
+      "validFrom": "2017-03-15T10:17:34.000Z",
+      "validTo": "2028-03-15T23:59:59.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "certum-qca-3a634bbc.pem",
+      "sha256": "3a634bbc04fc27dbf47ce9ae48d045b246d57c35899ad77be90662ac56c66eee",
+      "subject": "CERTUM QCA",
+      "issuer": "Narodowe Centrum Certyfikacji (NCCert)",
+      "serialNumber": "052efa4aa6331c2f54b1fc1a6d5f566efcf48223",
+      "validFrom": "2016-04-01T14:33:19.000Z",
+      "validTo": "2020-10-26T23:59:59.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "certum-qca-g3-r35.pem",
+      "sha256": "4b2174cba8c9153bb408246e5ee8ecaa398349c93c012d77997b8faa0721f19d",
+      "subject": "Certum QCA G3 R35",
+      "issuer": "Narodowe Centrum Certyfikacji",
+      "serialNumber": "06e964f56cde8f71",
+      "validFrom": "2024-12-13T10:25:24.000Z",
+      "validTo": "2035-12-13T23:59:59.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://www.nccert.pl/arl/nccert2016.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "certum-qca.pem",
+      "sha256": "357579bdf5f9474f22e655a9e418d17eff0b3c11fcf40ad091773be22329c562",
+      "subject": "CERTUM QCA",
+      "issuer": "Narodowe Centrum Certyfikacji (NCCert)",
+      "serialNumber": "2a2493dd8b96cbb48aa4b75ac14d36afb4554f36",
+      "validFrom": "2014-04-07T07:29:43.000Z",
+      "validTo": "2019-04-07T23:59:59.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "certum-qca2-2017.pem",
+      "sha256": "fcf4f525bf92bcf4ab4ddaa66f8f5d70a1dcb4d95b33c18cda2be4c8ef3e9538",
+      "subject": "Certum QCA2 2017",
+      "issuer": "Narodowe Centrum Certyfikacji",
+      "serialNumber": "4d439593fde6eeca69572cba7cb116286c811a96",
+      "validFrom": "2017-03-15T10:19:18.000Z",
+      "validTo": "2028-03-15T23:59:59.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "cope-szafir-kwalifikowany-65a05892.pem",
+      "sha256": "65a05892f6267a1e468cf4e1e547df83c37421fd609fe68c213c44d21dac877d",
+      "subject": "COPE SZAFIR - Kwalifikowany",
+      "issuer": "Narodowe Centrum Certyfikacji",
+      "serialNumber": "60f06092d2309c1892a9c147e186eaf8bcade302",
+      "validFrom": "2017-03-13T14:07:47.000Z",
+      "validTo": "2028-03-13T23:59:59.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "cope-szafir-kwalifikowany.pem",
+      "sha256": "9af61df3c40e213df981266427607a68e9508482e3c9472183a469259602ecd1",
+      "subject": "COPE SZAFIR - Kwalifikowany",
+      "issuer": "Narodowe Centrum Certyfikacji (NCCert)",
+      "serialNumber": "50afb764da75efadeb0f08d26a6e7308eaf2c3e2",
+      "validFrom": "2014-08-18T09:09:19.000Z",
+      "validTo": "2019-08-06T23:59:59.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "cuz-sigillum-qca1-4ae39365.pem",
+      "sha256": "4ae393652edaa239d8e2fa51a2f1b7e344fb2745aab1528cfc23bdb178662d8c",
+      "subject": "CUZ Sigillum - QCA1",
+      "issuer": "Narodowe Centrum Certyfikacji",
+      "serialNumber": "762d27cab50027e8c9e9e07767e7048bf4e68d75",
+      "validFrom": "2017-04-24T10:30:24.000Z",
+      "validTo": "2028-04-24T23:59:59.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "cuz-sigillum-qca1-4ae393652.pem",
+      "sha256": "4ae393652edaa239d8e2fa51a2f1b7e344fb2745aab1528cfc23bdb178662d8c",
+      "subject": "CUZ Sigillum - QCA1",
+      "issuer": "Narodowe Centrum Certyfikacji",
+      "serialNumber": "762d27cab50027e8c9e9e07767e7048bf4e68d75",
+      "validFrom": "2017-04-24T10:30:24.000Z",
+      "validTo": "2028-04-24T23:59:59.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "cuz-sigillum-qca1.pem",
+      "sha256": "4ae393652edaa239d8e2fa51a2f1b7e344fb2745aab1528cfc23bdb178662d8c",
+      "subject": "CUZ Sigillum - QCA1",
+      "issuer": "Narodowe Centrum Certyfikacji",
+      "serialNumber": "762d27cab50027e8c9e9e07767e7048bf4e68d75",
+      "validFrom": "2017-04-24T10:30:24.000Z",
+      "validTo": "2028-04-24T23:59:59.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [],
+      "ocspUrls": []
+    },
+    {
+      "file": "cuz-sigillum-qca2-1b73d8a0.pem",
+      "sha256": "1b73d8a034e4f437dce3236650d02f4b59f216647979b4da6d048458b3ae0dcc",
+      "subject": "CUZ Sigillum - QCA2",
+      "issuer": "Narodowe Centrum Certyfikacji",
+      "serialNumber": "244398df722d61",
+      "validFrom": "2026-03-14T09:57:20.000Z",
+      "validTo": "2037-03-14T23:59:59.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://www.nccert.pl/arl/nccert2016.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "cuz-sigillum-qca2-1b73d8a03.pem",
+      "sha256": "1b73d8a034e4f437dce3236650d02f4b59f216647979b4da6d048458b3ae0dcc",
+      "subject": "CUZ Sigillum - QCA2",
+      "issuer": "Narodowe Centrum Certyfikacji",
+      "serialNumber": "244398df722d61",
+      "validFrom": "2026-03-14T09:57:20.000Z",
+      "validTo": "2037-03-14T23:59:59.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://www.nccert.pl/arl/nccert2016.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "cuz-sigillum-qca2.pem",
+      "sha256": "1b73d8a034e4f437dce3236650d02f4b59f216647979b4da6d048458b3ae0dcc",
+      "subject": "CUZ Sigillum - QCA2",
+      "issuer": "Narodowe Centrum Certyfikacji",
+      "serialNumber": "244398df722d61",
+      "validFrom": "2026-03-14T09:57:20.000Z",
+      "validTo": "2037-03-14T23:59:59.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://www.nccert.pl/arl/nccert2016.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "cuz-sigillum-qtsa2.pem",
+      "sha256": "236f8ca35dd6e7f927283be310017c25e92ae87247b90770c48196e66ef2305c",
+      "subject": "CUZ Sigillum - QTSA2",
+      "issuer": "Narodowe Centrum Certyfikacji",
+      "serialNumber": "0342480d3f2acb00",
+      "validFrom": "2019-06-28T13:42:03.000Z",
+      "validTo": "2030-06-28T23:59:59.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://www.nccert.pl/arl/nccert2016.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "cuz-sigillum-qtsa3.pem",
+      "sha256": "b96c1dbb9b72866489b0f0eb8dfb1d348e355847c9fbd54e2607e91d69615203",
+      "subject": "CUZ Sigillum - QTSA3",
+      "issuer": "Narodowe Centrum Certyfikacji",
+      "serialNumber": "07174d953f49dc32",
+      "validFrom": "2026-05-28T07:16:52.000Z",
+      "validTo": "2037-05-28T23:59:59.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://www.nccert.pl/arl/nccert2016.crl"
+      ],
+      "ocspUrls": []
+    },
+    {
+      "file": "pwpw-kwalifikowany-ca.pem",
+      "sha256": "08da906198fcd5c6a242b2a6bfff0b5a445655d76bbc65bfcbdd13186c2c6a86",
+      "subject": "PWPW - kwalifikowany CA",
+      "issuer": "Narodowe Centrum Certyfikacji (NCCert)",
+      "serialNumber": "35e378d1c4876b7e81b32c63b976adae50d53a90",
+      "validFrom": "2015-05-08T07:01:06.000Z",
+      "validTo": "2020-05-08T23:59:59.000Z",
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-2048",
+      "crlUrls": [],
+      "ocspUrls": []
+    }
+  ]
+}

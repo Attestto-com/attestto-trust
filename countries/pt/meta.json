@@ -1,0 +1,26 @@
+{
+  "code": "pt",
+  "name": "Portugal",
+  "flag": "🇵🇹",
+  "model": "accredited-tsl",
+  "authority": {
+    "name": "Gabinete Nacional de Segurança (GNS) — Autoridade Credenciadora, Portuguese eIDAS supervisory body and national Trusted List operator (SCEE — Sistema de Certificação Eletrónica do Estado)",
+    "operator": "Accredited QTSPs under eIDAS (DigitalSign — Certificadora Digital, MULTICERT — Serviços de Certificação Electrónica, Global Trusted Sign, and the state Cartão de Cidadão / Chave Móvel Digital certification entities operated by AMA — Agência para a Modernização Administrativa, among others)",
+    "url": "https://www.gns.gov.pt/media/TSLPT.xml"
+  },
+  "governingLaw": "Reglamento eIDAS (UE) 910/2014 · Decreto-Lei n.º 12/2021 (execução do eIDAS) · Lei n.º 37/2014 (Cartão de Cidadão / identificação civil)",
+  "technology": {
+    "keyAlgorithms": ["RSA-4096", "RSA-2048", "EC P-384"],
+    "signatureStandards": ["CAdES", "PAdES", "XAdES", "ASiC"],
+    "trustList": "ETSI TS 119 612 — the Portuguese Trusted List (TSLPT.xml, GNS)"
+  },
+  "capabilities": ["Qualified e-signature & e-seal (eIDAS)", "Qualified timestamping", "Qualified website authentication (QWAC / PSD2)"],
+  "relatedLinks": [
+    { "label": "GNS — Portuguese Trusted List (TSLPT.xml)", "url": "https://www.gns.gov.pt/media/TSLPT.xml" },
+    { "label": "GNS — Autoridade Credenciadora / SCEE (trust services)", "url": "https://www.gns.gov.pt/scee.aspx" },
+    { "label": "EU LOTL — List of the Lists (European Commission)", "url": "https://ec.europa.eu/tools/lotl/eu-lotl.xml" },
+    { "label": "Independent verifier (Attestto)", "url": "https://verify.attestto.com" }
+  ],
+  "source": { "type": "tsl", "url": "https://www.gns.gov.pt/media/TSLPT.xml" },
+  "notes": "Portugal's qualified-signature trust is a federation of accredited QTSPs (DigitalSign — Certificadora Digital, MULTICERT — Serviços de Certificação Electrónica, Global Trusted Sign, and the state Cartão de Cidadão / Chave Móvel Digital certification entities operated by AMA — Agência para a Modernização Administrativa, among others) supervised by the Gabinete Nacional de Segurança (GNS) — the Autoridade Credenciadora acting as Portugal's eIDAS supervisory body — and published in the Portuguese national eIDAS Trusted List (TSLPT.xml, ETSI TS 119 612), the SCEE (Sistema de Certificação Eletrónica do Estado). The 30 currently-granted CA certificates were promoted wholesale after verifying the Trusted List's XAdES signature through the EU LOTL chain of trust: the LOTL signature was checked against the pinned European Commission signing anchor, and the Portuguese TSL's signature (signer: C=PT, O=Gabinete Nacional de Segurança, CN=PORTUGUESE TRUST LIST SCHEME OPERATOR; cert SHA-256 13b31474c9d6e1b5d0edff4b1963051ff2ffe91deedd1bc51652a4dbfc8cf7f0) against the identity the LOTL declares for Portugal, so the list's single seal vouches for every certificate it contains (eIDAS Art. 22). Only services with a currently-granted status and a CA / qualified-certificate service type were selected; withdrawn, deprecated, and non-CA services were dropped. Verification evidence is in VERIFICATION.md. Key algorithms across the set are mixed: 19 CAs use RSA-4096, 7 use RSA-2048, and 4 use EC P-384. No certificate in the set has passed its notAfter."
+}

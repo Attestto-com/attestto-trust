@@ -1,0 +1,27 @@
+{
+  "pageUrl": "https://applin.indotel.gob.do/tsl/tsl.xml",
+  "pageTlsFingerprintSha256": "9b5bd802f3b3231ba1897a73ae6db43bbf840f68f2449424a69bb2a6fca854ef",
+  "lastRun": "2026-07-25T02:48:41.294Z",
+  "sources": {
+    "https://applin.indotel.gob.do/tsl/tsl.xml": {
+      "org": "INDOTEL TSL",
+      "filename": "tsl-do.xml",
+      "extension": "xml",
+      "sha256": "fdb9d5c144384a4eefc842cc1937097cb19d7c69ebec60257ede708c6dd0579d",
+      "contentLength": "33151",
+      "lastModifiedHeader": "Mon, 09 Feb 2026 17:30:55 GMT",
+      "etag": "\"1b28a-64a67805bc1ec-gzip\"",
+      "firstSeen": "2026-07-25T02:48:41.287Z",
+      "lastChanged": "2026-07-25T02:48:41.287Z",
+      "lastSeen": "2026-07-25T02:48:41.287Z"
+    }
+  },
+  "knownGaps": [
+    {
+      "org": "Thomas Signe Copel, S.A.S",
+      "url": "https://applin.indotel.gob.do/tsl/tsl.xml",
+      "filename": "CN=SIGNE Autoridad de Certificacion - 2020, OU=Autoridad de Certificacion, 2.5.4.97=VATES-A11029279, O=SIGNE S.A., C=ES",
+      "reason": "not-under-supervision"
+    }
+  ]
+}

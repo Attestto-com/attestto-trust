@@ -1,0 +1,26 @@
+{
+  "code": "se",
+  "name": "Sweden",
+  "flag": "🇸🇪",
+  "model": "accredited-tsl",
+  "authority": {
+    "name": "Post- och telestyrelsen (PTS) — Swedish Post and Telecom Authority, Sweden's eIDAS supervisory body and national Trusted List scheme operator",
+    "operator": "Accredited QTSPs under eIDAS (IDnow Trust Services AB, ZealiD AB, and TrustWeaver AB / Pagero, among others)",
+    "url": "https://trustedlist.pts.se/tlv6/SE-TL.xml"
+  },
+  "governingLaw": "Reglamento eIDAS (UE) 910/2014 · Lag (2016:561) med kompletterande bestämmelser till EU:s förordning om elektronisk identifiering",
+  "technology": {
+    "keyAlgorithms": ["RSA-4096"],
+    "signatureStandards": ["CAdES", "PAdES", "XAdES", "ASiC"],
+    "trustList": "ETSI TS 119 612 — the Swedish Trusted List (SE-TL.xml, PTS)"
+  },
+  "capabilities": ["Qualified e-signature & e-seal (eIDAS)", "Qualified timestamping", "Qualified website authentication (QWAC / PSD2)"],
+  "relatedLinks": [
+    { "label": "PTS — Swedish Trusted List (SE-TL.xml)", "url": "https://trustedlist.pts.se/tlv6/SE-TL.xml" },
+    { "label": "PTS — Post- och telestyrelsen", "url": "https://www.pts.se/" },
+    { "label": "EU LOTL — List of the Lists (European Commission)", "url": "https://ec.europa.eu/tools/lotl/eu-lotl.xml" },
+    { "label": "Independent verifier (Attestto)", "url": "https://verify.attestto.com" }
+  ],
+  "source": { "type": "tsl", "url": "https://trustedlist.pts.se/tlv6/SE-TL.xml" },
+  "notes": "Sweden's qualified-signature trust is a federation of accredited QTSPs (IDnow Trust Services AB, ZealiD AB, and TrustWeaver AB / Pagero, among others) supervised by Post- och telestyrelsen (PTS), the Swedish Post and Telecom Authority acting as Sweden's eIDAS supervisory body and national Trusted List scheme operator, and published in the Swedish national eIDAS Trusted List (SE-TL.xml, ETSI TS 119 612). As an EU / eIDAS participant, Sweden is referenced from the EU LOTL. The 8 currently-granted CA certificates were promoted wholesale after verifying the Trusted List's XAdES signature through the EU LOTL chain of trust: the LOTL signature was checked against the pinned European Commission signing anchor, and the Swedish TSL's signature (signer: C=SE, O=Swedish Post and Telecom Agency (PTS), CN=Swedish Post and Telecom Agency (PTS); cert SHA-256 2fa65e20bc76a7dc3a128b63926d51704c4934e533fd712df119825370d42948) against the identity the LOTL declares for Sweden, so the list's single seal vouches for every certificate it contains (eIDAS Art. 22). Only services with a currently-granted status and a CA / qualified-certificate service type were selected; withdrawn, deprecated, and non-CA services were dropped. Verification evidence is in VERIFICATION.md. Every certificate in the set uses RSA-4096. The 8 entries span the IDnow Trust Services PKI (IDnow TS Root CA 01 plus its qualified-signature, qualified-seal, timestamp, and OCSP issuing CAs), the ZealiD issuing and timestamp CAs, and the self-signed TrustWeaver CA. The ZealiD Issuing CA 2020 and ZealiD TSA CA 2022 are issued by the ZealiD Root CA 2020, which is not carried by the list and must be sourced separately if root-anchored path building is required."
+}

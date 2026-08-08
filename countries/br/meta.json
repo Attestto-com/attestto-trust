@@ -1,0 +1,24 @@
+{
+  "code": "br",
+  "name": "Brazil",
+  "flag": "🇧🇷",
+  "model": "national-hierarchy",
+  "authority": {
+    "name": "ITI — Instituto Nacional de Tecnologia da Informação",
+    "operator": "ITI (AC-Raiz ICP-Brasil)",
+    "url": "https://www.gov.br/iti/pt-br"
+  },
+  "governingLaw": "MP 2.200-2 (2001)",
+  "technology": {
+    "keyAlgorithms": ["RSA-4096"],
+    "signatureStandards": ["CAdES", "PAdES", "XAdES"]
+  },
+  "capabilities": ["e-CPF (Pessoa Física)", "e-CNPJ (Pessoa Jurídica)", "Carimbo do Tempo", "Sigilo"],
+  "relatedLinks": [
+    { "label": "ITI — ICP-Brasil", "url": "https://www.gov.br/iti/pt-br" },
+    { "label": "ITI — ICP-Brasil (AC-Raiz)", "url": "https://www.gov.br/iti/pt-br/assuntos/icp-brasil" },
+    { "label": "Independent verifier (Attestto)", "url": "https://verify.attestto.com" }
+  ],
+  "source": { "type": "manual", "note": "AC-Raiz and CA certificates published by ITI." },
+  "notes": "Single national hierarchy (AC-Raiz ICP-Brasil) operated by ITI, with accredited ACs chaining beneath it. RSA throughout."
+}

@@ -1,0 +1,18 @@
+{
+  "method": "did:pki",
+  "generatedAt": "2026-07-23T19:11:11.176Z",
+  "dids": {
+    "dvv-citizen-certificates-g4e.pem": "did:pki:fi:digi-ja-vaestotietovirasto-ca:dvv-citizen-certificates:g4e",
+    "dvv-citizen-certificates-g4r.pem": "did:pki:fi:digi-ja-vaestotietovirasto-ca:dvv-citizen-certificates:g4r",
+    "dvv-organisational-certificates-g4e.pem": "did:pki:fi:digi-ja-vaestotietovirasto-ca:dvv-organisational-certificates:g4e",
+    "dvv-organisational-certificates-g4r.pem": "did:pki:fi:digi-ja-vaestotietovirasto-ca:dvv-organisational-certificates:g4r",
+    "dvv-service-certificates-g5e.pem": "did:pki:fi:digi-ja-vaestotietovirasto-ca:dvv-service-certificates:g5e",
+    "dvv-service-certificates-g5r.pem": "did:pki:fi:digi-ja-vaestotietovirasto-ca:dvv-service-certificates:g5r",
+    "dvv-social-welfare-and-healthcare-service-certificates-g3e.pem": "did:pki:fi:digi-ja-vaestotietovirasto-ca:dvv-social-welfare-and-healthcare-service-certificates:g3e",
+    "dvv-social-welfare-and-healthcare-service-certificates-g3r.pem": "did:pki:fi:digi-ja-vaestotietovirasto-ca:dvv-social-welfare-and-healthcare-service-certificates:g3r",
+    "vrk-ca-for-organisational-certificates-g3.pem": "did:pki:fi:vaestorekisterikeskus-ca:vrk-ca-for-organisational-certificates",
+    "vrk-ca-for-service-providers-g4.pem": "did:pki:fi:vaestorekisterikeskus-ca:vrk-ca-for-service-providers",
+    "vrk-ca-for-social-welfare-and-healthcare-service-providers-g2.pem": "did:pki:fi:vaestorekisterikeskus-ca:vrk-ca-for-social-welfare-and-healthcare-service-providers",
+    "vrk-gov-ca-for-citizen-certificates-g3.pem": "did:pki:fi:vaestorekisterikeskus-ca:vrk-gov-ca-for-citizen-certificates"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "code": "fi",
+  "name": "Finland",
+  "flag": "🇫🇮",
+  "model": "accredited-tsl",
+  "authority": {
+    "name": "Liikenne- ja viestintävirasto (Traficom) — Finnish Transport and Communications Agency, Finland's eIDAS supervisory body and national Trusted List scheme operator",
+    "operator": "Digi- ja väestötietovirasto (DVV) — Digital and Population Data Services Agency, formerly Väestörekisterikeskus (VRK), which operates the FINeID public-sector PKI (DVV Citizen, Organisational, Service and Social-Welfare & Healthcare certificate CAs under the DVV Gov. Root CA - G3 and VRK Gov. Root CA - G2)",
+    "url": "https://dp.trustedlist.fi/fi-tl-v6.xml"
+  },
+  "governingLaw": "Reglamento eIDAS (UE) 910/2014 · Laki vahvasta sähköisestä tunnistamisesta ja sähköisistä luottamuspalveluista (617/2009)",
+  "technology": {
+    "keyAlgorithms": ["RSA-4096", "EC P-384"],
+    "signatureStandards": ["CAdES", "PAdES", "XAdES", "ASiC"],
+    "trustList": "ETSI TS 119 612 — the Finnish Trusted List (fi-tl-v6.xml, Traficom)"
+  },
+  "capabilities": ["Qualified e-signature & e-seal (eIDAS)", "Qualified timestamping", "Qualified website authentication (QWAC / PSD2)"],
+  "relatedLinks": [
+    { "label": "Traficom — Finnish Trusted List (fi-tl-v6.xml)", "url": "https://dp.trustedlist.fi/fi-tl-v6.xml" },
+    { "label": "Traficom — Liikenne- ja viestintävirasto", "url": "https://www.traficom.fi/" },
+    { "label": "DVV — FINeID public-sector PKI (fineid.fi)", "url": "https://www.fineid.fi/" },
+    { "label": "EU LOTL — List of the Lists (European Commission)", "url": "https://ec.europa.eu/tools/lotl/eu-lotl.xml" },
+    { "label": "Independent verifier (Attestto)", "url": "https://verify.attestto.com" }
+  ],
+  "source": { "type": "tsl", "url": "https://dp.trustedlist.fi/fi-tl-v6.xml" },
+  "notes": "Finland's qualified-signature trust is anchored in the FINeID public-sector PKI operated by Digi- ja väestötietovirasto (DVV), the Digital and Population Data Services Agency (formerly Väestörekisterikeskus, VRK), and supervised by Liikenne- ja viestintävirasto (Traficom), the Finnish Transport and Communications Agency acting as Finland's eIDAS supervisory body and national Trusted List scheme operator, publishing the Finnish national eIDAS Trusted List (fi-tl-v6.xml, ETSI TS 119 612). The 12 currently-granted CA certificates were promoted wholesale after verifying the Trusted List's XAdES signature through the EU LOTL chain of trust: the LOTL signature was checked against the pinned European Commission signing anchor, and the Finnish TSL's signature (signer: C=FI, O=Liikenne- ja viestintävirasto, CN=SchemeOperator II; cert SHA-256 ba5cc469d6212114800e63ad770f0aa58a1ba0db54c76d32fdab33061153fd7d) against the identity the LOTL declares for Finland, so the list's single seal vouches for every certificate it contains (eIDAS Art. 22). Only services with a currently-granted status and a CA / qualified-certificate service type were selected; withdrawn, deprecated, and non-CA services were dropped. Verification evidence is in VERIFICATION.md. Key algorithms across the set are mixed: 8 CAs use RSA-4096 and 4 use EC P-384. All 12 entries are the DVV/VRK issuing CAs (citizen, organisational, service-provider, and social-welfare & healthcare certificates); the self-signed DVV Gov. Root CA - G3 and VRK Gov. Root CA - G2 that issue them are not carried by the list and must be sourced separately if root-anchored path building is required."
+}

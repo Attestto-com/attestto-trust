@@ -1,0 +1,11 @@
+{
+  "method": "did:pki",
+  "generatedAt": "2026-07-23T19:29:32.267Z",
+  "dids": {
+    "den-danske-stat-kvalificeret-rod-ca.pem": "did:pki:dk:den-danske-stat:kvalificeret-rod-ca",
+    "den-danske-stat-kvalificeret-udstedende-ca-1.pem": "did:pki:dk:den-danske-stat:kvalificeret-udstedende-ca-1",
+    "in-groupe-denmark-qualified-issuing-ca-i.pem": "did:pki:dk:in-groupe-denmark-as:groupe-denmark-qualified-issuing-ca-i",
+    "penneo-qualified-root-ca-06-22-rsa-162bbd4d.pem": "did:pki:dk:penneo-as:qualified-root-ca-0622rsa",
+    "penneo-qualified-root-ca-06-22-rsa.pem": "did:pki:dk:penneo-as:qualified-root-ca-0622rsa"
+  }
+}

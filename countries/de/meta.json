@@ -1,0 +1,26 @@
+{
+  "code": "de",
+  "name": "Germany",
+  "flag": "🇩🇪",
+  "model": "accredited-tsl",
+  "authority": {
+    "name": "Bundesnetzagentur (BNetzA) — German eIDAS supervisory body and Trusted List operator",
+    "operator": "~15 accredited QTSPs (Bundesdruckerei/D-Trust, Deutsche Telekom / Telekom Security, Bundesnotarkammer, Atos, dgnservice, Bank-Verlag/BVtrust, medisign/MESIG, GD Netcetera, SIGN8, Utimaco, Deutsche Post, Governikus, exceet, and others)",
+    "url": "https://tl.bundesnetzagentur.de/TL-DE.XML"
+  },
+  "governingLaw": "Reglamento eIDAS (UE) 910/2014 · Vertrauensdienstegesetz (VDG) · Vertrauensdiensteverordnung (VDV)",
+  "technology": {
+    "keyAlgorithms": ["RSA-2048", "RSA-3072", "RSA-4096", "EC P-256", "EC P-384", "EC P-521", "EC brainpoolP256r1"],
+    "signatureStandards": ["CAdES", "PAdES", "XAdES", "ASiC"],
+    "trustList": "ETSI TS 119 612 — the German Trusted List (TL-DE.XML, Bundesnetzagentur)"
+  },
+  "capabilities": ["Qualified e-signature & e-seal (eIDAS)", "Qualified timestamping", "Qualified website authentication (QWAC / PSD2)"],
+  "relatedLinks": [
+    { "label": "Bundesnetzagentur — German Trusted List (TL-DE.XML)", "url": "https://tl.bundesnetzagentur.de/TL-DE.XML" },
+    { "label": "Bundesnetzagentur — Qualified trust services (eIDAS)", "url": "https://www.bundesnetzagentur.de/EN/Areas/QES/start.html" },
+    { "label": "EU LOTL — List of the Lists (European Commission)", "url": "https://ec.europa.eu/tools/lotl/eu-lotl.xml" },
+    { "label": "Independent verifier (Attestto)", "url": "https://verify.attestto.com" }
+  ],
+  "source": { "type": "tsl", "url": "https://tl.bundesnetzagentur.de/TL-DE.XML" },
+  "notes": "Germany's qualified-signature trust is a federation of accredited QTSPs (Bundesdruckerei/D-Trust, Deutsche Telekom / Telekom Security / Telesec, Bundesnotarkammer, Atos, dgnservice, Bank-Verlag/BVtrust, medisign/MESIG, GD Netcetera, SIGN8, Utimaco, Deutsche Post, Governikus, exceet, and others) supervised by the Bundesnetzagentur and published in the German national eIDAS Trusted List (TL-DE.XML). The 101 currently-granted CA certificates were promoted wholesale after verifying the Trusted List's XAdES signature through the EU LOTL chain of trust: the LOTL signature was checked against the pinned European Commission signing anchor, and the German TSL's signature (signer: CN=German Trusted List Signer 14, O=Federal Network Agency, C=DE) against the identity the LOTL declares for Germany, so the list's single seal vouches for every certificate it contains (eIDAS Art. 22). Only services with a currently-granted status and a CA / qualified-certificate service type were selected; withdrawn, deprecated, and non-CA services were dropped. Verification evidence is in VERIFICATION.md. Note that the national eID root behind the German identity card (Personalausweis), operated by the BSI, is part of the eID-notification mechanism rather than the QTSP Trusted List and is therefore not included in this set."
+}

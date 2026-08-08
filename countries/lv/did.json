@@ -1,0 +1,11 @@
+{
+  "method": "did:pki",
+  "generatedAt": "2026-07-23T20:06:37.500Z",
+  "dids": {
+    "eparaksts-ica-2017.pem": "did:pki:lv:vas-latvijas-valsts-radio-un-televzijas-centrs:eparaksts-ica-2017",
+    "eparaksts-ica-2021.pem": "did:pki:lv:vas-latvijas-valsts-radio-un-televzijas-centrs:eparaksts-ica-2021",
+    "lv-eid-ica-2017.pem": "did:pki:lv:vas-latvijas-valsts-radio-un-televzijas-centrs:lv-eid-ica-2017",
+    "lv-eid-ica-2021.pem": "did:pki:lv:vas-latvijas-valsts-radio-un-televzijas-centrs:lv-eid-ica-2021",
+    "lv-eid-ica-2025.pem": "did:pki:lv:vas-latvijas-valsts-radio-un-televzijas-centrs:lv-eid-ica-2025"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "code": "ar",
+  "name": "Argentina",
+  "flag": "🇦🇷",
+  "model": "national-hierarchy",
+  "authority": {
+    "name": "Jefatura de Gabinete de Ministros — AC Raíz",
+    "operator": "ONTI / JGM",
+    "url": "https://www.argentina.gob.ar/jefatura/innovacion-ciencia-y-tecnologia/innovacion/firma-digital"
+  },
+  "governingLaw": "Ley 25.506 (2001)",
+  "technology": {
+    "keyAlgorithms": ["RSA-4096"],
+    "signatureStandards": ["CAdES", "PAdES", "XAdES"]
+  },
+  "capabilities": ["Persona Física", "AFIP", "Banco Nación"],
+  "relatedLinks": [
+    { "label": "Argentina.gob.ar — Firma Digital", "url": "https://www.argentina.gob.ar/jefatura/innovacion-ciencia-y-tecnologia/innovacion/firma-digital" },
+    { "label": "AC ONTI — repositorio raíz", "url": "http://pki.jgm.gov.ar/app/" },
+    { "label": "Independent verifier (Attestto)", "url": "https://verify.attestto.com" }
+  ],
+  "source": { "type": "manual", "note": "AC Raíz certificates published by ONTI / JGM." },
+  "notes": "Single national hierarchy (AC Raíz de la República Argentina) operated under the Jefatura de Gabinete de Ministros. RSA throughout."
+}

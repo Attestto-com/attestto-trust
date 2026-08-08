@@ -1,0 +1,23 @@
+{
+  "id": "gleif-vlei",
+  "name": "GLEIF vLEI",
+  "kind": "global-anchor",
+  "model": "vlei-keri",
+  "authority": {
+    "name": "GLEIF — Global Legal Entity Identifier Foundation",
+    "url": "https://www.gleif.org/"
+  },
+  "governingLaw": "GLEIF vLEI Ecosystem Governance Framework",
+  "identifierSpace": ["did:keri", "did:webs"],
+  "technology": {
+    "keyModel": "KERI (self-certifying AIDs, KEL-anchored)",
+    "credentialFormat": "ACDC",
+    "chain": "GLEIF Root AID -> GEDA -> QVI -> Legal Entity"
+  },
+  "capabilities": ["Organizational identity (LEI)", "Legal-entity vLEI", "OOR / ECR role credentials"],
+  "relatedLinks": [
+    { "label": "GLEIF vLEI — introducing the ecosystem", "url": "https://www.gleif.org/en/vlei/introducing-the-vlei-ecosystem-governance-framework/" },
+    { "label": "GLEIF — Qualified vLEI Issuers", "url": "https://www.gleif.org/en/organizational-identity/get-a-vlei-list-of-qualified-vlei-issuing-organizations" }
+  ],
+  "notes": "Global organizational identity rooted at GLEIF, not a national CA. Attestto mirrors GLEIF's published vLEI root of trust (Root AID key state and the authorized QVI list), hash-pinned and version-controlled; it does not issue, vouch for, or act as a QVI. Verify against GLEIF as the source of truth. vLEI is KERI/ACDC, not X.509, so it is pinned as an AID key-state rather than a CA certificate. Cryptographic verification of presented vLEI credentials is a separate phase (ATT-1069)."
+}

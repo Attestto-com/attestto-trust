@@ -1,0 +1,23 @@
+{
+  "country": "UY",
+  "generatedAt": "2026-07-24T03:25:18.087Z",
+  "count": 1,
+  "certificates": [
+    {
+      "file": "autoridad-certificadora-raiz-nacional-de-uruguay.pem",
+      "sha256": "5533a0401f612c688ebce5bf53f2ec14a734eb178bfae00e50e85dae6723078a",
+      "subject": "Autoridad Certificadora Raíz Nacional de Uruguay",
+      "issuer": "Autoridad Certificadora Raíz Nacional de Uruguay",
+      "serialNumber": "02ee009b66d86a1d67feda8a256f215a751b",
+      "validFrom": "2011-11-03T15:02:49.000Z",
+      "validTo": "2031-10-29T15:02:49.000Z",
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://www.agesic.gub.uy/acrn/acrn.crl",
+        "http://www.uce.gub.uy/acrn/acrn.crl"
+      ],
+      "ocspUrls": []
+    }
+  ]
+}

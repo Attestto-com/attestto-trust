@@ -19,13 +19,21 @@ export const TRANSLATIONS = {
     homeCertSuffix: 'certificate',
     homeCertsSuffix: 'certificates',
     homeUpdated: 'updated',
+    homeColCountry: 'Country',
+    homeColAuthority: 'Certificate authority',
+    homeColCerts: 'Certificates',
+    homeColUpdated: 'Updated',
+    homeFilterLabel: 'Filter countries',
+    homeFilterPlaceholder: 'Filter by country, authority or region...',
+    homeFilterStatus: '{0} of {1} countries shown',
+    homeNoResults: 'No countries match your filter.',
     homeDevsH2: 'For developers',
     homeDevsIntro: 'This site is the human-readable face of the same data. For programmatic access, install the published npm package. The <code>did:pki</code> resolver is the machine and API face of these trust anchors.',
     homeNpmH3: 'npm package',
-    homeNpmDesc: 'Import the trust anchors and per-country manifests directly into your build.',
+    homeNpmDesc: 'Import the trust anchors and per-country manifests directly into your build. Best for server-side and build tooling. For browsers and client apps, use the did:pki resolver instead, so you never ship certificates to end users.',
     homeNpmBtn: 'View on npm',
     homeResolverH3: 'did:pki resolver',
-    homeResolverDesc: 'Resolve and verify against these anchors programmatically as the machine-readable, API face of the directory.',
+    homeResolverDesc: 'Resolve and verify against these anchors programmatically as the machine-readable, API face of the directory. Recommended for browsers and client apps, since no certificates are downloaded to end users.',
     homeResolverBtn: 'Learn more',
     // Country Page
     countryNavHome: 'Home',
@@ -33,11 +41,18 @@ export const TRANSLATIONS = {
     countryCertsStat: 'Certificates',
     countryRootsStat: 'Roots',
     countryIntermediatesStat: 'Intermediates',
+    countryDidStat: 'did:pki',
     countryUpdatedStat: 'Updated',
     countrySearchLabel: 'Filter certificates',
     countrySearchPlaceholder: 'Filter by subject, issuer, serial or fingerprint...',
     countryNoResults: 'No certificates match your filter.',
     countryFilterStatus: '{0} of {1} certificates shown',
+    filterChipsAria: 'Filter certificates by status',
+    filterChipCurrent: 'Current',
+    filterChipExpired: 'Expired',
+    filterChipUnchained: 'Unchained',
+    filterChipAll: 'All',
+    filterChipsHint: 'Expired certificates are hidden by default; they remain useful only for validating older signatures.',
     countryHierarchyAria: 'Certificate authority hierarchy for {0}',
     // Cert Detail Page
     certNavHome: 'Home',
@@ -57,6 +72,10 @@ export const TRANSLATIONS = {
     certFieldValidTo: 'Valid to',
     certFieldSerial: 'Serial number',
     certFieldSha256: 'SHA-256',
+    certFieldDidPki: 'Decentralized ID (did:pki)',
+    certDidPkiResolve: 'Resolve',
+    certDidPkiResolveTitle: 'Resolve this did:pki identifier at resolver.attestto.com (opens in a new tab)',
+    certDidPkiHint: 'This CA is addressable as a did:pki decentralized identifier, derived from its subject and resolvable to a W3C DID Document.',
     certFieldFile: 'File',
     certProvenanceH2: 'Provenance',
     certProvenanceText: 'This certificate is public data published by {0}. This site mirrors and structures it; it is not the issuing authority. The SHA-256 fingerprint above is provided as tamper evidence: recompute it against the downloaded <code>.pem</code> to confirm integrity.',
@@ -88,6 +107,15 @@ export const TRANSLATIONS = {
     validityDayLeft: '{0} day left',
     validityDaysAgo: '{0} days ago',
     validityDayAgo: '{0} day ago',
+    // Global anchors
+    homeGlobalH2: 'Global / Organizational identity',
+    globalAnchorTag: 'Global root',
+    globalAnchorRootAid: 'Root AID',
+    globalAnchorGeda: 'GEDA (GLEIF External Delegated AID)',
+    globalAnchorQvis: 'Qualified issuers',
+    globalAnchorFraming: 'Not a national CA. Organizational identity (vLEI / LEI) that we mirror; verify against GLEIF as the source of truth.',
+    globalAnchorView: 'View anchor',
+    globalAnchorSource: 'GLEIF root of trust',
   },
   es: {
     // Layout
@@ -108,13 +136,21 @@ export const TRANSLATIONS = {
     homeCertSuffix: 'certificado',
     homeCertsSuffix: 'certificados',
     homeUpdated: 'actualizado',
+    homeColCountry: 'País',
+    homeColAuthority: 'Autoridad certificadora',
+    homeColCerts: 'Certificados',
+    homeColUpdated: 'Actualizado',
+    homeFilterLabel: 'Filtrar países',
+    homeFilterPlaceholder: 'Filtrar por país, autoridad o región...',
+    homeFilterStatus: 'mostrados {0} de {1} países',
+    homeNoResults: 'Ningún país coincide con el filtro.',
     homeDevsH2: 'Para desarrolladores',
     homeDevsIntro: 'Este sitio es la cara legible para humanos de los mismos datos. Para acceso programático, instale el paquete npm publicado. El resolutor <code>did:pki</code> es la interfaz de API y máquina de estas anclas de confianza.',
     homeNpmH3: 'paquete npm',
-    homeNpmDesc: 'Importe las anclas de confianza y los manifiestos por país directamente en su compilación.',
+    homeNpmDesc: 'Importe las anclas de confianza y los manifiestos por país directamente en su compilación. Ideal para el lado del servidor y herramientas de compilación. Para navegadores y apps cliente, use el resolutor did:pki, así nunca envía certificados a los usuarios finales.',
     homeNpmBtn: 'Ver en npm',
     homeResolverH3: 'resolutor did:pki',
-    homeResolverDesc: 'Resuelva y verifique contra estas anclas programáticamente como la interfaz de API y máquina del directorio.',
+    homeResolverDesc: 'Resuelva y verifique contra estas anclas programáticamente como la interfaz de API y máquina del directorio. Recomendado para navegadores y apps cliente, ya que no se descargan certificados a los usuarios finales.',
     homeResolverBtn: 'Más información',
     // Country Page
     countryNavHome: 'Inicio',
@@ -122,11 +158,18 @@ export const TRANSLATIONS = {
     countryCertsStat: 'Certificados',
     countryRootsStat: 'Raíces',
     countryIntermediatesStat: 'Intermedias',
+    countryDidStat: 'did:pki',
     countryUpdatedStat: 'Actualizado',
     countrySearchLabel: 'Filtrar certificados',
     countrySearchPlaceholder: 'Filtrar por sujeto, emisor, serie o huella...',
     countryNoResults: 'Ningún certificado coincide con el filtro.',
     countryFilterStatus: 'mostrados {0} de {1} certificados',
+    filterChipsAria: 'Filtrar certificados por estado',
+    filterChipCurrent: 'Vigentes',
+    filterChipExpired: 'Vencidos',
+    filterChipUnchained: 'Sin cadena',
+    filterChipAll: 'Todos',
+    filterChipsHint: 'Los certificados vencidos se ocultan por defecto; solo sirven para validar firmas antiguas.',
     countryHierarchyAria: 'Jerarquía de autoridades de certificación para {0}',
     // Cert Detail Page
     certNavHome: 'Inicio',
@@ -146,6 +189,10 @@ export const TRANSLATIONS = {
     certFieldValidTo: 'Válido hasta',
     certFieldSerial: 'Número de serie',
     certFieldSha256: 'SHA-256',
+    certFieldDidPki: 'Identificador descentralizado (did:pki)',
+    certDidPkiResolve: 'Resolver',
+    certDidPkiResolveTitle: 'Resolver este identificador did:pki en resolver.attestto.com (se abre en una pestaña nueva)',
+    certDidPkiHint: 'Esta AC es direccionable como un identificador descentralizado did:pki, derivado de su sujeto y resoluble a un Documento DID de la W3C.',
     certFieldFile: 'Archivo',
     certProvenanceH2: 'Procedencia',
     certProvenanceText: 'Este certificado contiene datos públicos publicados por {0}. Este sitio los replica y estructura; no es la autoridad emisora. La huella digital SHA-256 anterior se proporciona como evidencia de integridad: vuelva a calcularla contra el archivo <code>.pem</code> descargado para confirmar su integridad.',
@@ -177,19 +224,125 @@ export const TRANSLATIONS = {
     validityDayLeft: 'queda {0} día',
     validityDaysAgo: 'hace {0} días',
     validityDayAgo: 'hace {0} día',
+    // Global anchors
+    homeGlobalH2: 'Identidad global / organizacional',
+    globalAnchorTag: 'Raíz global',
+    globalAnchorRootAid: 'AID raíz',
+    globalAnchorGeda: 'GEDA (AID delegado externo de GLEIF)',
+    globalAnchorQvis: 'Emisores cualificados',
+    globalAnchorFraming: 'No es una CA nacional. Identidad organizacional (vLEI / LEI) que reflejamos; verifique con GLEIF como fuente de verdad.',
+    globalAnchorView: 'Ver ancla',
+    globalAnchorSource: 'Raíz de confianza de GLEIF',
   }
 };
 
-// Localized country names
+// Canonical ISO 3166-1 alpha-2 -> localized display name.
+//
+// This is the SINGLE source of country display names for the whole site
+// (home table, country pages, cert pages, <title>/meta descriptions).
+// It must cover every code that can appear in the directory, which means:
+//   - every countries/<cc>/ directory in this repo (live AND staged), and
+//   - every code listed in site/src/lib/regions.js REGION_OF.
+// tests/site-country-names.test.mjs enforces exactly that, so promoting a
+// staged country can never regress into a bare ISO code on the page.
+export const COUNTRY_NAMES = {
+  // North America
+  us: { en: 'United States', es: 'Estados Unidos' },
+  ca: { en: 'Canada', es: 'Canadá' },
+  // Central America
+  cr: { en: 'Costa Rica', es: 'Costa Rica' },
+  gt: { en: 'Guatemala', es: 'Guatemala' },
+  sv: { en: 'El Salvador', es: 'El Salvador' },
+  hn: { en: 'Honduras', es: 'Honduras' },
+  ni: { en: 'Nicaragua', es: 'Nicaragua' },
+  pa: { en: 'Panama', es: 'Panamá' },
+  bz: { en: 'Belize', es: 'Belice' },
+  mx: { en: 'Mexico', es: 'México' },
+  // Caribbean
+  do: { en: 'Dominican Republic', es: 'República Dominicana' },
+  cu: { en: 'Cuba', es: 'Cuba' },
+  ht: { en: 'Haiti', es: 'Haití' },
+  jm: { en: 'Jamaica', es: 'Jamaica' },
+  tt: { en: 'Trinidad and Tobago', es: 'Trinidad y Tobago' },
+  // South America
+  br: { en: 'Brazil', es: 'Brasil' },
+  ar: { en: 'Argentina', es: 'Argentina' },
+  pe: { en: 'Peru', es: 'Perú' },
+  cl: { en: 'Chile', es: 'Chile' },
+  co: { en: 'Colombia', es: 'Colombia' },
+  uy: { en: 'Uruguay', es: 'Uruguay' },
+  py: { en: 'Paraguay', es: 'Paraguay' },
+  bo: { en: 'Bolivia', es: 'Bolivia' },
+  ec: { en: 'Ecuador', es: 'Ecuador' },
+  ve: { en: 'Venezuela', es: 'Venezuela' },
+  // Northern Europe
+  gb: { en: 'United Kingdom', es: 'Reino Unido' },
+  ie: { en: 'Ireland', es: 'Irlanda' },
+  se: { en: 'Sweden', es: 'Suecia' },
+  no: { en: 'Norway', es: 'Noruega' },
+  dk: { en: 'Denmark', es: 'Dinamarca' },
+  fi: { en: 'Finland', es: 'Finlandia' },
+  is: { en: 'Iceland', es: 'Islandia' },
+  ee: { en: 'Estonia', es: 'Estonia' },
+  lv: { en: 'Latvia', es: 'Letonia' },
+  lt: { en: 'Lithuania', es: 'Lituania' },
+  // Western Europe
+  fr: { en: 'France', es: 'Francia' },
+  de: { en: 'Germany', es: 'Alemania' },
+  nl: { en: 'Netherlands', es: 'Países Bajos' },
+  be: { en: 'Belgium', es: 'Bélgica' },
+  at: { en: 'Austria', es: 'Austria' },
+  ch: { en: 'Switzerland', es: 'Suiza' },
+  lu: { en: 'Luxembourg', es: 'Luxemburgo' },
+  li: { en: 'Liechtenstein', es: 'Liechtenstein' },
+  // Southern Europe
+  es: { en: 'Spain', es: 'España' },
+  it: { en: 'Italy', es: 'Italia' },
+  pt: { en: 'Portugal', es: 'Portugal' },
+  gr: { en: 'Greece', es: 'Grecia' },
+  hr: { en: 'Croatia', es: 'Croacia' },
+  si: { en: 'Slovenia', es: 'Eslovenia' },
+  mt: { en: 'Malta', es: 'Malta' },
+  cy: { en: 'Cyprus', es: 'Chipre' },
+  rs: { en: 'Serbia', es: 'Serbia' },
+  // Eastern Europe
+  hu: { en: 'Hungary', es: 'Hungría' },
+  pl: { en: 'Poland', es: 'Polonia' },
+  cz: { en: 'Czech Republic', es: 'Chequia' },
+  sk: { en: 'Slovakia', es: 'Eslovaquia' },
+  ro: { en: 'Romania', es: 'Rumanía' },
+  bg: { en: 'Bulgaria', es: 'Bulgaria' },
+  ua: { en: 'Ukraine', es: 'Ucrania' },
+  md: { en: 'Moldova', es: 'Moldavia' },
+  // Asia
+  jp: { en: 'Japan', es: 'Japón' },
+  kr: { en: 'South Korea', es: 'Corea del Sur' },
+  cn: { en: 'China', es: 'China' },
+  in: { en: 'India', es: 'India' },
+  sg: { en: 'Singapore', es: 'Singapur' },
+  tr: { en: 'Turkey', es: 'Turquía' },
+  il: { en: 'Israel', es: 'Israel' },
+  // Oceania
+  au: { en: 'Australia', es: 'Australia' },
+  nz: { en: 'New Zealand', es: 'Nueva Zelanda' },
+};
+
+// Localized country names.
+// Never returns a bare lowercase ISO code as a user-facing label: an unmapped
+// code degrades to its uppercase form (e.g. "ZZ"), which reads as a defect
+// rather than as a country name, and is loudly warned about in dev.
 export const getCountryName = (code, lang) => {
-  const names = {
-    cr: { en: 'Costa Rica', es: 'Costa Rica' },
-    br: { en: 'Brazil', es: 'Brasil' },
-    ar: { en: 'Argentina', es: 'Argentina' },
-    es: { en: 'Spain', es: 'España' }
-  };
-  const l = lang === 'es' ? 'es' : 'en';
-  return names[code]?.[l] || names[code]?.en || code;
+  const key = String(code || '').toLowerCase();
+  const entry = COUNTRY_NAMES[key];
+  if (!entry) {
+    if (import.meta.env?.DEV) {
+      console.warn(
+        `[i18n] Missing COUNTRY_NAMES entry for "${key}" — add it to site/src/lib/i18n.js.`,
+      );
+    }
+    return key.toUpperCase();
+  }
+  return (lang === 'es' ? entry.es : entry.en) || entry.en;
 };
 
 // Localized authority names

@@ -48,15 +48,39 @@ function tspOrgName(tspBlock) {
   )
 }
 
+// The ETSI granted-status vocabulary, as bare words (URI leaf or plain text).
+const GRANTED_STATUS_WORDS = new Set([
+  'granted',
+  'accredited',
+  'undersupervision',
+  'supervisionincessation',
+  'setbynationallaw',
+])
+const DENIED_STATUS_WORDS = new Set(['withdrawn', 'revoked', 'ceased', 'deregistered', 'deprecated'])
+
 /**
- * A service is "active" only if its status is a proper ETSI status URI that
- * isn't withdrawn/revoked/ceased. This covers both the EU "granted" status
- * and Peru's "undersupervision"; Peru's literal "No acredited" string isn't
- * a URI, so it fails the prefix check and is correctly treated as inactive.
+ * A service is "active" only if its status is granted.
+ *
+ * Standard path — a proper ETSI status URI matching the positive allowlist
+ * (granted, accredited, undersupervision, supervisionincessation,
+ * setbynationallaw), with a deny-terms backstop for revocation wording. EU and
+ * Peru TSLs use these URIs.
+ *
+ * Bare-word path — some national TSLs (e.g. INDOTEL / Dominican Republic) emit
+ * a plain status word ("Granted" / "Withdrawn") instead of the URI. These are
+ * matched EXACTLY against the ETSI vocabulary — never as a substring — so a
+ * literal like Peru's "No acredited" still fails and is treated as inactive.
  */
 function isActiveStatus(status) {
-  if (!status || !status.startsWith('http://uri.etsi.org/')) return false
-  return !/withdrawn|revoked|ceased|deregistered/i.test(status)
+  if (!status) return false
+  const s = status.trim()
+  if (s.startsWith('http://uri.etsi.org/')) {
+    if (/withdrawn|revoked|ceased|deregistered|deprecated/i.test(s)) return false
+    return /granted|accredited|undersupervision|supervisionincessation|setbynationallaw/i.test(s)
+  }
+  const word = s.toLowerCase().replace(/[\s_-]/g, '')
+  if (DENIED_STATUS_WORDS.has(word)) return false
+  return GRANTED_STATUS_WORDS.has(word)
 }
 
 /**

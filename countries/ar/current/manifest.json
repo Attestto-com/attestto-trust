@@ -1,6 +1,6 @@
 {
   "country": "AR",
-  "generatedAt": "2026-07-21T00:50:21.132Z",
+  "generatedAt": "2026-07-23T10:02:15.910Z",
   "count": 2,
   "certificates": [
     {
@@ -11,7 +11,13 @@
       "serialNumber": "00f9a548d200505296",
       "validFrom": "2007-11-22T13:25:39.000Z",
       "validTo": "2027-11-17T13:25:39.000Z",
-      "role": "root"
+      "role": "root",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://acraiz.cdp1.gov.ar/ca.crl",
+        "http://acraiz.cdp2.gov.ar/ca.crl"
+      ],
+      "ocspUrls": []
     },
     {
       "file": "AUTORIDAD-CERTIFICANTE-FIRMA-DIGITAL.pem",
@@ -21,7 +27,13 @@
       "serialNumber": "1b0000000c73ccb952640e9af100000000000c",
       "validFrom": "2020-04-14T04:42:43.000Z",
       "validTo": "2027-11-17T13:25:39.000Z",
-      "role": "intermediate"
+      "role": "intermediate",
+      "keyAlgorithm": "RSA-4096",
+      "crlUrls": [
+        "http://acraiz.cdp1.gov.ar/ca.crl",
+        "http://acraiz.cdp2.gov.ar/ca.crl"
+      ],
+      "ocspUrls": []
     }
   ]
 }
